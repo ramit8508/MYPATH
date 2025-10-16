@@ -1,9 +1,9 @@
 import React from "react";
-import logo from "../Assets/logo.png";
+import logo from "../assets/logo.png";
 import "../Styles/Landingpage.css";
 import { HiAcademicCap } from "react-icons/hi2";
 import { FaUniversity } from "react-icons/fa";
-
+import { Link } from "react-router-dom";
 
 function LandingPage() {
   return (
@@ -22,7 +22,8 @@ function LandingPage() {
             <HiAcademicCap className="box-icon" />
             <h1 className="box-title">School Student</h1>
             <h2 className="box-description">
-              Class 8th - 12th (CBSE,ICSE,State Boards)
+              Class 8th - 12th<br />
+              (CBSE,ICSE,State Boards)
             </h2>
             <ul className="box1-features">
               <li>
@@ -54,15 +55,19 @@ function LandingPage() {
                 <span className="stat-label">Competitions</span>
               </div>
             </div>
+            <Link to="/firstpage">
             <button className="get-started-button">
               Continue as School Student
             </button>
+            </Link>
           </div>
             <div className="box">
               <FaUniversity className="box-icon2" />
               <h1 className="box-title">College Student</h1>
               <h2 className="box-description">
-                Class 8th - 12th (CBSE,ICSE,State Boards)
+                Undergraduate &amp; Postgraduate<br />
+                (Engineering, Arts, Science, Commerce, etc.)
+                
               </h2>
               <ul className="box2-features">
                 <li>
@@ -94,9 +99,11 @@ function LandingPage() {
                   <span className="stat-label2">Competitions</span>
                 </div>
               </div>
+              <Link to="/firstpagecollege">
               <button className="get-started-button2">
                 Continue as College Student
               </button>
+              </Link>
             </div>
           </div>
           <h1 className="footer">Join thousands of students who have found their personalized path to success with MYPATH</h1>
