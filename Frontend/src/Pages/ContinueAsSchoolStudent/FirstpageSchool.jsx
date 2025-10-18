@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "../../Styles/FirstpageSchool.css";
 import { Link } from "react-router-dom";
 import logo from "../../assets/logo.png";
+
 function FirstpageSchool() {
   const [selectedClass, setSelectedClass] = useState("");
   const [selectedStream, setSelectedStream] = useState("");

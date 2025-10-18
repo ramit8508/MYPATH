@@ -1,9 +1,48 @@
-import React from "react";
+import React, { useState } from "react";
 import "../../Styles/FirstpageCollege.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { FaUniversity } from "react-icons/fa";
 import { HiAcademicCap } from "react-icons/hi2";
 function FirstPageCollege() {
+  const navigate = useNavigate();
+  const [formData, setFormData] = useState({
+    fullName: "",
+    email: "",
+    phoneNumber: "",
+    course: "",
+    specialization: "",
+    year: "",
+    collegeName: "",
+    rollNumber: "",
+    category: ""
+  });
+
+  const handleChange = (e) => {
+    const { id, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [id]: value
+    }));
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    
+    // Check if all required fields are filled
+    const requiredFields = ['fullName', 'email', 'phoneNumber', 'course', 'year', 'collegeName', 'rollNumber', 'category'];
+    const isFormValid = requiredFields.every(field => formData[field].trim() !== '');
+    
+    if (!isFormValid) {
+      alert("Please fill in all required fields before submitting.");
+      return;
+    }
+    
+    console.log("Form submitted:", formData);
+    
+    // Navigate to college dashboard
+    navigate("/dashboardcollege");
+  };
+
   return (
     <>
       <div className="firstpage-college-container">
@@ -21,7 +60,7 @@ function FirstPageCollege() {
           Enter your details to discover your personalized career pathway
         </h2>
         <div className="college-box">
-          <div className="college-box-content">
+          <form className="college-box-content" onSubmit={handleSubmit}>
             <h1 className="college-box-heading">
               Complete Your MYPATH Profile
             </h1>
@@ -37,16 +76,20 @@ function FirstPageCollege() {
               id="fullName"
               className="college-input-field"
               placeholder=""
+              value={formData.fullName}
+              onChange={handleChange}
               required
             />
-            <label className="college-input-label" htmlFor="Email Address">
+            <label className="college-input-label" htmlFor="email">
               Email Address
             </label>
             <input
               type="email"
-              id="Email Address"
+              id="email"
               className="college-input-field"
               placeholder=""
+              value={formData.email}
+              onChange={handleChange}
               required
             />
             <label className="college-input-label" htmlFor="phoneNumber">
@@ -57,16 +100,21 @@ function FirstPageCollege() {
               id="phoneNumber"
               className="college-input-field"
               placeholder=""
+              value={formData.phoneNumber}
+              onChange={handleChange}
               required
             />
-            <label className="college-input-label" htmlFor="Course">
+            <label className="college-input-label" htmlFor="course">
               Course
             </label>
             <input
               type="text"
+              id="course"
               placeholder="Select Your Course"
               list="courses"
               className="college-input-field"
+              value={formData.course}
+              onChange={handleChange}
               required
             />
 
@@ -89,24 +137,29 @@ function FirstPageCollege() {
             </datalist>
             <label
               className="college-input-label"
-              htmlFor="Specialization/Branch"
+              htmlFor="specialization"
             >
               Specialization/Branch
             </label>
             <input
               type="text"
-              id="Specialization/Branch"
+              id="specialization"
               className="college-input-field"
               placeholder="eg., Computer Science,Mechanical,Commerce"
+              value={formData.specialization}
+              onChange={handleChange}
             />
-            <label className="college-input-label" htmlFor="Year">
+            <label className="college-input-label" htmlFor="year">
               Year of Study
             </label>
             <input
               type="text"
+              id="year"
               placeholder="Select Year"
               list="years"
               className="college-input-field"
+              value={formData.year}
+              onChange={handleChange}
               required
             />
             <datalist id="years">
@@ -122,38 +175,45 @@ function FirstPageCollege() {
             </datalist>
             <label
               className="college-input-label"
-              htmlFor="College/University Name"
+              htmlFor="collegeName"
             >
               College/University Name
             </label>
             <input
               type="text"
-              id="College/University Name"
+              id="collegeName"
               className="college-input-field"
               placeholder=""
+              value={formData.collegeName}
+              onChange={handleChange}
               required
             />
             <label
               className="college-input-label"
-              htmlFor="Roll Number/Student ID"
+              htmlFor="rollNumber"
             >
               Roll Number/Student ID
             </label>
             <input
               type="text"
-              id="Roll Number/Student ID"
+              id="rollNumber"
               className="college-input-field"
               placeholder=""
+              value={formData.rollNumber}
+              onChange={handleChange}
               required
             />
-            <label className="college-input-label" htmlFor="Category">
+            <label className="college-input-label" htmlFor="category">
               Category
             </label>
             <input
               type="text"
+              id="category"
               placeholder="Select Category"
               list="categories"
               className="college-input-field"
+              value={formData.category}
+              onChange={handleChange}
               required
             />
             <datalist id="categories">
@@ -166,7 +226,7 @@ function FirstPageCollege() {
               <option value="ST" />
               <option value="EWS" />
             </datalist>
-            <button className="college-submit-button">
+            <button type="submit" className="college-submit-button">
               Complete Registration
             </button>
             <div className="beauty-box">
@@ -184,7 +244,7 @@ function FirstPageCollege() {
                 </p>
               </div>
             </div>
-          </div>
+          </form>
         </div>
       </div>
     </>
