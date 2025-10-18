@@ -57,6 +57,11 @@
   margin-top: 40px;
   border-radius: 50%;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 10;
+  background-color: white;
+  object-fit: contain;
+  padding: 5px;
 }
 .heading {
   font-size: 2.5rem;
