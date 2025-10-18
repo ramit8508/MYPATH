@@ -1,0 +1,160 @@
+.firstpage-college-container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(180deg, #112029 0%, #0E532C 40%, #194034 100%);
+  background-size: cover;
+  background-position: center;
+  padding: 24px;
+  box-sizing: border-box;
+  gap: 24px
+}
+.box-iconcollege{
+  font-size: 4rem;
+  margin-bottom: 20px;
+  color: white;
+  background-color: #00A63E;
+  border: 1px solid #00A63E;
+  border-radius: 50%;
+  padding: 12px;
+}
+.college-back-buttons {
+  display: flex;
+  gap: 12px;
+  flex-direction: row;
+}
+
+.college-back-button {
+  padding: 10px 18px;
+  font-size: 1rem;
+  color: #cbd5dc;
+  background: rgba(0, 0, 0, 0.32);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 8px;
+  cursor: pointer;
+}
+.college-heading{
+    color: #ffffff;
+    font-size: 2.5rem;
+    margin: 0;
+}
+.college-sub-heading{
+    color: #83E0C0;
+    font-size: 1.1rem;
+    margin: 0;
+}
+.college-box {
+  background: #1D2B38;
+  border-radius: 12px;
+  padding: 20px;
+  width: 900px;
+  max-width: 100%;
+  color: #e6eef9;
+}
+.college-box-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+.college-box-heading{
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-left: 300px;
+}
+.college-box-subheading{
+  font-size: 1rem;
+  width: 90%;
+  margin-left: 100px;
+  margin-bottom: 70px;
+  color:#8B929C;
+}
+.college-input-label{
+  color: #ECEDEE;
+  font-size: 0.9rem;
+  margin-bottom: 4px;
+  font-weight: 500;
+}
+.college-input-field{
+  
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  padding: 1rem 2.5rem 1rem 1.25rem;
+  line-height: 1.25;
+  background-color: #2d3748;
+  color: #d1d5db;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  box-shadow: lightgray 0px 0px 0px 0px;
+}
+.college-submit-button{
+  width: 100%;
+  padding: 12px;
+  background-color: #00A63E;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.college-submit-button:hover{
+  background-color: #008F34;
+}
+.beauty-box {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  width: 900px;
+  max-width: 90%;
+  margin-top: 20px;
+}
+
+.college-box .beauty-box {
+  margin-left: auto;
+  margin-right: auto;
+  align-self: center;
+}
+.beauty-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+ 
+}
+.content-box{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+}
+.box-icon2{
+  font-size: 3rem;
+  width: 20px;
+  height: 20px;
+  color: darkgreen;
+  background-color: #C0F1D2;
+  border : 1px solid #C0F1D2;
+  border-radius: 50%;
+  border-width: 1px;
+
+}
+.beauty-heading {
+  color:darkgreen ;
+  font-size: 1.5rem;
+  margin: 0;
+   font-size: 20px;
+   font-weight: 300;
+}
+.beauty-para {
+  color:#319B5D;
+  font-size: 1rem;
+  margin: 0;
+    font-size: 15px;
+}
+

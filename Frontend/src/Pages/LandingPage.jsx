@@ -18,8 +18,8 @@ function LandingPage() {
           </h2>
         </div>
         <div className="boxes">
-          <div className="box">
-            <HiAcademicCap className="box-icon" />
+          <div className="land-box">
+            <HiAcademicCap className="box-icon22" />
             <h1 className="box-title">School Student</h1>
             <h2 className="box-description">
               Class 8th - 12th<br />
@@ -61,8 +61,8 @@ function LandingPage() {
             </button>
             </Link>
           </div>
-            <div className="box">
-              <FaUniversity className="box-icon2" />
+            <div className="land-box">
+              <FaUniversity className="box-icon21" />
               <h1 className="box-title">College Student</h1>
               <h2 className="box-description">
                 Undergraduate &amp; Postgraduate<br />

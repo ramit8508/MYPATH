@@ -50,7 +50,7 @@ body {
   align-items: stretch;
 }
 
-.box {
+.land-box {
   background: #1f2937;
   border: 1px solid #374151;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
@@ -67,7 +67,7 @@ body {
   justify-content: flex-start;
 }
 
-.box-icon {
+.box-icon22 {
   font-size: 3.5rem;
   margin-bottom: 25px;
   color: #60a5fa;
@@ -76,7 +76,7 @@ body {
   border-radius: 50%;
   padding: 22px;
 }
-.box-icon2 {
+.box-icon21 {
   font-size: 3.5rem;
   margin-bottom: 25px;
   color: #34d399;
