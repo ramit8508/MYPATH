@@ -39,6 +39,9 @@ function FirstPageCollege() {
     
     console.log("Form submitted:", formData);
     
+    // Save user name to localStorage
+    localStorage.setItem('userName', formData.fullName);
+    
     // Navigate to college dashboard
     navigate("/dashboardcollege");
   };

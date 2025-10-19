@@ -28,6 +28,15 @@ function SecondPageSchool() {
     e.preventDefault();
     
     console.log("Form submitted:", formData);
+    console.log("Full Name value:", formData.fullName);
+
+    // Save user name to localStorage
+    if (formData.fullName && formData.fullName.trim() !== '') {
+      localStorage.setItem('userName', formData.fullName);
+      console.log("Saved to localStorage:", formData.fullName);
+    } else {
+      console.log("No name to save - fullName is empty");
+    }
 
     // Navigate to school dashboard
     navigate("/dashboardschool");
