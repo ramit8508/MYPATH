@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import "../../Styles/FirstpageSchool.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import logo from "../../assets/logo.png";
 
 function FirstpageSchool() {
+  const navigate = useNavigate();
   const [selectedClass, setSelectedClass] = useState("");
   const [selectedStream, setSelectedStream] = useState("");
 
@@ -11,6 +12,16 @@ function FirstpageSchool() {
     setSelectedClass(e.target.value);
     // Reset stream when class changes
     setSelectedStream("");
+  };
+
+  const handleContinue = () => {
+    // Save class and stream to localStorage
+    localStorage.setItem('userGrade', selectedClass);
+    if (selectedStream) {
+      localStorage.setItem('userStream', selectedStream);
+    }
+    // Navigate to second page
+    navigate("/secondpage");
   };
 
   const showStreamSelector =
@@ -134,16 +145,15 @@ function FirstpageSchool() {
               </div>
             )}
           </div>
-          <Link to="/secondpage">
-            <button
-              className="get-started-button"
-              disabled={
-                !selectedClass || (showStreamSelector && !selectedStream)
-              }
-            >
-              Continue to Registration
-            </button>
-          </Link>
+          <button
+            className="get-started-button"
+            onClick={handleContinue}
+            disabled={
+              !selectedClass || (showStreamSelector && !selectedStream)
+            }
+          >
+            Continue to Registration
+          </button>
           
           {infoContent && (
             <div className="info-card">

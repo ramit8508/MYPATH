@@ -39,8 +39,17 @@ function FirstPageCollege() {
     
     console.log("Form submitted:", formData);
     
-    // Save user name to localStorage
+    // Save all college student data to localStorage
     localStorage.setItem('userName', formData.fullName);
+    localStorage.setItem('userEmail', formData.email);
+    localStorage.setItem('userPhone', formData.phoneNumber);
+    localStorage.setItem('userCourse', formData.course);
+    localStorage.setItem('userSpecialization', formData.specialization);
+    localStorage.setItem('userYear', formData.year);
+    localStorage.setItem('userCollege', formData.collegeName);
+    localStorage.setItem('userRollNumber', formData.rollNumber);
+    localStorage.setItem('userCategory', formData.category);
+    localStorage.setItem('userType', 'college'); // Save user type as college
     
     // Navigate to college dashboard
     navigate("/dashboardcollege");

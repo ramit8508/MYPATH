@@ -1,8 +1,11 @@
 import React from 'react'
+import "../../Styles/Syllabus.css"
 
-export default function Syllabus() {
+export default function SyllabusSchool() {
   return (
-    <div>Syllabus</div>
+    <>
+    <h1>this is school syllabus</h1>
+    </>
   )
 }
 

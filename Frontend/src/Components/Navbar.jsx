@@ -1,79 +1,12 @@
 import React, { useState, useEffect } from 'react'
 import logo from '../assets/logo.png'
-import { Link } from 'react-router-dom'
-
-const navbar={
-    "display" : 'flex',
-    'flexDirection' : 'row',
-    'alignItems': 'center',
-    'justifyContent': 'space-between',
-    'padding': '10px 20px',
-    'backgroundColor': '#1e293b',
-    'boxShadow': '0 2px 4px rgba(0, 0, 0, 0.1)',
-}
-const mypathlogo={
-    "width" :  '40px',
-  "height" :  '40px',
-  "marginLeft" :  '20px',
-  "borderRadius": '50%',
-  "backgroundColor": 'white',
-  "padding": '2px',
-}
-
-const heading = {
-  "fontSize": '24px',
-  "fontWeight": 'bold',
-  "marginLeft": '10px',
-  "color": '#fff',
-}
-
-const subheading = {
-  "fontSize": '16px',
-  "color": '#94a3b8',
-  "flex": 1,
-  "marginLeft": '20px',
-}
-
-const welcomeText = {
-  "fontSize": '16px',
-  "color": 'white',
-  "fontWeight": '600',
-  "marginRight": '20px',
-  "whiteSpace": 'nowrap',
-  "backgroundColor": 'lightgreen',
-  "padding": '6px 12px',
-  "borderRadius": '5px',
-  "border": '1px solid lightgreen',
-}
-
-const icon1 = {
-    "marginRight": '20px',
-    "color": 'white',
-    "textDecoration": 'none',
-    "fontSize": '16px',
-    "fontWeight": '500',
-}
-const icon2 = {
-    "marginRight": '20px',
-    "color": 'white',
-    "textDecoration": 'none',
-    "fontSize": '16px',
-    "fontWeight": '500',
-    "border": '1px solid #155DFC',
-    "padding": '6px 12px',
-    "borderRadius": '5px',
-    "backgroundColor": '#155DFC',
-}
-const icon3 = {
-    "marginRight": '20px',
-    "color": 'white',
-    "textDecoration": 'none',
-    "fontSize": '16px',
-    "fontWeight": '500',
-}
+import { Link, useLocation } from 'react-router-dom'
+import '../Styles/Navbar.css'
 
 export default function Navbar() {
   const [userName, setUserName] = useState('');
+  const [userType, setUserType] = useState('school'); // default to school
+  const location = useLocation();
 
   useEffect(() => {
     // Get user name from localStorage
@@ -83,12 +16,22 @@ export default function Navbar() {
       setUserName(storedName);
     }
 
+    // Get user type from localStorage
+    const storedUserType = localStorage.getItem('userType');
+    if (storedUserType) {
+      setUserType(storedUserType);
+    }
+
     // Listen for storage changes
     const handleStorageChange = () => {
       const updatedName = localStorage.getItem('userName');
+      const updatedUserType = localStorage.getItem('userType');
       console.log('Storage changed, new userName:', updatedName);
       if (updatedName) {
         setUserName(updatedName);
+      }
+      if (updatedUserType) {
+        setUserType(updatedUserType);
       }
     };
 
@@ -100,27 +43,31 @@ export default function Navbar() {
   }, []);
 
   console.log('Current userName state:', userName);
+  console.log('Current userType:', userType);
+
+  // Determine syllabus, dashboard, and notifications links based on userType
+  const syllabusLink = userType === 'college' ? '/syllabuscollege' : '/syllabusschool';
+  const dashboardLink = userType === 'college' ? '/dashboardcollege' : '/dashboardschool';
+  const notificationsLink = userType === 'college' ? '/notificationscollege' : '/notificationsschool';
 
   return (
-    <>
-      <div style={navbar}>
-        <div style={{display: 'flex', alignItems: 'center'}}>
-          <img style={mypathlogo} src={logo} alt="Logo" className="logo" />
-          <h1 style={heading}>MYPATH</h1>
-          <h2 style={subheading}>Your Personalized Academic Journey</h2>
-        </div>
-        <div style={{display: 'flex', alignItems: 'center'}}>
-          {userName && <span style={welcomeText}>Welcome, {userName}!</span>}
-          <Link style={icon1} to='/'>Start Over</Link>
-          <Link style={icon3} to='/notifications'>🔔Notifications</Link>
-          <Link style={icon3} to='/syllabus'>📚Syllabus</Link>
-          <Link style={icon2} to='/dashboardschool'>Dashboard</Link>
-          <Link style={icon1} to='/feedback'>Feedback</Link>
-
-        </div>
+    <div className="navbar">
+      <div className="navbar-left">
+        <img src={logo} alt="Logo" className="navbar-logo" />
+        <h1 className="navbar-heading">MYPATH</h1>
+        <h2 className="navbar-subheading">Your Personalized Academic Journey</h2>
       </div>
-    </>
+      <div className="navbar-right">
+        {userName && <span className="navbar-welcome">Welcome, {userName}!</span>}
+        <Link className="navbar-link" to='/'>Start Over</Link>
+        <Link className="navbar-link" to={notificationsLink}>🔔Notifications</Link>
+        <Link className="navbar-link" to={syllabusLink}>📚Syllabus</Link>
+        <Link className="navbar-link-primary" to={dashboardLink}>Dashboard</Link>
+        <Link className="navbar-link" to='/feedback'>Feedback</Link>
+      </div>
+    </div>
   )
 }
+
 
 

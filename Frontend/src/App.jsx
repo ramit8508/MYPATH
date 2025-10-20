@@ -8,8 +8,10 @@ import FirstPageCollege from "./Pages/ContinueAsCollegeStudent/FirstPageCollege"
 import DashBoardSchool from "./Pages/ContinueAsSchoolStudent/DashBoardSchool";
 import DashBoardCollege from "./Pages/ContinueAsCollegeStudent/DashBoardCollege";
 import Feedback from "./Pages/ContinueAsSchoolStudent/Feedback";
-import Notifications from "./Pages/ContinueAsSchoolStudent/Notifications";
-import Syllabus from "./Pages/ContinueAsSchoolStudent/Syllabus";
+import NotificationsSchool from "./Pages/ContinueAsSchoolStudent/Notifications";
+import NotificationsCollege from "./Pages/ContinueAsCollegeStudent/Notifications";
+import SyllabusSchool from "./Pages/ContinueAsSchoolStudent/Syllabus";
+import SyllabusCollege from "./Pages/ContinueAsCollegeStudent/Syllabus";
 
 function App() {
   const location = useLocation();
@@ -18,8 +20,10 @@ function App() {
     location.pathname === "/dashboardschool" ||
     location.pathname === "/dashboardcollege" ||
     location.pathname === "/feedback" ||
-    location.pathname === "/notifications" ||
-    location.pathname === "/syllabus";
+    location.pathname === "/notificationsschool" ||
+    location.pathname === "/notificationscollege" ||
+    location.pathname === "/syllabusschool" ||
+    location.pathname === "/syllabuscollege";
 
   return (
     <>
@@ -32,8 +36,10 @@ function App() {
         <Route path="/dashboardschool" element={<DashBoardSchool />} />
         <Route path="/dashboardcollege" element={<DashBoardCollege />} />
         <Route path="/feedback" element={<Feedback />} />
-        <Route path="/notifications" element={<Notifications />} />
-        <Route path="/syllabus" element={<Syllabus />} />
+        <Route path="/notificationsschool" element={<NotificationsSchool />} />
+        <Route path="/notificationscollege" element={<NotificationsCollege />} />
+        <Route path="/syllabusschool" element={<SyllabusSchool />} />
+        <Route path="/syllabuscollege" element={<SyllabusCollege />} />
       </Routes>
     </>
   );

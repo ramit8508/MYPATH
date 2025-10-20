@@ -1,0 +1,209 @@
+.main-container{
+    display : flex;
+    flex-direction : column;
+    background-color: #0A0A0A;
+    min-height : 100vh;
+    width : 100%;
+    padding-top: 20px;
+    margin-top: 20px;
+    margin : 0;
+    align-items: center;
+    
+    
+}
+.student-profile{
+    display : flex;
+    flex-direction : column;
+    background-color:#1e293b;
+    width: 95%;
+    height : 290px;
+    border : 1px solid #94a3b8;
+    border-radius: 12px;
+    color : #FFFFFF;
+    gap: 5px;
+}
+.profile-heading{
+    margin-left: 25px;
+    font-size: 18px;
+    font-weight: 400;
+}
+.profile-subheading{
+    margin-left: 25px;
+    font-size: 14px;
+    color : #94a3b8;
+    margin-top: -10px;
+    margin-bottom: 15px;
+}
+.profile-details{
+    display : flex;
+    flex-direction: row;
+    gap : 15%;
+    margin-left: 25px;
+    align-items: center;
+    justify-content: center;
+    
+}
+.profile-detail{
+    display : flex;
+    flex-direction : column;
+    gap: 8px;
+    width : auto;
+    align-items: baseline;
+}
+.details-style{
+    font-size: 16px;
+    color : #51A2FF;
+    font-weight: 600;
+    margin: 0;
+}
+
+.detail-value {
+    font-size: 16px;
+    font-weight: 400;
+    color: #e5e7eb;
+    margin: 0;
+}
+
+.separator-line {
+    width: 90%;
+    height: 1px;
+    background-color: #94a3b8;
+    margin: 20px auto;
+}
+
+.college-details{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    gap : 15%;
+    margin-left: 25px;
+    align-items: center;    
+    justify-content: center;
+    margin-top: 20px;
+}
+.number-container{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    width: 95%;
+}
+
+.box{
+    background-color: #1e293b;
+    border-radius: 12px;
+    flex: 1;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 20px;
+    border: 1px solid #334155;
+    gap: 8px;
+}
+
+.box1-icon-wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+    width: 100%;
+}
+
+.box-icon1212 {
+    font-size: 32px;
+    color: #10b981;
+}
+
+.box-icon1213 {
+    font-size: 32px;
+    color: #3b82f6;
+}
+
+.box-icon1214 {
+    font-size: 32px;
+    color: #ef4444;
+}
+
+.box1-icon-wrapper h1 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #10b981;
+    margin: 0;
+}
+
+.box:nth-child(2) .box1-icon-wrapper h1 {
+    color: #3b82f6;
+}
+
+.box:nth-child(3) .box1-icon-wrapper h1 {
+    color: #ef4444;
+}
+
+.box-heading{
+    color: #94a3b8;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0;
+    padding-left: 0;
+}
+.exam-head-container{
+    display : flex;
+    flex-direction : row;
+    align-items: center;
+    justify-content: space-between;
+    width: 95%;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.exam-heading{
+    color : #FFFFFF;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0;
+    flex: 1;
+}
+
+.exam-head-container .button1,
+.exam-head-container .button2,
+.exam-head-container .button3 {
+    margin-left: 10px;
+}
+
+.button1{
+    background-color: transparent;
+    color : #10b981;
+    padding: 6px 14px;
+    border-radius: 12px;
+    font-size: 13px;
+    font-weight: 400;
+    border : 1.5px solid #10b981;
+    margin: 0;
+    white-space: nowrap;
+}
+.button2{
+    background-color: transparent;
+    color : #3b82f6;
+    padding: 6px 14px;
+    border-radius: 12px;
+    font-size: 13px;
+    font-weight: 400;
+    border : 1.5px solid #3b82f6;
+    margin: 0;
+    white-space: nowrap;
+}
+.button3{
+    background-color: transparent;
+    color : #ef4444;
+    padding: 6px 14px;
+    border-radius: 12px;
+    font-size: 13px;
+    font-weight: 400;
+    border : 1.5px solid #ef4444;
+    margin: 0;
+    white-space: nowrap;
+}

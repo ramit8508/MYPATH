@@ -30,10 +30,18 @@ function SecondPageSchool() {
     console.log("Form submitted:", formData);
     console.log("Full Name value:", formData.fullName);
 
-    // Save user name to localStorage
+    // Save all user data to localStorage
     if (formData.fullName && formData.fullName.trim() !== '') {
       localStorage.setItem('userName', formData.fullName);
-      console.log("Saved to localStorage:", formData.fullName);
+      localStorage.setItem('userEmail', formData.email);
+      localStorage.setItem('userPhone', formData.phone);
+      localStorage.setItem('userSchool', formData.school);
+      localStorage.setItem('userBoard', formData.educationBoard);
+      localStorage.setItem('userRollNumber', formData.rollNumber);
+      localStorage.setItem('userCity', formData.city);
+      localStorage.setItem('userState', formData.state);
+      localStorage.setItem('userType', 'school'); // Save user type as school
+      console.log("Saved all data to localStorage:", formData);
     } else {
       console.log("No name to save - fullName is empty");
     }
