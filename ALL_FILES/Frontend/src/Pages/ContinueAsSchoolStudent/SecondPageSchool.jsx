@@ -48,8 +48,26 @@ function SecondPageSchool() {
 
     console.log("Form submitted:", formData);
     
+    // Save registration data to localStorage (temporary until backend is ready)
+    // Store user credentials for login verification
+    localStorage.setItem('registeredUserEmail_school', formData.email);
+    localStorage.setItem('registeredUserPassword_school', formData.password);
+    
+    // Store all user profile data
+    localStorage.setItem('schoolUserData', JSON.stringify({
+      fullName: formData.fullName,
+      email: formData.email,
+      phone: formData.phone,
+      school: formData.school,
+      educationBoard: formData.educationBoard,
+      rollNumber: formData.rollNumber,
+      city: formData.city,
+      state: formData.state,
+      grade: localStorage.getItem('userGrade') || 'N/A',
+      stream: localStorage.getItem('userStream') || 'N/A'
+    }));
+    
     // TODO: Send registration data to backend API
-    // For now, just show success message and navigate to login
     alert("Registration successful! Please login with your credentials.");
     
     // Navigate to school login page

@@ -30,12 +30,42 @@ function LoginSchool() {
 
     console.log("Login submitted:", formData);
     
-    // TODO: Call backend API for login and get user data
-    // For now, simulate successful login
-    // Backend will return user profile data which we'll store
+    // Verify credentials against stored registration data
+    const registeredEmail = localStorage.getItem('registeredUserEmail_school');
+    const registeredPassword = localStorage.getItem('registeredUserPassword_school');
     
-    // Temporary: Set userType for navigation
-    localStorage.setItem('userType', 'school');
+    if (!registeredEmail || !registeredPassword) {
+      setError("No registered account found. Please sign up first.");
+      return;
+    }
+    
+    if (formData.email !== registeredEmail) {
+      setError("Email not found. Please check your email or sign up.");
+      return;
+    }
+    
+    if (formData.password !== registeredPassword) {
+      setError("Incorrect password. Please try again.");
+      return;
+    }
+    
+    // Login successful - retrieve and restore user data
+    const userData = localStorage.getItem('schoolUserData');
+    if (userData) {
+      const user = JSON.parse(userData);
+      // Restore all user data to localStorage for dashboard
+      localStorage.setItem('userName', user.fullName);
+      localStorage.setItem('userEmail', user.email);
+      localStorage.setItem('userPhone', user.phone);
+      localStorage.setItem('userSchool', user.school);
+      localStorage.setItem('userBoard', user.educationBoard);
+      localStorage.setItem('userRollNumber', user.rollNumber);
+      localStorage.setItem('userCity', user.city);
+      localStorage.setItem('userState', user.state);
+      localStorage.setItem('userGrade', user.grade);
+      localStorage.setItem('userStream', user.stream);
+      localStorage.setItem('userType', 'school');
+    }
     
     // Navigate to school dashboard after successful login
     navigate("/dashboardschool");

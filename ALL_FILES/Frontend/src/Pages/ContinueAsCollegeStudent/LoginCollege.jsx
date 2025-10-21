@@ -30,12 +30,41 @@ function LoginCollege() {
 
     console.log("Login submitted:", formData);
     
-    // TODO: Call backend API for login and get user data
-    // For now, simulate successful login
-    // Backend will return user profile data which we'll store
+    // Verify credentials against stored registration data
+    const registeredEmail = localStorage.getItem('registeredUserEmail_college');
+    const registeredPassword = localStorage.getItem('registeredUserPassword_college');
     
-    // Temporary: Set userType for navigation
-    localStorage.setItem('userType', 'college');
+    if (!registeredEmail || !registeredPassword) {
+      setError("No registered account found. Please sign up first.");
+      return;
+    }
+    
+    if (formData.email !== registeredEmail) {
+      setError("Email not found. Please check your email or sign up.");
+      return;
+    }
+    
+    if (formData.password !== registeredPassword) {
+      setError("Incorrect password. Please try again.");
+      return;
+    }
+    
+    // Login successful - retrieve and restore user data
+    const userData = localStorage.getItem('collegeUserData');
+    if (userData) {
+      const user = JSON.parse(userData);
+      // Restore all user data to localStorage for dashboard
+      localStorage.setItem('userName', user.fullName);
+      localStorage.setItem('userEmail', user.email);
+      localStorage.setItem('userPhone', user.phoneNumber);
+      localStorage.setItem('userCourse', user.course);
+      localStorage.setItem('userSpecialization', user.specialization);
+      localStorage.setItem('userYear', user.year);
+      localStorage.setItem('userCollege', user.collegeName);
+      localStorage.setItem('userRollNumber', user.rollNumber);
+      localStorage.setItem('userCategory', user.category);
+      localStorage.setItem('userType', 'college');
+    }
     
     // Navigate to college dashboard after successful login
     navigate("/dashboardcollege");

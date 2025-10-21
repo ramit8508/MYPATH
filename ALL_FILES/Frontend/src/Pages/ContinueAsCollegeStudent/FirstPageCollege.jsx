@@ -51,8 +51,25 @@ function FirstPageCollege() {
     
     console.log("Form submitted:", formData);
     
+    // Save registration data to localStorage (temporary until backend is ready)
+    // Store user credentials for login verification
+    localStorage.setItem('registeredUserEmail_college', formData.email);
+    localStorage.setItem('registeredUserPassword_college', formData.password);
+    
+    // Store all user profile data
+    localStorage.setItem('collegeUserData', JSON.stringify({
+      fullName: formData.fullName,
+      email: formData.email,
+      phoneNumber: formData.phoneNumber,
+      course: formData.course,
+      specialization: formData.specialization,
+      year: formData.year,
+      collegeName: formData.collegeName,
+      rollNumber: formData.rollNumber,
+      category: formData.category
+    }));
+    
     // TODO: Send registration data to backend API
-    // For now, just show success message and navigate to login
     alert("Registration successful! Please login with your credentials.");
     
     // Navigate to college login page
