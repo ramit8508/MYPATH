@@ -9,6 +9,8 @@ function FirstPageCollege() {
     fullName: "",
     email: "",
     phoneNumber: "",
+    password: "",
+    confirmPassword: "",
     course: "",
     specialization: "",
     year: "",
@@ -29,30 +31,32 @@ function FirstPageCollege() {
     e.preventDefault();
     
     // Check if all required fields are filled
-    const requiredFields = ['fullName', 'email', 'phoneNumber', 'course', 'year', 'collegeName', 'rollNumber', 'category'];
+    const requiredFields = ['fullName', 'email', 'phoneNumber', 'password', 'confirmPassword', 'course', 'year', 'collegeName', 'rollNumber', 'category'];
     const isFormValid = requiredFields.every(field => formData[field].trim() !== '');
     
     if (!isFormValid) {
       alert("Please fill in all required fields before submitting.");
       return;
     }
+
+    // Password validations
+    if (formData.password.length < 8) {
+      alert("Password must be at least 8 characters long.");
+      return;
+    }
+    if (formData.password !== formData.confirmPassword) {
+      alert("Passwords do not match. Please re-enter.");
+      return;
+    }
     
     console.log("Form submitted:", formData);
     
-    // Save all college student data to localStorage
-    localStorage.setItem('userName', formData.fullName);
-    localStorage.setItem('userEmail', formData.email);
-    localStorage.setItem('userPhone', formData.phoneNumber);
-    localStorage.setItem('userCourse', formData.course);
-    localStorage.setItem('userSpecialization', formData.specialization);
-    localStorage.setItem('userYear', formData.year);
-    localStorage.setItem('userCollege', formData.collegeName);
-    localStorage.setItem('userRollNumber', formData.rollNumber);
-    localStorage.setItem('userCategory', formData.category);
-    localStorage.setItem('userType', 'college'); // Save user type as college
+    // TODO: Send registration data to backend API
+    // For now, just show success message and navigate to login
+    alert("Registration successful! Please login with your credentials.");
     
-    // Navigate to college dashboard
-    navigate("/dashboardcollege");
+    // Navigate to college login page
+    navigate("/logincollege");
   };
 
   return (
@@ -113,6 +117,30 @@ function FirstPageCollege() {
               className="college-input-field"
               placeholder=""
               value={formData.phoneNumber}
+              onChange={handleChange}
+              required
+            />
+            <label className="college-input-label" htmlFor="password">
+              Password
+            </label>
+            <input
+              type="password"
+              id="password"
+              className="college-input-field"
+              placeholder="Create a strong password (min 8 chars)"
+              value={formData.password}
+              onChange={handleChange}
+              required
+            />
+            <label className="college-input-label" htmlFor="confirmPassword">
+              Confirm Password
+            </label>
+            <input
+              type="password"
+              id="confirmPassword"
+              className="college-input-field"
+              placeholder="Re-enter your password"
+              value={formData.confirmPassword}
               onChange={handleChange}
               required
             />
@@ -238,6 +266,12 @@ function FirstPageCollege() {
               <option value="ST" />
               <option value="EWS" />
             </datalist>
+            <div className="login-link-container" style={{ textAlign: 'center', marginTop: '15px', marginBottom: '10px' }}>
+              <span style={{ color: '#94a3b8', fontSize: '14px' }}>Already registered? </span>
+              <Link to="/logincollege" style={{ color: '#8B5CF6', textDecoration: 'none', fontWeight: '500', fontSize: '14px' }}>
+                Login here
+              </Link>
+            </div>
             <button type="submit" className="college-submit-button">
               Complete Registration
             </button>

@@ -1,0 +1,75 @@
+/* Login School Page Styles - Matching SecondPageSchool.css */
+.login-school-container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+.login-school-logo {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 20px;
+}
+
+.login-form {
+  width: 100%;
+}
+
+.error-message {
+  background-color: rgba(239, 68, 68, 0.1);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  color: #FCA5A5;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.forgot-password-link {
+  text-align: right;
+  margin-top: -8px;
+  margin-bottom: 16px;
+}
+
+.signup-link-container {
+  text-align: center;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .login-school-container {
+    padding: 16px;
+  }
+  
+  .heading {
+    font-size: 2rem;
+  }
+  
+  .sub-heading {
+    font-size: 1rem;
+  }
+  
+  .login-school-logo {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .heading {
+    font-size: 1.75rem;
+  }
+  
+  .section-heading {
+    font-size: 1.25rem;
+  }
+}

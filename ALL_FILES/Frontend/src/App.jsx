@@ -12,6 +12,8 @@ import NotificationsSchool from "./Pages/ContinueAsSchoolStudent/Notifications";
 import NotificationsCollege from "./Pages/ContinueAsCollegeStudent/Notifications";
 import SyllabusSchool from "./Pages/ContinueAsSchoolStudent/Syllabus";
 import SyllabusCollege from "./Pages/ContinueAsCollegeStudent/Syllabus";
+import LoginSchool from "./Pages/ContinueAsSchoolStudent/LoginSchool";
+import LoginCollege from "./Pages/ContinueAsCollegeStudent/LoginCollege";
 
 function App() {
   const location = useLocation();
@@ -40,6 +42,8 @@ function App() {
         <Route path="/notificationscollege" element={<NotificationsCollege />} />
         <Route path="/syllabusschool" element={<SyllabusSchool />} />
         <Route path="/syllabuscollege" element={<SyllabusCollege />} />
+        <Route path="/loginschool" element={<LoginSchool />} />
+        <Route path="/logincollege" element={<LoginCollege />} />
       </Routes>
     </>
   );

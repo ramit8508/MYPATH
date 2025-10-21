@@ -9,6 +9,8 @@ function SecondPageSchool() {
     fullName: "",
     email: "",
     phone: "",
+    password: "",
+    confirmPassword: "",
     school: "",
     educationBoard: "",
     rollNumber: "",
@@ -27,27 +29,31 @@ function SecondPageSchool() {
   const handleSubmit = (e) => {
     e.preventDefault();
     
-    console.log("Form submitted:", formData);
-    console.log("Full Name value:", formData.fullName);
-
-    // Save all user data to localStorage
-    if (formData.fullName && formData.fullName.trim() !== '') {
-      localStorage.setItem('userName', formData.fullName);
-      localStorage.setItem('userEmail', formData.email);
-      localStorage.setItem('userPhone', formData.phone);
-      localStorage.setItem('userSchool', formData.school);
-      localStorage.setItem('userBoard', formData.educationBoard);
-      localStorage.setItem('userRollNumber', formData.rollNumber);
-      localStorage.setItem('userCity', formData.city);
-      localStorage.setItem('userState', formData.state);
-      localStorage.setItem('userType', 'school'); // Save user type as school
-      console.log("Saved all data to localStorage:", formData);
-    } else {
-      console.log("No name to save - fullName is empty");
+    // Validate required fields
+    const required = ['fullName','email','phone','password','confirmPassword','school','educationBoard','rollNumber','city','state'];
+    const missing = required.filter(k => !String(formData[k] || '').trim());
+    if (missing.length) {
+      alert('Please fill in all required fields.');
+      return;
     }
 
-    // Navigate to school dashboard
-    navigate("/dashboardschool");
+    if (formData.password.length < 8) {
+      alert('Password must be at least 8 characters long.');
+      return;
+    }
+    if (formData.password !== formData.confirmPassword) {
+      alert('Passwords do not match. Please re-enter.');
+      return;
+    }
+
+    console.log("Form submitted:", formData);
+    
+    // TODO: Send registration data to backend API
+    // For now, just show success message and navigate to login
+    alert("Registration successful! Please login with your credentials.");
+    
+    // Navigate to school login page
+    navigate("/loginschool");
   };
 
   return (
@@ -115,6 +121,38 @@ function SecondPageSchool() {
                 value={formData.phone}
                 onChange={handleChange}
                 placeholder="+91 XXXXX XXXXX"
+                className="form-input"
+                required
+              />
+            </div>
+
+            <div className="form-group">
+              <label htmlFor="password" className="form-label">
+                Password
+              </label>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                value={formData.password}
+                onChange={handleChange}
+                placeholder="Create a strong password (min 8 chars)"
+                className="form-input"
+                required
+              />
+            </div>
+
+            <div className="form-group">
+              <label htmlFor="confirmPassword" className="form-label">
+                Confirm Password
+              </label>
+              <input
+                type="password"
+                id="confirmPassword"
+                name="confirmPassword"
+                value={formData.confirmPassword}
+                onChange={handleChange}
+                placeholder="Re-enter your password"
                 className="form-input"
                 required
               />
@@ -215,6 +253,13 @@ function SecondPageSchool() {
                 />
               </div>
             </div>
+          </div>
+
+          <div className="login-link-container" style={{ textAlign: 'center', marginTop: '20px', marginBottom: '10px' }}>
+            <span style={{ color: '#94a3b8', fontSize: '14px' }}>Already registered? </span>
+            <Link to="/loginschool" style={{ color: '#8B5CF6', textDecoration: 'none', fontWeight: '500', fontSize: '14px' }}>
+              Login here
+            </Link>
           </div>
 
           <button type="submit" className="submit-button">

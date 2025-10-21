@@ -1,0 +1,62 @@
+/* Login College Page Styles - Matching FirstpageCollege.css */
+.login-college-container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(180deg, #112029 0%, #0E532C 40%, #194034 100%);
+  background-size: cover;
+  background-position: center;
+  padding: 24px;
+  box-sizing: border-box;
+  gap: 24px;
+}
+
+.error-message {
+  background-color: rgba(239, 68, 68, 0.1);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  color: #FCA5A5;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.forgot-password-link {
+  text-align: right;
+  margin-top: -8px;
+  margin-bottom: 16px;
+}
+
+.signup-link-container {
+  text-align: center;
+  margin-top: 16px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .login-college-container {
+    padding: 16px;
+  }
+  
+  .college-heading {
+    font-size: 2rem;
+  }
+  
+  .college-sub-heading {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .college-heading {
+    font-size: 1.75rem;
+  }
+  
+  .college-box-heading {
+    font-size: 1.5rem;
+  }
+}
