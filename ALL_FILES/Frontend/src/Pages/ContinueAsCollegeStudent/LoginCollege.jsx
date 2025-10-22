@@ -20,7 +20,7 @@ function LoginCollege() {
     setError(""); // Clear error on input change
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     
     if (!formData.email || !formData.password) {
@@ -28,46 +28,49 @@ function LoginCollege() {
       return;
     }
 
-    console.log("Login submitted:", formData);
-    
-    // Verify credentials against stored registration data
-    const registeredEmail = localStorage.getItem('registeredUserEmail_college');
-    const registeredPassword = localStorage.getItem('registeredUserPassword_college');
-    
-    if (!registeredEmail || !registeredPassword) {
-      setError("No registered account found. Please sign up first.");
-      return;
+    try {
+      // Send login request to backend API
+      const response = await fetch('/api/college/auth/login', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          email: formData.email,
+          password: formData.password
+        }),
+      });
+
+      const data = await response.json();
+
+      if (response.ok && data.success) {
+        // Store the JWT token for authenticated requests
+        localStorage.setItem('authToken', data.token);
+        
+        // Store user type for dashboard
+        localStorage.setItem('userType', 'college');
+        
+        // Store all user data for the dashboard
+        localStorage.setItem('userName', data.student.fullName);
+        localStorage.setItem('userEmail', data.student.email);
+        localStorage.setItem('userPhone', data.student.phoneNumber);
+        localStorage.setItem('userCourse', data.student.course);
+        localStorage.setItem('userSpecialization', data.student.specialization);
+        localStorage.setItem('userYear', data.student.year);
+        localStorage.setItem('userCollege', data.student.collegeName);
+        localStorage.setItem('userRollNumber', data.student.rollNumber);
+        localStorage.setItem('userCategory', data.student.category);
+        
+        // Navigate to college dashboard after successful login
+        navigate("/dashboardcollege");
+      } else {
+        // Show error message from backend
+        setError(data.message || 'Login failed. Please check your credentials.');
+      }
+    } catch (error) {
+      console.error('Login error:', error);
+      setError('Unable to connect to server. Please check if the backend is running and try again.');
     }
-    
-    if (formData.email !== registeredEmail) {
-      setError("Email not found. Please check your email or sign up.");
-      return;
-    }
-    
-    if (formData.password !== registeredPassword) {
-      setError("Incorrect password. Please try again.");
-      return;
-    }
-    
-    // Login successful - retrieve and restore user data
-    const userData = localStorage.getItem('collegeUserData');
-    if (userData) {
-      const user = JSON.parse(userData);
-      // Restore all user data to localStorage for dashboard
-      localStorage.setItem('userName', user.fullName);
-      localStorage.setItem('userEmail', user.email);
-      localStorage.setItem('userPhone', user.phoneNumber);
-      localStorage.setItem('userCourse', user.course);
-      localStorage.setItem('userSpecialization', user.specialization);
-      localStorage.setItem('userYear', user.year);
-      localStorage.setItem('userCollege', user.collegeName);
-      localStorage.setItem('userRollNumber', user.rollNumber);
-      localStorage.setItem('userCategory', user.category);
-      localStorage.setItem('userType', 'college');
-    }
-    
-    // Navigate to college dashboard after successful login
-    navigate("/dashboardcollege");
   };
 
   return (

@@ -26,7 +26,7 @@ function SecondPageSchool() {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     
     // Validate required fields
@@ -46,32 +46,63 @@ function SecondPageSchool() {
       return;
     }
 
-    console.log("Form submitted:", formData);
-    
-    // Save registration data to localStorage (temporary until backend is ready)
-    // Store user credentials for login verification
-    localStorage.setItem('registeredUserEmail_school', formData.email);
-    localStorage.setItem('registeredUserPassword_school', formData.password);
-    
-    // Store all user profile data
-    localStorage.setItem('schoolUserData', JSON.stringify({
-      fullName: formData.fullName,
-      email: formData.email,
-      phone: formData.phone,
-      school: formData.school,
-      educationBoard: formData.educationBoard,
-      rollNumber: formData.rollNumber,
-      city: formData.city,
-      state: formData.state,
-      grade: localStorage.getItem('userGrade') || 'N/A',
-      stream: localStorage.getItem('userStream') || 'N/A'
-    }));
-    
-    // TODO: Send registration data to backend API
-    alert("Registration successful! Please login with your credentials.");
-    
-    // Navigate to school login page
-    navigate("/loginschool");
+    try {
+      // Get grade and stream from localStorage (set in FirstPageSchool)
+      const grade = localStorage.getItem('userGrade') || '';
+      const stream = localStorage.getItem('userStream') || '';
+
+      // Send registration data to backend API
+      const response = await fetch('/api/school/auth/register', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          fullName: formData.fullName,
+          email: formData.email,
+          phone: formData.phone,
+          password: formData.password,
+          school: formData.school,
+          educationBoard: formData.educationBoard,
+          rollNumber: formData.rollNumber,
+          city: formData.city,
+          state: formData.state,
+          grade,
+          stream
+        }),
+      });
+
+      const data = await response.json();
+
+      if (response.ok && data.success) {
+        // Store the JWT token for authenticated requests
+        localStorage.setItem('authToken', data.token);
+        
+        // Store user type for dashboard
+        localStorage.setItem('userType', 'school');
+        
+        // Store all user data for the dashboard
+        localStorage.setItem('fullName', data.student.fullName);
+        localStorage.setItem('userEmail', data.student.email);
+        localStorage.setItem('userPhone', data.student.phone);
+        localStorage.setItem('userSchool', data.student.school);
+        localStorage.setItem('userEducationBoard', data.student.educationBoard);
+        localStorage.setItem('userRollNumber', data.student.rollNumber);
+        localStorage.setItem('userCity', data.student.city);
+        localStorage.setItem('userState', data.student.state);
+        localStorage.setItem('userGrade', data.student.grade);
+        localStorage.setItem('userStream', data.student.stream);
+        
+        alert('Registration successful! Please login with your credentials.');
+        navigate('/loginschool');
+      } else {
+        // Show error message from backend
+        alert(data.message || 'Registration failed. Please try again.');
+      }
+    } catch (error) {
+      console.error('Registration error:', error);
+      alert('Unable to connect to server. Please check if the backend is running and try again.');
+    }
   };
 
   return (

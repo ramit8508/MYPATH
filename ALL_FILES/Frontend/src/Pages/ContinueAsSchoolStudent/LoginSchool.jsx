@@ -20,7 +20,7 @@ function LoginSchool() {
     setError(""); // Clear error on input change
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     
     if (!formData.email || !formData.password) {
@@ -28,47 +28,50 @@ function LoginSchool() {
       return;
     }
 
-    console.log("Login submitted:", formData);
-    
-    // Verify credentials against stored registration data
-    const registeredEmail = localStorage.getItem('registeredUserEmail_school');
-    const registeredPassword = localStorage.getItem('registeredUserPassword_school');
-    
-    if (!registeredEmail || !registeredPassword) {
-      setError("No registered account found. Please sign up first.");
-      return;
+    try {
+      // Send login request to backend API
+      const response = await fetch('/api/school/auth/login', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          email: formData.email,
+          password: formData.password
+        }),
+      });
+
+      const data = await response.json();
+
+      if (response.ok && data.success) {
+        // Store the JWT token for authenticated requests
+        localStorage.setItem('authToken', data.token);
+        
+        // Store user type for dashboard
+        localStorage.setItem('userType', 'school');
+        
+        // Store all user data for the dashboard
+        localStorage.setItem('userName', data.student.fullName);
+        localStorage.setItem('userEmail', data.student.email);
+        localStorage.setItem('userPhone', data.student.phone);
+        localStorage.setItem('userSchool', data.student.school);
+        localStorage.setItem('userBoard', data.student.educationBoard);
+        localStorage.setItem('userRollNumber', data.student.rollNumber);
+        localStorage.setItem('userCity', data.student.city);
+        localStorage.setItem('userState', data.student.state);
+        localStorage.setItem('userGrade', data.student.grade || 'N/A');
+        localStorage.setItem('userStream', data.student.stream || 'N/A');
+        
+        // Navigate to school dashboard after successful login
+        navigate("/dashboardschool");
+      } else {
+        // Show error message from backend
+        setError(data.message || 'Login failed. Please check your credentials.');
+      }
+    } catch (error) {
+      console.error('Login error:', error);
+      setError('Unable to connect to server. Please check if the backend is running and try again.');
     }
-    
-    if (formData.email !== registeredEmail) {
-      setError("Email not found. Please check your email or sign up.");
-      return;
-    }
-    
-    if (formData.password !== registeredPassword) {
-      setError("Incorrect password. Please try again.");
-      return;
-    }
-    
-    // Login successful - retrieve and restore user data
-    const userData = localStorage.getItem('schoolUserData');
-    if (userData) {
-      const user = JSON.parse(userData);
-      // Restore all user data to localStorage for dashboard
-      localStorage.setItem('userName', user.fullName);
-      localStorage.setItem('userEmail', user.email);
-      localStorage.setItem('userPhone', user.phone);
-      localStorage.setItem('userSchool', user.school);
-      localStorage.setItem('userBoard', user.educationBoard);
-      localStorage.setItem('userRollNumber', user.rollNumber);
-      localStorage.setItem('userCity', user.city);
-      localStorage.setItem('userState', user.state);
-      localStorage.setItem('userGrade', user.grade);
-      localStorage.setItem('userStream', user.stream);
-      localStorage.setItem('userType', 'school');
-    }
-    
-    // Navigate to school dashboard after successful login
-    navigate("/dashboardschool");
   };
 
   return (

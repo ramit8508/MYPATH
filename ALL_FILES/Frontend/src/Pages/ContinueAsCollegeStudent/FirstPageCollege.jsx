@@ -27,7 +27,7 @@ function FirstPageCollege() {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     
     // Check if all required fields are filled
@@ -49,31 +49,57 @@ function FirstPageCollege() {
       return;
     }
     
-    console.log("Form submitted:", formData);
-    
-    // Save registration data to localStorage (temporary until backend is ready)
-    // Store user credentials for login verification
-    localStorage.setItem('registeredUserEmail_college', formData.email);
-    localStorage.setItem('registeredUserPassword_college', formData.password);
-    
-    // Store all user profile data
-    localStorage.setItem('collegeUserData', JSON.stringify({
-      fullName: formData.fullName,
-      email: formData.email,
-      phoneNumber: formData.phoneNumber,
-      course: formData.course,
-      specialization: formData.specialization,
-      year: formData.year,
-      collegeName: formData.collegeName,
-      rollNumber: formData.rollNumber,
-      category: formData.category
-    }));
-    
-    // TODO: Send registration data to backend API
-    alert("Registration successful! Please login with your credentials.");
-    
-    // Navigate to college login page
-    navigate("/logincollege");
+    try {
+      // Send registration data to backend API
+      const response = await fetch('/api/college/auth/register', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          fullName: formData.fullName,
+          email: formData.email,
+          phoneNumber: formData.phoneNumber,
+          password: formData.password,
+          course: formData.course,
+          specialization: formData.specialization,
+          year: formData.year,
+          collegeName: formData.collegeName,
+          rollNumber: formData.rollNumber,
+          category: formData.category
+        }),
+      });
+
+      const data = await response.json();
+
+      if (response.ok && data.success) {
+        // Store the JWT token for authenticated requests
+        localStorage.setItem('authToken', data.token);
+        
+        // Store user type for dashboard
+        localStorage.setItem('userType', 'college');
+        
+        // Store all user data for the dashboard
+        localStorage.setItem('fullName', data.student.fullName);
+        localStorage.setItem('userEmail', data.student.email);
+        localStorage.setItem('userPhone', data.student.phoneNumber);
+        localStorage.setItem('userCourse', data.student.course);
+        localStorage.setItem('userSpecialization', data.student.specialization);
+        localStorage.setItem('userYear', data.student.year);
+        localStorage.setItem('userCollege', data.student.collegeName);
+        localStorage.setItem('userRollNumber', data.student.rollNumber);
+        localStorage.setItem('userCategory', data.student.category);
+        
+        alert('Registration successful! Please login with your credentials.');
+        navigate('/logincollege');
+      } else {
+        // Show error message from backend
+        alert(data.message || 'Registration failed. Please try again.');
+      }
+    } catch (error) {
+      console.error('Registration error:', error);
+      alert('Unable to connect to server. Please check if the backend is running and try again.');
+    }
   };
 
   return (
