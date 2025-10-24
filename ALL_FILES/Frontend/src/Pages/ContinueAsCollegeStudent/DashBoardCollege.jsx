@@ -3,8 +3,10 @@ import "../../Styles/DashBoardSchool.css";
 import { HiAcademicCap } from "react-icons/hi2";
 import { SlCalender } from "react-icons/sl";
 import { IoIosTrendingUp } from "react-icons/io";
+import { useNavigate } from "react-router-dom";
 
 function DashBoardCollege() {
+  const navigate = useNavigate();
   const [userData, setUserData] = useState({
     fullName: "",
     email: "",
@@ -16,22 +18,81 @@ function DashBoardCollege() {
     rollNumber: "",
     category: "",
   });
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState("");
 
   useEffect(() => {
-    // Retrieve college student data from localStorage
-    const storedData = {
-      fullName: localStorage.getItem("userName") || "N/A",
-      email: localStorage.getItem("userEmail") || "N/A",
-      phoneNumber: localStorage.getItem("userPhone") || "N/A",
-      course: localStorage.getItem("userCourse") || "N/A",
-      specialization: localStorage.getItem("userSpecialization") || "N/A",
-      year: localStorage.getItem("userYear") || "N/A",
-      collegeName: localStorage.getItem("userCollege") || "N/A",
-      rollNumber: localStorage.getItem("userRollNumber") || "N/A",
-      category: localStorage.getItem("userCategory") || "N/A",
+    // Fetch college student data from backend API
+    const fetchUserData = async () => {
+      try {
+        const token = localStorage.getItem('authToken');
+        
+        if (!token) {
+          setError('Not authenticated. Please login.');
+          navigate('/logincollege');
+          return;
+        }
+
+        const response = await fetch('/api/college/auth/me', {
+          method: 'GET',
+          headers: {
+            'Authorization': `Bearer ${token}`,
+            'Content-Type': 'application/json',
+          },
+        });
+
+        const data = await response.json();
+
+        if (response.ok && data.success) {
+          setUserData({
+            fullName: data.student.fullName || "N/A",
+            email: data.student.email || "N/A",
+            phoneNumber: data.student.phoneNumber || "N/A",
+            course: data.student.course || "N/A",
+            specialization: data.student.specialization || "N/A",
+            year: data.student.year || "N/A",
+            collegeName: data.student.collegeName || "N/A",
+            rollNumber: data.student.rollNumber || "N/A",
+            category: data.student.category || "N/A",
+          });
+        } else {
+          setError(data.message || 'Failed to fetch user data');
+          if (response.status === 401) {
+            localStorage.removeItem('authToken');
+            navigate('/logincollege');
+          }
+        }
+      } catch (error) {
+        console.error('Error fetching user data:', error);
+        setError('Unable to connect to server. Please try again later.');
+      } finally {
+        setLoading(false);
+      }
     };
-    setUserData(storedData);
-  }, []);
+
+    fetchUserData();
+  }, [navigate]);
+
+  if (loading) {
+    return (
+      <div className="main-container">
+        <div className="student-profile">
+          <h2 className="profile-heading">Loading...</h2>
+        </div>
+      </div>
+    );
+  }
+
+  if (error) {
+    return (
+      <div className="main-container">
+        <div className="student-profile">
+          <h2 className="profile-heading">Error</h2>
+          <p className="detail-value">{error}</p>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <>

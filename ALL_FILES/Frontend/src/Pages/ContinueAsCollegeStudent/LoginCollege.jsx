@@ -47,20 +47,6 @@ function LoginCollege() {
         // Store the JWT token for authenticated requests
         localStorage.setItem('authToken', data.token);
         
-        // Store user type for dashboard
-        localStorage.setItem('userType', 'college');
-        
-        // Store all user data for the dashboard
-        localStorage.setItem('userName', data.student.fullName);
-        localStorage.setItem('userEmail', data.student.email);
-        localStorage.setItem('userPhone', data.student.phoneNumber);
-        localStorage.setItem('userCourse', data.student.course);
-        localStorage.setItem('userSpecialization', data.student.specialization);
-        localStorage.setItem('userYear', data.student.year);
-        localStorage.setItem('userCollege', data.student.collegeName);
-        localStorage.setItem('userRollNumber', data.student.rollNumber);
-        localStorage.setItem('userCategory', data.student.category);
-        
         // Navigate to college dashboard after successful login
         navigate("/dashboardcollege");
       } else {

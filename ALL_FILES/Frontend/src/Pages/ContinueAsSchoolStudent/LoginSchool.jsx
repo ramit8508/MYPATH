@@ -47,21 +47,6 @@ function LoginSchool() {
         // Store the JWT token for authenticated requests
         localStorage.setItem('authToken', data.token);
         
-        // Store user type for dashboard
-        localStorage.setItem('userType', 'school');
-        
-        // Store all user data for the dashboard
-        localStorage.setItem('userName', data.student.fullName);
-        localStorage.setItem('userEmail', data.student.email);
-        localStorage.setItem('userPhone', data.student.phone);
-        localStorage.setItem('userSchool', data.student.school);
-        localStorage.setItem('userBoard', data.student.educationBoard);
-        localStorage.setItem('userRollNumber', data.student.rollNumber);
-        localStorage.setItem('userCity', data.student.city);
-        localStorage.setItem('userState', data.student.state);
-        localStorage.setItem('userGrade', data.student.grade || 'N/A');
-        localStorage.setItem('userStream', data.student.stream || 'N/A');
-        
         // Navigate to school dashboard after successful login
         navigate("/dashboardschool");
       } else {

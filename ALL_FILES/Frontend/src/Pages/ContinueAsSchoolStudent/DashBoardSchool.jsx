@@ -3,8 +3,10 @@ import "../../Styles/DashBoardSchool.css";
 import { HiAcademicCap } from "react-icons/hi2";
 import { SlCalender } from "react-icons/sl";
 import { IoIosTrendingUp } from "react-icons/io";
+import { useNavigate } from "react-router-dom";
 
 function DashBoardSchool() {
+  const navigate = useNavigate();
   const [userData, setUserData] = useState({
     fullName: "",
     grade: "",
@@ -15,21 +17,80 @@ function DashBoardSchool() {
     city: "",
     state: "",
   });
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState("");
 
   useEffect(() => {
-    // Retrieve user data from localStorage
-    const storedData = {
-      fullName: localStorage.getItem("userName") || "N/A",
-      grade: localStorage.getItem("userGrade") || "N/A",
-      stream: localStorage.getItem("userStream") || "N/A",
-      school: localStorage.getItem("userSchool") || "N/A",
-      educationBoard: localStorage.getItem("userBoard") || "N/A",
-      rollNumber: localStorage.getItem("userRollNumber") || "N/A",
-      city: localStorage.getItem("userCity") || "N/A",
-      state: localStorage.getItem("userState") || "N/A",
+    // Fetch school student data from backend API
+    const fetchUserData = async () => {
+      try {
+        const token = localStorage.getItem('authToken');
+        
+        if (!token) {
+          setError('Not authenticated. Please login.');
+          navigate('/loginschool');
+          return;
+        }
+
+        const response = await fetch('/api/school/auth/me', {
+          method: 'GET',
+          headers: {
+            'Authorization': `Bearer ${token}`,
+            'Content-Type': 'application/json',
+          },
+        });
+
+        const data = await response.json();
+
+        if (response.ok && data.success) {
+          setUserData({
+            fullName: data.student.fullName || "N/A",
+            grade: data.student.grade || "N/A",
+            stream: data.student.stream || "N/A",
+            school: data.student.school || "N/A",
+            educationBoard: data.student.educationBoard || "N/A",
+            rollNumber: data.student.rollNumber || "N/A",
+            city: data.student.city || "N/A",
+            state: data.student.state || "N/A",
+          });
+        } else {
+          setError(data.message || 'Failed to fetch user data');
+          if (response.status === 401) {
+            localStorage.removeItem('authToken');
+            navigate('/loginschool');
+          }
+        }
+      } catch (error) {
+        console.error('Error fetching user data:', error);
+        setError('Unable to connect to server. Please try again later.');
+      } finally {
+        setLoading(false);
+      }
     };
-    setUserData(storedData);
-  }, []);
+
+    fetchUserData();
+  }, [navigate]);
+
+  if (loading) {
+    return (
+      <div className="main-container">
+        <div className="student-profile">
+          <h2 className="profile-heading">Loading...</h2>
+        </div>
+      </div>
+    );
+  }
+
+  if (error) {
+    return (
+      <div className="main-container">
+        <div className="student-profile">
+          <h2 className="profile-heading">Error</h2>
+          <p className="detail-value">{error}</p>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <>

@@ -78,21 +78,6 @@ function SecondPageSchool() {
         // Store the JWT token for authenticated requests
         localStorage.setItem('authToken', data.token);
         
-        // Store user type for dashboard
-        localStorage.setItem('userType', 'school');
-        
-        // Store all user data for the dashboard
-        localStorage.setItem('fullName', data.student.fullName);
-        localStorage.setItem('userEmail', data.student.email);
-        localStorage.setItem('userPhone', data.student.phone);
-        localStorage.setItem('userSchool', data.student.school);
-        localStorage.setItem('userEducationBoard', data.student.educationBoard);
-        localStorage.setItem('userRollNumber', data.student.rollNumber);
-        localStorage.setItem('userCity', data.student.city);
-        localStorage.setItem('userState', data.student.state);
-        localStorage.setItem('userGrade', data.student.grade);
-        localStorage.setItem('userStream', data.student.stream);
-        
         alert('Registration successful! Please login with your credentials.');
         navigate('/loginschool');
       } else {

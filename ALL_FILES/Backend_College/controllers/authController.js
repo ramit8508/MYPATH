@@ -114,3 +114,27 @@ exports.login = async (req, res, next) => {
     next(error);
   }
 };
+
+exports.getMe = async (req, res, next) => {
+  try {
+    const student = req.user;
+
+    res.json({
+      success: true,
+      student: {
+        id: student._id,
+        fullName: student.fullName,
+        email: student.email,
+        phoneNumber: student.phoneNumber,
+        course: student.course,
+        specialization: student.specialization,
+        year: student.year,
+        collegeName: student.collegeName,
+        rollNumber: student.rollNumber,
+        category: student.category
+      }
+    });
+  } catch (error) {
+    next(error);
+  }
+};
