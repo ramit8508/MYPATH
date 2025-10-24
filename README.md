@@ -19,7 +19,7 @@ MYPATH is a comprehensive platform that helps students discover personalized aca
 
 ## 🚀 Live Demo
 
-Visit the live application: [https://mypath-azure.vercel.app](https://mypath-azure.vercel.app)
+Visit the live application: [https://mypath-nine.vercel.app](https://mypath-nine.vercel.app/)
 
 ## 📚 For School Students
 
