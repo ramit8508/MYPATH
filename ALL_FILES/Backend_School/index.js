@@ -7,6 +7,6 @@ const PORT = process.env.PORT || 5001;
 connectDB();
 
 app.listen(PORT, () => {
-  console.log(`🚀 School Backend Server is running on port ${PORT}`);
-  console.log(`🌐 Access at: http://localhost:${PORT}`);
+  console.log(` School Backend Server is running on port ${PORT}`);
+  console.log(` Access at: http://localhost:${PORT}`);
 });
