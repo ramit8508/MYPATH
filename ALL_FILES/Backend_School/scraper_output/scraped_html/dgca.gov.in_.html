@@ -1,0 +1,3809 @@
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="title" content="Home | Directorate General of Civil Aviation | Government of India">
+<meta name="description" content="DGCA in India is the regulatory body in the field of Civil Aviation primarily dealing with safety issues.">
+<meta name="keywords" content="Directorate General Civil Aviation,DGCA,dgca,Aircraft Registration,eGCA login,Aircraft Operations,Personnel,Aerodromes,Air Navigation Services,Data and Reports
+,Regulations and Guidance,RTI." />
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="shortcut icon" href="#" />
+
+<title>Home | Directorate General of Civil Aviation | Government of India</title>
+
+
+<!DOCTYPE html>
+
+
+
+  
+
+<script type="text/javascript">
+
+var resetFlag=0,timeOutId,logOutTimeId;
+
+function destroy() {
+	clearTimeout(timeOutId);
+	timeOutId = 0;
+	clearTimeout(logOutTimeId);
+	logOutTimeId = 0;
+	sessionHandlerReSetter();
+// 	fn_ResetSession();	
+}
+
+function sessionHandlerReSetter() {
+	
+	if (timeOutId > 0) {
+			clearTimeout(timeOutId);
+			timeOutId = 0;
+		}
+	if (logOutTimeId > 0) {
+			clearTimeout(logOutTimeId);
+			logOutTimeId = 0;
+	   }
+
+resetFlag = 0;
+
+sessionHandlerStart();
+
+}
+
+function sessionHandlerStart()
+{	
+	var sessionWarning=1440.0;
+	sessionWarning=sessionWarning*1000;
+	if(resetFlag==0)
+	{
+		logOutTimeId = setTimeout(function(){ fn_ResetSession(); },sessionWarning);
+	}
+		else
+	{
+		 sessionHandlerReSetter();
+	}
+}
+
+function fn_ResetSession(){
+ 	var token = $("meta[name='_csrf']").attr("content");
+    var xmlHttpRequest = getHttpXMLRequestCmn(); 
+    xmlHttpRequest.onreadystatechange = getReadyStateHandlerColName(xmlHttpRequest);  
+    xmlHttpRequest.open("POST","webHP?requestType=ApplicationRH&actionVal=resetSession&queryType=Select&screenId=114&_csrf="+token, false);
+    xmlHttpRequest.send(); 
+// 	destroy();
+}
+function getHttpXMLRequestCmn() 
+{  
+    var xmlHttpReq;  
+    // to create XMLHttpRequest object in non-Microsoft browsers  
+    if (window.XMLHttpRequest)
+    {  
+        xmlHttpReq = new XMLHttpRequest();  
+    }
+    else if (window.ActiveXObject) 
+    {  
+        try
+        {  
+            //to create XMLHttpRequest object in later versions of Internet Explorer  
+            xmlHttpReq = new ActiveXObject("Msxml2.XMLHTTP");  
+        }
+        catch (exp1)
+        {  
+            try
+            {  
+                //to create XMLHttpRequest object in later versions of Internet Explorer  
+                xmlHttpReq = new ActiveXObject("Microsoft.XMLHTTP");  
+            }
+            catch (exp2) 
+            {  
+                //xmlHttpReq = false;  
+                document.getElementById("incUserName").innerHTML = ("Exception in getXMLHttpRequest()!");  
+            }  
+        }  
+    }  
+    return xmlHttpReq;  
+}
+function getReadyStateHandlerColName(xmlHttpRequest) 
+{  
+    return function() 
+    {  
+        if (xmlHttpRequest.readyState == 4) 
+        {  
+            if (xmlHttpRequest.status == 200) 
+            {
+            	destroy();  
+            }
+        }  
+    };  
+}
+
+</script>
+<script type="text/javascript">destroy();</script>
+</body>
+</html>
+
+
+
+<link rel="stylesheet" type="text/css" href="/digigov-portal/assets/DGCA/libs/style/fontAwesome4.7.0.css" />
+<link rel="stylesheet" type="text/css" href="/digigov-portal/assets/DGCA/libs/style/owl.carousel.css" />
+<link rel="stylesheet" type="text/css" href="/digigov-portal/assets/DGCA/libs/style/dataTables.bootstrap4.min.css" />
+<link rel="stylesheet" type="text/css" href="/digigov-portal/assets/DGCA/libs/style/responsive.bootstrap4.min.css" />
+<link rel="stylesheet" type="text/css" href="/digigov-portal/assets/DGCA/libs/style/bootstrap-datepicker.css" />
+
+<link rel="stylesheet" type="text/css" href="/digigov-portal/assets/DGCA/css/style.css?v=1.7" />
+<script>var base = "/digigov-portal";</script>
+
+
+  
+  	
+  		
+			<base id="dgcaBase" href="https://www.dgca.gov.in/digigov-portal/" />
+ 		 
+  		 
+  		  
+  	
+ 	
+  
+  	
+
+
+
+<!-- 
+<script>
+	debugger;
+	var base = "/digigov-portal";
+	var uri = "/digigov-portal/webHP";
+	var scheme = "http";
+	var requrl = "http://www.dgca.gov.in/digigov-portal/webHP";
+	var base = document.getElementsByTagName("base")[0].href;
+	var baseUrl = "http://www.dgca.gov.in/digigov-portal/";
+	var urlParts = baseUrl.split("://");
+	var protocol = urlParts[0];
+	var domain = urlParts[1];
+	if(domain.indexOf("10")!= "-1"){
+		//var base = document.getElementsByTagName("base")[0].href;
+		//document.getElementById("dgcaBase").setAttribute("href",baseUrl);
+	} else{
+		baseUrl = protocol + "s://" + domain;
+		//document.getElementById("dgcaBase").setAttribute("href",baseUrl);
+	}
+</script> -->
+
+
+<script>
+	sessionStorage.setItem('localeNew', 'en_US');
+</script>
+
+<style>
+
+.mobileDiv{
+	top: 5rem !important;
+}
+@media (max-width: 1024px){
+.header-carousel .carousel .carousel-inner .carousel-item img {
+    height: 39.09vw;
+}
+.mobileIcon{
+	height: 8.09vw;
+}
+
+.mobileDiv{
+	top: 1.5rem !important;
+}
+
+
+}
+@media (max-width: 575.98px){
+.header-carousel .carousel .carousel-inner .carousel-item img {
+    height: 60.09vw;
+}
+.mobileIcon{
+	height: 0;
+}
+
+.mobileDiv{
+	top: 1.5rem !important;
+}
+}
+
+/* Added for Special Independance Case */
+@media (max-width: 1025px){
+	.independence-div{
+		top: 19.5rem !important;
+	}
+}
+@media (max-width: 770px){
+	.IndependenceBtn{
+		font-size: 0.7rem;
+    	padding: 0.5rem 2rem;
+	}
+	.independence-div{
+		top: 15rem !important;
+	}
+}
+@media (max-width: 420px){
+	.IndependenceBtn{
+		font-size: 0.5rem;
+	    padding: 0.5rem 1.5rem;
+	}
+	.independence-div{
+		top: 16rem !important;
+	}
+}
+@media (max-width: 380px){
+	.IndependenceBtn{
+		font-size: 0.5rem;
+	    padding: 0.5rem 1.5rem;
+	}
+	.independence-div{
+		top: 15rem !important;
+	}
+}
+@media (max-width: 360px){
+	.IndependenceBtn{
+		font-size: 0.5rem;
+	    padding: 0.5rem 1.5rem;
+	}
+	.independence-div{
+		top: 13.6rem !important;
+	}
+}
+
+/* Added for National Anthem */ 
+
+.anthemBtn{
+	color: #fff;
+    background-color: #a69577;
+    border: 1px solid #a69577;
+}
+
+@media (max-width: 1025px){
+	.anthem-div{
+		top: 19.5rem !important;
+	}
+	.anthem-div{
+		top: 19rem !important;
+    	left: 22rem !important;
+	}
+}
+@media (max-width: 770px){
+	.anthemBtn{
+		font-size: 0.7rem;
+    	padding: 0.5rem 2rem;
+	}
+	.anthem-div{
+		top: 14rem !important;
+    	left: 15rem !important;
+	}
+}
+@media (max-width: 550px){
+	.anthemBtn{
+		font-size: 0.7rem;
+    	padding: 0.5rem 2rem;
+	}
+	.anthem-div{
+		top: 21rem !important;
+    	left: 14rem !important;
+	}
+}
+@media (max-width: 420px){
+	.anthemBtn{
+		font-size: 0.5rem;
+	    padding: 0.5rem 1.5rem;
+	}
+	.anthem-div{
+		top: 16rem !important;
+		left: 10.7rem!important;
+	}
+}
+@media (max-width: 380px){
+	.anthemBtn{
+		font-size: 0.5rem;
+	    padding: 0.5rem 1.5rem;
+	}
+	.anthem-div{
+		left: 9rem !important;
+		top: 13.5rem !important;
+	}
+}
+@media (max-width: 360px){
+	.anthemBtn{
+		font-size: 0.5rem;
+	    padding: 0.5rem 1.5rem;
+	}
+	.anthem-div{
+		left: 9rem !important;
+		top: 13.5rem !important;
+	}
+}
+@media (max-width: 320px){
+	.anthemBtn{
+		font-size: 0.5rem;
+	    padding: 0.5rem 1.5rem;
+	}
+	.anthem-div{
+		left: 8.5rem !important;
+    	top: 11.5rem !important;
+	}
+}
+@media (max-width: 290px){
+	.anthemBtn{
+		font-size: 0.5rem;
+	    padding: 0.5rem 1.5rem;
+	}
+	.anthem-div{
+		left: 6.5rem !important;
+   		top: 10.5rem !important;
+	}
+}
+</style>
+</head>
+<body>
+<div id='statusbar'>    
+					<div>
+						<span id='imgtd'>&nbsp;</span>
+						<span id='statuBarTd1'></span>
+					</div>
+				</div>
+				<div id="fadeBackground" class="fade_background"></div>	
+	<form>
+		<input type="hidden" class="inventoryConstantPath"
+			value="https://public-prd-dgca.s3.ap-south-1.amazonaws.com/">
+			<input type="hidden" id="languageType" value="en_US">
+			<input type="hidden" id="dgcaHomepageLanding" value="1">
+	</form>
+	
+
+
+
+
+
+
+<style>
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+</style>
+<form name="hiddenForm" id="hiddenForm" action="" method="post">
+	<input type="hidden" class="inventoryConstantPath"
+		value="https://public-prd-dgca.s3.ap-south-1.amazonaws.com/">
+	<input type="hidden" id="baseLocale" name="baseLocale" value="">
+	<input type="hidden" id="screenId" name="screenId" value=""> <input
+		type="hidden" id="classification" name="classification" value="">
+	<input type="hidden" id="actionVal" name="actionVal" value="">
+	<input type="hidden" id="requestType" name="requestType" value="">
+	<input type="hidden" id="attachId" name="attachId" value="">
+	 <input type="hidden" id="langType" name="langType" value="2"> 
+	 <input type="hidden" id="ruleBookId" name="ruleBookId" value=""> 
+	 <input type="hidden" id="contentId" name="contentId" value=""> 
+	 <input type="hidden" id="serviceName" name="serviceName" value="">
+	<input type="hidden" id="attr" name="attr" value="">
+</form>
+<header>
+	<section class="header-top">
+		<div class="container d-none d-lg-block">
+			<div class="d-flex justify-content-between pt-1 pb-1">
+				<div>
+					<div class="navbar-brand header-text" href="#">
+						<p class="mb-0 hindiLabel">
+							भारत सरकार
+						</p>
+						<a class="mb-0 text-white" href="#" onclick="fnAlertRedirection('https://www.india.gov.in/');">GOVERNMENT
+							OF INDIA</a>
+					</div>
+					<div class="navbar-brand">
+						<span style="color: #aeaeb1;">|</span>
+					</div>
+					<div class="navbar-brand header-text" href="#">
+						<p class="mb-0 hindiLabel">
+							नागर विमानन मंत्रालय
+						</p>
+						<a class="mb-0 text-white" href="#" onclick="fnAlertRedirection('http://www.civilaviation.gov.in/');" >MINISTRY
+							OF CIVIL AVIATION</a>
+					</div>
+				</div>
+				<div class="d-flex  align-items-center">
+					<div class="navbar-brand header-text-1">
+						<a data-value="skipContent" class="skip">Skip to Main Content</a>
+					</div>
+					<div class="navbar-brand header-text-1">
+						<a>/</a>
+					</div>
+					<div class="navbar-brand header-text-1">
+						<a href="jsp/dgca/homePage/screenReader.jsp">Screen Reader
+							Access</a>
+					</div>
+					<div class="navbar-brand">
+						<span style="color: #aeaeb1;">|</span>
+					</div>
+					<div class="navbar-brand header-text-1">
+						<span style="color: #aeaeb1;">Contrast</span>
+					</div>
+					<div class="navbar-brand header-text-1">
+						<a class="brightMode"><img
+							src="assets/DGCA/images/homePage/brightness.svg" alt=""
+							class="brightness"></a>
+					</div>
+					<div class="navbar-brand header-text-1">
+						<a> <img src="assets/DGCA/images/homePage/halfMoon.svg" alt=""
+							class="brightness nitMode"></a>
+					</div>
+					<div class="navbar-brand header-text-1">
+						<span style="color: #aeaeb1;">|</span>
+					</div>
+					<div class="navbar-brand header-text-1">
+						<span style="color: #aeaeb1;">Text</span>
+					</div>
+					<div class="navbar-brand header-text-1">
+						<a class=" inc"> +A</a>
+					</div>
+					
+					<div class="navbar-brand header-text-1">
+						<a class="orig"> A</a>
+					</div>
+					<div class="navbar-brand header-text-1">
+						<a class=" dec">-A</a>
+					</div>
+					
+					
+							<button id="hiBtn" class="btn btn-secondary py-0 px-2" onclick="langChange('hi');">
+								Hindi
+							</button>
+						
+						
+				</div>
+			</div>
+		</div>
+		<div class="d-lg-none">
+			<div class="d-flex justify-content-between">
+				<div class="pull-right" id="setting_menuhide">
+					<ul class="list-group list-group-horizontal">
+						<li class="header-left list-group-item"><a class="text-white"
+							href="#">Skip to Main Content</a></li>
+					</ul>
+				</div>
+				<div class="d-flex">
+					<ul class="list-group list-group-horizontal">
+						<li class="header-left list-group-item" id="setting_menu"><a class="text-white"
+							href="#">Settings</a></li>
+						<li class="header-left list-group-item"><span
+							class="pr-2 text-white"> |</span> <a class="login text-white"
+							href="jsp/dgca/common/login.jsp">eGCA Login </a>
+					</ul>
+				</div>
+				<div id="setting_menuopen" class="header-mobile-view">
+					<ul class="pl-0 pt-2">
+						<li class="pl-3">
+							<div class="d-flex">
+								<img class="pr-1 my-auto"
+									src="assets/DGCA/images/icons/go-back.png"><a
+									class="back" href="#" id="closeMenu">Back</a>
+							</div>
+						</li>
+						<li class="pt-5 pb-3 pl-3"><a class="back-setting" href="#">Settings</a>
+						</li>
+						<li class="border-top pt-3 pl-3"><a class="contrast-text"
+							href="#">Language</a></li>
+						<li class="pl-3 pt-3 ">
+							<div class="">
+								
+										<button id="hiBtn" class="btn btn-secondary py-0 px-2" onclick="langChange('hi');">
+											Hindi
+										</button>
+									
+							</div>
+						</li>
+					</ul>
+
+
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<section class="menu-wraper">
+		<div class="container">
+			<div class="row justify-content-between pt-2 pb-3 pb-lg-0">
+				<div class="pt-2 pb-0 pb-lg-2">
+					<a class="header-menu d-lg-none"><img class="pl-4 pr-4"
+						src="assets/DGCA/images/icons/Hamburger.png"> </a> <img
+						class="main-logo dgca-home" onclick="homePageLoad();"
+						src="assets/DGCA/images/login/LOGO_Colour.png" alt="logo">
+						<!-- <img
+						class="azadiMahotsav" onclick="homePageLoad();" style="height: 80%;width: 100px;"
+						src="assets/DGCA/images/homePage/azadi_75.png" alt="logo"> -->
+				</div>
+				
+				<div
+					class="headerMenuDiv d-flex flex-column justify-content-between">
+					<div
+						class="justify-content-end  pt-xl-2 pt-0  d-none d-lg-flex menu-head-top align-items-center internal-link">
+						
+								<a data-url="jsp/dgca/topHeader/aboutDGCA/aboutUsDetail.html">About DGCA</a>
+							
+						<span
+							class="pl-3 pr-3"> |</span> <a
+							data-url="4368/4646/servicename">Jobs</a><span class="pl-3 pr-3">
+							|	</span> <a data-url="5066/12521/servicename">Internship</a><span class="pl-3 pr-3">
+							|</span> <a data-url="4372/4647/servicename">RTI</a><span class="pl-3 pr-3">
+							|</span> <p class="new-window-pdf mb-0"> <a target="_blank" href="jsp/dgca/topHeader/contactUs/Directory.pdf">Contact Us</a></p><span
+							class="pl-3 pr-3"> |</span> <a
+							href="jsp/dgca/topHeader/aZIndex/AtoZindex.jsp">A-Z Index</a><span class="pl-3 pr-3">
+					 |</span> <a href="assets/DGCA/rajbhasha/rajbhasha.jsp">Rajbhasha</a><span class="pr-3">
+						</span>
+					<!--<span class="pl-2 pr-2"> |</span>
+					<div class="dropdown">
+                       <a> News</a>
+                           <div class="dropdown-content">
+                                <a href="#" onclick="fnAlertRedirection('https://epaper.thehindu.com/');">The Hindu e-Paper</a>
+                                <a href="#" onclick="fnAlertRedirection('https://www.epw.in/');">Economical and Political weekly Magazine</a>
+                                <a href="#" onclick="fnAlertRedirection('https://pocketmags.com/');">Aviation News Online Journal</a>
+						</div>
+                    </div> -->
+							
+                    	<span class="pl-2 pr-2"> |</span>
+   					 <div class="dropdown">
+                    <a>  Library</a>
+                           <div class="dropdown-content">
+                                <a href="#" onclick="fnAlertRedirection('https://discovery.delnet.in/');">DELNET</a>
+                                <a href="#" onclick="fnAlertRedirection('https://eg4.nic.in/OPAC/Default.aspx?CL_NAME=CGOVLIB1');">Library Online Catalouge</a>
+                          </div>
+                    </div>
+						<span class="pl-2 pr-2"> |</span>
+						<a style="color:#6a768e" target="_blank" class="login pr-3"
+							href="jsp/dgca/common/login.jsp"><img style="height:20px; width:auto;"
+							src="assets/DGCA/images/icons/user-login.png">eGCA Login </a>
+                    	</div>
+                    	
+                    	
+                    	
+                    	  <div class="headerMenuDiv d-flex flex-column justify-content-between">
+	  <div class="internal-link">
+		 <marquee class="ticker bg-white text-red font-weight-bold font-12" onmouseout="this.start()" onmouseover="this.stop()"  
+					 scrolldelay="200" style="color: red;">
+					 <a href="https://www.dgca.gov.in/digigov-portal/?baseLocale=en_US?page=jsp/dgca/topHeader/drone/Registration%20of%20Non-Type%20Certified%20UAS.pdf&mainundefined" class="dropdown-item" style="color: red; text-decoration: none;">Registration of Non-Type Certified (non-TC) UAS has been temporarily suspended until further notice  click here</a>
+		 </marquee> 
+	   </div>
+   </div>
+   
+   
+					
+					<div class="d-flex align-items-end justify-content-end ">
+						<div class="menu-head d-none d-lg-block">
+							<ul class="nav nav-tabs align-items-center" role="tablist">
+							<li role="presentation"><a style="font-size:1.3rem;" class="dgca-home"
+									onclick="homePageLoad();"><i class="fa fa-home"></i></a></li> 
+								<li role="presentation"><a href="#aircraft"
+									aria-controls="home" role="tab" data-toggle="tab">Aircraft</a></li>
+								<li role="presentation"><a href="#airOperations"
+									aria-controls="profile" role="tab" data-toggle="tab">Aircraft Operations</a></li>
+								<li role="presentation"><a href="#personal"
+									aria-controls="" role="tab" data-toggle="tab">Personnel</a></li>
+								<li role="presentation"><a href="#aeroDromes"
+									aria-controls="profile" role="tab" data-toggle="tab">Aerodromes</a></li>
+								<li role="presentation"><a href="#navigationServices"
+									aria-controls="profile" role="tab" data-toggle="tab">Air Navigation Services</a></li>
+								<li role="presentation"><a href="#dataReports"
+									aria-controls="profile" role="tab" data-toggle="tab">Data and Reports</a></li>
+								<li role="presentation"><a href="#regulationGuidance"
+									aria-controls="profile" role="tab" data-toggle="tab">Regulations and Guidance</a></li>
+						  <li role="presentation"><a href="jsp/dgca/InventoryList/headerblock/drones/RPAS.jsp">Drones and AAM</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- Tab panes -->
+		<div class="mobile-header-wraper">
+			<div class="mobile-header">
+				<div class="container">
+					<div class="d-flex justify-content-between pt-3 pb-3 ">
+						<a class="text-white menu-top">Menu</a> <a
+							class="header-back text-white"><img class="pl-1"
+							src="assets/DGCA/images/icons/go-back.png"> Back </a>
+						<div class="d-flex">
+							<a> <img src="assets/DGCA/images/icons/Search.png">
+							</a> <a class="header-close pl-3"> <img
+								src="assets/DGCA/images/icons/Close.png">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="tab-content menu-click internal-link">
+
+
+					
+					
+
+				<div role="tabpanel" class="tab-pane menu-container aircraft"
+					id="aircraft">
+					<div class="container">
+						<ul class="item-level-0">
+							<li><a>Aircraft <img class="pull-right pt-2"
+									src="assets/DGCA/images/icons/next.png"></a>
+								<ul class="item-level-1 justify-content-around">
+									<li><a>Certification<img
+											class="pull-right pt-2"
+											src="assets/DGCA/images/icons/next.png"></a>
+										<ul class="item-level-2">
+											<li><a
+												data-url="4184/4188/servicename">Type Certification<img
+													class="pull-right pt-2"
+													src="assets/DGCA/images/icons/next.png"></a></li>
+											<li><a
+												data-url="4185/4189/servicename">Acceptance of Type Certification
+													<img class="pull-right pt-2"
+													src="assets/DGCA/images/icons/next.png"> </a></li>
+											<li><a
+												data-url="jsp/dgca/InventoryList/aircraft/certification/designAccept/DesignAcceptance.pdf">Design Acceptance<img
+													class="pull-right pt-2"
+													src="assets/DGCA/images/icons/next.png"></a></li>
+											<li><a
+												data-url="jsp/dgca/InventoryList/aircraft/certification/designOrgs/Approved_Design_Organisation_25_11_2019.pdf">Design Organization
+													<img class="pull-right pt-2"
+													src="assets/DGCA/images/icons/next.png"></a></li>
+											<li><a
+												data-url="jsp/dgca/InventoryList/aircraft/certification/ADOA/ADOA.pdf">Alternate Procedures to Design Organisation Approval (ADOA)
+													<img class="pull-right pt-2"
+													src="assets/DGCA/images/icons/next.png"></a></li>
+													
+											<li><a
+												data-url="jsp/dgca/InventoryList/aircraft/certification/productOrgs/Approved Production Organisations.pdf">Production Organization
+													<img class="pull-right pt-2"
+													src="assets/DGCA/images/icons/next.png"></a></li>
+											<li><a
+												data-url="4186/4190/servicename">Technical Standard Orders<img
+													class="pull-right pt-2"
+													src="assets/DGCA/images/icons/next.png"></a></li>
+													
+										<li><a
+												data-url="4378/5223/servicename">ITSO Authorization<img
+													class="pull-right pt-2"
+													src="assets/DGCA/images/icons/next.png"></a></li>
+													
+												 <li><a data-url="260/3760/servicename">ITSOA Surrendered / Revoked
+									 <img class="pull-right pt-2" src="assets/DGCA/images/icons/next.png"></a></li>	
+													
+													
+										</ul></li>
+									<li><a>Registration <img
+											class="pull-right pt-2"
+											src="assets/DGCA/images/icons/next.png"></a>
+										<ul class="item-level-2">
+											<li><a
+												data-url="4000/4022/servicename">Aircraft Report<img
+													class="pull-right pt-2"
+													src="assets/DGCA/images/icons/next.png"></a></li>
+													
+											
+										</ul></li>
+									<li><a>Continuing Airworthiness<img
+											class="pull-right pt-2"
+											src="assets/DGCA/images/icons/next.png"></a>
+										<ul class="item-level-2">
+											<li><a
+												data-url="4196/4199/servicename">Airworthiness Directives<img
+													class="pull-right pt-2"
+													src="assets/DGCA/images/icons/next.png"></a></li>
+											<!-- <li><a
+												data-url="4192/4191/servicename">Mandatory Modification<img
+													class="pull-right pt-2"
+													src="assets/DGCA/images/icons/next.png"></a></li> -->
+											<li> 
+												<a data-url="scan?requestType=ApplicationRH&actionVal=loadComboVals&screenId=10000001&category=11002551">Mandatory Modification<img
+													class="pull-right pt-2"
+													src="assets/DGCA/images/icons/next.png"></a>
+											</li> 
+										</ul></li>
+										
+											
+									
+									<li><a>DGCA Approved/Accepted Maintenance Organization<img
+											class="pull-right pt-2"
+											src="assets/DGCA/images/icons/next.png"></a>
+										<ul class="item-level-2">
+											<li><a
+												data-url="jsp/dgca/InventoryList/aircraft/maintenanceOrgs/Domestic/A(i)-Domestic CAR 145 Org.pdf">Domestic<img
+													class="pull-right pt-2"
+													src="assets/DGCA/images/icons/next.png"></a></li>
+											<li><a
+												data-url="jsp/dgca/InventoryList/aircraft/maintenanceOrgs/Foreign/A(ii)-Foreign CAR 145 and FAMO List on 31-01-2023.pdf">Foreign
+													<img class="pull-right pt-2"
+													src="assets/DGCA/images/icons/next.png"> </a></li>		
+									</ul></li>
+									<li><a
+										data-url="jsp/dgca/InventoryList/aircraft/simulators/Simulators.pdf">
+											Simulators<img
+											class="pull-right pt-2"
+											src="assets/DGCA/images/icons/next.png">
+									</a></li> 
+									<li><a>DGCA Approved CAR-M Organization <img
+											class="pull-right pt-2" src="assets/DGCA/images/icons/next.png"></a>
+										<ul class="item-level-2">
+											<li><a
+												data-url="jsp/dgca/InventoryList/aircraft/maintenanceOrgs/Domestic/6CAR-M Sub Part F.pdf">CAR-M Sub Part F
+														<img class="pull-right pt-2" src="assets/DGCA/images/icons/next.png"></a></li>
+											<li><a
+												data-url="jsp/dgca/InventoryList/aircraft/maintenanceOrgs/Domestic/7CAR-M SUB PART-G.pdf">CAR-M Sub Part- G
+													<img class="pull-right pt-2" src="assets/DGCA/images/icons/next.png"> </a></li>		
+										</ul></li>
+									
+								</ul></li>
+						</ul>
+					</div>
+				</div>
+
+				<div role="tabpanel" class="tab-pane menu-container airOperations"
+					id="airOperations">
+					<div class="container">
+						<!-- <img class="pull-right d-none d-lg-block tab-close"
+							src="assets/DGCA/images/icons/Close.png"> -->
+						<ul class="item-level-0">
+							<li><a>Aircraft Operations <img
+									class="pull-right pt-2" src="assets/DGCA/images/icons/next.png"></a>
+								<ul class="item-level-1 justify-content-around">
+									<li><a>Certification<img
+											class="pull-right pt-2"
+											src="assets/DGCA/images/icons/next.png"></a>
+										<ul class="item-level-2">
+											<li><a data-url="jsp/dgca/InventoryList/airOperation/certification/AOP_Package/aopPak.html" class="btm-grey-bdr">Air Operator Certificate/Permit (AOC/AOP) Package</a></li>
+											<li><a class="btm-grey-bdr" data-url="jsp/dgca/InventoryList/airOperation/certification/scheduled/sch-oper.pdf">Scheduled Operators<img
+													class="pull-right pt-2"
+													src="assets/DGCA/images/icons/next.png"></a>
+												<ul class="item-level-3">
+												<!--<li><a
+														data-url="jsp/dgca/InventoryList/airOperation/certification/scheduled/sch-oper.pdf">Passengers<img
+															class="pull-right pt-2"
+															src="assets/DGCA/images/icons/next.png"></a></li>
+													 <li><a data-url="jsp/dgca/InventoryList/airOperation/certification/scheduled/cargo/sch-oper1.pdf">Cargo<img
+															class="pull-right pt-2" src="assets/DGCA/images/icons/next.png"></a></li>
+												-->			
+												</ul></li>
+											<li><a class="btm-grey-bdr"
+												data-url="jsp/dgca/InventoryList/airOperation/certification/nonscheduled/ns-oper.pdf">Non Scheduled Operators
+													<img class="pull-right pt-2"
+													src="assets/DGCA/images/icons/next.png"> </a></li>
+											<li class="pt-2"><a class="btm-grey-bdr">Flight Schedules
+													<img class="pull-right pt-2"
+													src="assets/DGCA/images/icons/next.png"> </a>
+												<ul class="item-level-3">
+												<li><a
+														data-url="4201/4200/servicename">Domestic Flight Schedule<img
+															class="pull-right pt-2"
+															src="assets/DGCA/images/icons/next.png"></a></li>
+													<li><a
+														data-url="4207/4201/servicename">International Flight Schedule<img
+															class="pull-right pt-2"
+															src="assets/DGCA/images/icons/next.png"></a></li>
+												</ul></li>
+											<li><a
+												data-url="jsp/dgca/InventoryList/airOperation/certification/AerialWork/aerial work operations.pdf">Aerial Work Operations
+													<img class="pull-right pt-2"
+													src="assets/DGCA/images/icons/next.png"></a></li>
+										</ul></li>
+									<li><a>Permissions<img
+											class="pull-right pt-2"
+											src="assets/DGCA/images/icons/next.png"></a>
+										<ul class="item-level-2">
+											<li><a
+												data-url="jsp/dgca/InventoryList/airOperation/permission/carriageDangerous/Carriage of Dangerous Goods.pdf">Carriage of Dangerous Goods<img
+													class="pull-right pt-2"
+													src="assets/DGCA/images/icons/next.png"></a></li>
+											<li><a
+												data-url="jsp/dgca/InventoryList/airOperation/permission/carriageArms/Carriage of Arms.pdf">Carriage of Arms/Ammunition<img
+													class="pull-right pt-2"
+													src="assets/DGCA/images/icons/next.png"></a></li>
+											<li><a
+												data-url="jsp/dgca/InventoryList/airOperation/permission/aerialPhoto/aer_photo.pdf">Aerial Photography/Remote Sensing Survey
+													<img class="pull-right pt-2"
+													src="assets/DGCA/images/icons/next.png"> </a></li>
+											<li><a
+												data-url="jsp/dgca/InventoryList/airOperation/permission/groundphoto/Ground Photography.pdf">Ground Photography
+													<img class="pull-right pt-2"
+													src="assets/DGCA/images/icons/next.png"></a></li>
+											<li><a
+												data-url="jsp/dgca/InventoryList/airOperation/permission/cloudSeeding/cloud seeding.pdf">Cloud Seeding
+													<img class="pull-right pt-2"
+													src="assets/DGCA/images/icons/next.png"></a></li>
+											<li><a
+												data-url="jsp/dgca/InventoryList/airOperation/permission/skyDiving/Sky Diving.pdf">Sky Diving
+													<img class="pull-right pt-2"
+													src="assets/DGCA/images/icons/next.png"></a></li>
+											<li><a class="btm-grey-bdr">Flight Clearance<img
+													class="pull-right pt-2"
+													src="assets/DGCA/images/icons/next.png"></a>
+												<ul class="item-level-3">
+													<li><a
+														data-url="jsp/dgca/InventoryList/airOperation/permission/flightCLearance/procedure/atc_1997.pdf">Procedure<img
+															class="pull-right pt-2"
+															src="assets/DGCA/images/icons/next.png"></a></li>
+													<li><a
+														data-url="jsp/dgca/InventoryList/airOperation/permission/flightCLearance/agency/tour_agency.pdf">Flight Clearing Agencies<img
+															class="pull-right pt-2"
+															src="assets/DGCA/images/icons/next.png"></a></li>
+												</ul></li>
+										</ul></li>
+									<li><a>Training<img
+											class="pull-right pt-2"
+											src="assets/DGCA/images/icons/next.png"></a>
+										<ul class="item-level-2">
+											 <li><a
+												data-url="jsp/dgca/InventoryList/airOperation/training/cabinCrew/AppCCC.pdf">Cabin Crew Training Programme<img
+													class="pull-right pt-2"
+													src="assets/DGCA/images/icons/next.png"></a></li> 
+											<li><a
+												data-url="jsp/dgca/InventoryList/airOperation/training/dangerousGoods/list_DGTP.pdf">Dangerous Goods Training Programme
+													<img class="pull-right pt-2"
+													src="assets/DGCA/images/icons/next.png"> </a></li>
+										</ul></li>
+								</ul></li>
+
+							<li>
+						</ul>
+					</div>
+				</div>
+				<div role="tabpanel" class="tab-pane menu-container personal"
+					id="personal">
+					<div class="container">
+						<!-- <img class="pull-right d-none d-lg-block tab-close"
+							src="assets/DGCA/images/icons/Close.png"> -->
+						<ul class="item-level-0">
+							<li><a>Personnel <img class="pull-right pt-2"
+									src="assets/DGCA/images/icons/next.png"></a>
+								<ul class="item-level-1 justify-content-around">
+									<li><a>Licenses/Approvals<img
+											class="pull-right pt-2"
+											src="assets/DGCA/images/icons/next.png"></a>
+
+										<ul class="item-level-2">
+											<li><a
+												data-url="jsp/dgca/InventoryList/personal/license/pilot/Pilots.pdf">Pilot<img
+													class="pull-right pt-2"
+													src="assets/DGCA/images/icons/next.png"></a></li>
+											<li><a
+												data-url="jsp/dgca/InventoryList/personal/license/airMaintenance/AMEs.pdf">Aircraft Maintenance Engineers<img
+													class="pull-right pt-2"
+													src="assets/DGCA/images/icons/next.png"></a></li>
+											<li><a
+												data-url="jsp/dgca/InventoryList/personal/license/airTraffic/ATCOs.pdf">Air Traffic Controllers
+													<img class="pull-right pt-2"
+													src="assets/DGCA/images/icons/next.png"></a></li>
+											<li><a
+												data-url="jsp/dgca/InventoryList/personal/license/flightDispatcher/fkight dispatsher.pdf">Flight Dispatcher<img
+													class="pull-right pt-2"
+													src="assets/DGCA/images/icons/next.png"></a></li>
+										</ul></li>
+									<li><a>Training<img
+											class="pull-right pt-2"
+											src="assets/DGCA/images/icons/next.png"></a>
+										<ul class="item-level-2">
+											<li><a class="btm-grey-bdr">Pilot<img
+													class="pull-right pt-2"
+													src="assets/DGCA/images/icons/next.png"></a>
+												<ul class="item-level-3">
+													<li><a
+														data-url="jsp/dgca/InventoryList/personal/training/pilot/flrTrainOrgs/flyclub.pdf">Flying Training Organizations<img
+															class="pull-right pt-2"
+															src="assets/DGCA/images/icons/next.png"></a></li>
+													 <li><a
+														data-url="jsp/dgca/InventoryList/personal/training/pilot/aircraftTrainOrgs/ATO.pdf">Aircraft Type Training Organization (Pilots)<img
+															class="pull-right pt-2"
+															src="assets/DGCA/images/icons/next.png"> </a></li>
+													<li><a
+														data-url="jsp/dgca/InventoryList/personal/training/pilot/glidingTrainOrgs/glyclub.pdf">Gliding Training Organization<img
+															class="pull-right pt-2"
+															src="assets/DGCA/images/icons/next.png"></a></li>
+															<li><a
+														data-url="jsp/dgca/InventoryList/personal/training/pilot/glidingTrainOrgs/ELP_Trg.pdf">ELP Training & Testing Service Providers<img
+															class="pull-right pt-2"
+															src="assets/DGCA/images/icons/next.png"></a></li>
+												</ul></li>
+											<li><a class="btm-grey-bdr">Aircraft Maintenance Engineer<img
+													class="pull-right pt-2"
+													src="assets/DGCA/images/icons/next.png"></a>
+												<ul class="item-level-3">
+													<li><a
+														data-url="jsp/dgca/InventoryList/personal/training/airMaintenance/approvedTypeTrainOrgs/ametrg.pdf">AME Training Organization
+															<img class="pull-right pt-2"
+															src="assets/DGCA/images/icons/next.png"></a></li>
+													<li><a
+														data-url="jsp/dgca/InventoryList/personal/training/airMaintenance/CAR147Basic/CAR 147(basic).pdf">CAR 147 (Basic) Training Organization<img
+															class="pull-right pt-2"
+															src="assets/DGCA/images/icons/next.png"> </a></li>
+													<li><a>
+														DGCA Approved/Accepted CAR 147 Training Organization
+															<img class="pull-right pt-2"
+															src="assets/DGCA/images/icons/next.png"></a>
+																<ul class="item-level-4">
+																	<li><a
+																			data-url="jsp/dgca/InventoryList/personal/training/airMaintenance/Car147/Domestic/B(i)-Domestic CAR 147-Type DL fm website 6-2-23.pdf">Domestic<img
+																			class="pull-right pt-2"
+																			src="assets/DGCA/images/icons/next.png"></a></li>
+															<li><a
+																			data-url="jsp/dgca/InventoryList/personal/training/airMaintenance/Car147/Foreign/B(ii)-Foreign CAR 147 and FAO List on 31-01-2023.pdf">Foreign<img
+																			class="pull-right pt-2"
+																			src="assets/DGCA/images/icons/next.png"></a></li>
+														</ul></li>
+													
+												</ul></li>
+										</ul></li>
+									<li><a>Designated Examiner<img
+											class="pull-right pt-2"
+											src="assets/DGCA/images/icons/next.png"></a>
+										<ul class="item-level-2">
+											<li><a
+												data-url="jsp/dgca/InventoryList/personal/designated/flyTrain/DE_DFT.pdf">Flying Training
+													<img class="pull-right pt-2"
+													src="assets/DGCA/images/icons/next.png"></a></li>
+											<li><a
+												data-url="jsp/dgca/InventoryList/personal/designated/glidingTrain/glyclub_exam.pdf">Gliding Training<img
+													class="pull-right pt-2"
+													src="assets/DGCA/images/icons/next.png"></a></li>
+											
+											 <li><a
+												data-url="jsp/dgca/InventoryList/personal/designated/examiner/App_Exam.pdf">Examiners with Scheduled Operators<img
+													class="pull-right pt-2"
+													src="assets/DGCA/images/icons/next.png"></a></li> 
+										</ul></li>
+									<!-- Examinations -->
+									<li><a>Examination<img
+											class="pull-right pt-2"
+											src="assets/DGCA/images/icons/next.png"></a>
+										<ul class="item-level-2">
+											<li><a onMouseOver="this.style.color='white'"
+												onMouseOut="this.style.color='#aeaeb1'"
+												onclick="fnAlertRedirection('https://pariksha.dgca.gov.in/');">DGCA examination portal<img
+													class="pull-right pt-2"
+													src="assets/DGCA/images/icons/next.png"> </a></li>
+											<li><a data-url="jsp/dgca/InventoryList/personal/examination/PN-ExamCalendar.pdf">Tentative Schedule of Examination<img
+													class="pull-right pt-2"
+													src="assets/DGCA/images/icons/next.png"></a></li>
+											<li><a
+												data-url="4231/4203/sericename">Result<img
+													class="pull-right pt-2"
+													src="assets/DGCA/images/icons/next.png"></a></li>
+										</ul></li>
+									<!-- Examination End -->
+									<li><a>Medical<img
+											class="pull-right pt-2"
+											src="assets/DGCA/images/icons/next.png"></a>
+										<ul class="item-level-2">
+											<li><a
+												data-url="jsp/dgca/InventoryList/personal/medical/class1/Class1.pdf">Class 1 Medical Examiner<img
+													class="pull-right pt-2"
+													src="assets/DGCA/images/icons/next.png"></a></li>
+											<li><a
+												data-url="jsp/dgca/InventoryList/personal/medical/class2/Class2.pdf">Class 2 Medical Examiner<img
+													class="pull-right pt-2"
+													src="assets/DGCA/images/icons/next.png"></a></li>
+											<li><a
+												data-url="jsp/dgca/InventoryList/personal/medical/class3/Class3">Class 3 Medical Examiner<img
+													class="pull-right pt-2"
+													src="assets/DGCA/images/icons/next.png"></a></li>
+											<li><a
+												data-url="jsp/dgca/InventoryList/personal/medical/centralized/Procedure for DGCA Centralised Appt PMR Fwd System.pdf">Centralized Appointment & PMR Forwarding Procedure<img
+													class="pull-right pt-2"
+													src="assets/DGCA/images/icons/next.png"> </a></li>
+											<li><a
+												data-url="jsp/dgca/InventoryList/personal/medical/medical/MedCirc01_2015.pdf">Medical Records - Amendment of Personal Details
+													<img class="pull-right pt-2"
+													src="assets/DGCA/images/icons/next.png"> </a></li>
+										</ul></li>
+
+								</ul></li>
+						</ul>
+					</div>
+				</div>
+				<div role="tabpanel" class="tab-pane menu-container aeroDromes"
+					id="aeroDromes">
+					<div class="container">
+						<!-- <img class="pull-right d-none d-lg-block tab-close"
+							src="assets/DGCA/images/icons/Close.png"> -->
+						<ul class="item-level-0">
+							<li><a>Aerodrome <img class="pull-right pt-2"
+									src="assets/DGCA/images/icons/next.png"></a>
+								<ul class="item-level-1 justify-content-around">
+									<li><a
+										data-url="4241/4204/sericename">Obtaining Aerodrome License<img
+											class="pull-right pt-2"
+											src="assets/DGCA/images/icons/next.png"></a></li>
+								<!--	<li><a
+										data-url="jsp/dgca/InventoryList/aerodrome/public/PUBLIC USE LICENSED AERODROME (PUBLIC AND PRIVATE) AND HELIPORT -converted (1).pdf">Public Aerodromes<img
+											class="pull-right pt-2"
+											src="assets/DGCA/images/icons/next.png"></a></li>
+									<li><a
+										data-url="jsp/dgca/InventoryList/aerodrome/private/AERODROMES LICENSED IN PRIVATE USE CATEGORY-converted.pdf">Private Aerodromes<img
+											class="pull-right pt-2"
+											src="assets/DGCA/images/icons/next.png"></a></li> -->
+											
+									<li>
+										<a data-url="scan?requestType=ApplicationRH&actionVal=loadAerodromeDtls&objval=3&screenId=26110181&LicenseTypeFlag=1";>
+										Public Aerodromes
+										<img class="pull-right pt-2" src="assets/DGCA/images/icons/next.png"></a>
+									</li> 			
+									<li >
+										<a data-url="scan?requestType=ApplicationRH&actionVal=loadAerodromeDtls&objval=3&screenId=26110181&LicenseTypeFlag=2";>
+										Private Aerodromes
+										<img class="pull-right pt-2" src="assets/DGCA/images/icons/next.png"></a> 	
+									</li>		
+											
+											
+								</ul></li>
+						</ul>
+					</div>
+				</div>
+
+				<div role="tabpanel"
+					class="tab-pane menu-container navigationServices"
+					id="navigationServices">
+					<div class="container">
+						<!-- <img class="pull-right d-none d-lg-block tab-close"
+							src="assets/DGCA/images/icons/Close.png"> -->
+						<ul class="item-level-0">
+							<li><a>Air Navigation Services<img
+									class="pull-right pt-2" src="assets/DGCA/images/icons/next.png"></a>
+								<ul class="item-level-1 justify-content-around">
+									<li><a
+										data-url="jsp/dgca/InventoryList/airNavigationService/ANS.pdf">About Air Navigation Services<img
+											class="pull-right pt-2"
+											src="assets/DGCA/images/icons/next.png"></a></li>
+								</ul></li>
+						</ul>
+					</div>
+				</div>
+
+				<div role="tabpanel" class="tab-pane menu-container dataReports"
+					id="dataReports">
+					<div class="container">
+						<!-- <img class="pull-right d-none d-lg-block tab-close"
+							src="assets/DGCA/images/icons/Close.png"> -->
+						</a>
+						<ul class="item-level-0">
+							<li><a>Data & Reports<img
+									class="pull-right pt-2" src="assets/DGCA/images/icons/next.png"></a>
+								<ul class="item-level-1 justify-content-around">
+									<li><a>Aviation Data and Statistics<img
+											class="pull-right pt-2"
+											src="assets/DGCA/images/icons/next.png"></a>
+										<ul class="item-level-2">
+											<li><a class="btm-grey-bdr">Air Transport<img
+													class="pull-right pt-2"
+													src="assets/DGCA/images/icons/next.png"></a>
+												<ul class="item-level-3">
+													<li><a
+														data-url="4252/4205/sericename">Civil Aviation Statistics - Handbook
+															<img class="pull-right pt-2"
+															src="assets/DGCA/images/icons/next.png"> </a></li>
+													<li><a>Domestic Air Transport<img
+															class="pull-right pt-2"
+															src="assets/DGCA/images/icons/next.png"></a>
+														<ul class="item-level-4">
+															<li><a
+																data-url="4264/4206/sericename">Air Traffic<img
+																	class="pull-right pt-2"
+																	src="assets/DGCA/images/icons/next.png"></a></li>
+															<li><a
+																data-url="259/4184/servicename">Monthly Statistics<img
+																	class="pull-right pt-2"
+																	src="assets/DGCA/images/icons/next.png"></a></li>
+															<li><a
+																data-url="4267/4210/servicename">Yearly Statistics<img
+																	class="pull-right pt-2"
+																	src="assets/DGCA/images/icons/next.png"></a></li>
+														</ul></li>
+													<li><a>International Air Transport<img
+															class="pull-right pt-2"
+															src="assets/DGCA/images/icons/next.png"></a>
+														<ul class="item-level-4">
+															<li><a
+																data-url="4268/4207/servicename">Quarterly Statistics<img
+																	class="pull-right pt-2"
+																	src="assets/DGCA/images/icons/next.png"></a></li>
+														</ul></li>
+												</ul></li>
+										</ul></li>
+									<li><a>Accident and Incident Data<img
+											class="pull-right pt-2"
+											src="assets/DGCA/images/icons/next.png"></a>
+										<ul class="item-level-2">
+											<li><a data-url="AccidentReports/500005/0/viewApplicationDtlsReq">Accident Reports<img
+													class="pull-right pt-2"
+													src="assets/DGCA/images/icons/next.png"></a></li>
+											<li><a data-url="IncidentReports/500006/0/viewApplicationDtlsReq">Incident Reports<img
+													class="pull-right pt-2"
+													src="assets/DGCA/images/icons/next.png"></a></li>
+											<li><a
+												data-url="4273/4208/servicename">Aircraft Accident Summaries<img
+													class="pull-right pt-2"
+													src="assets/DGCA/images/icons/next.png"></a></li>
+										</ul></li>
+										<li><a>Surveillance and Enforcement <img
+											class="pull-right pt-2"
+											src="assets/DGCA/images/icons/next.png"></a>
+										<ul class="item-level-2">
+											<li><a data-url="4360/4637/servicename">About Us<img
+													class="pull-right pt-2"
+													src="assets/DGCA/images/icons/next.png"></a></li>
+											<li><a data-url="4360/4638/servicename">Surveillance Programme<img
+													class="pull-right pt-2"
+													src="assets/DGCA/images/icons/next.png"></a></li>
+											<li><a
+												data-url="4360/4639/servicename">Sharing of Safety Related Information<img
+													class="pull-right pt-2"
+													src="assets/DGCA/images/icons/next.png"></a></li>
+										</ul>
+									</li>
+								</ul>
+							<ul class="item-level-1 justify-content-around">
+									<li><a>Annual Report<img
+											class="pull-right pt-2"
+											src="assets/DGCA/images/icons/next.png"></a>
+										<ul class="item-level-2">
+											<li><a href="#" onclick="fnAlertRedirection('https://www.civilaviation.gov.in/en/publication/annual-reports');">Annual Report<img
+													class="pull-right pt-2"
+													src="assets/DGCA/images/icons/next.png"></a></li>
+										</ul></li>
+								</ul>	
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div role="tabpanel"
+					class="tab-pane menu-container regulationGuidance"
+					id="regulationGuidance">
+					<div class="container">
+						<!-- <img class="pull-right d-none d-lg-block tab-close"
+							src="assets/DGCA/images/icons/Close.png"> -->
+						</a>
+						<ul class="item-level-0">
+							<li><a>Regulations and Guidance <img
+									class="pull-right pt-2" src="assets/DGCA/images/icons/next.png"></a>
+								<ul class="item-level-1 justify-content-around">
+									<li><a>Act and Rules<img
+											class="pull-right pt-2"
+											src="assets/DGCA/images/icons/next.png"></a>
+
+										<ul class="item-level-2">
+											
+													
+							<li><a data-url="jsp/dgca/InventoryList/RegulationGuidance/Rules/Bharatiya Vayuyan Adhiniyam 2024.pdf">
+							The Bharatiya Vayuyan Adhiniyam, 2024<img
+									 class="pull-right pt-2" src="assets/DGCA/images/icons/next.png"></a></li>
+													
+													
+
+											<li><a class="btm-grey-bdr">Rules<img
+													class="pull-right pt-2"
+													src="assets/DGCA/images/icons/next.png"></a>
+												<ul class="item-level-3">
+													<li><a data-url="aircraftRules1937/1/0/viewDynamicRulesReq">The Aircraft Rules, 1937<img
+															class="pull-right pt-2"
+															src="assets/DGCA/images/icons/next.png"></a></li>
+													<li><a
+														data-url="jsp/dgca/InventoryList/RegulationGuidance/Rules/AircraftRules1994/airrule-1994.pdf">The Aircraft (Demolition of Obstruction caused by Buildings and Trees etc.) Rules, 1994<img
+															class="pull-right pt-2"
+															src="assets/DGCA/images/icons/next.png"></a></li>
+													<li><a
+														data-url="jsp/dgca/InventoryList/RegulationGuidance/Rules/CarriageDangerousGoods2003/air2003.pdf">The Aircraft (Carriage of Dangerous Goods) Rules, 2003<img
+															class="pull-right pt-2"
+															src="assets/DGCA/images/icons/next.png"></a></li>
+													<li><a
+														data-url="jsp/dgca/InventoryList/RegulationGuidance/Rules/AircraftRules2011/Aircraft(Security) Rules, 2011.pdf">The Aircraft (Security) Rules,2011<img
+															class="pull-right pt-2"
+															src="assets/DGCA/images/icons/next.png"></a></li>
+													<li><a
+														data-url="jsp/dgca/InventoryList/RegulationGuidance/Rules/AircraftRules2017/Aircraft Investigation of Accident and Incident Rules 2017.pdf">The Aircraft (Investigation of Accident and Incidents) Rules, 2017<img
+															class="pull-right pt-2"
+															src="assets/DGCA/images/icons/next.png"></a></li>
+													<li><a
+														data-url="jsp/dgca/InventoryList/RegulationGuidance/Rules/The Unmanned Aircraft System Rules/Drones Rules 2021.pdf">The Drone Rules, 2021<img
+															class="pull-right pt-2"
+															src="assets/DGCA/images/icons/next.png"></a></li>
+															
+															<li><a data-url="jsp/dgca/InventoryList/RegulationGuidance/Rules/RTR Rules 2025.pdf">The Radio Telephone Operator (Restricted) Certificate and License Rules, 2025<img
+															 class="pull-right pt-2" src="assets/DGCA/images/icons/next.png"></a></li>
+															
+												</ul></li>
+												
+												
+												 <li><a 	data-url="5068/4998/servicename">Drone Rules<img class="pull-right pt-2"
+				src="assets/DGCA/images/icons/next.png"></a></li>
+												
+												
+												
+											<li><a class="btm-grey-bdr">Statutory Notifications Affecting Aviation In India<img
+													class="pull-right pt-2"
+													src="assets/DGCA/images/icons/next.png"></a>
+												<ul class="item-level-3">
+													<li><a>The Aircraft Rules, 1937<img
+															class="pull-right pt-2"
+															src="assets/DGCA/images/icons/next.png"></a>
+														<ul class="item-level-4">
+															<li><a
+																data-url="jsp/dgca/InventoryList/RegulationGuidance/StatutoryNotificationsAffecting/so726.pdf">S. O. 726(E) dated 4-10-94<img
+																	class="pull-right pt-2"
+																	src="assets/DGCA/images/icons/next.png"></a></li>
+															<li><a
+																data-url="jsp/dgca/InventoryList/RegulationGuidance/StatutoryNotificationsAffecting/so727.pdf">S. O. 727(E) dated 4-10-94<img
+																	class="pull-right pt-2"
+																	src="assets/DGCA/images/icons/next.png"></a></li>
+														</ul></li>
+													<li><a>The Aircraft (Carriage of Dangerous Goods) Rules, 2003<img
+															class="pull-right pt-2"
+															src="assets/DGCA/images/icons/next.png"></a>
+														<ul class="item-level-4">
+															<li><a
+																data-url="jsp/dgca/InventoryList/RegulationGuidance/StatutoryNotificationsAffecting/NOT446(E).pdf">S.O. 446(E) dated 19-3-2007<img
+																	class="pull-right pt-2"
+																	src="assets/DGCA/images/icons/next.png"></a></li>
+															<li><a
+																data-url="jsp/dgca/InventoryList/RegulationGuidance/StatutoryNotificationsAffecting/NOT447(E).pdf">S.O. 447(E) dated 19-3-2007<img
+																	class="pull-right pt-2"
+																	src="assets/DGCA/images/icons/next.png"></a></li>
+														</ul></li>
+												</ul></li>
+											<li><a
+												data-url="4283/4232/servicename">National Legislation<img
+													class="pull-right pt-2"
+													src="assets/DGCA/images/icons/next.png"></a></li>
+											<li><a
+												data-url="4289/4233/servicename">International Convention<img
+													class="pull-right pt-2"
+													src="assets/DGCA/images/icons/next.png"></a></li>
+										</ul></li>
+									<li><a>Requirements and Guidance<img
+											class="pull-right pt-2"
+											src="assets/DGCA/images/icons/next.png"></a>
+										<ul class="item-level-2">
+											<li><a data-url="civilAviationRequirements/6/0/viewDynamicRulesReq">Civil Aviation Requirements<img
+													class="pull-right pt-2"
+													src="assets/DGCA/images/icons/next.png"></a></li>
+											<li><a data-url="aeronauticalInformationCirculars/119/0/viewDynamicRulesReq">Aeronautical Information Circulars<img
+													class="pull-right pt-2"
+													src="assets/DGCA/images/icons/next.png"></a></li>
+											<li class="d-lg-block d-none"><a data-url="circularsRulesGen/7/3328/viewDynamicRuleContLvl2">
+											Circulars<img
+													class="pull-right pt-2"
+													src="assets/DGCA/images/icons/next.png"></a></li>
+
+											<li class="d-lg-none d-block"><a class="btm-grey-bdr">Circulars <img
+													class="pull-right pt-2"
+													src="assets/DGCA/images/icons/next.png"></a>
+												<ul class="item-level-3">
+													<li><a
+														data-url="circularsRulesGen/7/3328/viewDynamicRuleContLvl2">General</a></li>
+													<li class=""><a
+								data-url="circularsRulesATCOLicensing/7/3323/viewDynamicRuleContLvl2">ATCO Licensing</a></li>
+							<li class=""><a
+								data-url="circularsRulesAerodromes/7/3321/viewDynamicRuleContLvl2">Aerodromes</a></li>
+							<li class=""><a
+								data-url="circularsRulesAircraftEngineering/7/9422/viewDynamicRuleContLvl2">Aircraft Engineering</a></li>
+							
+							<li class=""><a
+								data-url="circularsRulesAirNavSer/7/3320/viewDynamicRuleContLvl2">Air Navigation Services</a></li>
+							<li class=""><a
+								data-url="circularsRulesAirSafety/7/3322/viewDynamicRuleContLvl2">Air Safety</a></li>
+							<li class=""><a
+								data-url="circularsRulesAirTran/7/3327/viewDynamicRuleContLvl2">Air Transport</a></li>
+							<li class=""><a
+								data-url="circularsRulesAirworthiness/7/3326/viewDynamicRuleContLvl2">Airworthiness</a></li>
+							<li class=""><a
+								data-url="circularsRulesCabinSafety/7/3317/viewDynamicRuleContLvl2">Cabin Safety
+									</a></li>
+							<li class=""><a
+								data-url="circularsRulesEnforcement/7/3319/viewDynamicRuleContLvl2">Surveillance and Enforcement</a></li>
+							<li class=""><a
+								data-url="circularsRulesEnvironment/7/3315/viewDynamicRuleContLvl2">Environment</a></li>
+							
+							
+							<li class=""><a
+								data-url="circularsRulesFlightCrewLic/7/3324/viewDynamicRuleContLvl2">Flight Crew Licensing
+									</a></li>
+							<li class="default-tabs"><a
+								data-url="circularsRulesFlightCrewLic/7/4068/viewDynamicRuleContLvl2">Dangerous Goods
+							</a></li>
+						<li class=""><a
+								data-url="circularsRulesFlightCrewLic/7/4080/viewDynamicRuleContLvl2">Drones</a></li>
+						<li class=""><a
+								data-url="circularsRulesFlightCrewLic/7/4078/viewDynamicRuleContLvl2"> AAM </a></li>
+								
+							<li class=""><a
+								data-url="circularsRulesFlightCrewTraining/7/3325/viewDynamicRuleContLvl2">Flight Crew Training
+									</a></li>
+							
+							<li class=""><a
+								data-url="circularsRulesOperations/7/3318/viewDynamicRuleContLvl2">Operations</a></li>
+							<li class=""><a
+								data-url="circularsRulesStateSafetyProg/7/3316/viewDynamicRuleContLvl2">State Safety Programme</a></li>
+							<li class=""><a data-url="circularsRulesMedicalCirculars/7/4724/viewDynamicRuleContLvl2">Medical</a></li>
+												</ul></li>
+
+											<li><a
+												data-url="4323/4236/servicename">Manuals and Procedures<img
+													class="pull-right pt-2"
+													src="assets/DGCA/images/icons/next.png"></a></li>
+											<li><a
+												data-url="4334/4234/servicename">Forms<img
+													class="pull-right pt-2"
+													src="assets/DGCA/images/icons/next.png"></a></li>
+													<li><a data-url="publicNotices/0/0/viewAllService"><img
+													class="pull-right pt-2"
+													src="assets/DGCA/images/icons/next.png">Public Notices</a></li>
+														
+															 <li><a data-url="5069/4996/servicename"><img class="pull-right pt-2" src="assets/DGCA/images/icons/next.png">Public Notice-Drone</a></li>
+														
+														
+											<li><a class="btm-grey-bdr">Exemptions <img
+													class="pull-right pt-2"
+													src="assets/DGCA/images/icons/next.png"></a>
+												<ul class="item-level-3">
+													<li><a
+														data-url="jsp/dgca/InventoryList/RegulationGuidance/Exemptions/Rule160.pdf">Exemptions Under Rule 160<img
+															class="pull-right pt-2"
+															src="assets/DGCA/images/icons/next.png"></a></li>
+													<li><a
+														data-url="jsp/dgca/InventoryList/RegulationGuidance/Exemptions/rule133.pdf">Exemptions Under Rule 133A<img
+															class="pull-right pt-2"
+															src="assets/DGCA/images/icons/next.png"></a></li>
+												</ul></li>
+										</ul></li>
+									<li><a>Comments <img
+											class="pull-right pt-2"
+											src="assets/DGCA/images/icons/next.png"></a>
+										<ul class="item-level-2">
+											<li><a
+												data-url="4359/4235/servicename">Comments Invited<img
+													class="pull-right pt-2"
+													src="assets/DGCA/images/icons/next.png"></a></li>
+										</ul></li>
+
+								</ul></li>
+						</ul>
+
+
+
+					</div>
+				</div>
+			
+			
+			<div role="tabpanel" class="tab-pane menu-container navigationServices11" id="navigationServices11">
+					<div class="container">
+						<ul class="item-level-0">
+									<li><a href="jsp/dgca/InventoryList/headerblock/drones/RPAS.jsp">Drones and AAM</a></li>
+						</ul>
+					</div>
+				</div>
+			
+			
+			</div>
+			<!-- tab-content ends -->
+		</div>
+	</section>
+
+	<nav class="navbar bg-white d-lg-none mobile-sub-header">
+
+		<ul class="navbar-nav internal-link">
+			<li class="nav-item dropdown drop-level-1"><a id="dropdownMenu1"
+				href="#" data-toggle="dropdown" aria-haspopup="true"
+				aria-expanded="false"
+				class="nav-link dropdown-toggle nav-linkLevel1">About DGCA</a>
+				<ul aria-labelledby="dropdownMenu1" class="dropdown-menu shadow">
+					<li><a
+						data-url="jsp/dgca/topHeader/aboutDGCA/vision/vision.pdf"
+						class="dropdown-item">Vision</a></li>
+					<li class="dropdown-submenu"><a id="dropdownMenu12" href="#"
+						role="button" data-toggle="dropdown" aria-haspopup="true"
+						aria-expanded="false"
+						class="dropdown-item dropdown-toggle nav-linkLevel2">Organization</a>
+						<ul aria-labelledby="dropdownMenu12" class="dropdown-menu  shadow">
+							<li><a
+								data-url="jsp/dgca/topHeader/aboutDGCA/organisation/org_Manual/Organisation Manual.pdf"
+								class="dropdown-item">Organization Manual</a></li>
+							
+									<li><a data-url="jsp/dgca/topHeader/aboutDGCA/organisation/Headquarters/dghq.html"
+											class="dropdown-item">Headquarters</a></li>
+							
+							
+							
+										
+							
+									<li><a data-url="RegionalOffices/0/500011/viewApplicationDtlsReqPDF" class="dropdown-item">Regional Offices</a></li>
+									
+										
+							
+							<li><a data-url="Remuneration/0/500007/viewApplicationDtlsReqPDF" class="dropdown-item">Remuneration</a></li>
+							<!-- <li class="dropdown-submenu"><a id="dropdownMenu3" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle">level 2</a>
+								<ul aria-labelledby="dropdownMenu3" class="dropdown-menu active shadow">
+									<li><a href="#" class="dropdown-item">Organization Manual</a></li>
+									<li><a href="#" class="dropdown-item">Headquarters</a></li>
+									<li><a href="#" class="dropdown-item">Regional Offices</a></li>
+									<li><a href="#" class="dropdown-item">Remuneration</a></li>
+								</ul>
+							</li> -->
+						</ul></li>
+					<li>
+					
+					<a data-url="4362/4640/servicename"
+						class="dropdown-item">Key Officials</a>
+					
+					
+								
+					</li>
+					<li>
+					
+					<a data-url="jsp/dgca/topHeader/aboutDGCA/budget/budget.pdf"
+						class="dropdown-item">Budget</a>
+					
+					</li>
+								
+								
+					<li><a
+						data-url="jsp/dgca/topHeader/aboutDGCA/userFees/User fees.pdf"
+						class="dropdown-item">User Fees</a></li>
+								
+								
+					<li class="dropdown-submenu"><a id="dropdownMenu13" href="#"
+						role="button" data-toggle="dropdown" aria-haspopup="true"
+						aria-expanded="false"
+						class="dropdown-item dropdown-toggle nav-linkLevel2">Vigilance</a>
+						<ul aria-labelledby="dropdownMenu13" class="dropdown-menu  shadow">
+							
+								<li><a
+								data-url="4363/4641/servicename"
+								class="dropdown-item">Vigilance Functions</a></li>
+								
+							
+							
+							
+							
+							<!--
+								<li><a data-url="4363/4642/servicename"
+									class="dropdown-item">Circulars</a></li>
+								 -->
+							
+							
+							<li><a
+								data-url="4363/4643/servicename"
+								class="dropdown-item">Contact details of CVO</a></li>
+							<li><a
+								data-url="4363/4644/servicename"
+								class="dropdown-item">Lodge Complaint</a></li>
+										
+										
+							<!-- <li><a
+								data-url="jsp/dgca/topHeader/aboutDGCA/vigilance/Pidpi english_merged.pdf"
+								class="dropdown-item">Do's and Don't</a></li> -->
+						</ul></li>
+					<li><a
+						data-url="jsp/dgca/topHeader/aboutDGCA/CourtCase/Court_Case.pdf"
+						class="dropdown-item">Court Cases</a></li>
+					<li><a
+						data-url="jsp/dgca/topHeader/aboutDGCA/shabdkosh/shabdkosh.pdf"
+						class="dropdown-item">Shabdkosh</a></li>
+								
+					<li><a data-url="NodalOfficers/0/500008/viewApplicationDtlsReqPDF" class="dropdown-item">Liaison/Nodal  Officers</a></li>
+								<!-- added by Ashish yadav on 30-4-25-->
+                    <li class="dropdown-submenu"><a id="grievancetab" href="#"
+						role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+						class="dropdown-item dropdown-toggle nav-linkLevel2">Grievance Redressal</a>
+				<ul aria-labelledby="grievancetab" class="dropdown-menu  shadow">
+				<li><a data-url="jsp/dgca/topHeader/aboutDGCA/GrievanceRedressal/SOP for grievance redressal.pdf"
+												class="dropdown-item">SOP</a></li>
+				</ul>
+				</li>
+				</ul></li>
+			<li class="nav-item dropdown drop-level-1"><a id="dropdownMenu2"
+				href="#" data-toggle="dropdown" aria-haspopup="true"
+				aria-expanded="false"
+				class="nav-link dropdown-toggle nav-linkLevel1">Jobs</a>
+				<ul aria-labelledby="dropdownMenu2" class="dropdown-menu shadow">
+					<li><a data-url="4368/4646/servicename" class="dropdown-item">Current Vacancies</a></li>
+					<li><a data-url="positionDGCA/500115/0/viewApplicationDtlsReq" class="dropdown-item">Positions in DGCA</a></li>
+					<li><a data-url="4365/4645/servicename" class="dropdown-item">Recruitment Rules</a></li>
+				</ul></li>
+				
+				
+					<li class="nav-item dropdown drop-level-1"><a data-url="5066/12521/servicename" class="dropdown-item">Internship</a></li>
+					
+				
+			<li class="nav-item dropdown drop-level-1"><a id="dropdownMenu3"
+				href="#" data-toggle="dropdown" aria-haspopup="true"
+				aria-expanded="false"
+				class="nav-link dropdown-toggle nav-linkLevel1">RTI</a>
+				<ul aria-labelledby="dropdownMenu3" class="dropdown-menu shadow">
+					<li><a data-url="AppointofCPIOAppellateAuth/500003/0/viewApplicationDtlsReq" class="dropdown-item">RTI Officers</a></li>
+					<li><a
+						data-url="4372/4647/servicename"
+						class="dropdown-item">RTI Manual</a></li>
+					<li><a
+						data-url="4377/4648/servicename"
+						class="dropdown-item">RTI Reports</a></li>
+					<li><a data-url="TransparencyOfficer/0/500004/viewApplicationDtlsReqPDF" class="dropdown-item">RTI Transparency Officers</a></li>
+					<li><a data-url="RTIFess/0/500010/viewApplicationDtlsReqPDF" class="dropdown-item">RTI Fees</a></li>
+					<li><a data-url="jsp/dgca/topHeader/rti/Proactive disclosure consolidated file.pdf" class="dropdown-item">Proactive Disclosure</a></li>
+				<li><a data-url="5067/8055/servicename" class="dropdown-item">Immovable Property Return</a></li>				
+								
+								
+				</ul></li>
+			<li class="nav-item dropdown drop-level-1"><p class="new-window-pdf mb-0"> <a target="_blank" href="jsp/dgca/topHeader/contactUs/Directory.pdf">Contact Us</a></p>
+			</li>
+			<li class="nav-item dropdown drop-level-1"><a
+				class="nav-link dropdown-toggle"
+				href="jsp/dgca/topHeader/aZIndex/AtoZindex.jsp"
+				>A-Z Index</a></li>
+			<li class="nav-item dropdown drop-level-1"><a
+				class="nav-link dropdown-toggle"
+				href="assets/DGCA/rajbhasha/rajbhasha.jsp"
+				>Rajbhasha</a></li>
+						<!--<li>
+					<div class="dropdown">
+                       <a> News</a>
+                           <div class="dropdown-content">
+                                <a href="#" onclick="fnAlertRedirection('https://epaper.thehindu.com/');">The Hindu e-Paper</a>
+                                <a href="#" onclick="fnAlertRedirection('https://www.epw.in/');">Economical and Political weekly Magazine</a>
+                                <a href="#" onclick="fnAlertRedirection('https://pocketmags.com/');">Aviation News Online Journal</a>
+                          </div>
+                    </div>
+						</li>	-->
+                  <li>
+   					 <div class="dropdown">
+                    <a>  Library</a>
+                           <div class="dropdown-content">
+                                <a href="#" onclick="fnAlertRedirection('https://discovery.delnet.in/');">DELNET</a>
+                                <a href="#" onclick="fnAlertRedirection('https://eg4.nic.in/OPAC/Default.aspx?CL_NAME=CGOVLIB1');">Library Online Catalouge</a>
+                          </div>
+                    </div></li>
+		</ul>
+	</nav>
+
+</header>
+<script>
+function fnLoginUrl(){
+	var selectedValue = document.getElementById("loginSelect").value;
+		if(selectedValue !== null && selectedValue !== undefined && selectedValue !== "none"){
+			document.getElementById("loginSelect").value = "none";
+			window.open(
+			  selectedValue,
+			  '_blank'
+			);
+	}
+}
+
+
+function fnLoginUrlMob(){
+	var selectedValue = document.getElementById("loginSelectMob").value;
+		if(selectedValue !== null && selectedValue !== undefined && selectedValue !== "none"){
+			document.getElementById("loginSelectMob").value = "none";
+		window.open(
+		  selectedValue,
+		  '_blank'
+		);
+	}
+}
+</script>
+<style>
+.menu-wraper .menu-head ul li a {
+	display: inline-block;
+	padding: 0.3rem 0.6rem 0.3rem 0.6rem;;
+	    margin-bottom: 0.5rem;
+}
+
+.menu-wraper .menu-head ul li a.active:after {
+	bottom: 0px;
+}
+
+</style>
+	<form name="certVerfForm" id="certVerfForm" action="" method="post">
+	</form>
+<!-- The Modal -->
+<div class="modal" id="myModal">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+		<div class="modal-header border-0">
+        	<button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+		<div class="modal-body text-center pb-5">
+       		<h4>Sit Environment</h4>
+      </div>
+	</div>
+  </div>
+</div>
+	<section class="header-left-container header-left-hide">
+	<section class="top-banner d-flex align-items-center justify-content-center mb-3 banner-hide">
+		<div class="baner-content ">
+				<span></span>
+		</div>
+		</section>
+	<div class="d-flex">
+
+		
+
+    	
+
+
+<div class="side-tabs internal-link">
+			<div class="aircraft side-hide side-navigation">
+			<ul>
+				<li><a class="level1">Aircraft</a>
+				<ul>
+				<li class="collapse-tabs level2">
+					<a href="#aircraft1"
+						class="d-flex justify-content-between active-arrow active-collapse collapsed"
+						data-toggle="collapse">Certification  </a>
+					<div id="aircraft1" class="collapse sub-option">
+						<ul>
+							<li class="default-tabs"><a
+								data-url="4184/4188/servicename">Type Certification</a></li>
+							<li class="default-tabs"><a
+								data-url="4185/4189/servicename">Acceptance of Type Certification</a></li>
+							<li class="default-tabs"><a
+								data-url="jsp/dgca/InventoryList/aircraft/certification/designAccept/DesignAcceptance.pdf">Design Acceptance
+									</a></li>
+								<li class="default-tabs"><a data-url="jsp/dgca/InventoryList/aircraft/certification/designOrgs/Approved_Design_Organisation_25_11_2019.pdf">Design Organization</a></li>
+								<li class="default-tabs"><a
+									data-url="jsp/dgca/InventoryList/aircraft/certification/ADOA/List of Approved ADOA 01-04-2024.pdf">Alternate Procedures to Design Organisation Approval (ADOA)</a></li>
+
+								<li class="default-tabs"><a data-url="jsp/dgca/InventoryList/aircraft/certification/productOrgs/Approved Production Organisations.pdf">Production Organization</a></li>
+							<li class="default-tabs"><a
+								data-url="4186/4190/servicename">Technical Standard Orders</a></li>
+							<li class="default-tabs"><a
+								data-url="4378/5223/servicename">ITSO Authorization</a></li>
+								
+								 <li class="default-tabs"><a data-url="260/3760/servicename">
+								 ITSOA Surrendered / Revoked</a></li>
+								
+						</ul>
+					</div>
+				</li>
+
+				<li class="collapse-tabs level2">
+					<a href="#aircraft3"
+						class="d-flex justify-content-between active-arrow active-collapse collapsed"
+						data-toggle="collapse">Registration</a>
+					<div id="aircraft3" class="collapse  sub-option">
+						<ul>
+							<li class="default-tabs"><a
+								data-url="4000/4022/servicename">Aircraft Report
+									</a></li>
+							
+						</ul>
+					</div>
+				</li>
+				<li class="collapse-tabs level2">
+					<a href="#aircraft2"
+						class="d-flex justify-content-between active-arrow active-collapse collapsed"
+						data-toggle="collapse">Continuing Airworthiness</a>
+					<div id="aircraft2" class="collapse sub-option">
+						<ul>
+							<li class="default-tabs"><a
+								data-url="4196/4199/servicename">Airworthiness Directives
+								</a></li>
+							<!-- <li class="default-tabs"><a
+								data-url="4192/4191/servicename">Mandatory Modification </a></li> -->
+								
+							<li class="default-tabs">
+								<a data-url="scan?requestType=ApplicationRH&actionVal=loadComboVals&screenId=10000001&category=11002551">Mandatory Modification
+								</a>
+							</li>	
+						</ul>
+					</div>
+				</li>
+				<li class="collapse-tabs level2">
+					<a href="#aircraft4"
+						class="d-flex justify-content-between active-arrow active-collapse collapsed"
+						data-toggle="collapse">DGCA Approved/Accepted Maintenance Organization</a>
+					<div id="aircraft4" class="collapse sub-option">
+						<ul>
+							<li class="default-tabs"><a
+								data-url="jsp/dgca/InventoryList/aircraft/maintenanceOrgs/Domestic/A(i)-Domestic CAR 145 Org.pdf">Domestic
+								</a></li>
+							<li class="default-tabs"><a
+								data-url="jsp/dgca/InventoryList/aircraft/maintenanceOrgs/Foreign/A(ii)-Foreign CAR 145 and FAMO List on 31-01-2023.pdf">Foreign </a></li>
+						</ul>
+					</div>
+				</li>
+					<li class="default-tabs"><a
+						data-url="jsp/dgca/InventoryList/aircraft/simulators/Simulators.pdf">Simulators</a></li>
+				 
+				<li class="collapse-tabs level2">
+					<a href="#aircraft5"
+						class="d-flex justify-content-between active-arrow active-collapse collapsed"
+						data-toggle="collapse">DGCA Approved CAR-M Organization </a>
+					<div id="aircraft5" class="collapse sub-option">
+						<ul>
+							<li class="default-tabs"><a
+								data-url="jsp/dgca/InventoryList/aircraft/maintenanceOrgs/Domestic/6CAR-M Sub Part F.pdf">CAR-M Sub Part F
+								</a></li>
+							<li class="default-tabs"><a
+								data-url="jsp/dgca/InventoryList/aircraft/maintenanceOrgs/Domestic/7CAR-M SUB PART-G.pdf">CAR-M Sub Part- G </a></li>
+						</ul>
+					</div>
+				</li>
+				
+				
+				
+				
+				</li></ul>
+				</ul>
+			</div>
+			<!-- aircraft ends -->
+			<div class="airOperation side-hide side-navigation">
+				<ul>
+				<li><a class="level1">Aircraft Operations</a>
+				<ul>
+				<li class="collapse-tabs level2">
+					<a href="#airoperation1"
+						class="d-flex justify-content-between active-arrow active-collapse collapsed"
+						data-toggle="collapse">Certification</a>
+							<div id="airoperation1" class="collapse sub-option">
+								<ul class="level-3">
+									<li class="default-tabs"><a data-url="jsp/dgca/InventoryList/airOperation/certification/AOP_Package/aopPak.html">Air Operator Certificate/Permit (AOC/AOP) Package</a></li> 
+									<li class="default-tabs">
+										<a data-url="jsp/dgca/InventoryList/airOperation/certification/scheduled/sch-oper.pdf">Scheduled Operators</a>
+										<!--<div id="reports111" class="collapse sub-option">
+											<ul class="level-4">
+												<li class="default-tabs"><a data-url="jsp/dgca/InventoryList/airOperation/certification/scheduled/sch-oper.pdf">Passengers</a></li>
+ 												<li class="default-tabs"><a data-url="jsp/dgca/InventoryList/airOperation/certification/scheduled/cargo/sch-oper1.pdf">Cargo</a></li> 
+ 											</ul>
+										</div>-->
+									</li>
+									<li class="default-tabs"><a
+										data-url="jsp/dgca/InventoryList/airOperation/certification/nonscheduled/ns-oper.pdf">Non Scheduled Operators
+											</a></li> 
+									 <li class="collapse-tabs">
+											<a href="#FroAir" class="active-arrow collapsed"
+												data-toggle="collapse">Flight Schedules
+												</a>
+											<div id="FroAir" class="collapse sub-option">
+												<ul class="level-4">
+													<li class="default-tabs"><a
+													data-url="4201/4200/servicename">Domestic Flight Schedule</a></li>
+													<li class="default-tabs"><a
+														data-url="4207/4201/servicename">International Flight Schedule
+															 </a></li>
+												</ul>
+											</div>
+									</li> 
+								</ul><!-- level 3 -->
+						</div>
+				</li><!-- level 2 -->
+				<li class="default-tabs"><a data-url="jsp/dgca/InventoryList/airOperation/certification/AerialWork/aerial work operations.pdf">Aerial Work Operations</a></li>
+				<li class="collapse-tabs level2">
+					<a href="#airoperation2"
+						class="d-flex justify-content-between active-arrow active-collapse collapsed"
+						data-toggle="collapse">Permissions</a>
+					<div id="airoperation2" class="collapse sub-option">
+						<ul class="level-3">
+							<li class="default-tabs"><a data-url="jsp/dgca/InventoryList/airOperation/permission/carriageDangerous/Carriage of Dangerous Goods.pdf">Carriage of Dangerous Goods</a></li>
+							<li class="default-tabs"><a data-url="jsp/dgca/InventoryList/airOperation/permission/carriageArms/Carriage of Arms.pdf">Carriage of Arms/Ammunition</a></li>
+							<li class="default-tabs"><a data-url="jsp/dgca/InventoryList/airOperation/permission/aerialPhoto/aer_photo.pdf">Aerial Photography/Remote Sensing Survey</a></li>
+							<li class="default-tabs"><a data-url="jsp/dgca/InventoryList/airOperation/permission/groundphoto/Ground Photography.pdf">Ground Photography</a></li>
+							<li class="default-tabs"><a data-url="jsp/dgca/InventoryList/airOperation/permission/cloudSeeding/cloud seeding.pdf">Cloud Seeding</a></li>
+							<li class="default-tabs"><a data-url="jsp/dgca/InventoryList/airOperation/permission/skyDiving/Sky Diving.pdf">Sky Diving</a></li>
+							<li class="collapse-tabs">
+									<a href="#FliCLe" class="active-arrow collapsed"
+										data-toggle="collapse">Flight Clearance</a>
+									<div id="FliCLe" class="collapse sub-option">
+										<ul class="level-4">
+											<li class="default-tabs"><a
+												data-url="jsp/dgca/InventoryList/airOperation/permission/flightCLearance/procedure/atc_1997.pdf">Procedure</a></li>
+											<li class="default-tabs"><a
+												data-url="jsp/dgca/InventoryList/airOperation/permission/flightCLearance/agency/tour_agency.pdf">Flight Clearing Agencies
+												</a></li>
+										</ul>
+									</div>
+								</li>
+						</ul><!-- level 3 -->
+					</div>
+				</li><!-- level 2 -->
+				<li class="collapse-tabs level2">
+					<a href="#airoperation3"
+						class="d-flex justify-content-between active-arrow active-collapse collapsed"
+						data-toggle="collapse">Training</a>
+					<div id="airoperation3" class="collapse sub-option">
+						<ul class="level-3">
+							 <li class="default-tabs"><a
+								data-url="jsp/dgca/InventoryList/airOperation/training/cabinCrew/AppCCC.pdf">Cabin Crew Training Programme</a></li> 
+							<li class="default-tabs"><a
+								data-url="jsp/dgca/InventoryList/airOperation/training/dangerousGoods/list_DGTP.pdf">Dangerous Goods Training Programme</a></li>
+						</ul>
+					</div>
+				</li><!-- level 2 -->
+				</ul>
+				</li>
+				</ul>
+			</div>
+			<!-- air operation ends -->
+
+			<div class="personal side-hide side-navigation">
+				<ul>
+				<li>
+				<a class="level1">Personnel</a>
+				<ul>
+					<li class="collapse-tabs level2">
+						<a href="#personnel1"
+							class="d-flex justify-content-between active-arrow active-collapse collapsed"
+							data-toggle="collapse">Licenses/Approvals </a>
+						<div id="personnel1" class="collapse sub-option">
+							<ul>
+								<li class="default-tabs"><a
+									data-url="jsp/dgca/InventoryList/personal/license/pilot/Pilots.pdf">Pilot</a></li>
+									<li class="default-tabs"><a data-url="jsp/dgca/InventoryList/personal/license/airMaintenance/AMEs.pdf">Aircraft Maintenance Engineers</a></li>
+									<li class="default-tabs"><a data-url="jsp/dgca/InventoryList/personal/license/airTraffic/ATCOs.pdf">Air Traffic Controllers</a></li>
+									<li class="default-tabs"><a data-url="jsp/dgca/InventoryList/personal/license/flightDispatcher/fkight dispatsher.pdf">Flight Dispatcher</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="collapse-tabs level2">
+						<a href="#personnel2"
+							class="d-flex justify-content-between active-arrow active-collapse collapsed"
+							data-toggle="collapse">Training</a>
+						<div id="personnel2" class="collapse sub-option">
+							<ul class="level-3">
+								<li class="collapse-tabs">
+										<a href="#pilot1" class="active-arrow collapsed"
+											data-toggle="collapse">Pilot</a>
+										<div id="pilot1" class="collapse sub-option">
+											<ul class="level-4">
+												 <li class="default-tabs"><a
+												data-url="jsp/dgca/InventoryList/personal/training/pilot/flrTrainOrgs/flyclub.pdf">Flying Training Organizations</a></li>
+												<li class="default-tabs"><a
+													data-url="jsp/dgca/InventoryList/personal/training/pilot/aircraftTrainOrgs/ATO.pdf">Aircraft Type Training Organization (Pilots)</a></li> 
+												<li class="default-tabs"><a
+													data-url="jsp/dgca/InventoryList/personal/training/pilot/glidingTrainOrgs/glyclub.pdf">Gliding Training Organization</a></li> 
+													<li class="default-tabs"><a
+													data-url="jsp/dgca/InventoryList/personal/training/pilot/glidingTrainOrgs/ELP_Trg.pdf">ELP Training & Testing Service Providers</a></li>
+											</ul>
+										</div>
+								</li>
+								<li class="collapse-tabs level3">
+										<a href="#airMain" class="active-arrow collapsed"
+											data-toggle="collapse">Aircraft Maintenance Engineer</a>
+										<div id="airMain" class="collapse sub-option">
+											<ul class="level-4">
+												<li class="default-tabs"><a
+													data-url="jsp/dgca/InventoryList/personal/training/airMaintenance/approvedTypeTrainOrgs/ametrg.pdf">AME Training Organization
+													</a></li>
+												<li class="default-tabs"><a
+													data-url="jsp/dgca/InventoryList/personal/training/airMaintenance/CAR147Basic/CAR 147(basic).pdf">CAR 147 (Basic) Training Organization</a></li>
+												
+												
+											</ul>
+										</div>
+									</li>
+									
+									<li class="collapse-tabs level3">
+										<a href="#airMain2" class="active-arrow collapsed"
+											data-toggle="collapse">DGCA Approved/Accepted CAR 147 Training Organization</a>
+										<div id="airMain2" class="collapse sub-option">
+											<ul class="level-4">
+												<li class="default-tabs"><a
+													data-url="jsp/dgca/InventoryList/personal/training/airMaintenance/Car147/Domestic/B(i)-Domestic CAR 147-Type DL fm website 6-2-23.pdf">Domestic
+													</a></li>
+												<li class="default-tabs"><a
+													data-url="jsp/dgca/InventoryList/personal/training/airMaintenance/Car147/Foreign/B(ii)-Foreign CAR 147 and FAO List on 31-01-2023.pdf">Foreign</a></li>
+											</ul>
+										</div>
+									</li>
+									
+							</ul><!-- level 3 -->
+						</div>
+					</li>
+					<li class="collapse-tabs level2">
+						<a href="#personnel3"
+							class="d-flex justify-content-between active-arrow active-collapse collapsed"
+							data-toggle="collapse">Designated Examiner</a>
+						<div id="personnel3" class="collapse sub-option">
+							<ul class="level-3">
+								<li class="default-tabs"><a
+									data-url="jsp/dgca/InventoryList/personal/designated/flyTrain/DE_DFT.pdf">Flying Training</a></li>
+								<li class="default-tabs"><a
+									data-url="jsp/dgca/InventoryList/personal/designated/glidingTrain/glyclub_exam.pdf">Gliding Training
+										 </a></li>
+								
+								<li class="default-tabs"><a
+									data-url="jsp/dgca/InventoryList/personal/designated/examiner/App_Exam.pdf">Examiners with Scheduled Operators
+										</a></li> 
+							</ul>
+						</div>
+					</li>
+					<li class="collapse-tabs level2">
+						<a href="#personnel4"
+							class="d-flex justify-content-between active-arrow active-collapse collapsed"
+							data-toggle="collapse">Medical</a>
+						<div id="personnel4" class="collapse sub-option">
+							<ul class="level-3">
+								<li class="default-tabs"><a
+									data-url="jsp/dgca/InventoryList/personal/medical/class1/Class1.pdf">Class 1 Medical Examiner</a></li>
+								<li class="default-tabs"><a
+									data-url="jsp/dgca/InventoryList/personal/medical/class2/Class2.pdf">Class 2 Medical Examiner</a></li>
+										<li class="default-tabs"><a data-url="jsp/dgca/InventoryList/personal/medical/class3/Class3.pdf">Class 3 Medical Examiner</a></li>
+								<li class="default-tabs"><a
+									data-url="jsp/dgca/InventoryList/personal/medical/centralized/Procedure for DGCA Centralised Appt PMR Fwd System.pdf">Centralized Appointment & PMR Forwarding Procedure
+										</a></li>
+								<li class="default-tabs"><a
+									data-url="jsp/dgca/InventoryList/personal/medical/medical/MedCirc01_2015.pdf">Medical Records - Amendment of Personal Details</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="collapse-tabs level2">
+					<a href="#personnel5"
+						class="d-flex justify-content-between active-arrow active-collapse collapsed"
+						data-toggle="collapse">Examination</a>
+					<div id="personnel5" class="collapse sub-option">
+						<ul class="level-3">
+							<li class="default-tabs"><a onclick="linkOpen('https://pariksha.dgca.gov.in/');">DGCA examination portal</a></li>
+							<li class="default-tabs"><a data-url="jsp/dgca/InventoryList/personal/examination/PN-ExamCalendar.pdf">Tentative Schedule of Examination</a></li>
+							<li class="default-tabs"><a
+								data-url="4231/4203/sericename">Result</a></li>
+							
+						</ul>
+					</div>
+				</li>
+				</ul>
+				</li>
+				</ul><!-- level 2 -->
+			</div>
+			<!--  personnel-->
+			
+			<div class="aerodrome side-hide side-navigation">
+				<ul>
+				<li>
+					<a class="level1">Aerodrome</a>
+					<ul class="level-4">
+						<li class="default-tabs"><a
+							data-url="4241/4204/sericename">Obtaining Aerodrome License
+								</a></li> 
+					<!--	<li class="default-tabs"><a
+							data-url="jsp/dgca/InventoryList/aerodrome/public/PUBLIC USE LICENSED AERODROME (PUBLIC AND PRIVATE) AND HELIPORT -converted (1).pdf">Public Aerodromes</a></li>
+						<li class="default-tabs"><a
+							data-url="jsp/dgca/InventoryList/aerodrome/private/AERODROMES LICENSED IN PRIVATE USE CATEGORY-converted.pdf">Private Aerodromes</a></li> -->
+							
+							<li class="default-tabs">
+							<a data-url="scan?requestType=ApplicationRH&actionVal=loadAerodromeDtls&objval=3&screenId=26110181&LicenseTypeFlag=1";>
+								Public Aerodromes
+							<img class="pull-right pt-2" src="assets/DGCA/images/icons/next.png"></a>
+						</li> 			
+						<li class="default-tabs">
+							<a data-url="scan?requestType=ApplicationRH&actionVal=loadAerodromeDtls&objval=3&screenId=26110181&LicenseTypeFlag=2";>
+								Private Aerodromes
+							<img class="pull-right pt-2" src="assets/DGCA/images/icons/next.png"></a>
+						</li>	
+							
+					</ul>
+				</li>
+				</ul>
+			</div>
+			<!-- aerodromes -->
+			
+			<div class="airNavigationService side-hide side-navigation">
+				<ul>
+				<li><a class="level1">Air Navigation Services</a>
+				<ul>
+					<li class="default-tabs"><a
+						data-url="jsp/dgca/InventoryList/airNavigationService/ANS.pdf">About Air Navigation Services</a></li>
+				</li>
+				</ul>
+				</ul>
+			</div>
+			<div class="dataReports side-hide side-navigation">
+				<ul>
+				<li><a class="level1">Data & Reports</a>
+				<ul>
+				<li class="collapse-tabs level2">
+					<a href="#reports1"
+						class="d-flex justify-content-between active-arrow active-collapse collapsed"
+						data-toggle="collapse">Aviation Data and Statistics  </a>
+					<div id="reports1" class="collapse  sub-option">
+						<ul>
+							<li class="collapse-tabs level-3">
+							
+									<a href="#reports11" class="active-arrow collapsed"
+										data-toggle="collapse">Air Transport</a>
+									<div id="reports11" class="collapse  sub-option">
+										<ul class="level-4">
+										<li class="default-tabs"><a
+								data-url="4252/4205/sericename">Civil Aviation Statistics - Handbook
+								</a></li>
+											<li class="collapse-tabs">
+													<a href="#reports111" class="active-arrow collapsed"
+														data-toggle="collapse">Domestic Air Transport</a>
+													<div id="reports111" class="collapse sub-option">
+														<ul class="level-5">
+															<li class="default-tabs"><a
+																data-url="4264/4206/sericename">Air Traffic
+																	</a></li>
+															<li class="default-tabs"><a
+																data-url="259/4184/servicename">Monthly Statistics
+																</a></li>
+															<li class="default-tabs"><a
+																data-url="4267/4210/servicename">Yearly Statistics
+																	</a></li>
+														</ul>
+													</div>
+											</li>
+											<li class="collapse-tabs">
+													<a href="#reportInt" class="active-arrow collapsed"
+														data-toggle="collapse">International Air Transport</a>
+													<div id="reportInt" class="collapse sub-option">
+														<ul class="level-5">
+															<li class="default-tabs"><a
+																data-url="4268/4207/servicename">Quarterly Statistics
+																	</a></li>
+														</ul>
+													</div>
+												</li>
+										</ul><!-- level 4 -->
+									</div>
+							</li><!-- level 3 -->
+						</ul>
+					</div>
+					</li>
+				<li class="collapse-tabs level2">
+					<a href="#reports2"
+						class="d-flex justify-content-between active-arrow active-collapse collapsed"
+						data-toggle="collapse">Accident and Incident Data  </a>
+					<div id="reports2" class="collapse sub-option">
+						<ul class="level-3">
+							<li class="default-tabs"><a data-url="AccidentReports/500005/0/viewApplicationDtlsReq">Accident Reports
+									</a></li>
+							<li class="default-tabs"><a data-url="IncidentReports/500006/0/viewApplicationDtlsReq">Incident Reports
+							<li class="default-tabs"><a
+								data-url="4273/4208/servicename">Aircraft Accident Summaries
+									</a></li>
+						</ul>
+					</div>
+				</li>
+				<li class="collapse-tabs level2">
+					<a href="#reports2"
+						class="d-flex justify-content-between active-arrow active-collapse collapsed"
+						data-toggle="collapse">Surveillance and Enforcement  </a>
+					<div id="reports2" class="collapse sub-option">
+						<ul class="level-3">
+							<li class="default-tabs"><a data-url="4360/4637/servicename" >
+									About Us</a></li>
+							<li class="default-tabs"><a data-url="4360/4638/servicename">Surveillance Programme</a>
+							<li class="default-tabs"><a
+								data-url="4360/4639/servicename">Sharing of Safety Related Information</a></li>
+						</ul>
+					</div>
+				</li>
+				</li>
+				</ul>
+			</ul>
+			</div>
+			
+		<div class="RegulationGuidance side-hide side-navigation">
+				<ul>
+					<li><a class="level1">Regulations and Guidance</a>
+				<ul>
+				<li class="collapse-tabs level2">
+					<a href="#regulation1" class="d-flex justify-content-between active-arrow active-collapse collapsed" data-toggle="collapse">Act and Rules</a>
+					<div id="regulation1" class="collapse sub-option">
+						<ul>
+							
+ 									   <li class="default-tabs"><a data-url="jsp/dgca/InventoryList/RegulationGuidance/Rules/Bharatiya Vayuyan Adhiniyam 2024.pdf">The Bharatiya Vayuyan Adhiniyam, 2024</a></li>
+							
+							<li class="collapse-tabs level-3"><a href="#regulation2" class="active-arrow collapsed" data-toggle="collapse" aria-expanded="true">Rules</a>
+								<div id="regulation2" class="collapse sub-option">
+								    <ul class="level-4">
+								    	<li class="default-tabs"><a data-url="aircraftRules1937/1/0/viewDynamicRulesReq">The Aircraft Rules, 1937</a></li>
+										<li class="default-tabs"><a data-url="jsp/dgca/InventoryList/RegulationGuidance/Rules/AircraftRules1994/airrule-1994.pdf">The Aircraft (Demolition of Obstruction caused by Buildings and Trees etc.) Rules, 1994</a></li>
+										<li class="default-tabs"><a data-url="jsp/dgca/InventoryList/RegulationGuidance/Rules/CarriageDangerousGoods2003/air2003.pdf">The Aircraft (Carriage of Dangerous Goods) Rules, 2003</a></li>	
+										<li class="default-tabs"><a data-url="jsp/dgca/InventoryList/RegulationGuidance/Rules/AircraftRules2011/Aircraft(Security) Rules, 2011.pdf">The Aircraft (Security) Rules,2011</a></li>
+										<li class="default-tabs"><a data-url="jsp/dgca/InventoryList/RegulationGuidance/Rules/AircraftRules2017/Aircraft Investigation of Accident and Incident Rules 2017.pdf">The Aircraft (Investigation of Accident and Incidents) Rules, 2017</a></li>
+										<li class="default-tabs"><a data-url="jsp/dgca/InventoryList/RegulationGuidance/Rules/The Unmanned Aircraft System Rules/Drones Rules 2021.pdf">The Drone Rules, 2021</a></li>
+									   <li class="default-tabs"><a data-url="jsp/dgca/InventoryList/RegulationGuidance/Rules/RTR Rules 2025.pdf">The Radio Telephone Operator (Restricted) Certificate and License Rules, 2025</a></li>
+									</ul>
+								</div>
+							</li>
+							<li class="collapse-tabs level-3"><a href="#regulation21" class="active-arrow collapsed" data-toggle="collapse" aria-expanded="true">Statutory Notifications Affecting Aviation In India</a>
+								<div id="regulation21" class="collapse sub-option">
+								    <ul class="level-4">
+								    	<li class="collapse-tabs internal-link">
+												<a href="#notifi1937" class="active-arrow collapsed"
+													data-toggle="collapse" >The Aircraft Rules, 1937 </a>
+												<div id="notifi1937" class="collapse sub-option">
+													<ul class="level-5">
+														<li class="default-tabs"><a data-url="jsp/dgca/InventoryList/RegulationGuidance/StatutoryNotificationsAffecting/so726.pdf">S. O. 726(E) dated 4-10-94</a></li>
+														<li class="default-tabs"><a data-url="jsp/dgca/InventoryList/RegulationGuidance/StatutoryNotificationsAffecting/so727.pdf">S. O. 727(E) dated 4-10-94</a></li>
+													</ul>
+												</div>
+										</li>
+										<li class="collapse-tabs">
+												<a href="#notifi2003" class="active-arrow collapsed" data-toggle="collapse">The Aircraft (Carriage of Dangerous Goods) Rules, 2003</a>
+													<div id="notifi2003" class="collapse sub-option">
+														<ul class="level-5">
+															<li class="default-tabs"><a data-url="jsp/dgca/InventoryList/RegulationGuidance/StatutoryNotificationsAffecting/NOT446(E).pdf">S.O. 446(E) dated 19-3-2007</a></li>
+															<li class="default-tabs"><a data-url="jsp/dgca/InventoryList/RegulationGuidance/StatutoryNotificationsAffecting/NOT447(E).pdf">S.O. 447(E) dated 19-3-2007</a></li>
+														</ul>
+													</div>
+										 </li>
+										</ul>
+								</div>
+							</li>
+							<li class="default-tabs level-3"><a data-url="4283/4232/servicename">National Legislation</a></li>
+							<li class="default-tabs level-3"><a data-url="4289/4233/servicename">International Convention</a></li>
+						 <li class="default-tabs level-3"><a data-url="5068/4998/servicename">Drone Rules</a></li>
+				
+					</ul>
+				</div>	
+			</li><!-- level 2 -->
+			<li class="collapse-tabs level2">
+					<a href="#airoperation2"
+						class="d-flex justify-content-between active-arrow active-collapse collapsed"
+						data-toggle="collapse">Requirements and Guidance</a>
+					<div id="airoperation2" class="collapse sub-option">
+						<ul class="level-3">
+							<li class="default-tabs"><a data-url="civilAviationRequirements/6/0/viewDynamicRulesReq">Civil Aviation Requirements</a></li>
+							<li class="default-tabs"><a data-url="aeronauticalInformationCirculars/119/0/viewDynamicRulesReq">Aeronautical Information Circulars</a></li>
+							
+							
+							<li class="collapse-tabs"><a href="#regulation3"
+						class="active-arrow collapsed"
+						data-toggle="collapse">Circulars</a>
+						<div id="regulation3" class="collapse sub-option">
+						<ul class="level-4">
+							<li class="default-tabs"><a
+								data-url="circularsRulesGen/7/3328/viewDynamicRuleContLvl2">General</a></li>
+							<li class="default-tabs"><a
+								data-url="circularsRulesATCOLicensing/7/3323/viewDynamicRuleContLvl2">ATCO Licensing</a></li>
+							<li class="default-tabs"><a
+								data-url="circularsRulesAerodromes/7/3321/viewDynamicRuleContLvl2">Aerodromes</a></li>
+							<li class="default-tabs"><a 
+							data-url="circularsRulesAircraftEngineering/7/9422/viewDynamicRuleContLvl2">Aircraft Engineering</a></li>
+							<li class="default-tabs"><a
+								data-url="circularsRulesAirNavSer/7/3320/viewDynamicRuleContLvl2">Air Navigation Services</a></li>
+							<li class="default-tabs"><a
+								data-url="circularsRulesAirSafety/7/3322/viewDynamicRuleContLvl2">Air Safety</a></li>
+							<li class="default-tabs"><a
+								data-url="circularsRulesAirTran/7/3327/viewDynamicRuleContLvl2">Air Transport</a></li>
+							<li class="default-tabs"><a
+								data-url="circularsRulesAirworthiness/7/3326/viewDynamicRuleContLvl2">Airworthiness</a></li>
+							<li class="default-tabs"><a
+								data-url="circularsRulesCabinSafety/7/3317/viewDynamicRuleContLvl2">Cabin Safety
+									</a></li>
+							<li class="default-tabs"><a
+								data-url="circularsRulesEnforcement/7/3319/viewDynamicRuleContLvl2">Surveillance and Enforcement</a></li>
+							<li class="default-tabs"><a
+								data-url="circularsRulesEnvironment/7/3315/viewDynamicRuleContLvl2">Environment</a></li>
+							
+							
+							<li class="default-tabs"><a
+								data-url="circularsRulesFlightCrewLic/7/3324/viewDynamicRuleContLvl2">Flight Crew Licensing
+									</a></li>
+							<li class="default-tabs"><a
+										data-url="circularsRulesFlightCrewLic/7/4068/viewDynamicRuleContLvl2">Dangerous Goods
+							</a></li>
+							<li class="default-tabs"><a
+								data-url="circularsRulesFlightCrewLic/7/4080/viewDynamicRuleContLvl2"> Drones </a></li>
+								<li class="default-tabs"><a
+								data-url="circularsRulesFlightCrewLic/7/4078/viewDynamicRuleContLvl2"> AAM </a></li>
+						
+						
+							<li class="default-tabs"><a
+								data-url="circularsRulesFlightCrewTraining/7/3325/viewDynamicRuleContLvl2">Flight Crew Training
+									</a></li>
+							
+							<li class="default-tabs"><a
+								data-url="circularsRulesOperations/7/3318/viewDynamicRuleContLvl2">Operations</a></li>
+							<li class="default-tabs"><a
+								data-url="circularsRulesStateSafetyProg/7/3316/viewDynamicRuleContLvl2">State Safety Programme</a></li>
+							<li class="default-tabs"><a data-url="circularsRulesMedicalCirculars/7/4724/viewDynamicRuleContLvl2">Medical</a></li>
+							
+						
+						</ul>
+					</div>
+					</li>
+							
+							<li class="default-tabs"><a data-url="4323/4236/servicename">Manuals and Procedures</a></li>
+							<li class="default-tabs"><a data-url="4334/4234/servicename">Forms</a></li>
+							<li class="default-tabs"><a data-url="publicNotices/0/0/viewAllService">Public Notices</a></li>
+							 <li class="default-tabs"><a data-url="5069/4996/servicename">Public Notice-Drone</a></li>
+						<li class="collapse-tabs level-3"> <a href="#airoperationExmp" class="active-arrow collapsed"
+									data-toggle="collapse">Exemptions </a>
+								<div id="airoperationExmp" class="collapse sub-option">
+									<ul class="level-4">
+									<li class="default-tabs"><a data-url="jsp/dgca/InventoryList/RegulationGuidance/Exemptions/Rule160.pdf">Exemptions Under Rule 160</a></li>
+									<li class="default-tabs"><a data-url="jsp/dgca/InventoryList/RegulationGuidance/Exemptions/rule133.pdf">Exemptions Under Rule 133A</a></li>
+									
+									
+									</ul>
+								</div>
+					</li>
+					</ul>
+					</div>
+				
+				</li>
+				<li class="collapse-tabs level2">
+					<a href="#airoperation3"
+						class="d-flex justify-content-between active-arrow active-collapse collapsed"
+						data-toggle="collapse">Comments </a>
+					<div id="airoperation3" class="collapse sub-option">
+						<ul class="level-3">
+						<li class="default-tabs"><a data-url="4359/4235/servicename">Comments Invited</a></li>
+						</ul>
+					</div>
+					</li>
+				</ul>
+				</li>
+			</div>
+		
+		
+		<!-- top header -->
+			<div class="AboutUs side-hide side-navigation">
+					<ul>
+							<li><a class="level1">About DGCA</a>
+							
+							<ul>
+							
+								<li class="default-tabs active">
+									<a data-url="jsp/dgca/topHeader/aboutDGCA/aboutUsDetail.html">About US</a>
+								</li>
+							
+							
+							<li class="default-tabs"><a data-url="jsp/dgca/topHeader/aboutDGCA/vision/vision.pdf">Vision</a></li>
+							<li class="collapse-tabs level-2">
+								<a href="#flightTab1"
+									class="d-flex justify-content-between active-arrow active-collapse"
+									data-toggle="collapse"> Organization </a>
+								<div id="flightTab1" class="collapse show sub-option">
+									<ul>
+										<li class="default-tabs"><a
+											data-url="jsp/dgca/topHeader/aboutDGCA/organisation/org_Manual/Organisation Manual.pdf">Organization Manual</a></li>
+									
+									 
+<li><a data-url="jsp/dgca/topHeader/aboutDGCA/organisation/Headquarters/dghq.html"
+
+											class="dropdown-item">Headquarters</a></li>
+
+										
+
+
+
+
+
+ 
+										
+									
+										<li class="default-tabs"><a data-url="RegionalOffices/0/500011/viewApplicationDtlsReqPDF">Regional Offices</a></li>
+									
+									
+										
+										<li class="default-tabs"><a data-url="Remuneration/0/500007/viewApplicationDtlsReqPDF">Remuneration</a></li>
+										<li class="default-tabs"><a
+											data-url="jsp/dgca/topHeader/aboutDGCA/organisation/RecordRetention/retention.pdf">
+											Record Retention Schedule</a></li>
+										<li class="default-tabs"><a	data-url="jsp/dgca/topHeader/aboutDGCA/organisation/Transfer Policy/TRANSFER POLICY_14_06_2019.pdf">
+											Transfer Policy</a></li>
+										
+									</ul>
+								</div>
+							</li>
+							
+							
+								<li class="default-tabs"><a
+									data-url="4362/4640/servicename">Key Officials</a></li>
+								
+							
+							
+								<li class="default-tabs"><a
+									data-url="jsp/dgca/topHeader/aboutDGCA/budget/budget.pdf">Budget</a></li>
+								
+							
+							<li class="default-tabs"><a
+									data-url="jsp/dgca/topHeader/aboutDGCA/userFees/User fees.pdf">User Fees</a></li>
+							<li class="collapse-tabs level-2">
+								<a href="#flightTab2"
+									class="d-flex justify-content-between active-arrow active-collapse"
+									data-toggle="collapse"> Vigilance </a>
+								<div id="flightTab2" class="collapse sub-option">
+									<ul>
+										
+							
+								<li class="default-tabs"><a
+											data-url="4363/4641/servicename">Vigilance Functions</a></li>
+											
+										
+							<!-- 
+								<li class="default-tabs"><a
+											data-url="4363/4642/servicename">Circulars</a></li>
+								 -->
+										
+										<li class="default-tabs"><a
+											data-url="4363/4643/servicename">Contact details of CVO</a></li>
+										<li class="default-tabs"><a
+											data-url="4363/4644/servicename">Lodge Complaint</a></li>
+									<!--	<li class="default-tabs"><a
+											data-url="jsp/dgca/topHeader/aboutDGCA/vigilance/Pidpi english_merged.pdf">Do's and Don't</a></li> -->
+		
+									</ul>
+								</div>
+							</li>
+							
+								<!-- added by Ashish yadav on 27-9-23-->
+								<li class="collapse-tabs level-2">
+						<a href="#flightTab3"
+							class="d-flex justify-content-between active-arrow active-collapse"
+							data-toggle="collapse"> Posh Act, 2013 </a>
+						<div id="flightTab3" class="collapse sub-option">
+							<ul>
+								
+								<li class="default-tabs"><a
+									data-url="jsp/dgca/topHeader/aboutDGCA/Posh_Act_2013/Re-constituted Complaints Committee 15 Jan 2024.PDF">DGCA's Internal Complaints Committee</a></li>
+								<li class="default-tabs"><a
+									data-url="jsp/dgca/topHeader/aboutDGCA/Posh_Act_2013/SH Act 2013 Handbook.pdf">Handbook on Sexual Harassment of Women at Workplace (Prevention, Prohibition and Redressal) Act 2013</a></li>
+								
+							</ul>
+						</div>
+					</li>
+							
+							<li class="default-tabs"><a data-url="jsp/dgca/topHeader/aboutDGCA/CourtCase/Court_Case.pdf">Court Cases</a></li>
+							<li class="default-tabs"><a data-url="jsp/dgca/topHeader/aboutDGCA/shabdkosh/shabdkosh.pdf">Shabdkosh</a></li>
+							<li class="default-tabs"><a data-url="NodalOfficers/0/500008/viewApplicationDtlsReqPDF">Liaison/Nodal  Officers</a></li>
+							<!-- added by Ashish yadav on 30-4-25-->
+<li class="collapse-tabs level-2">
+<a href="#grievancetab" class="d-flex justify-content-between active-arrow active-collapse"
+
+						data-toggle="collapse"> Grievance Redressal 
+</a>
+<div id="grievancetab" class="collapse sub-option">
+<ul>
+<li class="default-tabs"><a data-url="jsp/dgca/topHeader/aboutDGCA/GrievanceRedressal/SOP for grievance redressal.pdf">
+SOP</a></li>
+</ul>
+</div>
+</li>
+							</ul>
+							</li>
+							
+							</ul>
+					</div>
+		<div class="Jobs side-hide side-navigation">
+				<ul>
+					<li><a class="level1">Jobs</a>
+					<ul>
+						<li class="default-tabs active"><a data-url="4368/4646/servicename">Current Vacancies</a></li>
+						<!-- <li class="default-tabs"><a data-url="jsp/dgca/topHeader/jobs/position/Positions.pdf">Positions in DGCA</a></li> -->
+						<li class="default-tabs"><a data-url="positionDGCA/500115/0/viewApplicationDtlsReq">Positions in DGCA</a></li>
+						<li class="default-tabs"><a data-url="4365/4645/servicename">Recruitment Rules</a></li>
+					</ul>
+					
+					</li>
+			</ul>
+		</div>
+		
+		
+		<div class="internship side-hide side-navigation">
+				<ul>
+					<li><a class="level1">Internship</a>
+					<ul>
+						<li class="default-tabs active"><a data-url="5066/12521/servicename">Internship</a></li>
+					</ul>
+					</li>
+			</ul>
+		</div>
+		
+		
+		<div class="RTI side-hide side-navigation">
+				<ul>
+					<li><a Class="level1">RTI</a>
+					<ul>
+						<li class="default-tabs active"><a data-url="4372/4647/servicename">RTI Manual</a></li>
+						<li class="default-tabs"><a data-url="AppointofCPIOAppellateAuth/500003/0/viewApplicationDtlsReq">RTI Officers</a></li>
+						<li class="default-tabs"><a data-url="4377/4648/servicename">RTI Reports</a></li>
+						<li class="default-tabs"><a data-url="jsp/dgca/topHeader/rti/transparencyOfficer/TRANSPARENCY_OFFICER.pdf">RTI Transparency Officers</a></li>
+						<li class="default-tabs"><a data-url="jsp/dgca/topHeader/rti/RTI_TRANSPARENCY_AUDIT_REPORT/RTI_TRANSPARENCY_AUDIT_REPORT.html">Transparency Audit Report</a></li>
+						<li class="default-tabs"><a data-url="jsp/dgca/topHeader/rti/feeRequiredUnderRtiAct/Fee_rti.pdf">RTI Fees</a></li>
+						<li class="default-tabs"><a data-url="jsp/dgca/topHeader/rti/Proactive disclosure consolidated file.pdf">Proactive Disclosure</a></li>
+						<li class="default-tabs"><a data-url="5067/8055/servicename">Immovable Property Return</a></li>
+					</ul>
+					</li>
+				</ul>
+		</div>
+		
+		
+			
+		
+		
+		</div>
+
+
+		<div class="side-menu-page" style="display: block;">
+			<div class="container">
+				<div class="menuBreadcrum mb-4">
+					<div class="item"><a href="jsp/dgca/homePage/dgcaMaincontent.jsp">Home  / </a></div>
+				</div>
+				<div class="loadContent pb-4 clearfix"></div>
+				<div class="side-menu-pdf mb-4">
+					<div class="inner-pdf">
+					<iframe style="height: 100%; width: 100%;" id="iframePdf" src=""></iframe>
+					</div>
+				</div>
+			</div>
+			<div class="main-page main-page-bg internal-link">
+				<div class="module-home-page">
+				
+					
+					<!-- vertical caraousal start -->
+					<div class="header-carousel">
+						<div id="headerCarousal" class="carousel slide"
+							data-ride="carousel">
+							<!-- Indicators -->
+							<ul class="carousel-indicators">
+								<li data-target="#headerCarousal" data-slide-to="0" class="active"></li>
+								<li data-target="#headerCarousal" data-slide-to="1"></li>
+								<li data-target="#headerCarousal" data-slide-to="2"></li>
+								<li data-target="#headerCarousal" data-slide-to="3"></li>
+							<!--	<li data-target="#headerCarousal" data-slide-to="4"></li>  -->
+							<!--	<li data-target="#headerCarousal" data-slide-to="5"></li>  -->
+								<!--<li data-target="#headerCarousal" data-slide-to="6"></li> -->
+								<!--<li data-target="#headerCarousal" data-slide-to="7"></li> -->
+								<!-- <li data-target="#headerCarousal" data-slide-to="8"></li -->
+								<!--<li data-target="#headerCarousal" data-slide-to="9"></li> -->
+							</ul>
+
+							<!-- The slideshow -->
+							<div class="carousel-inner">
+							<!-- <div class="carousel-item active">
+								<img src="assets/DGCA/images/caraousal/Banner9.jpg" alt="Sing the national Anthem banner">
+								<div class="container">
+									<div class="slide-content anthem-div"  style="top:24rem;left:29rem;">
+								     <div class="d-flex align-items-center">
+									    <p class="mb-0"><a target="_blank" class="btn btn-secondary anthemBtn" href="https://rashtragaan.in/">Participate Now</a></p>
+									</div>
+								</div>
+								</div>
+							</div> -->
+							<!-- Banner 1 -->
+								<!-- <div class="carousel-item active">
+									<img src="assets/DGCA/images/caraousal/Banner44-Yoga.jpg"
+										alt="ICAO">
+										<div class="container">
+										<div class="slide-content">	
+										</div>
+										</div>							
+								</div> -->
+							<!-- Banner 2 -->
+								<!-- <div class="carousel-item">
+									<img src="assets/DGCA/images/caraousal/Banner12_g20.jpg" alt="Sabka Sath Sabka Vikas">
+								</div> -->
+								<!-- <div class="carousel-item">
+									<img src="assets/DGCA/images/caraousal/Banner5.jpg"
+										alt="DGCA Vision">
+									<div class="container">
+										<div class="slide-content">
+											<h2>DGCA Vision</h2>
+											
+											
+									      	<p class="mb-4 pt-2 slide-sub-content">Promoting safe and efficient air transportation.</p>
+											<p class="mb-4 pt-2 slide-sub-content">03 Air Operator Permit (Scheduled)​<br/>14 Air Operator Permits (Non-Scheduled).​
+											<br/>Approved one new FTO; Granted 04 approvals for starting FTO operations at other Operational bases​.
+											​<br/>Highest number (1131) of Commercial Pilot Licenses (CPL) in the last decade. ​</p>
+											
+										</div>
+									</div>
+								</div> -->
+								<!--<div class="carousel-item active">
+									<img src="assets/DGCA/images/caraousal/Banner_45harghartiranga.jpg"
+										alt="HRT">
+										<div class="container">
+										<div class="slide-content">	
+										</div>
+										</div>							
+								</div>-->
+								<!-- Banner 1 -->
+								<div class="carousel-item active">
+									<img src="assets/DGCA/images/caraousal/Banner 2024_3.png"
+										alt="ICAO">
+										<div class="container">
+										<div class="slide-content">	
+										</div>
+										</div>							
+								</div>
+								<!-- Banner 2 -->
+								<div class="carousel-item">
+									<img src="assets/DGCA/images/caraousal/Banner47.jpg"
+										alt="ICAO">
+										<div class="container">
+										<div class="slide-content">	
+										</div>
+										</div>							
+								</div>
+								<!-- Banner 4 -->
+								<div class="carousel-item">
+									<img src="assets/DGCA/images/caraousal/banner 2024_4.png"
+										alt="Award">
+										<div class="container">
+										<div class="slide-content">	
+										</div>
+										</div>							
+								</div>
+								<!-- Banner 5 -->
+								<!-- <div class="carousel-item">
+									<img src="assets/DGCA/images/caraousal/Banner 2024_5.png"
+										alt="Permit">
+										<div class="container">
+										<div class="slide-content">	
+										</div>
+										</div>							
+								</div> -->
+								<!-- Banner 6 -->
+								<!-- <div class="carousel-item">
+									<img src="assets/DGCA/images/caraousal/Banner 2024_6.png"
+										alt="eGCA">
+										<div class="container">
+										<div class="slide-content">	
+										</div>
+										</div>							
+								</div> -->
+								<!-- Banner 7 -->
+								<!-- <div class="carousel-item">
+									<img src="assets/DGCA/images/caraousal/Banner 2024_7.png"
+										alt="Safety Oversight">
+										<div class="container">
+										<div class="slide-content">	
+										</div>
+										</div>							
+								</div> -->
+								<!-- Banner 8 
+								<div class="carousel-item">
+									<img src="assets/DGCA/images/caraousal/Banner42.jpg"
+										alt="New Aeodrome">
+										<div class="container">
+										<div class="slide-content">	
+										</div>
+										</div>							
+								</div> -->
+								<!-- Banner 9 -->
+								<div class="carousel-item">
+									<img src="assets/DGCA/images/caraousal/Banner46.jpg"
+										alt="New Aeodrome">
+										<div class="container">
+										<div class="slide-content">	
+										</div>
+										</div>							
+								</div>
+								
+								
+								<!-- <div class="carousel-item">
+									<img src="assets/DGCA/images/caraousal/Ranking.jpg"
+										alt="Ranking">
+								</div> -->
+								
+								<!-- <div class="carousel-item">
+									<img src="assets/DGCA/images/caraousal/Banner23.jpg"
+										alt="RankingDetails">
+								</div> -->
+								
+								<!-- <div class="carousel-item">
+									<img src="assets/DGCA/images/caraousal/banner7.jpg"
+										alt="Ranking">
+									<div class="container">
+										<div class="slide-content">
+											<h2>DGCA Surveillance</h2>
+									      	<p class="mb-4 pt-2 slide-sub-content">
+											4378; the highest ever number of surveillances undertaken during a year​</p>
+											<p class="mb-4 pt-2 slide-sub-content">305 Enforcement actions​</p>
+											<p class="mb-4 pt-2 slide-sub-content">39 Penalties amounting to Rs.1.975 crore</p>
+										</div>
+									</div>
+								</div> -->
+								
+								<!-- <div class="carousel-item">
+									<img src="assets/DGCA/images/caraousal/Banner21.jpg"
+										alt="Aerodrome">
+										<div class="container">
+										<div class="slide-content">	
+											<h2 style="color:black;">Awarded type certificate to HINDUSTAN 228</h2>										
+									      	<p class="mb-4 pt-2 slide-sub-content" style="color:black;"><b>Designed and developed by Hindustan Aeronautics Limited with state of art technology​</b></p>																			
+										</div>
+										</div>							
+								</div> -->
+								
+							
+							<!-- <div class="carousel-item">
+								<img src="assets/DGCA/images/caraousal/DGCA Banner 1.jpg" alt="Kalaburagi Aerodrome">
+							</div> -->
+							<!-- <div class="carousel-item">
+									<img src="assets/DGCA/images/caraousal/Banner1.jpg"
+										alt="ICAO Honors">
+										
+									<div class="container">
+										<div class="slide-content mobileDiv">
+											<h2>eGCA</h2>
+										     	<p class="mb-4 pt-2 slide-sub-content">eGovernance of Civil Aviation</p>
+										     <div class="d-flex align-items-center">
+											    <p class="mb-0 new-window-pdf"><a target="_blank" class="btn btn-secondary knowMore" href="jsp/dgca/InventoryList/eGCA_presentation.pdf">Know More</a></p>
+												<p class="mb-0"><span class="ml-2">Call <span  class="d-lg-inline-block d-none">1800-11-3422</span><a  href="" class="reqSupp d-lg-none d-inline-block">1800-11-3422</a> for further support.</span></p>										
+											</div>
+											<p class="mb-4 pt-2 slide-sub-content">We are also available on Mobile App</p>
+											<div class="d-flex align-items-center mobileIcon">
+											    <p class="mb-0 new-window-pdf"><a target="_blank" class="btn btn-secondary knowMore" href="jsp/dgca/InventoryList/eGCA_presentation_MobileApp.pdf">Know More</a></p>
+												<p class="mb-0">
+												<span class="ml-2">
+												<a href="https://play.google.com/store/apps/details?id=com.dgca.mobility.egca" target="_blank" class="btn btn-secondary knowMore"><i style="font: normal normal normal 20px/1 FontAwesome;" class="fa fa-android icon-facebook" aria-hidden="true" data-toggle="tooltip" data-placement="top"></i></a> 
+												<span class="ml-2">
+												<a href="https://apps.apple.com/in/app/egca/id1546977832" target="_blank" class="btn btn-secondary knowMore"><i style="font: normal normal normal 20px/1 FontAwesome;" class="fa fa-apple icon-facebook" aria-hidden="true" data-toggle="tooltip" data-placement="top"></i></a>
+												</span>
+												</span>
+												</p>										
+											</div>
+											<p class="mb-4 pt-2 slide-sub-content">Processed 17220 flight crew licenses through the single window digital platform of eGCA​.<br/>Approved 24,213 Medical Assessments for Flight Crew and ATCOs.</p>
+										</div>
+									</div>
+								</div> -->
+								
+								
+								<!-- <div class="carousel-item">
+									<img src="assets/DGCA/images/caraousal/Banner22.jpg"
+										alt="DGCA Vision">
+									<div class="container">
+										<div class="slide-content">
+											<h2>New Aerodrome License at Deoghar, Hollongi, Jeypore and New Goa</h2>
+									      	<!--<p class="mb-4 pt-2 slide-sub-content">New Aerodrome License at Deoghar, Hollongi, Jeypore and New Goa</p>
+											</div>
+									</div>
+								</div> -->
+								
+								<!-- <div class="carousel-item">
+									<img src="assets/DGCA/images/caraousal/Independence banner 1.jpg" alt="Independence banner">
+										<div class="container">
+											<div class="slide-content independence-div" style="top:24rem;">
+										     <div class="d-flex align-items-center">
+											    <p class="mb-0 new-window-pdf"><a target="_blank" class="btn btn-secondary knowMore IndependenceBtn" href="jsp/dgca/InventoryList/List of activities for India@75 - Azadi Ka Amrit Mahotsav.pdf">Calendar of Activities</a></p>
+												<p class="mb-0"><span class="ml-2"><b>(March 2021 to August 2022)</b></span></p>										
+											</div>
+										</div>
+										</div>
+								</div> -->
+								<!-- Banner 10 -->
+								 <!-- <div class="carousel-item">
+								<img src="assets/DGCA/images/caraousal/Banner2.jpg"
+									alt="Kalaburagi Aerodrome">
+								<div class="container">
+									<div class="slide-content">
+										<h2>COVID-19</h2>
+									     <p class="mb-4 pt-2 slide-sub-content">Information/ Guidance To The Aviation Industry</p>
+									     <div class="d-flex align-items-center">
+									    <p class="mb-0"><a target="_blank" class="btn btn-secondary knowMore mr-2" href="jsp/dgca/homePage/covid19.jsp">Know More</a>
+										 <a target="_blank" class="btn btn-secondary knowMore mr-2" href="https://www.mohfw.gov.in/">MoHFW</a>
+									    <a target="_blank" class="btn btn-secondary knowMore" href="https://www.covid19india.org/">Tracker</a>
+										</p>
+										</div>
+										<div class="d-flex align-items-center">
+									    	<p class="mt-2"><a target="_blank" style="background: #ff6B00;color: #fff;cursor: pointer;" class="btn btn-primary knowMore flightcrew mr-2 mb-2" href="jsp/dgca/homePage/flightCrewInfo.jsp">Passenger and Crew Protocol</a>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>  -->
+								
+								
+								
+								<!-- <div class="carousel-item">
+									<img src="assets/DGCA/images/caraousal/Banner1.jpg"
+									alt="ICAO Honors">
+									<div class="container">
+									<div class="slide-content w-75">
+									<h2 class="w-50">DGCA issues Pilot licenses through eGCA</h2>
+									     <p class="mb-4 pt-2 slide-sub-content">The state-of-the-art pilot license is easy to carry and bears a QR code to access latest pilot details such as endorsements, medical assessments, validity etc</p>
+									     
+									</div>
+									</div>
+								</div> -->
+								
+								<!-- <div class="carousel-item">
+									<img src="assets/DGCA/images/caraousal/Banner3.jpg"
+										alt="High ATC Tower">
+									<div class="container">
+										<div class="slide-content">
+											<h3>DGCA Vision</h3> 
+									      			<p class="mb-4 pt-2">Endeavour to promote safe and efficient Air Transportation through regulation and proactive safety oversight system</p>
+										</div>
+									</div>
+								</div> -->
+								<!-- <div class="carousel-item">
+									<img src="assets/DGCA/images/caraousal/IMG-20200713-WA0017 (1).jpg"
+										alt="ICAO Honors">
+									<div class="container">
+										<div class="slide-content w-75 text-black">
+											<h2 class="w-50">Rupsi Airport in Kokrajhar District of Assam</h2>
+											<p class="mb-4 pt-2 slide-sub-content">The airport, constructed during World War II and lying 
+											idle since 1984, has been redeveloped and licensed for commercial operations</p>
+
+										</div>
+									</div>
+								</div> -->
+								
+								<!-- <div class="carousel-item">
+									<img src="assets/DGCA/images/caraousal/Banner11.jpg"
+									alt="ICAO Honors">
+									<div class="container">
+									<div class="slide-content w-100">
+									<h2 class="w-50">Kushinagar Airport in Uttar Pradesh</h2>
+									     <p class="mb-4 pt-2 slide-sub-content">Kushinagar, an international Buddhist pilgrimage site, where Gautam Buddha attained Parinirvana (nirvana-after-death). Kushinagar Airport has been licensed for commercial operations.
+										</p>
+									</div>
+									</div>
+								</div> -->
+							</div>
+							<a class="carousel-control-prev" href="#headerCarousal"
+								data-slide="prev"> <span class="carousel-control-prev-icon"></span>
+							</a> <a class="carousel-control-next" href="#headerCarousal"
+								data-slide="next"> <span class="carousel-control-next-icon"></span>
+							</a>
+
+						</div>
+						<!-- vertical caraousal end -->
+
+						<section class="custom-owl-carousal  pt-5 pb-2 static-block">
+						<div class="container d-lg-flex b-block">
+									<div class="text-center  static-block-content p-4">
+											<img class="on-hover" alt="Environment"
+											src="assets/DGCA/images/whiteBlock/envi.svg" /> <img
+											class="not-hover" alt="Environment"
+											src="assets/DGCA/images/whiteBlock/envi-in.svg" /> <a
+											class="pt-2 mb-0 pb-2 static-head"
+											data-url="jsp/dgca/InventoryList/headerblock/Environment/main.html">
+											Environment
+											</a>
+											<p class="btm-border"></p>
+											<p class="pt-3 mb-3 sub-content">
+											To provide feasible solutions to mitigate emissions from aviation and to reduce the noise due to aircraft movements in the airport vicinity.</p>
+
+									</div>
+									<div class="text-center static-block-content p-4">
+										<img class="on-hover" alt="SSP"
+											src="assets/DGCA/images/whiteBlock/ssp.svg" /> <img
+											class="not-hover" alt="SSP"
+											src="assets/DGCA/images/whiteBlock/ssp-in.svg" /> <a
+											class="pt-2 mb-0 pb-2 static-head"
+											data-url="jsp/dgca/InventoryList/headerblock/ssp/main.html">SSP</a>
+										<p class="btm-border"></p>
+										<p class="pt-3 mb-3 sub-content">State Safety Programme</p>
+
+									</div>
+									<div class="text-center static-block-content p-4" style="display:none">
+										<a target="_blank" class="p-4  static-block-content " href="jsp/dgca/InventoryList/headerblock/drones/RPAS.jsp">
+											<img class="on-hover" alt="Drones"
+											src="assets/DGCA/images/whiteBlock/drones.svg" /> <img
+											class="not-hover" alt="Drones"
+											src="assets/DGCA/images/whiteBlock/drones-in.svg" />
+											<p class="pt-4 mb-0 pb-4 static-head">Drones</p>
+											<p class="mb-4 sub-content">Flying Drones</p>
+										</a>
+										
+									</div>
+									
+									<div class="text-center  static-block-content p-5">
+							<img class="on-hover" alt="Aerosports"
+										src="assets/DGCA/images/whiteBlock/rights.svg" /> <img
+										class="not-hover" alt="Aerosports"
+										src="assets/DGCA/images/whiteBlock/rights-in.svg" /> <a
+										class="pt-2 mb-0 pb-2 static-head"
+										data-url="jsp/dgca/InventoryList/headerblock/Aerosports/main.html"
+										>Aerosports </a>
+									<p class="btm-border"></p>
+									<p class="pt-3 mb-3 sub-content">
+										Regulations and Guidelines 
+									</p>
+
+									</div>
+									<div class="text-center  static-block-content p-4">
+										<img class="on-hover" alt="Know Your Rights"
+											src="assets/DGCA/images/whiteBlock/rights.svg" /> <img
+											class="not-hover" alt="Know Your Rights"
+											src="assets/DGCA/images/whiteBlock/rights-in.svg" /> <a
+											class="pt-2 mb-0 pb-2 static-head"
+											data-url="jsp/dgca/InventoryList/headerblock/knowYour/index_files/KYR_portal.html">Know Your Rights</a>
+										<p class="btm-border"></p>
+										<p class="pt-3 mb-3 sub-content">Protecting Passengers and the Public</p>
+
+									</div>
+						</div>
+						</section>
+					</div>
+					<!-- header-carousel ends -->
+					<section class="whats-new-wraper pb-4 pt-4 clearfix" id="skipContent">
+							<div class="container">
+								<h3 class="text-center mb-4 section-heading">What's New?</h3>
+								<div class="module-whats-new">
+		
+									<nav class="nav justify-content-around"> <a
+										href="#regulation" role="tab" data-toggle="tab"
+										class="nav-link" onclick="ajaxCallService('Regulation');">Regulation</a>
+									 <a href="#guidance"
+										role="tab" data-toggle="tab" class="nav-link" onclick="ajaxCallService('Guidance');">Guidance</a>
+									<a href="#announcement" role="tab" data-toggle="tab"
+										class="nav-link active" onclick="ajaxCallService('Announcement');">Announcements</a> 
+										
+										</nav>
+									<!-- Tab panes -->
+									<div class="tab-content">
+								<div role="tabpanel" class="tab-pane fade" id="regulation">
+									<div class="row">
+										<div
+											class="col-12  col-xl-12 col-lg-12 col-md-12 col-sm-12  pl-lg-0 pl-md-2">
+											<div class="whats-new-right pt-4 clearfix"  id="RegulationAjaxData">
+												<div 	class="sub-section mr-4 ml-4 pb-4 mb-4 clearfix section-bdr" >
+													<p class="sub-heading mb-2"><a  id="RegulationAjaxDataDate0"></a></p>
+													<p class="sub-content mb-0 pr-lg-5 pr-lg-0" id="RegulationAjaxDataContent0"> 
+													</p>
+													</div>
+													<div 	class="sub-section mr-4 ml-4 pb-4 mb-4 clearfix section-bdr" >
+													<p class="sub-heading mb-2 "><a id="RegulationAjaxDataDate1"></a></p>
+													<p class="sub-content mb-0 pr-lg-5 pr-lg-0" id="RegulationAjaxDataContent1">
+													</p>
+													</div>
+													<div 	class="sub-section mr-4 ml-4 pb-4 mb-4 clearfix section-bdr" >
+													<p class="sub-heading mb-2 "><a id="RegulationAjaxDataDate2"></a></p>
+													<p class="sub-content mb-0 pr-lg-5 pr-lg-0" id="RegulationAjaxDataContent2">
+													</p>
+												</div>
+												<a class="float-left btn btn-primary mb-4 ml-4 text-white" onclick="viewAllWhatsNewService('regulations');">More</a>
+										</div>
+										</div>
+									</div>
+								</div>
+								<div role="tabpanel" class="tab-pane fade" id="guidance">
+									<div class="row">
+										<div class="col-12  col-xl-12 col-lg-12 col-md-12 col-sm-12  pl-lg-0 pl-md-2">
+											<div class="whats-new-right pt-4 clearfix"  id="GuidanceAjaxData">
+												<div 	class="sub-section mr-4 ml-4 pb-4 mb-4 clearfix section-bdr" >
+													<p class="sub-heading mb-2"><a  id="GuidanceAjaxDataDate0"></a></p>
+													<p class="sub-content mb-0 pr-lg-5 pr-lg-0" id="GuidanceAjaxDataContent0"> 
+													</p>
+													</div>
+													<div 	class="sub-section mr-4 ml-4 pb-4 mb-4 clearfix section-bdr" >
+													<p class="sub-heading mb-2 "><a id="GuidanceAjaxDataDate1"></a></p>
+													<p class="sub-content mb-0 pr-lg-5 pr-lg-0" id="GuidanceAjaxDataContent1">
+													</p>
+													</div>
+													<div 	class="sub-section mr-4 ml-4 pb-4 mb-4 clearfix section-bdr" >
+													<p class="sub-heading mb-2 "><a id="GuidanceAjaxDataDate2"></a></p>
+													<p class="sub-content mb-0 pr-lg-5 pr-lg-0" id="GuidanceAjaxDataContent2">
+													</p>
+												</div>
+												<a class="float-left btn btn-primary mb-4 ml-4 text-white" onclick="viewAllWhatsNewService('guidance');">More</a>
+										</div>
+									</div>
+								</div>
+								</div>
+								
+								<div role="tabpanel" class="tab-pane  in active" id="announcement">
+									<div class="row">
+										<div class="col-12  col-xl-12 col-lg-12 col-md-12 col-sm-12  pl-lg-0 pl-md-2">
+											<div class="col-12  col-xl-12 col-lg-12 col-md-12 col-sm-12  pl-lg-0 pl-md-2">
+											<div class="whats-new-right pt-4 clearfix">
+												
+												<div
+													class="sub-section mr-4 ml-4 pb-4 mb-4 clearfix section-bdr">
+													<!-- <span class="sub-heading">Director Airworthiness,</span> -->
+													
+													<p class="sub-heading mb-2"><a onclick="pdfDownload('KROUQLtyeqZo4C1b0uU6nw%3D%3D','regulation');">Circular on creation of pool of retired DGCA technical officials to provide advisory support in certification processes</a></p>
+													
+													<p class="sub-content mb-0 pr-lg-5 pr-lg-0">
+															17/11/2025 
+														
+														 |   <a onclick="pdfDownload('KROUQLtyeqZo4C1b0uU6nw%3D%3D','Regulation');">Download (Type : pdf) </a> | 2.59 MB
+															
+															
+															
+													</p>
+												</div>
+												
+												<div
+													class="sub-section mr-4 ml-4 pb-4 mb-4 clearfix section-bdr">
+													<!-- <span class="sub-heading">Director Airworthiness,</span> -->
+													
+													<p class="sub-heading mb-2"><a onclick="pdfDownload('Aa1IpLSX0te9j%2BSZKvhmlw%3D%3D','regulation');">IDERA De-registration Request VT-HIT</a></p>
+													
+													<p class="sub-content mb-0 pr-lg-5 pr-lg-0">
+															06/11/2025 
+														
+														 |   <a onclick="pdfDownload('Aa1IpLSX0te9j%2BSZKvhmlw%3D%3D','Regulation');">Download (Type : pdf) </a> | 0.27 MB
+															
+															
+															
+													</p>
+												</div>
+												
+												<div
+													class="sub-section mr-4 ml-4 pb-4 mb-4 clearfix section-bdr">
+													<!-- <span class="sub-heading">Director Airworthiness,</span> -->
+													
+													<p class="sub-heading mb-2"><a onclick="pdfDownload('zX356G7xOQek0BDhZH%2Fr9A%3D%3D','regulation');">IDERA De-registration Request VT-FBC</a></p>
+													
+													<p class="sub-content mb-0 pr-lg-5 pr-lg-0">
+															06/11/2025 
+														
+														 |   <a onclick="pdfDownload('zX356G7xOQek0BDhZH%2Fr9A%3D%3D','Regulation');">Download (Type : pdf) </a> | 0.27 MB
+															
+															
+															
+													</p>
+												</div>
+												
+												<a class="float-left btn btn-primary mb-4 ml-4 text-white" onclick="viewAllWhatsNewService('announcement');">More</a>
+											</div>
+											
+										</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+								</div>
+		
+							</div>
+					</section><!-- whats new ends -->
+					<section class="highlights-wraper mt-5 pb-3 clearfix">
+					<h3 class="text-center section-heading mb-4">Highlights</h3>
+							<div class="container">
+								<div class="highlights-container ">
+									<div class="row">
+										<div class="col-12  col-xl-12 col-lg-12 col-md-12 col-sm-12">
+											<div class="highlight-right pt-4 bg-white clearfix">
+											
+												<div class="new-window-pdf">
+													<div class="sub-section mr-4 ml-4 pb-3 mb-3 clearfix section-bdr">
+														<p class="sub-heading mb-2 ">
+																										
+												<a  onclick="pdfDownload('pSL7gV31Il7c2u0ipEQ1og%3D%3D','classification')">
+												ICAO honors DGCA for a safer civil aviation </a>
+												
+												</p>
+												<p class="sub-content mb-0 pr-lg-5 pr-lg-0">
+												 
+												03.10.2025
+												|   <a onclick="pdfDownload('pSL7gV31Il7c2u0ipEQ1og%3D%3D','classification')">Download (Type : jpg) </a> | 0.24 MB
+												
+												</p>
+														&nbsp;
+														<p class="sub-content mb-2">Shri Faiz Ahmed Kidwai, Director General  (Civil Aviation) received the ICAO Council President Certificate on 23rd September 2025 at a ceremony held at ICAO Montreal during the 42nd session of the Assembly. 
+
+The certificate is in recognition of India's progress in establishing an effective aviation oversight system and for its ongoing commitment to the Implementation of ICAO Standards and Recommended Practices.</p>
+													</div>
+													</div>
+													
+												<div class="new-window-pdf">
+													<div class="sub-section mr-4 ml-4 pb-3 mb-3 clearfix section-bdr">
+														<p class="sub-heading mb-2 ">
+																										
+												<a  onclick="pdfDownload('8F2zQ5P%2BVXuau3qthbf28w%3D%3D','classification')">
+												DGCA grants Aerodrome License to Navi Mumbai International Airport </a>
+												
+												</p>
+												<p class="sub-content mb-0 pr-lg-5 pr-lg-0">
+												 
+												30.09.2025
+												|   <a onclick="pdfDownload('8F2zQ5P%2BVXuau3qthbf28w%3D%3D','classification')">Download (Type : jpg) </a> | 0.24 MB
+												
+												</p>
+														&nbsp;
+														<p class="sub-content mb-2">Navi Mumbai International Airport was granted Aerodrome license on 30/09/2025 for Aerodrome Reference code “4F” with Runway length of 3700m and CAT-I Instrument Landing System (ILS) for All Weather Operations.</p>
+													</div>
+													</div>
+													
+												<div class="new-window-pdf">
+													<div class="sub-section mr-4 ml-4 pb-3 mb-3 clearfix section-bdr">
+														<p class="sub-heading mb-2 ">
+																										
+												<a  onclick="pdfDownload('EfYJIRDygZd5NS8UoGZeFQ%3D%3D','classification')">
+												Accessibility Standards and Guidelines for Civil Aviation </a>
+												
+												</p>
+												<p class="sub-content mb-0 pr-lg-5 pr-lg-0">
+												 
+												03.01.2023
+												|   <a onclick="pdfDownload('EfYJIRDygZd5NS8UoGZeFQ%3D%3D','classification')">Download (Type : jpg) </a> | 0.24 MB
+												
+												</p>
+														&nbsp;
+														<p class="sub-content mb-2">Accessibility Standards and Guidelines for Civil Aviation</p>
+													</div>
+													</div>
+													
+													<a class="float-left btn btn-primary mb-4 ml-4 text-white"
+													onclick="viewAllHighlightDetailsService();">More</a>
+												</div>
+												
+											</div>
+										</div>
+									</div>
+								</div>
+					</section><!-- highlight ends -->
+					<section class="online-service-wraper mt-5 pb-3">
+							<div class="container">
+								<h3 class="text-center section-heading mb-4">Online Services</h3>
+								<div id="onlineService" class="carousel slide arrow-bottom clearfix" data-ride="carousel">
+									<!-- The slideshow -->
+									<div class="carousel-inner">
+										<div class="carousel-item active">
+											<div class="static-block">
+												<div class="container">
+													<div class="row">
+														<div
+															class="col-12 col-xl-4 col-lg-4 col-md-4 col-sm-12 justify-content-center mb-3 d-flex">
+															<a target="_blank" class="p-4  static-block-content " href="jsp/dgca/common/login.jsp" >
+																<img class="on-hover img-fluid" alt="EGCA"
+																	src="assets/DGCA/images/onlineService/Service-white.png" />
+																<img class="not-hover img-fluid" alt="EGCA"
+																	src="assets/DGCA/images/onlineService/Service.png" />
+																<p class="pt-4 mb-0 pb-4 static-head">eGCA</p>
+																<p class="mb-4 sub-content">For Pilots, Aircraft, Operator, Aerodrome related services offered by DGCA</p>
+															</a>
+														</div>
+														<div
+															class="col-12 col-xl-4 col-lg-4 col-md-4 col-sm-12  mb-3 d-flex justify-content-center">
+															<a target="_blank" class="p-4  static-block-content"
+																href="#" onclick="fnAlertRedirection('https://pariksha.dgca.gov.in/');"> <img 
+																class="on-hover  img-fluid" alt="Pariksha"
+																src="assets/DGCA/images/onlineService/Pariksha-white.png" />
+																<img class="not-hover img-fluid" alt="Pariksha"
+																src="assets/DGCA/images/onlineService/Pariksha.png" />
+																<p class="pt-4 mb-0 pb-4 static-head">Pariksha</p>
+																<p class="mb-4 sub-content">For examinations conducted by CEO, for AME and Flight crew</p>
+															</a>
+														</div>
+														<div
+															class="col-12 col-xl-4 col-lg-4 col-md-4  col-sm-12 justify-content-center mb-3 d-flex">
+															<a target="_blank" class="p-4  static-block-content"
+																href="#" onclick="fnAlertRedirection('https://esahaj.gov.in/guidelines');"> <img
+																class="on-hover img-fluid" alt="E sahaj"
+																src="assets/DGCA/images/onlineService/E sahaj-white.png" />
+																<img class="not-hover img-fluid" alt="E sahaj"
+																src="assets/DGCA/images/onlineService/E sahaj.png" />
+																<p class="pt-4 mb-0 pb-4 static-head">E-Sahaj </p>
+																<p class="mb-4 sub-content">For Security Clearance from Ministry of Civil Aviation</p>
+															</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- 	  <a class="carousel-control-prev" href="#onlineService" data-slide="prev">
+											    <span class="carousel-control-prev-icon"></span>
+											  </a>
+											  <a class="carousel-control-next" href="#onlineService" data-slide="next">
+											    <span class="carousel-control-next-icon"></span>
+											  </a>
+											  <button class="float-left btn btn-primary">View All Services</button>
+									 -->
+								</div>
+							</div>
+					</section><!-- online service ends -->
+					<section class="quick-link-wraper mt-5 pb-3 clearfix">
+							<div class="container">
+								<div class="quick-link-container pb-4 clearfix">
+		
+									<h3 class="section-heading text-white text-center mb-4 pt-4">Quick Links</h3>
+									<!-- <div class="row justify-content-center">
+										<div class=" col-12  col-xl-5 col-lg-5 col-md-10 col-sm-12">
+											<div class="form-group custom-input">
+												<input type="text" class="form-control rounded-bdr"
+													placeholder="Enter keywords like Aircraft Act, 1934">
+												<span class="field-icon"> <img alt="search"
+													src="assets/DGCA/images/icons/Search.png">
+												</span>
+											</div>
+										</div>
+									</div> -->
+									<div class="container">
+														<div class="row">
+															<div
+																class=" col-12  col-xl-6  col-lg-6 col-md-12  col-sm-12 mb-3">
+																<div class="quick-link-content p-3">
+																	<a class="d-flex justify-content-between new-window-pdf"  data-url="jsp/dgca/InventoryList/headerblock/knowYour/index_files/KYR_portal.html">Know Your Rights 
+																	<img alt="right arrow" data-url="jsp/dgca/InventoryList/headerblock/knowYour/index_files/KYR_portal.html" class="pull-right" src="assets/DGCA/images/icons/right-arrow.png">
+																	</a>
+																	
+																</div>
+																<div class="quick-link-content p-3">
+																	<a class="d-flex justify-content-between" data-url="jsp/dgca/InventoryList/headerblock/Idera/ideraIndex.html"> IDERA (Rule 32A)<img class="pull-right"
+																		 data-url="jsp/dgca/InventoryList/headerblock/Idera/ideraIndex.html" alt="right arrow" src="assets/DGCA/images/icons/right-arrow.png">
+																	</a>
+																</div>
+																
+																<div class="quick-link-content p-3 new-window-pdf">
+																	<a target="_blank" class="d-flex justify-content-between" href="jsp/dgca/InventoryList/headerblock/national/Safety Plan_India.pdf">National Aviation Safety Plan<img class="pull-right"
+																		alt="right arrow" src="assets/DGCA/images/icons/right-arrow.png">
+																	</a>
+																</div>
+															</div>
+															<div class=" col-12  col-xl-6  col-lg-6 col-md-12  col-sm-12">
+																<div class="quick-link-content p-3">
+																	<a class="d-flex justify-content-between"onclick="viewAllWhatsNewService('announcement');"> Announcements<img class="pull-right"
+																		alt="right arrow" src="assets/DGCA/images/icons/right-arrow.png">
+																	</a>
+																</div>
+																<div class="quick-link-content p-3 new-window-pdf">
+																	<a target="_blank"  class="d-flex justify-content-between" href="jsp/dgca/InventoryList/dataReports/surveillance/program/ASP 2024.pdf">Surveillance Programme 2024<img class="pull-right"
+																		alt="right arrow"  src="assets/DGCA/images/icons/right-arrow.png">
+																	</a>
+																</div>
+															</div>
+														</div>
+													</div>
+									<!-- <div id="quicklink"
+										class="carousel slide arrow-bottom white-arrow"
+										data-ride="carousel">
+										The slideshow
+										<div class="carousel-inner mb-3">
+											<div class="carousel-item active">
+												<div class="static-block">
+													
+												</div>
+											</div>
+										</div>
+										<a class="carousel-control-prev" href="#quicklink"
+											data-slide="prev"> <span class="carousel-control-prev-icon"></span>
+										</a> <a class="carousel-control-next" href="#quicklink"
+											data-slide="next"> <span class="carousel-control-next-icon"></span>
+										</a>
+										  <button class="float-left btn btn-primary">View All Quicklink</button>
+									
+									</div> -->
+		
+								</div>
+							</div>
+					</section><!-- quicklink ends -->
+					<section class="highlights-wraper mt-5 pb-3clearfix">
+					<div class="highlights-container ">
+						<div class="container">
+							<h3 class="text-center section-heading mb-4">Tenders</h3>
+							<div class="row">
+								<!-- <div class=" col-12 col-xl-4 col-lg-4 col-md-12 col-sm-12 pr-lg-0 pr-md-2 d-none d-lg-block">
+							  			<div class="highlight-left">
+							  				<img src="assets/DGCA/images/bg-image/Tender Banner.png">
+							  				<div class="bg-white p-3 img-static-block">
+										      	<p class="sub-heading mb-2">Independence of expression of interest (EOI)</p>
+										      	<p class="sub-content mb-2">Lorem ipsum dolor sit amet, consectetur 
+										      	adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+										      	<p class="italic-style mb-2">Must reach by 25.07.2019 (05:00 PM)</p>
+										      	<a class="pull-right more mb-0">View Details
+												 <img class="pl-1" src="assets/DGCA/images/icons/right-arrow.png"></a>
+										    </div>
+							  			</div>
+							  		</div> -->
+								<div class="col-12  col-xl-12 col-lg-12 col-md-12 col-sm-12">
+									<div class="highlight-right pt-4 bg-white clearfix">
+									
+										<div class="new-window-pdf">
+											<div
+												class="sub-section mr-4 ml-4 pb-3 mb-3 clearfix section-bdr">
+												
+									                <p class="sub-heading mb-2 ">
+											<a  onclick="pdfDownload('MzqquQYsICYV0sM6X0IRvQ%3D%3D','classification')">
+														Scrap items list
+<input type="hidden" id = "Scrap items list" value="Scrap items list"></a>
+												</p>
+												<p class="sub-content mb-0 pr-lg-5 pr-lg-0">
+												
+												13.08.2025 (12:00 AM)
+									             |   <a onclick="pdfDownload('MzqquQYsICYV0sM6X0IRvQ%3D%3D','classification')">Download (Type : pdf) </a> |
+									              0.73 MB</p>
+									            
+									           
+												
+											</div>
+											</div>
+											
+										<div class="new-window-pdf">
+											<div
+												class="sub-section mr-4 ml-4 pb-3 mb-3 clearfix section-bdr">
+												
+									                <p class="sub-heading mb-2 ">
+											<a  onclick="pdfDownload('eVzkArZYTgSmhfx9huN%2B%2Bw%3D%3D','classification')">
+														Inviting quotations for disposal of scrap items in DGCA.
+<input type="hidden" id = "tender _ 2021_01" value="tender _ 2021_01"></a>
+												</p>
+												<p class="sub-content mb-0 pr-lg-5 pr-lg-0">
+												
+												24.10.2021 (12:30 AM)
+									             |   <a onclick="pdfDownload('eVzkArZYTgSmhfx9huN%2B%2Bw%3D%3D','classification')">Download (Type : pdf) </a> |
+									              0.73 MB</p>
+									            
+									           
+												
+											</div>
+											</div>
+											
+										<div class="new-window-pdf">
+											<div
+												class="sub-section mr-4 ml-4 pb-3 mb-3 clearfix section-bdr">
+												
+									                <p class="sub-heading mb-2 ">
+											<a  onclick="pdfDownload('B2Uda08LBqffrmFLEXJjPg%3D%3D','classification')">
+														Notice Inviting Tender for procurement of Automatic Existent Gum Apparatus with Air Compressor for existent gum apparatus with air compressor for existent gum test in jet fuels.
+<input type="hidden" id = "tender_AEGAAC(Dec2019)" value="tender_AEGAAC(Dec2019)"></a>
+												</p>
+												<p class="sub-content mb-0 pr-lg-5 pr-lg-0">
+												
+												18.01.2020 (06:00 PM)
+									             |   <a onclick="pdfDownload('B2Uda08LBqffrmFLEXJjPg%3D%3D','classification')">Download (Type : pdf) </a> |
+									              0.73 MB</p>
+									            
+									           
+												
+											</div>
+											</div>
+											
+										<a class="float-left btn btn-primary mb-4 ml-4 text-white" onclick="viewAllTenderDetailsService();">More</a>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+					</section>
+				</div>
+				<!-- module-home-page ends -->
+				<section
+					class="footer-carousal  custom-owl-carousal p-4 mt-5 bg-white">
+				<div class="container">
+					<div class="row align-items-center">
+						<div class="col-12 col-carousel">
+							<div class="owl-carousel carousel-main footer-owl">
+								<div>
+									<a href="#" onclick="fnAlertRedirection('https://www.digitalindia.gov.in/');"><img alt="digital india"
+										src="assets/DGCA/images/owl-carousal/digital_india_logo.png"></a>
+								</div>
+								<!-- <div><a href=""></a><img src="assets/DGCA/images/owl-carousal/eci.png"></div> -->
+								<div>
+									<a onclick="fnAlertRedirection('https://www.india.gov.in/spotlight/government-e-marketplace-procurement-made-smart#tab=tab-1');"
+										href="#"><img
+										alt="GEM" src="assets/DGCA/images/owl-carousal/GEM.png"></a>
+								</div>
+								<div>
+									<a href="#" onclick="fnAlertRedirection('https://indiainvestmentgrid.gov.in/');" ><img alt="india investment grid"
+										src="assets/DGCA/images/owl-carousal/iig.png"></a>
+								</div>
+								<div>
+									<a href="#" onclick="fnAlertRedirection('https://www.india.gov.in/');" ><img alt="india.gov"
+										src="assets/DGCA/images/owl-carousal/india.gov.png"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				</section>
+				
+			</div>
+			
+			
+		</div>
+	</div>
+	<a href="#" class="back-to-top"></a>
+	
+	
+	</section>
+	
+
+
+<footer>
+	<section class="footer-top p-3 text-center">
+		<a href="jsp/dgca/footerLink/sitemap.jsp" class="text-white">Sitemap</a><span class="pl-2 pr-2">
+			|</span>
+		 <a href="jsp/dgca/footerLink/WebsitePolicy.jsp" target="_blank" class="text-white">Website Policy</a><span class="pl-2 pr-2"> |</span> 
+		<a href="jsp/dgca/homePage/disclaimer.jsp" target="_blank" class="text-white">Disclaimer</a><span class="pl-2 pr-2">|</span>
+		<a href="jsp/dgca/footerLink/PrivacyPolicy.jsp" class="text-white">Privacy Policy</a>	<span class="pl-2 pr-2">|</span>
+		<a href="jsp/dgca/dgcaHelp.jsp" class="text-white">Help</a><span class="pl-2 pr-2">|</span>
+		<a href="webHP?requestType=ApplicationRH&actionVal=openFeedbackPageAv&screenId=2900107&isLogin=0" class="text-white">Feedback</a><span class="pl-2 pr-2">|</span>
+		
+		<div class="new-window-pdf" style="display: inline-block;">		
+			<a href="jsp/dgca/InventoryList/STQC WEBAPP/STQC web application security certificate.pdf" class="text-white" target="_blank" class="text-white">STQC Web Application Security Certificate </a><span class="pl-2 pr-2">|</span>
+			
+		</div>
+		<div class="new-window-pdf" style="display: inline-block;">		
+			<a href="jsp/dgca/InventoryList/STQC WEBAPP/DGCA GIGW STQC Compliance.pdf" class="text-white" target="_blank" class="text-white">Website Quality Certificate</a>
+		</div>	
+		
+	</section>
+	<section class="footer-middle p-4">
+		<div class="container">
+			<div class="row">
+				<div
+					class="col-xl-9 col-lg-8 col-md-12 col-sm-12 col-12 pr-lg-0 pr-md-2 mb-3">
+					<div class="footer-left mr-lg-3  mr-md-0">
+						<p class="footer-heading">
+							Contact Us
+						</p>
+						<div class="row">
+							<div class="col-xl-3 col-lg-4 col-md-4 col-sm-12 mb-3">
+								<div class="d-flex">
+									<span> <img class="pr-3"
+										src="assets/DGCA/images/icons/call.png"></span>
+									<div class="footer-content">
+										<p class="mb-2">91-11-24622495</p>
+										<!-- <p class="mb-2">91 - 9876543210</p>
+									<p>91 - 5987265234</p> -->
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-3 col-lg-4 col-md-4 col-sm-12 mb-3">
+								<div class="d-flex">
+									<span> <img class="pr-3"
+										src="assets/DGCA/images/icons/message.png"></span>
+									<div class="footer-content">
+										<!-- <p class="mb-2">feedback-dgca@gov.in</p> -->
+										<p class="mb-2">feedback-dgca[at]gov[dot]in</p>
+										<!-- <p class="">Address Line 1</p> -->
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-3 col-lg-4 col-md-4 col-sm-12">
+								<div class="d-flex">
+									<span> <img class="pr-3"
+										src="assets/DGCA/images/icons/Address.png"></span>
+									<div class="footer-content">
+										<p class="mb-2">
+											Aurobindo Marg,
+										</p>
+										<p class="mb-2">
+											Opp. Safdarjung Airport,
+										</p>
+										<p class="mb-2">
+											New Delhi 110 003,
+										</p>
+										<p class="">
+											India
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-3 col-lg-4 col-md-8 col-sm-12 col-12">
+					<p class="footer-heading">
+						Get Social With Us
+					</p>
+					<div class="row">
+						<!-- <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 mb-3">
+							<div class="footer-content d-flex">
+									<span> <img class="pr-2" src="assets/DGCA/images/icons/IN.png"></span>
+									<p class="mb-3">24K+ Followers</p>
+							</div>
+						</div> -->
+						<!-- <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 mb-3">
+							<div class="footer-content d-flex">
+									<span> <img class="pr-2" src="assets/DGCA/images/icons/Twitter.png"></span>
+									<p class="mb-3">24K+ Followers</p>
+							</div>
+						</div> -->
+					</div>
+					<div class="row">
+						<!-- <div class="col-xl-6 col-lg-6 col-md-6col-sm-6 col-6 mb-3">
+							<div class="footer-content d-flex">
+									<span> <img class="pr-2" src="assets/DGCA/images/icons/IN.png"></span>
+									<p class="mb-3">24K+ Followers</p>
+							</div>
+						</div> -->
+						<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+							<div class="footer-content d-flex">
+								<a href="https://twitter.com/hashtag/dgca?lang=en">
+										<img class="pr-2" width="45" src="assets/DGCA/images/icons/Twitter.png">
+							 </a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+							<div class="col-xl-4 col-lg-7 col-md-12 col-sm-12 col-12 pr-lg-0 pr-md-2">
+								<div class="mr-lg-3  mr-md-0">
+									<p class="footer-heading mb-2">Connect with eGCA Support cell</p>
+									<div class="row">
+										<div class="col-xl-5 col-lg-5 col-md-6 col-sm-12">
+											<div class="d-flex">
+												<span> <img class="pr-3"
+													src="assets/DGCA/images/icons/call.png"></span>
+												<div class="footer-content">
+													<p class="mb-0">1800-11-3422</p>
+													<!-- <p class="mb-2">91 - 9876543210</p>
+												<p>91 - 5987265234</p> -->
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-3 col-lg-4 col-md-4 col-sm-12 mb-3">
+								<div class="d-flex">
+										<div class="footer-content">
+										<p class="footer-heading text-white mb-2">Web Information Manager</p>
+										<p class="mb-2">Sh. Harish Kumar Vashisth</p>
+									</div>
+								</div>
+							</div>
+						</div>
+		</div>
+	</section>
+	<section class="footer-bottom p-2">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8">
+					<div class="footer-text-1 text-left" href="#">
+						<p class="mb-1">Website Content Managed and Owned by Directorate General
+							of Civil Aviation</p>
+						<p class="mb-0">Designed, Developed and Hosted by TATA
+							Consultancy Services</p>
+					</div>
+				</div>
+				<div class="col-md-4 text-right">
+					<div class="footer-text-2">
+						<p class="footer-subtext mb-1">@  DGCA - All rights
+							reserved</p>
+						<p class="mb-0">Last Updated Date - 01 Dec 2025</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div class="modal" id="disclaimer">
+		<div class="modal-dialog modal-dialog-centered modal-lg">
+			<div class="modal-content">
+
+				<!-- Modal Header -->
+				<div class="modal-header">
+					<h4 class="modal-title">Disclaimer</h4>
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				</div>
+
+				<!-- Modal body -->
+				<div class="modal-body">Unless otherwise specifically stated,
+					the information contained herein is made available to the public by
+					Directorate General of Civil Aviation (DGCA), an agency of Ministry
+					of Civil Aviation (MCA), Government of India (GOI) for information
+					only. Neither the DGCA, MCA, or GOI nor any other agency or
+					entities thereof, assumes any legal liability or responsibility for
+					the accuracy, completeness, or usefulness of any information,
+					apparatus, product or process disclosed, or represents that the use
+					of any information would not infringe privately owned rights.
+
+					Reference herein to any specific commercial product, process,
+					service by trade name, trade mark, manufacturer, or otherwise, does
+					not constitute or imply its endorsement, recommendation, or
+					favoring by the GOI or any entities thereof. The view and opinions
+					of the originators expressed therein do not necessarily state or
+					reflect those of the DGCA, MCA, GOI, or any agency or entities
+					thereof.</div>
+
+				<!-- Modal footer -->
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+</footer>
+
+
+<script>
+
+</script>
+
+	
+
+
+
+<link rel="stylesheet" href="style/statusbar.css?v=1.8"
+	type="text/css" />
+<script type="text/javascript" src="script/statusbar.js?v=1.8"></script>
+<script type="text/javascript" src="script/frmUtils.js?v=1.8"></script>
+<script src="/digigov-portal/assets/DGCA/libs/js/jquery.min.js?v=1.8"></script>
+<script src="/digigov-portal/assets/DGCA/libs/js/popper.min.js?v=1.8"></script>
+<script src="/digigov-portal/assets/DGCA/libs/js/bootstrap.min.js?v=1.8"></script>
+<script src="/digigov-portal/assets/DGCA/libs/js/owl.carousel.min.js?v=1.8"></script>
+<script src="/digigov-portal/assets/DGCA/libs/js/jquery.dataTables.min.js?v=1.8"></script>
+<script src="/digigov-portal/assets/DGCA/libs/js/dataTables.bootstrap4.min.js?v=1.8"></script>
+
+<script>
+	if (!String.prototype.includes) {
+		String.prototype.includes = function() {
+			'use strict';
+			return String.prototype.indexOf.apply(this, arguments) !== -1;
+		};
+	}
+	if (!String.prototype.endsWith) {
+
+		String.prototype.endsWith = function(pattern) {
+			  var d = this.length - pattern.length;
+			  return d >= 0 && this.lastIndexOf(pattern) === d;
+			};
+		}
+		if (!String.prototype.startsWith) {
+			  String.prototype.startsWith = function(searchString, position) {
+			    position = position || 0;
+			    return this.indexOf(searchString, position) === position;
+			  };
+			}
+</script>
+<script src="/digigov-portal/assets/DGCA/script/custom-datatable.js?v=1.8"></script>
+<script src="/digigov-portal/assets/DGCA/libs/js/bootstrap-datepicker.js?v=1.8"></script>
+<script src="/digigov-portal/assets/DGCA/script/show-pdf-table.js?v=1.8"></script>
+<script src="/digigov-portal/assets/DGCA/script/header.js?v=1.8"></script>
+<script src="/digigov-portal/assets/DGCA/script/internal-link.js?v=1.8"></script>
+<script src="/digigov-portal/assets/DGCA/script/sidebar.js?v=1.8"></script>
+<script src="/digigov-portal/assets/DGCA/script/topHeader.js?v=1.8"></script>
+<script src="/digigov-portal/assets/DGCA/script/commonDynaArray.js?v=1.8"></script>
+<script src="/digigov-portal/assets/DGCA/script/commonDynamic.js?v=1.8"></script>
+<script src="/digigov-portal/assets/DGCA/script/common.js?v=1.8"></script>
+<script src="/digigov-portal/assets/DGCA/script/side-tabs.js?v=1.8"></script>
+<script src="/digigov-portal/script/aes/AesUtil.js"></script>
+
+<script>
+	//datatable
+	$(document).ready(function() {
+
+						// set nit mode on load 
+						var theme = sessionStorage.getItem('nitModeValue');
+						if (theme !== ' ') {
+							$('body').addClass(theme);
+						}
+
+						//tooltip
+						$('[data-toggle="tooltip"]').tooltip();
+						//datepicker
+						$('.datepicker').datepicker({
+							autoclose : true,
+						});
+						//carousal
+
+						$('.footer-owl').owlCarousel(
+										{
+											items : 4,
+											loop : true,
+											autoplay : true,
+											autoplayTimeout : 1500,
+											margin : 10,
+											autoplayHoverPause:true,
+											nav : true,
+											dots : false,
+											mouseDrag : true,
+											responsiveClass : true,
+											responsive : {
+												0 : {
+													items : 3
+												},
+												480 : {
+													items : 3
+												},
+												769 : {
+													items : 4
+												}
+											},
+											navText : [
+													'<span><img src="assets/DGCA/images/arrow/slider-left-arrow.png"></span>',
+													'<span><img src="assets/DGCA/images/arrow/slider-right-arrow.svg"></span>' ],
+
+										});
+
+						$(".dgca-home").click(function() {
+							sessionStorage.setItem('topTarget', '');
+							sessionStorage.setItem('topLinkTarget', '');
+						});
+
+						//Dynamic Rule ID for LVL2
+						var dynamicRuleIdLvl2 = sessionStorage.getItem('dynamicRuleIdLvl2');
+						var attrLvl2 = sessionStorage.getItem('attrLvl2');
+						var dynamicContIdLvl2 = sessionStorage.getItem('dynamicContIdLvl2');
+						if (dynamicRuleIdLvl2) {
+							document.getElementById("screenId").value = '10000001';
+							document.getElementById("actionVal").value = 'viewDynamicRuleContLvl2';
+							document.getElementById("requestType").value = 'ApplicationRH';
+							document.getElementById("ruleBookId").value = dynamicRuleIdLvl2;
+							document.getElementById("contentId").value = dynamicContIdLvl2;
+							document.getElementById("attr").value = attrLvl2;
+							$(".tab-pane").removeClass("active");
+							if (attrLvl2 !== undefined && attrLvl2 !== false) {
+								history.pushState({}, attrLvl2, "?page="+ attrLvl2);
+							}
+							showProgressbar();
+							$.ajax({
+										url : 'scan?',
+										dataType : 'text',
+										type : 'post',
+										contentType : 'application/x-www-form-urlencoded',
+										data : $('#hiddenForm').serialize(),
+										success : function(data, textStatus,jQxhr) {
+											$('.loadContent').show().html(data);
+
+											loadMenuContent(attrLvl2);
+											customDatatable();
+											hideProgressbar();
+											if ($(window).width() <= 768) {
+												$(".side-tabs").hide();
+												$(".side-menu-page")
+														.removeClass(
+																"side-menu-width");
+											}
+										},
+										error : function(jqXhr, textStatus,
+												errorThrown) {
+											console.log(errorThrown);
+											hideProgressbar();
+										}
+									});
+
+							sessionStorage.setItem('dynamicRuleIdLvl2', '');
+							sessionStorage.setItem('attrLvl2', '');
+							sessionStorage.setItem('dynamicContIdLvl2', '');
+						}
+
+						// Dynamic App ID
+						var dynamicAppId = sessionStorage.getItem('dynamicAppId');
+						var appAttr = sessionStorage.getItem('dynamicAppAttr');
+						if (dynamicAppId) {
+							document.getElementById("screenId").value = '10000001';
+							document.getElementById("actionVal").value = 'viewApplicationDtlsReq';
+							document.getElementById("requestType").value = 'ApplicationRH';
+							document.getElementById("contentId").value = dynamicAppId;
+							document.getElementById("serviceName").value = appAttr;
+							$(".tab-pane").removeClass("active");
+							if (appAttr !== undefined && appAttr !== false) {
+								history.pushState({}, appAttr, "?page="+ appAttr);
+							}
+							showProgressbar();
+							$.ajax({
+										url : 'scan?',
+										dataType : 'text',
+										type : 'post',
+										contentType : 'application/x-www-form-urlencoded',
+										data : $('#hiddenForm').serialize(),
+										success : function(data, textStatus,
+												jQxhr) {
+											$('.loadContent').show().html(data);
+											loadMenuContent(appAttr);
+											customDatatable();
+											hideProgressbar();
+											if ($(window).width() <= 768) {
+												$(".side-tabs").hide();
+												$(".side-menu-page")
+														.removeClass(
+																"side-menu-width");
+											}
+										},
+										error : function(jqXhr, textStatus,
+												errorThrown) {
+											console.log(errorThrown);
+											hideProgressbar();
+										}
+									});
+
+							sessionStorage.setItem('dynamicAppId', '');
+							sessionStorage.setItem('dynamicAppAttr', '');
+						}
+
+						//Public Notice Section
+						var dynamicWhatsNewName = sessionStorage.getItem('dynamicWhatsNewName');
+						if (dynamicWhatsNewName) {
+							document.getElementById("screenId").value = '10000001';
+							document.getElementById("classification").value = dynamicWhatsNewName;
+							var url = 'scan?requestType=ApplicationRH&actionVal=viewAllService';
+							$(".tab-pane").removeClass("active");
+							if (dynamicWhatsNewName !== undefined
+									&& dynamicWhatsNewName !== false) {
+								history.pushState({}, dynamicWhatsNewName,"?page=" + dynamicWhatsNewName);
+							}
+							showProgressbar();
+							$.ajax({
+										url : url,
+										dataType : 'text',
+										type : 'post',
+										contentType : 'application/x-www-form-urlencoded',
+										async : "false",
+										data : $('#hiddenForm').serialize(),
+										success : function(data, textStatus,
+												jQxhr) {
+											$('.loadContent').show().html(data);
+											loadMenuContent(dynamicWhatsNewName);
+											hideProgressbar();
+											if ($(window).width() <= 768) {
+												$(".side-tabs").hide();
+												$(".side-menu-page")
+														.removeClass(
+																"side-menu-width");
+											}
+										},
+										error : function(jqXhr, textStatus,
+												errorThrown) {
+											console.log(errorThrown);
+											hideProgressbar();
+										}
+									});
+							sessionStorage.setItem('dynamicWhatsNewName', '');
+						}
+						
+							 //Back to top
+							 //Check to see if the window is top if not then display button
+							 $('.back-to-top').fadeOut();
+							 $(window).scroll(function(){
+
+							  // Show button after 100px
+							  var showAfter = 100;
+							  if ( $(this).scrollTop() > showAfter ) { 
+							   $('.back-to-top').fadeIn();
+							  } else { 
+							   $('.back-to-top').fadeOut();
+							  }
+							 });
+							 //Click event to scroll to top
+							 $('.back-to-top').click(function(){
+							  $('html, body').animate({scrollTop : 0},800);
+							  return false;
+							 });
+					});
+	function viewCertificateVerificationPage() {
+		document.forms[0].method = 'post';
+		document.forms[0].action = 'scan?requestType=ApplicationRH&actionFlag=getCertVerificationPage';
+		document.forms[0].submit();
+	}
+</script>
+
+
+	<script src="assets/DGCA/script/side-tabs.js"></script>
+
+</body>
+</html>
+<script>
+var certVerfMainDiv=document.getElementById("certVerfMainDiv");
+console.log("certVerfMainDiv modal show false");
+if (certVerfMainDiv!=null)  {
+	console.log("certVerfMainDiv modal show true");
+	$("#certVerfMainDiv").modal("show");
+}
+</script>

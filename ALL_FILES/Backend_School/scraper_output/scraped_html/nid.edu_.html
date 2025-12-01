@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#636363">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#636363">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#636363">
+	<link type="image/x-icon" href="https://nid.edu/public/img/site_settings/3A741739AA2D4F.png" rel="shortcut icon" />
+	<meta name="description" content="National Institute of Design" />
+	<meta key="keywords" content="" />
+	<meta name="author" content="" />
+	<title>National Institute of Design</title>
+	<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700&display=swap" rel="stylesheet">
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<!-- <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet"> -->
+<link href="https://nid.edu/public/frontend/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="https://nid.edu/public/frontend/slick/slick.css" />
+<link rel="stylesheet" type="text/css" href="https://nid.edu/public/frontend/slick/slick-theme.css" />
+<link rel="stylesheet" type="text/css" href="https://nid.edu/public/frontend/css/styles.css" />
+<link rel="stylesheet" type="text/css" href="https://nid.edu/public/frontend/css/responsive.css" />
+<style type="text/css">
+	.content-slider .item
+	{
+		margin-right: 10px;
+		margin-left: 10px;
+	}
+	html.academics-nav .banner video
+	{
+		z-index: 1;
+	}
+	#myVideo
+	{
+		width: 100%;
+		height: 700px;
+		object-fit: cover;
+		opacity: 1;
+	}
+	.banner
+	{
+		max-height: 100%;
+	}
+	.nav-hover #myVideo, .search-active #myVideo
+	{
+		opacity: 0;
+	}
+	@media  only screen and (max-width: 767px) {
+		#myVideo
+		{
+			width: auto;
+			opacity: 1;
+		}
+		.hamburger-active #myVideo
+		{
+			opacity: 0;
+		}
+	}
+	@media (min-width: 1025px) and (max-width: 1280px) {
+		#myVideo
+		{
+			height: 650px;
+		}
+		.banner
+		{
+			max-height: 650px;
+		}
+	}
+</style>
+	
+</head>
+<body class="en ">
+	<div class="page-wrapper">
+		<div class="background-overlay"></div>
+		<header class="container">
+			<div class="header-content">
+				<div class="logo">
+					<a href="https://nid.edu/home"><img src="https://nid.edu/public/img/site_settings/50DE541A291140.png" width="258" alt="Logo" /></a>
+				</div>
+
+				<div class="language-search sub-nav">
+					
+										<div class="language-bar">
+						<a href="https://nid.edu/lang/en"><span>en</span> | </a>
+						<a href="https://nid.edu/lang/hi">हि</a>
+					</div>
+					<div class="search-bar">
+						<div class="search-icon" id="search-close"></div>
+					</div>
+				</div>
+				<div class="toggle-mobile">
+					<div class="hamburger hamburger--spring js-hamburger">
+						<div class="hamburger-box">
+							<div class="hamburger-inner"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="vertical-nav container">
+	<div class="search-nav">
+		<div class="form-inline md-form form-sm">
+			<input class="form-control form-control-sm search-box" id="search-box" type="search" placeholder="Search" required>
+			<button type="button" id="search-button">
+				<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M15.502 14H14.708L14.432 13.726C15.407 12.589 16 11.115 16 9.5C16 5.91 13.09 3 9.5 3C5.91 3 3 5.91 3 9.5C3 13.09 5.91 16 9.5 16C11.115 16 12.588 15.408 13.725 14.434L14.001 14.708V15.5L18.999 20.491L20.49 19L15.502 14ZM9.5005 14C7.0145 14 5.0005 11.986 5.0005 9.50003C5.0005 7.01503 7.0145 5.00003 9.5005 5.00003C11.9855 5.00003 14.0005 7.01503 14.0005 9.50003C14.0005 11.986 11.9855 14 9.5005 14Z" fill="white" />
+				</svg>
+			</button>
+			<div class="search-terms">
+				<div class="mb-5" id="search-results">
+				</div>
+								<h3>Frequently searched items</h3>
+				<ul class="search-term">
+										<li><a href="परिसर">Campuses</a></li>
+										<li><a href="https://www.nid.edu/people/faculty">Faculty</a></li>
+										
+				</ul>
+							</div>
+		</div>
+	</div>
+
+	<ul>
+		<li class="about-nav"><a href="https://nid.edu/about">about</a><span class="nav-sign"></span>
+			<ul>
+				<li><a href="https://nid.edu/about/mandates">Mandate</a></li>
+				<li><a href="https://nid.edu/about/director-message">Director's Message</a></li>
+				<li><a href="https://nid.edu/about/history-of-nid">History of NID</a></li>
+				<li><a href="https://nid.edu/about/campuses">Campuses</a></li>
+				
+												<li>
+					<a href="https://nid.edu/about/nid-act-rules-ordinances-and-statutes/detail">NID Act, Rules, Ordinances And Statutes</a>
+				</li>
+								<li>
+					<a href="https://nid.edu/about/annual-reports/detail">Annual Reports</a>
+				</li>
+											</ul>
+		</li>
+		<li class="academics-nav"><a href="https://nid.edu/academics">academics</a><span class="nav-sign"></span>
+			<ul>
+				<li>
+					<a href="https://nid.edu/academics/programmes">Programmes</a>
+				</li>
+				<li>
+					<a href="https://nid.edu/academics/international-programmes">International and Collaborative Programmes</a>
+				</li>
+				<li>
+					<a href="https://nid.edu/academics/resource">Resources</a>
+				</li>
+				<li>
+					<a href="https://nid.edu/academics/kmc">Knowledge Management Centre</a>
+				</li>
+				<!-- <li>
+					<a href="https://nid.edu/academics/network-linkages">Network <br />& Linkages</a>
+				</li> -->
+												<li>
+					<a href="https://nid.edu/academics/nid-press/detail">NID Press</a>
+				</li>
+								<li>
+					<a href="https://nid.edu/academics/centre-for-teaching-and-learning/detail">Centre for Teaching and Learning</a>
+				</li>
+								<li>
+					<a href="https://nid.edu/academics/academic-notifications/detail">Academic Notifications</a>
+				</li>
+								<li>
+					<a href="https://nid.edu/academics/curriculum-objectives/detail">Curriculum Objectives</a>
+				</li>
+											</ul>
+		</li>
+		<li class="study-nav">
+			<a href="https://nid.edu/studyofnid">study at NID</a><span class="nav-sign"></span>
+			<ul>
+				
+												<li>
+					<a href="https://nid.edu/study_at_nid/admission-process/detail">Admission Process</a>
+				</li>
+												<li>
+					<a href="https://nid.edu/studyofnid/life">Life at NID</a>
+				</li>
+			</ul>
+		</li>
+		<li class="people-nav">
+			<a href="https://nid.edu/people">people</a><span class="nav-sign"></span>
+			<ul>
+				<li>
+					<a href="https://nid.edu/people/governingcouncil">Governing Council</a>
+				</li>
+				<li>
+					<a href="https://nid.edu/people/nidsenate">NID Senate</a>
+				</li>
+				<li>
+					<a href="https://nid.edu/people/faculty">Faculty</a>
+				</li>
+				<li>
+					<a href="https://nid.edu/people/administration">Staff</a>
+				</li>
+				<li>
+					<a href="https://nid.edu/people/alumni">Alumni</a>
+				</li>
+															</ul>
+		</li>
+		<li class="services-nav">
+			<a href="https://nid.edu/service">services</a><span class="nav-sign"></span>
+			<ul>
+																<li>
+					<a href="https://nid.edu/services/continuing-education-programme/detail">Continuing Education Programme</a>
+				</li>
+								<li>
+					<a href="https://nid.edu/services/integrated-design-services/detail">Integrated Design Services</a>
+				</li>
+											</ul>
+		</li>
+		<li class="research-nav">
+			<a href="https://nid.edu/researchdevelopment">research & development</a><span class="nav-sign"></span>
+			<ul>
+				
+												<li>
+					<a href="https://nid.edu/research_&amp;_developments/intellectual-property-rights-cell/detail">Intellectual Property Rights Cell</a>
+				</li>
+								<li>
+					<a href="https://nid.edu/research_&amp;_developments/innovation-center-for-natural-fiber/detail">Innovation Center for Natural Fiber</a>
+				</li>
+								<li>
+					<a href="https://nid.edu/research_&amp;_developments/international-centre-for-indian-crafts-icic/detail">International Centre for Indian Crafts (ICIC)</a>
+				</li>
+								<li>
+					<a href="https://nid.edu/research_&amp;_developments/center-for-bamboo-initiatives/detail">Center for Bamboo Initiatives</a>
+				</li>
+								<li>
+					<a href="https://nid.edu/research_&amp;_developments/railway-design-center/detail">Railway Design Center</a>
+				</li>
+								<li>
+					<a href="https://nid.edu/research_&amp;_developments/smart-handloom-innovation-centre/detail">Smart Handloom Innovation Centre</a>
+				</li>
+											</ul>
+		</li>
+	</ul>
+</div>		<div class="banner home-banner">
+	<div class="banner-slider">
+		
+					<div class="banner-item">
+				<picture>
+					<img src="https://nid.edu/public/img/home_slider_images/vN8hDv9gtz.png" alt="Main Banner">
+				</picture>
+			</div>
+						<div class="banner-item">
+				<picture>
+					<img src="https://nid.edu/public/img/home_slider_images/DuhwYmzl0N.png" alt="Main Banner">
+				</picture>
+			</div>
+						<div class="banner-item">
+				<picture>
+					<img src="https://nid.edu/public/img/home_slider_images/mUjTwM2mPg.png" alt="Main Banner">
+				</picture>
+			</div>
+						<div class="banner-item">
+				<picture>
+					<img src="https://nid.edu/public/img/home_slider_images/q6MqvqgprP.png" alt="Main Banner">
+				</picture>
+			</div>
+						<div class="banner-item">
+				<picture>
+					<img src="https://nid.edu/public/img/home_slider_images/xb3g2d7eTK.png" alt="Main Banner">
+				</picture>
+			</div>
+						<div class="banner-item">
+				<picture>
+					<img src="https://nid.edu/public/img/home_slider_images/SRVW5in1q0.png" alt="Main Banner">
+				</picture>
+			</div>
+						<div class="banner-item">
+				<picture>
+					<img src="https://nid.edu/public/img/home_slider_images/mdxvb5KdM7.png" alt="Main Banner">
+				</picture>
+			</div>
+					</div>
+	</div>
+		</div>
+
+	<main role="main">
+				
+	<main role="main">
+		<!-- Start Home Page Content -->
+		<div class="homeSection">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8">
+						<p><p>National Institute of Design (NID) is internationally acclaimed as one of the finest educational and research institutions for Industrial, Communication, Textile and IT Integrated (Experiential) Design. It is a statutory institute under the DPIIT, Ministry of Commerce and Industry, Government of India. It has been recognised as an &#39;Institution of National Importance&#39; by the Act of Parliament, by virtue of the National Institute of Design Act 2014. It is also recognised by the Department of Scientific and Industrial Research, Government of India as a Scientific and Industrial Research Organisation.</p></p>
+					</div>
+					<div class="col-md-3 offset-md-1">
+						<h3>Quick Links</h3>
+						<ul>
+														<li><a target="_blank" href="https://nid.edu/public/documents/fyZYRUun4R.pdf">National Fellowship</a></li>
+														<li><a target="_blank" href="https://nid.edu/getNewsevents/one-time-window-for-completion-of-diplomadegree">One Time Window</a></li>
+														<li><a target="_blank" href="https://nid.edu/getNewsevents/the-44th-convocation-national-institute-of-design-ahmedabad-27-february-2025">The 44th Convocation</a></li>
+													</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End Home Page Content -->
+		<div class="news-section">
+						<div class="news-info container">
+				<h2>News & Events</h2>
+
+				
+				<div class="featured-title">Featured</div>
+			</div>
+			
+			<div class="container">
+								<div class="row">
+					<div class="col-md-12">
+											<div class="content-slider pb-4">
+							<a href="https://nid.edu/getNewsevents/national-institute-of-design-ahmedabad-hosts-design-research-symposium-showcasing-23-scholars">
+								<img class="img-responsive center-block" src="https://nid.edu/public/img/News_Events/ot6PpkvvTw.png" alt="news-img" />
+								<div class="info" style="padding: 20px 0px;">
+									<h3 style="color: #526EFE;text-transform: uppercase;min-height:unset;">
+																				National Institute of Design, Ahmedabad Hosts Design Research Symposium Showcasing 23 Scholars
+																			</h3>
+									<p>
+																				The National Institute of Design (NID), Ahmedabad successfully hosted its Design Research Symposium 2025 – Innovative Enquiries in Doctoral Research on 13th and 14th November, 2025. A total of 23 doctoral scholars from NID presented their ongoing and completed research work through papers, highlighting diverse perspectives across design disciplines.
+																			</p>
+									</div>
+								</a>
+							</div>
+													<div class="content-slider pb-4">
+							<a href="https://nid.edu/getNewsevents/group-captain-shri-shubhanshu-shukla-visited-the-national-institute-of-design">
+								<img class="img-responsive center-block" src="https://nid.edu/public/img/News_Events/vQmU75i54l.png" alt="news-img" />
+								<div class="info" style="padding: 20px 0px;">
+									<h3 style="color: #526EFE;text-transform: uppercase;min-height:unset;">
+																				Group Captain Shri Shubhanshu Shukla Visited the National Institute of Design
+																			</h3>
+									<p>
+																				Group Captain Shri Shubhanshu Shukla, a distinguished test pilot of the Indian Air Force and the first Indian astronaut to visit the International Space Station (ISS), visited the National Institute of Design (NID) Ahmedabad &amp; Gandhinagar on the 10th &amp; 11th of November, 2025.
+																			</p>
+									</div>
+								</a>
+							</div>
+													<div class="content-slider pb-4">
+							<a href="https://nid.edu/getNewsevents/national-institute-of-design-ahmedabad-signs-mou-with-prime-ministers-museum-and-library">
+								<img class="img-responsive center-block" src="https://nid.edu/public/img/News_Events/TtPB90zHxG.png" alt="news-img" />
+								<div class="info" style="padding: 20px 0px;">
+									<h3 style="color: #526EFE;text-transform: uppercase;min-height:unset;">
+																				National Institute of Design, Ahmedabad signs MoU with Prime Ministers’ Museum and Library.
+																			</h3>
+									<p>
+																				Hon’ble Prime Minister of India has given a clarion call for “Design in India, Design for the World.” In alignment with this visionary call and to translate the Hon’ble Prime Minister’s vision of making Bharat Atmanirbhar in the field of design, the National Institute of Design (NID), Ahmedabad, under the leadership of Dr. Ashok Mondal, Director, has initiated several strategic collaborations with government ministries and institutions for promoting design-led research and innovation.
+																			</p>
+									</div>
+								</a>
+							</div>
+													<div class="content-slider pb-4">
+							<a href="https://nid.edu/getNewsevents/admissions-2026-27-for-bdes-mdes">
+								<img class="img-responsive center-block" src="https://nid.edu/public/img/News_Events/bpTrDxfn3y.png" alt="news-img" />
+								<div class="info" style="padding: 20px 0px;">
+									<h3 style="color: #526EFE;text-transform: uppercase;min-height:unset;">
+																				Admissions 2026-27 for B.Des. &amp; M.Des.
+																			</h3>
+									<p>
+																				Admissions 2026-27 for B.Des. &amp; M.Des. is now OPEN. To apply, visit https://admissions.nid.edu
+																			</p>
+									</div>
+								</a>
+							</div>
+													</div>
+					</div>
+									</div>
+				<div class="container event-show-all-btn">
+					<a href="https://nid.edu/news-events/12/2025/all" class="more">All</a>
+				</div>
+			</div>
+			<!-- The Modal -->
+<div class="myNewsPopup modal fade" id="myNewsPopup">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">close</button>
+            </div>
+            <div class="modal-body">
+                <div class="popup-slider">
+                    <div id="popup-slider-carousel" class="popup-slider-carousel carousel slide" data-ride="carousel" data-interval="2000">
+                        <!-- Indicators -->
+                        <ul class="carousel-indicators">
+                            <li data-target="#popup-slider-carousel" data-slide-to="0" class="active"></li>
+                        </ul>
+                        <!-- The slideshow -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="" alt="Los Angeles">
+                            </div>
+                        </div>
+                        <!-- Left and right controls -->
+                        
+                    </div>
+                </div>
+                <!-- Start Content -->
+                <div class="modal-description">
+                    <h4 class="campus_title">Name of the Event <br> <span>Ahmedbad Campus | 12 Oct 19 - 12 Jan 19</span> </h4>
+                    <a href="#" target="_blank" class="data_redirectUrl"><img src="https://nid.edu/public/images/link-symbol.svg" alt="link-symbol" /></a>
+                </div>
+                <div class="modal-details">
+                    <p>The identity of this book edited by the late I.S. Mathur is established by its leitmotif—training the teachers of design or educating the design educators. This book is divided into three major sections—‘Retrospection’, ‘Introspection’, and ‘Perception’. A mélange of thoughts, experiences, and anecdotes expressed by alumni, faculty both former and present, and artists—this book touches upon poignant issues which can influence the spread of design education across design schools/institutions in India.</p>
+                    <p>The identity of this book edited by the late I.S. Mathur is established by its leitmotif—training the teachers of design or educating the design educators. This book is divided into three major sections—‘Retrospection’, ‘Introspection’, and ‘Perception’. A mélange of thoughts, experiences, and anecdotes expressed by alumni, faculty both former and present, and artists—this book touches upon poignant issues which can influence the spread of design education across design schools/institutions in India.</p>
+                </div>
+                <!-- End COntent -->
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Modal  -->		</main>
+			</main>
+	<footer>
+	<div class="footer-content container">
+		<div class="footer-links row">
+			<div class="col-md-3 faq-links">
+				<ul>
+					<li><a href="javascript:;" class="black-color bold">USEFUL LINK</a></li>
+					<!-- <li class="small"><a target="_blank" href="https://nid.edu/career">Careers @ NID</a></li> -->
+					
+					<!-- <li class="small"><a target="_blank" href="https://nid.edu/tender">Tenders</a></li> -->
+										
+					<li class="small"><a target="_blank" href="http://nid.edu/career">Careers @ NID</a></li>
+										
+					<li class="small"><a target="_blank" href="http://nid.edu/external/right-to-information/detail">Right To Information</a></li>
+										
+					<li class="small"><a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSda2ZTSwMVzuo5CK-HcvkYW67slXfoOps5UiZnsjClD11OyZw/viewform">NID Alumni Data Registration</a></li>
+										
+					<li class="small"><a target="_blank" href="https://nid.edu/external/pm-vidyalaxmi-scheme/detail">PM Vidyalaxmi Scheme</a></li>
+										
+					<li class="small"><a target="_blank" href="http://nid.edu/tender">Tender@NID</a></li>
+										
+					<li class="small"><a target="_blank" href="https://nid.edu/download/website-homepage-antiragging-information.pdf">Anti-Ragging Committee</a></li>
+										
+					<li class="small"><a target="_blank" href="https://www.nid.edu/Userfiles/VCforOnlineGrievance.pdf">VC for Online Public Grievance</a></li>
+										
+					<li class="small"><a target="_blank" href="https://www.nid.edu/Userfiles/Eames_India_Report_NID.pdf">INDIA REPORT</a></li>
+									</ul>
+			</div>
+			<div class="col-md-3 initiatives-links">
+				<ul>
+					<li><a href="javascript:;" class="black-color bold">INITIATIVES</a></li>
+										<li class="small"><a target="_blank" href="http://www.ndbiindia.org/">NATIONAL DESIGN BUSINESS INCUBATOR</a></li>
+										<li class="small"><a target="_blank" href="http://youngdesigners.nid.edu/">YOUNG DESIGNERS</a></li>
+										<li class="small"><a target="_blank" href="http://industryinterface.nid.edu/">Placement</a></li>
+										<li class="small"><a target="_blank" href="https://alpavirama.nid.edu/">Alpavirama</a></li>
+									</ul>
+			</div>
+			<div class="col-md-3 contact-links">
+				<ul>
+					<li><a href="javascript:;" class="black-color bold">CONTACT US</a></li>
+					<li class="contact-links">
+						<a href="javascript:void(0)">info@nid.edu</a>
+						<a href="javascript:void(0)">cmr@nid.edu</a> +91 79 2662 9500 /2662 9600
+					</li>
+										<li class="social-links">
+												<a href="https://twitter.com/nid_india?lang=en" target="_blank"><img src="https://nid.edu/public/frontend/frontendimages/Twitter_alt.svg" alt="Twitter" /></a>
+																		<a href="https://www.facebook.com/National-Institute-of-Design-India-333633610590/" target="_blank"><img src="https://nid.edu/public/frontend/frontendimages/fb.svg" alt="Facebook" /></a>
+										
+												<a href="https://www.youtube.com/channel/UC1kTQhWjhJvEX4nAl4vP_Dw" target="_blank"><img src="https://nid.edu/public/frontend/frontendimages/youtube.svg" alt="YouTube" /></a>
+																		<a href="https://www.instagram.com/nationalinstituteofdesign/" target="_blank"><img src="https://nid.edu/public/frontend/frontendimages/instagram.svg" alt="Instagram" /></a>
+											</li>
+									</ul>
+			</div>
+			<div class="col-md-3 collaboration-links">
+				<ul>
+					<li><a href="javascript:;" class="black-color bold">COLLABORATIONS</a></li>
+																				<li class="partner-logo">
+						<a href="https://www.india.gov.in/" target="_blank"><img width="100" height="100"  src="https://nid.edu/public/img/Collobration_images/408A308C01FCE9.png" alt="" /> </a>
+											
+														<a href="http://www.makeinindia.com/home" target="_blank"><img width="100" height="100" src="https://nid.edu/public/img/Collobration_images/53104876255B5E.png" alt="" /> </a>
+									
+														<a href="https://www.startupindia.gov.in/" target="_blank"><img width="100" height="100" src="https://nid.edu/public/img/Collobration_images/579FBE9879DFE8.jpg" alt="" /> </a>
+									
+														<a href="https://dipp.gov.in/" target="_blank"><img width="100" height="100" src="https://nid.edu/public/img/Collobration_images/EF565BAE5F799B.jpg" alt="" /> </a>
+									
+														<li class="partner-logo">
+						<a href="https://skillindia.gov.in/" target="_blank"><img width="100" height="100"  src="https://nid.edu/public/img/Collobration_images/0C5E06B3D14F9E.png" alt="" /> </a>
+											
+														<a href="https://shebox.wcd.gov.in/" target="_blank"><img width="100" height="100" src="https://nid.edu/public/img/Collobration_images/40509DB073F76C.jpg" alt="" /> </a>
+									</li>
+								
+											</ul>
+		</div>
+	</div>
+	
+	<div class="copyright">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					ALL RIGHTS RESERVED					<br> © 2025 NATIONAL INSTITUTE OF DESIGN					<br>
+					Last Updated: 10-OCT-2025
+				</div>
+				<div class="col-md-6 pc-tk">
+					<a target="_blank" href="https://nid.edu/public/documents/uR8N97RLjI.pdf">Privacy Policy</a> | <a target="_blank" href="https://nid.edu/public/documents/7SLwLYqvVO.pdf">Terms &amp; Conditions</a> | <a href="https://nid.edu/sitemap">Sitemap</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</footer>
+<!-- /.Footer Area End -->
+<!-- /.Custom Script Start -->
+<script type="text/javascript" src="https://nid.edu/public/frontend/js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="https://nid.edu/public/frontend/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://nid.edu/public/frontend/slick/slick.min.js"></script>
+<script type="text/javascript" src="https://nid.edu/public/frontend/js/custom.js"></script>
+<script type="text/javascript">
+	$(document).on("keyup","#search-box",function(){
+		var keyword = $(this).val();
+		if(keyword.length >= 3)
+		{
+			$.ajax({
+                type:"get",
+                // async: false, 
+                url: "https://nid.edu/search"+"?q="+keyword,
+                success:function(data)
+				{
+					var html = '<div class="search-result-item">';
+					if(data.success == true)
+					{
+						$.each(data.data,function(index,value){
+							var heading = index;
+							html+='<label>'+index.toUpperCase()+'</label>'
+							$.each(value,function(i,val){
+								// '+val.url+'
+								html+='<a href="https://nid.edu/search?q='+val.title+'">'+val.title.toUpperCase()+'</a>'
+							});
+						});
+					}
+					else
+					{
+						html+='<label>No data found</label>'
+					}
+					html+='</div>';
+					$('#search-results').html(html);
+				} 
+			})
+		}
+		else
+		{
+			$('#search-results').html('');
+		}
+	});
+	$(document).on("click",'#search-button',function(){
+		var keyword = $('#search-box').val();
+		if(keyword != "")
+		{	
+			window.location.href="https://nid.edu/search"+"?q="+keyword;
+			// window.open(
+			// 	"https://nid.edu/search"+"?q="+keyword,
+			// 	'_blank'
+			// 	);
+		}
+	});
+	$(document). on("keypress", "#search-box", function(e){
+		if(e.which == 13){
+			var keyword = $('#search-box').val();
+			if(keyword != "")
+			{	
+				window.location.href="https://nid.edu/search"+"?q="+keyword;
+			// window.open(
+			// 	"https://nid.edu/search"+"?q="+keyword,
+			// 	'_blank'
+			// 	);
+		}
+		}
+	});
+	$(document).on("click",'#search-close',function(){
+		$('#search-results').html('');
+		$('#search-box').val('');
+	})
+</script>
+		<script type="text/javascript">
+        jQuery('.home-banner .banner-slider').slick({
+            dots: true,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            adaptiveHeight: true
+        });
+	// Home Page
+	var slides = parseInt('4');	
+	// jQuery('.home-news-slider').slick({
+	// 	speed: 5000,
+	// 	autoplay: true,
+	// 	autoplaySpeed: 0,
+	// 	cssEase: 'linear',
+	// 	slidesToShow: slides,
+	// 	slidesToScroll: 1,
+	// 	infinite: true,
+	// 	swipeToSlide: true,
+	// 	centerMode: false,
+	// 	focusOnSelect: true,
+	// 	responsive: [
+	// 	{
+	// 		breakpoint: 1024,
+	// 		settings: {
+	// 			slidesToShow: 2,
+	// 			slidesToScroll: 2
+	// 		}
+	// 	},
+	// 	{
+	// 		breakpoint: 768,
+	// 		settings: "unslick"
+	// 	}
+	// 	]
+	// });
+	var local = 'en';
+	var asset = 'https://nid.edu/public/img/News_events_mul';
+	function openModal(slug){
+		if(slug != ''){
+			$.ajax({
+				method:'get',
+				url:'https://nid.edu/getNewsevents/'+slug,
+				success:function(data){
+					var sliderHtml = '';
+					var ulHtml = '';
+					if(data.status){
+						var sdata = data.data;
+						if(sdata){
+							$.each(sdata.images,function(i,
+								imgdata){
+								ulHtml += '<li data-target="#popup-slider-carousel" data-slide-to="'+i+'" class="'+(i == 0 ? "active" : "")+'"></li>';
+							});
+							$.each(sdata.images,function(i,imgdata){
+
+								sliderHtml += '<div class="carousel-item '+(i == 0 ? "active" : "")+'">';
+								sliderHtml += '<img src="'+asset+'/'+imgdata.image_name+'">';
+
+								sliderHtml += '</div>';
+
+								// sliderHtml += '<div class="banner-item">';
+								// sliderHtml += '<picture>';
+								// sliderHtml += '<img src="'+asset+'/'+imgdata.image_name+'" class="img-fluid" alt="popup-banner" />';
+								// sliderHtml += '</picture>';
+								// sliderHtml += '</div>';
+							});
+
+							var campus_title_array = [];
+							if(sdata.news_events_campus_map){
+								$.each(sdata.news_events_campus_map,function(i,campus)
+								{
+									var date = new Date(campus.start_date);
+									var day = date.getDate();
+									var month = date.getMonth();
+									var year = date.getFullYear();
+
+									var monthNames = [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ];
+
+									if(local != 'en' && campus.campusmaster.hi_campus_name)
+									{
+										campus_title_array.push(campus.campusmaster.hi_campus_short_title+' '+ day + ' ' + monthNames[month] +' '+ year );
+									}
+									else
+									{
+										campus_title_array.push(campus.campusmaster.en_campus_short_title+' '+ day + ' ' + monthNames[month] +' '+ year );
+									}
+								});
+								campus_title = local != 'en' && sdata.hi_news_event_name ? sdata.hi_news_event_name : sdata.en_news_event_name ;
+								campus_title += "<br> <span>";
+								campus_title += ' '+campus_title_array.join(' | ');
+								
+								// var date = new Date(sdata.start_events_date);
+								// var day = date.getDate();
+								// var month = date.getMonth();
+								// var year = date.getFullYear();
+
+								// var monthNames = [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ];
+
+								// campus_title += ' | '+ day + ' ' + monthNames[month] +' '+ year +'</span>';
+								campus_title += '</span>';
+
+								// event_name | campus | date
+								$('.campus_title').html(campus_title);
+
+								// Redirect Url
+								$('.data_redirectUrl').attr('href',sdata.event_link);
+
+								//content
+								var content = local != 'en' && sdata.hi_description ? sdata.hi_description : sdata.en_description ;
+								$('.modal-details').html(content);
+							}
+						}
+						if(sliderHtml){
+							$(".carousel-indicators").html(ulHtml);
+							$(".carousel-inner").html(sliderHtml);
+							$('.carousel').carousel({
+								interval: 2000
+							})
+						}
+						$('#myNewsPopup').modal('show');
+					}
+				}
+			});
+		}
+	}
+</script>
+</body>
+</html>

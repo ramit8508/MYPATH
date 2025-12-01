@@ -1,0 +1,2386 @@
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>B.Tech 2026-27 Admissions Open | VITEEE 2026 Applications
+	Open</title>
+<meta name="description"
+	content="VITEEE 2026 Applications for B.Tech Engineering Programme 2026-27 Admissions.Explore VITEEE 2026 Exam Dates,Eligibility,VITEEE Syllabus to apply for VIT B.Tech.">
+<meta name="keywords"
+	content="btech admissions, btech applications, btech programs, engineering admissions, engineering programs, viteee 2026 applications, btech programmes, viteee exam dates, viteee eligibility, viteee syllabus">
+<meta name="geo.position" content="22.351115;78.667743" />
+<meta name="geo.region" content="IN" />
+<meta name="ICBM" content="22.351115, 78.667743" />
+<meta property="og:description"
+	content="VITEEE 2026 Applications for B.Tech Engineering Programme 2026-27 Admissions.Explore VITEEE 2026 Exam Dates, Eligibility, VITEEE Syllabus to apply VIT B.Tech." />
+<meta property="og:title"
+	content="B.Tech 2026-27 Admissions Open | VITEEE 2026 Applications" />
+	
+<link rel="shortcut icon" href="assets/img/favicon.png"
+	type="image/x-icon" />
+<link href="sdcassets/font/webfont.css" rel="stylesheet">
+<link href="sdcassets/font/fa-5/css/all.min.css" rel="stylesheet">
+<link href="sdcassets/css/bootstrap.min.css" rel="stylesheet">
+<link href="sdcassets/css/style.css" rel="stylesheet">
+<link href="sdcassets/css/jquery-ui.css" rel="stylesheet">
+<script src="sdcassets/js/sweetalert.min.js"></script>
+<script src="sdcassets/js/jquery.js"></script>
+<script src="sdcassets/js/jquery-ui.js"></script>
+
+<!-- Google tag (gtag.js) --> 
+<script async 
+	src="https://www.googletagmanager.com/gtag/js?id=AW-701988825"></script> 
+<script> window.dataLayer = window.dataLayer || []; 
+function gtag(){dataLayer.push(arguments);} 
+gtag('js', new Date()); 
+gtag('config', 'AW-701988825'); 
+</script>
+
+
+<SCRIPT TYPE="text/javascript">
+	function clickIE() {if (document.all) {(message);return false;}} 
+	function clickNS(e) {if 
+	(document.layers||(document.getElementById&&!document.all)) { 
+	if (e.which==2||e.which==3) {(message);return false;}}} 
+	if (document.layers) 
+	{document.captureEvents(Event.MOUSEDOWN);document.onmousedown=clickNS;} 
+	else{document.onmouseup=clickNS;document.oncontextmenu=clickIE;} 
+	document.oncontextmenu=new Function("return false") 
+</SCRIPT>
+
+<style>
+.hidden {
+  display: none;
+}
+</style>
+
+<script>
+	function checkregistration() 
+	{
+		d = document.registration;
+		
+		if ((d.studname.value.length < 1) || (d.studname.value.charAt(0) == " ")) 
+		{
+			swal("Please enter Candidate name", "", "warning");
+			return false;
+		}
+
+		if ((d.dob.value.length < 1) || (d.dob.value.charAt(0) == " ")) 
+		{
+			swal("Select your DOB", "", "warning");
+			return false;
+		}
+		
+		if ((d.gender.value.length < 1) || (d.gender.value.charAt(0) == " ")) 
+		{
+			swal("Please select the Gender", "", "warning");
+			return false;
+		}
+
+		if ((d.nationality.value.length < 1) || (d.nationality.value.charAt(0) == " ")) 
+		{
+			swal("Please select Residential Status", "", "warning");
+			return false;
+		}
+
+		if (d.nationality.value == "Indian") 
+		{
+			if ((d.mobile.value.length < 10) || (d.mobile.value.length > 10)) 
+			{
+				swal("Please enter your 10 digits mobile number", "", "warning");
+				return false;
+			}
+			
+			if ((d.pincode.value.length < 1) || (d.pincode.value.charAt(0) == " ")) 
+			{
+				swal("Please enter your pincode", "", "warning");
+				return false;
+			}
+			
+			if ((d.pincode.value.length < 6) || (d.pincode.value.length > 6)) 
+			{
+				swal("Entered pincode should be in 6 digits", "", "warning");
+				return false;
+			}
+		}
+
+		if ((d.nationality.value == "NRI") || (d.nationality.value == "PIO / OCI")) 
+		{
+			if (d.mobile.value.length < 10) 
+			{
+				swal("Entered Mobile No. cannot be less than 10 Digits", "", "warning");
+				return false;
+			}
+		}
+
+		if ((d.email.value.length < 1) || (d.email.value.charAt(0) == " ")) 
+		{
+			swal("Please enter your e-mail ID", "", "warning");
+			return false;
+		}
+		
+		
+		
+		if ((d.vrfcd.value.length < 1) || (d.vrfcd.value.charAt(0) == " ")) 
+		{
+			swal("Please enter verification code", "", "warning");
+			return false;
+		}
+		
+		if(d.terms.checked==false)
+		{
+			swal("Kindly submit your consent on DND instructions", "", "error");
+			return false;
+		}
+		return true;
+	}
+
+function checkOTPValidation()
+{
+	d=document.OTPlogin;
+
+	if((d.mobileOTP.value.length<3) || (d.mobileOTP.value.length>8))
+	{
+		swal("Please enter your OTP received through sms/email", "", "error");
+		return false;
+	}		
+	return true;
+}
+
+
+function errorinfo()
+{
+	d = document.registration;
+	if(d.errormsg.value != null)
+	{
+		swal(d.errormsg.value, "", d.errormethod.value);
+		return false;
+	}
+	return true;
+}
+</script>
+
+<script>
+
+function checkLogin() 
+{
+	d = document.Userlogin;	
+
+	if ((d.emailidlogin.value.length < 1) || (d.emailidlogin.value.charAt(0) == " ")) 
+	{
+		swal("Please Enter Registered e-mail id", "", "warning");
+		return false;
+	}
+	
+	if ((d.emailpwdlogin.value.length < 1) || (d.emailpwdlogin.value.charAt(0) == " ")) 
+	{
+		swal("Please enter password", "", "warning");
+		return false;
+	}
+	if ((d.vrfcdLogin.value.length < 1) || (d.vrfcdLogin.value.charAt(0) == " ")) 
+	{
+		swal("Please enter verification code", "", "warning");
+		return false;
+	}
+	return true;
+}
+</script>
+
+<script>
+	function callCaptchNewUser() {
+
+		if (window.XMLHttpRequest) {
+			xmlhttp = new XMLHttpRequest();
+		} else {
+			xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+		}
+
+		xmlhttp.onreadystatechange = function() {
+			if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+				document.getElementById("txtHint1").innerHTML = xmlhttp.responseText;
+				document.getElementById("txtHint2").innerHTML = xmlhttp.responseText;
+			}
+		}
+		
+		var now = new Date();
+		xmlhttp.open("GET", "captchaAjax.jsp", true);
+		xmlhttp.send();
+	}
+</script>
+
+<script language="javascript">
+function validate_numeric(event) 
+{
+
+	var charCode = (event.which) ? event.which : event.keyCode;
+
+	if ((parseInt(charCode) >= 65) && (parseInt(charCode) <= 90)) 
+	{
+		return true;
+	}
+
+	else if ((parseInt(charCode) >= 97) && (parseInt(charCode) <= 122)) 
+	{
+		return true;
+	}
+
+	else if ((parseInt(charCode) == 8) || (parseInt(charCode) == 46) || (parseInt(charCode) == 9) || (parseInt(charCode) == 32)) 
+	{
+		return true;
+	}
+	else 
+	{
+		return false;
+	}	
+}
+
+function validate_numeric1(event) {
+	var charCode = (event.which) ? event.which : event.keyCode;
+
+	if ((parseInt(charCode) >= 48) && (parseInt(charCode) <= 57)) {
+		return true;
+	} else if ((parseInt(charCode) == 8) || (parseInt(charCode) == 9)) {
+		return true;
+	}
+	else 
+	{
+		return false;
+	}
+
+	//return true;
+}
+</script>
+
+</head>
+
+
+
+
+<body onload="callCaptchNewUser();">
+
+	<!-- Navbar section -->
+	<div class="container-fluid nav-bar sticky-top px-4 py-2 py-lg-0">
+		<nav class="navbar navbar-expand-lg navbar-light">
+			<a href="" class="navbar-brand p-0"> <img
+				src="sdcassets/img/VIT_logo.png">
+			</a>
+			<button class="navbar-toggler" type="button"
+				data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+				<span class="fa fa-bars"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarCollapse">
+				<div class="navbar-nav mx-auto py-0">
+					<a href="index.html" class="nav-item nav-link active">Home</a>
+
+					<div class="nav-item dropdown">
+						<a href="#" class="nav-link dropdown-toggle"
+							data-bs-toggle="dropdown">About</a>
+						<div class="dropdown-menu m-0">
+							<a href="#about" class="dropdown-item">VITEEE</a> <a
+								href="#application-process" class="dropdown-item">Application
+								Process</a>
+						</div>
+					</div>
+					<a href="#programmes-offered" class="nav-item nav-link">Programmes
+						Offered</a> <a href="#admission-guidelines" class="nav-item nav-link">Admission
+						Guidelines</a> <a href="#our-campuses" class="nav-item nav-link">Campuses</a>
+					<a href="#important-dates" class="nav-item nav-link">Important
+						Dates</a> <a href="#faq" class="nav-item nav-link">FAQ's</a> <a
+						href="#contact" class="nav-item nav-link">Contact</a>
+				</div>
+				<a href="https://vit.ac.in/files/VITEEE/VITEEE_Prospectus.pdf"
+					class="btn btn-primary rounded-pill py-2 px-4 flex-shrink-0"
+					target="_blank">Prospectus</a>
+			</div>
+		</nav>
+	</div>
+	<!-- Navbar & Hero End -->
+
+	<!-- Hero Start -->
+
+	<!-- <div class="col-sm-12" class="table-responsive">
+		<div style="text-align: center; color: red; font-weight: bold;">
+			<img src="assets/img/new-gif-image-6.gif" width="50" height="25">
+			 <mark style="background-color: red; color:yellow;">Flash Content</mark>
+			<img src="assets/img/new-gif-image-6.gif" width="50" height="25">
+		</div>
+	</div> -->
+ 
+	
+
+	<div class="header-carousel owl-carousel">
+		<div class="header-carousel-item">
+			<img src="sdcassets/img/header.jpg" class="img-fluid w-100"
+				alt="Image">
+			<div class="carousel-caption">
+				<div class="container align-items-center py-4">
+					<div class="row g-5 align-items-center">
+						<div class="col-xl-7 fadeInLeft animated"
+							data-animation="fadeInLeft" data-delay="1s"
+							style="animation-delay: 1s;">
+							<div class="text-start">
+								<h3 class="text-primary text-uppercase fw-bold mb-4"><span style="color: white;">VITEEE 2026</span></h3>
+								<h1 class="display-4 text-uppercase text-white mb-4">VIT Engineering Entrance Examination</h1>
+								<!-- <p class="mb-4 fs-5"><b>B.Tech. Admission - 2026</b></p> -->
+								<h3 class="text-primary text-uppercase fw-bold mb-4"><span style="color: white;">B.Tech. Admissions - 2026</span></h3>
+							</div>
+						</div>
+
+						
+
+						<div class="col-xl-5 fadeInRight animated"
+							data-animation="fadeInRight" data-delay="1s"
+							style="animation-delay: 1s;">
+							<div class="ticket-form p-5">
+								<h2 class="text-dark text-uppercase mb-4"
+									style="color: white !important;">Registration / Login</h2>
+
+								<div class="tabs sections-bg">
+									<div class="container" data-aos="fade-up"
+										style="padding: 0px !important;">
+
+										<ul class="nav nav-tabs row d-flex tabs3 ">
+											<li class="nav-item col-6"><a
+												class="nav-link active show"
+												data-bs-toggle="tab" data-bs-target="#tab-11">
+													<h4 class="d-lg-block" style="color: white !important;">Signup</h4>
+											</a></li>
+
+											<li class="nav-item col-6" ><a
+												class="nav-link "
+												data-bs-toggle="tab" data-bs-target="#tab-12">
+													<h4 class="d-lg-block" style="color: white !important;">Login</h4>
+											</a></li>
+
+										</ul>
+
+										<div class="tab-content">
+											<div class="tab-pane active show" id="tab-11">
+												<div class="row g-4">
+													<form name="registration" id="registration"
+														action="doRegister" autocomplete="off" method="post">
+														<div class="row g-4">
+
+															
+
+															<div class="col-12">
+																<input type="text"
+																	class="form-control form-control-sm border-0 py-2"
+																	id="studname" name="studname"
+																	placeholder="Applicant's Full Name" maxlength="50"
+																	onkeyup="this.value = this.value.toUpperCase();"
+																	onblur="return validate_numeric(event);"
+																	onkeyup="return validate_numeric(event)"
+																	onkeypress="return validate_numeric(event)">
+															</div>
+
+															<div class="col-12 col-xl-6">
+
+																<input type="text" placeholder="Date of Birth"
+																	class="form-control form-control-sm border-0 py-2"
+																	id="dob" name="dob" readonly required />
+																<script>
+																		$("#dob").datepicker({
+																		changeMonth : true,
+																		changeYear : true,
+																		//duration: "slow",
+																		yearRange : "2004:2011",
+																		minDate : new Date('07/01/2004'),
+																		maxDate : new Date('12/31/2011'),
+																		dateFormat : "dd-M-yy"
+																		});
+																</script>
+
+															</div>
+
+															<div class="col-12 col-xl-6">
+																<select class="form-select form-select-sm border-0 py-2"
+																	name="gender" id="gender">
+																	<option value="">Select Gender</option>
+																	<option value="MALE">Male</option>
+																	<option value="FEMALE">Female</option>
+																	<option value="TRANSGENDER">Transgender</option>
+																</select>
+															</div>
+
+															<div class="col-12 col-xl-6">
+																<select class="form-select form-select-sm border-0 py-2"
+																	name="nationality" id="nationality">
+																	<option value="">Select Residential Status</option>
+																	<option value="Indian">Indian</option>
+																	<option value="PIO / OCI">PIO / OCI</option>
+																	<option value="NRI">NRI</option>
+																</select>
+															</div>
+
+															<div class="col-12 col-xl-6">
+																<input type="text" class="form-control form-control-sm border-0 py-2"
+																	id="mobile" name="mobile" placeholder="Enter Mobile No." maxlength="13"
+																	onblur="return validate_numeric1(event);" onkeyup="return validate_numeric1(event)"
+																	onkeypress="return validate_numeric1(event)">
+															</div>
+
+															<div class="col-12">
+																<input type="email" class="form-control form-control-sm border-0 py-2"
+																	id="email" name="email" placeholder="Enter Your e-mail address">
+															</div>
+															
+															<div id="pincodeField" class="hidden">
+																<div class="col-12">
+																	<input type="text" class="form-control form-control-sm border-0 py-2"
+																		id="pincode" name="pincode" placeholder="Enter your Pincode" maxlength="6" onblur="return validate_numeric1(event);" onkeyup="return validate_numeric1(event)"
+																	onkeypress="return validate_numeric1(event)">
+																</div>
+															</div>
+
+															<div class="col-12">
+																<div class="row">
+																	<div class="col-lg-5 col-6"
+																		style="text-align: center; align-content: center;">
+																		<span id="txtHint2"> <img src="" width="50"
+																			height="50"
+																			style="animation: none; height: auto; width: auto; background: white;">
+																		</span>
+																	</div>
+																	<div class="col-lg-1 col-6">
+																		<button type="button" onclick="callCaptchNewUser();"
+																			style="width: 30px; border: none; background-color: inherit; background-repeat: no-repeat;">
+																			<img src="sdcassets/img/refresh_img.png"
+																				style="animation: none; width: 25px; height: auto; margin-left: -20px; margin-top: .5rem;">
+																		</button>
+																	</div>
+																	<div class="col-lg-6 col-12">
+																		<input type="text"
+																			class="form-control form-control-sm border-0 py-2 mt-3"
+																			id="vrfcd" name="vrfcd" maxlength="6"
+																			placeholder="Enter Verification Code">
+																	</div>
+																</div>
+															</div>
+
+
+															<div class="col-12" style="text-align: left;">
+																<input type="checkbox" name="terms" value="YES">
+																<font color="white"><b>I authorize VIT to use
+																		my mobile no./e-mail id/ connected social media
+																		platform overriding DND status. </b></font>
+															</div>
+
+															<div class="col-12">
+																<button type="submit"
+																	class="btn btn-primary w-100 py-2 px-5" style="background-color: #0e53a8"
+																	onClick="return checkregistration()">Register</button>
+															</div>
+
+															
+														</div>
+
+													</form>
+												</div>
+											</div>
+											<div class="tab-pane " id="tab-12">
+												<div class="row g-4">
+													<form name="Userlogin" id="Userlogin" action="DoLogin"
+														autocomplete="off" method="post">
+														<div class="row g-4">
+
+															
+
+															<div class="col-12 col-xl-12">
+																<input type="email" class="form-control border-0 py-2"
+																	id="emailidlogin" name="emailidlogin"
+																	placeholder="Your Email">
+															</div>
+
+															<div class="col-12 col-xl-12">
+																<input type="password"
+																	class="form-control border-0 py-2" id="emailpwdlogin"
+																	name="emailpwdlogin" placeholder="Your Password">
+															</div>
+
+															<div class="col-12 col-xl-5"
+																style="text-align: center; align-content: center;">
+																<span id="txtHint1"></span>
+															</div>
+
+															<div class="col-12 col-xl-2" align="left">
+																<button type="button" onclick="callCaptchNewUser();"
+																	style="width: 30px; border: none; background-color: inherit; background-repeat: no-repeat;">
+																	<img src="sdcassets/img/refresh_img.png"
+																		style="animation: none; width: 25px; height: auto;" />
+																</button>
+															</div>
+
+															<div class="col-12">
+																<input type="text" class="form-control border-0 py-2"
+																	id="vrfcdLogin" maxlength="6" name="vrfcdLogin"
+																	placeholder="Enter Verification Code">
+															</div>
+
+															<div class="col-12">
+																<button type="submit"
+																	class="btn btn-primary w-100 py-2 px-5"
+																	onClick="return checkLogin()">Login</button>
+															</div>
+
+															<div class="col-12">
+																<a href="forgetPassword.jsp"
+																	style="font-weight: bold; color: white;">Forgot your
+																	password ?</a>
+															</div>
+														</div>
+													</form>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Hero section end -->
+
+	<!-- About Start -->
+	<div class="container-fluid about pb-5" id="about" class="about">
+		<div class="container pb-5">
+			<div class="row g-5">
+				<div class="col-xl-6 wow fadeInUp" data-wow-delay="0.4s">
+					<div class="position-relative rounded">
+						<div class="rounded" style="margin-top: 40px;">
+							<div class="row g-0">
+								<div class="col-lg-12">
+									<div class="owl-carousel testimonial-carousel1 wow fadeInUp"
+										data-wow-delay="0.2s">
+
+										<div class="testimonial-item p-4">
+											<a href="https://youtu.be/oGjoUN-MFrM"
+												target="_blank"> <img src="sdcassets/img/vit5.jpg"></a>
+											<p></p>
+										</div>
+
+										<div class="testimonial-item p-4">
+											<a href="https://www.youtube.com/watch?v=Dq77S2S0Vys"
+												target="_blank"> <img src="sdcassets/img/vit3.jpg"></a>
+											<p></p>
+										</div>
+
+
+										<div class="testimonial-item p-4">
+											<a href="https://youtu.be/zC-JSpkzy_w"
+												target="_blank"> <img src="sdcassets/img/vit4.jpg"></a>
+											<p></p>
+										</div>
+
+										
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="col-xl-6 wow fadeInUp" data-wow-delay="0.2s">
+					<div>
+						<h4 class="text-primary"></h4>
+						<h2 class="display-5 mb-4">VIT Engineering Entrance Examination</h2>
+						<p class="mb-5">Vellore Institute of Technology Engineering
+							Entrance Examination (VITEEE) is conducted for admission to
+							undergraduate engineering programmes in VIT group of
+							Institutions. VITEEE will be conducted between 28<sup>th</sup> April and 3<sup>rd</sup> May
+							2026 (tentatively) at designated centres across India and abroad
+							(No. of days will vary for test cities). The duration of the
+							examination will be 2 hours and 30 minutes. <b>Candidates can appear
+							only once for VITEEE-2026 and any violation will lead to cancellation of application and admission.</b> <font color="red"><b>All the questions will be Multiple
+							Choice Questions, four marks for each correct answer, minus one mark for each wrong answer and zero mark for unanswered / marked for review.</b></font>
+							There will be a total of 125 questions divided into the
+							section Mathematics/Biology (40 questions), Physics (35 questions),
+							Chemistry (35 questions), Aptitude (10 questions), and English (5
+							questions). The question paper will be in English only. <b>The fee
+							towards application and subsequent counselling is non-refundable.</b>
+							</p>
+						<div class="row g-4"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- About End -->
+
+	<!-- Application process Start -->
+	<div class="container-fluid steps pb-5" id="application-process">
+		<div class="container pb-5" style="padding: 0 !important;">
+
+			<div class="text-center mx-auto pb-5 wow fadeInUp"
+				data-wow-delay="0.1s" style="max-width: 800px; padding: 70px 0;">
+				<h4 class="text-primary"></h4>
+				<h1 class="display-5 mb-4">Application Process</h1>
+			</div>
+		</div>
+		<ul class="infoGraphic">
+			<li><a href="javascript:openIndex('user')">
+					<div class="numberWrap">
+						<div class="number fontColor1">1</div>
+						<div class="coverWrap">
+							<div class="numberCover"></div>
+						</div>
+					</div>
+					<div class="content">
+						<h2 style="color: #0e53a8">New User Registration</h2>
+					</div>
+			</a></li>
+			<li><a href="javascript:openIndex('signin')">
+					<div class="numberWrap">
+						<div class="number fontColor2">2</div>
+						<div class="coverWrap">
+							<div class="numberCover"></div>
+						</div>
+					</div>
+					<div class="content">
+						<h2><font color="#0e53a8">Sign in for Registered User</font></h2>
+					</div>
+			</a></li>
+			<li><a href="javascript:openIndex('application')">
+					<div class="numberWrap">
+						<div class="number  fontColor3">3</div>
+						<div class="coverWrap">
+							<div class="numberCover"></div>
+						</div>
+					</div>
+					<div class="content">
+						<h2><font color="#0e53a8">Filling Online Application Form</font></h2>
+					</div>
+			</a></li>
+			<li><a href="javascript:openIndex('payment')">
+					<div class="numberWrap">
+						<div class="number  fontColor4">4</div>
+						<div class="coverWrap">
+							<div class="numberCover"></div>
+						</div>
+					</div>
+					<div class="content">
+						<h2><font color="#0e53a8">Payment</font></h2>
+					</div>
+			</a></li>
+			<li><a href="javascript:openIndex('photo')">
+					<div class="numberWrap">
+						<div class="number  fontColor5">5</div>
+						<div class="coverWrap">
+							<div class="numberCover"></div>
+						</div>
+					</div>
+					<div class="content">
+						<h2><font color="#0e53a8">Photo & Signature Upload</font></h2>
+					</div>
+			</a></li>
+			<li><a href="javascript:openIndex('download')">
+					<div class="numberWrap">
+						<div class="number  fontColor6">6</div>
+						<div class="coverWrap">
+							<div class="numberCover"></div>
+						</div>
+					</div>
+					<div class="content">
+						<h2><font color="#0e53a8">Download filled-in Application</font></h2>
+					</div>
+			</a></li>
+
+		</ul>
+
+		<div class="container pb-5 ">
+			<div class="steps1" id="user">
+				<h3><span style="color:#0e53a8">New User Registration</span></h3>
+				<p class="mb-5">
+					1. Valid e-mail address and active mobile number are required.<br />
+					2. Enter all the relevant details carefully.<br /> 3. An OTP will
+					be sent to your Registered Indian Mobile Number for verification.<br />
+					4. Once OTP is validated, a password will be sent to your
+					registered email address.<br /> 5. All the correspondence shall be
+					made to the registered email address and mobile number only.
+				</p>
+			</div>
+
+			<div class="steps1" id="signin">
+				<h3><span style="color:#0e53a8">Sign in for Registered User</span></h3>
+				<p class="mb-5">Valid e-mail address and password received to your e-mail from VIT.
+				</p>
+			</div>
+
+			<div class="steps1" id="application">
+				<h3><span style="color:#0e53a8">Filling Online Application Form</span></h3>
+				<p class="mb-5">
+					1. Fill in the relevant fields carefully. An Application Number
+					will be generated after filling primary details.<br /> 2. Refer
+					this application number in all your future correspondence.
+				</p>
+			</div>
+
+			<div class="steps1" id="payment">
+				<h3><span style="color:#0e53a8">Payment</span></h3>
+				<p class="mb-5">
+					1. Application cost of Rs. 1350 should be paid through Net Banking / Credit Card/ Debit Card/ Paytm
+					<br /> 2. For test centres abroad, the fee to be paid is the equivalent of USD 90 in INR
+					<br /> 3. Application cost is non-refundable
+				</p>
+			</div>
+
+			<div class="steps1" id="photo">
+				<h3><span style="color:#0e53a8">Photo & Signature Upload</span></h3>
+				<p class="mb-5">
+					The photograph must be in color and should be taken professionally
+					in a studio with the following specifications:<br>
+					<button type="button" style="padding: 5px;"
+						class="btn btn-sm btn-primary" data-bs-toggle="modal"
+						data-bs-target="#exampleModal">Read more</button>
+				</p>
+			</div>
+
+			<div class="steps1" id="download">
+				<h3><span style="color:#0e53a8">Download filled-in Application</span></h3>
+				<p class="mb-5">
+					1. Download and save the filled-in application for your reference
+					and further correspondence.<br /> 2. Applicants need not send the
+					hard copy of the completed application form to VIT.
+				</p>
+			</div>
+		</div>
+
+
+
+		<div class="modal fade" id="exampleModal" tabindex="-1"
+			aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h1 class="modal-title fs-5" id="exampleModalLabel">Photo &
+							Signature Upload</h1>
+						<button type="button" class="btn-close" data-bs-dismiss="modal"
+							aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<h3>The photograph must be in color and should be taken
+							professionally in a studio with the following specifications:</h3>
+						<ul>
+							<li><i class="fa fa-check text-primary me-2"></i>The
+								photograph must be taken against a light background. Only
+								White/off-white background is preferred.</li>
+							<li><i class="fa fa-check text-primary me-2"></i>The
+								photograph must show the full frontal view without tilting of
+								face, both ears visible, open eyes with neutral expression.</li>
+							<li><i class="fa fa-check text-primary me-2"></i>Make sure
+								there is no glare from spectacles and no blur in the focus.</li>
+							<li><i class="fa fa-check text-primary me-2"></i>The file
+								should be only in (.jpeg) format.</li>
+							<li><i class="fa fa-check text-primary me-2"></i>The file
+								size of the photograph should be within 20 kB to 300 kB.</li>
+							<li><i class="fa fa-check text-primary me-2"></i>The
+								photograph dimension should be of Width(300 to 400 pixels) X
+								Height (400 to 550 pixels).</li>
+							<li><i class="fa fa-check text-primary me-2"></i>The
+								photograph should not be too dark or too bright but should have
+								optimum exposure.</li>
+							<li><i class="fa fa-check text-primary me-2"></i>The
+								photograph should have only one face.</li>
+						</ul>
+						<br />
+						<h3>Signature uploading procedure:</h3>
+						<ul>
+							<li><i class="fa fa-check text-primary me-2"></i>Please draw
+								a rectangular box of size 6 cm (width) X 2 cm (height) on a A4
+								white paper. Sign with dark blue or black pen within the box.</li>
+							<li><i class="fa fa-check text-primary me-2"></i>Scan the
+								signature in (.jpeg) format using scanner and crop the image.</li>
+							<li><i class="fa fa-check text-primary me-2"></i>You can
+								open the scanned signature image with MS Paint and crop the
+								image at the particular rectangular box which was already marked
+								and signed on the A4 white paper.</li>
+							<li><i class="fa fa-check text-primary me-2"></i>While
+								cropping the image make sure that the dimension should be 3.5 cm
+								(width) X 1.5 cm (height).</li>
+							<li><i class="fa fa-check text-primary me-2"></i>The scanned
+								signature image size should be within 5 kB to 150 kB.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Application Process End -->
+
+	<!--Programmes offered starts-->
+	<div class="container-fluid team pb-5" id="programmes-offered">
+		<div class="text-center mx-auto pb-5 wow fadeInUp"
+			data-wow-delay="0.1s" style="max-width: 800px; padding: 70px 0;">
+			<h4 class="text-primary"></h4>
+			<h1 class="display-5 mb-4">Programmes Offered</h1>
+		</div>
+		<div class="tabs sections-bg">
+			<div class="container" data-aos="fade-up"
+				style="padding: 0px !important;">
+
+				<ul class="nav nav-tabs row d-flex ">
+					<li class="nav-item col-2"></li>
+
+					<li class="nav-item col-2 "><a class="nav-link active show "
+						data-bs-toggle="tab" data-bs-target="#tab-1">
+							<h4 class="d-lg-block">VIT-Vellore</h4>
+					</a></li>
+
+					<li class="nav-item col-2"><a class="nav-link"
+						data-bs-toggle="tab" data-bs-target="#tab-2">
+							<h4 class=" d-lg-block">VIT-Chennai</h4>
+					</a></li>
+
+					<li class="nav-item col-2"><a class="nav-link "
+						data-bs-toggle="tab" data-bs-target="#tab-3">
+							<h4 class="d-lg-block">VIT-AP</h4>
+					</a></li>
+
+					<li class="nav-item col-2"><a class="nav-link"
+						data-bs-toggle="tab" data-bs-target="#tab-4">
+							<h4 class="d-lg-block">VIT-Bhopal</h4>
+					</a></li>
+
+
+				</ul>
+
+				<div class="tab-content p-3">
+					<div class="tab-pane active show" id="tab-1">
+						<div class="row g-4">
+							<div class="col-xl-2 "></div>
+							<div class="col-xl-4 " style="text-align: justify;">
+
+								<ul style="list-style-type: disc;">
+									<li><a class="link-dark"
+										href="https://vit.ac.in/school/course/sbst/ug" target="_blank">B.Tech.
+											Biotechnology</a></li>
+									<li><a class="link-dark"
+										href="https://vit.ac.in/school/course/scheme/ug"
+										target="_blank">B.Tech. Chemical Engineering</a></li>
+									<li><a class="link-dark"
+										href="https://vit.ac.in/school/course/sce/ug" target="_blank">B.Tech.
+											Civil Engineering</a></li>
+									<li><a class="link-dark" href="#" target="_blank">B.Tech.
+											Civil Engineering (in collaboration with L&T)</a></li>
+									<li><a class="link-dark"
+										href="https://vit.ac.in/schools/school-of-computer-science-and-engineering-for-ug-courses"
+										target="_blank">B.Tech. Computer Science and Engineering</a></li>
+									<li><a class="link-dark"
+										href="https://vit.ac.in/schools/school-of-computer-science-and-engineering-for-ug-courses"
+										target="_blank">B.Tech. Computer Science and Engineering
+											(Artificial Intelligence and Machine Learning)</a></li>
+									<li><a class="link-dark"
+										href="https://vit.ac.in/schools/school-of-computer-science-engineering-and-information-systems-for-ug-courses"
+										target="_blank">B.Tech. Computer Science and Engineering
+											(Artificial Intelligence and Data Engineering)</a></li>
+									<li><a class="link-dark"
+										href="https://vit.ac.in/schools/school-of-computer-science-and-engineering-for-ug-courses"
+										target="_blank">B.Tech. Computer Science and Engineering
+											(Bioinformatics)</a></li>
+									<li><a class="link-dark"
+										href="https://vit.ac.in/schools/school-of-computer-science-engineering-and-information-systems-for-ug-courses"
+										target="_blank">B.Tech. Computer Science and Engineering
+											(Cyber Security)</a></li>
+									<li><a class="link-dark"
+										href="https://vit.ac.in/schools/school-of-computer-science-and-engineering-for-ug-courses"
+										target="_blank">B.Tech. Computer Science and Engineering
+											and Business Systems (in collaboration with TCS)</a></li>
+									<li><a class="link-dark"
+										href="https://vit.ac.in/schools/school-of-computer-science-and-engineering-for-ug-courses"
+										target="_blank">B.Tech. Computer Science and Engineering
+											(Data Science)</a></li>
+											
+										
+											
+								</ul>
+							</div>
+
+							<div class="col-xl-4 ">
+								<ul style="list-style-type: disc;">
+
+									<li><a class="link-dark"
+										href="https://vit.ac.in/schools/school-of-electrical-engineering-for-ug-courses"
+										target="_blank">B.Tech. Electrical and Electronics
+											Engineering</a></li>
+									<li><a class="link-dark"
+										href="https://vit.ac.in/schools/school-of-electrical-engineering-for-ug-courses"
+										target="_blank">B.Tech. Electrical and Computer Science
+											Engineering</a></li>
+									<li><a class="link-dark"
+										href="https://vit.ac.in/schools/school-of-electronics-engineering-for-ug-courses"
+										target="_blank">B.Tech. Electronics and Communication
+											Engineering</a></li>
+									<li><a class="link-dark"
+										href="https://vit.ac.in/schools/school-of-electrical-engineering-for-ug-courses"
+										target="_blank">B.Tech. Electronics and Instrumentation
+											Engineering</a></li>
+									<li><a class="link-dark"
+										href="https://vit.ac.in/schools/school-of-electronics-engineering-for-ug-courses"
+										target="_blank">B.Tech. Electronics and Communication
+											Engineering (Biomedical Engineering)</a></li>
+									<li><a class="link-dark"
+										href="https://vit.ac.in/schools/school-of-electronics-engineering-for-ug-courses"
+										target="_blank">B.Tech. Electronics Engineering (VLSI
+											Design and Technology)</a></li>
+									<li><a class="link-dark"
+										href="https://vit.ac.in/schools/school-of-electronics-engineering-for-ug-courses"
+										target="_blank">B.Tech. Health Sciences and Technology</a></li>
+									<li><a class="link-dark"
+										href="https://vit.ac.in/schools/school-of-computer-science-engineering-and-information-systems-for-ug-courses"
+										target="_blank">B.Tech. Information Technology</a></li>
+									<li><a class="link-dark"
+										href="https://vit.ac.in/school/course/smec/ug" target="_blank">B.Tech.
+											Mechanical Engineering</a></li>
+									<li><a class="link-dark"
+										href="https://vit.ac.in/school/course/smec/ug" target="_blank">B.Tech.
+											Mechanical Engineering (Electric Vehicles)</a></li>
+									<li><a class="link-dark"
+										href="https://vit.ac.in/school/course/smec/ug" target="_blank">B.Tech.
+											Mechanical Engineering (Smart Manufacturing)</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="tab-pane" id="tab-2">
+						<div class="row g-4">
+							<div class="col-xl-2 "></div>
+							<div class="col-xl-4 ">
+								<ul style="list-style-type: disc;">
+									<li><a class="link-dark"
+										href="#" target="_blank">B.Tech. Biotechnology</a></li>								
+									<li><a class="link-dark"
+										href="https://chennai.vit.ac.in/civil-engineering-chennai"
+										target="_blank">B.Tech. Civil Engineering</a></li>
+									<li><a class="link-dark" href="#" target="_blank">B.Tech.
+											Civil Engineering (in collaboration with L&T)</a></li>
+									<li><a class="link-dark"
+										href="https://chennai.vit.ac.in/computer-science-engineering-chennai/btechcse/"
+										target="_blank">B.Tech. Computer Science and Engineering</a></li>
+
+									<li><a class="link-dark"
+										href="https://chennai.vit.ac.in/computer-science-engineering-chennai/btechcseaiml/"
+										target="_blank">B.Tech. Computer Science and Engineering
+											(Artificial Intelligence and Machine Learning)</a></li>
+
+									<li><a class="link-dark"
+										href="https://chennai.vit.ac.in/computer-science-engineering-chennai/b-tech-cse-artificial-intelligence-and-robotics/"
+										target="_blank">B.Tech. Computer Science and Engineering
+											(Artificial Intelligence and Robotics)</a></li>
+
+									<li><a class="link-dark"
+										href="https://chennai.vit.ac.in/computer-science-engineering-chennai/btechcsecyb/"
+										target="_blank">B.Tech. Computer Science and Engineering
+											(Cyber Physical Systems)</a></li>
+
+									<li><a class="link-dark"
+										href="https://chennai.vit.ac.in/computer-science-engineering-chennai/b-tech-computer-science-and-engineering-cyber-security/"
+										target="_blank">B.Tech. Computer Science and Engineering
+											(Cyber Security)</a></li>
+											
+									<li><a class="link-dark"
+										href="#"
+										target="_blank">B.Tech. Computer Science and Engineering
+											(Cyber Security) (2+2 Dual Degree with Deakin University)</a></li>		
+								</ul>
+							</div>
+
+							<div class="col-xl-4">
+								<ul style="list-style-type: disc;">
+								
+									<li><a class="link-dark"
+										href="https://chennai.vit.ac.in/computer-science-engineering-chennai/b-tech-computer-science-and-engineering-data-science/"
+										target="_blank">B.Tech. Computer Science and Engineering
+											(Data Science)</a></li>
+									<li><a class="link-dark"
+										href="#"
+										target="_blank">B.Tech. Computer Science and Engineering
+											(Quantum Computing)</a></li>
+								
+									<li><a class="link-dark"
+										href="https://chennai.vit.ac.in/electrical-and-electronics-engineering-chennai/eee/"
+										target="_blank">B.Tech. Electrical and Electronics
+											Engineering</a></li>
+									<li><a class="link-dark"
+										href="https://chennai.vit.ac.in/electrical-and-electronics-engineering-chennai/ecs/"
+										target="_blank">B.Tech. Electrical and Computer Science
+											Engineering</a></li>
+
+									<li><a class="link-dark"
+										href="https://chennai.vit.ac.in/electronics-and-communication-engineering-chennai"
+										target="_blank">B.Tech. Electronics and Communication
+											Engineering</a></li>
+
+									<li><a class="link-dark"
+										href="https://chennai.vit.ac.in/academics/schools/sense/btechecm"
+										target="_blank">B.Tech. Electronics and Computer
+											Engineering</a></li>
+									<li><a class="link-dark"
+										href="https://chennai.vit.ac.in/academics/schools/sense/b-tech-vlsi-design"
+										target="_blank">B.Tech. Electronics Engineering (VLSI
+											Design and Technology)</a></li>
+
+									<li><a class="link-dark"
+										href="https://chennai.vit.ac.in/fashion-technology-college-chennai/btechfashion/"
+										target="_blank">B.Tech. Fashion Technology</a></li>
+									<li><a class="link-dark"
+										href="https://chennai.vit.ac.in/mechanical-engineering-chennai/mech/"
+										target="_blank">B.Tech. Mechanical Engineering</a></li>
+
+									<li><a class="link-dark"
+										href="https://chennai.vit.ac.in/mechanical-engineering-chennai/smbs-b-tech-mechatronics-and-automation/"
+										target="_blank">B.Tech. Mechatronics and Automation</a></li>
+
+									<li><a class="link-dark"
+										href="https://chennai.vit.ac.in/mechanical-engineering-chennai/smbs-b-tech-mech-electric-vehicles/"
+										target="_blank">B.Tech. Mechanical Engineering (Electric
+											Vehicles)</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane" id="tab-3">
+						<div class="row g-4">
+							<div class="col-xl-2 "></div>
+							<div class="col-xl-4 ">
+								<ul style="list-style-type: disc;">
+
+									<li><a class="link-dark"
+										href="https://vitap.ac.in/allschools/SCOPE/undergraduate/cse"
+										target="_blank">B.Tech. Computer Science and Engineering</a></li>
+									<li><a class="link-dark"
+										href="https://vitap.ac.in/allschools/SCOPE/undergraduate/cse-aiml/"
+										target="_blank">B.Tech. Computer Science and Engineering
+											(Artificial Intelligence and Machine Learning)</a></li>
+									<li><a class="link-dark"
+										href="https://vitap.ac.in/allschools/SCOPE/undergraduate/cse-blockchain/"
+										target="_blank">B.Tech. Computer Science and Engineering
+											(Blockchain)</a></li>
+									<li><a class="link-dark"
+										href="https://vitap.ac.in/allschools/SCOPE/undergraduate/cse-cybersecurity/"
+										target="_blank">B.Tech. Computer Science and Engineering
+											(Cyber Security)</a></li>
+									<li><a class="link-dark"
+										href="https://vitap.ac.in/allschools/SCOPE/undergraduate/cse-data-analytics/"
+										target="_blank">B.Tech. Computer Science and Engineering
+											(Data Analytics)</a></li>
+									<li><a class="link-dark"
+										href="https://vitap.ac.in/allschools/SCOPE/undergraduate/cse-software-engineering/"
+										target="_blank">B.Tech. Computer Science and Engineering
+											(Software Engineering)</a></li>
+									<li><a class="link-dark"
+										href="https://vitap.ac.in/allschools/SCOPE/undergraduate/csbs/"
+										target="_blank">B.Tech. Computer Science and Business
+											Systems</a></li>
+								</ul>
+							</div>
+
+							<div class="col-xl-4">
+								<ul style="list-style-type: disc;">
+									<li><a class="link-dark"
+										href="https://vitap.ac.in/allschools/sense/undergraduate/ece/"
+										target="_blank">B.Tech. Electronics and Communication
+											Engineering</a></li>
+									<li><a class="link-dark"
+										href="https://vitap.ac.in/allschools/sense/undergraduate/ece-embedded-systems/"
+										target="_blank">B.Tech. Electronics and Communication
+											Engineering (Embedded Systems)</a></li>
+									<li><a class="link-dark"
+										href="https://vitap.ac.in/allschools/sense/undergraduate/ece-vlsi/"
+										target="_blank">B.Tech. Electronics and Communication
+											Engineering (VLSI)</a></li>
+									<li><a class="link-dark"
+										href="https://vitap.ac.in/allschools/smec/undergraduate/mechanical-engineering/"
+										target="_blank">B.Tech. Mechanical Engineering</a></li>
+									<li><a class="link-dark"
+										href="https://vitap.ac.in/allschools/smec/undergraduate/mechanical-engineering-automotive-design/"
+										target="_blank">B.Tech. Mechanical Engineering (Automotive
+											Design)</a></li>
+									<li><a class="link-dark"
+										href="https://vitap.ac.in/allschools/smec/undergraduate/mechanical-engineerung-robotics/"
+										target="_blank">B.Tech. Mechanical Engineering (Robotics)</a></li>
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane" id="tab-4">
+						<div class="row g-4">
+							<div class="col-xl-2 "></div>
+							<div class="col-xl-4 ">
+								<ul style="list-style-type: disc;">
+									<li><a class="link-dark"
+										href="https://vitbhopal.ac.in/aerospace-engineering/"
+										target="_blank">B.Tech. Aerospace Engineering</a></li>
+									<li><a class="link-dark"
+										href="https://vitbhopal.ac.in/bio-engineering/"
+										target="_blank">B.Tech. Bioengineering</a></li>
+									<li><a class="link-dark"
+										href="https://vitbhopal.ac.in/computer-science-and-engg/"
+										target="_blank">B.Tech. Computer Science & Engineering</a></li>
+									<li><a class="link-dark"
+										href="https://vitbhopal.ac.in/ai/" target="_blank">B.Tech
+											- Computer Science & Engineering (Artificial Intelligence &
+											Machine Learning)</a></li>
+									<li><a class="link-dark"
+										href="https://vitbhopal.ac.in/cloud/" target="_blank">B.Tech.
+											Computer Science & Engineering (Cloud Computing & Automation)</a></li>
+									<li><a class="link-dark"
+										href="https://vitbhopal.ac.in/cyber-security/" target="_blank">B.Tech.
+											Computer Science & Engineering (Cyber Security & Digital
+											Forensics)</a></li>
+									<li><a class="link-dark"
+										href="https://vitbhopal.ac.in/ecommerce/" target="_blank">B.Tech.
+											Computer Science & Engineering (E-Commerce Technology)</a></li>
+								</ul>
+							</div>
+
+							<div class="col-xl-4 ">
+								<ul style="list-style-type: disc;">
+									<li><a class="link-dark"
+										href="https://vitbhopal.ac.in/edutech/" target="_blank">B.Tech.
+											Computer Science & Engineering (Education Technology)</a></li>
+									<li><a class="link-dark"
+										href="https://vitbhopal.ac.in/gaming-technology/"
+										target="_blank">B.Tech. Computer Science & Engineering
+											(Gaming Technology)</a></li>
+									<li><a class="link-dark"
+										href="https://vitbhopal.ac.in/health-informatics/"
+										target="_blank">B.Tech. Computer Science & Engineering
+											(Health Informatics)</a></li>
+									<li><a class="link-dark"
+										href="https://vitbhopal.ac.in/electronics-and-communication-engg/"
+										target="_blank">B.Tech. Electronics & Communication
+											Engineering</a></li>
+									<li><a class="link-dark"
+										href="https://vitbhopal.ac.in/cybernetics/" target="_blank">B.Tech.
+											Electronics & Communication Engineering (Artificial
+											Intelligence & Cybernetics)</a></li>
+									<li><a class="link-dark"
+										href="https://vitbhopal.ac.in/mechanical-engineering/"
+										target="_blank">B.Tech. Mechanical Engineering</a></li>
+									<li><a class="link-dark"
+										href="https://vitbhopal.ac.in/robotics/" target="_blank">B.Tech.
+											Mechanical Engineering (Artificial Intelligence & Robotics)</a></li>
+								</ul>
+							</div>
+						</div>
+
+					</div>
+
+
+
+				</div>
+			</div>
+		</div>
+
+	</div>
+	</div>
+
+	<!--programmes offered ends-->
+
+	<!--admission guidelines starts-->
+	<div class="container-fluid steps pb-5" id="admission-guidelines">
+		<div class="container py-5">
+			<div class="text-center mx-auto pb-5 wow fadeInUp"
+				data-wow-delay="0.1s" style="max-width: 800px;">
+				<h4 class="text-primary"></h4>
+				<h1 class="display-5 mb-4">Admission Guidelines</h1>
+			</div>
+			<div class="tabs1 sections-bg">
+				<div class="container" data-aos="fade-up"
+					style="padding: 0px !important;">
+					<div class="row g-4">
+						<div class="col-xl-3 tab1">
+
+
+							<ul class="nav nav-tabs row d-flex">
+
+								<li class="nav-item"  style="color:#0e53a8;"><a class="nav-link active show"
+									data-bs-toggle="tab" data-bs-target="#tab-25"> <iconify-icon
+											icon="solar:user-id-broken"></iconify-icon>
+										<h4 class=" d-lg-block">Admission Process</h4> 
+								</a></li>
+								<li class="nav-item"><a class="nav-link "
+									data-bs-toggle="tab" data-bs-target="#tab-6"> <iconify-icon
+											icon="mdi:user-tick"></iconify-icon>
+										<h4 class=" d-lg-block">Eligibility</h4>
+								</a></li>
+								<li class="nav-item "><a class="nav-link "
+									data-bs-toggle="tab" data-bs-target="#tab-7"> <iconify-icon
+											icon="tabler:checklist"></iconify-icon>
+										<h4 class=" d-lg-block">Selection Criteria</h4>
+								</a></li>
+								<li class="nav-item "><a class="nav-link"
+									data-bs-toggle="tab" data-bs-target="#tab-8"> <iconify-icon
+											icon="fluent:clipboard-note-16-regular"></iconify-icon>
+										<h4 class=" d-lg-block">Exam Pattern</h4>
+								</a></li>
+								<li class="nav-item "><a class="nav-link"
+									data-bs-toggle="tab" data-bs-target="#tab-9"> <iconify-icon
+											icon="carbon:book"></iconify-icon>
+										<h4 class=" d-lg-block">Syllabus</h4>
+								</a></li>
+
+
+							</ul>
+						</div>
+
+						<div class="col-xl-9 tab2">
+
+							<div class="tab-content p-4">
+								<div class="tab-pane active show" id="tab-25">
+									<div class="row g-4">
+										<img src="sdcassets/img/admission_process_image.jpg">
+									</div>
+								</div>
+								<div class="tab-pane " id="tab-6">
+									<div class="row g-4">
+
+										<ul style="text-align: justify !important;">
+											<p>
+												<b>Nationality</b>
+											</p>
+											<li><i class="fa fa-check text-primary me-2"></i>The
+												applicant for VITEEE should be a Resident / Non-Resident
+												Indian National / OCI / PIO Holder.</li>
+											<li><i class="fa fa-check text-primary me-2"></i> NRI
+												applicants can directly apply under 'NRI Category' through
+												NRI application form. (Will be available shortly) 
+											</li>
+											<li><i class="fa fa-check text-primary me-2"></i>
+												Foreign applicants who studied/studying abroad can apply
+												directly through the International application form. (Will be
+												available shortly)</li>
+										</ul>
+
+										<ul style="text-align: justify !important;">
+											<p>
+												<b>Age Limit</b>
+											</p>
+											<li><i class="fa fa-check text-primary me-2"></i>Candidates
+												whose date of birth falls on or after 1st July 2004 are
+												eligible to apply for VITEEE-2026.</li>
+											<li><i class="fa fa-check text-primary me-2"></i>The
+												date of birth as recorded in the High School / SSC / X
+												Certificate will be considered authentic.</li>
+											<li><i class="fa fa-check text-primary me-2"></i>Applicants
+												should produce this certificate in original as proof of
+												their age at the time of counselling/admission, failing
+												which their candidacy for admission will be disqualified.</li>
+										</ul>
+
+
+										<ul style="text-align: justify !important;">
+											<p>
+												<b>Qualifying Examination</b>
+											</p>
+											Candidates appearing for the VITEEE-2026 should have either completed or shall be appearing in any one of the following qualifying examinations in 2026
+											<ol>
+												<li>The final examination of the 10+2 system, conducted by any recognized Central/ State Board, such as the Central Board of Secondary Education, New Delhi; Council for the Indian School Certificate Examinations or any other Board accepted by VIT as equivalent to 10+2 examination.</li>
+												<li>Intermediate or two-year Pre-University Examination conducted by a recognized Board/ University.</li>
+												<li>General Certificate Education (GCE) examination (London/Cambridge/Srilanka) at the Advanced (A) level.</li>
+												<li>High School Certificate Examination of the Cambridge University/Pearson Edexcel regulated by UK 
+												For PCM : Physics & Mathematics - A Level/ Chemistry - A/AS Level and English - A/AS Level<br>
+												For PCB : Physics & Biology - A Level/ Chemistry - A/AS Level and English - A/AS Level
+												</li>
+												<li>
+												High School Certificate Examination of the International Baccalaureate Diploma of the International Baccalaureate Office, Geneva. 
+												<br>For PCM : Physics & Mathematics - HL, Chemistry - SL/HL<br>
+												For PCB : Physics & Biology - HL, Chemistry - SL/HL
+												
+												</li>
+												
+												
+												<li>Senior Secondary School Examination conducted by
+													the National Institute of Open Schooling with minimum of 5
+													subjects as recognized by central board.</li>
+												<li>Applicants who have completed the Class 12 (or
+													equivalent) examination outside India should produce an
+													equivalence certificate to the effect that the examination
+													they have passed is equivalent to the Class 12 Examination
+													with grade/CGPA converted to percentage.
+													<ul>
+														<li><i class="fa fa-check text-primary me-2"></i>Candidates
+															who have studied in Regular, Full Time and Formal
+															Education are alone eligible to apply. Candidates who
+															have appeared for multiple board examinations in the same
+															academic year are not eligible.</li>
+														<li><i class="fa fa-check text-primary me-2"></i>For
+															Indian nationals attending VITEEE 2026 is mandatory to be
+															eligible for B.Tech. admission.</li>
+														<li><i class="fa fa-check text-primary me-2"></i>In
+															case VITEEE 2026 gets cancelled due to natural calamities
+															or causes beyond the control of the institute, qualifying
+															criteria may be substituted with higher secondary marks.
+															Applicants shall be informed accordingly.</li>
+													</ul>
+												</li>
+											</ol>
+										</ul>
+
+										<ul style="text-align: justify !important;">
+											<p>
+												<b>Requirement in the Qualifying Examination</b>
+											</p>
+											<li><i class="fa fa-check text-primary me-2"></i>Applicants
+												should be qualified for admission to collegiate education.</li>
+											<li><i class="fa fa-check text-primary me-2"></i>Applicants
+												applying for the Undergraduate Engineering admission in 2026
+												should have passed with minimum aggregate of 60% of marks in Mathematics (M), Physics (P)
+												and Chemistry (C) and with not less than 50% in Mathematics in the
+												qualifying examination (+2/HSC/Intermediate). Refer admission eligiblity criteria for admission to B.Tech. programme.
+												</li>
+											<li><i class="fa fa-check text-primary me-2"></i>Applicants
+												applying for the Undergraduate Engineering admission in 2026
+												should have passed with minimum aggregate of 60% of marks in Biology (B), Physics (P)
+												and Chemistry (C) and with not less than 50% of marks in Biology in the
+												qualifying examination (+2/HSC/Intermediate). Refer admission eligiblity criteria for admission to B.Tech. programme.</li>
+											<li><i class="fa fa-check text-primary me-2"></i>Applicants applying for the Undergraduate Engineering admission in 2026 should have passed with minimum aggregate of 50% in 
+											Physics (P), Chemistry (C), and Mathematics (M) / Biology (B) in the qualifying examination (+2/HSC/Intermediate) for the following categories :</li>	
+												
+											<ol>
+												<li>Applicants belonging to SC/ST</li>
+												<li>Applicants hailing from Jammu and Kashmir/ Ladakh
+													and the Northeastern states of Arunachal Pradesh, Assam,
+													Manipur, Meghalaya, Mizoram, Nagaland, Sikkim and Tripura.
+													Certificate to prove community / nativity should be
+													produced at the time of counselling, failing which they
+													will not be considered for admission.</li>
+											</ol>
+										</ul>
+
+										<ul style="text-align: justify !important;">
+											<p>
+												<b>Admission Eligibility Criteria</b>
+											</p>
+											<li><i class="fa fa-check text-primary me-2"></i>PCMB/PCM applicants who have attempted Mathematics, Physics, Chemistry, English and Aptitude (MPCEA) in VITEEE 2026 with 60% aggregate of marks in Mathematics, Physics and Chemistry and with not less than 50% of marks in Mathematics in +2/HSC/Intermediate examination are eligible for admission to  all B. Tech Programmes</li>
+											<li><i class="fa fa-check text-primary me-2"></i>PCMB/PCB applicants who have attempted Biology, Physics, Chemistry, English and Aptitude (BPCEA) in VITEEE 2026 or PCB applicants who have attempted Mathematics, Physics, Chemistry, English and Aptitude (MPCEA) in VITEEE 2026 with 60% aggregate marks in Biology, Physics and Chemistry and with not less than 50% of marks in Biology in +2/HSC/Intermediate examination are eligible for admission to the following programmes only:</li>
+											<ol>
+												<li>B.Tech. Biotechnology (VIT - Vellore, VIT - Chennai)</li>
+												<li>B.Tech. Computer Science and Engineering
+													(Bioinformatics), (VIT - Vellore)</li>
+												<li>B.Tech. Electronics and Communication Engineering
+													(Biomedical Engineering), (VIT - Vellore)</li>
+												<li>B.Tech. Health Sciences and Technology (VIT -
+													Vellore)</li>
+												<li>B.Tech. Bioengineering (VIT - Bhopal)</li>
+												<li>B.Tech. Computer Science and Engineering (Health
+													Informatics), (VIT - Bhopal)</li>
+												<li>B.Tech. Computer Science & Engineering (Education
+													Technology), (VIT - Bhopal)</li>
+											</ol>
+										</ul>
+									</div>
+								</div>
+								<div class="tab-pane" id="tab-7">
+									<div class="row g-4">
+										<ul class="list-unstyled"
+											style="text-align: justify !important;">
+											<li><i class="fa fa-check text-primary me-2"></i>Selection
+												is based on the rank secured in VITEEE-2026 through Computer Based Test (CBT)</li>
+											<li><i class="fa fa-check text-primary me-2"></i>Selected
+												candidates can participate in online counseling based on
+												their ranking. They can give options for specific campus,
+												programme and category of fees. Allotment will be based on
+												the rank obtained and available options.</li>
+											
+											<li><i class="fa fa-check text-primary me-2"></i>VIT
+												will verify the eligibility of candidates after completing
+												the tuition fee payment on or before the stipulated date.
+												Candidates are required to produce documents while reporting
+												to the campus or as and when asked for, by the Office of
+												Admissions. Provisional Admission offered during counselling
+												will be valid ONLY if the eligibility is fulfilled.</li>
+										</ul>
+									</div>
+								</div>
+								<div class="tab-pane" id="tab-8">
+									<div class="row g-4">
+										<div class="col-xl-6">
+											<table class="table table-bordered">
+												<h4 class="text-center text-white"
+													style="background-color: #0e53a8">
+													<b>MPCEA</b>
+												</h4>
+												<thead align="center">
+													<tr>
+														<th>Subject</th>
+														<th>No. of Questions</th>
+													</tr>
+												</thead>
+												<tbody align="center">
+													<tr>
+														<td>Mathematics</td>
+														<td>40</td>
+													</tr>
+													<tr>
+														<td>Physics</td>
+														<td>35</td>
+													</tr>
+													<tr>
+														<td>Chemistry</td>
+														<td>35</td>
+													</tr>
+													<tr>
+														<td>English</td>
+														<td>5</td>
+													</tr>
+													<tr>
+														<td>Aptitude</td>
+														<td>10</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+										<div class="col-xl-6">
+											<table class="table table-bordered">
+												<h4 class="text-center text-white"
+													style="background-color: #0e53a8">
+													<b>BPCEA</b>
+												</h4>
+												<thead align="center">
+													<tr>
+														<th>Subject</th>
+														<th>No. of Questions</th>
+													</tr>
+												</thead>
+												<tbody align="center">
+													<tr>
+														<td>Biology</td>
+														<td>40</td>
+													</tr>
+													<tr>
+														<td>Physics</td>
+														<td>35</td>
+													</tr>
+													<tr>
+														<td>Chemistry</td>
+														<td>35</td>
+													</tr>
+													<tr>
+														<td>English</td>
+														<td>5</td>
+													</tr>
+													<tr>
+														<td>Aptitude</td>
+														<td>10</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+										<p>
+											<strong>Exam Duration : 2 Hours and 30 Minutes</strong>
+										</p>
+									</div>
+								</div>
+								<div class="tab-pane" id="tab-9">
+									<div class="row g-4">
+
+										<div id="category">
+
+											<div class="row">
+												<div class="col-md-4">
+													<a
+														href="https://vit.ac.in/sites/default/files/VITEEE-2026/Physics_VITEEE2026.pdf"
+														target="_blank">
+														<div class="primary rounded-3 p-4 my-3">
+															<div class="d-flex align-items-center">
+																<iconify-icon icon="fontisto:atom"></iconify-icon>
+																<div class="ps-4">
+																	<p
+																		class="category-paragraph fw-bold text-uppercase mb-1">
+																		Physics</p>
+
+																</div>
+															</div>
+														</div>
+													</a> <a
+														href="https://vit.ac.in/sites/default/files/VITEEE-2026/Biology_VITEEE2026.pdf"
+														target="_blank">
+														<div class="tertiary rounded-3 p-4 my-3">
+															<div class="d-flex align-items-center">
+																<iconify-icon icon="lucide:microscope"></iconify-icon>
+																<div class="ps-4">
+																	<p
+																		class="category-paragraph fw-bold text-uppercase mb-1">Biology</p>
+																</div>
+															</div>
+														</div>
+													</a>
+
+
+												</div>
+												<div class="col-md-4">
+													<a
+														href="https://vit.ac.in/sites/default/files/VITEEE-2026/Chemistry_VITEEE2026.pdf"
+														target="_blank">
+														<div class="gray rounded-3 p-4 my-3">
+															<div class="d-flex align-items-center">
+																<iconify-icon icon="ph:test-tube-fill"></iconify-icon>
+																<div class="ps-4">
+																	<p
+																		class="category-paragraph fw-bold text-uppercase mb-1">Chemistry</p>
+																</div>
+															</div>
+														</div>
+													</a> <a
+														href="https://vit.ac.in/sites/default/files/VITEEE-2026/English_and_Aptitude_VITEEE2026.pdf"
+														target="_blank">
+														<div class="secondary rounded-3 p-4 my-3">
+															<div class="d-flex align-items-center">
+																<iconify-icon icon="eos-icons:system-group"></iconify-icon>
+																<div class="ps-1">
+																	<p
+																		class="category-paragraph fw-bold text-uppercase mb-1">
+																		English & Aptitude</p>
+
+																</div>
+															</div>
+														</div>
+													</a>
+
+
+												</div>
+												<div class="col-md-4">
+													<a
+														href="https://vit.ac.in/sites/default/files/VITEEE-2026/Maths_VITEEE2026.pdf"
+														target="_blank">
+														<div class="tertiary rounded-3 p-4 my-3">
+															<div class="d-flex align-items-center">
+																<iconify-icon icon="tdesign:mathematics"></iconify-icon>
+																<div class="ps-4">
+																	<p
+																		class="category-paragraph fw-bold text-uppercase mb-1">Mathematics</p>
+																</div>
+															</div>
+														</div>
+													</a>
+												</div>
+											</div>
+
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+	</div>
+	<!--admission guidelines ends-->
+
+
+
+	<!-- 
+ starts -->
+	<div class="container-fluid team pb-5" id="our-campuses">
+		<div class="container pb-5">
+			<div class="text-center mx-auto pb-5 wow fadeInUp"
+				data-wow-delay="0.1s" style="max-width: 800px;">
+				<h1 class="display-5 text-capitalize mb-3">Our Campuses</h1>
+			</div>
+			<div class="row g-4">
+				<div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp"
+					data-wow-delay="0.1s">
+					<div class="team-item p-3 pt-0">
+						<div class="team-img">
+							<img src="sdcassets/img/vellore_campus.jpg"
+								class="img-fluid rounded w-100" alt="Image">
+						</div>
+						<div class="team-content pt-4">
+							<h4>
+								<a href="https://vit.ac.in/" target="_blank">VIT - Vellore</a>
+							</h4>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp"
+					data-wow-delay="0.1s">
+					<div class="team-item p-3 pt-0">
+						<div class="team-img">
+							<img src="sdcassets/img/chennai_campus.jpg"
+								class="img-fluid rounded w-100" alt="Image">
+						</div>
+						<div class="team-content pt-4">
+							<h4>
+								<a href="https://chennai.vit.ac.in/" target="_blank">VIT - Chennai</a>
+							</h4>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
+					<div class="team-item p-3 pt-0">
+						<div class="team-img">
+							<img src="sdcassets/img/ap_campus.jpg" class="img-fluid rounded w-100" alt="Image">
+						</div>
+						<div class="team-content pt-4">
+							<h4>
+								<a href="https://vitap.ac.in/" target="_blank">VIT - AP</a>
+							</h4>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
+					<div class="team-item p-3 pt-0">
+						<div class="team-img">
+							<img src="sdcassets/img/bhopal_campus.jpg" class="img-fluid rounded w-100" alt="Image">
+						</div>
+						
+						<div class="team-content pt-4">
+							<h4>
+								<a href="https://vitbhopal.ac.in/" target="_blank">VIT - Bhopal</a>
+							</h4>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="col-md-6 col-lg-6 col-xl-2 wow fadeInUp"
+					data-wow-delay="0.1s"></div>
+			</div>
+		</div>
+	</div>
+	<!-- our campuses ends -->
+
+	<!-- Important dates starts -->
+	<div class="container-fluid steps pb-5" id="important-dates">
+		<div class="container py-5">
+			<div class="text-center mx-auto pb-5 wow fadeInUp"
+				data-wow-delay="0.1s" style="max-width: 800px;">
+				<h4 class="text-primary"></h4>
+				<h1 class="display-5 mb-4">Important Dates</h1>
+
+			</div>
+			<div class="row g-4">
+				<div class="col-lg-3 wow fadeInUp" data-wow-delay="0.1s">
+					<div class="steps-item p-3 mb-4">
+						<h5 style="color:white;">
+							March 31<sup>st</sup>, 2026
+						</h5>
+						<p class="mb-0">Last Date for Online Application (Tentatively)</p>
+						<div class="setps-number">
+							<i class="fas fa-calendar"></i>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
+					<div class="steps-item p-3 mb-4">
+						<h5 style="color:white;">
+							April 28<sup>th</sup>- May 03<sup>rd</sup>, 2026
+						</h5>
+						<p class="mb-0">Dates of VITEEE examination (Tentatively)<br></p>
+						<div class="setps-number">
+							<i class="fas fa-calendar"></i>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 wow fadeInUp" data-wow-delay="0.5s">
+					<div class="steps-item p-3 mb-4">
+						<h5 style="color:white;">
+							2<sup>nd</sup> week of May, 2026
+						</h5>
+						<p class="mb-0">Result Declaration <br>(Tentatively)</p>
+						<div class="setps-number">
+							<i class="fas fa-calendar"></i>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 wow fadeInUp" data-wow-delay="0.5s">
+					<div class="steps-item p-3 mb-4">
+						<h5 style="color:white;">
+							Starts 2<sup>nd</sup> week of May, 2026
+						</h5>
+						<p class="mb-0">Online Counselling</p>
+						<div class="setps-number">
+							<i class="fas fa-calendar"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Important dates End -->
+
+	<!-- Credentials Start -->
+	<div class="container-fluid team pb-5" id="credentials">
+		<div class="container py-5">
+			<div class="text-center mx-auto pb-5 wow fadeInUp"
+				data-wow-delay="0.2s"
+				style="max-width: 800px; padding: 0 !important;">
+				<h1 class="display-5 text-capitalize mb-3">Credentials</h1>
+			</div>
+			<div class="owl-carousel testimonial-carousel wow fadeInUp"
+				data-wow-delay="0.2s">
+
+				<div class="testimonial-item p-4">
+					<img src="sdcassets/img/credentials/qs.jpg">
+				</div>
+
+				<div class="testimonial-item p-4">
+					<img src="sdcassets/img/credentials/10ss.jpg">
+				</div>
+				<div class="testimonial-item p-4">
+					<img src="sdcassets/img/credentials/11ss.jpg">
+				</div>
+				<div class="testimonial-item p-4">
+					<img src="sdcassets/img/credentials/12ss.jpg">
+				</div>
+				<div class="testimonial-item p-4">
+					<img src="sdcassets/img/credentials/13ss.jpg">
+				</div>
+				
+
+			</div>
+		</div>
+	</div>
+	<!-- Credentials End -->
+
+	<!-- FAQs Start -->
+	<div class="container-fluid steps pb-5" id="faq">
+		<div class="container py-5">
+			<div class="row g-5 align-items-center">
+
+
+				<div class="mb-5">
+					<h4 class="text-primary"></h4>
+					<h1 class="display-5 mb-4">Frequently Asked Questions</h1>
+				</div>
+				<div class="row g-4">
+					<div class="col-xl-6 wow fadeInLeft" data-wow-delay="0.2s">
+
+						<div class="accordion" id="accordionExample">
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="headingOne">
+									<button class="accordion-button collapsed" type="button"
+										data-bs-toggle="collapse" data-bs-target="#collapseOne"
+										aria-expanded="false" aria-controls="collapseTwo">
+										General Queries</button>
+								</h2>
+								<div id="collapseOne" class="accordion-collapse collapse"
+									aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+									<div class="accordion-body">
+										<p class="mb-5">
+											<span style="color: #0e53a8; font-weight: 550;">Which
+												branch in Engineering would have the best scope?</span><br>
+											All engineering programmes have an equally good scope. Much
+											depends on your passion for the program and your endeavor to
+											excel.<br>
+											<br> <span style="color: #0e53a8; font-weight: 550;">Are
+												candidates appearing for Improvement/Privately also eligible
+												to apply for VITEEE?</span><br> 'Yes'. They are eligible to
+											apply for VITEEE and should produce their marks sheet at the
+											time of counseling/ admission.<br>
+											<br> <span style="color: #0e53a8; font-weight: 550;">What
+												is the cost of the VITEEE Application form?</span><br>
+											Application Cost - Rs.1350/-<br>
+											<br> <span style="color: #0e53a8; font-weight: 550;">
+												Where can I find the fee structure for various programmes?</span><br>
+											Please follow the link
+											https://vit.ac.in/admission/ug/fee-structure<br>
+											<br> <span style="color: #0e53a8; font-weight: 550;">How
+												many campuses does VIT have?</span><br> Under VIT Group there
+											are: VIT Vellore, VIT Chennai, VIT AP and VIT Bhopal. The
+											first two come under Deemed to be University and VIT-AP and
+											VIT-Bhopal are state private Universities.<br>
+											<br> <span style="color: #0e53a8; font-weight: 550;">
+												Will I be offered the option of choosing campus and programme
+												while filling application?</span><br> 'No'. Only at the time
+											of counseling you will be offered the option of choosing
+											campus and programme. This would depend on the availability
+											of the programme and campus as per your rank in the order of
+											merit.<br>
+											<br> <span style="color: #0e53a8; font-weight: 550;">What
+												is the closing date for issue of applications?</span><br>
+											Applications will be issued till the end of March 2026
+											(tentatively)<br>
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="headingTwo">
+									<button class="accordion-button collapsed" type="button"
+										data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+										aria-expanded="false" aria-controls="collapseTwo">
+										Admission Related Queries</button>
+								</h2>
+								<div id="collapseTwo" class="accordion-collapse collapse"
+									aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+									<div class="accordion-body">
+										<p class="mb-5">
+											<span style="color: #0e53a8; font-weight: 550;">Does
+												VIT offer admissions through Management quota?</span><br>
+											There is no Management Quota in VIT. Admissions to B.Tech.
+											programme is based on the merit rank obtained in the VITEEE
+											2026 and for other Undergraduate programmes, it is based on
+											the merit of your XII/ Higher Secondary Boards by which you
+											would be ranked accordingly.<br>
+											<br> <span style="color: #0e53a8; font-weight: 550;">Is
+												there lateral entry admission available for Diploma
+												candidates?</span><br> 'No'. There is no lateral entry
+											admission offered for B.Tech. programme
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="headingThree">
+									<button class="accordion-button collapsed" type="button"
+										data-bs-toggle="collapse" data-bs-target="#collapseThree"
+										aria-expanded="false" aria-controls="collapseThree">
+										VITEEE Related Queries</button>
+								</h2>
+								<div id="collapseThree" class="accordion-collapse collapse"
+									aria-labelledby="headingThree"
+									data-bs-parent="#accordionExample">
+									<div class="accordion-body">
+										<p class="mb-5">
+											<span style="color: #0e53a8; font-weight: 550;">Is
+												VITEEE mandatory or would merit of XII/ Higher Secondary
+												Board, JEE Main/ SAT scores be considered for admission to
+												the B.Tech. Degree programme?</span><br> 'Yes'. VITEEE is
+											mandatory for admission to the B.Tech. Programme in VIT.
+											Higher Secondary Board, JEE Main/ SAT scores will not be
+											considered for admission to the B.Tech. Degree programme<br>
+											<br> <span style="color: #0e53a8; font-weight: 550;">What
+												would be the syllabus and Question pattern (QP) for the
+												VITEEE?</span><br>
+										<ul class="list-unstyled">
+											<li><i class="fa fa-check text-primary me-2"></i> Please
+												visit the admission guidelines link for the syllabus.</li>
+											<li><i class="fa fa-check text-primary me-2"></i> Mathematics
+												or Biology (40 questions), Physics (35 questions), Chemistry
+												(35 questions), Aptitude (10 questions) and English (5
+												questions) in two and half-an-hour.</li>
+										</ul>
+										<br> <span style="color: #0e53a8; font-weight: 550;">Could
+											I have some information on the VITEEE?</span><br>
+										<ul class="list-unstyled">
+											<li><i class="fa fa-check text-primary me-2"></i>VIT
+												Engineering Entrance Examination will be conducted between
+												28<sup>th</sup> April - 3<sup>rd</sup> May, 2026 (Tentatively) however the
+												number of days for each city will vary. CBT - Computer based
+												test.</li>
+											<li><i class="fa fa-check text-primary me-2"></i>The
+												duration of the Entrance Examination will be of 2 hours and
+												30 minutes</li>
+											<li><i class="fa fa-check text-primary me-2"></i>The
+												details on the sessions and timings would be intimated
+												before slot booking.</li>
+										</ul>
+										<br> <span style="color: #0e53a8; font-weight: 550;">If
+											a student has selected / allotted a particular branch of
+											Engineering through counseling, in a selected campus, under a
+											specific category, would it be possible to change the branch,
+											campus or category later after allotment?</span><br>
+										<p class="mb-5">Once allotted, there is no Sliding/ up
+											gradation in category / change of campus/ change of branch
+											option offered further to admission.</p>
+										<br> <span style="color: #0e53a8; font-weight: 550;">What
+											would be the valid ID proofs needed to be produced in the
+											entrance examination hall, in addition to the E-admit card
+											with photograph?</span><br>
+										<p class="mb-5">You should bring original of either Aadhar
+											card/ Driving license/ PAN card / Passport/ Voter ID card or
+											else School ID card.</p>
+										<br> <span style="color: #0e53a8; font-weight: 550;">How
+											do I edit my application?</span><br>
+										<p class="mb-5">You will find the 'Edit Application' option on top of
+											the screen which will be enabled only after the successfull payment.</p>
+										<br> <span style="color: #0e53a8; font-weight: 550;">What
+											am I supposed to do if my PIN code is not found in
+											application form ?</span><br>
+										<p class="mb-5">Kindly login to the application portal and raise your query request through Need Help menu.</p>
+										<br> <span style="color: #0e53a8; font-weight: 550;">When
+											will be the mock exam for VITEEE?</span><br>
+										<p class="mb-5">Mock test will be enabled in the month of March 2026.</p>
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="headingFour">
+									<button class="accordion-button collapsed" type="button"
+										data-bs-toggle="collapse" data-bs-target="#collapseFour"
+										aria-expanded="false" aria-controls="collapseFour">
+										VITEEE Eligibility Related Queries</button>
+								</h2>
+								<div id="collapseFour" class="accordion-collapse collapse"
+									aria-labelledby="headingFour"
+									data-bs-parent="#accordionExample">
+									<div class="accordion-body">
+										<p class="mb-5">
+											<span style="color: #0e53a8; font-weight: 550;">I have
+												secured 62% overall in +2 examination, but 53.35% in PCM/
+												PCB. In such case, am I eligible for admission?</span><br>
+											'No'. You should satisfy the eligibility criteria of
+											obtaining a minimum aggregate of 60% of marks in Mathematics (M), Physics (P) and Chemistry (C) and with not less than 50% of marks in Mathematics in the qualifying examination (+2/HSC/Intermediate). 
+											Applicants applying for the Undergraduate Engineering admission in 2026 should have passed with minimum aggregate of 60% of marks in Biology (B), Physics (P) and Chemistry (C) and with not less than 50% of marks in Biology in the qualifying examination (+2/HSC/Intermediate).
+											Refer VITEEE prospectus for detailed eligibility criteria.<br>
+											<br> <span style="color: #0e53a8; font-weight: 550;">Is
+												there a specific age limit to apply for VITEEE?</span><br>
+											'Yes'. Candidates whose date of birth falls on or after 1st
+											July 2004 are only eligible to apply for VITEEE-2026.<br>
+											<br> <span style="color: #0e53a8; font-weight: 550;">I
+												am an Indian but have completed my 10+2 system of Higher
+												Secondary Education abroad. What would I enter under the
+												'Nationality' field in such case?</span><br> NRI (Non Resident
+											Indian)<br>
+											<br> <span style="color: #0e53a8; font-weight: 550;">Which
+												Engineering stream would I be eligible to apply for if I opt
+												for Physics, Chemistry and Biology?</span><br> If you have
+											opted for Physics, Chemistry and Biology in VITEEE 2026, you
+											would be eligible only for (1) B.Tech Bio-Engineering, (2)
+											B.Tech Biotechnology, (3) B.Tech Computer Science and
+											Engineering (Bioinformatics), (4) B.Tech Computer Science and
+											Engineering (Health Informatics). (5) B.Tech Electronics and
+											Communication Engineering (Biomedical Engineering) (6) B.Tech
+											Health Sciences and Technology (7) B.Tech. Computer Science &
+											Engineering (Education Technology)
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="headingFive">
+									<button class="accordion-button collapsed" type="button"
+										data-bs-toggle="collapse" data-bs-target="#collapseFive"
+										aria-expanded="false" aria-controls="collapseFive">
+										VITEEE Ranking Related Queries</button>
+								</h2>
+								<div id="collapseFive" class="accordion-collapse collapse"
+									aria-labelledby="headingFive"
+									data-bs-parent="#accordionExample">
+									<div class="accordion-body">
+										<p class="mb-5">
+											<span style="color: #0e53a8; font-weight: 550;">
+												What's the cut off / rank in VITEEE required for my
+												desirable course?</span><br> Admissions for B.Tech Programmes
+											are based on the merit rank from VITEEE and therefore it
+											differs from year to year. It is only after you are ranked
+											from the VITEEE and attend counselling that you may
+											tentatively guess the rank range required for a particular
+											branch. Higher the rank higher the chances to get your
+											desirable course.<br>
+											<br> <span style="color: #0e53a8; font-weight: 550;">
+												Marking Scheme of VITEEE ranking?</span><br> All the questions will be Multiple Choice Questions, four marks for each correct answer, minus one mark for each wrong answer and zero mark for unanswered / marked for review.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="headingSix">
+									<button class="accordion-button collapsed" type="button"
+										data-bs-toggle="collapse" data-bs-target="#collapseSix"
+										aria-expanded="false" aria-controls="collapseSix">
+										Payment Transaction related Queries</button>
+								</h2>
+								<div id="collapseSix" class="accordion-collapse collapse"
+									aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+									<div class="accordion-body">
+										<p class="mb-5">
+											<span style="color: #0e53a8; font-weight: 550;">What
+												do I do if I have made the payment but not received a
+												confirmation?</span><br> Please read this important
+											instruction related to payment issues given below and also in
+											the VITEEE page.
+										<ul class="list-unstyled">
+											<li><i class="fa fa-check text-primary me-2"></i>At the
+												time of transaction, the amount is debited, kindly wait for
+												an hour in the same login page.</li>
+											<li><i class="fa fa-check text-primary me-2"></i>If
+												Amount debited more than one time, it will be refunded to
+												your account in 5-7 working days.</li>
+										</ul>
+										<br> <span style="color: #0e53a8; font-weight: 550;">
+											Would there be a refund if I have made two payment
+											transactions for my VITEEE application?</span><br>
+										<p class="mb-5">'Yes'. If the amount towards the VITEEE
+											application form has been paid twice for the same
+											application, the excess amount paid will be refunded to your
+											account within 5-7 working days.</p>
+										<br>
+										<br> <span style="color: #0e53a8; font-weight: 550;">What
+											If I haven't received within 5-7 working days?</span><br>
+										<p class="mb-5">You will be receiving within 5-7 working
+											days; it's depending on the source through which the
+											transaction was made. If not, Kindly login to the application portal and raise your query request through Need Help menu.</p>
+									</div>
+								</div>
+							</div>
+
+
+						</div>
+					</div>
+
+					<div class="col-xl-6 wow fadeInRight" data-wow-delay="0.4s">
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="headingSeven">
+								<button class="accordion-button collapsed" type="button"
+									data-bs-toggle="collapse" data-bs-target="#collapseSeven"
+									aria-expanded="false" aria-controls="collapseSeven">
+									Slot Booking Related Queries</button>
+							</h2>
+							<div id="collapseSeven" class="accordion-collapse collapse"
+								aria-labelledby="headingSeven"
+								data-bs-parent="#accordionExample">
+								<div class="accordion-body">
+									<p class="mb-5">
+										<span style="color: #0e53a8; font-weight: 550;">How can
+											I get the admit card?</span><br> After the slot booking, you
+										would be able to download the admit card.<br>
+										<br> <span style="color: #0e53a8; font-weight: 550;">What
+											is slot booking in VIT?</span><br> Slot booking refers to you
+										choosing your test city, date and time for the VITEEE at your
+										desired test city. VIT starts the online VITEEE Slot Booking at VIT's Online Test Booking
+										System.(OTBS). The candidates have to use their VITEEE 2026
+										application number and password to enter the VIT OTBS. The
+										slot booking is done in the first come first serve basis.
+										After the VITEEE 2026 Slot booking the candidates can download
+										their admit card from OTBS portal. The candidates
+										have to download the same and complete the process.<br>
+										<br> <span style="color: #0e53a8; font-weight: 550;">Can
+											student change their slots?</span><br> A slot once booked
+										cannot be changed.<br>
+										<br> <span style="color: #0e53a8; font-weight: 550;">Where
+											could I find information about the 'Test cities' ?</span><br>
+										Please refer the prospectus<br>
+										<br> <span style="color: #0e53a8; font-weight: 550;">Can
+											student change their Test city?</span><br> 'No' You cannot change
+										the test city after the submission.<br>
+										<br> <span style="color: #0e53a8; font-weight: 550;">If
+											student missed the slot booking, can he still apply?</span><br>
+										It is the responsibility of the candidates to book their test
+										schedule in OTBS within the given time frame. The Institute
+										will not be held accountable for the non-bookings. The
+										application fee will not be refunded under any circumstances
+										for such cases.<br>
+										<br> <span style="color: #0e53a8; font-weight: 550;">What
+											was the last year's intake for B.Tech?</span><br> Admissions to
+										various B.Tech Branches are based on the merit rank from
+										VITEEE and therefore differ from year to year. It is only
+										after you are ranked from the VITEEE and attends counselling
+										that you could briefly estimate the rank range required for a
+										particular branch. Do not believe any social media sources as
+										they might mislead you.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="headingEight">
+								<button class="accordion-button collapsed" type="button"
+									data-bs-toggle="collapse" data-bs-target="#collapseEight"
+									aria-expanded="false" aria-controls="collapseEight">
+									Scholarship Related Queries</button>
+							</h2>
+							<div id="collapseEight" class="accordion-collapse collapse"
+								aria-labelledby="headingEight"
+								data-bs-parent="#accordionExample">
+								<div class="accordion-body">
+									<p class="mb-5">
+										<span style="color: #0e53a8; font-weight: 550;">Does
+											VIT provide scholarships to students from rural areas and
+											underprivileged meritorious students?</span><br> STARS (Support
+										the Advancement of Rural Students Scheme) helps students from
+										under privileged backgrounds of Tamil Nadu/ Andra Pradesh to
+										achieve their dreams by giving them 100% fee waiver for their
+										academic, hostel and basic medical expenses. District toppers of both boys and
+										girls from Rural Government schools are shortlisted for the
+										scheme.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="headingNine">
+								<button class="accordion-button collapsed" type="button"
+									data-bs-toggle="collapse" data-bs-target="#collapseNine"
+									aria-expanded="false" aria-controls="collapseNine">
+									Hostel Related Queries</button>
+							</h2>
+							<div id="collapseNine" class="accordion-collapse collapse"
+								aria-labelledby="headingNine" data-bs-parent="#accordionExample">
+								<div class="accordion-body">
+									<p class="mb-5">
+										<span style="color: #0e53a8; font-weight: 550;">What is
+											the hostel facilities offered on campus? Is living on the
+											campus compulsory for freshers?</span><br> Please visit the
+										link:<a href="https://vit.ac.in/campuslife/hostels"><b>
+												https://vit.ac.in/campuslife/hostels</b></a>. It is compulsory for
+										fresher's to live on campus, unless parent/guardian stays with
+										the student.<br>
+										<br> <span style="color: #0e53a8; font-weight: 550;">
+											Where can I find details on Hostel fees?</span><br> Please
+										visit the link <a href="https://vit.ac.in/campuslife/hostels"><b>https://vit.ac.in/campuslife/hostels</b></a>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="headingTen">
+								<button class="accordion-button collapsed" type="button"
+									data-bs-toggle="collapse" data-bs-target="#collapseTen"
+									aria-expanded="false" aria-controls="collapseTen">
+									Academics Related Queries</button>
+							</h2>
+							<div id="collapseTen" class="accordion-collapse collapse"
+								aria-labelledby="headingTen" data-bs-parent="#accordionExample">
+								<div class="accordion-body">
+									<p class="mb-5">
+										<span style="color: #0e53a8; font-weight: 550;">Where
+											can I find info on the M.Tech Integrated and M.Sc.
+											integrated/PG programs?</span><br> Please visit the link <a
+											href="https://vit.ac.in/all-courses/pg"><b>https://vit.ac.in/all-courses/pg</b></a>
+										you could mail pgadmission@vit.ac.in or contact: 0416-220 2070<br>
+										<br> <span style="color: #0e53a8; font-weight: 550;">What
+											are the other Undergraduate Degree programs offered in VIT?</span><br>
+										Please find details of Undergraduate programs offered in VIT
+										at the link <a
+											href="https://vit.ac.in/admissions/programmes-offered"><b>
+												https://vit.ac.in/admissions/programmes-offered</b></a><br>
+										<br> <span style="color: #0e53a8; font-weight: 550;">What
+											is Fully Flexible Credit System?</span><br> In a Fully Flexible
+										Credit System (FFCS), a candidate has the complete freedom to
+										select time table with the choices on the teacher, time. In
+										addition, they may register less or more number of courses
+										(subject to minimum/ maximum criteria) to finish early and
+										take more than 6 month project in final year.<br>
+										<br> <span style="color: #0e53a8; font-weight: 550;">What
+											is International Transfer Program (ITP)? Where can I get to
+											know more?</span><br> In an International Transfer program
+										(ITP) - A student completes the first two years of his B.Tech
+										Degree program in VIT and the next two years of his Degree at
+										a partner university abroad. Call for ITP details+91 416
+										2202075.<br>
+										<br> <span style="color: #0e53a8; font-weight: 550;">What
+											is the Semester Abroad Program (SAP)?</span><br> In a Semester
+										Abroad program (SAP) - The student is provided an opportunity
+										to pursue the final Semester in a partner university abroad.
+										(Contact: +91-416-2202131/ director.ir@vit.ac.in for more
+										details)<br>
+										<br> <span style="color: #0e53a8; font-weight: 550;">How
+											are placements at VIT?</span><br> Please refer to the link <a
+											href="https://vit.ac.in/cdc-overview"><b>https://vit.ac.in/cdc-overview</b></a>
+
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="headingEleven">
+								<button class="accordion-button collapsed" type="button"
+									data-bs-toggle="collapse" data-bs-target="#collapseEleven"
+									aria-expanded="false" aria-controls="collapseEleven">
+									NRI/Foreign Students Admission Related Queries</button>
+							</h2>
+							<div id="collapseEleven" class="accordion-collapse collapse"
+								aria-labelledby="headingEleven"
+								data-bs-parent="#accordionExample">
+								<div class="accordion-body">
+									<p class="mb-5">
+									<ul class="list-unstyled">
+										<li><i class="fa fa-check text-primary me-2"></i>Indian
+											passport holders whose parents are employed abroad can apply
+											for both NRI as well as VITEEE (separate application and
+											admission procedures).</li>
+										<li><i class="fa fa-check text-primary me-2"></i>PIO card
+											holders can also apply for VITEEE but those holding only
+											foreign passports are not eligible.</li>
+										<li><i class="fa fa-check text-primary me-2"></i>To know
+											the admission procedure under NRI/ Foreign categories, please
+											<a href="https://vit.ac.in/admissions/international/overview"
+											target="_blank">Click here</a></li>
+
+
+									</ul>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- FAQs End -->
+
+	<!-- Contact Start -->
+	<div class="container-xxl py-5" id="contact">
+		<div class="container" style="padding: 0 !important;">
+			<div class="mb-5" style="padding-bottom: 30px;">
+				<h1 class="display-5 mb-4">Contact Us</h1>
+			</div>
+			<div class="row g-4">
+				<div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+
+					<div class="d-flex align-items-center mb-3">
+						<div
+							class="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary"
+							style="width: 50px; height: 50px;">
+							<i class="fa fa-envelope-open text-white"></i>
+						</div>
+						<div class="ms-3">
+							<h5 class="text-primary">Service Request</h5>
+							<p class="mb-0">After the registration, Kindly login to the application portal and raise your query request through Need Help menu.</p>
+						</div>
+					</div>
+					<div class="d-flex align-items-center">
+						<div
+							class="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary"
+							style="width: 50px; height: 50px;">
+							<i class="fa fa-phone-alt text-white"></i>
+						</div>
+						<div class="ms-3">
+							<h5 class="text-primary">Help Line Number</h5>
+							<p class="mb-0">044-46277555</p>
+						</div>
+					</div>
+
+					<div class="d-flex align-items-center mb-3">
+						<div class="ms-3">
+							<p class="mb-0">
+								Monday to Saturday (9.00 am to 5.00 pm)<br>(Excluding
+								public holidays)
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-5 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<!-- Contact End -->
+
+
+	<!-- Footer Start -->
+	<footer id="footer" class="footer">
+		<div class="container" style="padding: 0 !important">
+			<div class="row gy-4">
+				<div class="col-lg-6 col-md-12 footer-info">
+					<a href="index.html" class="logo d-flex align-items-center">
+						<h2>
+							<span>VITEEE 2026</span>
+						</h2>
+					</a>
+					<div class="social-links d-flex mt-4">
+						<a href="https://twitter.com/vit_univ" class="twitter"
+							target="_blank"><iconify-icon icon="mdi:twitter"></iconify-icon></a>
+						<a href="https://www.facebook.com/vituniversity/" class="facebook"
+							target="_blank"><iconify-icon icon="ic:baseline-facebook"></iconify-icon></a>
+						<a href="https://www.instagram.com/vellore_vit/" class="instagram"
+							target="_blank"><iconify-icon icon="mdi:instagram"></iconify-icon></a>
+						<a
+							href="https://www.linkedin.com/school/vellore-institute-of-technology/"
+							class="linkedin" target="_blank"><iconify-icon
+								icon="mdi:linkedin"></iconify-icon></a> <a
+							href="https://www.youtube.com/c/VITUniversityVellore"
+							class="youtube" target="_blank"><iconify-icon
+								icon="mdi:youtube"></iconify-icon></a>
+					</div>
+					<div class="footer">
+						<p id="rcorners1">
+							<img src="sdcassets/img/beware.png" /> <strong>BEWARE
+								OF VIT FAKE WEBSITES</strong> <br> <br>We came to know that
+							some fake websites are misusing VIT name. Kindly be aware of
+							illegal websites. Please visit only <a href="https://vit.ac.in"
+								class="text-blue" style="color: white;"><u>www.vit.ac.in</u></a>
+							or <a href="https://viteee.vit.ac.in" class="text-blue"
+								style="color: white;"><u>https://viteee.vit.ac.in</u></a> for
+							admissions.
+						</p>
+						<br />
+
+					</div>
+				</div>
+				<div class="col-lg-6 col-6 footer-links" align="right">
+					<div data-aos="fade-up">
+						<img class="img-fluid"
+							src="sdcassets/img/viteeeWhatsAppChannel.jpg">
+
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<hr>
+		<div class="container" style="padding: 0 !important;">
+			<div class="copyright">
+				&copy; Copyright <strong><span>VIT</span></strong>. All Rights
+				Reserved
+			</div>
+			<div class="credits">
+				<span style="color: white;"><strong>Developed by
+						Software Development Cell (SDC), VIT.</strong></span>
+			</div>
+		</div>
+	</footer>
+	<!-- Footer End -->
+	
+	<script>
+		document.getElementById("nationality").addEventListener("change", function() {
+		  const selectedValue = this.value;
+		  const stateDiv = document.getElementById("pincodeField");
+		
+		  if (selectedValue === "Indian") {
+		    stateDiv.classList.remove("hidden");
+		  } else {
+		    stateDiv.classList.add("hidden");
+		  }
+		});
+	</script>
+	
+	
+	<script>
+        function openIndex(id) {
+            document.querySelectorAll('.steps1').forEach(elt => elt.classList.remove('active'));
+            document.querySelector('#' + id).classList.add('active');
+        }
+    </script>
+
+	<!-- Back to Top -->
+	<a href="#"
+		class="btn btn-primary btn-lg-square rounded-circle back-to-top"><i
+		class="fa fa-arrow-up"></i></a>
+
+
+	<!-- JavaScript Libraries -->
+	<script src="sdcassets/js/jquery.min.js"></script>
+	<script src="sdcassets/js/bootstrap.bundle.min.js"></script>
+	<script src="sdcassets/lib/wow/wow.min.js"></script>
+	<script src="sdcassets/lib/easing/easing.min.js"></script>
+	<script src="sdcassets/lib/waypoints/waypoints.min.js"></script>
+	<script src="sdcassets/lib/counterup/counterup.min.js"></script>
+	<script src="sdcassets/lib/lightbox/js/lightbox.min.js"></script>
+	<script src="sdcassets/lib/owlcarousel/owl.carousel.min.js"></script>
+	<script src="sdcassets/js/iconify-icon.min.js"></script>
+
+	<!-- Template Javascript -->
+	<script src="sdcassets/js/main.js"></script>
+
+
+</body>
+</html>

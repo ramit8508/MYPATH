@@ -4,6 +4,7 @@ import { HiAcademicCap } from "react-icons/hi2";
 import { SlCalender } from "react-icons/sl";
 import { IoIosTrendingUp } from "react-icons/io";
 import { useNavigate } from "react-router-dom";
+import ExamDisplay from "../../Components/ExamDisplay";
 
 function DashBoardSchool() {
   const navigate = useNavigate();
@@ -19,6 +20,53 @@ function DashBoardSchool() {
   });
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
+  const [examStats, setExamStats] = useState({ eligible: 0, applied: 0, urgent: 0 });
+
+  // Calculate exam stats
+  useEffect(() => {
+    const calculateStats = async () => {
+      try {
+        const grade = userData.grade?.replace('th', '').replace('class ', '').trim();
+        if (!grade) return;
+
+        const response = await fetch(`/api/school/exams/class/${grade}`);
+        const data = await response.json();
+        
+        if (data.success) {
+          const exams = data.data;
+          const today = new Date();
+          
+          // Count applied exams from localStorage
+          let appliedCount = 0;
+          for (let i = 0; i < localStorage.length; i++) {
+            const key = localStorage.key(i);
+            if (key?.startsWith('exam_applied_')) appliedCount++;
+          }
+          
+          // Count urgent exams (deadline within 7 days)
+          const urgentCount = exams.filter(exam => {
+            const deadline = exam.registrationDeadline || exam.examDate;
+            if (!deadline) return false;
+            const deadlineDate = new Date(deadline);
+            const daysLeft = Math.ceil((deadlineDate - today) / (1000 * 60 * 60 * 24));
+            return daysLeft >= 0 && daysLeft <= 7;
+          }).length;
+          
+          setExamStats({
+            eligible: exams.length,
+            applied: appliedCount,
+            urgent: urgentCount
+          });
+        }
+      } catch (error) {
+        console.error('Error calculating exam stats:', error);
+      }
+    };
+    
+    if (userData.grade) {
+      calculateStats();
+    }
+  }, [userData.grade]);
 
   useEffect(() => {
     // Fetch school student data from backend API
@@ -149,21 +197,21 @@ function DashBoardSchool() {
           <div className="box">
             <div className="box1-icon-wrapper">
               <HiAcademicCap className="box-icon1212" />
-              <h1>N/A</h1>
+              <h1>{examStats.eligible}</h1>
             </div>
             <h2 className="box-heading">Available Pathways</h2>
           </div>
           <div className="box">
             <div className="box1-icon-wrapper">
               <SlCalender className="box-icon1213" />
-              <h1>N/A</h1>
+              <h1>{examStats.applied}</h1>
             </div>
             <h2 className="box-heading">Applications Submitted</h2>
           </div>
           <div className="box">
             <div className="box1-icon-wrapper">
               <IoIosTrendingUp className="box-icon1214" />
-              <h1>N/A</h1>
+              <h1>{examStats.urgent}</h1>
             </div>
             <h2 className="box-heading">Urgent Deadlines</h2>
           </div>
@@ -172,9 +220,14 @@ function DashBoardSchool() {
           <h1 className="exam-heading">
             Your Personalized Academic Pathways - {userData.grade}
           </h1>
-          <h2 className="button1">3 Eligible</h2>
-          <h2 className="button2">0 Applied</h2>
-          <h2 className="button3">2 Urgent</h2>
+          <h2 className="button1">{examStats.eligible} Eligible</h2>
+          <h2 className="button2">{examStats.applied} Applied</h2>
+          <h2 className="button3">{examStats.urgent} Urgent</h2>
+        </div>
+        
+        {/* Exams Section */}
+        <div style={{ padding: '20px 0' }}>
+          <ExamDisplay userClass={userData.grade?.replace('th', '').replace('class ', '').trim() || '12'} />
         </div>
       </div>
     </>

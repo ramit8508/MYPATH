@@ -1,0 +1,1370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>IGNOU</title>
+    <meta content="Official University Website" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="/assets/img/favicon.png" rel="icon">
+    <link href="/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Vendor CSS Files -->
+    <link href="/webjars/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="/webjars/bootstrap-icons/1.11.3/font/bootstrap-icons.scss" rel="stylesheet" type="text/css">
+    <link href="/webjars/font-awesome/6.5.2/css/all.css" rel="stylesheet" type="text/css">
+    <link href="/webjars/datatables/2.1.0/css/dataTables.bootstrap5.css" rel="stylesheet">
+
+    <!--    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">-->
+    <link href="/assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="/assets/css/main.css" rel="stylesheet">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PJ9SESH8GN"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'G-PJ9SESH8GN');
+    </script>
+</head>
+
+<body>
+<div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $.getJSON("/api/menu/Top", function (data) {
+                $.each(data, function (key, value) {
+                    if (value[2] == 'Announcements') {
+                        $("#topMenu").append('<li class="topMenu" class="nav-item">' + '<a class="nav-link" href="/pages/' + value[0] + '"><span>' + value[1] + ' ' + value[2] +
+                            '<label class="newLink1 badge badge-pill" style="margin: -14px -11px; position: absolute;">New</label></span></a>' +
+
+                            '</li>');
+                    } else {
+                        $("#topMenu").append('<li class="topMenu" class="nav-item">' + '<a class="nav-link" href="/pages/' + value[0] + '"><span>' + value[1] + ' ' + value[2] + '</span></a>' +
+                            '</li>');
+                    }
+                })
+            })
+        })
+    </script>
+     
+    <!-- ======= Header ======= -->
+    <div id="topbar" class="topbar d-flex align-items-center">
+        <div class="container d-flex">
+            <div class="social-links d-flex">
+                <a href="https://x.com/OfficialIGNOU/" class="twitter" title="twitter" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.facebook.com/OfficialPageIGNOU/" class="facebook" title="facebook" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.youtube.com/@ignou" class="instagram" title="youtube" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            <div class="weather">
+                <a href="http://aws.imd.gov.in:8091/display/index.php?v=IGNOU" class="instagram" title="IGNOU AWS Display" target="_blank">
+                    <i class="fa-solid fa-cloud-sun"></i> IGNOU's AWS</a>
+            </div> 
+            <div class="d-none d-md-flex ms-auto align-items-end">
+               <a href="#"><i class="fa-solid fa-search object">
+                    <script async src="https://cse.google.com/cse.js?cx=776461d97c22b497a"></script>
+                        <div id="goggle-search" class="flyout-details">
+                        <gcse:search enableHistory="false"></gcse:search> 
+                        </div>
+     </i></a>
+
+                <a href="#" id="fontMinu">A-</a>
+                <a href="#" id="fontPlus">A+</a>
+                <a href="#">
+                    <div class="lightBtn" onclick="myFunctionL()"></div>
+                    <div class="darkBtn" onclick="myFunctionD()"></div>
+                </a>
+                <a href="#">English</a>
+                <a href="#">Hindi</a>
+                <a href="#">Accessibility</a>
+            </div>
+        </div>
+    </div>
+    <!-- End Top Bar -->
+
+    <section class="headerBox">
+        <div class="container">
+            <header>
+                <div class="row">
+                    <div class="col-auto mt-2">
+                        <img class="ignouLogo" src="/assets/img/ignouLogo.png" alt="IGNOU">
+                    </div>
+                    <div class="col p-2 text-center d-none d-sm-block">
+                        <div class="ignou_logo">
+                            <h2 class="fs-4 text-center">
+                                <span>Indira Gandhi National Open University(IGNOU)</span>
+                                इंदिरा गांधी राष्ट्रीय मुक्त विश्वविद्यालय (इग्नू)
+                            </h2>
+                        </div>
+
+                        
+                    </div>
+                    
+                    <div class="col-auto nirfLogo">
+                        <img src="/assets/img/nirf.png" alt="NIRF" class="nirf">
+                    </div>
+                </div>
+            </header>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse responsive-navbar-nav" id="navbarNav">
+                        <ul class="navbar-nav" id="topMenu"></ul>
+                        <!-- <div class="weather">
+                            <a href="http://aws.imd.gov.in:8091/display/index.php?v=IGNOU" class="instagram" title="IGNOU AWS Display" target="_blank">
+                                <i class="fa-solid fa-cloud-sun"></i> IGNOU's AWS</a>
+                        </div> -->
+                    </div>
+
+                </div>
+            </nav>
+        </div>
+    </section>
+    <!-- End Header -->
+</div>
+
+<!-- ======= Gallery Section ======= -->
+<div id="galCarouel" class="galCarouel">
+    <div class="ignouAbout">
+        <div class="container-fluid position-relative">
+            <div class="row">
+                <div class="col-12 p-0">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="/assets/img/banners/banner01.jpg" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/assets/img/banners/banner02.jpg" alt="...">
+                            </div>
+                            <!--                            <div class="carousel-item">-->
+                            <!--                                <img th:src="@{/assets/img/banners/banner03.jpg}" alt="..."/>-->
+                            <!--                            </div>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ======= Gallery Hero Section ======= -->
+
+
+<!-- ======= 4 Online Steps Section ======= -->
+<div class="container-fluid ignouServices">
+    <div class="row">
+        <div class="col-3 col-xs-6 card">
+            <div class="card-body">
+                <img src="/assets/img/oeBg.png" class="stepImage" alt="oeBg">
+                <h5 class="card-title">Online Education</h5>
+                <div class="card-text">
+                    <ul>
+                        <li><a href="https://iop.ignouonline.ac.in/" target="_blank" rel="noopener">Online Programmes</a></li>
+                        <li><a href="https://swayam.gov.in/IGNOU" target="_blank" rel="noopener">SWAYAM Courses</a></li>
+                        <li><a href="https://splive.ignouonline.ac.in/live" target="_blank" rel="noopener">Virtual Classes</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-3 col-xs-6 card">
+            <div class="card-body">
+                <img src="/assets/img/bouBg.png" class="stepImage" alt="bouBg">
+                <h5 class="card-title">Browse our Programme</h5>
+                <div class="card-text">
+                    <ul>
+                        <li><a href="https://ignouadmission.samarth.edu.in/index.php/site/programmes" target="_blank" rel="noopener">Under Graduate</a></li>
+                        <li><a href="https://ignouadmission.samarth.edu.in/index.php/site/programmes" target="_blank" rel="noopener">Post Graduate</a></li>
+                        <li><a href="https://ignouadmission.samarth.edu.in/index.php/site/programmes" target="_blank" rel="noopener">Others</a></li>
+                        <li><a href="https://ignouadmission.samarth.edu.in/index.php/site/programmes" target="_blank" rel="noopener">Doctorate (PHD)</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-3 col-xs-6 card">
+            <div class="card-body">
+                <img src="/assets/img/admBg.png" class="stepImage" alt="admBg">
+                <h5 class="card-title">Admission</h5>
+                <div class="card-text">
+                    <ul>
+                        <li><a href="https://ignouadmission.samarth.edu.in" target="_blank" rel="noopener">Apply for ODL Programme</a></li>
+                        <li><a href="https://ignouiop.samarth.edu.in" target="_blank" rel="noopener">Apply for Online Programme</a></li>
+                        <li><a href="https://ignouforeigniop.samarth.edu.in" target="_blank" rel="noopener">Apply for foreign IOP</a></li>
+                        <li><a href="https://ignou-phd.samarth.edu.in/index.php" target="_blank" rel="noopener">Apply for Ph.D. Programmes</a></li>
+                        <li><a href="https://onlinerr.ignou.ac.in/" target="_blank" rel="noopener">Re-Registration</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-3 col-xs-6 card">
+            <div class="card-body">
+                <img src="/assets/img/networkBg.png" class="stepImage" alt="networkBg">
+                <h5 class="card-title"> Our Network</h5>
+                <div class="card-text">
+                    <ul>
+                        <li><a href="#">Regional Centers</a></li>
+                        <li><a href="#">Learner Support Centers</a></li>
+                        <li><a href="#">Overseas Study Centres</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ======= 4 Online Steps Section ======= -->
+
+<!-- ======= welcome Message Section ======= -->
+<div class="container">
+    <!-- <div class="text-danger border-black border-2">
+        <marquee class="h3">
+            <h2>This is Beta Website, Contents of the website is being updated....</h2>
+        </marquee>
+    </div> -->
+    <div class="row">
+        <div class="col-12">
+            <div class="homeMarquee">
+                <p>This is Beta Website, Contents of the website is being updated....</p>
+            </div>
+        </div>
+    </div>
+    <div class="row ptb-4">
+        <div class="col-sm-4 tc">
+            <img src="/images/vc.png" class="vcImg" alt="vcImg">
+        </div>
+        <div class="col-sm-8 welcomTxt">
+            <h2 class="welcomehdng">Welcome to <br> Indira Gandhi National Open University</h2>
+            <p class="card-text">
+                Welcome to Indira Gandhi National Open University (IGNOU), a premier institution established by an Act of Parliament in 1985 with the mission to democratize education in India and
+                beyond. Empowered by the IGNOU Act, the University holds a unique mandate to provide inclusive and equitable access to higher education across the nation and through its overseas
+                learner support centres, reflecting its expansive jurisdiction and global vision.
+                <button type="button" class="btn btn-primary readMoreBtn btn-sm" data-bs-toggle="modal" data-bs-target="#vcModal">Read More</button>
+                <!-- Modal -->
+            <div class="modal fade" id="vcModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" style="max-width: 70% !important;">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">
+                                <Span class="fw-bold">Vice Chancellor&#39;s Message</Span>
+                            </h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="text-justify">
+                                <p>
+                                    Welcome to Indira Gandhi National Open University (IGNOU), a premier institution established by an Act of Parliament in 1985 with the mission to democratize
+                                    education
+                                    in India and beyond. Empowered by the IGNOU Act, the University holds a unique mandate to provide inclusive and equitable access to higher education across the
+                                    nation
+                                    and through its overseas learner support centres, reflecting its expansive jurisdiction and global vision.
+                                </p>
+                                <p>
+                                    IGNOU proudly stands as the <strong>No. 1 Open University</strong>in the National Institutional Ranking
+                                    Framework (NIRF) and the first Open University to receive the prestigious <strong>A++
+                                    accreditation</strong> from NAAC, these are recognitions of its excellence in the open, distance and
+                                    online learning system. With over 69 Regional Centres, 2,000+ Learner Support Centres
+                                    pan-India, and 25 Overseas Study Centres in 15 countries, IGNOU reaches the remotest
+                                    corners of India and serves diverse learners, including marginalized communities, persons
+                                    with disabilities, and international students.</p>
+                                <p> As a torchbearer of innovation, IGNOU integrates technology with education through
+                                    initiatives like MOOCs on SWAYAM, SWAYAM PRABHA channels, and e-Gyankosh,
+                                    ensuring quality education is both accessible and affordable. With 325 programmes,
+                                    including Four-Year Undergraduate Programmes (FYUP) and skill-based courses, the
+                                    University continues to align with the National Education Policy 2020 to meet emerging
+                                    educational and professional needs. IGNOU offers 45 online academic programmes through
+                                    its own Learning Management System (LMS).</p>
+                                <p>
+                                    IGNOU has attained a significant milestone in the realm of innovation and has been ranked
+                                    among the top ten &quot;Institutes of National Importance and Central Universities&quot; due to its
+                                    endeavors to promote entrepreneurship and innovation. Furthermore, it has been positioned
+                                    within the 151-300 range of overall rankings according to the NIRF-Innovation rating-2023.
+                                    The role of the university in shaping India’s educational landscape is immense. Through
+                                    strategic collaborations, groundbreaking research, and its unwavering commitment to
+                                    quality, IGNOU reinforces the pillars of <strong>access, affordability, equity, and excellence</strong> in
+                                    education.</p>
+                                <p>
+                                    We invite you to explore IGNOU’s unparalleled legacy and be part of a vibrant journey
+                                    toward academic and professional growth.</p>
+                                <p>
+                                    <strong>Prof. Uma Kanjilal</strong><br>
+                                    Vice Chancellor, IGNOU
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h5 class="card-title">Prof. Uma Kanjilal<br> Vice Chancellor, IGNOU</h5>
+        </div>
+    </div>
+</div>
+<!-- ======= welcome Message Section ======= -->
+
+<!-- Call To Action Start -->
+<div class="container-fluid whyIgnou wow fadeInUp" data-wow-delay=".3s">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-lg-6 ignouPic">
+                <img src="/assets/img/ignouPic.jpg" class="img-fluid" alt="ignouPic">
+                <div class="row">
+                    <div class="col-sm-4 col-12"><img src="/assets/img/onlineIcon.png" alt="onlineIcon">Online & Digital Education</div>
+                    <div class="col-sm-4 col-12"><img src="/assets/img/coursesIcon.png" alt="coursesIcon">268 Courses in Swayam</div>
+                    <div class="col-sm-4 col-12"><img src="/assets/img/naacIcon.png" class="marl-5" alt="naacIcon">A++ Grade By Naac</div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-5 col-12 mb-xs-10"><img src="/assets/img/eduIcon.png" alt="eduIcon"> Globalization of Higher Education</div>
+                    <div class="col-sm-7 col-12 mb-xs-10"><img src="/assets/img/nirfIcon.png" alt="nirfIcon"><span>Ranked 1st In Open University Category</span></div>
+                </div>
+            </div>
+            <div class="col-lg-6 stats-counter">
+                <div class="row padl25">
+                    <div class="col-12 mb-3">
+                        <h2 class="mt-3">What Makes IGNOU unique ?</h2>
+                        <h3>Grooming leaders who are not only thorough professional but also good human beings with values. </h3>
+                    </div>
+                    <div class="col-lg-4 mb-5">
+                        <div class="stats-item text-center">
+                            <span data-purecounter-start="0" data-purecounter-end="333" data-purecounter-duration="1" class="purecounter"></span>
+                            <div>Programmes on Offer</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-5">
+                        <div class="stats-item text-center">
+                            <span data-purecounter-start="0" data-purecounter-end="21" data-purecounter-duration="1" class="purecounter"></span>
+                            <div>School of Studies</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-5">
+                        <div class="stats-item text-center">
+                            <span data-purecounter-start="0" data-purecounter-end="3093583" data-purecounter-duration="1" class="purecounter"></span>
+                            <div>Students Enrolled</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-5">
+                        <div class="stats-item text-center">
+                            <span data-purecounter-start="0" data-purecounter-end="57" data-purecounter-duration="1" class="purecounter"></span>
+                            <div>Regional Centres</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-5">
+                        <div class="stats-item text-center">
+                            <span data-purecounter-start="0" data-purecounter-end="2257" data-purecounter-duration="1" class="purecounter"></span>
+                            <div>Learning Support Centres</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-5">
+                        <div class="stats-item text-center">
+                            <span data-purecounter-start="0" data-purecounter-end="25" data-purecounter-duration="1" class="purecounter"></span>
+                            <div>Overseas Centres</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-5">
+                        <div class="stats-item text-center">
+                            <span data-purecounter-start="0" data-purecounter-end="268" data-purecounter-duration="1" class="purecounter"></span>
+                            <div>MOOC Courses</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-5">
+                        <div class="stats-item text-center">
+                            <span data-purecounter-start="0" data-purecounter-end="06" data-purecounter-duration="1" class="purecounter"></span>
+                            <div>DTH Channels</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-5">
+                        <div class="stats-item text-center">
+                            <span data-purecounter-start="0" data-purecounter-end="4603173" data-purecounter-duration="1" class="purecounter"></span>
+                            <div>Certificates Awarded</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Call To Action End -->
+
+<section>
+    <!-- ======= Schools Section ======= -->
+    <div class="studiesProgrmsBox">
+        <div class="container" data-aos="fade-up">
+            <div class="row gy-4">
+                <div class="col-lg-12 schoolsStudies">
+                    <div class="swiper slides-1" data-aos="fade-up">
+                        <h3>Schools of <span>Studies</span></h3>
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide">
+                                <div class="bd-highlight scltxt">
+                                    <div class="card">
+                                        <a href="/pages/34">
+                                            <img src="/images/schools/soa.jpg" class="w-100" alt="SOA">
+                                            <div class="card-body">
+                                                <h5 class="card-title">School of Agriculture (SOA)</h5>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="bd-highlight scltxt">
+                                    <div class="card">
+                                        <a href="/pages/32">
+                                            <img src="/images/schools/soce.jpg" class="w-100" alt="SOCE">
+                                            <div class="card-body">
+                                                <h5 class="card-title">School of Continuing Education (SOCE)</h5>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="bd-highlight scltxt">
+                                    <div class="card">
+                                        <a href="/pages/35">
+                                            <img src="/images/schools/socis.jpg" class="w-100" alt="SOCIS">
+                                            <div class="card-body">
+                                                <h5 class="card-title">School of Computer and Information Sciences (SOCIS)</h5>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="bd-highlight scltxt">
+                                    <div class="card">
+                                        <a href="/pages/31">
+                                            <img src="/images/schools/soe.jpg" class="w-100" alt="SOE">
+                                            <div class="card-body">
+                                                <h5 class="card-title">School of Education (SOE)</h5>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="bd-highlight scltxt">
+                                    <div class="card">
+                                        <a href="/pages/36">
+                                            <img src="/images/schools/soeds.jpg" class="w-100" alt="SOEDS">
+                                            <div class="card-body">
+                                                <h5 class="card-title">School of Extension and Development Studies (SOEDS)</h5>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="bd-highlight scltxt">
+                                    <div class="card">
+                                        <a href="/pages/33">
+                                            <img src="/images/schools/soet.jpg" class="w-100" alt="SOET">
+                                            <div class="card-body">
+                                                <h5 class="card-title">School of Engineering &amp; Technology (SOET)</h5>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="bd-highlight scltxt">
+                                    <div class="card">
+                                        <a href="/pages/37">
+                                            <img src="/images/schools/sofl.jpg" class="w-100" alt="SOFL">
+                                            <div class="card-body">
+                                                <h5 class="card-title">School of Foreign Languages (SOFL)</h5>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="bd-highlight scltxt">
+                                    <div class="card">
+                                        <a href="/pages/38">
+                                            <img src="/images/schools/sogds.jpg" class="w-100" alt="SOGDS">
+                                            <div class="card-body">
+                                                <h5 class="card-title">School of Gender and Development Studies (SOGDS)</h5>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="bd-highlight scltxt">
+                                    <div class="card">
+                                        <a href="/pages/28">
+                                            <img src="/images/schools/soh.jpg" class="w-100" alt="SOH">
+                                            <div class="card-body">
+                                                <h5 class="card-title">School of Humanities (SOH)</h5>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="bd-highlight scltxt">
+                                    <div class="card">
+                                        <a href="/pages/39">
+                                            <img src="/images/schools/sohs.jpg" class="w-100" alt="SOHS">
+                                            <div class="card-body">
+                                                <h5 class="card-title">School of Health Sciences (SOHS)</h5>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="bd-highlight scltxt">
+                                    <div class="card">
+                                        <a href="/pages/40">
+                                            <img src="/images/schools/soits.jpg" class="w-100" alt="SOITS">
+                                            <div class="card-body">
+                                                <h5 class="card-title">School of Inter-Disciplinary and Trans-Disciplinary Studies (SOITS)</h5>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="bd-highlight scltxt">
+                                    <div class="card">
+                                        <a href="/pages/41">
+                                            <img src="/images/schools/sojnms.jpg" class="w-100" alt="SOJNMS">
+                                            <div class="card-body">
+                                                <h5 class="card-title">School of Journalism and New Media Studies (SOJNMS)</h5>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="bd-highlight scltxt">
+                                    <div class="card">
+                                        <a href="/pages/42">
+                                            <img src="/images/schools/sol.jpg" class="w-100" alt="SOL">
+                                            <div class="card-body">
+                                                <h5 class="card-title">School of Law (SOL)</h5>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="bd-highlight scltxt">
+                                    <div class="card">
+                                        <a href="/pages/43">
+                                            <img src="/images/schools/soms.jpg" class="w-100" alt="SOMS">
+                                            <div class="card-body">
+                                                <h5 class="card-title">School of Management Studies (SOMS)</h5>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="bd-highlight scltxt">
+                                    <div class="card">
+                                        <a href="/pages/44">
+                                            <img src="/images/schools/sopva.jpg" class="w-100" alt="SOPVA">
+                                            <div class="card-body">
+                                                <h5 class="card-title">School of Performing and Visual Arts (SOPVA)</h5>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="bd-highlight scltxt">
+                                    <div class="card">
+                                        <a href="/pages/29">
+                                            <img src="/images/schools/sos.jpg" class="w-100" alt="SOS">
+                                            <div class="card-body">
+                                                <h5 class="card-title">School of Sciences (SOS)</h5>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="bd-highlight scltxt">
+                                    <div class="card">
+                                        <a href="/pages/30">
+                                            <img src="/images/schools/soss.jpg" class="w-100" alt="SOSS">
+                                            <div class="card-body">
+                                                <h5 class="card-title">School of Social Sciences (SOSS)</h5>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="bd-highlight scltxt">
+                                    <div class="card">
+                                        <a href="/pages/45">
+                                            <img src="/images/schools/sosw.jpg" class="w-100" alt="SOSW">
+                                            <div class="card-body">
+                                                <h5 class="card-title">School of Social Work (SOSW)</h5>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="bd-highlight scltxt">
+                                    <div class="card">
+                                        <a href="/pages/46">
+                                            <img src="/images/schools/sothsm.jpg" class="w-100" alt="SOTHSM">
+                                            <div class="card-body">
+                                                <h5 class="card-title">School of Tourism and Hospitality Service Management (SOTHSM)</h5>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="bd-highlight scltxt">
+                                    <div class="card">
+                                        <a href="/pages/47">
+                                            <img src="/images/schools/sotst.jpg" class="w-100" alt="SOTST">
+                                            <div class="card-body">
+                                                <h5 class="card-title">School of Translation Studies and Training (SOTST)</h5>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="bd-highlight scltxt">
+                                    <div class="card">
+                                        <a href="/pages/48">
+                                            <img src="/images/schools/sovet.jpg" class="w-100" alt="SOVET">
+                                            <div class="card-body">
+                                                <h5 class="card-title">School of Vocational Education and Training (SOVET)</h5>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Schools and New Programmes Section -->
+
+    <!-- ======= New Programmes Launched ======= -->
+    <div class="container">
+        <div class="row gy-4">
+            <div class="col-lg-12 progrmsLaun">                
+                <div class="swiper slides-2" data-aos="fade-up">
+                    <h3><span>New Programmes </span>Launched</h3>
+                    <ul class="swiper-wrapper ps-0">
+                        <li class="swiper-slide">
+                            <div class="newProgBox">
+                                <div class="thumbex">
+                                    <div class="thumbnail">
+                                        <a href="/schools/programme/BCA_NEW">
+                                            <img src="/images/programmes/bca_new.jpg" alt="newProg1"><span>BCA_NEW: Bachelor of Computer Applications(ODL)</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="newProgBox">
+                                <div class="thumbex">
+                                    <div class="thumbnail">
+                                        <a href="/schools/programme/BCA_NEWOL">
+                                            <img src="/images/programmes/bca_newol.jpg" alt="newProg1"><span>BCA_NEWOL: Bachelor of Computer Applications(Online)</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="newProgBox">
+                                <div class="thumbex">
+                                    <div class="thumbnail">
+                                        <a href="/schools/programme/MCA_NEW">
+                                            <img src="/images/programmes/mca_new.jpg" alt="newProg1"><span>MCA_NEW: Master of Computer Applications(ODL)</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="newProgBox">
+                                <div class="thumbex">
+                                    <div class="thumbnail">
+                                        <a href="/schools/programme/PGDCA_NEW">
+                                            <img src="/images/programmes/pgdca_new.jpg" alt="newProg1"><span>PGDCA_NEW: Post Graduate Diploma in Computer Applications(ODL)</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="newProgBox">
+                                <div class="thumbex">
+                                    <div class="thumbnail">
+                                        <a href="/schools/programme/PGDDRRM">
+                                            <img src="/images/programmes/pgddrrm.jpg" alt="newProg1"><span>PGDDRRM: Post Graduate Diploma in Disaster Risk Reduction and Management(ODL)</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="newProgBox">
+                                <div class="thumbex">
+                                    <div class="thumbnail">
+                                        <a href="/schools/programme/PGDTRBS">
+                                            <img src="/images/programmes/pgdtrbs.jpg" alt="newProg1"><span>PGDTRBS: Post Graduate Diploma in Tribal Studies(ODL)</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="newProgBox">
+                                <div class="thumbex">
+                                    <div class="thumbnail">
+                                        <a href="/schools/programme/MFAP">
+                                            <img src="/images/programmes/mfap.jpg" alt="newProg1"><span>MFAP: Master of Fine Arts -  Painting(ODL)</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="newProgBox">
+                                <div class="thumbex">
+                                    <div class="thumbnail">
+                                        <a href="/schools/programme/MSWOL">
+                                            <img src="/images/programmes/mswol.jpg" alt="newProg1"><span>MSWOL: Master of Social Work(Online)</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="newProgBox">
+                                <div class="thumbex">
+                                    <div class="thumbnail">
+                                        <a href="/schools/programme/QPNM">
+                                            <img src="/images/programmes/qpnm.jpg" alt="newProg1"><span>QPNM: Qualification Pack – Nurse Manager (QPNM)(ODL)</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+
+                <div class="content">
+                    <div class="row g-2">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ======= New Programmes Launched ======= -->
+
+
+    <!-- ======= Student Services Section ======= -->
+    <section class="studentServices">
+        <div class="container" data-aos="fade-up">
+            <div class="row studentServicesBox">
+                <h3>Student <span>Services</span></h3>
+                <div class="col-4 col-sm-2 wow fadeInUp" data-wow-delay=".3s">
+                    <div class="studentItem">
+                        <a href="https://egyankosh.ac.in/" target="_blank" rel="noopener"><img src="/assets/img/egyankosh.jpg" alt="Egyankosh"></a>
+                    </div>
+                    <a class="stuTxt" href="https://egyankosh.ac.in" target="_blank" rel="noopener">Egyankosh</a>
+                </div>
+                <div class="col-4 col-sm-2 wow fadeInUp" data-wow-delay=".3s">
+                    <div class="studentItem">
+                        <a href="https://onlineservices.ignou.ac.in/empclive/" target="_blank" rel="noopener"><img src="/assets/img/gyanDarshan.jpg" alt="GyanDarshan"></a>
+                    </div>
+                    <a class="stuTxt" href="https://onlineservices.ignou.ac.in/empclive/" target="_blank" rel="noopener">GyanDarshan</a>
+                </div>
+                <div class="col-4 col-sm-2 wow fadeInUp" data-wow-delay=".3s">
+                    <div class="studentItem">
+                        <a href="https://play.google.com/store/apps/details?id=ac.in.ignou.Viewer&amp;pcampaignid=web_share" target="_blank" rel="noopener"><img
+                                src="/assets/img/ignouEcontent.jpg" alt="IGNOU e-Content"></a>
+                    </div>
+                    <a class="stuTxt" href="https://play.google.com/store/apps/details?id=ac.in.ignou.Viewer&amp;pcampaignid=web_share" target="_blank" rel="noopener">IGNOU e-Content</a>
+                </div>
+                <div class="col-4 col-sm-2 wow fadeInUp" data-wow-delay=".3s">
+                    <div class="studentItem">
+                        <a href="https://splive.ignouonline.ac.in/live" target="_blank" rel="noopener"><img src="/assets/img/splive.jpg" alt="Swayam Prabha Live"></a>
+                    </div>
+                    <a class="stuTxt" href="https://splive.ignouonline.ac.in/live" target="_blank" rel="noopener">Swayam Prabha Live</a>
+                </div>
+                <div class="col-4 col-sm-2 wow fadeInUp" data-wow-delay=".3s">
+                    <div class="studentItem">
+                        <a href="https://onlineservices.ignou.ac.in/empclive/" target="_blank" rel="noopener"><img src="/assets/img/gyandhara.jpg" alt=""></a>
+                    </div>
+                    <a class="stuTxt" href="https://onlineservices.ignou.ac.in/empclive/" target="_blank" rel="noopener">Gyandhara</a>
+                </div>
+                <div class="col-4 col-sm-2 wow fadeInUp" data-wow-delay=".3s">
+                    <div class=" studentItem">
+                        <a href="/pages/178"><img src="/assets/img/reddyLibr.jpg" alt=""></a>
+                    </div>
+                    <a class="stuTxt" href="/pages/178" target="_blank" rel="noopener">IGNOU Library</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ======= Student Services Section End ======= -->
+
+    <!-- ======= testimonials Section ======= -->
+    <div class="container">
+        <div class="row">
+            <div class="col-12 testimonials">
+                <div class="slides-3 swiper" data-aos="fade-up" data-aos-delay="100">
+                    <h3>Testimonials</h3>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="testimonial-wrap">
+                                <div class="testimonial-item">
+                                    <div class="card mb-3 border-0">
+                                        <div class="row g-0">
+                                            <div class="col-md-4">
+                                                <img src="/assets/img/testiImg1.png" alt="">
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="card-body">
+                                                    <p><i class="fa-solid fa-quote-left"></i>
+                                                        The desire of study does not fade away with age. Neither does it when an
+                                                        individual does not know the proper pathway to be involved in. Most of
+                                                        us after
+                                                        completion of high school or Bachelor’s degree want to get involved in
+                                                        jobs and have certain years of experience, and as well study further at
+                                                        the same
+                                                        time. When this situation occurs, we are in dilemma as whether to study
+                                                        or to work. However, this kind of dilemma can now be solved by choosing
+                                                        the best of
+                                                        option by enrolling into ICA. ICA is the institution where one can work
+                                                        and study simultan eously and is very suitable for the job
+                                                        holder/working
+                                                        professional like me.
+                                                        <i class="fa-solid fa-quote-right"></i>
+                                                    </p>
+                                                    <h3 class="fs-6 mb-0">Suman Chalise</h3>
+                                                    <h4 class="fs-6">MBA, (Huawei Technology Nepal)</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimonial-wrap">
+                                <div class="testimonial-item">
+                                    <div class="card mb-3 border-0">
+                                        <div class="row g-0">
+                                            <div class="col-md-4">
+                                                <img src="/assets/img/testiImg2.png" alt="">
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="card-body">
+                                                    <p><i class="bi bi-quote quote-icon-left"></i>
+                                                        Exceptional Learning Experience at IGNOU at ICA Study Center: A Top
+                                                        Choice for degrees through the Open Distance Learning mode.
+                                                        I recently had the privilege of completing my bachelor’s degree in the
+                                                        tourism at the ICA Study Center, and I cannot emphasize enough the
+                                                        positive impact
+                                                        this institution had on my educational journey. From the moment I
+                                                        enrolled, I was met with a level of excellence that surpassed my
+                                                        expectations, and I
+                                                        wholeheartedly recommend ICA Study Center to anyone considering pursuing
+                                                        a degree through the Open Distance Learning mode.
+                                                        <i class="bi bi-quote quote-icon-right"></i>
+                                                    </p>
+                                                    <h3 class="fs-6 mb-0">Ramchandra Basnet</h3>
+                                                    <h4 class="fs-6">Tourism Studies (BTS), 2018</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimonial-wrap">
+                                <div class="testimonial-item">
+                                    <div class="card mb-3 border-0">
+                                        <div class="row g-0">
+                                            <div class="col-md-4">
+                                                <img src="/assets/img/testiImg3.png" alt="">
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="card-body">
+                                                    <p><i class="bi bi-quote quote-icon-left"></i>
+                                                        ICA, Overseas Study Centre of IGNOU was a great avenue for me to
+                                                        rekindle my educational journey at my own time and pace, with flexible
+                                                        learning
+                                                        environment, and highly experienced faculty. Absolutely an honour to
+                                                        belong to this fraternity.
+                                                        <i class="bi bi-quote quote-icon-right"></i>
+                                                    </p>
+                                                    <h3 class="fs-6 mb-0">Sweta Rajgharai</h3>
+                                                    <h4 class="fs-6">Card Reader</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimonial-wrap">
+                                <div class="testimonial-item">
+                                    <div class="card mb-3 border-0">
+                                        <div class="row g-0">
+                                            <div class="col-md-4">
+                                                <img src="/assets/img/testiImg4.png" alt="">
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="card-body">
+                                                    <p><i class="bi bi-quote quote-icon-left"></i>
+                                                        In today’s competitive market having a bachelor’s degree is as crucial
+                                                        as having a work experience. At ICA, I have had the chance to both study
+                                                        and work
+                                                        which has made me competitive student and an employee. At first, I was
+                                                        worried how do I manage my studies and a full time job but then the
+                                                        frequent
+                                                        important date reminders given by ICA and the counseling session given
+                                                        by my program coordinator made my life much easier.
+                                                        <i class="bi bi-quote quote-icon-right"></i>
+                                                    </p>
+                                                    <h3 class="fs-6 mb-0">Rushma Khari Subedi</h3>
+                                                    <h4 class="fs-6">BA</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimonial-wrap">
+                                <div class="testimonial-item">
+                                    <div class="card mb-3 border-0">
+                                        <div class="row g-0">
+                                            <div class="col-md-4">
+                                                <img src="/assets/img/testiImg5.png" alt="">
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="card-body">
+                                                    <p><i class="bi bi-quote quote-icon-left"></i>
+                                                        It gives me an immense pleasure to say with pride that I am doing MTTM
+                                                        from International ICA. It is one of the pioneer Institution of Open and
+                                                        Distance
+                                                        Learning which is approved by the Ministry of Education, Government of
+                                                        Nepal. I enjoy a lot while studying in ICA as Teachers are highly
+                                                        qualified
+                                                        approachable, and very helpful. Every class is fun, and interactive. I
+                                                        would say it’s a high-quality place to study in. Learning at ICA has
+                                                        been incredibly
+                                                        valuable experience and enjoyable. I am very grateful to be a apart of
+                                                        ICA.
+                                                        <i class="bi bi-quote quote-icon-right"></i>
+                                                    </p>
+                                                    <h3 class="fs-6 mb-0">Dilli Ram Sharma</h3>
+                                                    <h4 class="fs-6">MTTM, (Embassy of Sri Lanka)</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimonial-wrap">
+                                <div class="testimonial-item">
+                                    <div class="card mb-3 border-0">
+                                        <div class="row g-0">
+                                            <div class="col-md-4">
+                                                <img src="/assets/img/testiImg6.png" alt="">
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="card-body">
+                                                    <p><i class="bi bi-quote quote-icon-left"></i>
+                                                        Attending IGNOU has been an incredibly rewarding experience for me. The
+                                                        flexibility of the distance learning format has allowed me to balance my
+                                                        studies
+                                                        with my other commitments, while the qualities of the course materials
+                                                        and the support from the faculty have been excellent. I have been able
+                                                        to develop a
+                                                        deep understanding of the subject matter and acquire valuable knowledge
+                                                        and skills that I can apply in my personal and professional life.
+                                                        One of the greatest advantages of IGNOU's program is the opportunity to
+                                                        learn at my own pace and on my own schedule. This has been particularly
+                                                        important
+                                                        for me, as I have been able to continue my education while working
+                                                        full-time and fulfilling other responsibilities. The online resources
+                                                        and the option to
+                                                        attend virtual classes have also been extremely helpful in keeping me
+                                                        engaged and motivated throughout my studies.
+                                                        <i class="bi bi-quote quote-icon-right"></i>
+                                                    </p>
+                                                    <h3 class="fs-6 mb-0">Gebre Terefe Wojija</h3>
+                                                    <h4 class="fs-6">Sociology, (M.A) </h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimonial-wrap">
+                                <div class="testimonial-item">
+                                    <div class="card mb-3 border-0">
+                                        <div class="row g-0">
+                                            <div class="col-md-4">
+                                                <img src="/assets/img/testiImg7.png" alt="">
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="card-body">
+                                                    <p><i class="bi bi-quote quote-icon-left"></i>
+                                                        Age is just a number, and thanks to the Indian Academy's collaboration
+                                                        with IGNOU, I have been able to prove this adage true. For years, I
+                                                        dreamed of
+                                                        earning a Bachelor of Computer Application but felt constrained by the
+                                                        belief that my age might be a barrier. However, the Indian Academy
+                                                        opened doors I
+                                                        once thought were closed, allowing me to not only pursue my
+                                                        undergraduate degree but also continue my higher studies on the same
+                                                        campus.
+                                                        <i class="bi bi-quote quote-icon-right"></i>
+                                                    </p>
+                                                    <h3 class="fs-6 mb-0">Raja Manickam</h3>
+                                                    <h4 class="fs-6">Bachelor of Computer Application </h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimonial-wrap">
+                                <div class="testimonial-item">
+                                    <div class="card mb-3 border-0">
+                                        <div class="row g-0">
+                                            <div class="col-md-4">
+                                                <img src="/assets/img/testiImg8.png" alt="">
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="card-body">
+                                                    <p><i class="bi bi-quote quote-icon-left"></i>
+                                                        As an Ethiopian student pursuing my Master's in Social Work (MSW)
+                                                        through IGNOU's innovative distance learning program, I have acquired
+                                                        invaluable knowledge
+                                                        and skills necessary for a fulfilling social work career. The program's
+                                                        structure, with its strategic blend of coursework and practical
+                                                        fieldwork, provided
+                                                        a unique advantage. By integrating concurrent visits with real-world
+                                                        fieldwork, IGNOU offered a glimpse into the inner workings of Ethiopian
+                                                        Civil Society
+                                                        Organizations (CSOs). Witnessing firsthand the impactful role social
+                                                        workers play in transforming communities solidified my passion for this
+                                                        field.
+                                                        <i class="bi bi-quote quote-icon-right"></i>
+                                                    </p>
+                                                    <h3 class="fs-6 mb-0">Tigist Zerihun Semegn</h3>
+                                                    <h4 class="fs-6">Master's in Social Work </h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimonial-wrap">
+                                <div class="testimonial-item">
+                                    <div class="card mb-3 border-0">
+                                        <div class="row g-0">
+                                            <div class="col-md-4">
+                                                <img src="/assets/img/testiImg9.png" alt="">
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="card-body">
+                                                    <p><i class="bi bi-quote quote-icon-left"></i>
+                                                        My name is Metsnanat Sahle Tilahun, and I recently completed my Master's
+                                                        Degree in Social Work from IGNOU. My learning experience at IGNOU was
+                                                        both
+                                                        challenging and rewarding.The journey was exciting, albeit not easy, as
+                                                        I had to balance my responsibilities and manage my time effectively.
+                                                        However, with
+                                                        persistence, I eventually mastered these challenges.
+                                                        <i class="bi bi-quote quote-icon-right"></i>
+                                                    </p>
+                                                    <h3 class="fs-6 mb-0">Metsnanat Sahle Tilahun</h3>
+                                                    <h4 class="fs-6">Master's in Social Work </h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ======= testimonials Section ======= -->
+
+</section><!-- End #main -->
+
+<div id="popUpModal" class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" style="clear:both;width: 100% !important;height: 100% !important;padding: 0px !important;">
+                <div id="carouselSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="100">
+                            <img src="/images/marketing/Creative1.jpeg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="200">
+                            <img src="/images/marketing/Creative2.jpeg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/images/marketing/Creative3.jpeg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/images/marketing/Creative4.jpeg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div>
+    <!-- ======= Footer ======= -->
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-3 col-md-12 footer-info">
+                    <a href="/" class="logo d-flex align-items-center mb-3">
+                        <img src="/assets/img/IgnouLogoW.png" alt="">
+                    </a>
+                    <p>The University began by offering two academic programmes in 1987, i.e., Diploma in Management and Diploma in Distance Education, with a strength of 4,528 students.</p>
+                    <div class="social-links d-flex mt-4">
+                        <a href="https://x.com/OfficialIGNOU/" class="twitter" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="https://www.facebook.com/OfficialPageIGNOU/" class="facebook" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.youtube.com/@ignou" class="instagram" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-12 footer-links">
+                    <h4>Employee Services</h4>
+                    <ul>
+                        <li><a target="_blank"
+                               href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&emr=1&followup=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&ifkv=ARpgrqeY_za4tnxn6K6krEyfxMCuur_2tAby7GrC4xOQP9L4-VEb0mHtlYxvB1URMdQvdkZgKgt_Dg&osid=1&passive=1209600&service=mail&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S992576682%3A1729593341401909&ddm=0">Mail
+                            Service</a></li>
+                        <li><a href="#">Regional Network</a></li>
+                        <li><a href="#">RC Services</a></li>
+                        <li><a href="#">SOUs/Other Institutions</a></li>
+                        <li><a href="#">IGNOU Credit Society</a></li>
+                        <li><a href="/viewFile/services/empanelled_hospitals/List_of_empanelled_hospitals.PDF">Empanelled Hospitals</a></li>
+                        <li><a href="/pages/219">University House Allotment</a></li>
+                        <li><a href="/announcement/Career?nav=5">Jobs at IGNOU</a></li>
+                        <li><a href="#">Tenders of IGNOU</a></li>
+                        <li><a target="_blank" href="/viewFile/hq/common/TelDirectory11Nov2025.pdf">Telephone Directory</a></li>
+                        <li><a target="_blank" href="/pages/218">Committee Against Sexual Harassment</a></li>
+                        <li><a target="_blank" href="https://cuignou.samarth.ac.in/index.php/site/login">IGNOU-SAMARTH Portal</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-12 footer-links">
+                    <h4>Student Services</h4>
+                    <ul>
+                        <li><a href="/viewFile/services/Common_Prospectus/Common-Prospectus.pdf" target="_blank">Common Prospectus</a></li>
+                        <li><a href="https://freedom2learn.ignouonline.ac.in/pages/" target="_blank">Podcast Link</a></li>
+                        <li><a href="https://sites.google.com/ignou.ac.in/ignouudyami/" target="_blank">IGNOU UDYAMI</a></li>
+                        <li><a href="https://iop.ignouonline.ac.in/" target="_blank">IGNOU Online Programmes</a></li>
+                        <li><a href="https://igram.ignou.ac.in/" target="_blank">Student Grievances</a></li>
+                        <li><a href="/pages/65">Study Material Status</a></li>
+                        <li><a href="#">Study Material Catalogue</a></li>
+                        <li><a href="#">Placement Assistance</a></li>
+                        <li><a href="https://ignoualumni.samarth.edu.in/index.php/site/login" target="_blank">Alumni</a></li>
+                        <li><a href="#">International Students</a></li>
+                        <li><a href="https://www.studyinindia.gov.in/admission/registrations" target="_blank">Study in India</a></li>
+                        <li><a href="/pages/64">FAQs</a></li>
+                        <li><a href="/pages/222">Anti-Ragging</a></li>                        
+                        <li><a href="#">Equal Opportunity Cell(EOC)</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-12 footer-links">
+                    <h4>Useful Links</h4>
+                    <ul>
+                        <li><a href="#">NAAC Peer Team Visit (2021)</a></li>
+                        <li><a href="#">Photos of NAAC Peer Team Visit (2021)</a></li>
+                        <li><a href="#">Other Official Websites</a></li>
+                        <li><a href="#">National Voters Service Portal</a></li>
+                        <li><a href="#">Bharatiya Chhatra Sansad</a></li>
+                        <li><a href="#">Partner Institutions</a></li>
+                        <li><a href="#">Innovation</a></li>
+                        <li><a href="#">Photo Gallery</a></li>
+                        <li><a href="#">Anti Discrimination Officer</a></li>
+                        <li><a href="#">National Youth Parliament</a></li>
+                        <li><a href="#">National Digital Library of India</a></li>
+                        <li><a href="#">Route Map</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-12 col-12 footer-contact text-center text-md-start">
+                    <h4>Contact Us</h4>
+                    <p>
+                        IGNOU <br>
+                        Maidan Garhi,<br>
+                        New Delhi-110068 <br><br>
+                        <strong>Phone:</strong> 29572513, 29572514<br>
+                        <!--<strong>Email:</strong> info@ignou.com<br>-->
+                    </p>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container-fluid p-0">
+            <div class="copyright">
+                &copy; 2024 <strong><span>Indira Gandhi National Open University.</span></strong> All rights reserved
+            </div>
+        </div>
+
+    </footer><!-- End Footer -->
+    <!-- End Footer -->
+
+    <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="/webjars/jquery/3.7.1/jquery.min.js"></script>
+    <script src="/webjars/popper.js/2.11.7/umd/popper.min.js"></script>
+    <script src="/webjars/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+
+    <script src="/webjars/datatables/2.1.0/js/dataTables.js"></script>
+    <script src="/webjars/datatables/2.1.0/js/dataTables.bootstrap5.js"></script>
+
+    <script src="/assets/vendor/aos/aos.js"></script>
+    <script src="/assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="/assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="/assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="/assets/js/main.js"></script>
+    <script>
+        (function ($) {
+            $.fn.fontResize = function (options) {
+                var increaseCount = 0;
+                var self = this;
+
+                var changeFont = function (element, amount) {
+                    var baseFontSize = parseInt(element.css('font-size'), 10);
+                    var baseLineHeight = parseInt(element.css('line-height'), 10);
+                    element.css('font-size', (baseFontSize + amount) + 'px');
+                    element.css('line-height', (baseLineHeight + amount) + 'px');
+                };
+
+                options.increaseBtn.on('click', function (e) {
+                    e.preventDefault();
+                    self.each(function (index, element) {
+                        changeFont($(element), 1);
+                    });
+                    increaseCount++;
+                });
+
+                options.decreaseBtn.on('click', function (e) {
+                    e.preventDefault();
+                    if (increaseCount === -1) {
+                        return;
+                    }
+                    self.each(function (index, element) {
+                        changeFont($(element), -2);
+                    });
+                    increaseCount--;
+                });
+            }
+        })(jQuery);
+
+        $(function () {
+            $('body,h1,h2,h3,h4,h5,h6,p,ul,ol,a,input').fontResize({
+                increaseBtn: $('#fontPlus'),
+                decreaseBtn: $('#fontMinu')
+            });
+        });
+    </script>
+    <script>
+        function myFunctionD() {
+            var element = document.body;
+            element.classList.add("dark-mode");
+            element.classList.remove("light-mode");
+        }
+
+        function myFunctionL() {
+            var element = document.body;
+            element.classList.add("light-mode");
+            element.classList.remove("dark-mode");
+        }
+    </script>
+
+ 
+</div>
+<script>
+    window.onload = function () {
+        OpenBootstrapPopup();
+    };
+
+    function OpenBootstrapPopup() {
+        $("#popUpModal").modal('show');
+    }
+</script>
+</body>
+</html>

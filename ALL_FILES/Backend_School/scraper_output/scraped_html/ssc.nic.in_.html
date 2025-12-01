@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Default Error</title>
+</head>
+
+<body>
+    
+    <div> 
+        <b>Error. Please review the following URL and make sure that it is spelled correctly. </b>
+    </div>
+    <div>
+        <center><a href="javascript:void(0);" id="btnBack">Back</a></center>
+    </div>
+</body>
+</html>
+<script src="~/Scripts/jquery-3.6.0.js"></script>
+<script type="text/javascript">
+        
+            $(document).on('click', '#btnBack', function () {
+                history.go(-1);
+            });
+        
+</script>

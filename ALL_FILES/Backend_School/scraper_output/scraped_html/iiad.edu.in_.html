@@ -1,0 +1,2509 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head><script type="95385ea38a008c76dd5b4301-text/javascript">if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]nowprocket/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?nowprocket=1"}else{document.location.href=href.replace("#","?nowprocket=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&nowprocket=1"}else{document.location.href=href.replace("#","&nowprocket=1#")}}}}</script><script type="95385ea38a008c76dd5b4301-text/javascript">(()=>{class RocketLazyLoadScripts{constructor(){this.v="2.0.4",this.userEvents=["keydown","keyup","mousedown","mouseup","mousemove","mouseover","mouseout","touchmove","touchstart","touchend","touchcancel","wheel","click","dblclick","input"],this.attributeEvents=["onblur","onclick","oncontextmenu","ondblclick","onfocus","onmousedown","onmouseenter","onmouseleave","onmousemove","onmouseout","onmouseover","onmouseup","onmousewheel","onscroll","onsubmit"]}async t(){this.i(),this.o(),/iP(ad|hone)/.test(navigator.userAgent)&&this.h(),this.u(),this.l(this),this.m(),this.k(this),this.p(this),this._(),await Promise.all([this.R(),this.L()]),this.lastBreath=Date.now(),this.S(this),this.P(),this.D(),this.O(),this.M(),await this.C(this.delayedScripts.normal),await this.C(this.delayedScripts.defer),await this.C(this.delayedScripts.async),await this.T(),await this.F(),await this.j(),await this.A(),window.dispatchEvent(new Event("rocket-allScriptsLoaded")),this.everythingLoaded=!0,this.lastTouchEnd&&await new Promise(t=>setTimeout(t,500-Date.now()+this.lastTouchEnd)),this.I(),this.H(),this.U(),this.W()}i(){this.CSPIssue=sessionStorage.getItem("rocketCSPIssue"),document.addEventListener("securitypolicyviolation",t=>{this.CSPIssue||"script-src-elem"!==t.violatedDirective||"data"!==t.blockedURI||(this.CSPIssue=!0,sessionStorage.setItem("rocketCSPIssue",!0))},{isRocket:!0})}o(){window.addEventListener("pageshow",t=>{this.persisted=t.persisted,this.realWindowLoadedFired=!0},{isRocket:!0}),window.addEventListener("pagehide",()=>{this.onFirstUserAction=null},{isRocket:!0})}h(){let t;function e(e){t=e}window.addEventListener("touchstart",e,{isRocket:!0}),window.addEventListener("touchend",function i(o){o.changedTouches[0]&&t.changedTouches[0]&&Math.abs(o.changedTouches[0].pageX-t.changedTouches[0].pageX)<10&&Math.abs(o.changedTouches[0].pageY-t.changedTouches[0].pageY)<10&&o.timeStamp-t.timeStamp<200&&(window.removeEventListener("touchstart",e,{isRocket:!0}),window.removeEventListener("touchend",i,{isRocket:!0}),"INPUT"===o.target.tagName&&"text"===o.target.type||(o.target.dispatchEvent(new TouchEvent("touchend",{target:o.target,bubbles:!0})),o.target.dispatchEvent(new MouseEvent("mouseover",{target:o.target,bubbles:!0})),o.target.dispatchEvent(new PointerEvent("click",{target:o.target,bubbles:!0,cancelable:!0,detail:1,clientX:o.changedTouches[0].clientX,clientY:o.changedTouches[0].clientY})),event.preventDefault()))},{isRocket:!0})}q(t){this.userActionTriggered||("mousemove"!==t.type||this.firstMousemoveIgnored?"keyup"===t.type||"mouseover"===t.type||"mouseout"===t.type||(this.userActionTriggered=!0,this.onFirstUserAction&&this.onFirstUserAction()):this.firstMousemoveIgnored=!0),"click"===t.type&&t.preventDefault(),t.stopPropagation(),t.stopImmediatePropagation(),"touchstart"===this.lastEvent&&"touchend"===t.type&&(this.lastTouchEnd=Date.now()),"click"===t.type&&(this.lastTouchEnd=0),this.lastEvent=t.type,t.composedPath&&t.composedPath()[0].getRootNode()instanceof ShadowRoot&&(t.rocketTarget=t.composedPath()[0]),this.savedUserEvents.push(t)}u(){this.savedUserEvents=[],this.userEventHandler=this.q.bind(this),this.userEvents.forEach(t=>window.addEventListener(t,this.userEventHandler,{passive:!1,isRocket:!0})),document.addEventListener("visibilitychange",this.userEventHandler,{isRocket:!0})}U(){this.userEvents.forEach(t=>window.removeEventListener(t,this.userEventHandler,{passive:!1,isRocket:!0})),document.removeEventListener("visibilitychange",this.userEventHandler,{isRocket:!0}),this.savedUserEvents.forEach(t=>{(t.rocketTarget||t.target).dispatchEvent(new window[t.constructor.name](t.type,t))})}m(){const t="return false",e=Array.from(this.attributeEvents,t=>"data-rocket-"+t),i="["+this.attributeEvents.join("],[")+"]",o="[data-rocket-"+this.attributeEvents.join("],[data-rocket-")+"]",s=(e,i,o)=>{o&&o!==t&&(e.setAttribute("data-rocket-"+i,o),e["rocket"+i]=new Function("event",o),e.setAttribute(i,t))};new MutationObserver(t=>{for(const n of t)"attributes"===n.type&&(n.attributeName.startsWith("data-rocket-")||this.everythingLoaded?n.attributeName.startsWith("data-rocket-")&&this.everythingLoaded&&this.N(n.target,n.attributeName.substring(12)):s(n.target,n.attributeName,n.target.getAttribute(n.attributeName))),"childList"===n.type&&n.addedNodes.forEach(t=>{if(t.nodeType===Node.ELEMENT_NODE)if(this.everythingLoaded)for(const i of[t,...t.querySelectorAll(o)])for(const t of i.getAttributeNames())e.includes(t)&&this.N(i,t.substring(12));else for(const e of[t,...t.querySelectorAll(i)])for(const t of e.getAttributeNames())this.attributeEvents.includes(t)&&s(e,t,e.getAttribute(t))})}).observe(document,{subtree:!0,childList:!0,attributeFilter:[...this.attributeEvents,...e]})}I(){this.attributeEvents.forEach(t=>{document.querySelectorAll("[data-rocket-"+t+"]").forEach(e=>{this.N(e,t)})})}N(t,e){const i=t.getAttribute("data-rocket-"+e);i&&(t.setAttribute(e,i),t.removeAttribute("data-rocket-"+e))}k(t){Object.defineProperty(HTMLElement.prototype,"onclick",{get(){return this.rocketonclick||null},set(e){this.rocketonclick=e,this.setAttribute(t.everythingLoaded?"onclick":"data-rocket-onclick","this.rocketonclick(event)")}})}S(t){function e(e,i){let o=e[i];e[i]=null,Object.defineProperty(e,i,{get:()=>o,set(s){t.everythingLoaded?o=s:e["rocket"+i]=o=s}})}e(document,"onreadystatechange"),e(window,"onload"),e(window,"onpageshow");try{Object.defineProperty(document,"readyState",{get:()=>t.rocketReadyState,set(e){t.rocketReadyState=e},configurable:!0}),document.readyState="loading"}catch(t){console.log("WPRocket DJE readyState conflict, bypassing")}}l(t){this.originalAddEventListener=EventTarget.prototype.addEventListener,this.originalRemoveEventListener=EventTarget.prototype.removeEventListener,this.savedEventListeners=[],EventTarget.prototype.addEventListener=function(e,i,o){o&&o.isRocket||!t.B(e,this)&&!t.userEvents.includes(e)||t.B(e,this)&&!t.userActionTriggered||e.startsWith("rocket-")||t.everythingLoaded?t.originalAddEventListener.call(this,e,i,o):(t.savedEventListeners.push({target:this,remove:!1,type:e,func:i,options:o}),"mouseenter"!==e&&"mouseleave"!==e||t.originalAddEventListener.call(this,e,t.savedUserEvents.push,o))},EventTarget.prototype.removeEventListener=function(e,i,o){o&&o.isRocket||!t.B(e,this)&&!t.userEvents.includes(e)||t.B(e,this)&&!t.userActionTriggered||e.startsWith("rocket-")||t.everythingLoaded?t.originalRemoveEventListener.call(this,e,i,o):t.savedEventListeners.push({target:this,remove:!0,type:e,func:i,options:o})}}J(t,e){this.savedEventListeners=this.savedEventListeners.filter(i=>{let o=i.type,s=i.target||window;return e!==o||t!==s||(this.B(o,s)&&(i.type="rocket-"+o),this.$(i),!1)})}H(){EventTarget.prototype.addEventListener=this.originalAddEventListener,EventTarget.prototype.removeEventListener=this.originalRemoveEventListener,this.savedEventListeners.forEach(t=>this.$(t))}$(t){t.remove?this.originalRemoveEventListener.call(t.target,t.type,t.func,t.options):this.originalAddEventListener.call(t.target,t.type,t.func,t.options)}p(t){let e;function i(e){return t.everythingLoaded?e:e.split(" ").map(t=>"load"===t||t.startsWith("load.")?"rocket-jquery-load":t).join(" ")}function o(o){function s(e){const s=o.fn[e];o.fn[e]=o.fn.init.prototype[e]=function(){return this[0]===window&&t.userActionTriggered&&("string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=i(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach(t=>{const e=arguments[0][t];delete arguments[0][t],arguments[0][i(t)]=e})),s.apply(this,arguments),this}}if(o&&o.fn&&!t.allJQueries.includes(o)){const e={DOMContentLoaded:[],"rocket-DOMContentLoaded":[]};for(const t in e)document.addEventListener(t,()=>{e[t].forEach(t=>t())},{isRocket:!0});o.fn.ready=o.fn.init.prototype.ready=function(i){function s(){parseInt(o.fn.jquery)>2?setTimeout(()=>i.bind(document)(o)):i.bind(document)(o)}return"function"==typeof i&&(t.realDomReadyFired?!t.userActionTriggered||t.fauxDomReadyFired?s():e["rocket-DOMContentLoaded"].push(s):e.DOMContentLoaded.push(s)),o([])},s("on"),s("one"),s("off"),t.allJQueries.push(o)}e=o}t.allJQueries=[],o(window.jQuery),Object.defineProperty(window,"jQuery",{get:()=>e,set(t){o(t)}})}P(){const t=new Map;document.write=document.writeln=function(e){const i=document.currentScript,o=document.createRange(),s=i.parentElement;let n=t.get(i);void 0===n&&(n=i.nextSibling,t.set(i,n));const c=document.createDocumentFragment();o.setStart(c,0),c.appendChild(o.createContextualFragment(e)),s.insertBefore(c,n)}}async R(){return new Promise(t=>{this.userActionTriggered?t():this.onFirstUserAction=t})}async L(){return new Promise(t=>{document.addEventListener("DOMContentLoaded",()=>{this.realDomReadyFired=!0,t()},{isRocket:!0})})}async j(){return this.realWindowLoadedFired?Promise.resolve():new Promise(t=>{window.addEventListener("load",t,{isRocket:!0})})}M(){this.pendingScripts=[];this.scriptsMutationObserver=new MutationObserver(t=>{for(const e of t)e.addedNodes.forEach(t=>{"SCRIPT"!==t.tagName||t.noModule||t.isWPRocket||this.pendingScripts.push({script:t,promise:new Promise(e=>{const i=()=>{const i=this.pendingScripts.findIndex(e=>e.script===t);i>=0&&this.pendingScripts.splice(i,1),e()};t.addEventListener("load",i,{isRocket:!0}),t.addEventListener("error",i,{isRocket:!0}),setTimeout(i,1e3)})})})}),this.scriptsMutationObserver.observe(document,{childList:!0,subtree:!0})}async F(){await this.X(),this.pendingScripts.length?(await this.pendingScripts[0].promise,await this.F()):this.scriptsMutationObserver.disconnect()}D(){this.delayedScripts={normal:[],async:[],defer:[]},document.querySelectorAll("script[type$=rocketlazyloadscript]").forEach(t=>{t.hasAttribute("data-rocket-src")?t.hasAttribute("async")&&!1!==t.async?this.delayedScripts.async.push(t):t.hasAttribute("defer")&&!1!==t.defer||"module"===t.getAttribute("data-rocket-type")?this.delayedScripts.defer.push(t):this.delayedScripts.normal.push(t):this.delayedScripts.normal.push(t)})}async _(){await this.L();let t=[];document.querySelectorAll("script[type$=rocketlazyloadscript][data-rocket-src]").forEach(e=>{let i=e.getAttribute("data-rocket-src");if(i&&!i.startsWith("data:")){i.startsWith("//")&&(i=location.protocol+i);try{const o=new URL(i).origin;o!==location.origin&&t.push({src:o,crossOrigin:e.crossOrigin||"module"===e.getAttribute("data-rocket-type")})}catch(t){}}}),t=[...new Map(t.map(t=>[JSON.stringify(t),t])).values()],this.Y(t,"preconnect")}async G(t){if(await this.K(),!0!==t.noModule||!("noModule"in HTMLScriptElement.prototype))return new Promise(e=>{let i;function o(){(i||t).setAttribute("data-rocket-status","executed"),e()}try{if(navigator.userAgent.includes("Firefox/")||""===navigator.vendor||this.CSPIssue)i=document.createElement("script"),[...t.attributes].forEach(t=>{let e=t.nodeName;"type"!==e&&("data-rocket-type"===e&&(e="type"),"data-rocket-src"===e&&(e="src"),i.setAttribute(e,t.nodeValue))}),t.text&&(i.text=t.text),t.nonce&&(i.nonce=t.nonce),i.hasAttribute("src")?(i.addEventListener("load",o,{isRocket:!0}),i.addEventListener("error",()=>{i.setAttribute("data-rocket-status","failed-network"),e()},{isRocket:!0}),setTimeout(()=>{i.isConnected||e()},1)):(i.text=t.text,o()),i.isWPRocket=!0,t.parentNode.replaceChild(i,t);else{const i=t.getAttribute("data-rocket-type"),s=t.getAttribute("data-rocket-src");i?(t.type=i,t.removeAttribute("data-rocket-type")):t.removeAttribute("type"),t.addEventListener("load",o,{isRocket:!0}),t.addEventListener("error",i=>{this.CSPIssue&&i.target.src.startsWith("data:")?(console.log("WPRocket: CSP fallback activated"),t.removeAttribute("src"),this.G(t).then(e)):(t.setAttribute("data-rocket-status","failed-network"),e())},{isRocket:!0}),s?(t.fetchPriority="high",t.removeAttribute("data-rocket-src"),t.src=s):t.src="data:text/javascript;base64,"+window.btoa(unescape(encodeURIComponent(t.text)))}}catch(i){t.setAttribute("data-rocket-status","failed-transform"),e()}});t.setAttribute("data-rocket-status","skipped")}async C(t){const e=t.shift();return e?(e.isConnected&&await this.G(e),this.C(t)):Promise.resolve()}O(){this.Y([...this.delayedScripts.normal,...this.delayedScripts.defer,...this.delayedScripts.async],"preload")}Y(t,e){this.trash=this.trash||[];let i=!0;var o=document.createDocumentFragment();t.forEach(t=>{const s=t.getAttribute&&t.getAttribute("data-rocket-src")||t.src;if(s&&!s.startsWith("data:")){const n=document.createElement("link");n.href=s,n.rel=e,"preconnect"!==e&&(n.as="script",n.fetchPriority=i?"high":"low"),t.getAttribute&&"module"===t.getAttribute("data-rocket-type")&&(n.crossOrigin=!0),t.crossOrigin&&(n.crossOrigin=t.crossOrigin),t.integrity&&(n.integrity=t.integrity),t.nonce&&(n.nonce=t.nonce),o.appendChild(n),this.trash.push(n),i=!1}}),document.head.appendChild(o)}W(){this.trash.forEach(t=>t.remove())}async T(){try{document.readyState="interactive"}catch(t){}this.fauxDomReadyFired=!0;try{await this.K(),this.J(document,"readystatechange"),document.dispatchEvent(new Event("rocket-readystatechange")),await this.K(),document.rocketonreadystatechange&&document.rocketonreadystatechange(),await this.K(),this.J(document,"DOMContentLoaded"),document.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this.K(),this.J(window,"DOMContentLoaded"),window.dispatchEvent(new Event("rocket-DOMContentLoaded"))}catch(t){console.error(t)}}async A(){try{document.readyState="complete"}catch(t){}try{await this.K(),this.J(document,"readystatechange"),document.dispatchEvent(new Event("rocket-readystatechange")),await this.K(),document.rocketonreadystatechange&&document.rocketonreadystatechange(),await this.K(),this.J(window,"load"),window.dispatchEvent(new Event("rocket-load")),await this.K(),window.rocketonload&&window.rocketonload(),await this.K(),this.allJQueries.forEach(t=>t(window).trigger("rocket-jquery-load")),await this.K(),this.J(window,"pageshow");const t=new Event("rocket-pageshow");t.persisted=this.persisted,window.dispatchEvent(t),await this.K(),window.rocketonpageshow&&window.rocketonpageshow({persisted:this.persisted})}catch(t){console.error(t)}}async K(){Date.now()-this.lastBreath>45&&(await this.X(),this.lastBreath=Date.now())}async X(){return document.hidden?new Promise(t=>setTimeout(t)):new Promise(t=>requestAnimationFrame(t))}B(t,e){return e===document&&"readystatechange"===t||(e===document&&"DOMContentLoaded"===t||(e===window&&"DOMContentLoaded"===t||(e===window&&"load"===t||e===window&&"pageshow"===t)))}static run(){(new RocketLazyLoadScripts).t()}}RocketLazyLoadScripts.run()})();</script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<link rel="icon" type="image/jpg" href="https://www.iiad.edu.in/wp-content/themes/iiad/asset/images/iiad-fevicon.jpg" />
+				<link data-minify="1" rel="stylesheet" type="text/css" href="https://www.iiad.edu.in/wp-content/cache/min/1/wp-content/themes/iiad/asset/jarallax/jarallax.css?ver=1764495934"/>
+		
+
+
+		<link data-minify="1" rel="stylesheet" type="text/css" href="https://www.iiad.edu.in/wp-content/cache/min/1/mtu5zcc.css?ver=1764495935"/>
+		
+		 
+    
+ 
+
+		<!-- merge files -->
+		<link data-minify="1" rel="stylesheet" type="text/css" href="https://www.iiad.edu.in/wp-content/cache/min/1/2.0/LineIcons.css?ver=1764495935"/>
+		<link data-minify="1" rel="stylesheet" type="text/css" href="https://www.iiad.edu.in/wp-content/cache/min/1/wp-content/themes/iiad/asset/css/merge-optimised.css?ver=1764495935"/>  
+		<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	<script type="rocketlazyloadscript" data-rocket-type="text/javascript">
+    (function() {
+  var pvData = {"source":"Direct","referrer":"Direct","visitor_type":"logged out","visitor_login_status":"logged out","visitor_id":0,"page_title":"Design Courses: Best Design College in Delhi, India | IIAD","post_type":"page","post_type_with_prefix":"single page","post_categories":"","post_tags":"","post_author":"IIAD","post_full_date":"August 13, 2021","post_year":"2021","post_month":"08","post_day":"13","is_front_page":1,"is_home":1,"search_query":"","search_results_count":0};
+  var body = {
+    url: encodeURIComponent(window.location.href),
+    referrer: encodeURIComponent(document.referrer)
+  };
+
+  function makePostRequest(e,t){var n=[];if(t.body){for(var o in t.body)n.push(encodeURIComponent(o)+"="+encodeURIComponent(t.body[o]));t.body=n.join("&")}return window.fetch?new Promise(n=>{var o={method:"POST",headers:{"Content-Type":"application/x-www-form-urlencoded"},redirect:"follow",body:{},...t};window.fetch(e,o).then(e=>{n(e.text())})}):new Promise(t=>{var o;"undefined"==typeof XMLHttpRequest&&t(null),(o=new XMLHttpRequest).open("POST",e,!0),o.onreadystatechange=function(){4==o.readyState&&200==o.status&&t(o.responseText)},o.setRequestHeader("Content-type","application/x-www-form-urlencoded"),o.send(n.join("&"))})}
+  function observeAjaxCartActions(e){new PerformanceObserver(function(t){for(var n=t.getEntries(),r=0;r<n.length;r++)["xmlhttprequest","fetch"].includes(n[r].initiatorType)&&['=get_refreshed_fragments', 'add_to_cart'].some(p => n[r].name.includes(p))&&fetchCart(e)}).observe({entryTypes:["resource"]})};
+
+  function fetchCart(adapter) {
+    makePostRequest("//www.iiad.edu.in/index.php?plugin=optimonk&action=cartData", { body })
+      .then((response) => {
+        var data = JSON.parse(response);
+        setCartData(data, adapter);
+      })
+  }
+
+  function setCartData(cartData, adapter) {
+    Object.keys(cartData.avs).forEach((key, value) => {
+      adapter.attr(`wp_${key}`, cartData.avs[key]);
+    })
+  }
+
+  function setAssocData(assocData, adapter) {
+    Object.keys(assocData).forEach((key) => {
+      adapter.attr(`wp_${key}`, assocData[key]);
+    })
+  }
+
+  var RuleHandler = {
+    hasVisitorCartRules: (campaignMeta) => {
+      return !!(campaignMeta.rules.visitorCart || campaignMeta.rules.visitorCartRevamp || campaignMeta.rules.visitorCartV3);
+    },
+    hasVisitorAttributeRule: (campaignMeta) => {
+      return !!campaignMeta.rules.visitorAttribute;
+    }
+  }
+
+  document.querySelector('html').addEventListener('optimonk#embedded-campaigns-init', function(e) {
+    var campaignsData = e.parameters;
+
+    if (!campaignsData.length) {
+      return;
+    }
+
+    var adapter = window.OptiMonkEmbedded.Visitor.createAdapter();
+    var hasCartRule = false;
+    var hasAttributeRule = false;
+
+    campaignsData.forEach((campaignMetaData) => {
+      hasCartRule = hasCartRule || RuleHandler.hasVisitorCartRules(campaignMetaData);
+      hasAttributeRule = hasAttributeRule || RuleHandler.hasVisitorAttributeRule(campaignMetaData);
+    });
+
+    setAssocData(pvData, adapter);
+
+    if (hasCartRule) {
+      observeAjaxCartActions(adapter);
+      fetchCart(adapter);
+    }
+
+    if (hasAttributeRule) {
+      makePostRequest("//www.iiad.edu.in/index.php?plugin=optimonk&action=productData", { body })
+        .then((response) => {
+          var data = JSON.parse(response);
+          setAssocData(data, adapter);
+        })
+    }
+  });
+
+  document.querySelector('html').addEventListener('optimonk#campaigns_initialized', function () {
+    if (!OptiMonk.campaigns) {
+      return;
+    }
+
+    var adapter = window.OptiMonk.Visitor.createAdapter();
+
+    setAssocData(pvData, adapter);
+
+    if (OptiMonk.campaigns.filter(campaign => campaign.hasVisitorAttributeRules()).length) {
+      makePostRequest("//www.iiad.edu.in/index.php?plugin=optimonk&action=productData", { body })
+        .then((response) => {
+          var data = JSON.parse(response);
+          setAssocData(data, adapter);
+        });
+    }
+  });
+}());
+
+    window.WooDataForOM = {
+    "shop": {
+        "pluginVersion": "2.1.3",
+        "platform": "wordpress"
+    },
+    "page": {
+        "postId": 45,
+        "postType": "page"
+    },
+    "product": null,
+    "order": null,
+    "category": null
+};
+
+let hasCampaignsBeforeLoadTriggered = false;
+
+document.querySelector('html').addEventListener('optimonk#campaigns-before-load', () => {
+
+    if (hasCampaignsBeforeLoadTriggered) return;
+    hasCampaignsBeforeLoadTriggered = true;
+
+    function setAssocData(assocData, adapter) {
+        Object.keys(assocData).forEach((key) => {
+        adapter.attr(`wp_${key}`, assocData[key]);
+        })
+    }
+
+   function triggerEvent(element, eventName, parameters) {
+        let event;
+        if (document.createEvent) {
+            event = document.createEvent('HTMLEvents');
+            event.initEvent(eventName, true, true);
+        } else if (document.createEventObject) {
+            event = document.createEventObject();
+            event.eventType = eventName;
+        }
+
+        event.eventName = eventName;
+        event.parameters = parameters || {};
+
+        if (element.dispatchEvent) {
+            element.dispatchEvent(event);
+        } else if (element.fireEvent) {
+            element.fireEvent(`on${event.eventType}`, event);
+        } else if (element[eventName]) {
+            element[eventName]();
+        } else if (element[`on${eventName}`]) {
+            element[`on${eventName}`]();
+        }
+    };
+    
+    var adapter = OptiMonkEmbedded.Visitor.createAdapter();
+
+    var orderData = null;
+    
+
+    if (orderData) {
+        setAssocData(orderData, adapter);
+    }
+
+    console.log('[OM-plugin] visitor attributes updated');
+
+    console.log('[OM-plugin] triggered event: optimonk#wc-attributes-updated');
+    triggerEvent(document.querySelector('html'), 'optimonk#wc-attributes-updated');
+
+});
+
+if (window.WooDataForOM) {
+    console.log('[OM-plugin] varibles inserted (window.WooDataForOM)');
+}
+
+
+</script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://onsite.optimonk.com/script.js?account=245040" async></script>
+	<!-- This site is optimized with the Yoast SEO plugin v26.4 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>Design Courses: Best Design College in Delhi, India | IIAD</title>
+	<meta name="description" content="Design Courses: IIAD is one of India’s top colleges for Fashion, Interior, Communication, Animation, UI/UX, Fashion Business Management and Luxury Business Management Design. Apply now to pursue leading design courses." />
+	<link rel="canonical" href="https://www.iiad.edu.in/" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Design Courses: Best Design College in Delhi, India | IIAD" />
+	<meta property="og:description" content="Design Courses: IIAD is one of India’s top colleges for Fashion, Interior, Communication, Animation, UI/UX, Fashion Business Management and Luxury Business Management Design. Apply now to pursue leading design courses." />
+	<meta property="og:url" content="https://www.iiad.edu.in/" />
+	<meta property="og:site_name" content="IIAD" />
+	<meta property="article:modified_time" content="2025-01-03T05:30:17+00:00" />
+	<meta property="og:image" content="https://www.iiad.edu.in/wp-content/uploads/2022/05/iiad-logo.webp" />
+	<meta property="og:image:width" content="200" />
+	<meta property="og:image:height" content="200" />
+	<meta property="og:image:type" content="image/webp" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="Design Courses: Best Design College in Delhi, India | IIAD" />
+	<meta name="twitter:description" content="Design Courses: IIAD is one of India’s top colleges for Fashion, Interior, Communication, Animation, UI/UX, Fashion Business Management and Luxury Business Management Design. Apply now to pursue leading design courses." />
+	<meta name="twitter:image" content="https://www.iiad.edu.in/wp-content/uploads/2022/05/iiad-logo.webp" />
+	<!-- / Yoast SEO plugin. -->
+
+
+
+<style id='wp-emoji-styles-inline-css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<style id='wp-block-library-theme-inline-css'>
+.wp-block-audio :where(figcaption){color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-audio :where(figcaption){color:#ffffffa6}.wp-block-audio{margin:0 0 1em}.wp-block-code{border:1px solid #ccc;border-radius:4px;font-family:Menlo,Consolas,monaco,monospace;padding:.8em 1em}.wp-block-embed :where(figcaption){color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-embed :where(figcaption){color:#ffffffa6}.wp-block-embed{margin:0 0 1em}.blocks-gallery-caption{color:#555;font-size:13px;text-align:center}.is-dark-theme .blocks-gallery-caption{color:#ffffffa6}:root :where(.wp-block-image figcaption){color:#555;font-size:13px;text-align:center}.is-dark-theme :root :where(.wp-block-image figcaption){color:#ffffffa6}.wp-block-image{margin:0 0 1em}.wp-block-pullquote{border-bottom:4px solid;border-top:4px solid;color:currentColor;margin-bottom:1.75em}.wp-block-pullquote cite,.wp-block-pullquote footer,.wp-block-pullquote__citation{color:currentColor;font-size:.8125em;font-style:normal;text-transform:uppercase}.wp-block-quote{border-left:.25em solid;margin:0 0 1.75em;padding-left:1em}.wp-block-quote cite,.wp-block-quote footer{color:currentColor;font-size:.8125em;font-style:normal;position:relative}.wp-block-quote:where(.has-text-align-right){border-left:none;border-right:.25em solid;padding-left:0;padding-right:1em}.wp-block-quote:where(.has-text-align-center){border:none;padding-left:0}.wp-block-quote.is-large,.wp-block-quote.is-style-large,.wp-block-quote:where(.is-style-plain){border:none}.wp-block-search .wp-block-search__label{font-weight:700}.wp-block-search__button{border:1px solid #ccc;padding:.375em .625em}:where(.wp-block-group.has-background){padding:1.25em 2.375em}.wp-block-separator.has-css-opacity{opacity:.4}.wp-block-separator{border:none;border-bottom:2px solid;margin-left:auto;margin-right:auto}.wp-block-separator.has-alpha-channel-opacity{opacity:1}.wp-block-separator:not(.is-style-wide):not(.is-style-dots){width:100px}.wp-block-separator.has-background:not(.is-style-dots){border-bottom:none;height:1px}.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots){height:2px}.wp-block-table{margin:0 0 1em}.wp-block-table td,.wp-block-table th{word-break:normal}.wp-block-table :where(figcaption){color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-table :where(figcaption){color:#ffffffa6}.wp-block-video :where(figcaption){color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-video :where(figcaption){color:#ffffffa6}.wp-block-video{margin:0 0 1em}:root :where(.wp-block-template-part.has-background){margin-bottom:0;margin-top:0;padding:1.25em 2.375em}
+</style>
+<style id='classic-theme-styles-inline-css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='global-styles-inline-css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #FFFFFF;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--dark-gray: #28303D;--wp--preset--color--gray: #39414D;--wp--preset--color--green: #D1E4DD;--wp--preset--color--blue: #D1DFE4;--wp--preset--color--purple: #D1D1E4;--wp--preset--color--red: #E4D1D1;--wp--preset--color--orange: #E4DAD1;--wp--preset--color--yellow: #EEEADD;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--gradient--purple-to-yellow: linear-gradient(160deg, #D1D1E4 0%, #EEEADD 100%);--wp--preset--gradient--yellow-to-purple: linear-gradient(160deg, #EEEADD 0%, #D1D1E4 100%);--wp--preset--gradient--green-to-yellow: linear-gradient(160deg, #D1E4DD 0%, #EEEADD 100%);--wp--preset--gradient--yellow-to-green: linear-gradient(160deg, #EEEADD 0%, #D1E4DD 100%);--wp--preset--gradient--red-to-yellow: linear-gradient(160deg, #E4D1D1 0%, #EEEADD 100%);--wp--preset--gradient--yellow-to-red: linear-gradient(160deg, #EEEADD 0%, #E4D1D1 100%);--wp--preset--gradient--purple-to-red: linear-gradient(160deg, #D1D1E4 0%, #E4D1D1 100%);--wp--preset--gradient--red-to-purple: linear-gradient(160deg, #E4D1D1 0%, #D1D1E4 100%);--wp--preset--font-size--small: 18px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 24px;--wp--preset--font-size--x-large: 42px;--wp--preset--font-size--extra-small: 16px;--wp--preset--font-size--normal: 20px;--wp--preset--font-size--extra-large: 40px;--wp--preset--font-size--huge: 96px;--wp--preset--font-size--gigantic: 144px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+</style>
+<link data-minify="1" rel='stylesheet' id='twenty-twenty-one-style-css' href='https://www.iiad.edu.in/wp-content/cache/min/1/wp-content/themes/iiad/style.css?ver=1764495935' media='all' />
+<style id='twenty-twenty-one-style-inline-css'>
+:root{--global--color-background: #ffffff;--global--color-primary: #000;--global--color-secondary: #000;--button--color-background: #000;--button--color-text-hover: #000;}
+</style>
+<link rel='stylesheet' id='twenty-twenty-one-print-style-css' href='https://www.iiad.edu.in/wp-content/themes/iiad/assets/css/print.css?ver=1.4' media='print' />
+<script type="rocketlazyloadscript" data-rocket-src="https://www.iiad.edu.in/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js" data-rocket-defer defer></script>
+<script type="rocketlazyloadscript" data-rocket-src="https://www.iiad.edu.in/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js" data-rocket-defer defer></script>
+<script id="my_voter_script-js-extra" type="95385ea38a008c76dd5b4301-text/javascript">
+var myAjax = {"ajaxurl":"https:\/\/www.iiad.edu.in\/wp-admin\/admin-ajax.php"};
+</script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-src="https://www.iiad.edu.in/wp-content/cache/min/1/wp-content/themes/iiad/js/my_voter_script.js?ver=1764495935" id="my_voter_script-js" data-rocket-defer defer></script>
+<link rel="https://api.w.org/" href="https://www.iiad.edu.in/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://www.iiad.edu.in/wp-json/wp/v2/pages/45" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.iiad.edu.in/xmlrpc.php?rsd" />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://www.iiad.edu.in/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.iiad.edu.in%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://www.iiad.edu.in/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.iiad.edu.in%2F&#038;format=xml" />
+<!-- Preload LCP Element - WordPress Plugin --><link rel="preload" fetchpriority="high"  href="https://www.iiad.edu.in/wp-content/uploads/2022/06/AND_IIAD_BANNER_PURPLE-BG-0-00-02-25.webp" ><!-- / Preload LCP Element - WordPress Plugin --><style id="custom-background-css">
+body.custom-background { background-color: #ffffff; }
+</style>
+	<link rel="icon" href="https://www.iiad.edu.in/wp-content/uploads/2021/08/iiad-logo.png" sizes="32x32" />
+<link rel="icon" href="https://www.iiad.edu.in/wp-content/uploads/2021/08/iiad-logo.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://www.iiad.edu.in/wp-content/uploads/2021/08/iiad-logo.png" />
+<meta name="msapplication-TileImage" content="https://www.iiad.edu.in/wp-content/uploads/2021/08/iiad-logo.png" />
+		<style id="wp-custom-css">
+			 
+@media only screen and (min-width: 320px) and (max-width: 992px) {
+    div.blog_table {
+        width: 300px;
+        overflow: scroll;
+    }
+}
+
+.purple_banner{overflow:hidden;}
+
+
+.home_main_menu { 
+     z-index: 99;
+}
+.dropdown_mega_menu { 
+	z-index: 9 !important; top: 6.099561vw !important; border: 0 !important;}
+.megamenu_left_wrap {
+   
+   padding: 0.928258vw 0 !important;
+}
+.homelogo_hold{position:relative; z-index:9;} 
+.mega_menu_bg_layer{z-index:1 !important;}
+
+ 
+}		</style>
+		<noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript>		
+		
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script type="rocketlazyloadscript" async data-rocket-src="https://www.googletagmanager.com/gtag/js?id=UA-55971689-1"></script>
+		
+		<script type="rocketlazyloadscript">
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'UA-55971689-1');
+		</script>
+
+		<!-- Google Tag Manager -->
+		<script type="rocketlazyloadscript">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-K22NCHF');</script>
+		<!-- End Google Tag Manager -->
+
+
+
+		
+
+<style>
+.bottom_sub_menu li a p {
+    color: var(--black);
+    text-transform: uppercase;
+    font-family: acumin-pro,sans-serif;
+    font-weight: 300;
+    text-decoration: none;
+    font-size: .8052708638360175vw;
+    display: block;
+    white-space: nowrap;
+    position: relative;
+	margin-bottom: .5rem;
+	
+}
+.bottom_sub_menu li a p {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.common_caption figure img{height: auto;}
+
+.bottom_sub_menu li a:hover:after, .bottom_sub_menu li.active a:after {
+    -webkit-transform-origin: left top;
+    --transform-origin: left top;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+.homelogo_img:nth-child(1) {
+    width: 0;
+}
+
+.homelogo_hold a img {
+	width: 13.2vw;
+    height: auto;
+}
+.homelogo_slogan {
+    margin: .5vw .8vw 0 .5vw;
+}
+#menu-item-21016 a {
+    color: #5926c4;
+    font-weight: 700;
+}
+#menu-item-37158{
+	
+    display: none;
+}
+ 
+</style>
+
+ 
+
+	<meta name="generator" content="WP Rocket 3.20.1.2" data-wpr-features="wpr_delay_js wpr_defer_js wpr_minify_js wpr_lazyload_iframes wpr_image_dimensions wpr_minify_css wpr_preload_links wpr_desktop" /></head>
+	<body data-rsssl=1 class="desktop hide_default_cursor">
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K22NCHF"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+	<script type="rocketlazyloadscript" data-dont-merge=""> var npf_d='https://apply.iiad.edu.in'; var npf_c='525'; var npf_m='1'; var s=document.createElement("script"); s.type="text/javascript"; s.async=true; s.src="https://track.nopaperforms.com/js/track.js"; document.body.appendChild(s); </script>
+		<!--<div id="loading"></div>-->
+				<header  class="home_header_wrp">
+						<div  class="notification_alert alert_yellow">
+			<div >
+				<p> Take a Design Quiz &#8211; <a href="https://www.iiad.edu.in/creative-quotient/" target="_blank">Discover your creative Quotient</a> </p>
+			</div> 
+				<a href="javascript:;" class="close_notification">+</a>
+			 
+		</div>
+												<nav class="home_navbar">
+				<div class="home_logo">
+					<div class="homelogo_hold">
+						<a href="https://www.iiad.edu.in">
+							<img width="99" height="99" class="homelogo_img" src="https://www.iiad.edu.in/wp-content/themes/iiad/asset/svg/iiad-logo.svg" alt="IIAD Home Logo"/>
+							<img width="1386" height="636" class="homelogo_slogan" src="https://www.iiad.edu.in/wp-content/themes/iiad/asset/images/10_logo.png" alt="Indian Institute of Art & Design Logo " />
+						</a>
+					</div>
+				</div>
+				<div class="home_main_menu">
+					<div class="mainmenu_left_right">
+						<ul class="mainmenu_left_wrp megamenu_hold"><li id="menu-item-12643" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12643"><a href="https://www.iiad.edu.in/about-us/">About us</a></li>
+<li id="menu-item-13517" class="item_sub_menu menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-13517"><a href="#programm" class="dropdown_megamenu_js">Programmes</a><button class="sub-menu-toggle" aria-expanded="false" onClick="if (!window.__cfRLUnblockHandlers) return false; twentytwentyoneExpandSubMenu(this)" data-cf-modified-95385ea38a008c76dd5b4301-=""><span class="icon-plus"><svg class="svg-icon" width="18" height="18" aria-hidden="true" role="img" focusable="false" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M18 11.2h-5.2V6h-1.6v5.2H6v1.6h5.2V18h1.6v-5.2H18z" fill="currentColor"/></svg></span><span class="icon-minus"><svg class="svg-icon" width="18" height="18" aria-hidden="true" role="img" focusable="false" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M6 11h12v2H6z" fill="currentColor"/></svg></span><span class="screen-reader-text">Open menu</span></button><i class='plusminus_anim nintydeg dropdown_megamenu_js mbl_menu_expend_icon'><span class=''></span><span></span></i><div class='rightmenu' style='display:none'><div><ul><li><a href='https://www.iiad.edu.in/how-we-teach/' data-content='How We Teach'>How We Teach</a></li></ul><p>Our five-pronged approach focuses on your individual strengths to develop your unique qualities towards making you an exemplary pi- designer.</p></div><a class='explore_more_cta explore_without_txt' href='https://www.iiad.edu.in/how-we-teach/'><span class='explore_arrow'></span></a></div><div class='dropdown_mega_menu'><img src='' class='close_mega_menu' id='close_mega_menu'><div class='mega_manu_edge'><div class='mega_menu_align'><div class='megamenu_left_wrap'><ul>	<li id="menu-item-12644" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12644"><a href="https://www.iiad.edu.in/programmes/">Overview</a></li>
+	<li id="menu-item-13119" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-13119"><a href="https://www.iiad.edu.in/programmes/foundation-course/" class="dropdown_megamenu_js">Foundation in Design</a>
+	<ul>
+		<li id="menu-item-15367" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-15367"><a href="#UG">UG</a></li>
+	</ul></li>
+	<li id="menu-item-31599" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-31599"><a href="https://www.iiad.edu.in/programmes/communication-design-course/" class="dropdown_megamenu_js">B.Des. Communication Design</a>
+	<ul>
+		<li id="menu-item-14059" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14059"><a href="#UG">UG</a></li>
+	</ul></li>
+	<li id="menu-item-31597" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-31597"><a href="https://www.iiad.edu.in/programmes/animation-film-design/" class="dropdown_megamenu_js">B.Des. Animation Film Design</a>
+	<ul>
+		<li id="menu-item-31725" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-31725"><a href="#">UG</a></li>
+	</ul></li>
+	<li id="menu-item-25941" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-25941"><a href="https://www.iiad.edu.in/programmes/interior-architecture-and-design/" class="dropdown_megamenu_js">B.Des. Interior Architecture &#038; Design</a>
+	<ul>
+		<li id="menu-item-14061" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14061"><a href="#UG">UG</a></li>
+	</ul></li>
+	<li id="menu-item-31595" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-31595"><a href="https://www.iiad.edu.in/programmes/product-design-course/" class="dropdown_megamenu_js">B.Des. Product Design</a>
+	<ul>
+		<li id="menu-item-31724" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-31724"><a href="#">UG</a></li>
+	</ul></li>
+	<li id="menu-item-25457" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-25457"><a href="https://www.iiad.edu.in/programmes/fashion-design-course/" class="dropdown_megamenu_js">B.Des. Fashion Design</a>
+	<ul>
+		<li id="menu-item-13044" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-13044"><a href="#UG">UG</a></li>
+	</ul></li>
+	<li id="menu-item-13115" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-13115"><a href="https://www.iiad.edu.in/programmes/fashion-communication/" class="dropdown_megamenu_js">B.Des. Fashion Communication</a>
+	<ul>
+		<li id="menu-item-14065" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14065"><a href="#UG">UG</a></li>
+	</ul></li>
+	<li id="menu-item-31600" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-31600"><a href="https://www.iiad.edu.in/programmes/fashion-business-management/" class="dropdown_megamenu_js">BBA Fashion Business Management</a>
+	<ul>
+		<li id="menu-item-14063" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14063"><a href="#UG">UG</a></li>
+	</ul></li>
+	<li id="menu-item-31596" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-31596"><a href="https://www.iiad.edu.in/programmes/luxury-business-management/" class="dropdown_megamenu_js">BBA Luxury Business Management</a>
+	<ul>
+		<li id="menu-item-31723" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-31723"><a href="#">UG</a></li>
+	</ul></li>
+	<li id="menu-item-36812" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-36812"><a href="https://www.iiad.edu.in/programmes/communication-design-pg-course/" class="dropdown_megamenu_js">M.Des. Communication Design (PG)</a>
+	<ul>
+		<li id="menu-item-34937" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-34937"><a href="#">PG</a></li>
+	</ul></li>
+	<li id="menu-item-36811" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-36811"><a href="https://www.iiad.edu.in/programmes/interior-design-and-styling-pg-course/" class="dropdown_megamenu_js">M.Des. Interior Design &#038; Styling</a>
+	<ul>
+		<li id="menu-item-36369" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-36369"><a href="#">PG</a></li>
+	</ul></li>
+	<li id="menu-item-36808" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-36808"><a href="https://www.iiad.edu.in/programmes/luxury-and-fashion-business-management-pg-course/" class="dropdown_megamenu_js">MBA Luxury &#038; Fashion Business Management</a>
+	<ul>
+		<li id="menu-item-36810" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-36810"><a href="#">PG</a></li>
+	</ul></li>
+	<li id="menu-item-35253" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-35253"><a href="https://www.andacademy.com/">Online Short Courses with AND Academy</a></li>
+	<li id="menu-item-13489" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13489"><a href="https://www.iiad.edu.in/how-we-teach/">How we teach</a></li>
+</ul></div>
+<div class='megamenu_right_wrap'><div class='megamenu_right_inner'></div></div></li>
+<li id="menu-item-23842" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23842"><a href="https://www.iiad.edu.in/admissions/">Admissions</a></li>
+<li id="menu-item-12646" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12646"><a href="https://www.iiad.edu.in/student-life-at-iiad/">Life at iiad</a></li>
+<li id="menu-item-12647" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12647"><a href="https://www.iiad.edu.in/people/">People</a></li>
+<li id="menu-item-12648" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12648"><a href="https://www.iiad.edu.in/iiad-industry/">IIAD &#038; Industry</a></li>
+<li id="menu-item-12649" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12649"><a href="https://www.iiad.edu.in/the-circle/">The circle</a></li>
+<li id="menu-item-21016" class="mob_hide menu-item menu-item-type-custom menu-item-object-custom menu-item-21016"><a target="_blank" href="https://www.iiad.edu.in/programmes/summer-design-bootcamp-ai-luxury-business-2026/">Pre-College</a></li>
+<li id="menu-item-35127" class="desk_hide menu-item menu-item-type-custom menu-item-object-custom menu-item-35127"><a href="https://www.iiad.edu.in/wp-content/uploads/2025/05/Feb_Newsletterfor-webpage.pdf">Newsletter</a></li>
+<li id="menu-item-13113" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13113"><a href="https://www.iiad.edu.in/contact-us/">Contact</a></li>
+<li id="menu-item-13897" class="d-none menu-item menu-item-type-post_type menu-item-object-page menu-item-13897"><a href="https://www.iiad.edu.in/online-fee-payment/">Online fee payment</a></li>
+<li id="menu-item-37158" class="desk_hide menu-item menu-item-type-custom menu-item-object-custom menu-item-37158"><a href="https://www.iiad.edu.in/10-years-of-iiad/">10 YEARS OF IIAD</a></li>
+<li id="menu-item-35136" class="desk_hide menu-item menu-item-type-custom menu-item-object-custom menu-item-35136"><a href="https://www.iiad.edu.in/programmes/summer-design-bootcamp-ai-luxury-business-2026/">Pre-College</a></li>
+<li id="menu-item-35137" class="mob_hide menu-item menu-item-type-custom menu-item-object-custom menu-item-35137"><a>Newsletter</a></li>
+</ul>						<div class="mainmenu_right_wrp">
+							<a href="#search" class="home_search_icon open_search_bar_js">
+								<span>Search</span>
+								<svg class="svg-icon" aria-hidden="true" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 23 23"><path d="M38.710696,48.0601792 L43,52.3494831 L41.3494831,54 L37.0601792,49.710696 C35.2632422,51.1481185 32.9839107,52.0076499 30.5038249,52.0076499 C24.7027226,52.0076499 20,47.3049272 20,41.5038249 C20,35.7027226 24.7027226,31 30.5038249,31 C36.3049272,31 41.0076499,35.7027226 41.0076499,41.5038249 C41.0076499,43.9839107 40.1481185,46.2632422 38.710696,48.0601792 Z M36.3875844,47.1716785 C37.8030221,45.7026647 38.6734666,43.7048964 38.6734666,41.5038249 C38.6734666,36.9918565 35.0157934,33.3341833 30.5038249,33.3341833 C25.9918565,33.3341833 22.3341833,36.9918565 22.3341833,41.5038249 C22.3341833,46.0157934 25.9918565,49.6734666 30.5038249,49.6734666 C32.7048964,49.6734666 34.7026647,48.8030221 36.1716785,47.3875844 C36.2023931,47.347638 36.2360451,47.3092237 36.2726343,47.2726343 C36.3092237,47.2360451 36.347638,47.2023931 36.3875844,47.1716785 Z" transform="translate(-20 -31)"></path></svg>
+							</a>
+							<div class="home_other_cta">
+								<a data-formtype="enquiryform" data-popuptext="ENQUIRY FORM" class="ctalink_menubar ctalink_menubar_yellow popup_form_open_js" href="#enquiryform" aria-hidden="true">Enquire</a>
+								<a class="ctalink_menubar ctalink_menubar_black" target="_blank" rel="noopener" href="https://apply.iiad.edu.in/">Apply</a>
+								<a class="ctalink_menubar ctalink_menubar_purple " target="_blank" rel="noopener" href="https://www.iiad.edu.in/wp-content/uploads/2025/05/Feb_Newsletterfor-webpage.pdf">Newsletter</a>
+								 
+							</div>
+						</div>
+					</div>
+				</div>
+			</nav>
+			<!--- Inner page menu -->
+						<!-- Mobile Navbar -->
+			<nav class="mobile_navbar" style="">
+				<div class="mobile_logo">
+					<div class="mobile_hold">
+						<a href="https://www.iiad.edu.in">
+							<img width="150" height="150" class="mobile_logo_img" src="https://www.iiad.edu.in/wp-content/themes/iiad/asset/images/iiad-logo-mobile.webp" alt="IIAD Mobile Logo" />
+						</a>
+					</div>
+				</div>
+				<a href="https://www.iiad.edu.in/programmes/summer-design-bootcamp-ai-luxury-business-2026/" class="desk_hide 10year" target="_blank" style="color: #5926c4; font-weight: 700;">Pre-College</a>
+				<div class="mobile_toggle">
+					<div class="nav_tgl_btn mbl_nav_click_js">
+					  <span></span>
+					  <span></span>
+					  <span></span>
+					  <span></span>
+					</div>
+				</div>
+				<div class="mbl_submenu_scrl">
+					 									<ul class="bottom_sub_menu sub_menu_innerpage">
+																		                    																					
+                                        									                    									                    																					
+                                        																					
+                                        																					
+                                        																					
+                                        																					
+                                        																					
+                                        																					
+                                        																					
+                                        																					
+                                        																					
+                                        																					
+                                        					</ul>
+									</div>
+			</nav>
+			<div class="mobile_menu_popup">
+				<div class="mbl_menu_popup_inner">
+					<div class="mbl_menu_hold">
+						<ul class="mbl_menu_items"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12643"><a href="https://www.iiad.edu.in/about-us/">About us</a></li>
+<li class="item_sub_menu menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-13517"><a href="#programm" class="dropdown_megamenu_js">Programmes</a><button class="sub-menu-toggle" aria-expanded="false" onClick="if (!window.__cfRLUnblockHandlers) return false; twentytwentyoneExpandSubMenu(this)" data-cf-modified-95385ea38a008c76dd5b4301-=""><span class="icon-plus"><svg class="svg-icon" width="18" height="18" aria-hidden="true" role="img" focusable="false" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M18 11.2h-5.2V6h-1.6v5.2H6v1.6h5.2V18h1.6v-5.2H18z" fill="currentColor"/></svg></span><span class="icon-minus"><svg class="svg-icon" width="18" height="18" aria-hidden="true" role="img" focusable="false" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M6 11h12v2H6z" fill="currentColor"/></svg></span><span class="screen-reader-text">Open menu</span></button><i class='plusminus_anim nintydeg dropdown_megamenu_js mbl_menu_expend_icon'><span class=''></span><span></span></i><div class='rightmenu' style='display:none'><div><ul><li><a href='https://www.iiad.edu.in/how-we-teach/' data-content='How We Teach'>How We Teach</a></li></ul><p>Our five-pronged approach focuses on your individual strengths to develop your unique qualities towards making you an exemplary pi- designer.</p></div><a class='explore_more_cta explore_without_txt' href='https://www.iiad.edu.in/how-we-teach/'><span class='explore_arrow'></span></a></div>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12644"><a href="https://www.iiad.edu.in/programmes/">Overview</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-13119"><a href="https://www.iiad.edu.in/programmes/foundation-course/" class="dropdown_megamenu_js">Foundation in Design</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-15367"><a href="#UG">UG</a></li>
+	</ul>
+</li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-31599"><a href="https://www.iiad.edu.in/programmes/communication-design-course/" class="dropdown_megamenu_js">B.Des. Communication Design</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14059"><a href="#UG">UG</a></li>
+	</ul>
+</li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-31597"><a href="https://www.iiad.edu.in/programmes/animation-film-design/" class="dropdown_megamenu_js">B.Des. Animation Film Design</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-31725"><a href="#">UG</a></li>
+	</ul>
+</li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-25941"><a href="https://www.iiad.edu.in/programmes/interior-architecture-and-design/" class="dropdown_megamenu_js">B.Des. Interior Architecture &#038; Design</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14061"><a href="#UG">UG</a></li>
+	</ul>
+</li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-31595"><a href="https://www.iiad.edu.in/programmes/product-design-course/" class="dropdown_megamenu_js">B.Des. Product Design</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-31724"><a href="#">UG</a></li>
+	</ul>
+</li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-25457"><a href="https://www.iiad.edu.in/programmes/fashion-design-course/" class="dropdown_megamenu_js">B.Des. Fashion Design</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-13044"><a href="#UG">UG</a></li>
+	</ul>
+</li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-13115"><a href="https://www.iiad.edu.in/programmes/fashion-communication/" class="dropdown_megamenu_js">B.Des. Fashion Communication</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14065"><a href="#UG">UG</a></li>
+	</ul>
+</li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-31600"><a href="https://www.iiad.edu.in/programmes/fashion-business-management/" class="dropdown_megamenu_js">BBA Fashion Business Management</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14063"><a href="#UG">UG</a></li>
+	</ul>
+</li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-31596"><a href="https://www.iiad.edu.in/programmes/luxury-business-management/" class="dropdown_megamenu_js">BBA Luxury Business Management</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-31723"><a href="#">UG</a></li>
+	</ul>
+</li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-36812"><a href="https://www.iiad.edu.in/programmes/communication-design-pg-course/" class="dropdown_megamenu_js">M.Des. Communication Design (PG)</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-34937"><a href="#">PG</a></li>
+	</ul>
+</li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-36811"><a href="https://www.iiad.edu.in/programmes/interior-design-and-styling-pg-course/" class="dropdown_megamenu_js">M.Des. Interior Design &#038; Styling</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-36369"><a href="#">PG</a></li>
+	</ul>
+</li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-36808"><a href="https://www.iiad.edu.in/programmes/luxury-and-fashion-business-management-pg-course/" class="dropdown_megamenu_js">MBA Luxury &#038; Fashion Business Management</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-36810"><a href="#">PG</a></li>
+	</ul>
+</li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-35253"><a href="https://www.andacademy.com/">Online Short Courses with AND Academy</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13489"><a href="https://www.iiad.edu.in/how-we-teach/">How we teach</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23842"><a href="https://www.iiad.edu.in/admissions/">Admissions</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12646"><a href="https://www.iiad.edu.in/student-life-at-iiad/">Life at iiad</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12647"><a href="https://www.iiad.edu.in/people/">People</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12648"><a href="https://www.iiad.edu.in/iiad-industry/">IIAD &#038; Industry</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12649"><a href="https://www.iiad.edu.in/the-circle/">The circle</a></li>
+<li class="mob_hide menu-item menu-item-type-custom menu-item-object-custom menu-item-21016"><a target="_blank" href="https://www.iiad.edu.in/programmes/summer-design-bootcamp-ai-luxury-business-2026/">Pre-College</a></li>
+<li class="desk_hide menu-item menu-item-type-custom menu-item-object-custom menu-item-35127"><a href="https://www.iiad.edu.in/wp-content/uploads/2025/05/Feb_Newsletterfor-webpage.pdf">Newsletter</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13113"><a href="https://www.iiad.edu.in/contact-us/">Contact</a></li>
+<li class="d-none menu-item menu-item-type-post_type menu-item-object-page menu-item-13897"><a href="https://www.iiad.edu.in/online-fee-payment/">Online fee payment</a></li>
+<li class="desk_hide menu-item menu-item-type-custom menu-item-object-custom menu-item-37158"><a href="https://www.iiad.edu.in/10-years-of-iiad/">10 YEARS OF IIAD</a></li>
+<li class="desk_hide menu-item menu-item-type-custom menu-item-object-custom menu-item-35136"><a href="https://www.iiad.edu.in/programmes/summer-design-bootcamp-ai-luxury-business-2026/">Pre-College</a></li>
+<li class="mob_hide menu-item menu-item-type-custom menu-item-object-custom menu-item-35137"><a>Newsletter</a></li>
+</ul>					</div>
+				</div>
+			</div>	
+<div class="mega_menu_bg_layer"></div>	
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-src="https://www.iiad.edu.in/wp-content/cache/min/1/ajax/libs/gsap/2.1.2/TweenMax.min.js?ver=1764495935" data-rocket-defer defer></script>			
+		</header>
+		<!--<main class="main_body" style="margin-bottom: 585.875px;">-->
+		<main class="main_body">
+						
+					<script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "WebSite",
+    "name": "Design Courses: Best Design College in Delhi, India | IIAD",
+    "url": "https://www.iiad.edu.in/",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://www.iiad.edu.in/search?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+</script>
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "EducationalOrganization",
+    "name": "Indian Institute of Art & Design",
+    "legalName": "Indian Institute of Art & Design",
+    "email": "info@iiad.edu.in",
+    "url": "https://www.iiad.edu.in/",
+    "logo": "https://www.iiad.edu.in/wp-content/themes/iiad/asset/svg/iiad-logo.svg",
+    "sameAs": [
+      "https://www.facebook.com/iiad.design.school",
+      "https://www.instagram.com/iiad_design/",
+      "https://www.linkedin.com/school/indian-institute-of-art-and-design/",
+      "https://www.youtube.com/channel/UCW1Kw0DTsIvttIUwWuEh33g"
+    ],
+    "address": {
+      "addressLocality": "B-26, Okhla Phase 1, New Delhi",
+      "postalCode": "110020",
+      "streetAddress": "B-26, Okhla Phase 1"
+    }
+  }
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Indian Institute of Art and Design",
+  "image": "",
+  "@id": "",
+  "url": "https://www.iiad.edu.in/",
+  "telephone": "+91 11 41380000",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "B-26, Okhla Phase 1",
+    "addressLocality": "New Delhi",
+    "postalCode": "110020",
+    "addressCountry": "IN"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 28.532140422707446,
+    "longitude": 77.27910895951608
+  } ,
+  "sameAs": [
+    "https://www.facebook.com/iiad.design.school",
+    "https://www.instagram.com/iiad_design/",
+    "https://www.youtube.com/c/IIADIndianInstituteofArtDesign"
+  ] 
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://www.iiad.edu.in/",
+      "url": "https://www.iiad.edu.in/",
+      "name": "Indian Institute of Art & Design (IIAD) - Home",
+      "description": "IIAD is a premier design institute in India offering undergraduate and postgraduate programmes in design, communication, fashion, interior architecture, product design, and business management."
+    },
+    {
+      "@type": "EducationalOrganization",
+      "name": "Indian Institute of Art & Design (IIAD)",
+      "alternateName": "IIAD",
+      "url": "https://www.iiad.edu.in/",
+      "foundingDate": "2015",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "B-26, Okhla Phase I",
+        "addressLocality": "New Delhi",
+        "addressRegion": "Delhi",
+        "postalCode": "110020",
+        "addressCountry": "IN"
+      },
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.iiad.edu.in/path-to-logo/logo.png",
+        "width": 300,
+        "height": 80
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://www.iiad.edu.in/path-to-campus-image.jpg",
+        "caption": "IIAD Campus"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+91-11-41380000",
+        "contactType": "admissions",
+        "email": "admissions@iiad.edu.in",
+        "areaServed": "IN",
+        "availableLanguage": "en"
+      },
+      "sameAs": [
+        "https://www.facebook.com/iiad",
+        "https://www.instagram.com/iiad",
+        "https://www.linkedin.com/school/iiad",
+        "https://twitter.com/iiad"
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.iiad.edu.in/"
+        }
+      ]
+    },
+    {
+      "@type": "AggregateRating",
+      "itemReviewed": {
+        "@type": "EducationalOrganization",
+        "name": "Indian Institute of Art & Design (IIAD)"
+      },
+      "ratingValue": "4.5",
+      "reviewCount": "215"
+    }
+  ]
+}
+</script>
+
+
+<style>
+.kingston_stokeline_heading {
+    padding: 0px 0 5.005857vw;
+}
+
+.tag_sectio_custome{
+	background: #000000;
+    z-index: 0;
+	padding: 50px 0;
+	
+}
+.custom_m{
+	margin: 0 100px;
+}
+.tag_sec_detail{
+	width: 100% !important;
+    margin: 0 100px !important;
+	position: relative !important;
+}
+
+.tag_sec_detail h2{
+	color: #fff;
+    font-family: acumin-pro-condensed, sans-serif;
+	font-size: 50px;
+	font-weight: 600;
+	line-height: 45px;
+	text-align: left;
+	padding-left: 30px;
+
+}
+.tag_sec_detail p{
+	font-family: acumin-pro-condensed, sans-serif;
+	font-size: 30px;
+	font-weight: 400;
+	line-height: 36px;
+	text-align: left;
+    padding-left: 30px;
+    color: #FFD815;
+}
+.tag_sec_flex{
+	display: flex;
+	
+}
+.col-w{
+	width:50%;
+}
+.tm{
+	margin-bottom: 50px !important;
+}
+
+.fixed_right_cta a.fix_purple_cta {
+    background: #008000;
+}
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+
+	.tm{
+	margin-bottom: 15px !important;
+}
+
+	.custom_m {
+    margin: 0;
+}
+.tag_sec_detail {
+	width: 100% !important;
+        /* margin: 4px !important; */
+        position: relative !important;
+        margin-left: 15px !important;
+}
+.col-w {
+    width: 100%;
+}
+.tag_sec_detail h2 {
+	color: #fff;
+    font-family: acumin-pro-condensed, sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: left;
+    padding-left: 30px;
+}
+.tag_sec_detail p {
+    font-family: acumin-pro-condensed, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: left;
+    padding-left: 30px;
+    color: #FFD815;
+}
+}
+
+
+</style>
+
+
+		 
+	  <section class="banner-gif"> 
+			<video autoplay loop muted playsinline class="img-fluid mob_none" >
+			<source src="https://www.iiad.edu.in/wp-content/uploads/2024/11/desktop-1440_830.mp4" type="video/mp4">
+			 
+			</video>
+			<video autoplay loop muted playsinline class="img-fluid desk_none" >
+			<source src="https://www.iiad.edu.in/wp-content/uploads/2024/11/1444_2224-2.mp4" type="video/mp4">
+			 
+			</video>
+	</section> 
+
+
+
+		 			<!--<section class="homemain_banner_wrp" id="homeBanner">
+				<div class="homemain_banner_inner">
+					<div class="home_banner_item cell_box_banner">
+						<div class="home_move_image" id="parallax"></div>
+												<div class="home_door_image">
+							<img width="1366" height="820" src="https://www.iiad.edu.in/wp-content/uploads/2023/12/door-image0.webp" alt=""/>
+						</div>
+												<div class="home_banner_caption" >
+							<div class="homebanner_inner">
+								shaping<span class="home_slider_dash homeslider_dash_1"></span>you<br />
+through<span class="home_slider_dash homeslider_dash_2"></span>
+<span class="home_slider_dash homeslider_dash_3"></span>
+<span class="home_slider_dash homeslider_dash_4"></span>
+
+<div class="swiper-container home_txtslider_container home_textslider_js1 swipe-width50">
+<div class="swiper-wrapper home_txtslider_wrapper">
+<div class="swiper-slide home_txtslider_item">unique</div>
+<div class="swiper-slide home_txtslider_item">MEANINGFUL</div>
+<div class="swiper-slide home_txtslider_item">POWERFUL</div>
+</div>
+</div>
+
+<br />
+
+<span class="home_slider_dash homeslider_dash_5"></span>connections<br />
+<div class="swiper-container home_txtslider_container home_txtslider_container_2 home_textslider_js2">
+<div class="swiper-wrapper home_txtslider_wrapper">
+<div class="swiper-slide home_txtslider_item">teaching<i class="and_font white_and and_size_homeslider"></i>learning</div>
+<div class="swiper-slide home_txtslider_item">academia<i class="and_font white_and and_size_homeslider"></i>industry</div>
+<div class="swiper-slide home_txtslider_item">art<i class="and_font white_and and_size_homeslider"></i>design</div>
+</div>
+</div>							</div>
+						</div>
+					</div>
+				</div>
+			</section>-->
+
+		 		 
+		  
+			<section class="cmn_sec_cls home_overview_wrp grid_vertical_lines lineup">
+				<div class="row grid-row">
+					<div class="col d-none d-xl-block"></div>
+					<div class="col d-none d-lg-block"></div>
+					<div class="col d-none d-lg-block"></div>
+					<div class="col"></div>
+					<div class="col"></div>
+				</div>
+
+				<div class="section_edge section_edge_left">
+					<div class="sidebar_spacebar_wrp mld_edge_border mbl_sidebar_top vert_align_initial">
+										<div class="left_sidebar left_sidebar_flex mbl_leftbar">
+							<div class="sidebarheading sidebar_title_gap homeh4-width">
+								<h4>
+																	<label class="">
+										<span class="title_dashline ttl_dblxl_longer"></span>UNIQUE									</label>
+																	<label class="active">
+										<span class="title_dashline"></span>CONNECTIONS									</label>
+																</h4>
+								<div class="left_subtitle">
+									<h1 class="textred">
+																			Art										
+										<i class="and_font red_and and_size_hometitle"></i> design																		</h1>
+								</div>
+							</div>
+						</div>
+										<div class="right_spacebar">
+													<div class="common_caption">
+															<p class="evolve_txt">Evolve your own creative process through our unique pedagogy in a world-class learning environment</p>
+																						<p> We inculcate an inquiry based approach to learning, enabling you to develop awareness of yourself and the world. This inspires you to delve deep and discover your individual expression.</p>
+														</div>
+												</div>
+					</div>
+				</div>
+			</section>
+		
+		 		 
+		  
+			<section class="cmn_sec_cls home_dotslider_wrp grid_vertical_lines">
+				<div class="row grid-row zindex_control">
+					<div class="col d-none d-xl-block"></div>
+					<div class="col d-none d-lg-block"></div>
+					<div class="col d-none d-lg-block"></div>
+					<div class="col"></div>
+					<div class="col"></div>
+				</div>
+
+				<div class="mld_edge_border home_edge_space mbl_sidebar_top">
+				<video autoplay loop muted playsinline class="img-fluid desk_none" >
+    <source src="https://www.iiad.edu.in/wp-content/uploads/2024/11/Slideshow.mp4" type="video/mp4">
+	</video>
+				
+									<!--<div class="home_common_text home-add-margin">
+						<h4></h4>
+					</div>-->
+												<div class="home_dotslider_inner to-dot-border">
+					    <div class="swiper-container dotsslider_inner dotsslider_js mySwiper">
+					      <div class="swiper-wrapper">
+						  					        <div class="swiper-slide dotsslider_item">
+								<picture>
+																  <source media="(max-width:991px)" srcset="https://www.iiad.edu.in/wp-content/uploads/2021/12/3-Denim-Project-Final-Exhibition-at-IIAD-campus-mob.webp" alt="The final exhibition on completion of the Denim Project">
+																  <img width="1246" height="700" src="https://www.iiad.edu.in/wp-content/uploads/2023/12/3-Denim-Project-Final-Exhibition-at-IIAD-campus-1-1.webp" alt="">
+																</picture>
+					        </div>
+					       					        <div class="swiper-slide dotsslider_item">
+								<picture>
+																  <source media="(max-width:991px)" srcset="https://www.iiad.edu.in/wp-content/uploads/2021/12/1-Material-Workshop-Lab-at-IIAD-mob.webp" alt="A student working with a drill machine in the material lab">
+																  <img width="1246" height="700" src="https://www.iiad.edu.in/wp-content/uploads/2023/12/1-Material-Workshop-Lab-at-IIAD-1-1.webp" alt="">
+																</picture>
+					        </div>
+					       					        <div class="swiper-slide dotsslider_item">
+								<picture>
+																  <source media="(max-width:991px)" srcset="https://www.iiad.edu.in/wp-content/uploads/2021/12/2-Jake-Abrams-Illustration-and-Animation-Kingston-mob.webp" alt="Jake Abrams, department of Illustration and Animation, Kingston University London interacts with the students on campus.">
+																  <img width="1246" height="700" src="https://www.iiad.edu.in/wp-content/uploads/2023/12/2-Jake-Abrams-Illustration-and-Animation-Kingston-University-London-at-IIAD-1-1.webp" alt="">
+																</picture>
+					        </div>
+					       					      </div>
+					      <div class="swiper-pagination dots_pagination"></div>
+
+					      <div class="dot_slider_next"></div>
+					      <div class="dot_slider_prev"></div>
+					    </div>
+					</div>
+		 				</div>
+			</section>
+		 		 
+		 
+			<section class="cmn_sec_cls kingston_wrp grid_vertical_lines">
+				<div class="row grid-row">
+					<div class="col d-none d-xl-block"></div>
+					<div class="col d-none d-lg-block"></div>
+					<div class="col d-none d-lg-block"></div>
+					<div class="col"></div>
+					<div class="col"></div>
+				</div>
+
+				<div class="section_edge section_edge_left mld_edge_border">
+					<div class="sidebar_spacebar_wrp mbl_sidebar_top mbl_sidebar_btm">
+						<div class="left_sidebar">
+												</div>
+											<div class="right_spacebar">
+														<div class="kingston_stokeline_heading">
+								<h4 class="">world class partnerships</h4>
+							</div>	
+														
+							<div class="common_caption">
+															<p>We have an academic association with Kingston University, London which has been ranked as the #1 Art & Design school in London by The Times Good University Guide 2023. The globally-recognised course enables our students to secure coveted career as well as academic opportunities across the globe.
+<br><br>
+Additionally, we have also built association with other leading universities such as University for the Creative Arts, Nottingham Trent University, Coventry University, Arts University Bournemouth and many more.  Such associations enable student transfers and exchange programmes globally.
+</p>
+															<div class="cta_grp_space">
+									<a class="explore_more_cta set-mob-flex" href="https://www.iiad.edu.in/about-us/"><span class="explore_txt">FIND OUT MORE ABOUT US</span><span class="explore_arrow"></span></a>
+								</div>
+														</div>
+						</div>
+										</div>
+				</div>
+			</section>
+			
+				
+		
+		
+		<section class="cmn_sec_cls mbl_admission_byyear admission_byyear_wrp bgblack blackbg_rowline_clr grid_cell_box grid_rowline_one grid_vertical_lines_full admission_sec">
+				<a href="https://www.iiad.edu.in/admissions/" class="full_section_lnk cursor_admission">
+					<div class="row grid-row zindex_control bdr_onblack_bg">
+						<div class="col d-none d-xl-block"></div>
+						<div class="col d-none d-lg-block"></div>
+						<div class="col d-none d-lg-block"></div>
+						<div class="col"></div>
+						<div class="col"></div>
+					</div>
+					<div class="section_edge section_edge_left mld_edge_border_blck">
+						
+						<div class="admission_by_year">
+							<div class="by_year_heading textwhite">
+								<h2 class="">Admission 2026</h2>
+							</div>
+							 <div class="by_year_sortinfo">
+								<div class="by_year_sortinfo_inner textyellow">
+								 <!--<p>Last Date To Apply: May 5th, 2025</p>--> 
+								</div>
+							</div> 
+						</div>
+						<div class="sidebar_spacebar_wrp mbl_adms_black_box">
+							<div class="left_sidebar">
+								 <div class="sidebarheading leftbar_heading_small text_white">
+										<h3 class="">
+											 <label class="">
+												<span class="title_dashline title_dashline_normal white_dash"></span>EXAM CENTRES AND DATES										</label> 
+										</h3>
+									</div>
+							</div>
+							<div class="right_spacebar">
+								<div class="date_announcement">
+									<div class="date_announcement_item date_announcement_item1">
+										<h4>ONLINE</h4> 
+										 <h5>Saturday, 13 December 2025</h5>  
+									</div>
+									 <div class="date_announcement_item">
+										<h4>ONLINE & OFFLINE </h4>
+										<h5>Sunday, 14 December 2025</h5> 
+									</div> 
+									<!--<div class="date_announcement_item">
+										<h4>  <br> </h4>
+										<h5> 29th December 2024 (Sunday) </h5>
+										<h5>IIAD Campus</h5>
+										<h5> Chandigarh</h5>
+										<h5>   Dehradun</h5>
+										<h5>Guwahati</h5>
+										<h5>Kochi</h5>
+										<h5>  Kolkata</h5>
+									</div>-->
+								</div>
+							</div>
+						</div>	
+					</div>
+				</a>
+			</section>	
+		
+		
+		
+		
+		
+		 
+			<!--<section class="cmn_sec_cls mbl_admission_byyear admission_byyear_wrp bgblack blackbg_rowline_clr grid_cell_box grid_rowline_one grid_vertical_lines_full">
+				<a href="https://www.iiad.edu.in/admissions/" class="full_section_lnk cursor_admission">
+					<div class="row grid-row zindex_control bdr_onblack_bg">
+						<div class="col d-none d-xl-block"></div>
+						<div class="col d-none d-lg-block"></div>
+						<div class="col d-none d-lg-block"></div>
+						<div class="col"></div>
+						<div class="col"></div>
+					</div>
+					<div class="section_edge section_edge_left mld_edge_border_blck">
+						
+						<div class="admission_by_year">
+													<div class="by_year_heading textwhite">
+								<h4 class="">Admission 2025</h4>
+							</div>
+																		</div>
+						<div class="sidebar_spacebar_wrp mbl_adms_black_box">
+							<div class="left_sidebar">
+															<div class="sidebarheading leftbar_heading_small text_white">
+									<h4 class="">
+										 <label class="">
+											<span class="title_dashline title_dashline_normal white_dash"></span>EXAM CENTRES AND DATES										</label> 
+									</h4>
+								</div>
+														</div>
+													<div class="right_spacebar">
+								<div class="date_announcement">
+																	<div class="date_announcement_item">
+																			<h5>Online <br> 27th December 2024 (Friday) <br> 29th December 2024 (Sunday)</h5>
+																											</div>
+																	<div class="date_announcement_item">
+																			<h5>Offline <br>27th December 2024 (Friday)</h5>
+																												<p>- Bhopal</p>
+																			<p>- Coimbatore</p>
+																			<p>- Jaipur</p>
+																			<p>- Lucknow</p>
+																			<p>-  Patna</p>
+																		</div>
+																	<div class="date_announcement_item">
+																			<h5>Offline  <br> 29th December 2024 (Sunday)</h5>
+																												<p>- IIAD Campus</p>
+																			<p>- Chandigarh</p>
+																			<p> - Dehradun</p>
+																			<p> - Guwahati</p>
+																			<p> - Kochi</p>
+																			<p>- Kolkata</p>
+																		</div>
+																</div>
+							</div>
+												</div>	
+					</div>
+				</a>
+			</section>-->
+		 		 
+		  
+			<section class="cmn_sec_cls meaningful_wrp bgblue">
+				<div class="section_edge section_edge_left mld_edge_border_blck">
+					<div class="sidebar_spacebar_wrp mbl_sidebar_top mbl_meaningfull">
+						<div class="left_sidebar mbl_leftbar">
+							<div class="sidebarheading sidebar_title_gap homeh4-width">
+								<h4>
+																	<label class="">
+										<span class="title_dashline ttl_longer"></span>MEANINGFUL									</label>
+																	<label class="active">
+										<span class="title_dashline"></span>CONNECTIONS									</label>
+																</h4>
+								<div class="left_subtitle">
+									<h6 class="textwhite">
+																			Teaching																			<i class="and_font white_and and_size_hometitle"></i> Learning																		</h6>
+								</div>
+							</div>
+						</div>
+						<div class="right_spacebar">
+													<div class="common_caption abt_common_text common_caption_fullwidth white_clr abt_incep_text">
+															<h4>Each course at IIAD is designed <br> for you to evolve your passion <br> into a creative profession.</h4>
+																						<p> Through our unique learner centric approach, we empower you as an
+individual and equip you to address industry needs.</p>
+														</div>
+												</div>
+					</div>
+				</div>
+			</section>
+				
+								<section class="marquee_link_wrp home_marquee_link " id="ticker_section">
+			<div class="marquee_wrp bgred">
+				<div class="js_conveyor marquee_style js_conveyor1">
+					<ul class="marquee_track">
+												<li><a href="https://www.iiad.edu.in/programmes/communication-design-course/" rel="noopener">Communication Design</a></li>
+							<li><img width="70" height="68" src="https://www.iiad.edu.in/wp-content/themes/iiad/asset/svg/&text.svg" alt="IIAD &text SVG"></li>
+													<li><a href="https://www.iiad.edu.in/programmes/animation-film-design/" rel="noopener">Animation Film Design</a></li>
+							<li><img width="70" height="68" src="https://www.iiad.edu.in/wp-content/themes/iiad/asset/svg/&text.svg" alt="IIAD &text SVG"></li>
+													<li><a href="https://www.iiad.edu.in/programmes/user-experience-design/" rel="noopener">User Experience Design</a></li>
+							<li><img width="70" height="68" src="https://www.iiad.edu.in/wp-content/themes/iiad/asset/svg/&text.svg" alt="IIAD &text SVG"></li>
+													<li><a href="https://www.iiad.edu.in/programmes/interior-architecture-and-design/" rel="noopener">Interior Architecture and Design</a></li>
+							<li><img width="70" height="68" src="https://www.iiad.edu.in/wp-content/themes/iiad/asset/svg/&text.svg" alt="IIAD &text SVG"></li>
+													<li><a href="https://www.iiad.edu.in/programmes/product-design-course/" rel="noopener">Product Design</a></li>
+							<li><img width="70" height="68" src="https://www.iiad.edu.in/wp-content/themes/iiad/asset/svg/&text.svg" alt="IIAD &text SVG"></li>
+													<li><a href="https://www.iiad.edu.in/programmes/fashion-design-course/" rel="noopener">Fashion Design</a></li>
+							<li><img width="70" height="68" src="https://www.iiad.edu.in/wp-content/themes/iiad/asset/svg/&text.svg" alt="IIAD &text SVG"></li>
+													<li><a href="https://www.iiad.edu.in/programmes/fashion-communication/" rel="noopener">Fashion Communication</a></li>
+							<li><img width="70" height="68" src="https://www.iiad.edu.in/wp-content/themes/iiad/asset/svg/&text.svg" alt="IIAD &text SVG"></li>
+													<li><a href="https://www.iiad.edu.in/programmes/fashion-business-management/" rel="noopener">Fashion Business Management</a></li>
+							<li><img width="70" height="68" src="https://www.iiad.edu.in/wp-content/themes/iiad/asset/svg/&text.svg" alt="IIAD &text SVG"></li>
+													<li><a href="https://www.iiad.edu.in/programmes/luxury-business-management/" rel="noopener">Luxury Business Management</a></li>
+							<li><img width="70" height="68" src="https://www.iiad.edu.in/wp-content/themes/iiad/asset/svg/&text.svg" alt="IIAD &text SVG"></li>
+											    					</ul>
+				</div>
+				</div>
+									<div class="moving_arrow_link whitecursor-cir">
+						<a href="https://www.iiad.edu.in/programmes/">
+							<span class="movinglink_text">EXPLORE OUR PROGRAMMES</span> 
+							<span class="movinglink_svg">
+								<svg xmlns="http://www.w3.org/2000/svg" width="27.9" height="27.95" viewBox="0 0 27.9 27.95"><path id="Path_1861" data-name="Path 1861" d="M8.9-26.65l-.25,5.9H21.2L3.5-3.05,7.7,1.2,25.4-16.5l.05,12.55,5.9-.25.05-22.55Z" transform="translate(-3.5 26.75)" fill="#fff"></path></svg>
+							</span>
+						</a>
+					</div>
+							</section>
+						
+			
+			
+					<section class="cmn_sec_cls academia_industry_wrp grid_vertical_lines home_anchor_line_anim">
+				<div class="row grid-row">
+					<div class="col d-none d-xl-block"></div>
+					<div class="col d-none d-lg-block"></div>
+					<div class="col d-none d-lg-block"></div>
+					<div class="col"></div>
+					<div class="col"></div>
+				</div>
+
+				<div class="section_edge section_edge_left mld_edge_border_blck">
+					<div class="sidebar_spacebar_wrp vert_align_initial mbl_sidebar_top mbl_sidebar_btm">
+												<div class="left_sidebar left_sidebar_flex mbl_leftbar">
+							<div class="sidebarheading sidebar_title_gap homeh4-width">
+															<h4>
+																										<label class="">
+										<span class="title_dashline ttl_morethen_longer"></span>POWERFUL									</label>
+																																			<label class="active">
+										<span class="title_dashline"></span>CONNECTIONS									</label>
+																									</h4>
+															<div class="left_subtitle">
+									<h6 class="textred">
+																												Academia																																				<i class="and_font red_and and_size_hometitle"></i> Industry																											</h6>
+								</div>
+														</div>
+						</div>
+												<div class="right_spacebar">
+													<div class="common_caption">
+															<h4>Graduate with a resume, ready for the professional world</h4>
+																					
+														<p>Get industry-ready and build your resume as you learn. At IIAD, our renowned pool of faculty mentors you and supports your learning towards exemplary personal growth.</p>
+<p>Our exclusive <a class="line_link anchor_line_anim active" href="https://www.iiad.edu.in/iiad-industry/#internship-anchor">8+16 Learn On-Site Internships</a> give you 24 weeks of industry experience. With a ready resume and ample industry exposure, our grads step out as ‘Pi-Designers’, equipped for a highly competitive world.</p>
+<p><a class="line_link anchor_line_anim active" href="https://www.iiad.edu.in/how-we-teach/">Find out more</a> about how π, a mathematical enigma is the perfect metaphor for our graduates, Pi-Designers.</p>
+																					
+														</div>
+												</div>
+					</div>
+				</div>
+			</section>
+					
+						<section class="home_yellowcircle_wrp bgred grid_cell_box grid_cell_item cell_line_red section_activate_js" id="currency_section">
+				<a class="cursor_explore" href="https://www.iiad.edu.in/iiad-industry/">
+					<div class="yellow_box_top_ttl">
+						<h4>
+																	the<span class="yellowbox_dashline_small mbl_redyell_spn_1"></span>
+																							new<span class="yellowbox_dashline_long yellowbox_one mbl_redyell_spn_2"></span>
+																							currency for<span class="yellowbox_dashline_small mbl_redyell_spn_3"></span>
+																							the<span class="yellowbox_dashline_long yellowbox_two mbl_redyell_spn_4"></span>
+																							21<sup>st</sup>century<span class="mbl_redyell_spn_5 yellowbox_dashline_long yellowbox_three"></span>
+																							<span class="textblack">creativity</span>
+																</h4>
+					</div>
+					<div class="yellow_box_bottom_wrp">
+						<div class="yellow_box_bottom_desc">
+													<div>Find out more about our extensive industry interface, student internships, and placements</div>
+													<svg xmlns="http://www.w3.org/2000/svg" width="27.9" height="27.95" viewBox="0 0 27.9 27.95"><path id="Path_1861" data-name="Path 1861" d="M8.9-26.65l-.25,5.9H21.2L3.5-3.05,7.7,1.2,25.4-16.5l.05,12.55,5.9-.25.05-22.55Z" transform="translate(-3.5 26.75)" fill="#fff"></path></svg>
+						
+						</div>
+					</div>
+					<div class="yellow_circle_inner">
+						<lottie-player src="https://www.iiad.edu.in/wp-content/themes/iiad/asset/lottie-json/home-circle.json" background="transparent" speed="1" loop autoplay></lottie-player>
+					</div>
+				</a>
+			</section>
+						
+			
+					<!-- Home Page Tag Banner -->
+
+			<!-- New Section Design  -->
+<section class="cmn_sec_cls home_empower_wrp grid_vertical_lines_full tag_sectio_custome" id="content_section">
+	<div class="custom_m">
+	<div class="home_edge_space row grid-row tag_sec_flex tag_sec_detail tm" >
+		<div class="tag_sec_flex col-w">
+				<div>
+					<img width="114" height="114" src="https://www.iiad.edu.in/wp-content/uploads/2024/10/3.webp" alt="iiad" class="img-responsive">
+				</div>
+				<div>
+					<h2>Leading Design <br>College</h2>
+					<p>by Economic Times 2024</p>
+				</div>						
+		</div>
+		<div class="tag_sec_flex col-w">
+				<div>
+					<img width="114" height="114" src="https://www.iiad.edu.in/wp-content/uploads/2024/10/4.webp" alt="iiad" class="img-responsive">
+				</div>
+				<div>
+					<h2>Best Communication <br>Design College</h2>
+					<p>by Asia Today 2021</p>
+				</div>						
+		</div>
+	</div>
+	<div class="home_edge_space row grid-row tag_sec_flex tag_sec_detail">
+		<div class="tag_sec_flex col-w">
+				<div>
+					<img width="114" height="114" src="https://www.iiad.edu.in/wp-content/uploads/2024/10/vvv.webp" alt="iiad" class="img-responsive">
+				</div>
+				<div>
+					<h2>Excellence in <br>Design Education</h2>
+					<p>by Economic Times 2021</p>
+				</div>						
+		</div>
+		<div class="tag_sec_flex col-w">
+				<div>
+					<img width="114" height="114" src="https://www.iiad.edu.in/wp-content/uploads/2024/10/2.webp" alt="iiad" class="img-responsive">
+				</div>
+				<div>
+					<h2>Best College of the <br>Year</h2>
+					<p>by Silicon India 2022</p>
+				</div>						
+		</div>
+	</div>
+			</div>
+</section>
+<!-- End New Section Design -->
+
+<!-- End Home Page Tag Banner -->
+<style>
+.purple_banner{position:relative;}
+.purple_banner .gd h3 {
+    font-family: 'acumin-pro-condensed';
+    text-transform: uppercase;
+    font-size: 2.8vw;
+    line-height: 2.8vw;
+}
+.purple_banner .gd {
+    position: absolute;
+    z-index: 999;
+    top: 16.3vw;
+    left: 35.5vw;
+    cursor: pointer;
+    font-size: 1vw;
+    color: #ffffffd9;
+    text-align: center;
+    font-family: 'acumin-pro-condensed';
+    text-decoration: none; background: #e13011;
+}
+.purple_banner .id h3 {
+    font-family: 'acumin-pro-condensed';
+    text-transform: uppercase;
+    font-size: 2.8vw;
+    line-height: 2.8vw;
+}
+.purple_banner .id {
+    position: absolute;
+    z-index: 999;
+    top: 16.3vw;
+    left: 49.7vw;
+    cursor: pointer;
+    font-size: 1vw;
+    color: #000;
+    text-align: center;
+    font-family: 'acumin-pro-condensed';
+    text-decoration: none;
+    background: #ae7cff;
+}
+.purple_banner .uiux h3 {
+    font-family: 'acumin-pro-condensed';
+    text-transform: uppercase;
+    font-size: 2.8vw;
+    line-height: 2.8vw;
+}
+.purple_banner .uiux {
+    position: absolute;
+    z-index: 999;
+    top: 16.3vw;
+    left: 65.2vw;
+    cursor: pointer;
+    font-size: 1vw;
+    color: #000;
+    text-align: center;
+    font-family: 'acumin-pro-condensed';
+    text-decoration: none;
+    background: #ffe843;
+}
+@media only screen and (min-width: 320px) and (max-width: 992px) {
+	.purple_banner .gd h3 {
+     
+    font-size: 5.4vw;
+    line-height: 4.8vw; 
+}
+.purple_banner .gd {
+     top: 38.5vw;
+        left: 72.8vw;
+        font-size: 1.6vw;
+        width: 66px; display:none;
+     }	
+.purple_banner .id h3 {
+     
+    font-size: 5.4vw;
+    line-height: 4.8vw;
+}
+.purple_banner .id { top: 65.5vw;
+        left: 71.8vw;
+        font-size: 1.6vw; display:none;
+        width: 72px;
+    
+}	
+.purple_banner .uiux h3 {
+     
+    font-size: 5.4vw;
+    line-height: 4.8vw;
+}
+.purple_banner .uiux {
+     top: 92.5vw;
+    left: 73.8vw;  display:none;
+    font-size: 1.6vw;         width: 58px;
+     
+}
+.mobile_menu_popup {position: relative !important; top:0 !important; transition: left 0.5s ease !important;}
+ .mbl_menu_hold{height:100vh !important;}
+ .mobile_menu_popup.openmob {
+  left: 0 !important; /* Slide in */
+}
+ .mobile_menu_popup{display:none;}
+}
+</style>
+
+			
+			<!--Purple Banner Section -->
+			<section class="purple_banner">
+						  
+			  
+				 <img width="2560" height="937" class="img-fluid mob_none" src="https://www.iiad.edu.in/wp-content/uploads/2025/05/IIAD-Banner_Desktop-scaled.webp" alt="andacademy"> 
+				 <img width="782" height="1088" class="img-fluid desk_none" src="https://www.iiad.edu.in/wp-content/uploads/2025/05/IIAD-Banner_Mobile.webp" alt="andacademy"> 
+			 
+			 	<a href="https://www.andacademy.com/lp3a/graphicdesign-course/" class="gd" target="_blank">
+				<h3>Graphic <br>Design</h3>
+				Click to Know More</a>
+			 	<a href="https://www.andacademy.com/lp3a/interiordesign-course/" class="id" target="_blank">
+				<h3>Interior <br>Design</h3>
+				Click to Know More </a>
+			 	<a href="https://www.andacademy.com/lp3/uxuidesign-onlinecourses/"  class="uiux" target="_blank">
+				<h3>UI UX <br>Design</h3>
+				Click to Know More </a>		
+			</section>
+			 
+			<!--Purple Banner Section -->
+
+			
+
+
+			<section class="cmn_sec_cls home_empower_wrp grid_vertical_lines_full" id="content_section">
+				<div class="row grid-row">
+					<div class="col d-none d-xl-block"></div>
+					<div class="col d-none d-lg-block"></div>
+					<div class="col d-none d-lg-block"></div>
+					<div class="col"></div>
+					<div class="col"></div>
+				</div>
+
+				<div class="home_edge_space mld_edge_border">
+					<div class="home_common_text we_empower_line">
+						<h4>We empower you to design impactful ideas that take you places. From concept to conception, use your process to build lifelong bridges.</h4>
+					</div>
+				</div>
+			</section>
+
+					
+			<section class="cmn_sec_cls home_bridging_wrp grid_vertical_lines_full section_activate_homestory_js">
+				<div class="row grid-row" >
+					<div class="col d-none d-xl-block"></div>
+					<div class="col d-none d-lg-block"></div>
+					<div class="col d-none d-lg-block"></div>
+					<div class="col"></div>
+					<div class="col"></div>
+				</div>
+				<div class="section_edge section_edge_left">
+					<div class="sidebar_spacebar_wrp mld_edge_border">
+						<div class="right_spacebar_large">
+							<div class="home_bridging_inner">
+								<h4>
+																									bridging																																<span class="home_story_dashline story_linewidth_one"></span>gaps																																<span class="home_story_dashline story_linewidth_one"></span>building																																<span class="home_story_dashline story_linewidth_two"></span>bridges																								</h4>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			
+
+			
+			
+			<section class="cmn_sec_cls home_blogslider_wrp grid_vertical_lines_full">
+				<div class="row grid-row">
+					<div class="col d-none d-xl-block"></div>
+					<div class="col d-none d-lg-block"></div>
+					<div class="col d-none d-lg-block"></div>
+					<div class="col"></div>
+					<div class="col"></div>
+				</div>
+				<div class="section_edge section_edge_left mld_edge_border">
+					<div class="sidebar_spacebar_wrp mbl_sidebar_btm mbl_homeblog_slide">
+												<div class="left_sidebar_small">
+							<div class="sidebarheading">
+								<h4>
+									<label class="">
+										<span class="title_dashline title_dashline_small"></span>STORIES									</label>
+								</h4>
+							</div>
+						</div>
+												<div class="right_spacebar_large">
+							<div class="story_slider_inner blg_slider_gap mbl_slider_gap">
+							 <div class="swiper-container stories_sld_container stories_sld_js">
+							    <div class="swiper-wrapper stories_slider_wrapper">
+								
+																
+							      <div class="swiper-slide stories_slide_item">
+							      	<a  href="https://www.iiad.edu.in/the-circle/5-top-interior-design-trends-in-2024/">
+								      	<div class="stories_slide_item_hold">
+								      		<div class="post_category">STORIES</div>
+								      		<h4 class="blog_post_heading">5 top interior design trends that will rule 2021</h4>
+																			      		<p class="post_sort_desc">The onset of the COVID-19 pandemic in 2020 has fundamentally redefined our relationship with our home. The extended work from&hellip;</p>
+								      		<time class="postdate">Ashita Kulshreshtha <span>|</span>June 3, 2021</time>
+																																			<figure class="postfigure">
+															<img width="466" height="320" src="https://www.iiad.edu.in/wp-content/uploads/2024/12/Untitled-39-1.webp" alt="">
+													</figure>
+																				      		
+								      	</div>
+							      	</a>
+							      </div>
+																
+							      <div class="swiper-slide stories_slide_item">
+							      	<a  href="https://www.iiad.edu.in/the-circle/achieving-immersive-exhibition-design/">
+								      	<div class="stories_slide_item_hold">
+								      		<div class="post_category">STORIES</div>
+								      		<h4 class="blog_post_heading">Achieving  Immersive Exhibition Design</h4>
+																			      		<p class="post_sort_desc">In a recent&nbsp;article&nbsp;summing up the non-traditional or experiential art and entertainment events of 2016, the Los Angeles Times suggested that&hellip;</p>
+								      		<time class="postdate">Tulika Ahuja <span>|</span>February 24, 2021</time>
+																																			<figure class="postfigure">
+															<img width="466" height="320" src="https://www.iiad.edu.in/wp-content/uploads/2024/12/Untitled-40-1.webp" alt="">
+													</figure>
+																				      		
+								      	</div>
+							      	</a>
+							      </div>
+																
+							      <div class="swiper-slide stories_slide_item">
+							      	<a  href="https://www.iiad.edu.in/the-circle/all-about-fashion-designing-courses-and-careers-in-india/">
+								      	<div class="stories_slide_item_hold">
+								      		<div class="post_category">STORIES</div>
+								      		<h4 class="blog_post_heading">All About Fashion Designing Courses And Careers In India</h4>
+																			      		<p class="post_sort_desc">Overview: The blog provides details about the discipline of fashion design. It explains the eligibility for pursuing graduation in fashion&hellip;</p>
+								      		<time class="postdate">Ashita Kulshreshtha <span>|</span>August 17, 2020</time>
+																																			<figure class="postfigure">
+															<img width="466" height="320" src="https://www.iiad.edu.in/wp-content/uploads/2024/12/Untitled-41-1.webp" alt="">
+													</figure>
+																				      		
+								      	</div>
+							      	</a>
+							      </div>
+																
+							      <div class="swiper-slide stories_slide_item">
+							      	<a  href="https://www.iiad.edu.in/the-circle/a-i-aqua-the-colour-of-2021/">
+								      	<div class="stories_slide_item_hold">
+								      		<div class="post_category">STORIES</div>
+								      		<h4 class="blog_post_heading">A.I. Aqua: The Colour of 2021</h4>
+																			      		<p class="post_sort_desc">As we move towards 2021, the influence of technology on the way we live our lives has become more pronounced&hellip;</p>
+								      		<time class="postdate">Nandini Tripathi <span>|</span>February 17, 2020</time>
+																																			<figure class="postfigure">
+															<img width="466" height="320" src="https://www.iiad.edu.in/wp-content/uploads/2024/12/Untitled-42-2.webp" alt="">
+													</figure>
+																				      		
+								      	</div>
+							      	</a>
+							      </div>
+															      
+							    </div>
+							    <div class="cta_pagination_nav">
+								    <!-- <div class="blog_pagination success_pagination"></div> -->
+								    <!-- Add Arrows -->
+								    <div class="stories_pagination"></div>
+								    <div class="success_leftright_nav">
+									    <div class="swiper-button-prev success_prev"></div>
+									    <div class="swiper-button-next success_next"></div>
+								    </div>
+								    <a class="explore_more_cta" href="https://www.iiad.edu.in/the-circle?activepage=stories"><span class="explore_txt">Explore all stories</span><span class="explore_arrow"></span></a>
+							    </div>
+							  </div>
+						</div>
+					</div>
+				</div>
+				</div>
+			</section>
+			
+			
+
+<div class="nia-chatbox">
+	<div class="npf_chatbots" data-w="f1221156d0d34484afa14873b2efde34" style="display:none;"></div>
+	<script type="rocketlazyloadscript" data-rocket-type="text/javascript" async>
+		// Desktop	
+		var s = document.createElement("script");
+		s.type = "text/javascript";
+		s.async = true;
+		s.src = "https://chatbot.nopaperforms.com/en-gb/backend/bots/niaachtbtscpt.js/5255f73104537e55/f1221156d0d34484afa14873b2efde34";
+		document.body.appendChild(s);	
+	</script>
+</div>
+
+<!-- cursor elements -->
+<!-- <div class="cursor cursor--outer"></div>
+		<div class="cursor cursor--inner"></div>
+
+		<script type="rocketlazyloadscript">
+			// set the starting position of the cursor outside of the screen
+			var clientX = 0,
+				clientY = 0,
+			// elements 
+				outerCursor = document.querySelector(".cursor--outer"),
+				innerCursor = document.querySelector(".cursor--inner"),
+				link = document.querySelector("a");
+
+			var initCursor = function() {
+			// add listener to track the current mouse position
+			document.addEventListener("mousemove", function(e) {
+				clientX = e.clientX
+				clientY = e.clientY
+			});
+
+			var render = function() {
+				TweenMax.set(outerCursor, {
+				x: clientX,
+				y: clientY,
+				delay: 0,
+				ease: Power2.easeOut
+				});
+				
+				TweenMax.set(innerCursor, {
+				x: clientX,
+				y: clientY
+				});
+				
+				requestAnimationFrame(render);
+			};
+
+			requestAnimationFrame(render);
+			};
+
+			initCursor();
+
+		</script> -->
+
+
+</main>
+<footer class="cmn_sec_cls footer_wrp grid_vertical_lines blackbg_line_color">
+	<div class="row grid-row ">
+		<div class="col d-none d-xl-block"></div>
+		<div class="col d-none d-lg-block"></div>
+		<div class="col d-none d-lg-block"></div>
+		<div class="col d-none d-lg-block"></div>
+		<div class="col d-none d-lg-block"></div>
+	</div>
+
+	<div class="ftr_inner">
+		<div class="ftr_heading">
+			<!-- <a href="" class="mdl_ftr_logo" aria-hidden="true">
+						<img width="107" height="51" src="/asset/svg/ftr-logo.svg" alt="IIAD Footer Logo">
+					</a> -->
+			<p class="ftr_heading">
+				<a href="https://www.iiad.edu.in/about-us/">about</a>
+				<span class="dash_line_ftr dashline_ftr1"></span>
+				<a href="https://www.iiad.edu.in/programmes/">programmes</a>
+				<br>
+				<a href="https://www.iiad.edu.in/admissions/">admissions</a>
+				<span class="dash_line_ftr dashline_ftr2"></span>
+				<a href="https://www.iiad.edu.in/iiad-industry/">industry</a>
+				<br>
+				<a href="https://www.iiad.edu.in/the-circle/">the circle</a>
+			</p>
+		</div>
+		<div class="ftr_top_lnks home_ftr_top_lnks flex-end">
+			<div class="ftr_logo">
+				<a href="https://www.iiad.edu.in/" aria-hidden="true">
+					<img width="107" height="51"
+						src="https://www.iiad.edu.in/wp-content/themes/iiad/asset/svg/ftr-logo.svg" alt="IIAD Footer Logo">
+				</a>
+				<div class="ftr_contact_info toadd-ml add-mobhide">
+					<p>B-26, Okhla Phase 1, <br> New Delhi 110020, India</p>
+				</div>
+				<div class="footer-copywrite add-mobhide">
+					<p> Copyright Ⓒ TEAMWORK EDUCATION PRIVATE LIMITED. | TRICOLOUR EDUCATION FOUNDATION | All rights
+						reserved</p>
+				</div>
+			</div>
+			<div class="ftr_top_right">
+				<ul class="ftr_menu_list desk-show">
+					<li>
+						<a class="explore_more_cta" target="_blank" rel="noopener"
+							href="https://www.iiad.edu.in/programmes/foundation-course/"><span
+								class="explore_txt">Foundation In Design (UG)</span></a>
+					</li>
+
+					<li>
+						<a class="explore_more_cta"
+							href="https://www.iiad.edu.in/programmes/fashion-communication/"><span
+								class="explore_txt">B.Des. Fashion Communication (UG)</span></a>
+					</li>
+					<li>
+						<a class="explore_more_cta" href="javascript:void(0);"><span class="explore_txt">Online Fee Payment</span></a>
+						<!-- <a class="explore_more_cta" target="_blank" rel="noopener"
+							href="https://formbuilder.ccavenue.com/live/kotak-mahindra/indian-institute-of-art-design/new-students-4"><span
+								class="explore_txt">Online Fee Payment</span></a> -->
+					</li>
+
+
+
+
+					<li>
+						<a class="explore_more_cta" target="_blank" rel="noopener"
+							href="https://www.iiad.edu.in/programmes/communication-design-course/"><span
+								class="explore_txt">B.Des. Communication Design (UG)</span></a>
+					</li>
+					<li>
+						<a class="explore_more_cta" target="_blank" rel="noopener"
+							href="https://www.iiad.edu.in/programmes/fashion-business-management/"><span
+								class="explore_txt">BBA Fashion Business Management (UG)</span></a>
+					</li>
+
+					<li>
+						<a class="explore_more_cta" target="_blank" rel="noopener"
+							href="https://apply.iiad.edu.in/"><span class="explore_txt">apply now</span></a>
+					</li>
+					<!--<li>
+							<a class="explore_more_cta" target="_blank" rel="noopener" href="https://www.iiad.edu.in/programmes/user-experience-design/"><span class="explore_txt">User Experience Design</span></a>
+							</li>-->
+
+
+					<li>
+						<a class="explore_more_cta" target="_blank" rel="noopener"
+							href="https://www.iiad.edu.in/programmes/animation-film-design/"><span
+								class="explore_txt">B.Des. Animation Film Design (UG)</span></a>
+					</li>
+					<li>
+						<a class="explore_more_cta" target="_blank" rel="noopener"
+							href="https://www.iiad.edu.in/programmes/luxury-business-management/"><span
+								class="explore_txt">BBA Luxury Business Management (UG)</span></a>
+					</li>
+
+					<li class="mobhide">
+						<a class="explore_more_cta" target="_blank" rel="noopener" href="javascript:;"
+							aria-hidden="true" style="visibility: hidden;"><span class="explore_txt"></span></a>
+					</li>
+
+
+
+
+					<li>
+						<a class="explore_more_cta" target="_blank" rel="noopener"
+							href="https://www.iiad.edu.in/programmes/interior-architecture-and-design/"><span
+								class="explore_txt">B.Des. Interior Architecture & Design (UG)</span></a>
+					</li>
+					<li>
+						<a class="explore_more_cta" target="_blank" rel="noopener"
+							href="https://www.iiad.edu.in/programmes/communication-design-course/"><span
+								class="explore_txt">M.Des. Communication Design (PG)</span></a>
+					</li>
+					<li class="mobhide">
+						<a class="explore_more_cta" target="_blank" rel="noopener" href="javascript:;"
+							aria-hidden="true" style="visibility: hidden;"><span class="explore_txt"></span></a>
+					</li>
+
+
+
+
+					<li>
+						<a class="explore_more_cta" target="_blank" rel="noopener"
+							href="https://www.iiad.edu.in/programmes/product-design-course/"><span
+								class="explore_txt">B.Des. Product Design (UG)</span></a>
+					</li>
+					<li>
+						<a class="explore_more_cta" target="_blank" rel="noopener"
+							href="https://www.iiad.edu.in/programmes/interior-architecture-and-design/"><span
+								class="explore_txt">M.Des. Interior Design & Styling (PG)</span></a>
+					</li>
+
+					<li style="display:flex;">
+						<a class="explore_more_cta" target="_blank" rel="noopener"
+							href="https://www.instagram.com/iiad_design/"><span class="explore_txt">
+								<img width="64" height="64" class="icon_image"
+									src="https://www.iiad.edu.in/wp-content/uploads/2023/05/instagram-2.png"
+									alt="Instagram">
+							</span></a>
+						<a class="explore_more_cta" target="_blank" rel="noopener"
+							href="https://www.facebook.com/iiad.design.school"><span class="explore_txt">
+								<img width="64" height="64" class="icon_image"
+									src="https://www.iiad.edu.in/wp-content/uploads/2023/05/facebook-1.png"
+									alt="Facebook">
+							</span></a>
+						<a class="explore_more_cta" target="_blank" rel="noopener"
+							href="https://www.youtube.com/channel/UCW1Kw0DTsIvttIUwWuEh33g"><span class="explore_txt">
+								<img width="64" height="64" class="icon_image"
+									src="https://www.iiad.edu.in/wp-content/uploads/2023/05/youtube-1.png"
+									alt="Youtube">
+							</span></a>
+						<a class="explore_more_cta" target="_blank" rel="noopener"
+							href="https://www.linkedin.com/school/indian-institute-of-art-and-design/"><span
+								class="explore_txt">
+								<img width="64" height="64" class="icon_image"
+									src="https://www.iiad.edu.in/wp-content/uploads/2023/05/linkedin.png" 
+									alt="Linkedin">
+							</span></a>
+
+					</li>
+
+
+
+					<li>
+						<a class="explore_more_cta" target="_blank" rel="noopener"
+							href="https://www.iiad.edu.in/programmes/fashion-design-course/"><span
+								class="explore_txt">B.Des. Fashion Design (UG)</span></a>
+					</li>
+					<li>
+						<a class="explore_more_cta" target="_blank" rel="noopener"
+							href="https://www.iiad.edu.in/programmes/fashion-business-management/"><span
+								class="explore_txt">MBA Luxury & Fashion Business Management (PG)</span></a>
+					</li>
+
+
+					<!--<li>
+							<a class="explore_more_cta" target="_blank" rel="noopener" href="https://www.iiad.edu.in/programmes/bachelor-of-business-administration/"><span class="explore_txt">Bachelor of Business Administration</span></a>
+							</li>-->
+					<!--<li class="mobhide">
+							<a class="explore_more_cta" target="_blank" rel="noopener" href="javascript:;" aria-hidden="true" style="visibility: hidden;"><span class="explore_txt"></span></a>
+							</li>
+							<!-- <li>
+							<a class="explore_more_cta" target="_blank" rel="noopener" href="https://www.youtube.com/channel/UCW1Kw0DTsIvttIUwWuEh33g"><span class="explore_txt" style="color:#ffd815">youtube</span></a>
+							</li> -->
+
+					<!--<li class="mobhide">
+							<a class="explore_more_cta" target="_blank" rel="noopener" href="javascript:;" aria-hidden="true" style="visibility: hidden;"><span class="explore_txt"></span></a>
+							</li>
+							<li class="mobhide">
+							<a class="explore_more_cta" target="_blank" rel="noopener" href="javascript:;" aria-hidden="true" style="visibility: hidden;"><span class="explore_txt"></span></a>
+							</li>
+							
+							<!-- <li>
+							<a class="explore_more_cta" target="_blank" rel="noopener" href="https://www.linkedin.com/school/indian-institute-of-art-and-design/"><span class="explore_txt" style="color:#ffd815">Linkedin</span></a>
+							</li> -->
+					<!--<li class="mobhide">
+							<a class="explore_more_cta" target="_blank" rel="noopener" href="javascript:;" aria-hidden="true" style="visibility: hidden;"><span class="explore_txt"></span></a>
+							</li>
+							
+							<li class="mobhide">
+							<a class="explore_more_cta" target="_blank" rel="noopener" href="javascript:;" aria-hidden="true" style="visibility: hidden;"><span class="explore_txt"></span></a>
+							</li>
+							<li class="mobhide">
+							<a class="explore_more_cta" target="_blank" rel="noopener" href="javascript:;" aria-hidden="true" style="visibility: hidden;"><span class="explore_txt"></span></a>
+							</li>-->
+
+
+
+				</ul>
+				<div class="ftr_contact_info" style="padding-top: 2.605263vw; !important">
+					<!-- <p class="add-mobshow">B-26, Okhla Phase 1, <br> New Delhi 110020, India</p> -->
+					<p class="clr-ylw" style="z-index: 9999; position: relative;">
+
+						<a class="explore_more_cta" target="_blank" rel="noopener"
+							href="https://www.iiad.edu.in/design-course-in-delhi/" style="color: #fff !important;
+	font-weight: 200; font-size: 1.1vw;
+	text-transform: capitalize;"><span class="explore_txt" style="margin-bottom:15px;"> Design Course In
+								Delhi</span></a>
+						P:<a href="tel:911141380000" aria-hidden="true"> +91 11 41380000</a>
+						<br>M:<a href="tel:9871383633" aria-hidden="true"> +91 98713 83633</a>
+						<br>E:<a href="mailto:info@iiad.edu.in" aria-hidden="true"> info@iiad.edu.in</a>
+					</p>
+					<p class="tcp desk-show" style="position: relative;"><a
+							href="https://www.iiad.edu.in/pdf/Terms_&_Conditions_IIAD_website.pdf" target="_blank"
+							rel="noopener" style="margin-bottom: -2px;">Terms & Conditions</a></p>
+				</div>
+				<!-- mobile items -->
+				<ul class="ftr_menu_list mob-show toadd-topborder-botmargn">
+					<li><span class="mob-footer-title-items">courses</span></li>
+
+					<li>
+						<a class="explore_more_cta" target="_blank" rel="noopener"
+							href="https://www.iiad.edu.in/programmes/foundation-course/"><span
+								class="explore_txt">Foundation In Design (UG)</span></a>
+					</li>
+					<li>
+						<a class="explore_more_cta" target="_blank" rel="noopener"
+							href="https://www.iiad.edu.in/programmes/communication-design-course/"><span
+								class="explore_txt">B.Des. Communication Design (UG)</span></a>
+					</li>
+					<li>
+						<a class="explore_more_cta" target="_blank" rel="noopener"
+							href="https://www.iiad.edu.in/programmes/animation-film-design/"><span
+								class="explore_txt">B.Des. Animation Film Design (UG)</span></a>
+					</li>
+					<!--<li>
+							<a class="explore_more_cta" target="_blank" rel="noopener" href="https://www.iiad.edu.in/programmes/user-experience-design/"><span class="explore_txt">User Experience Design</span></a>
+							</li>-->
+					<li>
+						<a class="explore_more_cta" target="_blank" rel="noopener"
+							href="https://www.iiad.edu.in/programmes/interior-architecture-and-design/"><span
+								class="explore_txt">B.Des. Interior Architecture & Design (UG)</span></a>
+					</li>
+					<li>
+						<a class="explore_more_cta" target="_blank" rel="noopener"
+							href="https://www.iiad.edu.in/programmes/product-design-course/"><span
+								class="explore_txt">B.Des. Product Design (UG)</span></a>
+					</li>
+
+
+					<li>
+						<a class="explore_more_cta"
+							href="https://www.iiad.edu.in/programmes/fashion-design-course/"><span
+								class="explore_txt">B.Des. Fashion Design (UG)</span></a>
+					</li>
+					<li>
+						<a class="explore_more_cta" target="_blank" rel="noopener"
+							href="https://www.iiad.edu.in/programmes/fashion-communication/"><span
+								class="explore_txt">B.Des. Fashion Communication (UG)</span></a>
+					</li>
+					<li>
+						<a class="explore_more_cta" target="_blank" rel="noopener"
+							href="https://www.iiad.edu.in/programmes/fashion-business-management/"><span
+								class="explore_txt">BBA Fashion Business Management (UG)</span></a>
+					</li>
+					<li>
+						<a class="explore_more_cta" target="_blank" rel="noopener"
+							href="https://www.iiad.edu.in/programmes/luxury-business-management/"><span
+								class="explore_txt">BBA Luxury Business Management (UG)</span></a>
+					</li>
+					<li>
+						<a class="explore_more_cta" target="_blank" rel="noopener"
+							href="https://www.iiad.edu.in/programmes/communication-design-course/"><span
+								class="explore_txt">M.Des. Communication Design (PG)</span></a>
+					</li>
+					<li>
+						<a class="explore_more_cta" target="_blank" rel="noopener"
+							href="https://www.iiad.edu.in/programmes/interior-architecture-and-design/"><span
+								class="explore_txt">M.Des. Interior Design & Styling (PG)</span></a>
+					</li>
+					<li>
+						<a class="explore_more_cta" target="_blank" rel="noopener"
+							href="https://www.iiad.edu.in/programmes/fashion-business-management/"><span
+								class="explore_txt" style="white-space: nowrap;">MBA Luxury & Fashion Business Management (PG)</span></a>
+					</li>
+
+					<!--<li>
+							<a class="explore_more_cta" target="_blank" rel="noopener" href="https://www.iiad.edu.in/programmes/bachelor-of-business-administration/"><span class="explore_txt">Bachelor of Business Administration</span></a>
+							</li>-->
+				</ul>
+				<ul class="ftr_menu_list mob-show toadd-topborder-botmargn">
+					<li>
+						<a class="explore_more_cta mob-tb-mr" href="javascript:void(0);"><span class="explore_txt mob-footer-title-items topmr3px">Online Fee Payment</span></a>
+						<!-- <a class="explore_more_cta mob-tb-mr" target="_blank" rel="noopener"
+							href="https://formbuilder.ccavenue.com/live/kotak-mahindra/indian-institute-of-art-design/new-students-4"><span
+								class="explore_txt mob-footer-title-items topmr3px">Online Fee Payment</span></a> -->
+					</li>
+					<li>
+						<a class="explore_more_cta mob-tb-mr" target="_blank" rel="noopener"
+							href="https://apply.iiad.edu.in/"><span class="explore_txt mob-footer-title-items">apply
+								now</span></a>
+					</li>
+				</ul>
+				<ul class="ftr_menu_list mob-show toadd-topborder-botmargn">
+					<li><span class="mob-footer-title-items">call us on</span></li>
+					<li>
+						<span class="explore_txt">P: +91 11 41380000</span>
+					</li>
+					<li>
+						<span class="explore_txt">M: +91 9871383633</span>
+					</li>
+					<li>
+						<span class="explore_txt">E: info@iiad.edu.in</span>
+					</li>
+				</ul>
+				<ul class="ftr_menu_list mob-show toadd-topborder-botmargn">
+					<li><span class="mob-footer-title-items">meet us at</span></li>
+					<li>
+						<span class="explore_txt">B-26, Okhla Phase 1</span>
+					</li>
+					<li>
+						<span class="explore_txt">New Delhi-110020,India</span>
+					</li>
+				</ul>
+				<ul class="ftr_menu_list mob-show toadd-topborder-botmargn">
+					<li><span class="mob-footer-title-items">social media</span></li>
+					<li>
+						<a class="explore_more_cta" target="_blank" rel="noopener"
+							href="https://www.instagram.com/iiad_design/"><span class="explore_txt">instagram</span></a>
+					</li>
+					<li>
+						<a class="explore_more_cta" target="_blank" rel="noopener"
+							href="https://www.facebook.com/iiad.design.school"><span
+								class="explore_txt">facebook</span></a>
+					</li>
+					<li>
+						<a class="explore_more_cta" target="_blank" rel="noopener"
+							href="https://www.youtube.com/channel/UCW1Kw0DTsIvttIUwWuEh33g"><span
+								class="explore_txt">youtube</span></a>
+					</li>
+					<li>
+						<a class="explore_more_cta" target="_blank" rel="noopener"
+							href="https://www.linkedin.com/school/indian-institute-of-art-and-design/"><span
+								class="explore_txt">Linkedin</span></a>
+					</li>
+				</ul>
+				<div class="ftr_heading">
+					<a href="https://www.iiad.edu.in/" aria-hidden="true" class="mdl_ftr_logo mob-show">
+						<img width="106" height="50" src="https://www.iiad.edu.in/wp-content/themes/iiad/asset/svg/ftr-logo.svg"
+							alt="IIAD Footer Logo">
+					</a>
+				</div>
+				<div class="mob-tandc-copyright mob-show" style="position: relative;">
+					<p> Copyright Ⓒ TEAMWORK EDUCATION PRIVATE LIMITED. | TRICOLOUR EDUCATION FOUNDATION | All rights
+						reserved</p>
+					<a href="https://www.iiad.edu.in/pdf/Terms_&_Conditions_IIAD_website.pdf" target="_blank"
+						rel="noopener">Terms & Condition</a>
+				</div>
+				<!-- end mobile items -->
+			</div>
+		</div>
+		<div class="ftr_balls">
+			<img width="426" height="249" src="https://www.iiad.edu.in/wp-content/themes/iiad/asset/svg/footer-circle.svg"
+				alt="IIAD Design">
+			<div class="gototop">
+				<a href="javascript:;" aria-hidden="true">
+					<svg id="Group_1492" data-name="Group 1492" xmlns="http://www.w3.org/2000/svg" width="31.471"
+						height="36.203" viewBox="0 0 31.471 36.203">
+						<path id="Path_868" data-name="Path 868"
+							d="M9065.523,14862.871l15.77,15.841-3.96,4.312-8.831-8.762v24.813l-5.922-.035v-24.813l-8.8,8.8-3.96-4.312Z"
+							transform="translate(-9049.822 -14862.871)" />
+					</svg>
+				</a>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<!-- fixed mobile tabs -->
+<div class="fixed_tabs_mbl">
+	<a href="https://apply.iiad.edu.in/" target="_blank" rel="noopener">apply now</a>
+	<a data-formtype="enquiryform" data-popuptext="ENQUIRY FORM" href="javascript:;" aria-hidden="true"
+		class="popup_form_open_js">enquiry</a>
+	<a href="javascript:;" role="click to open chat" aria-hidden="true" onclick="if (!window.__cfRLUnblockHandlers) return false; clickIconIndicator(); clickIconIndicatorMinimize();" data-cf-modified-95385ea38a008c76dd5b4301-="">chat</a>
+</div>
+<!-- fixed mobile tabs -->
+
+<!-- Global equiry form -->
+<div class="popup_bg_layer popup_form_bg_layer  popup_form_close_js"></div>
+<div class="popup_body_hold popup_body_hold_form">
+	<div class="header_popup">
+		<div class="homeenquiry_form_head">
+			<p><span class="popup_dashline"></span><span id="popup_heading_text">enquiry form</span></p>
+		</div>
+		<div class="close_popup popup_form_close_js">
+			<svg xmlns="http://www.w3.org/2000/svg" width="28.603" height="28.603" viewBox="0 0 28.603 28.603">
+				<g id="Group_2320" data-name="Group 2320" transform="translate(24.552 -0.001) rotate(45)">
+					<path id="Path_375" data-name="Path 375"
+						d="M5183.818,9372.907h-20.226v-1.28H5183.8Zm-10.754,9.481v-20.225h1.283v20.208Z"
+						transform="translate(-5170.84 -9354.916)"></path>
+				</g>
+			</svg>
+		</div>
+	</div>
+	<div class="popup_form_area">
+		<div class="popup_form_all" id="enquiryform">
+			<div class="npf_wgts" data-w="a39571f5440559dfcb6386896aa86f65"></div>
+			<script type="rocketlazyloadscript" data-rocket-type="text/javascript">
+				var s = document.createElement("script");
+				s.type = "text/javascript";
+				s.async = true;
+				s.src = "https://widgets.nopaperforms.com/emwgts.js";
+				document.body.appendChild(s);
+			</script>
+		</div>
+		<div class="popup_form_all" id="downloadbrochure">
+			<div class="npf_wgts" data-w="08651ca2f93fa0a882335ac35b55c71a"></div>
+			<script type="rocketlazyloadscript" data-rocket-type="text/javascript">
+				var s = document.createElement("script");
+				s.type = "text/javascript";
+				s.async = true;
+				s.src = "https://widgets.nopaperforms.com/emwgts.js";
+				document.body.appendChild(s);
+			</script>
+		</div>
+		<div class="popup_form_all" id="lateralentry">
+			<div class="npf_wgts" data-w="a3deb3e36395c36dd08e810479ff0de1"></div>
+			<script type="rocketlazyloadscript" data-rocket-type="text/javascript">
+				var s = document.createElement("script");
+				s.type = "text/javascript";
+				s.async = true;
+				s.src = "https://widgets.nopaperforms.com/emwgts.js";
+				document.body.appendChild(s);
+			</script>
+		</div>
+	</div>
+</div>
+<!-- Global equiry form -->
+
+<!-- Global Search Start -->
+<div class="search_bg_layer search_bg_color"></div>
+<div class="global_search">
+	<div class="gbl_search_inner">
+		<div class="glb_srch_field">
+			<form role="search" method="get" class="search-form" action="https://www.iiad.edu.in">
+				<input type="search" id="search-form-1" placeholder="Type here" class="search-field" value="" name="s">
+				<!-- <input type="submit" class="search-submit" value="Search"> -->
+			</form>
+		</div>
+		<div class="close_search">
+			<svg class="open_search_bar_js" xmlns="http://www.w3.org/2000/svg" width="24.707" height="24.708"
+				viewBox="0 0 24.707 24.708">
+				<g id="Group_2394" data-name="Group 2394" transform="translate(-77.336 -22.385)">
+					<line id="Line_544" data-name="Line 544" x1="33.941" transform="translate(77.689 22.74) rotate(45)"
+						fill="none" stroke="#221f1f" stroke-miterlimit="10" stroke-width="1" />
+					<line id="Line_545" data-name="Line 545" x1="33.941"
+						transform="translate(77.689 46.739) rotate(-45)" fill="none" stroke="#221f1f"
+						stroke-miterlimit="10" stroke-width="1" />
+				</g>
+			</svg>
+		</div>
+	</div>
+</div>
+<script type="rocketlazyloadscript" data-dont-merge>
+	(function (d) {
+		var config = {
+			kitId: 'mtu5zcc',
+			scriptTimeout: 1,
+			async: true
+		},
+			h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = false; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+	})(document);
+</script>
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/wp-*.php","\/wp-admin\/*","\/wp-content\/uploads\/*","\/wp-content\/*","\/wp-content\/plugins\/*","\/wp-content\/themes\/iiad\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<script type="95385ea38a008c76dd5b4301-text/javascript">document.body.classList.remove("no-js");</script>	<script type="rocketlazyloadscript">
+		if (-1 !== navigator.userAgent.indexOf('MSIE') || -1 !== navigator.appVersion.indexOf('Trident/')) {
+			document.body.classList.add('is-IE');
+		}
+	</script>
+<script type="rocketlazyloadscript" id="rocket-browser-checker-js-after">
+"use strict";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var RocketBrowserCompatibilityChecker=function(){function RocketBrowserCompatibilityChecker(options){_classCallCheck(this,RocketBrowserCompatibilityChecker),this.passiveSupported=!1,this._checkPassiveOption(this),this.options=!!this.passiveSupported&&options}return _createClass(RocketBrowserCompatibilityChecker,[{key:"_checkPassiveOption",value:function(self){try{var options={get passive(){return!(self.passiveSupported=!0)}};window.addEventListener("test",null,options),window.removeEventListener("test",null,options)}catch(err){self.passiveSupported=!1}}},{key:"initRequestIdleCallback",value:function(){!1 in window&&(window.requestIdleCallback=function(cb){var start=Date.now();return setTimeout(function(){cb({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-start))}})},1)}),!1 in window&&(window.cancelIdleCallback=function(id){return clearTimeout(id)})}},{key:"isDataSaverModeOn",value:function(){return"connection"in navigator&&!0===navigator.connection.saveData}},{key:"supportsLinkPrefetch",value:function(){var elem=document.createElement("link");return elem.relList&&elem.relList.supports&&elem.relList.supports("prefetch")&&window.IntersectionObserver&&"isIntersecting"in IntersectionObserverEntry.prototype}},{key:"isSlowConnection",value:function(){return"connection"in navigator&&"effectiveType"in navigator.connection&&("2g"===navigator.connection.effectiveType||"slow-2g"===navigator.connection.effectiveType)}}]),RocketBrowserCompatibilityChecker}();
+</script>
+<script id="rocket-preload-links-js-extra" type="95385ea38a008c76dd5b4301-text/javascript">
+var RocketPreloadLinksConfig = {"excludeUris":"\/(?:.+\/)?feed(?:\/(?:.+\/?)?)?$|\/(?:.+\/)?embed\/|\/(index.php\/)?(.*)wp-json(\/.*|$)|\/refer\/|\/go\/|\/recommend\/|\/recommends\/","usesTrailingSlash":"1","imageExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php","fileExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php|html|htm","siteUrl":"https:\/\/www.iiad.edu.in","onHoverDelay":"100","rateThrottle":"3"};
+</script>
+<script type="rocketlazyloadscript" id="rocket-preload-links-js-after">
+(function() {
+"use strict";var r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e=function(){function i(e,t){for(var n=0;n<t.length;n++){var i=t[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(e,i.key,i)}}return function(e,t,n){return t&&i(e.prototype,t),n&&i(e,n),e}}();function i(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var t=function(){function n(e,t){i(this,n),this.browser=e,this.config=t,this.options=this.browser.options,this.prefetched=new Set,this.eventTime=null,this.threshold=1111,this.numOnHover=0}return e(n,[{key:"init",value:function(){!this.browser.supportsLinkPrefetch()||this.browser.isDataSaverModeOn()||this.browser.isSlowConnection()||(this.regex={excludeUris:RegExp(this.config.excludeUris,"i"),images:RegExp(".("+this.config.imageExt+")$","i"),fileExt:RegExp(".("+this.config.fileExt+")$","i")},this._initListeners(this))}},{key:"_initListeners",value:function(e){-1<this.config.onHoverDelay&&document.addEventListener("mouseover",e.listener.bind(e),e.listenerOptions),document.addEventListener("mousedown",e.listener.bind(e),e.listenerOptions),document.addEventListener("touchstart",e.listener.bind(e),e.listenerOptions)}},{key:"listener",value:function(e){var t=e.target.closest("a"),n=this._prepareUrl(t);if(null!==n)switch(e.type){case"mousedown":case"touchstart":this._addPrefetchLink(n);break;case"mouseover":this._earlyPrefetch(t,n,"mouseout")}}},{key:"_earlyPrefetch",value:function(t,e,n){var i=this,r=setTimeout(function(){if(r=null,0===i.numOnHover)setTimeout(function(){return i.numOnHover=0},1e3);else if(i.numOnHover>i.config.rateThrottle)return;i.numOnHover++,i._addPrefetchLink(e)},this.config.onHoverDelay);t.addEventListener(n,function e(){t.removeEventListener(n,e,{passive:!0}),null!==r&&(clearTimeout(r),r=null)},{passive:!0})}},{key:"_addPrefetchLink",value:function(i){return this.prefetched.add(i.href),new Promise(function(e,t){var n=document.createElement("link");n.rel="prefetch",n.href=i.href,n.onload=e,n.onerror=t,document.head.appendChild(n)}).catch(function(){})}},{key:"_prepareUrl",value:function(e){if(null===e||"object"!==(void 0===e?"undefined":r(e))||!1 in e||-1===["http:","https:"].indexOf(e.protocol))return null;var t=e.href.substring(0,this.config.siteUrl.length),n=this._getPathname(e.href,t),i={original:e.href,protocol:e.protocol,origin:t,pathname:n,href:t+n};return this._isLinkOk(i)?i:null}},{key:"_getPathname",value:function(e,t){var n=t?e.substring(this.config.siteUrl.length):e;return n.startsWith("/")||(n="/"+n),this._shouldAddTrailingSlash(n)?n+"/":n}},{key:"_shouldAddTrailingSlash",value:function(e){return this.config.usesTrailingSlash&&!e.endsWith("/")&&!this.regex.fileExt.test(e)}},{key:"_isLinkOk",value:function(e){return null!==e&&"object"===(void 0===e?"undefined":r(e))&&(!this.prefetched.has(e.href)&&e.origin===this.config.siteUrl&&-1===e.href.indexOf("?")&&-1===e.href.indexOf("#")&&!this.regex.excludeUris.test(e.href)&&!this.regex.images.test(e.href))}}],[{key:"run",value:function(){"undefined"!=typeof RocketPreloadLinksConfig&&new n(new RocketBrowserCompatibilityChecker({capture:!0,passive:!0}),RocketPreloadLinksConfig).init()}}]),n}();t.run();
+}());
+</script>
+<script type="rocketlazyloadscript" id="twenty-twenty-one-ie11-polyfills-js-after">
+( Element.prototype.matches && Element.prototype.closest && window.NodeList && NodeList.prototype.forEach ) || document.write( '<script data-minify="1" src="https://www.iiad.edu.in/wp-content/cache/min/1/wp-content/themes/iiad/assets/js/polyfills.js?ver=1764495935" data-rocket-defer defer></scr' + 'ipt>' );
+</script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-src="https://www.iiad.edu.in/wp-content/cache/min/1/wp-content/themes/iiad/assets/js/responsive-embeds.js?ver=1764495935" id="twenty-twenty-one-responsive-embeds-script-js" data-rocket-defer defer></script>
+	<script type="rocketlazyloadscript">
+		/(trident|msie)/i.test(navigator.userAgent) && document.getElementById && window.addEventListener && window.addEventListener("hashchange", (function() {
+			var t, e = location.hash.substring(1);
+			/^[A-z0-9_-]+$/.test(e) && (t = document.getElementById(e)) && (/^(?:a|select|input|button|textarea)$/i.test(t.tagName) || (t.tabIndex = -1), t.focus())
+		}), !1);
+	</script>
+<script type="95385ea38a008c76dd5b4301-text/javascript">window.lazyLoadOptions={elements_selector:"iframe[data-lazy-src]",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}};window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(var i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
+if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
+images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
+if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async src="https://www.iiad.edu.in/wp-content/plugins/wp-rocket/assets/js/lazyload/17.8.3/lazyload.min.js" type="95385ea38a008c76dd5b4301-text/javascript"></script>
+<!-- Global Search End -->
+<script type="rocketlazyloadscript" data-rocket-src="https://www.iiad.edu.in/wp-content/themes/iiad/asset/js/jquery-3.6.0.min.js" data-rocket-defer defer></script>
+
+<script type="rocketlazyloadscript" data-rocket-src="https://www.iiad.edu.in/wp-content/themes/iiad/asset/js/popper.min.js" data-rocket-defer defer></script>
+
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-src="https://www.iiad.edu.in/wp-content/cache/min/1/wp-content/themes/iiad/asset/js/dropdown-megamenu.js?ver=1764495935" data-rocket-defer defer></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-src="https://www.iiad.edu.in/wp-content/cache/min/1/wp-content/themes/iiad/asset/js/mega-menu.js?ver=1764495935" data-rocket-defer defer></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-src="https://www.iiad.edu.in/wp-content/cache/min/1/wp-content/themes/iiad/asset/js/onscroll-section-perform.js?ver=1764495935" data-rocket-defer defer></script>
+
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript">window.addEventListener('DOMContentLoaded', function() {
+	$(document).ready(function () {
+		$(".dropdown_megamenu_js").click(function () {
+			var rightmenu = $(this).next(".rightmenu").html();
+			if (typeof rightmenu === "undefined") {
+				var rightmenu = $(this).next(".sub-menu-toggle").next(".plusminus_anim").next(".rightmenu").html();
+				$(this).next(".sub-menu-toggle").next(".plusminus_anim").next(".rightmenu").next(".dropdown_mega_menu").children(".mega_manu_edge").children(".mega_menu_align").children(".megamenu_right_wrap").children(".megamenu_right_inner").html(rightmenu);
+			}
+			else {
+				$(this).next(".rightmenu").next(".dropdown_mega_menu").children(".mega_manu_edge").children(".mega_menu_align").children(".megamenu_right_wrap").children(".megamenu_right_inner").html(rightmenu);
+			}
+		});
+
+		$(".mbl_menu_items").children('.menu-item-has-children').children('a').css("color", "white");
+
+		$(".megamenu_left_wrap li").each(function () {
+			var content = $(this).children("a").text();
+			$(this).children("a").attr("data-content", content);
+		});
+	});
+});</script>
+
+<!-- <div class="nia-chatbox">
+			<div class="npf_chatbots" data-w="f1221156d0d34484afa14873b2efde34" style="display:none;"></div>
+			<script type="rocketlazyloadscript" data-rocket-type="text/javascript" async>
+				// Desktop
+				var s=document.createElement("script");
+				s.type="text/javascript";
+				s.async=true;
+				s.src="https://chatbot.nopaperforms.com/en-gb/backend/bots/niaachtbtscpt.js/5255f73104537e55/f1221156d0d34484afa14873b2efde34";
+				document.body.appendChild(s);	
+			</script> 
+		</div> -->
+<style>
+	#loading {
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background: url('https://www.iiad.edu.in/wp-content/themes/iiad/asset/images/iiad-loader.gif') no-repeat center center;
+		z-index: 9999;
+	}
+	.menu-open{
+		height:100vh
+	}
+</style>
+
+<script type="rocketlazyloadscript">window.addEventListener('DOMContentLoaded', function() {
+	jQuery(document).ready(function () {
+		jQuery('#loading').fadeOut(3000);
+	});
+});</script>
+
+<script type="rocketlazyloadscript">window.addEventListener('DOMContentLoaded', function() {
+	$(".svg_tags_item").click(function () {
+		$('html, body').animate({
+			scrollTop: $("#filter_section").offset().top - 20
+		}, 400);
+	});
+});</script>
+<!-- to show/hide yellow bar on mob -->
+<!-- <script type="rocketlazyloadscript">
+		$(document).ready(function(){
+		  $(".nav_tgl_btn").click(function(){
+			$(".notification_alert").slideToggle(200);
+		  });
+		});
+	</script> -->
+
+<script type="rocketlazyloadscript">window.addEventListener('DOMContentLoaded', function() {
+	$(function () {
+		$("a, button, .swiper-button-prev, .swiper-button-next, .dot_slider_next, .dot_slider_prev").on({
+			mouseenter: function () {
+				$(".cursor-dot").css("opacity", "0");
+			},
+			mouseleave: function () {
+				$(".cursor-dot").css("opacity", "1");
+			}
+		})
+	});
+});</script>
+<!-- dot cursor js end-->
+
+<!-- stop hover effect on plus sign if card is open (program detail page)-->
+<!-- <script type="rocketlazyloadscript">
+		$(document).ready(function(){
+				$(".profilecard_item_inner").mouseenter(function(){
+					$(this).find(".open_popup").css({"transform":"rotate(180deg)","transition-delay":"5s ease-out"});
+				  });
+				  $(".profilecard_item_inner").mouseleave(function(){
+					$(this).find(".open_popup").css({"transform":"rotate(360deg)","transition-delay":"5s ease-out"});
+				 });
+		});
+	</script> -->
+
+<!-- replace chatbot icn -->
+<!-- <script type="rocketlazyloadscript">
+	  $(document).ready(function() {
+			  // Change src attribute of image
+			  $("#__eechatIcon>img").attr("src", "https://www.iiad.edu.in/wp-content/themes/iiad/asset/images/chat-bot-icon.svg");
+		});
+	</script> -->
+<!-- <script type="rocketlazyloadscript">
+		$(document).ready(function() {
+			$('a[target="_blank"]').each(function() {
+				$(this).attr("rel","noopener");
+			});
+		});
+	</script> -->
+
+
+<script type="rocketlazyloadscript">window.addEventListener('DOMContentLoaded', function() {
+	$(document).ready(function () {
+		$('a[target="_blank"]').each(function () {
+			$(this).attr("rel", "noopener");
+		});
+
+		//replace chatbot icn
+		$("#__eechatIcon>img").attr("src", "https://www.iiad.edu.in/wp-content/themes/iiad/asset/images/chat-bot-icon.svg");
+
+
+		//stop hover effect on plus sign if card is open (program detail page)
+		$(".profilecard_item_inner").mouseenter(function () {
+			$(this).find(".open_popup").css({ "transform": "rotate(180deg)", "transition-delay": "5s ease-out" });
+		});
+		$(".profilecard_item_inner").mouseleave(function () {
+			$(this).find(".open_popup").css({ "transform": "rotate(360deg)", "transition-delay": "5s ease-out" });
+		});
+
+		//to show/hide yellow bar on mob
+		$(".nav_tgl_btn").click(function () {
+			$(".notification_alert").slideToggle(200);
+		});
+
+		//custom cursor
+		var outerCu = $('.cursor--outer');
+		$("a").each(function () {
+			$(this).mouseenter(function () {
+				TweenMax.to(outerCu, 0.2, { scale: 2 });
+				outerCu.css({ "border": "0.1px solid #000", "background-color": "transparent" });
+			})
+			$(this).mouseleave(function () {
+				TweenMax.to(outerCu, 0.3, { scale: 1 });
+				outerCu.css({ "border": "0.1px solid #ffd815", "background-color": "#ffd815" });
+			})
+
+			$("footer a, .whitecursor-cir, .blackbox_left_top_content a, .number_social_wrap a").mouseenter(function () {
+				outerCu.css("border", "0.1px solid #fff");
+			})
+			$("footer a, .whitecursor-cir, .blackbox_left_top_content a, .number_social_wrap a").mouseleave(function () {
+				outerCu.css("border", "0.1px solid #ffd815");
+			})
+			$("header a, .dot_slider_prev, .dot_slider_next, .home_yellowcircle_wrp, .admission_byyear_wrp, .gridcell_megaarrow_next, .gridcell_megaarrow_prev, .pedagogy_section, .fixed_right_cta a, .main_thecircle_banner, .black-circle-hov").mouseover(function () {
+				outerCu.css("visibility", "hidden");
+			})
+			$("header a, .dot_slider_prev, .dot_slider_next, .home_yellowcircle_wrp, .admission_byyear_wrp, .gridcell_megaarrow_next, .gridcell_megaarrow_prev, .pedagogy_section, .fixed_right_cta a, .main_thecircle_banner, .black-circle-hov").mouseleave(function () {
+				outerCu.css("visibility", "visible");
+			})
+		})
+
+	})
+});</script>
+
+<script type="rocketlazyloadscript">
+	document.addEventListener('DOMContentLoaded', () => {
+		const mainMenuContainer = document.querySelector('.home_main_menu');
+		const menuItem = document.querySelector('#menu-item-13517');
+		if (!menuItem || !mainMenuContainer) return;
+		window.addEventListener('click', (e) => {
+			if (e.target.closest('#menu-item-13517') || e.target.closest('.mega_menu_bg_layer')) {
+				mainMenuContainer.classList.toggle('menu-open');
+			}
+		});
+	});
+
+</script>			
+		<!-- Only for home page -->
+		
+		<!-- Fix right CTA on home banner -->
+		<div class="fixed_right_cta">
+		   
+			<!-- <a href="https://www.iiad.edu.in/wp-content/uploads/2025/05/Feb_Newsletterfor-webpage.pdf" target="_blank" rel="noopener"  class="fix_purple_cta">10 Years of IIAD</a> -->
+			<a href="https://www.iiad.edu.in/10-years-of-iiad/" target="_blank" rel="noopener"  class="fix_purple_cta">10 Years of IIAD</a>
+			<a href="https://apply.iiad.edu.in/" target="_blank" rel="noopener" class="fix_black_cta">apply now</a>
+			<a data-formtype="enquiryform" data-popuptext="ENQUIRY FORM" class="fix_yellow_cta popup_form_open_js" href="javascript:;">Enquire</a>
+			  
+		</div>
+		<!-- Fix right CTA on home banner End -->
+
+
+		<!-- Only for home page -->
+<!-- Fix right CTA on home banner End -->
+		<div class="popup_bg_whitelayer"></div>
+				
+			
+		<!-- Popper JS -->
+		<script type="rocketlazyloadscript" data-rocket-src="https://www.iiad.edu.in/wp-content/themes/iiad/asset/js/popper.min.js" data-rocket-defer defer></script>
+
+		<!-- Latest compiled JavaScript -->
+				<script type="rocketlazyloadscript" data-minify="1" data-rocket-src="https://www.iiad.edu.in/wp-content/cache/min/1/wp-content/themes/iiad/asset/js/bootstrap.min-4.5.2.js?ver=1764495935" data-rocket-defer defer></script>
+		
+		<script type="rocketlazyloadscript" data-minify="1" data-rocket-src="https://www.iiad.edu.in/wp-content/cache/min/1/wp-content/themes/iiad/asset/jarallax/jarallax.js?ver=1764495935" data-rocket-defer defer></script>
+
+		<script type="rocketlazyloadscript" data-minify="1" data-rocket-src="https://www.iiad.edu.in/wp-content/cache/min/1/wp-content/themes/iiad/asset/js/lottie-player-1.4.5.js?ver=1764495935" data-rocket-defer defer></script>
+		
+		<script type="rocketlazyloadscript" data-minify="1" data-rocket-src="https://www.iiad.edu.in/wp-content/cache/min/1/wp-content/themes/iiad/asset/js/lottie-interactivity.min-1.2.0.js?ver=1764495935" data-rocket-defer defer></script>
+		
+		<script type="rocketlazyloadscript" data-minify="1" data-rocket-src="https://www.iiad.edu.in/wp-content/cache/min/1/wp-content/themes/iiad/asset/js/swiper-bundle.js?ver=1764495935" data-rocket-defer defer></script>
+
+		<script type="rocketlazyloadscript" data-minify="1" data-rocket-src="https://www.iiad.edu.in/wp-content/cache/min/1/wp-content/themes/iiad/asset/js/all-slider.js?ver=1764495935" data-rocket-defer defer></script>
+
+  		<script type="rocketlazyloadscript" data-minify="1" data-rocket-src="https://www.iiad.edu.in/wp-content/cache/min/1/wp-content/themes/iiad/asset/js/jquery.jConveyorTicker.js?ver=1764495935" data-rocket-defer defer></script>
+
+		<script type="rocketlazyloadscript" data-minify="1" data-rocket-src="https://www.iiad.edu.in/wp-content/cache/min/1/wp-content/themes/iiad/asset/js/secondary-menu.js?ver=1764495935" data-rocket-defer defer></script>
+
+		<script type="rocketlazyloadscript" data-minify="1" data-rocket-src="https://www.iiad.edu.in/wp-content/cache/min/1/wp-content/themes/iiad/asset/js/global.js?ver=1764495935" data-rocket-defer defer></script>		
+
+		<script type="rocketlazyloadscript" data-rocket-src="https://www.iiad.edu.in/wp-content/themes/iiad/asset/js/reverse-header.js?=19nov" data-rocket-defer defer></script>		
+
+		<!-- <script type="rocketlazyloadscript" data-rocket-src="https://www.iiad.edu.in/wp-content/themes/iiad/asset/js/onscroll-section-perform.js?ver=1.6"></script> -->
+
+		<script type="rocketlazyloadscript" data-rocket-type="text/javascript">window.addEventListener('DOMContentLoaded', function() {
+			$(document).ready(function(){
+				
+			// 	 setInterval(function(){
+			// 		  $(".homebanner_inner").click();
+			// 		  $(".homebanner_inner").css("visibility", "visible");
+			//    },0);
+
+			    /**************** Home banner animation movement ********************************/
+				let xfactor = 0.06;
+				if($(window).width() < 1367){
+					xfactor = 0.28;
+				}
+				if($('#homeBanner').length){
+					let wrap = document.querySelector("#homeBanner");
+
+					wrap.addEventListener("touchstart", parallax, false);
+
+					let elem = document.querySelector("#parallax");
+
+					function parallax(e) {
+						let _w = window.innerWidth / 6;
+
+						let _h = window.innerHeight / 3;
+
+						let _mouseX = e.clientX || e.touches[0].clientX;
+						let _mouseY  = e.clientY || e.touches[0].clientY;
+
+						let _depth3 = `${1+ (_mouseX - _w)* xfactor}% center`;
+
+						let x = `${_depth3}`;
+
+						elem.style.backgroundPosition = x;
+					}
+
+					$('#homeBanner').bind('touchmove mousemove', function (e) {
+						parallax(e)
+					});
+				}
+				
+			    /**************** Sticky Header home ********************************/
+
+				$(window).on("scroll", function() {
+					fixStickyHeader();
+				})
+
+				function fixStickyHeader(){
+
+					var scrolling = $(window).scrollTop();
+					
+					if(scrolling > 480){
+						$('header').addClass('homesticky');
+					}else{
+						$('header').removeClass('homesticky');
+					}
+
+					if(scrolling > 10){
+						$('.notification_alert').removeClass('show_notice_alert');
+					}else{
+						if(sessionStorage.getItem('firstVisit') !=1)
+						{
+							$('.notification_alert').addClass('show_notice_alert');
+
+						}
+					}
+
+				}
+
+			    /******************** Sync text verticle slider ****************************/
+
+			      var home_textslider_js1 = new Swiper(".home_textslider_js1", {
+			        direction: "vertical",
+				   	autoplay: {
+						delay: 1500,
+					},
+			        loop:true
+			      });
+
+			      var home_textslider_js2 = new Swiper(".home_textslider_js2", {
+			        direction: "vertical",
+				   	autoplay: {
+						delay: 1508,
+					},
+			        loop:true
+			      });
+
+			    /******************* Dots slider *****************************/  
+
+				var dotsslider_js = new Swiper(".dotsslider_js", {
+					pagination: {
+						el: ".swiper-pagination",
+						clickable: true,
+					},
+			        navigation: {
+			          nextEl: ".dot_slider_next",
+			          prevEl: ".dot_slider_prev",
+			        },
+				});
+
+				/**************** Marquee Ticker ************************/
+				
+				$('.js_conveyor').jConveyorTicker({
+			      force_loop: true
+			    });		
+
+				/************************ Popup Blog slider ***************************/
+
+				$('.tags_popup_slider_js').on("click", function(){
+					var tagclass = $(this).attr("id");
+					$('.popup_bg_whitelayer').addClass('showbg_layer_popslider');
+					$('.popup_slider_nav').css('display','block');
+					$('.'+tagclass).addClass('popup_slider_show');
+					
+				});
+
+				$('.popup_slider_close').on("click", function(){
+					$('.popup_slider_hold').removeClass('popup_slider_show');
+					$('.popup_bg_whitelayer').removeClass('showbg_layer_popslider');
+					$('.popup_slider_nav').css('display','none');
+				})
+
+			})
+		});</script>
+		 
+		<script type="rocketlazyloadscript">window.addEventListener('DOMContentLoaded', function() {
+		    $('.mbl_nav_click_js').on('click', function () {
+		    $('.mobile_menu_popup').toggle('openmob');
+  // Your code here
+});
+
+		});</script>
+		
+	<script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="95385ea38a008c76dd5b4301-|49" defer></script></body>
+</html>
+
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me - Debug: cached@1764590077 -->

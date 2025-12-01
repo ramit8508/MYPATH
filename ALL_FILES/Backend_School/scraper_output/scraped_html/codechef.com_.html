@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>
+        CodeChef - Learn and Practice Coding with Problems    </title>
+    <!-- Google Tag Manager -->
+        <script type="78d7b1fa45aa4189176c05c4-text/javascript">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-TV5X2M');</script>
+        <!-- End Google Tag Manager --><meta property="og:url" content="https://www.codechef.com/" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="CodeChef | CodeChef: Practical coding for everyone" />
+<meta property="og:image" content="https://cdn.codechef.com/sites/all/themes/abessive/cc-logo.png" />
+<meta property="og:description" content="CodeChef | CodeChef: Practical coding for everyone" />
+<meta property="fb:app_id" content="191217060453" />
+<meta name='robots' content='index, follow' />
+<meta name='description' content='Learn coding with our free and beginner friendly courses on Python, Java, C, C++, Data structures, Algorithms, SQL. Solve our collection of 1000s of problems to practice coding.' /><link rel='canonical' href='https://www.codechef.com'><script type="78d7b1fa45aa4189176c05c4-text/javascript">window.csrfToken = 'ba4c6da993b92c801b74002185c9ad9ffe98d76b7453910db121e0cbbc00b2ad';</script><meta charset='UTF-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<link rel='stylesheet' type='text/css' href='/sites/all/themes/mallow/css/mallow.css?v=b6993133e2404aeadb2381d67dd0749d'><script src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js' type="78d7b1fa45aa4189176c05c4-text/javascript"></script>
+<script src='/sites/all/themes/mallow/js/mallow.min.js?v=ecc5fe6b52ca4a2c5f788355018fccda' type="78d7b1fa45aa4189176c05c4-text/javascript"></script>
+<script src='/em/libs/common/common.js?v=f9876ac0fdccc342d9e061bd02b5248b' type="78d7b1fa45aa4189176c05c4-text/javascript"></script>
+<script src='/misc/drupal.js' type="78d7b1fa45aa4189176c05c4-text/javascript"></script><script src='/em/libs/cryptojs/aes.js' type="78d7b1fa45aa4189176c05c4-text/javascript"></script><link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Open+Sans:wght@300;400;600;700;800&family=Roboto+Mono:wght@100;300;400;500;700&family=Lato:wght@100;300;400;700;900&family=Outfit:wght@100;200;300;400;500;600&family=IBM+Plex+Mono&family=Inter:wght@100;200;300;400&family=Fustat:wght@100;200;300;400;500;600;700;800;900&family=Gochi+Hand:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"><style>
+        .m-divider--vertical, .m-premium-text-container, .m-premium-sale-text-container {
+             display:none !important;
+        }
+        * {
+            font-family: "Fustat", serif;
+            font-style: normal;
+        }
+        </style>    <meta charset="utf-8">
+    <meta name="facebook-domain-verification" content="ruyz520i5y7n43r6lgij5pt158siz6"/>
+    <meta name="google-site-verification" content="u_r-UtobgmZQQ9jZd9_KqvQl-qc42N6HE0TOBxeWghg"/>
+    <script src='/sites/all/modules/codechef_common_functions/js/codechefGenericModal.js' type="78d7b1fa45aa4189176c05c4-text/javascript"></script>
+    <script src='/sites/all/modules/codechef_common_functions/codechef_common_functions.js?v=
+    14a693cb7b4d17e526c6987eaad20e73' type="78d7b1fa45aa4189176c05c4-text/javascript"></script>
+    <script type="78d7b1fa45aa4189176c05c4-text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"visitedContests":[],"username":null,"user_consented_privacy_policy_version":null,"user_consented_privacy_policy_on":null,"current_privacy_policy_version":null});
+//--><!]]>
+</script>
+    <script src='/sites/all/modules/codechef_alerts/codechef_alerts.js?v=
+    649c43b6894169b33b5557aa0374459d' type="78d7b1fa45aa4189176c05c4-text/javascript"></script>
+    <link rel='stylesheet' type='text/css' href='/misc/jquery-popup-overlay/popupoverlay.css'>
+    <link rel='stylesheet' type='text/css' href='/sites/all/themes/abessive/css/modal.css'>
+    <link rel="icon" href="https://www.codechef.com/favicon.ico" type="image/x-icon"/>
+    <link rel="dns-prefetch" href="//codechef_shared.s3.amazonaws.com"/>
+    <link rel="dns-prefetch" href="//beacon.errorception.com"/>
+    <link rel="dns-prefetch" href="//static.ak.facebook.com"/>
+    <link rel="dns-prefetch" href="//fbcdn-profile-a.akamaihd.net"/>
+    <link rel="dns-prefetch" href="//discuss.codechef.com"/>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "CodeChef",
+        "url": "https://www.codechef.com/",
+        "logo": "https://cdn.codechef.com/sites/all/themes/abessive/cc-logo.svg",
+        "sameAs": [
+            "https://www.facebook.com/CodeChef/",
+            "https://twitter.com/codechef",
+            "https://www.youtube.com/channel/UCh-5M0r0SBgb5xNCFXG7aXQ",
+            "https://www.linkedin.com/company/codechef/"
+        ]
+    }
+    </script>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TV5X2M"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) --><div id = "notificationHeaderContainer">
+    <div class="homeNotificationContainer">
+                    </div>
+    <header class="m-header-one l-main-header l-home-header">
+    <div class="l-header">
+        <div class="l-header__logo">
+            <div class="l-header__image-2">
+                <a href="https://www.codechef.com">
+                    <img class="m-header__image m-header__image--pc"
+                         src="https://cdn.codechef.com/images/cc-logo.svg"
+                         alt="CodeChef Logo">
+                    <img class="m-header__image m-header__image--mobile"
+                         src="https://cdn.codechef.com/images/cc-logo-mobile-1.svg"
+                         alt="CodeChef Logo">
+                </a>
+            </div>
+            <div class="desktopNavigation">
+                <div class="headerNavigation">
+                    <div class="navigationRow">
+                         <div class="navigationItem dropdownNavigationItem">
+                            <span class="navigationLink">Courses</span>
+                            <div class='l-username l-course'>
+                    <div class='l-dropdown-container'>
+                        <i class='i-course i-dropdown-down-1'></i>
+                    </div><div class='l-course-dropdown courseDropDownContainer desktopDropdown' style='display: none'>
+                <div class='topLayout'>
+                    <div class='leftColumn'><div class='categoryItem activeCategory' data-category='programming-dsa'>
+                        <h3 class='categoryTitle'>Programming and DSA</h3><p class='categoryDescription'>Learn to think like a programmer. 
+                              Develop your problem-solving skills with essential data structures and algorithms.</p></div><div class='categoryItem ' data-category='development'>
+                        <h3 class='categoryTitle'>Career Paths</h3><p class='categoryDescription'>From beginner to job-ready. 
+                                Explore our curated career paths designed to help you succeed in the tech industry.</p></div><div class='categoryItem ' data-category='other'>
+                        <h3 class='categoryTitle'>Other Courses</h3></div></div>
+                <div class='rightColumn'>
+                    <h2 class='categoryHeader'>Programming and DSA</h2>
+                </div>
+                </div>
+                <div class='bottomLayout'>
+                    <a class='completeCourseCta' href='/learn#header'>
+                        Explore courses
+                        <span class='externalLink__iconContainer'>
+                            <i class='externalLink__rightIcon'></i>
+                        </span>
+                    </a>
+                </div>
+            </div><div class='courseDropDownContainer mobileDropdown' style='display: none'>
+                <div class='headingContainer'>
+                    <h3 class='heading'>Catalogue</h3>
+                    <i class='fa fa-close'></i>
+                </div>
+                <div class='mobileLayout topLayout'><div class='mobileSection'>
+                    <div class='categoryItem mobileCategoryItem' data-category='programming-dsa'>
+                        <h3 class='categoryTitle'>Programming and DSA</h3><p class='categoryDescription'>Learn to think like a programmer. 
+                              Develop your problem-solving skills with essential data structures and algorithms.</p></div>
+                    <div class='mobileCourseList'></div>
+                </div><div class='mobileSection'>
+                    <div class='categoryItem mobileCategoryItem' data-category='development'>
+                        <h3 class='categoryTitle'>Career Paths</h3><p class='categoryDescription'>From beginner to job-ready. 
+                                Explore our curated career paths designed to help you succeed in the tech industry.</p></div>
+                    <div class='mobileCourseList'></div>
+                </div><div class='mobileSection'>
+                    <div class='categoryItem mobileCategoryItem' data-category='other'>
+                        <h3 class='categoryTitle'>Other Courses</h3></div>
+                    <div class='mobileCourseList'></div>
+                </div></div>
+                <div class='stickyBottomLayout bottomLayout'>
+                    <a class='completeCourseCta' href='/learn#header'>
+                        Explore courses
+                        <span class='externalLink__iconContainer'>
+                            <i class='externalLink__rightIcon'></i>
+                        </span>
+                    </a>
+                </div>
+            </div></div>
+                         </div>
+                         <a class="navigationItem" href="/practice">
+                            <span class="navigationLink ">Practice</span>
+                         </a>
+                         <a class="navigationItem" href="/contests">
+                            <span class="navigationLink ">Compete</span>
+                         </a>
+                         <a class="navigationItem" href="/ide">
+                            <span class="navigationLink">Compiler</span>
+                        </a>             
+                    </div>
+                </div>
+                            </div>
+        </div>
+        <div class="headerRightContainer">
+            <div class="l-header__user-block">
+                <a class="m-premium-text-container" href="/pro#header" target="_blank">
+                <i class="i-premium-icon"></i>
+                <span class="m-premium-text">Upgrade to Pro</span>
+            </a><hr class="m-divider--vertical">
+    <div class="m-login-container--desktop">
+        <button class="m-login-button m-login-button-no-border" onclick="if (!window.__cfRLUnblockHandlers) return false; window.open('https://www.codechef.com/login?destination=/', '_self')" data-cf-modified-78d7b1fa45aa4189176c05c4-="">Login</button><button class="m-signup-button" onclick="if (!window.__cfRLUnblockHandlers) return false; window.open('https://www.codechef.com/signup?destination=/', '_self')" data-cf-modified-78d7b1fa45aa4189176c05c4-="">Sign Up</button>
+    </div>
+    <div class="m-login-container--mobile">
+        <button class="m-login-button" onclick="if (!window.__cfRLUnblockHandlers) return false; window.open('https://www.codechef.com/login?destination=/', '_self')" data-cf-modified-78d7b1fa45aa4189176c05c4-="">Login / Sign Up</button>
+    </div>            </div>
+        </div>
+    </div>
+</header>
+<div class="l-home-nav">
+    <div class="mobileNavigation">
+        <div class="headerNavigation">
+                    <div class="navigationRow">
+                         <div class="navigationItem dropdownNavigationItem">
+                            <span class="navigationLink">Courses</span>
+                            <div class='l-username l-course'>
+                    <div class='l-dropdown-container'>
+                        <i class='i-course i-dropdown-down-1'></i>
+                    </div><div class='l-course-dropdown courseDropDownContainer desktopDropdown' style='display: none'>
+                <div class='topLayout'>
+                    <div class='leftColumn'><div class='categoryItem activeCategory' data-category='programming-dsa'>
+                        <h3 class='categoryTitle'>Programming and DSA</h3><p class='categoryDescription'>Learn to think like a programmer. 
+                              Develop your problem-solving skills with essential data structures and algorithms.</p></div><div class='categoryItem ' data-category='development'>
+                        <h3 class='categoryTitle'>Career Paths</h3><p class='categoryDescription'>From beginner to job-ready. 
+                                Explore our curated career paths designed to help you succeed in the tech industry.</p></div><div class='categoryItem ' data-category='other'>
+                        <h3 class='categoryTitle'>Other Courses</h3></div></div>
+                <div class='rightColumn'>
+                    <h2 class='categoryHeader'>Programming and DSA</h2>
+                </div>
+                </div>
+                <div class='bottomLayout'>
+                    <a class='completeCourseCta' href='/learn#header'>
+                        Explore courses
+                        <span class='externalLink__iconContainer'>
+                            <i class='externalLink__rightIcon'></i>
+                        </span>
+                    </a>
+                </div>
+            </div><div class='courseDropDownContainer mobileDropdown' style='display: none'>
+                <div class='headingContainer'>
+                    <h3 class='heading'>Catalogue</h3>
+                    <i class='fa fa-close'></i>
+                </div>
+                <div class='mobileLayout topLayout'><div class='mobileSection'>
+                    <div class='categoryItem mobileCategoryItem' data-category='programming-dsa'>
+                        <h3 class='categoryTitle'>Programming and DSA</h3><p class='categoryDescription'>Learn to think like a programmer. 
+                              Develop your problem-solving skills with essential data structures and algorithms.</p></div>
+                    <div class='mobileCourseList'></div>
+                </div><div class='mobileSection'>
+                    <div class='categoryItem mobileCategoryItem' data-category='development'>
+                        <h3 class='categoryTitle'>Career Paths</h3><p class='categoryDescription'>From beginner to job-ready. 
+                                Explore our curated career paths designed to help you succeed in the tech industry.</p></div>
+                    <div class='mobileCourseList'></div>
+                </div><div class='mobileSection'>
+                    <div class='categoryItem mobileCategoryItem' data-category='other'>
+                        <h3 class='categoryTitle'>Other Courses</h3></div>
+                    <div class='mobileCourseList'></div>
+                </div></div>
+                <div class='stickyBottomLayout bottomLayout'>
+                    <a class='completeCourseCta' href='/learn#header'>
+                        Explore courses
+                        <span class='externalLink__iconContainer'>
+                            <i class='externalLink__rightIcon'></i>
+                        </span>
+                    </a>
+                </div>
+            </div></div>
+                         </div>
+                         <a class="navigationItem" href="/practice">
+                            <span class="navigationLink ">Practice</span>
+                         </a>
+                         <a class="navigationItem" href="/contests">
+                            <span class="navigationLink ">Compete</span>
+                         </a>
+                         <a class="navigationItem" href="/ide">
+                            <span class="navigationLink">Compiler</span>
+                        </a>             
+                    </div>
+                </div>
+                    </div>
+</div>
+</div>
+<script src="https://d3js.org/d3.v7.min.js" type="78d7b1fa45aa4189176c05c4-text/javascript"></script>
+<script type="78d7b1fa45aa4189176c05c4-text/javascript">
+
+function closeNotifHeader() {
+        $('#reelNotificationContainer').remove();
+    }
+</script>
+
+<section class="firstSection">
+    <div class="topSection">
+        <div class="userProfileFramesContainer">
+            <i class="userProfileFrames"></i>
+            <div class="trustedCount">
+                <span class="yellowBraces">{</span>
+                <span>Trusted by 5M+ developers</span>
+                <span class="yellowBraces">}</span>
+            </div>
+            <div class="fistSectionHeading1">Master Programming with CodeChef</div>
+        </div>
+        <div class="learnPracticeContainer">
+            <div class="firstSectionHeading2"> Bored of Theory? Let’s Code for Real</div>
+            <div class="firstSectionDescription">
+                Join 5M+ students building projects, cracking contests, and landing internships.
+            </div>
+        </div>
+        <div class="firstSectionSubDescription">
+            Kickstart Your Coding Journey – No Boring Lectures, Just Real Practice!
+        </div>
+        <div class="buttonContainer">
+            
+     <a class='icon-social signupOauthButton connect' title='Signup/Login with Google' id='button_google' onclick="if (!window.__cfRLUnblockHandlers) return false; connectOauth(event, '/OAuth/google')" data-cf-modified-78d7b1fa45aa4189176c05c4-="">
+<span class='oauthBg'><i class='GoogleIcon'></i></span>
+      Sign in
+                    </a>
+                                <a href="/learn" type="button" class="exploreCoursesBtn">Explore Courses</a>
+        </div>
+    </div>
+    <div class="bottomSection">
+        <a href="https://www.codechef.com/learn/course/python">
+            <img class="courseBanner" src="https://cdn.codechef.com/images/homepage/course-banner.avif"
+                 alt="course banner" />
+        </a>
+    </div>
+</section>
+<section class="secondSection">
+    <div class="topSection">
+        <span class="heading">Delivering job ready developers</span>
+        <span class="description"> Companies where our course graduates are working </span>
+    </div>
+    <div class="bottomSection">
+        <div class="companiesScroll"></div>
+    </div>
+</section>
+<section class="thirdSection">
+    <div class="topSection">
+        <div class="headingContainer">
+            <i class="leftBow"></i>
+            <span class="heading">Featured Courses</span>
+            <i class="rightBow"></i>
+        </div>
+    </div>
+    <div class="SubheadingContainer">
+        <p class="headBold">
+            Courses That Actually Help You Land Internships and Jobs
+        </p>
+        <p class="heading"> From Python basics to 5-star CP prep – built for students, tested by recruiter</p>
+    </div>
+    <div class="roadmapSection">
+        <div class="bottomSection cardSlider"><div class="roadmapCardContainer"><div class="topRow"><img src="https://cdn.codechef.com/images/homepage/icons/python-dsa.avif" 
+        alt="course thumbnail"></div><div class="bottomRow"><div class="ratingContainer"><i class="starIcon"></i><span class="rating">4.6</span><span class="ratingCount">(103.4k+)</span></div><div class="courseDescription"><h3 class="text1">Python with Beginner DSA</h3><p class="para1">Learn the basics of Python and data structures. 
+            Use practice modules to boost your coding and logic. End the roadmap 
+            with projects to showcase your Python abilities.</p></div><div class="courseDetails"><div class="courseCountDetails"><i class="hatIcon"></i><span class="courseCount">6 courses</span></div><div class="learnersCountDetails"><i class="learnersIcon"></i><span class="learnersCount">451k+ learners</span></div></div><a class="primaryButton" href="/roadmap/python-dsa"><span>Enrol now</span></a></div></div><div class="roadmapCardContainer"><div class="topRow"><img src="https://cdn.codechef.com/images/homepage/icons/data-structures-and-algorithms.avif" 
+        alt="course thumbnail"></div><div class="bottomRow"><div class="ratingContainer"><i class="starIcon"></i><span class="rating">4.6</span><span class="ratingCount">(72.9k+)</span></div><div class="courseDescription"><h3 class="text1">Learn Data Structures and Algorithms</h3><p class="para1">Learn and Practice problems on data structures and 
+            algorithms like Linked Lists, Stacks, Queues, Matrices, Trees, Graphs, 
+            and more. Solve over 450 problems in total.</p></div><div class="courseDetails"><div class="courseCountDetails"><i class="hatIcon"></i><span class="courseCount">23 courses</span></div><div class="learnersCountDetails"><i class="learnersIcon"></i><span class="learnersCount">125k+ learners</span></div></div><a class="primaryButton" href="/roadmap/data-structures-and-algorithms"><span>Enrol now</span></a></div></div><div class="roadmapCardContainer"><div class="topRow"><img src="https://cdn.codechef.com/images/homepage/icons/react-development.avif" 
+        alt="course thumbnail"></div><div class="bottomRow"><div class="ratingContainer"><i class="starIcon"></i><span class="rating">4.7</span><span class="ratingCount">(94k+)</span></div><div class="courseDescription"><h3 class="text1">React JS for Front-end development</h3><p class="para1">Start with the fundamentals—learn to build dynamic interfaces using JSX, 
+            components, and state management. Dive into React Hooks, side effects, and modern patterns while crafting 
+            real-world apps. Perfect for beginners, 
+            with hands-on projects to turn theory into practical skills.</p></div><div class="courseDetails"><div class="courseCountDetails"><i class="hatIcon"></i><span class="courseCount">4 courses</span></div><div class="learnersCountDetails"><i class="learnersIcon"></i><span class="learnersCount">178k+ learners</span></div></div><a class="primaryButton" href="/roadmap/react-developer"><span>Enrol now</span></a></div></div><div class="roadmapCardContainer"><div class="topRow"><img src="https://cdn.codechef.com/images/homepage/icons/java-dsa.avif" 
+        alt="course thumbnail"></div><div class="bottomRow"><div class="ratingContainer"><i class="starIcon"></i><span class="rating">4.6</span><span class="ratingCount">(784k+)</span></div><div class="courseDescription"><h3 class="text1">Java with Beginner DSA</h3><p class="para1">Master core Java programming concepts focused on data 
+            structures and algorithms. Sharpen your skills with 600+ handpicked coding 
+            problems.</p></div><div class="courseDetails"><div class="courseCountDetails"><i class="hatIcon"></i><span class="courseCount">6 courses</span></div><div class="learnersCountDetails"><i class="learnersIcon"></i><span class="learnersCount">350k+ learners</span></div></div><a class="primaryButton" href="/roadmap/java-dsa"><span>Enrol now</span></a></div></div><div class="roadmapCardContainer"><div class="topRow"><img src="https://cdn.codechef.com/images/homepage/icons/cpp-dsa.avif" 
+        alt="course thumbnail"></div><div class="bottomRow"><div class="ratingContainer"><i class="starIcon"></i><span class="rating">4.6</span><span class="ratingCount">(446k+)</span></div><div class="courseDescription"><h3 class="text1">C++ with Beginner DSA</h3><p class="para1">Learn core C++ programming concepts with a focus 
+            on problem-solving and data structures. Practice your C++ programming 
+            by applying it to 500+ handpicked data structures and algorithms-based 
+            coding problems.</p></div><div class="courseDetails"><div class="courseCountDetails"><i class="hatIcon"></i><span class="courseCount">6 courses</span></div><div class="learnersCountDetails"><i class="learnersIcon"></i><span class="learnersCount">267k+ learners</span></div></div><a class="primaryButton" href="/roadmap/cpp-dsa"><span>Enrol now</span></a></div></div><div class="roadmapCardContainer"><div class="topRow"><img src="https://cdn.codechef.com/images/homepage/icons/c-dsa.avif" 
+        alt="course thumbnail"></div><div class="bottomRow"><div class="ratingContainer"><i class="starIcon"></i><span class="rating">4.6</span><span class="ratingCount">(585k+)</span></div><div class="courseDescription"><h3 class="text1">C language with Beginner DSA</h3><p class="para1">Learn the essential C programming concepts. Enhance your 
+            skills with 600+ targeted coding problems focused on data structures and 
+            algorithms.</p></div><div class="courseDetails"><div class="courseCountDetails"><i class="hatIcon"></i><span class="courseCount">7 courses</span></div><div class="learnersCountDetails"><i class="learnersIcon"></i><span class="learnersCount">290k+ learners</span></div></div><a class="primaryButton" href="/roadmap/c-dsa"><span>Enrol now</span></a></div></div><div class="roadmapCardContainer"><div class="topRow"><img src="https://cdn.codechef.com/images/homepage/icons/html.avif" 
+        alt="course thumbnail"></div><div class="bottomRow"><div class="ratingContainer"><i class="starIcon"></i><span class="rating">4.6</span><span class="ratingCount">(184k+)</span></div><div class="courseDescription"><h3 class="text1">Frontend Roadmap using HTML / CSS / JS</h3><p class="para1">Master front-end web development with our HTML, CSS and JS 
+            roadmap. Start with HTML and CSS for static sites. Learn JavaScript for dynamic 
+            sites. Improve your skills with practical examples and projects.</p></div><div class="courseDetails"><div class="courseCountDetails"><i class="hatIcon"></i><span class="courseCount">6 courses</span></div><div class="learnersCountDetails"><i class="learnersIcon"></i><span class="learnersCount">90k+ learners</span></div></div><a class="primaryButton" href="/roadmap/html"><span>Enrol now</span></a></div></div><div class="roadmapCardContainer"><div class="topRow"><img src="https://cdn.codechef.com/images/homepage/icons/become-5-star.avif" 
+        alt="course thumbnail"></div><div class="bottomRow"><div class="ratingContainer"><i class="starIcon"></i><span class="rating">4.6</span><span class="ratingCount">(23.6k)</span></div><div class="courseDescription"><h3 class="text1">Competitive Programming roadmap - Become 5 star</h3><p class="para1">Practice with our curated set of problems to excel at 
+            Competitive Programming. Move from 1 to 5 stars in programming contests using 
+            our guided method.</p></div><div class="courseDetails"><div class="courseCountDetails"><i class="hatIcon"></i><span class="courseCount">7 courses</span></div><div class="learnersCountDetails"><i class="learnersIcon"></i><span class="learnersCount">105k+ learners</span></div></div><a class="primaryButton" href="/roadmap/become-5-star"><span>Enrol now</span></a></div></div><div class="roadmapCardContainer"><div class="topRow"><img src="https://cdn.codechef.com/images/homepage/icons/sql.avif" 
+        alt="course thumbnail"></div><div class="bottomRow"><div class="ratingContainer"><i class="starIcon"></i><span class="rating">4.6</span><span class="ratingCount">(150k+)</span></div><div class="courseDescription"><h3 class="text1">SQL Roadmap for Data Analysis</h3><p class="para1">Learn SQL to analyse and manipulate large data with our 
+            real-world case studies-based practical course. Solve over 200+ query-related 
+            exercises. Learn basic Python for advanced data analysis.</p></div><div class="courseDetails"><div class="courseCountDetails"><i class="hatIcon"></i><span class="courseCount">6 courses</span></div><div class="learnersCountDetails"><i class="learnersIcon"></i><span class="learnersCount">107k+ learners</span></div></div><a class="primaryButton" href="/roadmap/sql"><span>Enrol now</span></a></div></div><div class="roadmapCardContainer"><div class="topRow"><img src="https://cdn.codechef.com/images/homepage/icons/javascript-dsa.avif" 
+        alt="course thumbnail"></div><div class="bottomRow"><div class="ratingContainer"><i class="starIcon"></i><span class="rating">4.6</span><span class="ratingCount">(184k+)</span></div><div class="courseDescription"><h3 class="text1">JavaScript with Beginner DSA</h3><p class="para1">Learn the fundamentals of JavaScript programming. 
+            Solve 500+ handpicked data structures and algorithms-based coding problems 
+            using JavaScript to further practice the language.</p></div><div class="courseDetails"><div class="courseCountDetails"><i class="hatIcon"></i><span class="courseCount">7 courses</span></div><div class="learnersCountDetails"><i class="learnersIcon"></i><span class="learnersCount">173k+ learners</span></div></div><a class="primaryButton" href="/roadmap/javascript-dsa"><span>Enrol now</span></a></div></div><div class="roadmapCardContainer"><div class="topRow"><img src="https://cdn.codechef.com/images/homepage/icons/java-development.avif" 
+        alt="course thumbnail"></div><div class="bottomRow"><div class="ratingContainer"><i class="starIcon"></i><span class="rating">4.5</span><span class="ratingCount">(270k+)</span></div><div class="courseDescription"><h3 class="text1">Java Backend Developer</h3><p class="para1">Master Java for development with a focus on fundamentals, 
+            frameworks, databases and API concepts. Build projects every step of the way 
+            to showcase your Java developer skills.</p></div><div class="courseDetails"><div class="courseCountDetails"><i class="hatIcon"></i><span class="courseCount">7 courses</span></div><div class="learnersCountDetails"><i class="learnersIcon"></i><span class="learnersCount">238k+ learners</span></div></div><a class="primaryButton" href="/roadmap/java-development"><span>Enrol now</span></a></div></div><div class="roadmapCardContainer"><div class="topRow"><img src="https://cdn.codechef.com/images/homepage/icons/python-development.avif" 
+        alt="course thumbnail"></div><div class="bottomRow"><div class="ratingContainer"><i class="starIcon"></i><span class="rating">4.6</span><span class="ratingCount">(332k+)</span></div><div class="courseDescription"><h3 class="text1">Python Backend Developer</h3><p class="para1">Master Python for backend development with a focus 
+            on fundamentals, frameworks, databases, and APIs. Build projects every 
+            step of the way to showcase your backend skills.</p></div><div class="courseDetails"><div class="courseCountDetails"><i class="hatIcon"></i><span class="courseCount">8 courses</span></div><div class="learnersCountDetails"><i class="learnersIcon"></i><span class="learnersCount">178k+ learners</span></div></div><a class="primaryButton" href="/roadmap/python-development"><span>Enrol now</span></a></div></div><div class="roadmapCardContainer"><div class="topRow"><img src="https://cdn.codechef.com/images/homepage/icons/data-analysis-using-python.avif" 
+        alt="course thumbnail"></div><div class="bottomRow"><div class="ratingContainer"><i class="starIcon"></i><span class="rating">4.6</span><span class="ratingCount">(270k+)</span></div><div class="courseDescription"><h3 class="text1">Data analysis using Python</h3><p class="para1">Master Python for data analysis with a focus on fundamentals, 
+            Numpy, Pandas and Matplotlib. Build projects every step of the way to showcase 
+            your data analysis skills.</p></div><div class="courseDetails"><div class="courseCountDetails"><i class="hatIcon"></i><span class="courseCount">4 courses</span></div><div class="learnersCountDetails"><i class="learnersIcon"></i><span class="learnersCount">2.6k+ learners</span></div></div><a class="primaryButton" href="/roadmap/data-analysis-using-python"><span>Enrol now</span></a></div></div><div class="roadmapCardContainer"><div class="topRow"><img src="https://cdn.codechef.com/images/homepage/icons/machine-learning-using-python.avif" 
+        alt="course thumbnail"></div><div class="bottomRow"><div class="ratingContainer"><i class="starIcon"></i><span class="rating">4.7</span><span class="ratingCount">(3.6k+)</span></div><div class="courseDescription"><h3 class="text1">Machine Learning using Python</h3><p class="para1">Master Machine Learning from the ground up using Python.
+             Learn the core concepts, explore essential libraries like NumPy, Pandas,
+             and Scikit-learn, and build projects that bring algorithms to life.</p></div><div class="courseDetails"><div class="courseCountDetails"><i class="hatIcon"></i><span class="courseCount">8 courses</span></div><div class="learnersCountDetails"><i class="learnersIcon"></i><span class="learnersCount">50k+ learners</span></div></div><a class="primaryButton" href="/roadmap/machine-learning-using-python"><span>Enrol now</span></a></div></div><div class="roadmapCardContainer"><div class="topRow"><img src="https://cdn.codechef.com/images/homepage/icons/ai-ml.avif" 
+        alt="course thumbnail"></div><div class="bottomRow"><div class="ratingContainer"><i class="starIcon"></i><span class="rating">0</span><span class="ratingCount">(0)</span></div><div class="courseDescription"><h3 class="text1">AI Machine Learning Basics</h3><p class="para1">Learn the basics of AI and machine learning with our 
+            comprehensive roadmap. Start with the fundamentals and build your skills 
+            with practical projects.</p></div><div class="courseDetails"><div class="courseCountDetails"><i class="hatIcon"></i><span class="courseCount">0 courses</span></div><div class="learnersCountDetails"><i class="learnersIcon"></i><span class="learnersCount">0 learners</span></div></div><div class="primaryButton comingSoon"><span>Coming Soon</span></div></div></div></div>        <div class="sliderButtons">
+            <i class="prev"></i>
+            <i class="next"></i>
+        </div>
+    </div>
+    <div class="subDescription">Each course gives you a clear snapshot – Watch a quick preview,
+        read a short description, see ratings, and check how many students are enrolled.
+        Click “Enrol Now” to jump in, or browse all available courses
+    </div>
+    <div class="secondaryCta">
+        <a href="/roadmaps" class="cta">&nbsp;Explore all &nbsp;</a>
+    </div>
+</section>
+<section class="fourthSection">
+    <div class="leftSection">
+        <h3 class="heading1">
+            <span class="featureOutline">Features</span> that drive our learning programs
+        </h3>
+        <p class="heading2">
+            Try Before You Buy, Experience premium courses for free before committing.
+        </p>
+        <a class="primaryCta" href="/learn">
+            <span class="cta">&nbsp;Get Started &nbsp;</span>
+        </a>
+        <div class="manHand"></div>
+    </div>
+    <div class="rightSection">
+        <div class="firstFeatureContainer"><div class="featureCard featureCard featureCard1"><img src="https://cdn.codechef.com/images/homepage/icons/feature-1.svg" alt="Feature Icon"><h3 class="featureTitle">AI Mentor Support</h3><p class="featureDescription">Stuck on a problem? Get instant help with clear, step-by-step guidance.</p></div><div class="featureCard featureCard featureCard2"><img src="https://cdn.codechef.com/images/homepage/icons/feature-2.svg" alt="Feature Icon"><h3 class="featureTitle">Practice Made Simple</h3><p class="featureDescription">Solve real coding problems, sorted by difficulty. Practice what actually gets asked.</p></div><div class="featureCard featureCard featureCard3"><img src="https://cdn.codechef.com/images/homepage/icons/feature-5.svg" alt="Feature Icon"><h3 class="featureTitle">Built-In Compiler</h3><p class="featureDescription">Code, test, and debug right in your browser. No setup needed.</p></div></div><div class="secondFeatureContainer"><div class="featureCard featureCard featureCard4"><img src="https://cdn.codechef.com/images/homepage/icons/feature-3.svg" alt="Feature Icon"><h3 class="featureTitle">Job-Ready Courses</h3><p class="featureDescription">Learn the most in-demand tech, such as Python, Java, DSA, AI/ML, and more, 
+             built with industry input</p></div><div class="featureCard featureCard featureCard5"><img src="https://cdn.codechef.com/images/homepage/icons/feature-4.svg" alt="Feature Icon"><h3 class="featureTitle">Industry Certificates</h3><p class="featureDescription"> Earn certificates that add weight to your resume.</p></div><div class="featureCard featureCard featureCard6"><img src="https://cdn.codechef.com/images/homepage/icons/feature-6.svg" alt="Feature Icon"><h3 class="featureTitle">Global Coding Contests</h3><p class="featureDescription">Compete, climb leaderboards, and get noticed by top recruiters.</p></div></div>    </div>
+</section>
+<section class="fifthSection">
+    <div class="aiMentorSection">
+        <div class="leftSection">
+            <img src="https://cdn.codechef.com/images/homepage/ai-tutor-robo.png" alt="AI Mentor"/>
+        </div>
+        <div class="rightSection">
+            <div class="headingContainer">
+                <div class="heading">
+                    <h3 class="heading1">
+                        AI mentor
+                    </h3>
+                    <p class="heading2">
+                        Your Personal AI Tutor : Solve Problems Instantly
+                    </p>
+                </div>
+                <p class="para1">
+                    Get step-by-step explanations, debugging help, and
+                    personalized learning guidance from our AI-powered assistant.
+                </p>
+            </div>
+
+            <div class="listContainer">
+                <span class="listHeading">How It Works</span>
+                <div class="listItems">
+                    <div class="item">
+                        <span class="listNumber">1</span>
+                        <p class="listItem">Ask a coding-related question.</p>
+                    </div>
+                    <div class="item">
+                        <span class="listNumber">2</span>
+                        <p class="listItem">Get instant solutions & explanations.</p>
+                    </div>
+                    <div class="item">
+                        <span class="listNumber">3</span>
+                        <p class="listItem">Debug and optimize your code in real time..</p>
+                    </div>
+                </div>
+            </div>
+            <a class="primaryCta" href="/signup">
+                <span class="cta">&nbsp;Ask AI Mentor &nbsp;</span>
+            </a>
+        </div>
+    </div>
+    <div class="practiceProblemSection">
+        <div class="rightSection">
+            <div class="headingContainer">
+                <div class="heading">
+                    <h3 class="heading3">
+                        Real world Problems
+                    </h3>
+                    <p class="heading2">
+                        Practice to Solve Real World Problems
+                    </p>
+                </div>
+            </div>
+            <div class="listContainer">
+                <div class="listItems">
+                    <div class="item">
+                        <span class="checkMark">✔</span>
+                        <p class="listItem">Take on challenges that truly matter.</p>
+                    </div>
+                    <div class="item">
+                        <span class="checkMark">✔</span>
+                        <p class="listItem">Choose by difficulty level.</p>
+                    </div>
+                    <div class="item">
+                        <span class="checkMark">✔</span>
+                        <p class="listItem">Explore 30+ languages and technologies.</p>
+                    </div>
+                    <div class="item">
+                        <span class="checkMark">✔</span>
+                        <p class="listItem">Use AI Tutor for smart tips.</p>
+                    </div>
+                </div>
+            </div>
+            <a class="primaryCta" href="/practice">
+                <span class="cta">&nbsp;Start Practice &nbsp;</span>
+            </a>
+        </div>
+        <div class="leftSection">
+            <img src="https://cdn.codechef.com/images/homepage/gifs/practice-coding.avif" alt="Practice Coding"/>
+        </div>
+    </div>
+    <div class="realWorldProjectSection">
+        <div class="leftSection">
+            <img src="https://cdn.codechef.com/images/homepage/gifs/build-project.avif" alt="Build Projects"/>
+        </div>
+        <div class="rightSection">
+            <div class="headingContainer">
+                <div class="heading">
+                    <h3 class="heading4">
+                        Real World projects
+                    </h3>
+                    <p class="heading2">
+                        Build Real World Projects
+                    </p>
+                </div>
+                <p class="para1">
+                    Work on hands-on projects that reflect real industry challenges
+                </p>
+            </div>
+            <div class="listContainer">
+                <div class="listItems">
+                    <div class="item">
+                        <span class="checkMark">✔</span>
+                        <p class="listItem">Solve real problems with projects.</p>
+                    </div>
+                    <div class="item">
+                        <span class="checkMark">✔</span>
+                        <p class="listItem">Explore projects in full stack development and data science.</p>
+                    </div>
+                    <div class="item">
+                        <span class="checkMark">✔</span>
+                        <p class="listItem">Gain practical, job-ready skills.</p>
+                    </div>
+                </div>
+                </div>
+            <a class="primaryCta" href="/practice#easy-projects" >
+                <span class="cta">&nbsp;Get Started &nbsp;</span>
+            </a>
+        </div>
+    </div>
+    <div class="codingContestSection">
+        <div class="rightSection">
+            <div class="headingContainer">
+                <div class="heading">
+                    <h3 class="heading3">
+                        Coding Contests
+                    </h3>
+                    <p class="heading2">
+                        Show off what you’ve got and learn from top coders worldwide.
+                    </p>
+                </div>
+            </div>
+            <div class="listContainer">
+                <div class="listItems">
+                    <div class="item">
+                        <span class="checkMark">✔</span>
+                        <p class="listItem">
+                            Join contests at global, national, and even college levels.
+                        </p>
+                    </div>
+                    <div class="item">
+                        <span class="checkMark">✔</span>
+                        <p class="listItem">Climb our leaderboards and showcase your success.</p>
+                    </div>
+                    <div class="item">
+                        <span class="checkMark">✔</span>
+                        <p class="listItem">Win rewards, certificates, and internship opportunities
+                            that add real value to your professional profile.</p>
+                    </div>
+                </div>
+            </div>
+            <a class="primaryCta" href="/contests">
+                <span class="cta">&nbsp;Get Started &nbsp;</span>
+            </a>
+        </div>
+        <div class="leftSection">
+            <img src="https://cdn.codechef.com/images/homepage/gifs/compete-coding.avif" alt="Compete Coding"/>
+        </div>
+    </div>
+    <div class="onlineCompilerSection">
+        <div class="leftSection">
+            <img src="https://cdn.codechef.com/images/homepage/gifs/code-test.avif" alt="Code Test"/>
+        </div>
+        <div class="rightSection">
+            <div class="headingContainer">
+                <div class="heading">
+                    <h3 class="heading3">
+                        Online Compiler
+                    </h3>
+                    <p class="heading2">
+                        Your Interactive Coding Playground
+                    </p>
+                </div>
+                    </div>
+            <div class="listContainer">
+                <div class="listItems">
+                    <div class="item">
+                        <span class="checkMark">✔</span>
+                        <p class="listItem">Code, Test & Debug Instantly in any Language.</p>
+                    </div>
+                    <div class="item">
+                        <span class="checkMark">✔</span>
+                        <p class="listItem">
+                            Build web applications with our HTML and React online compilers.
+                        </p>
+                    </div>
+                    <div class="item">
+                        <span class="checkMark">✔</span>
+                        <p class="listItem">Optimize your code using AI-driven debugging.</p>
+                    </div>
+                </div>
+            </div>
+            <a class="primaryCta" href="/ide">
+                <span  class="cta">&nbsp;Explore Compiler &nbsp;</span>
+            </a>
+        </div>
+    </div>
+</section>
+<section class="sixthSection">
+    <div class="topLayout">
+        <h3 class="heading">Testimonials</h3>
+        <div class="headingContainer">
+            <i class="leafIcon"></i>
+            What Our Students And <br>
+            Experts Say About Us
+            <i class="leafIcon leafIconRight"></i>
+        </div>
+    </div>
+    <div class="testimonialSection">
+        <div class="testimonialCard"><i class="quoteMark"></i><div class="testimonialDetails"><div class="testimonialPara"><p class="text">CodeChef transformed my thinking. It improved my problem-solving, 
+            introduced new algorithms, and taught me to optimize. The discussions and editorials 
+            broadened my approach, enhancing both coding and logical thinking..</p></div><div class="userDetails"><img width="32px" src="https://cdn.codechef.com/images/homepage/icons/ishu-rajora.png" 
+                    alt="user profile"><div class="userInfo"><span class="fullName">Ishu Rajora</span><span class="company">IET Lucknow</span></div></div></div></div><div class="testimonialCard"><i class="quoteMark"></i><div class="testimonialDetails"><div class="testimonialPara"><p class="text">CodeChef stands out as the best platform for DSA and competitive programming, 
+            offering a wide variety of intuitive problems, a top-notch IDE, and fair, engaging contests that 
+            build true learning.</p></div><div class="userDetails"><img width="32px" src="https://cdn.codechef.com/images/homepage/icons/shrival.png" 
+                    alt="user profile"><div class="userInfo"><span class="fullName">Shrival Kumar</span><span class="company">Scaler School  of Technology</span></div></div></div></div><div class="testimonialCard"><i class="quoteMark"></i><div class="testimonialDetails"><div class="testimonialPara"><p class="text">I've been practicing on CodeChef since 2020—it was my first contest platform and helped
+             me get comfortable with competitive programming while staying motivated to solve problems regularly 😁</p></div><div class="userDetails"><img width="32px" src="https://cdn.codechef.com/images/homepage/icons/user_default.jpg" 
+                    alt="user profile"><div class="userInfo"><span class="fullName">Sanat Kumar Dubey</span><span class="company">Capgemini</span></div></div></div></div><div class="testimonialCard"><i class="quoteMark"></i><div class="testimonialDetails"><div class="testimonialPara"><p class="text">CodeChef helped me prepare for interviews with structured DSA problems and engaging 
+            quizzes. Its gradual learning approach and supportive environment boosted my confidence, problem-solving 
+            skills, and technical readiness.</p></div><div class="userDetails"><img width="32px" src="https://cdn.codechef.com/images/homepage/icons/ructhit.png" 
+                    alt="user profile"><div class="userInfo"><span class="fullName">Ruchit Hiteshbhai Jagodara</span><span class="company">Indian Institute of Technology Gandhinagar</span></div></div></div></div><div class="testimonialCard"><i class="quoteMark"></i><div class="testimonialDetails"><div class="testimonialPara"><p class="text">CodeChef sparked my love for competitive programming through contests, challenges, 
+            and a great community. From 1v1s to achieving 5 stars, it’s been my foundation, motivation, and weekly 
+            excitement.</p></div><div class="userDetails"><img width="32px" src="https://cdn.codechef.com/images/homepage/icons/aman-tripathi.jpeg" 
+                    alt="user profile"><div class="userInfo"><span class="fullName">Aman Tripathi</span><span class="company">Indian Institute of Information Technology Bhagalpur</span></div></div></div></div><div class="testimonialCard"><i class="quoteMark"></i><div class="testimonialDetails"><div class="testimonialPara"><p class="text">CodeChef has influenced my programming experience by improving problem solving, 
+            coding efficiency, and algorithmic thinking. It has served as both a mentor and a competition ground, 
+            preparing me for real-world software development issues.</p></div><div class="userDetails"><img width="32px" src="https://cdn.codechef.com/images/homepage/icons/satyam.png" 
+                    alt="user profile"><div class="userInfo"><span class="fullName">Satyam Kumar</span><span class="company">BMS Institute of Technology and Management, Bangalore</span></div></div></div></div><div class="testimonialCard"><i class="quoteMark"></i><div class="testimonialDetails"><div class="testimonialPara"><p class="text">CodeChef boosted my confidence by improving my logic, problem-solving, and time 
+            management. Its contests, challenges, and editorials taught me patience, resilience, and real-world coding 
+            skills—making learning both structured and fun.</p></div><div class="userDetails"><img width="32px" src="https://cdn.codechef.com/images/homepage/icons/user_default.jpg" 
+                    alt="user profile"><div class="userInfo"><span class="fullName">Aman Sonkar</span><span class="company">Dell</span></div></div></div></div><div class="testimonialCard"><i class="quoteMark"></i><div class="testimonialDetails"><div class="testimonialPara"><p class="text">Through CodeChef, I have gained a strong hold on DSA topics and also the contests have 
+            been very beneficial for me, also my interview preparation is also going good with all the practice
+             modules. Thanks to CodeChef</p></div><div class="userDetails"><img width="32px" src="https://cdn.codechef.com/images/homepage/icons/kushagrah.png" 
+                    alt="user profile"><div class="userInfo"><span class="fullName">Kushagra Saxena</span><span class="company">Indian Institute of Information Technology Ranchi</span></div></div></div></div><div class="testimonialCard"><i class="quoteMark"></i><div class="testimonialDetails"><div class="testimonialPara"><p class="text">CodeChef helped shape my problem-solving journey from college to career. 
+            Starting with contests to compete with friends, I progressed to editorials, forums, and consistent effort.  
+            I created templates, increased speed, and achieved a 2196 rating.  Though my FAANG dream did not come true, 
+            CodeChef earned me respect among peers.  Now I code for fun, with the hope of returning stronger one day.</p></div><div class="userDetails"><img width="32px" src="https://cdn.codechef.com/images/homepage/icons/sai-suman.jpeg" 
+                    alt="user profile"><div class="userInfo"><span class="fullName">Sai Suman Chitturi</span><span class="company">ServiceNow</span></div></div></div></div><div class="testimonialCard"><i class="quoteMark"></i><div class="testimonialDetails"><div class="testimonialPara"><p class="text">CodeChef transformed my academic coding into real-world problem-solving. Its contests and 
+            challenges sharpened my skills in algorithms, optimization, and debugging under pressure. From mastering 
+            DSA to handling TLEs and WA errors, CodeChef helped me grow as a confident coder. Its rating system and 
+            community kept me motivated, while the platform closely mirrored FAANG-level interview preparation</p></div><div class="userDetails"><img width="32px" src="https://cdn.codechef.com/images/homepage/icons/user_default.jpg" 
+                    alt="user profile"><div class="userInfo"><span class="fullName">Vikram Kumar</span><span class="company">Soul AI</span></div></div></div></div><div class="testimonialCard"><i class="quoteMark"></i><div class="testimonialDetails"><div class="testimonialPara"><p class="text">CodeChef turned my early coding struggles into strengths. Its contests, editorials, 
+            and community sharpened my skills, boosted my confidence, and made programming fun. A true turning point 
+            in my journey.</p></div><div class="userDetails"><img width="32px" src="https://cdn.codechef.com/images/homepage/icons/ritik-kumar.png" 
+                    alt="user profile"><div class="userInfo"><span class="fullName">Ritik Kumar Sahoo</span><span class="company">C.V. Raman Global University, Odisha</span></div></div></div></div><div class="testimonialCard"><i class="quoteMark"></i><div class="testimonialDetails"><div class="testimonialPara"><p class="text">CodeChef helped me build pattern recognition, spot edge cases, and optimize solutions 
+            under pressure. Repeated practice with tricky problems and WA submissions strengthened my debugging skills 
+            and boosted my problem-solving speed.</p></div><div class="userDetails"><img width="32px" src="https://cdn.codechef.com/images/homepage/icons/aditya-ouja.png" 
+                    alt="user profile"><div class="userInfo"><span class="fullName">Aditya Ojha</span><span class="company">National Institute of Technology, Raipur</span></div></div></div></div><div class="testimonialCard"><i class="quoteMark"></i><div class="testimonialDetails"><div class="testimonialPara"><p class="text">Over the course of two years, CodeChef helped me progress from a Python newbie to a 
+            competitive coder. Their practice pathways, problem sets, and tournaments helped me gain confidence and 
+            skill. Highlights include the ICPC preliminary exam and learning DSA through obstacles. The platform's 
+            fairness, community, and intuitive IDE make learning easy and entertaining. I am extremely grateful for 
+            how far I have come with CodeChef.</p></div><div class="userDetails"><img width="32px" src="https://cdn.codechef.com/images/homepage/icons/dhruv-kohli.png" 
+                    alt="user profile"><div class="userInfo"><span class="fullName">Dhruv Koli</span><span class="company">IIIT-Dharwad</span></div></div></div></div><div class="testimonialCard"><i class="quoteMark"></i><div class="testimonialDetails"><div class="testimonialPara"><p class="text">CodeChef transformed my fear of coding into confidence. Solving 577 problems and
+             competing in 23 contests sharpened my skills, built resilience, and helped me grow into a Division 
+             2 coder.</p></div><div class="userDetails"><img width="32px" src="https://cdn.codechef.com/images/homepage/icons/deepak-kumar.jpeg" 
+                    alt="user profile"><div class="userInfo"><span class="fullName">Deepak Kumar Bairwa</span><span class="company">IIT Roorkee</span></div></div></div></div><div class="testimonialCard"><i class="quoteMark"></i><div class="testimonialDetails"><div class="testimonialPara"><p class="text">The best thing about CodeChef is its contests. It really helped me to improve my 
+            coding skills in competitive programming. Its been more than a year. and i really appreciate the effort
+             of CodeChef team for making this platform.</p></div><div class="userDetails"><img width="32px" src="https://cdn.codechef.com/images/homepage/icons/user_default.jpg" 
+                    alt="user profile"><div class="userInfo"><span class="fullName">Mohammad Arif</span><span class="company">TCS</span></div></div></div></div><div class="testimonialCard"><i class="quoteMark"></i><div class="testimonialDetails"><div class="testimonialPara"><p class="text">I got very good in cp as well as dsa and it helped me. Reached 5 stars recently
+             (again) and enjoyed this whole journey.</p></div><div class="userDetails"><img width="32px" src="https://cdn.codechef.com/images/homepage/icons/deevaynsh-singh.png" 
+                    alt="user profile"><div class="userInfo"><span class="fullName">Devyansh Singh</span><span class="company">Videonetics</span></div></div></div></div><div class="testimonialCard"><i class="quoteMark"></i><div class="testimonialDetails"><div class="testimonialPara"><p class="text">Yes Codechef is the starting step towards CP and DSA for me. The rated Long 
+            contests were really really helpful for learning. The starters are also good but long contests 
+            are somewhat we miss a lot</p></div><div class="userDetails"><img width="32px" src="https://cdn.codechef.com/images/homepage/icons/rishabh.png" 
+                    alt="user profile"><div class="userInfo"><span class="fullName">Rishab Dugar</span><span class="company">Accenture</span></div></div></div></div><div class="testimonialCard"><i class="quoteMark"></i><div class="testimonialDetails"><div class="testimonialPara"><p class="text">CodeChef has been key to my growth, sharpening my coding, optimization, and 
+            problem-solving skills through diverse challenges, contests, and community support—building both my 
+            technical ability and creative thinking.</p></div><div class="userDetails"><img width="32px" src="https://cdn.codechef.com/images/homepage/icons/vimlendu.png" 
+                    alt="user profile"><div class="userInfo"><span class="fullName">Vimlendu Sharma</span><span class="company">UDM Enterprises</span></div></div></div></div><div class="testimonialCard"><i class="quoteMark"></i><div class="testimonialDetails"><div class="testimonialPara"><p class="text">CodeChef transformed how I think and solve problems. From struggling
+             with basics to recognizing patterns, the platform taught me resilience and logical thinking. 
+             The global contests, rating system, and editorials kept me motivated. It boosted my confidence
+              for interviews and made coding fun. More than skills, CodeChef taught me patience, discipline,
+               and the joy of learning through challenges.</p></div><div class="userDetails"><img width="32px" src="https://cdn.codechef.com/images/homepage/icons/rudra-pratap.jpeg" 
+                    alt="user profile"><div class="userInfo"><span class="fullName">Rudra Pratap Singh</span><span class="company">IIIT TRICHY</span></div></div></div></div><div class="testimonialCard"><i class="quoteMark"></i><div class="testimonialDetails"><div class="testimonialPara"><p class="text">CodeChef was one of the first platforms I used when I began coding in June 2023. Its 
+            editorials are hands down the best across all platforms—clear, detailed, and incredibly helpful. From 
+            grinding contests to mastering topics through rating-wise sorting, CodeChef made problem-solving fun and
+             structured. It’s played a huge role in building my skills and keeping me hooked on competitive 
+             programming.</p></div><div class="userDetails"><img width="32px" src="https://cdn.codechef.com/images/homepage/icons/diwakar.png" 
+                    alt="user profile"><div class="userInfo"><span class="fullName">Dhivakar Duraikandan</span><span class="company">IIT(ISM) Dhanbad</span></div></div></div></div>    </div>
+    <div class="seeMoreContainer">
+        <i class="seeMoreIcon"></i>
+        <span class="text">See more</span>
+    </div>
+
+    <div class="ratingContainer">
+        <div class="averageRatingContainer">
+            <span class="rating">⭐ ️4.4 ratings️ </span>
+            <span class="dotSeparator"></span>
+            <span class="reviews">💬 ️64k reviews </span>
+            </div>
+        <p class="description">Get your learning start from today.</p>
+        <a class="primaryCta" href="/learn" >
+            <span class="cta">&nbsp;Get Started &nbsp;</span>
+        </a>
+    </div>
+</section>
+<section class="seventhSection">
+   <div class="globeSection">
+       <div class="topSection">
+           <h3 class="heading">Global Presence</h3>
+           <div class="para">
+               CodeChef
+               <span class="featureOutline">around the world</span>
+           </div>
+       </div>
+       <div class="bottomSection">
+           <div class="learnersCountContainer">
+               <div class="learnersCount">
+                   <span class="totalUsers">10M+</span>
+                   <span class="users">Users </span>
+               </div>
+               <div class="learnersCount">
+                   <span class="totalUsers">200M+</span>
+                   <span class="users">Submissions </span>
+               </div>
+               <div class="learnersCount">
+                   <span class="totalUsers">150+</span>
+                   <span class="users">Countries </span>
+               </div>
+           </div>
+           <div class="globeContainer">
+               <div id="globe"></div>
+               <div id="tooltip" class="tooltip"></div>
+           </div>
+       </div>
+   </div>
+</section>
+<section class="eightSection">
+    <div class="topSection">
+        <h3 class="heading1">Plans made for you</h3>
+        <h3 class="heading2"><i class="yellowRay"></i>Unlock Premium Learning with CodeChef Pro</h3>
+    </div>
+    <div class="proCardContainer">
+        <div class="proCard "><div class="topLayout"><i class="greenSpark"></i><div class="playInfo"><span class="planType">Free Plan</span><span class="access">Limited Access</span></div><div class="priceContainer"><span class="planPrice"></span><span class="perMonth"></span></div><div class="secondaryCta"><a class="cta" href=signup?destination=/learn>Start now</a></div><hr class="dottedDivider"/></div><div class="bottomLayout"><span class="listHeading">What's included</span><div class="listItems"><span class="greenCheck">✔</span><span class="item">Access to preview learning content</span></div><div class="listItems"><span class="greenCheck">✔</span><span class="item">Access to free practice paths</span></div><div class="listItems"><span class="greenCheck">✔</span><span class="item">Limited access to AI</span></div><div class="listItems"><span class="greenCheck">✔</span><span class="item">Weekly contest access</span></div></div></div><div class="proCard proBorder"><div class="topLayout"><div class="topRow"><i class="yellowSpark"></i><div class="planPackContainer"><span class="monthly" data-plan="monthly">Monthly</span><span class="yearly active" data-plan="yearly">Yearly</span></div></div><div class="playInfo"><span class="planType">Pro Plan</span><span class="access">All courses + AI Mentor</span></div><div class="priceContainer"><span class="planPrice" 
+                              data-monthly-price="1500" 
+                              data-yearly-price="4999" 
+                              data-currency="₹">₹4999</span><span class="perYear">/per year</span></div><div class="secondaryCta primaryCta"><a class="cta" href=/pro>Start today</a></div><hr class="dottedDivider"/></div><div class="bottomLayout"><span class="listHeading">What's included</span><div class="listItems"><span class="greenCheck">✔</span><span class="item">Get 18 Guided Roadmaps</span></div><div class="listItems"><span class="greenCheck">✔</span><span class="item">60+ Premium Courses</span></div><div class="listItems"><span class="greenCheck">✔</span><span class="item">Build real world projects</span></div><div class="listItems"><span class="greenCheck">✔</span><span class="item">5000+ Curated Practice problems</span></div><div class="listItems"><span class="greenCheck">✔</span><span class="item">24/7 Instant AI Assistant</span></div><div class="listItems"><span class="greenCheck">✔</span><span class="item">5 streak freezes every month</span></div><div class="listItems"><span class="greenCheck">✔</span><span class="item">Unlimited username changes</span></div><div class="listItems"><span class="greenCheck">✔</span><span class="item">Certificate for each course</span></div><div class="listItems"><span class="greenCheck">✔</span><span class="item">Smart Test case analysis</span></div><div class="listItems"><span class="greenCheck">✔</span><span class="item">Skill tests to track your progress</span></div><div class="listItems"><span class="greenCheck">✔</span><span class="item">Specialized Interview Prep paths</span></div><div class="listItems"><span class="greenCheck">✔</span><span class="item">Video solutions and Hints</span></div><div class="listItems"><span class="greenCheck">✔</span><span class="item">Invite to Pro community</span></div><div class="listItems"><span class="greenCheck">✔</span><span class="item">Refer a friend to extend your Pro access</span></div></div></div><div class="proCard "><div class="topLayout"><i class="blueSpark"></i><div class="playInfo"><span class="planType">Enterprise Plan</span><span class="access">For Colleges & Universities</span></div><div class="priceContainer"><span class="planPrice"></span><span class="perMonth"></span></div><div class="secondaryCta"><a class="cta" href=/college-program>Contact us</a></div><hr class="dottedDivider"/></div><div class="bottomLayout"><span class="listHeading">What's included</span><div class="listItems"><span class="greenCheck">✔</span><span class="item">Everything in Pro</span></div><div class="listItems"><span class="greenCheck">✔</span><span class="item">Customized learning paths</span></div><div class="listItems"><span class="greenCheck">✔</span><span class="item">Student dashboard</span></div><div class="listItems"><span class="greenCheck">✔</span><span class="item">Faculty and Admin dashboard</span></div><div class="listItems"><span class="greenCheck">✔</span><span class="item">Priority support</span></div></div></div>    </div>
+</section>
+<section class="ninthSection">
+    <div class="collegePartnerSection">
+        <div class="rightSection">
+            <div class="headingContainer">
+                <div class="heading">
+                    <img src="https://cdn.codechef.com/images/homepage/icons/chef-hat.avif" class="chefHatIcon"
+                         alt="chef hat icon"/>
+                    <h3 class="heading5">
+                        Partner with CodeChef
+                    </h3>
+                    <p class="heading2">
+                        Are you an educator, an institution, or a University?
+                    </p>
+                    <p class="para1">
+                        Join forces with CodeChef to bring structured coding programs, AI-enhanced learning, and global
+                        contests to your students. Empower them with the skills and certifications they need to move
+                        confidently from code to career.
+                    </p>
+                </div>
+            </div>
+            <a class="primaryCta" href="/college-program">
+                <span class="cta">&nbsp;Partner With Us Now &nbsp;</span>
+            </a>
+    </div>
+        <div class="leftSection">
+            <img src="https://cdn.codechef.com/images/homepage/college-group.avif" alt="College Group"/>
+        </div>
+    </div>
+    <h2 class="mainHeading">
+        Key features & Benefits<i class="downArrowCurve"></i>
+    </h2>
+    <div class="keysAndBenefitsSection"><div class="firstRow"><div class="leftRow">
+                    <i class="aiIcon"></i>
+                    <div class="featureInfo">
+                        <span class="heading">AI mentor Assistance</span>
+                        <span class="description">Real-time doubt-solving for students.</span>
+                    </div>
+                </div><div class="rightRow">
+                    <i class="teacherIcon"></i>
+                    <div class="featureInfo">
+                        <span class="heading">Faculty Training & Workshop</span>
+                        <span class="description">Upskill educators in modern programming.</span>
+                    </div>
+                </div></div><div class="secondRow"><div class="leftRow">
+                    <i class="syllabusIcon"></i>
+                    <div class="featureInfo">
+                        <span class="heading">Custom Coding Curriculum</span>
+                        <span class="description">Integrate CodeChef courses into your syllabus.</span>
+                    </div>
+                </div><div class="rightRow">
+                    <i class="championIcon"></i>
+                    <div class="featureInfo">
+                        <span class="heading">Coding Contests & Hackathons</span>
+                        <span class="description">Host exclusive competitions.</span>
+                    </div>
+                </div></div><div class="thirdRow"><div class="leftRow">
+                    <i class="workIcon"></i>
+                    <div class="featureInfo">
+                        <span class="heading">Industry Recognised Certificate</span>
+                        <span class="description">Boost student employability.</span>
+                    </div>
+                </div><div class="rightRow">
+                    <i class="badgeIcon"></i>
+                    <div class="featureInfo">
+                        <span class="heading">Personalized Learning Paths</span>
+                        <span class="description">Hands-on practice with guided learning paths.</span>
+                    </div>
+                </div></div></div>    <h2 class="mainHeading">
+        How it works<i class="downArrowCurve"></i>
+    </h2>
+    <div class="howItWorksSection"><div class="stepsCard"><p class="info">Fill out <strong>the CodeChef University</strong> contact form</p><i class="numberIcon numberIcon1"></i></div><div class="stepsCard"><p class="info">Attend <strong>a free demo</strong> of the product and features</p><i class="numberIcon numberIcon2"></i></div><div class="stepsCard"><p class="info">Get <strong>customised learning paths</strong> tailored to your college curriculum</p><i class="numberIcon numberIcon3"></i></div><div class="stepsCard"><p class="info">Start the semester with CodeChef and get <strong>dashboards</strong> on your students progress</p><i class="numberIcon numberIcon4"></i></div><div class="stepsCard"><p class="info">Take pride in the <strong>achievements</strong> of your students after following our customised plan</p><i class="numberIcon numberIcon5"></i></div></div>    <h2 class="mainHeading">
+        Partnered Universities<i class="downArrowCurve"></i>
+    </h2>
+
+    <div class="allCollegesWrapper">
+        <div class="allCollegesSection">
+            <!-- Original Set -->
+            <i class="clgIcon1"></i>
+            <i class="clgIcon2"></i>
+            <i class="clgIcon3"></i>
+            <i class="clgIcon4"></i>
+            <i class="clgIcon5"></i>
+            <i class="clgIcon6"></i>
+            <i class="clgIcon7"></i>
+            <i class="mobView clgIcon1"></i>
+            <i class="mobView clgIcon2"></i>
+            <i class="mobView clgIcon3"></i>
+            <i class="mobView clgIcon4"></i>
+            <i class="mobView clgIcon5"></i>
+            <i class="mobView clgIcon6"></i>
+            <i class="mobView clgIcon7"></i>
+        </div>
+    </div>
+
+</section>
+<section class="tenthSection">
+    <div class="faqSection"><div class="heading">Frequently Asked Questions</div><div class="faqItemsContainer"><div class="faqItem" data-faq-index="0">
+                <div class="faqQuestionRow">
+                    <i class="downArrow"></i>
+                    <p class="faqQuestion">How do I get started with CodeChef?</p>
+                </div>
+                <p class="faqAnswer">It’s easy. Sign up for a free account, explore our Courses, Practice problems, and Contests, 
+            and begin with a beginner-friendly challenge. Our community and AI Mentor are here to help along the way.</p>
+            </div><div class="faqItem" data-faq-index="1">
+                <div class="faqQuestionRow">
+                    <i class="downArrow"></i>
+                    <p class="faqQuestion">What’s the difference between free and premium courses?</p>
+                </div>
+                <p class="faqAnswer"> Free courses give you essential lessons, practice problems, and community support. 
+            Premium courses offer advanced tutorials, real-time AI doubt resolution, personalized learning paths, 
+            and projects to help prepare you for in-demand industry roles.</p>
+            </div><div class="faqItem" data-faq-index="2">
+                <div class="faqQuestionRow">
+                    <i class="downArrow"></i>
+                    <p class="faqQuestion">How do I participate in contests?</p>
+                </div>
+                <p class="faqAnswer"> Log in, visit the “Compete” section, and sign up for a contest that suits you. Follow the 
+            contest rules, solve problems in our online compiler, and submit your code. Check the leaderboard afterward
+             to see your ranking and learn from the experience.</p>
+            </div><div class="faqItem" data-faq-index="3">
+                <div class="faqQuestionRow">
+                    <i class="downArrow"></i>
+                    <p class="faqQuestion">How do I track my progress on CodeChef?</p>
+                </div>
+                <p class="faqAnswer">Use your personalized dashboard to see your course completions, contest scores, and overall 
+            performance, so you always know how far you’ve come on your journey from code to career.</p>
+            </div><div class="faqItem" data-faq-index="4">
+                <div class="faqQuestionRow">
+                    <i class="downArrow"></i>
+                    <p class="faqQuestion">What does the AI Mentor do?</p>
+                </div>
+                <p class="faqAnswer">The AI Mentor is your instant helper for tough coding problems, offering real-time 
+            explanations, debugging tips, and suggestions to keep you moving forward.</p>
+            </div></div></div>    </section>
+    <section class="lastSection">
+        <div class="costumerExpSection">
+            <div class="rightSection">
+                <div class="headingContainer">
+                    <h2 class="heading">
+                        Start Your Coding Journey with CodeChef
+                    </h2>
+                    <p class="para">
+                        Join millions mastering top languages,
+                        cracking real-world problems & winning coding contests.
+                    </p>
+                </div>
+            <a class="primaryCta" href="/signup?destination=/learn">
+                <span class="cta">&nbsp;Level Up Your Skills now&nbsp;</span>
+            </a>
+        </div>
+        <img src="https://cdn.codechef.com/images/homepage/codechef-t-shirt-boy.avif" alt="Boy Illustration"/>
+    </div>
+</section>
+<footer class="l-footer">
+            <div class="l-footer__content m-footer__content">
+                <div class="m-footer-address">
+                    <div class="m-cc__image"></div>
+                    <div class="m-cc__address">
+                        <span class="cc-address">
+                        Workden, MNR PRIDE, 14, HAL Old Airport Rd, Domlur I Stage, 
+                        1st Stage, DOMLUR, Bengaluru, Karnataka 560071
+                        </span>
+                        <span class="cc-email-address"><a href="/cdn-cgi/l/email-protection#1a727f766a5a79757e7f79727f7c34797577"><span class="__cf_email__" data-cfemail="1a727f766a5a79757e7f79727f7c34797577">[email&#160;protected]</span></a></span>
+                        <span class="cc-phone-no">+91 95911 47880</span>
+                        <hr class="dotted-divider">  
+                    </div>
+                    <div class="l-social-media">
+                        <span class="cc-text">Find us online</span>
+                         <div class='l-footer__icons'><a class='m-social i-youtube-grey' href='//youtube.com/c/codechef1'></a><a class='m-social i-twitter-grey' href='//twitter.com/codechef'></a><a class='m-social i-linkedin-grey' href='//linkedin.com/company/codechef'></a><a class='m-social i-facebook-grey' href='//facebook.com/CodeChef'></a><a class='m-social i-instagram-grey' href='//instagram.com/codechef'></a><a class='m-social i-medium-grey' href='//medium.com/codechef-official'></a></div>
+                   </div>
+                </div>
+                 <div class='l-footer__links'><div class='l-footer__column'><div class='l-footer__head'><p class='m-footer__head'>ROADMAPS</p></div><div class='l-footer__list'><div class='l-footer__link'><a href='https://www.codechef.com/roadmap/python-dsa' class='m-footer__link'>Learn Python</a></div><div class='l-footer__link'><a href='https://www.codechef.com/roadmap/java-dsa' class='m-footer__link'>Learn Java</a></div><div class='l-footer__link'><a href='https://www.codechef.com/roadmap/c-dsa' class='m-footer__link'>Learn C</a></div><div class='l-footer__link'><a href='https://www.codechef.com/roadmap/cpp-dsa' class='m-footer__link'>Learn C++</a></div><div class='l-footer__link'><a href='https://www.codechef.com/roadmap/data-structures-and-algorithms' class='m-footer__link'>Data structures and Algorithms</a></div><div class='l-footer__link'><a href='https://www.codechef.com/roadmap/become-5-star' class='m-footer__link'>Competitive Programming</a></div><div class='l-footer__link'><a href='https://www.codechef.com/roadmaps' class='m-footer__link'>More Roadmaps</a></div></div></div><div class='l-footer__column'><div class='l-footer__head'><p class='m-footer__head'>CAREER PATHS</p></div><div class='l-footer__list'><div class='l-footer__link'><a href='https://www.codechef.com/roadmap/react-developer' class='m-footer__link'>React JS Developer</a></div><div class='l-footer__link'><a href='https://www.codechef.com/roadmap/full-stack-development' class='m-footer__link'>Full stack Developer</a></div><div class='l-footer__link'><a href='https://www.codechef.com/roadmap/sql' class='m-footer__link'>SQL for Data Analysis</a></div><div class='l-footer__link'><a href='https://www.codechef.com/roadmap/html' class='m-footer__link'>Frontend Developer</a></div><div class='l-footer__link'><a href='https://www.codechef.com/roadmap/java-development' class='m-footer__link'>Java Backend Developer</a></div><div class='l-footer__link'><a href='https://www.codechef.com/roadmap/data-analysis-using-python' class='m-footer__link'>Data Analysis using Python</a></div><div class='l-footer__link'><a href='https://www.codechef.com/roadmap/python-development' class='m-footer__link'>Python Backend Developer</a></div><div class='l-footer__link'><a href='https://www.codechef.com/roadmap/cpp-development' class='m-footer__link'>C++ Developer</a></div><div class='l-footer__link'><a href='https://www.codechef.com/roadmap/machine-learning-using-python' class='m-footer__link'>Machine Learning using Python</a></div></div></div><div class='l-footer__column'><div class='l-footer__head'><p class='m-footer__head'>COMPILERS</p></div><div class='l-footer__list'><div class='l-footer__link'><a href='https://www.codechef.com/html-online-compiler' class='m-footer__link'>HTML online compiler</a></div><div class='l-footer__link'><a href='https://www.codechef.com/cpp-online-compiler' class='m-footer__link'>C++ online compiler</a></div><div class='l-footer__link'><a href='https://www.codechef.com/c-online-compiler' class='m-footer__link'>C online compiler</a></div><div class='l-footer__link'><a href='https://www.codechef.com/java-online-compiler' class='m-footer__link'>Java online compiler</a></div><div class='l-footer__link'><a href='https://www.codechef.com/python-online-compiler' class='m-footer__link'>Python online compiler</a></div><div class='l-footer__link'><a href='https://www.codechef.com/sql-online-compiler' class='m-footer__link'>SQL online compiler</a></div><div class='l-footer__link'><a href='https://www.codechef.com/javascript-online-compiler' class='m-footer__link'>JavaScript online compiler</a></div><div class='l-footer__link'><a href='https://www.codechef.com/react-online-compiler' class='m-footer__link'>React online compiler</a></div><div class='l-footer__link'><a href='https://www.codechef.com/ide' class='m-footer__link'>More compilers</a></div></div></div><div class='l-footer__column'><div class='l-footer__head'><p class='m-footer__head'>COMPANY</p></div><div class='l-footer__list'><div class='l-footer__link'><a href='https://www.codechef.com/aboutus' class='m-footer__link'>About us</a></div><div class='l-footer__link'><a href='https://www.codechef.com/college-program' class='m-footer__link'>For colleges</a></div><div class='l-footer__link'><a href='https://www.codechef.com/contests' class='m-footer__link'>Coding Contests</a></div><div class='l-footer__link'><a href='https://www.codechef.com/blogs' class='m-footer__link'>Blogs</a></div><div class='l-footer__link'><a href='https://www.codechef.com/contactus' class='m-footer__link'>Contact us</a></div><div class='l-footer__link'><a href='https://www.codechef.com/privacy-policy' class='m-footer__link'>Privacy Policy</a></div><div class='l-footer__link'><a href='https://www.codechef.com/faq' class='m-footer__link'>Frequently Asked Questions</a></div></div></div></div>
+            </div>
+           <hr class="divider">  
+           <div class="cc-trademark">
+           <p class="cc-trademark-text">
+                 © 2025 CodeChef Inc. All rights reserved.
+            </p>
+           </div>
+      </footer><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="78d7b1fa45aa4189176c05c4-text/javascript">
+            _linkedin_data_partner_id = "93463";
+            </script><script type="78d7b1fa45aa4189176c05c4-text/javascript">
+            (function(){var s = document.getElementsByTagName("script")[0];
+            var b = document.createElement("script");
+            b.type = "text/javascript";b.async = true;
+            b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+            s.parentNode.insertBefore(b, s);})();
+        </script>
+        <noscript>
+            <img height="1" width="1" style="display:none;" alt=""
+                src="https://dc.ads.linkedin.com/collect/?pid=93463&fmt=gif" />
+        </noscript><div id='gdpr-cookie-notif' class='global--announcement' style='display: none;'>
+                <div class='global--announcement__content'>
+                    <p>
+                        We use cookies to improve your experience and for analytical purposes.
+                        Read our <a href='https://www.codechef.com/privacy-policy'>Privacy Policy</a>
+                        and <a href='https://www.codechef.com/terms'>Terms</a> to know more.
+                        You consent to our cookies if you continue to use our website.
+                    </p>
+                </div>
+                <div class='global--announcement__action'>
+                    <button id='gdpr-i-love-cookies' class='button grey tiny'>Okay</button>
+                </div>
+            </div><script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="78d7b1fa45aa4189176c05c4-|49" defer></script></body>
+</html>

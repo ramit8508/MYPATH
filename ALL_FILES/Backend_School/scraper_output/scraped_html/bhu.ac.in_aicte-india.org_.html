@@ -1,0 +1,1034 @@
+<!doctype html>
+<html ng-app="myApp" ng-controller="myController">
+<head>
+
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <title>Home - Banaras Hindu University, Varanasi, India.</title>
+
+
+
+    <link href="/Scripts/SitesBhu/images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+
+    <link href="/Scripts/SitesBhu/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all" />
+
+    <link href="/Scripts/SitesBhu/css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="/Scripts/SitesBhu/css/responsive.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="/scripts/SitesBhu/css/roboto.css" rel="stylesheet" />
+
+    <link href="/Scripts/SitesBhu/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <link href="/Content/loader.css" rel="stylesheet" />
+    <link href="/Content/aos.css" rel="stylesheet" />
+    <link href="/Scripts/SitesBhu/css/slick.css" type="text/css" rel="stylesheet" />
+    <link href="/Content/ekko-lightbox.css" rel="stylesheet" />
+    <link href="/Content/plugins/owl-carousel/owl.carousel.css" rel="stylesheet" />
+    <link href="/Content/plugins/vendors/bower_components/sweetalert/dist/sweetalert.css" rel="stylesheet" />
+    <link href="/Content/hindifont.css" rel="stylesheet" />
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DNYCHG7DCV"></script>
+    <script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'G-DNYCHG7DCV');</script>
+
+
+
+    <script src="/Scripts/myjs?v=yIO8DKudpN1Ro9njh07IGcPy10OUEDrtuJWAoBcHpzU1"></script>
+
+    <script src="/Scripts/MainHome?v=KXpCIPiuM2HEmUphtP32oLW_iMSIDf-KRvRaE-omavM1"></script>
+
+    <style>
+        header {
+            z-index: 9999;
+        }
+
+        #blinkingText {
+            display: inline-block;
+            font-weight: 600;
+            transition: color 0.5s ease, transform 0.5s ease;
+        }
+
+        .search-icon {
+            color: #174873 !important;
+            padding: 7px 10px !important;
+            margin-top: 4px;
+        }
+
+            .search-icon:after {
+                background: #ffffff00 !important;
+            }
+    </style>
+</head>
+<body ng-init="LoadNavMenu();" ng-cloak>
+    <input id="antiForgeryToken" data-ng-model="antiForgeryToken" type="hidden" data-ng-init="antiForgeryToken='vocSj5zIAmzD4ciVQ8wj64_0MnftER6Wj5TdIxxgJ-HjXm-yryoSq0hwXrCTzvPt8I0uxbanDwlKW5JS-GH6fjUt7mo6oy1rKPjg476XJI01:fVcGY-1BJ3gWiEB6EdqPin3k4aU_TWhxzIJpnpNSB0FXa94eTYu5lD9nA0uZQLjDl-k1Sz6jjePN4kn7KULrrLZ6ouRHMpIRPD3J9tQ4DZI1'" />
+
+    
+    <div class="scrollToTop">
+        <i class="fa fa-chevron-up"></i>
+    </div>
+    <div class="full-page-cover ">
+        <div id="search-close-click">
+            <i class="fa fa-close"></i>
+        </div>
+    </div>
+
+
+    <div id="content">
+        <header>
+
+            <div class="header-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+
+
+                            <div class="social hidden-xs">
+                                <a ng:href="{{FacebookLink}}" rel="noopener noreferrer" target="_blank" ng-show="FacebookLink.length>0"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                <a ng:href="{{TwitterLink}}" rel="noopener noreferrer" target="_blank" ng-show="TwitterLink.length>0"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                <a ng:href="{{YoutubeLink}}" rel="noopener noreferrer" target="_blank" ng-show="YoutubeLink.length>0"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                            </div>
+
+                            <div class="login">
+                                <a rel="noopener noreferrer" target="_blank" href="https://bhu.samarth.ac.in/index.php/site/login/">{{polenglish==true?'SamarthERP@BHU':'SamarthERP@BHU'}}</a>
+                                 <a rel="noreferrer" target="_blank" href="https://admission.bhu.ac.in">
+                                    <span id="blinkingText" style="font-weight:600;">{{polenglish==true?'Admission':'प्रवेश'}}</span>
+                                </a>                                
+								<a  rel="noopener noreferrer" target="_blank" href="https://bhu.ac.in/Site/UnitHomeTemplate/1_3255_4727_Controller-of-Examinations-Home">{{polenglish==true?'Examination':'परीक्षा'}}</a>
+								<a class="hidden-xs" rel="noopener noreferrer" target="_blank" href="https://erp.bhu.edu.in/">{{polenglish==true?'E-Governance':'ई-शासन'}}</a>
+                                <a rel="noopener noreferrer" target="_blank" href="http://mail.google.com/a/bhu.ac.in/">{{polenglish==true?'Mail':'मेल'}}</a>
+                                <a class="hidden-xs" rel="noopener noreferrer" target="_blank" href="{{polenglish==true?'/Site/Page/1_2_32_74':'/Site/Page/2_2_32_74'}}">
+                                    {{polenglish==true?'NIRF':'एन आई आर एफ'}}
+                                </a>
+                                
+                                <a rel="noopener noreferrer" target="_blank" href="https://alumni.bhu.ac.in/">{{polenglish==true?'Alumni':'पूर्व छात्रों'}}</a>
+
+                                
+                                <a rel="noopener noreferrer" target="_blank" href="{{polenglish==true?'/Site/GiftUs/1_2':'/Site/GiftUs/2_2'}}"><span style="color:red; font-weight:600;">{{polenglish==true?'Donate':'दान करें'}}</span></a>
+                                <a rel="noopener noreferrer" target="_blank" href="https://bhu.samarth.ac.in/index.php/pgportal/grievance-public/public">{{polenglish==true?'Grievance':'शिकायत दर्ज करें'}}</a>
+                                <a href="/Login/Login">{{polenglish==true?'Login':'लॉग इन करें'}}</a>
+                                <a class="top-icon hidden-xs" href="{{polenglish==true?'/Site/FeedbackForm/1_2':'/Site/FeedbackForm/2_2'}}" title="{{polenglish==true?'Feedback Form':'प्रतिपुष्टी फ़ार्म'}}"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                                <a class="top-icon hidden-xs" href="{{polenglish==true?'/Site/ScreenReaderAccess/1_2':'/Site/ScreenReaderAccess/2_2'}}" title="{{polenglish==true?'Screen Reader Access':'स्क्रीन रीडर एक्सेस'}}"><i class="fa fa-volume-up" aria-hidden="true"></i></a>
+
+                                <a class="hidden-xs" href="" id="increaseFont" title="Smaller Font">{{polenglish==true?'A+':'अ +'}}</a>
+                                <a class="hidden-xs" href="" id="resetFont" title="Medium Font">{{polenglish==true?'A':'अ'}}</a>
+                                <a class="hidden-xs" href="" id="decreaseFont" title="Larger Font">{{polenglish==true?'A-':'अ -'}}</a>
+
+                                <a ng:href="{{URL}}" class="last-border" ng-model="URL">
+                                    <label ng-model="Language" ng-bind="Language"></label>
+                                </a>
+
+                                <a class="search-icon" href="../Search/1_2_16" target="_blank" title="{{polenglish==true?'Search':'खोजें'}}">
+                                    <span><i class="fa fa-search" aria-hidden="true"></i></span>
+                                </a>
+                                
+                                
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <nav class="navbar-defaul" ng-cloak>
+                <div class="container" id="menu-container">
+                    <div class="f-cover-mc">
+                        <div class="logo-box m-r-cell">
+                            <div class="navbar-header">
+                                <a class="navbar-brand" href="../Home/{{Lang}}_2_16" tabindex="0"><img src="/Scripts/SitesBhu/images/logo.png" alt=""></a>
+                            </div>
+                            <button type="button" class="toggle-menu">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                        <div class="menu-box m-r-cell collapse navbar-collapse" id="myNavbar">
+                            <ul id="nav" class="nav navbar-nav navbar-left">
+                                <li ng-repeat="Tab in Tabs" ng-model="SelectTabs" menurepeat-done>
+                                    <a ng:href="{{Tab.LayoutPageName=='javascript:void(0)' ? 'javascript:void(0);' : Tab.LayoutPageName}}"
+                                       
+                                       ng-target="{{Tab.URLType}}"
+                                        onclick="return anchor(event)">
+                                        <span class="right-nav-text">
+                                            <span ng-bind-html="trustAsHtml(Tab.TabName)"></span>
+                                            <i class="fa fa-angle-down" aria-hidden="true" ng-hide="Menus[$index].length==0"></i>
+                                        </span>
+                                    </a>
+
+                                    <ul id="Tab{{Tab.TabId}}" class="sub-menu  list-unstyled" 
+                                        ng-hide="Menus[$index].length==0">
+                                        <li ng-repeat="menu in Menus[$index]" ng-model="SelectMenu">
+                                            <a ng:href="{{menu.LayoutPageName=='javascript:void(0)' ? 'javascript:void(0);' : menu.LayoutPageName}}"
+                                               
+                                               ng-target="{{menu.URLType}}"
+                                               data-toggle={{SubMenus[menu.MenuId].length==0?'none':'collapse'}} data-target="#Menu{{menu.MenuId}}" title="{{menu.MenuName}}" onclick="return anchor(event)">
+                                                <span ng-bind-html="trustAsHtml(menu.MenuName)"></span>
+                                                <i class="fa fa-angle-right" aria-hidden="true" ng-hide="SubMenus[menu.MenuId].length==0"></i>
+                                            </a>
+                                            <ul id="Menu{{menu.MenuId}}" class="collapse collapse-level-2"
+                                                 ng-hide="SubMenus[menu.MenuId].length==0">
+                                                <li ng-repeat="submenu in SubMenus[menu.MenuId]" ng-model="SelectSubMenu">
+                                                    <a ng:href="{{submenu.LayoutPageName=='javascript:void(0)' ? 'javascript:void(0);' : submenu.LayoutPageName}}"
+                                                       
+                                                       ng-target="{{submenu.URLType}}"
+                                                       
+                                                       data-path="{{submenu.PageName}}" title="{{submenu.SubMenuName}}" ng-click="GetDetailBySubMenuId(submenu.SubMenuId)" onclick="return anchor(event)">
+                                                        <span ng-bind-html="trustAsHtml(submenu.SubMenuName)"></span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                            <span class="expend" ng-if="SubMenus[menu.MenuId].length>0"></span>
+                                        </li>
+                                    </ul>
+
+                                    <span class="expend" ng-if="Menus[$index].length>0"></span>
+                                </li>
+                                <li ng-if="ContactUsPage" ng-model="ContactUsPage" ng-init="ContactUsTab();">
+                                    <a href="javascript:angular.element(document).scope().ContactUs_Click();">
+                                        <span ng-model="ContactUs" ng-bind-html="trustAsHtml(ContactUs)"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+        </header>
+        
+<script src="/Scripts/MainHome?v=KXpCIPiuM2HEmUphtP32oLW_iMSIDf-KRvRaE-omavM1"></script>
+
+<style>
+    .Announcement {
+        box-shadow: 0px 2px 5px #d9d9d9;
+        height: 40px;
+    }
+</style>
+<style>
+    /* The Modal (background) */
+
+
+    .iframe-container {
+        position: relative;
+        width: 100%;
+    }
+
+        .iframe-container iframe {
+            width: 100%;
+            height: 550px;
+            border: none;
+        }
+
+    @media (max-width: 575.98px) {
+        .iframe-container iframe {
+            height: 605px;
+        }
+    }
+
+    @media (min-width: 576px) and (max-width: 767.98px) {
+        .iframe-container iframe {
+            height: 700px;
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 991.98px) {
+        .iframe-container iframe {
+            height: 850px;
+        }
+    }
+
+    @media (min-width: 992px) and (max-width: 1199.98px) {
+        .iframe-container iframe {
+            height: 850px;
+        }
+    }
+
+    @media (min-width: 1200px) and (max-width: 1599.98px) {
+        .iframe-container iframe {
+            height: 550px;
+        }
+    }
+
+    @media (min-width: 1600px) {
+        .iframe-container iframe {
+            height: 550px;
+        }
+    }
+
+
+    .bhu-news-section {
+        padding: 0px;
+    }
+
+
+
+    .modal {
+        display: block;
+        position: fixed;
+        z-index: 9999999999;
+        padding-top: 0px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: #000000bf;
+    }
+    /* Modal Content */
+    .modal-content {
+        background-color: #fefefe;
+        margin: auto;
+        padding: 6px 6px 0px;
+        border: 1px solid #888;
+        max-width: 736px;
+        position: relative;
+    }
+
+    @media (min-width: 1080px) and (max-width: 1367px) {
+        .modal {
+            padding-top: 30px;
+        }
+
+        .modal-content {
+            max-width: 736px;
+        }
+    }
+
+    @media (min-width: 1368px) and (max-width: 1920px) {
+        .modal {
+            padding-top: 125px;
+        }
+
+        .modal-content {
+            max-width: 736px;
+        }
+    }
+
+    .close2 {
+        color: #ffffff;
+        float: right;
+        font-size: 36px;
+        font-weight: bold;
+        opacity: 1;
+        position: absolute;
+        top: -32px;
+        right: -22px;
+        line-height: normal;
+        cursor: pointer;
+    }
+
+        .close2:hover,
+        .close2:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+    .slick-slide {
+        position: relative;
+    }
+
+    .btn-vb2 {
+        position: absolute;
+        right: 20%;
+        top: 6%;
+    }
+</style>
+<link href="/scripts/SitesBhu/css/marquee.css" rel="stylesheet" />
+<button id="myBtn" style="display: none;">Open Modal</button>
+
+
+<input type="hidden" ng-init="GetBanner();getAlumniUnitId();" />
+<div class="home-banner" ng-init="GetAnnouncementDetail();">
+    <div class="one-time">
+
+        <div ng-repeat="slide in GetBanners" repeat-done>
+            <img src={{slide.BannerImagePath}} alt="" height="560" width="1920" />
+            <div class="del">
+                <div class="column-con">
+                    <div class="column-con-text">
+                        <div class="slider-img"><img src={{slide.SloganImagePath}} alt={{slide.BannerAltText}} /></div>
+                        <div class="slider-p">{{slide.Slogan}}</div>
+                        <strong>{{polenglish==true?'Mahamana Pt. Madan Mohan Malviya':'महामना पं. मदन मोहन मालवीय'}}</strong>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="Announcement-box" ng-if="AnnouncementDesc!=undefined && AnnouncementDesc.length>0">
+    <div class="Announcement-bull"><i class="fa fa-bullhorn"></i></div>
+    <div id="AnnouncementList" class="Announcement-list">
+        <div class="Announcement-list-item" ng-repeat="m in AnnouncementDesc" repeat-announcement-done>
+            <div ng-bind-html="trustAsHtml(m.AnnouncementDescription)"></div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<section class="two-column2 no-padding" ng-hide="AboutUsHome==undefined || AboutUsHome.length==0">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-sm-6 col-md-12">
+                <div class="squre-box2">
+                    <div class="main-con">
+                        <div class="box-img" ng-init="GetAboutUs()">
+                            <div ng-bind-html="trustAsHtml(AboutUsHome)"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+<section class="home-section" style="background:url(../../Scripts/SitesBhu/images/testimonials.jpg) no-repeat">
+    <div class="container">
+        <h2>{{polenglish==true?'Banaras Hindu University':'काशी हिन्दू विश्वविद्यालय'}}</h2>
+
+        <p ng-if="polenglish">
+            Banaras Hindu University is an internationally reputed temple of learning, situated in the holy city of Varanasi. This creative and innovative
+            university was founded by the great nationalist leader, Pandit Madan Mohan Malaviya, in 1916, through close cooperation with great personalities like
+            Dr Annie Besant, who viewed it as the University of India. Banaras Hindu University was established by the Parliamentary legislation-B.H.U. Act 1915.
+        </p>
+
+
+        <p ng-if="polhindi">
+            काशी हिंदू विश्वविद्यालय, वाराणसी के पवित्र शहर में स्थित, शिक्षा का एक अंतरराष्ट्रीय स्तर पर प्रतिष्ठित मंदिर है। यह रचनात्मक और अभिनव
+            विश्वविद्यालय की स्थापना महान राष्ट्रवादी नेता पंडित मदन मोहन मालवीय ने 1916 में, महान हस्तियों जैसे महान सहयोग के माध्यम से की थी।
+            डॉ। एनी बेसेंट, जिन्होंने इसे भारत विश्वविद्यालय के रूप में देखा। काशी हिंदू विश्वविद्यालय संसदीय कानून के तहत बनाया गया था - बी.एच.यू. अधिनियम 1915
+        </p>
+        <div id="counter" ng-init="GetAllCount();">
+            <div class="col-md-3">
+                <div class="icon-boder">
+                    <img src="/Scripts/SitesBhu/images/icon-1.png" alt="" />
+                </div>
+                <div class="counter-value" data-count="1916">1916</div>
+                <span>{{polenglish==true?'Inception':'स्थापना'}}</span>
+
+            </div>
+            <div class="col-md-3">
+                <div class="icon-boder">
+                    <img src="/Scripts/SitesBhu/images/icon-3.png" alt="" />
+                </div>
+                
+                <div class="counter-value" data-count="5">5</div>
+                <span>{{polenglish==true?'Institutes':'संस्थान'}}</span>
+
+            </div>
+            <div class="col-md-3">
+                <div class="icon-boder">
+                    <img src="/Scripts/SitesBhu/images/icon-4.png" alt="" />
+                </div>
+                
+                <div class="counter-value" data-count="16">16</div>
+                <span>{{polenglish==true?'Faculties':'संकाय'}}</span>
+
+            </div>
+            <div class="col-md-3">
+                <div class="icon-boder">
+                    <img src="/Scripts/SitesBhu/images/icon-2.png" alt="" />
+                </div>
+                
+                <div class="counter-value" data-count="135">135</div>
+                <span>{{polenglish==true?'Departments':'विभाग'}}</span>
+
+            </div>
+
+
+        </div>
+
+    </div>
+</section>
+
+<div class="teke" style="background:url(../../scripts/SitesBhu/images/test-header-image-3.jpg) no-repeat">
+    <div class="container">
+        <h2>Virtual Tour of BHU Campus</h2>
+        <a href="" class="btn-sum">Take Virtual Tour</a>
+        <p>
+            Take our guided tour to see the BHU campus at any time! The tour takes you through the places they live and learn.
+        </p>
+    </div>
+</div>
+
+<section class="bhu-news-iframe">
+    <div class="container-fluid bhu-news-section">
+        <div class="row">
+            <div class="col-xs-12 text-center">
+                <div class="iframe-container">
+                    <iframe src="https://news.bhu.ac.in/bhu-news-section"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="latest-news">
+    <div class="container">
+        <div class="row" ng-hide="AcademicEvents.length==0 && NewsList.length==0 && Notice.length==0">
+            <div class="col-sm-12 col-md-6 col-12" ng-init="LoadNotice();">
+
+                <h3>{{polenglish==true?'Notices':'नोटिस'}}</h3>
+
+                <div class="event-box-3">
+                    <div class="NewsNoticesBoxScroll">
+                        <div class="list-count-box2" ng-repeat="x in Notice">
+                            <div class="list-title-head2" ng-if="polenglish==true">
+                                {{x.Headline}}
+                            </div>
+                            <div class="list-title-head2" ng-if="polhindi==true">
+                                {{x.HindiHeadline}}
+                            </div>
+                            
+                            <div class="list-title-date2">
+                                <label ng-if="polenglish==true" class="{{x.NoticeType}}">{{x.Day}}, {{x.dd}} {{x.MM}} {{x.YYYY}}  <img src="/Images/new.gif" alt="" /></label>
+                                <label ng-if="polhindi==true" class="{{x.NoticeType}}">{{x.Day}}, {{x.dd}} {{x.MM}} {{x.YYYY}} <img src="/Images/new.gif" alt="" /></label>
+                                <a ng-if="polenglish" href="javascript:angular.element(document).scope().Notice_Click({{x.NoticeId}})">
+                                    {{polenglish==true?'Read More':'अधिक पढ़ें'}}
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <a href="javascript:angular.element(document).scope().NoticeReadmore_Click();" tabindex="0" class="btn2">{{polenglish==true?'Read More':'अधिक पढ़ें'}} >></a>
+                    <a href="javascript:angular.element(document).scope().NoticeArchival_Click();" tabindex="0" class="btn2 pull-right">{{polenglish==true?'Notice Archival':'नोटिस अभिलेखीय'}}  >></a>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-12" ng-init="LoadAcademicEvents();">
+                <h3>{{polenglish==true?'Academic Events':'शैक्षणिक कार्यक्रम'}}</h3>
+                <div class="event-box-3 home-event">
+                    <div class="tab-select">
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a data-toggle="tab" href="#Upcoming">{{polenglish==true?'Upcoming':'आगामी'}}</a></li>
+                            <li><a data-toggle="tab" href="#Present">{{polenglish==true?'Ongoing':'चल रही है'}}</a></li>
+                            <li><a data-toggle="tab" href="#Past">{{polenglish==true?'Concluded':'निष्कर्ष निकाला'}}</a></li>
+                        </ul>
+                    </div>
+                    <div class="tab-content">
+                        <div id="Upcoming" class="tab-pane fade in active">
+                            <div class="EventBoxScroll">
+                                <div class="box-news" ng-repeat="xx in AcademicEvents|filter:{'EventType':'Upcoming'}">
+                                    <a href="javascript:angular.element(document).scope().AcademicEvents_Click('Upcoming&{{xx.AcademicEventsId}}');">
+                                        <img src="/Content/noimage.png" style="width: 25px;" ng-src="{{xx.Image1}}" alt="" />
+                                        <p ng-if="polenglish==false">{{xx.HindiEventName}}</p>
+                                        <p ng-if="polenglish==true">{{xx.EventName}}</p>
+                                        {{xx.HDay}}, {{xx.EventFromDate }}
+                                    </a>
+                                </div>
+                            </div>
+                            <a href="javascript:angular.element(document).scope().AcademicEventsReadmore_Click('Upcoming');" tabindex="0" class="btn2">{{polenglish==true?'Read More':'अधिक पढ़ें '}} >></a>
+                            <a href="javascript:angular.element(document).scope().EventsArchival_Click();" tabindex="0" class="btn2 pull-right">{{polenglish==true?'Academic Events Archival':'शैक्षणिक कार्यक्रम अभिलेखीय'}} ></a>
+                        </div>
+                        <div id="Present" class="tab-pane fade">
+                            <div class="EventBoxScroll">
+                                <div ng-init="LoadAcademicEvents();">
+                                    <div class="box-news" ng-repeat="xx in AcademicEvents|filter:{'EventType':'Present'}">
+                                        <a href="javascript:angular.element(document).scope().AcademicEvents_Click('Present&{{xx.AcademicEventsId}}');">
+                                            <img src="/Content/noimage.png" style="width: 25px;" ng-src="{{xx.Image1}}" alt="" />
+                                            <p ng-if="polenglish==false">{{xx.HindiEventName}}</p>
+                                            <p ng-if="polenglish==true">{{xx.EventName}}</p>
+                                            {{xx.HDay}}, {{xx.EventFromDate }}
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="javascript:angular.element(document).scope().AcademicEventsReadmore_Click('Present');" tabindex="0" class="btn2">{{polenglish==true?'Read More':'अधिक पढ़ें '}} >></a>
+                            <a href="javascript:angular.element(document).scope().EventsArchival_Click();" tabindex="0" class="btn2 pull-right">{{polenglish==true?'Academic Events Archival':'शैक्षणिक कार्यक्रम अभिलेखीय'}} ></a>
+                        </div>
+                        <div id="Past" class="tab-pane fade">
+                            <div class="EventBoxScroll">
+                                <div class="box-news" ng-repeat="xx in AcademicEvents|filter:{'EventType':'Past'}">
+                                    <a href="javascript:angular.element(document).scope().AcademicEvents_Click('Past&{{xx.AcademicEventsId}}');">
+                                        <img src="/Content/noimage.png" ng-src="{{xx.Image1}}" alt="" style="width: 25px;" />
+                                        <p ng-if="polenglish==false">{{xx.HindiEventName}}</p>
+                                        <p ng-if="polenglish==true">{{xx.EventName}}</p>
+                                        {{xx.HDay}}, {{xx.EventFromDate }}
+                                    </a>
+                                </div>
+                            </div>
+                            <a href="javascript:angular.element(document).scope().AcademicEventsReadmore_Click('Past');" tabindex="0" class="btn2">{{polenglish==true?'Read More':'अधिक पढ़ें '}}>></a>
+                            <a href="javascript:angular.element(document).scope().EventsArchival_Click();" tabindex="0" class="btn2 pull-right">{{polenglish==true?'Academic Events Archival':'शैक्षणिक कार्यक्रम अभिलेखीय'}}  ></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="bg-light-gray bg-light-gray2">
+    <div class="container-fluid">
+        <h3>{{polenglish==true?'Stories From The Ground':'बुनियाद से कहानियां'}}</h3>
+
+        <div class="row">
+            <div class="col-md-12 col-xs-12">
+                <div class="Interested-Box" ng-init="getStoriesFromTheGround();">
+                    <div class="owl-carousel StoriesSlider">
+                        <div class="image-box" ng-repeat="x in StoriesFromTheGround" repeat-done-stories-in ng-cloak>
+                            <a href="javascript:angular.element(document).scope().StoriesFromTheGround_Click({{x.CategoryPostId}})">
+                                <div class="inner-item">
+                                    <img ng-src="data:image/JPEG;base64,{{x.Attachment}}" alt="img" />
+                                    <div class="content">
+                                        <h5 class="OverTextHide">{{x.PostTitle}}</h5>
+                                        <span>{{x.CreatedOn}}</span>
+                                        <p ng-bind-html="trustAsHtml(x.PostContent)"></p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="video-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-md-7">
+                <div class="video-box">
+                    <iframe width="100%" model="HomeVideoLink" src="" ng-src="{{Url(HomeVideoLink)}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-5">
+                <div class="bhu-se">
+                    <a class="twitter-timeline" data-width="428" data-height="403" data-theme="light" href="https://twitter.com/VCofficeBHU?ref_src=twsrc%5Etfw">{{polenglish==true?'Tweets by VC office BHU':'कुलपति कार्यालय (बी एच यू) द्वारा ट्वीट'}} </a>
+                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section class="bg-light-gray bg-light-gray2">
+    <div class="container">
+        <h3>{{polenglish==true?'You May Be Interested In...':'आप में रुचि हो सकती है ...'}}</h3>
+
+        <div class="row">
+            <div class="col-md-12 col-xs-12">
+                <div class="Interested-Box" ng-init="getYouMayBeInterestedIn();">
+                    <div class="owl-carousel InterestedSlider">
+
+                        <div class="image-box" ng-repeat="x in YouMayBeInterestedIn" repeat-done-you-may-be-interested-in ng-cloak>
+                            <a href="javascript:angular.element(document).scope().YouMayBeInterestedIn_Click({{x.CategoryPostId}})">
+                                <div class="inner-item">
+                                    <img ng-src="data:image/JPEG;base64,{{x.Attachment}}" alt="img" />
+                                    <div class="content">
+                                        <h5 class="OverTextHide">{{x.PostTitle}}</h5>
+                                        <span>{{x.CreatedOn}}</span>
+                                        <p ng-bind-html="trustAsHtml(x.PostContent)"></p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                    
+
+                </div>
+            </div>
+
+
+            
+        </div>
+    </div>
+</section>
+
+<section class="important-link">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="home-title">
+                    <h6>{{polenglish==true?'National Portal Links':'राष्ट्रीय पोर्टल लिंक'}}</h6>
+
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <div id="owl-demo2">
+                    <div class="item"><a href="https://www.nirfindia.org/Home" rel="noopener noreferrer" target="_blank"><img src="/scripts/SitesBhu/images/important-links/imp-1.png" alt=""></a></div>
+                    <div class="item"><a href="https://swachhbharatmission.gov.in/sbmcms/index.htm" rel="noopener noreferrer" target="_blank"><img src="/scripts/SitesBhu/images/important-links/imp-2.png" alt=""></a></div>
+                    <div class="item"><a href="https://www.digitalindia.gov.in/" rel="noopener noreferrer" target="_blank"><img src="/scripts/SitesBhu/images/important-links/imp-3.png" alt=""></a></div>
+                    <div class="item"><a href="https://www.india.gov.in/" rel="noopener noreferrer" target="_blank"><img src="/scripts/SitesBhu/images/important-links/imp-4.png" alt=""></a></div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="latest-news no-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <h1 class="PageOwned mgt-0  mgb-0">{{polenglish==true?'This page is managed by Computer Center (BHU)':'यह पृष्ठ कंप्यूटर केंद्र (बी एच यू) द्वारा प्रबंधित है'}}</h1>
+
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script src="/Scripts/ThirdParty?v=_WtJcBfmwklMSyChDcWG9qyodTQ8D7eJSA9SDhcGo_01"></script>
+
+
+
+
+        <!--footer-->
+        <footer id="footer" ng-init="GetFooterHeader();GetFooter()" ng-cloak>
+            <div class="footer-u">
+                <div class="container">
+                    <div class="row" ng-show="GetFooterHeaders.length>0">
+                        <div class="f-flex-box">
+                            <div class="f-flex-3" ng-repeat="FooterHeaders1 in GetFooterHeaders" footer-responsive>
+                                <h3 ng-bind-html="trustAsHtml(FooterHeaders1.FooterHeaderText)"></h3>
+                                <div class="footer-item-list-box">
+                                    <ul class="footer-item-list">
+                                        <li ng-repeat="Footers in GetFooters| filter:{FooterHeaderId:FooterHeaders1.FooterHeaderId,true}">
+                                            <a href="#" ng-href={{Footers.LayoutPageName+Footers.URLType}} ng-bind-html="trustAsHtml(Footers.FooterText)"></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <div class="copy-right" ng-if="polenglish">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <ul class="footer-link-policy">
+
+                        <li><a href="/Site/CopyrightPolicy/1_2" class="none external">Copyright Policy</a></li>
+                        <li><a href="/Site/HyperlinkingPolicy/1_2" class="selected external">Hyperlinking Policy</a></li>
+                        <li><a href="/Site/TermsConditions/1_2" class="none external">Terms &amp; Conditions</a></li>
+                        <li><a href="/Site/PrivacyPolicy/1_2" class="none external">Privacy Policy</a></li>
+                        <li><a href="/Site/Disclaimer/1_2" class="none external">Disclaimer</a></li>
+                        <li><a href="/Site/Help/1_2" class="none external">Help</a></li>
+                        <li><a href="/Site/FeedbackForm/1_2" title="Feedback Form">Feedback Form</a></li>
+                        <li><a href="/Site/Sitemap/1_2" title="Sitemap">Sitemap</a></li>
+                    </ul>
+                    <p>
+                        This is the official Website of Banaras Hindu University, [BHU], Varanasi-221005, U.P., India.
+                        Content on this website is published and Managed by Banaras Hindu University.
+                        For any query regarding this website, Please contact the <a href="/Site/WebInformationManager/1_2" class="wim-link"> "Web Information Manager" </a>
+
+                    </p>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="visitor-counter">
+                        Visitor No. : <span>{{Visitor}}</span>
+                    </div>
+                    <div class="last-update">
+
+                        <div class="time uppcl-new" id="datetime">{{LastUpdateDate}}</div>
+                        <div> Last Updated on :  &nbsp; </div>
+                    </div>
+                    <div class="powered-by">
+                        Powered by : <a href="http://www.bsninfotech.net/" rel="noopener noreferrer" target="_blank">BSN Infotech Pvt. Ltd.</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="copy-right" ng-if="polhindi">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <ul class="footer-link-policy">
+
+                        <li><a href="/Site/CopyrightPolicy/2_2" class="none external">कॉपीराइट नीति</a></li>
+                        <li><a href="/Site/HyperlinkingPolicy/2_2" class="selected external">हाइपरलिंकिंग नीति</a></li>
+                        <li><a href="/Site/TermsConditions/2_2" class="none external">नियम एवं शर्तें</a></li>
+                        <li><a href="/Site/PrivacyPolicy/2_2" class="none external">गोपनीयता नीति</a></li>
+                        <li><a href="/Site/Disclaimer/2_2" class="none external">अस्वीकृत करना</a></li>
+                        <li><a href="/Site/Help/2_2" class="none external">सहायता</a></li>
+                        <li><a href="/Site/FeedbackForm/2_2" title="Feedback Form">फीडबैक फ़ार्म</a></li>
+                        <li><a href="/Site/Sitemap/2_2" title="Sitemap">साइट मैप</a></li>
+                    </ul>
+                    <p>
+                        यह काशी हिंदू विश्वविद्यालय, [बीएचयू], वाराणसी - 221005, उत्तर प्रदेश, भारत की आधिकारिक वेबसाइट है
+                        इस वेबसाइट पर सामग्री काशी हिंदू विश्वविद्यालय द्वारा प्रकाशित और प्रबंधित है.
+                        इस वेबसाइट से संबंधित किसी भी प्रश्न के लिए, कृपया संपर्क करें। <a href="/Site/WebInformationManager/2_2" class="wim-link"> "वेब सूचना प्रबंधक" </a>
+
+                    </p>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="visitor-counter">
+                        आगंतुकों की संख्या : <span>{{Visitor}}</span>
+                    </div>
+                    <div class="last-update">
+
+                        <div class="time uppcl-new" id="datetime">{{LastUpdateDate}}</div>
+                        <div> अंतिम नवीनीकृत तिथि :  &nbsp; </div>
+                    </div>
+                    <div class="powered-by">
+                        <a href="http://www.bsninfotech.net/" rel="noopener noreferrer" target="_blank">बीएसएन इन्फोटेक प्राइवेट लिमिटेड</a> द्वारा संचालित
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/Scripts/SitesBhu/js/jquery.js" type="text/javascript"></script>
+    <script src="/Scripts/SitesBhu/js/slick.js" type="text/javascript"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="/Scripts/SitesBhu/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="/Scripts/SitesBhu/js/tabs.js" type="text/javascript"></script>
+
+    <script src="/scripts/js/jquery.slimscroll.js" type="text/javascript"></script>
+    <script src="/Content/plugins/vendors/bower_components/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="/Content/plugins/vendors/bower_components/sweetalert/dist/sweetalert.js"></script>
+    <script src="/scripts/angular-ui-bootstrap-tpls-0.12.1.js"></script>
+    <script src="/scripts/ekko-lightbox.js"></script>
+    
+
+    <script src="/scripts/jquery.marquee.min.js"></script>
+    <script src="/Content/plugins/owl-carousel/owl.carousel.js"></script>
+
+    <script src="/scripts/SitesBhu/js/isotope.pkgd.js"></script>
+    <script src="/scripts/SitesBhu/js/main.js"></script>
+
+
+    <script type="text/javascript">
+
+        function blinkAndScaleElement(elementId, color1, color2, scale1, scale2, interval) {
+            const element = document.getElementById(elementId);
+            if (!element) {
+                console.error(`Element with ID "${elementId}" not found.`);
+                return;
+            }
+
+            let state = 0;
+
+            setInterval(() => {
+                if (state === 0) {
+                    element.style.color = color1;
+                    element.style.transform = `scale(${scale1})`;
+                } else {
+                    element.style.color = color2;
+                    element.style.transform = `scale(${scale2})`;
+                }
+                state = 1 - state;
+            }, interval);
+        }
+
+        const blinkingSpanId = 'blinkingText';
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const blinkingSpan = document.getElementById(blinkingSpanId);
+            if (blinkingSpan) {
+                blinkAndScaleElement(blinkingSpanId, 'orange', 'yellow', 1.0, 1.3, 1000);
+            } else {
+                console.warn(`Could not find the target span element with ID "${blinkingSpanId}".`);
+            }
+        });
+
+        $(document).ready(function () {
+
+            $("#owl-demo2").owlCarousel({
+
+
+                loop: true,
+                autoPlay: 3000, //Set AutoPlay to 3 seconds
+                dots: true,
+                nav: true,
+                items: 4,
+                itemsDesktop: [1199, 4],
+                itemsDesktopSmall: [979, 3]
+
+            });
+
+        });
+    </script>
+
+
+
+    <script type="text/javascript">
+        $('a').filter(function () {
+            return this.hostname && this.hostname !== location.hostname;
+        }).click(function () {
+            $(this).attr('target', '_blank');
+            var x = window.confirm('You are about to leave the website of Banaras Hindu University and view the content of an external website.');
+            var val = false;
+            if (x)
+                val = true;
+            else
+                val = false;
+            return val;
+        });
+        //
+        //$(".InterestedSlider").owlCarousel({
+        //    pagination: false,
+        //    navigation: true,
+        //    navigationText: false,
+        //    slideSpeed: 1000,
+        //    stopOnHover: true,
+        //    autoPlay: true,
+        //    items: 4,
+        //    itemsDesktopSmall: [1024, 3],
+        //    itemsTablet: [600, 1],
+        //    itemsMobile: [479, 1]
+        //});
+
+        $(function () {
+
+            $('.EventBoxScroll').slimscroll({
+                height: '280px',
+                color: '#406bc7',
+                wheelStep: 30,
+                railVisible: true,
+                railColor: '#406bc7'
+            });
+
+            $('.NewsNoticesBoxScroll').slimscroll({
+                height: '318px',
+                color: '#406bc7',
+                wheelStep: 30,
+                railVisible: true,
+                railColor: '#406bc7'
+            });
+
+
+        });
+    </script>
+
+
+    <script src="/scripts/js/jquery.slimscroll.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('.NewsNoticesBoxScroll').slimscroll({
+                height: '318px',
+                color: '#406bc7',
+                wheelStep: 30,
+                railVisible: true,
+                railColor: '#406bc7'
+            });
+
+
+        });
+    </script>
+
+
+    <script type="text/javascript">
+        $(document).on("click", '[data-toggle="lightbox"]', function (event) {
+            event.preventDefault();
+            $(this).ekkoLightbox();
+        });
+        $(document).ready(function () {
+            $('#search-click').click(function () {
+                $("#search-box").toggle();
+                $(".full-page-cover").toggleClass("show-search-bg");
+
+            });
+            $('#search-close-click').click(function () {
+                $("#search-box").toggle();
+                $(".full-page-cover").toggleClass("show-search-bg");
+
+            });
+        });
+    </script>
+    <script src="/scripts/SitesBhu/js/marquee.js"></script>
+    <script>
+        $(function () {
+
+            /* Example options:
+
+                let options = {
+                    autostart: true,
+                    property: 'value',
+                    onComplete: null,
+                    duration: 20000,
+                    padding: 10,
+                    marquee_class: '.marquee',
+                    container_class: '.simple-marquee-container',
+                    sibling_class: 0,
+                    hover: true,
+                    velocity: 0.1
+                    direction: 'right'
+                }
+
+                $('.simple-marquee-container').SimpleMarquee(options);
+
+            */
+
+            //$('.simple-marquee-container').SimpleMarquee();
+
+        });
+
+    </script>
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close2")[0];
+
+        // When the user clicks the button, open the modal
+        btn.onclick = function () {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+<META HTTP-EQUIV="Expires" CONTENT="0">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">		 	
+<title>AILET - Registration | AILET 2026 - AIET 2026 Regitstation</title><link rel="shortcut icon" href="/sites/nationallawuniversitydelhi.in/ailet-favicon.ico">
+<link rel="stylesheet" type="text/css" href="/v2/css/views/ed-all.css">
+<script data-main="/v2/scripts/libs/config.js" src="/v2/scripts/libs/require.js"></script>
+<link rel="stylesheet" type="text/css" href="/sites/nationallawuniversitydelhi.in/style.css">
+<style>
+	.reg_container{
+		max-width:600px;
+		margin:0 auto;	
+	}
+	.reg_label{
+		text-transform:none !important;
+	}
+</style>      
+</head>
+<body>
+<div id="se-pre-con"></div>
+<ailet_branding></ailet_branding>
+<main>
+<div class="reg_container">
+		<div class="card card-primary">
+			<div class="row card-body">
+				<h3 class="card-title" style="padding-left:15px;padding-top:10px;">AILET 2026 - Registration</h3>
+				<div class="alert alert-info" style="margin-bottom:10px;width:100%;">
+					Registration for AILET 2026 is open now.  
+				</div>
+				<div class="form-group col-12 col-md-12 col-lg-12">
+					<label class="reg_label" for="mobile_number">Enter Your Name</label>
+					<input type="text" name="name" id="re_name" class="form-control" placeholder="Name" required="required" autocomplete="off"/>
+				</div>
+				<div class="form-group col-12 col-md-12 col-lg-12">
+					<label class="reg_label" for="email">Enter Your Email (This will be your Login Id)</label>
+					<input type="text" name="email" id="re_email" class="form-control" placeholder="Email address" required="required" autocomplete="off"/>
+				</div>
+				<div class="form-group col-12 col-md-12 col-lg-12">
+					<label class="reg_label" for="email">Select Applicant Type</label>
+					<select name="applicant_type" id="re_applicant_type" class="form-control" required="required">
+						<option value='-1'>Applicant Type</option>
+						<!--<option value='Indian'>Indian</option>-->
+						<option value='Foreign'>Foreign Nationals/OCI/PIO</option>
+					</Select>
+				</div>
+				<div class="alert alert-info" style="margin-bottom:0px;">
+					If you choose the Applicant Type as <strong>Indian National</strong>, you can only apply for courses and categories applicable to Indian nationals. However, if you select <strong>Foreign Nationals/OCI/PIO</strong>, no entrance exam is conducted for this category and you will be considered only for Foreign Nationals/OCI/PIO seats.
+				</div>
+			</div>
+			<div class="card-footer" id="reg_footer">
+				<a type="submit" class="btn btn-primary" id="ed_reg_button">Register</a>
+				<span class="float-right">Have an account? <a class="card-link" href="index.html">Login</a></span>
+			</div>
+		</div>
+	</div>
+</main>
+<ailet_footer></ailet_footer>
+<script type="text/javascript">
+require(['config'],function(){
+	require(['edCss','bootstrap','edApi','edUtils','edNoty','edAiletBranding'],function(edCss,bootstrap,edApi,edUtils,edNoty,edAiletBranding){
+		edCss.init([],function(){
+			edNoty.init();
+			edAiletBranding.init({"tag_name":"ailet_branding","footer_tag":"ailet_footer",page_title:"Registration"},function(ailetBrand){
+				$('#se-pre-con').hide();
+			});
+			$(document).on("click","#ed_reg_button",function(){
+				var data = new Object();
+				data.name = $("#re_name").val();
+				data.email = $("#re_email").val();
+				data.applicant_type = $("#re_applicant_type").val();
+				console.log(data);
+				if(data.name == null || data.name == ""){
+					SNToast({text:"Please enter your Name",type:"warning"});
+					return;
+				}
+				if(data.email == null || data.email == ""){
+					SNToast({text:"Please enter Email",type:"warning"});
+					return;
+				}
+				else if(edUtils.isEmail(data.email) == false){
+					SNToast({text:"Please enter a valid Email",type:"warning"});
+					return;
+				}
+				if(data.applicant_type != 'Indian' && data.applicant_type != 'Foreign'){
+					SNToast({text:"Please select Applicant Type",type:"warning"});
+					return;
+				}
+				var applicant_type_str = "Indian National";
+				if(data.applicant_type == 'Foreign')
+					applicant_type_str = "Foreign Nationals/OCI/PIO";
+				var confirm_text = "You are registering as an <b>"+applicant_type_str+"</b> candidate for AILET 2026. Please confirm your action?";
+				SNConfirm({text:confirm_text,callback:function(response){
+						if(response.currentTarget =='btnOk'){
+							$("#btn_register").button("loading");
+							data.user_id = "";
+							data.academic_year_id = "";
+							data.call_meta_data = "ailet.AILETMISService.registerApplicant";
+							edApi.snAllAnonyServiceCall("external/anonymousCall",data,function(response){
+								var res = JSON.parse(response.data)
+								if(res.status=="SUCCESS"){
+									SNAlert({ text:res.message ,type : 'success'});
+									$("#reg_footer").html('<div class="alert alert-success" style="font-size:15px;font-weight:500;margin:0px;">You have successfully registered for AILET 2026. The username and password to access the portal will be sent to your Email ID shortly.</div>');
+								}
+								else{
+									SNToast({text:res.message ,type : 'error'});
+								}
+								$("#btn_register").button("reset");
+							});
+						}
+					}
+				});
+			});
+		}); 
+	});
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,2716 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="expires" content="0" />
+	
+	
+<title>Dwarkadas J. Sanghvi College of Engineering</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+	
+
+
+    <link rel="icon" type="text/css" href="https://www.djsce.ac.in/images/fav_icon.ico">
+	
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://www.djsce.ac.in/js/jquery-3.3.1.min.js"></script>
+	
+	
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">	
+	<link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
+	
+
+	
+	<!--<link rel="stylesheet" href="https://www.djsce.ac.in/fontawesome-free/css/all.min.css"> -->
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha512-9BwLAVqqt6oFdXohPLuNHxhx36BVj5uGSGmizkmGkgl3uMSgNalKc/smum+GJU/TTP0jy0+ruwC3xNAk3F759A==" crossorigin="anonymous" referrerpolicy="no-referrer" />	
+	
+    <!-- Bootstrap -->
+	<script src="https://www.djsce.ac.in/bootstrap/js/popper.js"></script>
+	<script src="https://www.djsce.ac.in/bootstrap/js/bootstrap.min.js"></script>
+    <link href="https://www.djsce.ac.in/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	
+
+	<!-- Validation  -->	
+	<script type="text/javascript" src="https://www.djsce.ac.in/js/validation/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="https://www.djsce.ac.in/js/validation/additional-methods.min.js"></script>	
+	
+	<!-- SCroll To -->	
+	<script type="text/javascript" src="https://www.djsce.ac.in/js/scrollTo.js"></script> 
+	<script type="text/javascript" src="https://www.djsce.ac.in/js/wow/wow.min.js"></script> 
+
+
+	<link href="https://www.djsce.ac.in/js/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+    <script src="https://www.djsce.ac.in/js/datatables/jquery.dataTables.js"></script>
+    <script src="https://www.djsce.ac.in/js/datatables/dataTables.bootstrap4.js"></script>
+
+
+	<!-- Back to Top -->	
+	<script type="text/javascript" src="https://www.djsce.ac.in/js/back-to-top.js"></script> 
+	<link  type="text/css" rel="stylesheet" href="https://www.djsce.ac.in/js/back-to-top.css">
+	
+
+    
+
+	<!-- Fancy Box -->	
+	<script type="text/javascript" src="https://www.djsce.ac.in/js/fancybox/jquery.fancybox.min.js"></script>
+	<link rel="stylesheet" href="https://www.djsce.ac.in/js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+	<script type="text/javascript"> 
+	$(document).ready(function() {	
+	
+		$(".fancybox").fancybox({ padding: 0 }); 
+	}); 	
+	</script>
+
+	<link rel="stylesheet" href="https://www.djsce.ac.in/js/owlcarousel/assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="https://www.djsce.ac.in/js/owlcarousel/assets/owl.theme.default.min.css">
+	<script src="https://www.djsce.ac.in/js/owlcarousel/owl.carousel.min.js"></script>
+
+	<link  type="text/css" rel="stylesheet" href="https://www.djsce.ac.in/styles/styles.css">
+	<link  type="text/css" rel="stylesheet" href="https://www.djsce.ac.in/styles/menu_styles2.css">
+
+	<style>
+	
+	body {
+		
+	background:#fff;
+	font-family: 'Nunito Sans', sans-serif;
+	font-weight:400;
+	font-size:14px;
+	color:#000;
+	fill: 
+	}
+
+	p, li { color: #000; font-size:14px; line-height:22px; }
+	
+	
+	img svg path {
+	fill: #f26d21; !important;
+	}
+	
+
+	</style>
+
+<style>
+ 
+.accordion .card,
+.accordion .card:last-child .card-header {
+  border: none;
+}
+ 
+.accordion .card-header {
+  border-bottom-color: #EDEFF0;
+  background: transparent;
+}
+ 
+.accordion .fa-stack {
+  font-size: 18px;
+}
+ 
+.accordion .btn {
+  width: 100%;
+  text-align:left;
+  font-family: 'Merriweather', serif; font-size:18px; color:#000;
+  color: #000;
+  padding: 0;
+}
+ 
+.accordion .btn-link:hover,
+.accordion .btn-link:focus {
+  text-decoration: none;
+}
+ 
+.accordion li + li {
+  margin-top: 10px;
+}
+
+.rotate_text {
+	 transform: rotate(-90deg);
+	-webkit-transform: rotate(-90deg);
+	/* Firefox */
+	-moz-transform: rotate(-90deg);
+	/* IE */
+	ms-transform: rotate(-90deg);
+	/* Opera */
+	-o-transform: rotate(-90deg);	
+	
+	
+}	
+</style>
+<script>
+
+$(document).ready(function() {	
+
+	$(".accordion").on("hide.bs.collapse show.bs.collapse", e => {
+  $(e.target)
+    .prev()
+    .find("i:last-child")
+    .toggleClass("fa-minus fa-plus");
+	});
+
+
+
+	$("#menu_accordion").on("hide.bs.collapse show.bs.collapse", e => {
+  $(e.target)
+    .prev()
+    .find("i:last-child")
+    .toggleClass("fa-minus fa-plus");
+	});
+
+});
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-X39PX2B810"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-X39PX2B810');
+</script>
+</head>
+<body>
+
+<div id="mobile_menu" style="background:#fff; position:absolute; top:0px; left:0px; display:none; width:100%; height:200%; z-index:20000; padding-bottom:20px;">
+<div style="padding:0px float:left; width:100%; padding:10px 20px 0px 20px; text-align:right;">
+<a href="javascript:void(0);" onclick="javascript:$('#mobile_menu').hide();"><i class="fas fa-times blue" style="font-size:16px; font-weight:bold;"></i></a>
+</div>
+<div style="padding:0px float:left; width:100%;">
+<div id="menu_accordion">
+<div class="card">
+<div class="card-header" id="heading1">
+<a href="" class="menu_links" style="color:#003877;">Home</a>
+</div>
+<div id="collapse1" class="collapse" data-parent="#menu_accordion">
+<div class="card-body">
+</div></div>
+</div>
+<div class="card" style="border:1px solid #fff;">
+<div class="card-header" id="heading2">
+<h3 data-toggle="collapse" data-target="#collapse2" class="menu_links">About Us<span class="fa-stack fa-sm float-right"><i class="fas fa-plus fa-stack-1x"></i></span></h3>
+</div>
+<div id="collapse2" class="collapse" data-parent="#menu_accordion">
+<div class="card-body">
+<div id="menu_accordion2_1">
+<div class="card">
+<div class="card-header" id="heading_submenu_1_1">
+<h3 data-toggle="collapse" data-target="#collapse_submenu_1_1" class="menu_links">About SVKM<span class="fa-stack fa-sm float-right"><i class="fas fa-plus fa-stack-1x"></i></span></h3>
+</div>
+<div id="collapse_submenu_1_1" class="collapse" data-parent="#menu_accordion2_1">
+<div class="card-body">
+<div style="padding:2px 0px; ">
+<a href="https://www.djsce.ac.in/svkm-overview" style="color:#003877; font-weight:400;">Overview</a>
+</div>
+<div style="padding:2px 0px; ">
+<a href="https://www.djsce.ac.in/svkm-office-bearers" style="color:#003877; font-weight:400;">Office Bearers</a>
+</div>
+</div></div>
+</div>
+<div class="card">
+<div class="card-header" id="heading_submenu_1_2">
+<h3 data-toggle="collapse" data-target="#collapse_submenu_1_2" class="menu_links">About DJSCE<span class="fa-stack fa-sm float-right"><i class="fas fa-plus fa-stack-1x"></i></span></h3>
+</div>
+<div id="collapse_submenu_1_2" class="collapse" data-parent="#menu_accordion2_1">
+<div class="card-body">
+<div style="padding:2px 0px; ">
+<a href="https://www.djsce.ac.in/djsce-overview" style="color:#003877; font-weight:400;">DJSCE Overview</a>
+</div>
+<div style="padding:2px 0px; ">
+<a href="https://www.djsce.ac.in/message-from-president" style="color:#003877; font-weight:400;">Message from President</a>
+</div>
+<div style="padding:2px 0px; ">
+<a href="https://www.djsce.ac.in/message-from-in-charge" style="color:#003877; font-weight:400;">Message from In-charge</a>
+</div>
+<div style="padding:2px 0px; ">
+<a href="https://www.djsce.ac.in/from-principals-desk" style="color:#003877; font-weight:400;">From Principal's Desk</a>
+</div>
+<div style="padding:2px 0px; ">
+<a href="https://www.djsce.ac.in/vision-mission" style="color:#003877; font-weight:400;">Vision & Mission</a>
+</div>
+<div style="padding:2px 0px; ">
+<a href="https://www.djsce.ac.in/highlights" style="color:#003877; font-weight:400;">Highlights</a>
+</div>
+<div style="padding:2px 0px; ">
+<a href="docs/naac/7.2.pdf" target="_blank" style="color:#003877; font-weight:400;">Best Practises</a>
+</div>
+<div style="padding:2px 0px; ">
+<a href="docs/176_Down_Institute%20Distinctiveness.pdf" target="_blank" style="color:#003877; font-weight:400;">Institutional Distinctiveness</a>
+</div>
+<div style="padding:2px 0px; ">
+<a href="https://www.djsce.ac.in/rankings" style="color:#003877; font-weight:400;">Rankings</a>
+</div>
+<div style="padding:2px 0px; ">
+<a href="https://www.djsce.ac.in/core-values" style="color:#003877; font-weight:400;">Core Values</a>
+</div>
+</div></div>
+</div>
+<div class="card">
+<div class="card-header" id="heading_submenu_1_3">
+<h3 data-toggle="collapse" data-target="#collapse_submenu_1_3" class="menu_links">Administration<span class="fa-stack fa-sm float-right"><i class="fas fa-plus fa-stack-1x"></i></span></h3>
+</div>
+<div id="collapse_submenu_1_3" class="collapse" data-parent="#menu_accordion2_1">
+<div class="card-body">
+<div style="padding:2px 0px; ">
+<a href="https://www.djsce.ac.in/organization-governance" style="color:#003877; font-weight:400;">Organization & Governance</a>
+</div>
+<div style="padding:2px 0px; ">
+<a href="https://www.djsce.ac.in/minutes-of-statutory-committee" style="color:#003877; font-weight:400;">Minutes of Statutory Committee</a>
+</div>
+<div style="padding:2px 0px; ">
+<a href="docs/130_Down_Non Teaching staff 20092019.pdf" target="_blank" style="color:#003877; font-weight:400;">Office & Administrative Staff</a>
+</div>
+<div style="padding:2px 0px; ">
+<a href="docs/dept_staff.pdf" target="_blank" style="color:#003877; font-weight:400;">Departmental Non-Teaching Staff</a>
+</div>
+</div></div>
+</div>
+<div class="card">
+<div class="card-header" id="heading_submenu_1_4">
+<h3 data-toggle="collapse" data-target="#collapse_submenu_1_4" class="menu_links">Feedback<span class="fa-stack fa-sm float-right"><i class="fas fa-plus fa-stack-1x"></i></span></h3>
+</div>
+<div id="collapse_submenu_1_4" class="collapse" data-parent="#menu_accordion2_1">
+<div class="card-body">
+<div style="padding:2px 0px; ">
+<a href="https://www.djsce.ac.in/" style="color:#003877; font-weight:400;">Student Feedback</a>
+</div>
+<div style="padding:2px 0px; ">
+<a href="https://www.djsce.ac.in/" style="color:#003877; font-weight:400;">Teacher Feedback</a>
+</div>
+<div style="padding:2px 0px; ">
+<a href="https://www.djsce.ac.in/" style="color:#003877; font-weight:400;">Employers Feedback</a>
+</div>
+<div style="padding:2px 0px; ">
+<a href="https://www.djsce.ac.in/" style="color:#003877; font-weight:400;">Alumni Feedback</a>
+</div>
+<div style="padding:2px 0px; ">
+<a href="https://www.djsce.ac.in/" style="color:#003877; font-weight:400;">Institute Feedback</a>
+</div>
+</div></div>
+</div>
+<div class="card">
+<div class="card-header" id="heading_submenu_1_5">
+<h3 data-toggle="collapse" data-target="#collapse_submenu_1_5" class="menu_links">Infrastructure<span class="fa-stack fa-sm float-right"><i class="fas fa-plus fa-stack-1x"></i></span></h3>
+</div>
+<div id="collapse_submenu_1_5" class="collapse" data-parent="#menu_accordion2_1">
+<div class="card-body">
+<div style="padding:2px 0px; ">
+<a href="https://www.djsce.ac.in/" style="color:#003877; font-weight:400;">List of Software on Virtual Cloud</a>
+</div>
+</div></div>
+</div>
+<div class="card">
+<div class="card-header" id="heading_submenu_1_6">
+<a href="" class="menu_links" style="color:#000;">Grievance Redressal </a>
+</div>
+<div id="collapse_submenu_1_6" class="collapse" data-parent="#menu_accordion2_1">
+<div class="card-body">
+</div></div></div>
+</div>
+</div></div>
+</div>
+<div class="card">
+<div class="card-header" id="heading3">
+<a href="mandatory-disclosures" class="menu_links" style="color:#003877;">Mandatory Disclosures</a>
+</div>
+<div id="collapse3" class="collapse" data-parent="#menu_accordion">
+<div class="card-body">
+</div></div>
+</div>
+<div class="card" style="border:1px solid #fff;">
+<div class="card-header" id="heading4">
+<h3 data-toggle="collapse" data-target="#collapse4" class="menu_links">Admissions<span class="fa-stack fa-sm float-right"><i class="fas fa-plus fa-stack-1x"></i></span></h3>
+</div>
+<div id="collapse4" class="collapse" data-parent="#menu_accordion">
+<div class="card-body">
+<div id="menu_accordion2_3">
+<div class="card">
+<div class="card-header" id="heading_submenu_3_1">
+<a href="index.php#admissions" class="menu_links" style="color:#000;">LATEST ADMISSION UPDATES</a>
+</div>
+<div id="collapse_submenu_3_1" class="collapse" data-parent="#menu_accordion2_3">
+<div class="card-body">
+</div></div></div>
+<div class="card">
+<div class="card-header" id="heading_submenu_3_2">
+<h3 data-toggle="collapse" data-target="#collapse_submenu_3_2" class="menu_links">1st Year (B.Tech)<span class="fa-stack fa-sm float-right"><i class="fas fa-plus fa-stack-1x"></i></span></h3>
+</div>
+<div id="collapse_submenu_3_2" class="collapse" data-parent="#menu_accordion2_3">
+<div class="card-body">
+<div style="padding:2px 0px; ">
+<a href="https://www.djsce.ac.in/admissions-1st-year-btech#overview" style="color:#003877; font-weight:400;">Overview</a>
+</div>
+<div style="padding:2px 0px; ">
+<a href="https://www.djsce.ac.in/https://forms.gle/NcYsE5VvVhh5dNo66" style="color:#003877; font-weight:400;">Counselling Session Notice</a>
+</div>
+<div style="padding:2px 0px; ">
+<a href="https://www.djsce.ac.in/admissions-1st-year-btech#eligibility" style="color:#003877; font-weight:400;">Eligibility Criteria</a>
+</div>
+<div style="padding:2px 0px; ">
+<a href="https://www.djsce.ac.in/docs/List%20%20of%20Documents.pdf" style="color:#003877; font-weight:400;">Documents Required</a>
+</div>
+<div style="padding:2px 0px; ">
+<a href="https://www.djsce.ac.in/admissions-1st-year-btech#process" style="color:#003877; font-weight:400;">Admission Process</a>
+</div>
+<div style="padding:2px 0px; ">
+<a href="https://www.djsce.ac.in/docs/Rules%20of%20Refund.pdf" style="color:#003877; font-weight:400;">Cancellation Policy</a>
+</div>
+</div></div>
+</div>
+<div class="card">
+<div class="card-header" id="heading_submenu_3_3">
+<h3 data-toggle="collapse" data-target="#collapse_submenu_3_3" class="menu_links">2nd Year Direct<span class="fa-stack fa-sm float-right"><i class="fas fa-plus fa-stack-1x"></i></span></h3>
+</div>
+<div id="collapse_submenu_3_3" class="collapse" data-parent="#menu_accordion2_3">
+<div class="card-body">
+<div style="padding:2px 0px; ">
+<a href="https://www.djsce.ac.in/admissions-2nd-year-direct#overview" style="color:#003877; font-weight:400;">Overview</a>
+</div>
+<div style="padding:2px 0px; ">
+<a href="https://www.djsce.ac.in/docs/DSE%20Fee%20Structure%202025-26.pdf" style="color:#003877; font-weight:400;">Fee Structure</a>
+</div>
+<div style="padding:2px 0px; ">
+<a href="https://www.djsce.ac.in/admissions-2nd-year-direct#eligibility" style="color:#003877; font-weight:400;">Eligibility Criteria</a>
+</div>
+<div style="padding:2px 0px; ">
+<a href="https://www.djsce.ac.in/docs/List%20of%20documents_.pdf" style="color:#003877; font-weight:400;">Document Required</a>
+</div>
+<div style="padding:2px 0px; ">
+<a href="https://www.djsce.ac.in/docs/Rules%20of%20Refund%20-%20DSE.pdf" style="color:#003877; font-weight:400;">Cancellation Policy</a>
+</div>
+</div></div>
+</div>
+<div class="card">
+<div class="card-header" id="heading_submenu_3_4">
+<a href="admissions-1st-year-mtech" class="menu_links" style="color:#000;">M.Tech Admissions</a>
+</div>
+<div id="collapse_submenu_3_4" class="collapse" data-parent="#menu_accordion2_3">
+<div class="card-body">
+</div></div></div>
+<div class="card">
+<div class="card-header" id="heading_submenu_3_5">
+<a href="admissions-1st-year-phd" class="menu_links" style="color:#000;">Ph.D. Admissions</a>
+</div>
+<div id="collapse_submenu_3_5" class="collapse" data-parent="#menu_accordion2_3">
+<div class="card-body">
+</div></div></div>
+<div class="card">
+<div class="card-header" id="heading_submenu_3_6">
+<h3 data-toggle="collapse" data-target="#collapse_submenu_3_6" class="menu_links">Admission Details<span class="fa-stack fa-sm float-right"><i class="fas fa-plus fa-stack-1x"></i></span></h3>
+</div>
+<div id="collapse_submenu_3_6" class="collapse" data-parent="#menu_accordion2_3">
+<div class="card-body">
+<div style="padding:2px 0px; ">
+<a href="https://www.djsce.ac.in/admission-notices-2024" style="color:#003877; font-weight:400;">2024-2025</a>
+</div>
+<div style="padding:2px 0px; ">
+<a href="https://www.djsce.ac.in/admission-notices-2023" style="color:#003877; font-weight:400;">2023-2024</a>
+</div>
+<div style="padding:2px 0px; ">
+<a href="https://www.djsce.ac.in/admission-notices-2022" style="color:#003877; font-weight:400;">2022-2023</a>
+</div>
+<div style="padding:2px 0px; ">
+<a href="https://www.djsce.ac.in/admission-notices-2021" style="color:#003877; font-weight:400;">2021-2022</a>
+</div>
+<div style="padding:2px 0px; ">
+<a href="https://www.djsce.ac.in/admission-notices-2020" style="color:#003877; font-weight:400;">2020-2021</a>
+</div>
+<div style="padding:2px 0px; ">
+<a href="https://www.djsce.ac.in/admission-notices-2019" style="color:#003877; font-weight:400;">2019-2020</a>
+</div>
+</div></div>
+</div>
+</div>
+</div></div>
+</div>
+<div class="card" style="border:1px solid #fff;">
+<div class="card-header" id="heading5">
+<h3 data-toggle="collapse" data-target="#collapse5" class="menu_links">Academics<span class="fa-stack fa-sm float-right"><i class="fas fa-plus fa-stack-1x"></i></span></h3>
+</div>
+<div id="collapse5" class="collapse" data-parent="#menu_accordion">
+<div class="card-body">
+<div id="menu_accordion2_4">
+<div class="card">
+<div class="card-header" id="heading_submenu_4_1">
+<h3 data-toggle="collapse" data-target="#collapse_submenu_4_1" class="menu_links">UG Programs<span class="fa-stack fa-sm float-right"><i class="fas fa-plus fa-stack-1x"></i></span></h3>
+</div>
+<div id="collapse_submenu_4_1" class="collapse" data-parent="#menu_accordion2_4">
+<div class="card-body">
+<div style="padding:2px 0px; ">
+<a href="https://www.djsce.ac.in/ug-electronics-telecommunication-engg" style="color:#003877; font-weight:400;">Electronics and Telecommunication Engg</a>
+</div>
+<div style="padding:2px 0px; ">
+<a href="https://www.djsce.ac.in/ug-information-technology" style="color:#003877; font-weight:400;">Information Technology</a>
+</div>
+<div style="padding:2px 0px; ">
+<a href="https://www.djsce.ac.in/ug-computer-engineering" style="color:#003877; font-weight:400;">Computer Engineering</a>
+</div>
+<div style="padding:2px 0px; ">
+<a href="https://www.djsce.ac.in/ug-mechanical-engineering" style="color:#003877; font-weight:400;">Mechanical Engineering</a>
+</div>
+<div style="padding:2px 0px; ">
+<a href="https://www.djsce.ac.in/ug-computer-science-engineering-data-science" target="_blank" style="color:#003877; font-weight:400;">Computer Science and Engineering (Data Science)</a>
+</div>
+<div style="padding:2px 0px; ">
+<a href="https://www.djsce.ac.in/ug-artificial-intelligence-machine-learning" style="color:#003877; font-weight:400;">Artificial Intelligence and Machine Learning</a>
+</div>
+<div style="padding:2px 0px; ">
+<a href="https://www.djsce.ac.in/ug-artificial-intelligence-ai-data-science" style="color:#003877; font-weight:400;">Artificial Intelligence (AI) and Data Science</a>
+</div>
+<div style="padding:2px 0px; ">
+<a href="https://www.djsce.ac.in/ug-computer-science-engineering-iot-cyber-security-with-block-chain-technology" style="color:#003877; font-weight:400;">Computer Science and Engineering <br />(IOT and Cyber Security with Block Chain Technology)</a>
+</div>
+<div style="padding:2px 0px; ">
+<a href="https://www.djsce.ac.in/ug-chemical-engineering" style="color:#003877; font-weight:400;">Chemical Engineering (Discontinued)</a>
+</div>
+<div style="padding:2px 0px; ">
+<a href="https://www.djsce.ac.in/ug-electronics-engineering" style="color:#003877; font-weight:400;">Electronics Engineering (Discontinued)</a>
+</div>
+<div style="padding:2px 0px; ">
+<a href="https://www.djsce.ac.in/ug-poduction-engineering" style="color:#003877; font-weight:400;">Production Engineering (Discontinued)</a>
+</div>
+<div style="padding:2px 0px; ">
+<a href="https://www.djsce.ac.in/ug-biomedical-engineering" style="color:#003877; font-weight:400;">Biomedical Engineering (Discontinued)</a>
+</div>
+</div></div>
+</div>
+<div class="card">
+<div class="card-header" id="heading_submenu_4_2">
+<h3 data-toggle="collapse" data-target="#collapse_submenu_4_2" class="menu_links">PG Programs<span class="fa-stack fa-sm float-right"><i class="fas fa-plus fa-stack-1x"></i></span></h3>
+</div>
+<div id="collapse_submenu_4_2" class="collapse" data-parent="#menu_accordion2_4">
+<div class="card-body">
+<div style="padding:2px 0px; ">
+<a href="https://www.djsce.ac.in/pg-electronics-telecommunication-engg" style="color:#003877; font-weight:400;">Electronics and Telecommunication Engg</a>
+</div>
+<div style="padding:2px 0px; ">
+<a href="https://www.djsce.ac.in/pg-mechanical-engineering" style="color:#003877; font-weight:400;">Mechanical Engineering</a>
+</div>
+<div style="padding:2px 0px; ">
+<a href="https://www.djsce.ac.in/pg-computer-engineering" style="color:#003877; font-weight:400;">Computer Engineering</a>
+</div>
+</div></div>
+</div>
+<div class="card">
+<div class="card-header" id="heading_submenu_4_3">
+<h3 data-toggle="collapse" data-target="#collapse_submenu_4_3" class="menu_links">Ph.D. Research Centers<span class="fa-stack fa-sm float-right"><i class="fas fa-plus fa-stack-1x"></i></span></h3>
+</div>
+<div id="collapse_submenu_4_3" class="collapse" data-parent="#menu_accordion2_4">
+<div class="card-body">
+<div style="padding:2px 0px; ">
+<a href="https://www.djsce.ac.in/phd-mechanical-engineering" style="color:#003877; font-weight:400;">Ph.D. Mechanical Engineering</a>
+</div>
+<div style="padding:2px 0px; ">
+<a href="https://www.djsce.ac.in/phd-computer-engineering" style="color:#003877; font-weight:400;">Ph.D. Computer Engineering</a>
+</div>
+<div style="padding:2px 0px; ">
+<a href="https://www.djsce.ac.in/phd-electronics-telecommunication-engineering" style="color:#003877; font-weight:400;">Ph.D. Electronics and Telecommunication Engineering</a>
+</div>
+</div></div>
+</div>
+<div class="card">
+<div class="card-header" id="heading_submenu_4_4">
+<a href="science-humanities" class="menu_links" style="color:#000;">Science & Humanities</a>
+</div>
+<div id="collapse_submenu_4_4" class="collapse" data-parent="#menu_accordion2_4">
+<div class="card-body">
+</div></div></div>
+<div class="card">
+<div class="card-header" id="heading_submenu_4_5">
+<h3 data-toggle="collapse" data-target="#collapse_submenu_4_5" class="menu_links">Research<span class="fa-stack fa-sm float-right"><i class="fas fa-plus fa-stack-1x"></i></span></h3>
+</div>
+<div id="collapse_submenu_4_5" class="collapse" data-parent="#menu_accordion2_4">
+<div class="card-body">
+<div style="padding:2px 0px; ">
+<a href="https://www.djsce.ac.in/research-policy" style="color:#003877; font-weight:400;">Research Policy</a>
+</div>
+<div style="padding:2px 0px; ">
+<a href="https://www.djsce.ac.in/research-code-of-ethics" style="color:#003877; font-weight:400;">Code of Ethics</a>
+</div>
+<div style="padding:2px 0px; ">
+<a href="docs/naac/Ethics Committee.pdf" target="_blank" style="color:#003877; font-weight:400;">Ethics Commitee</a>
+</div>
+<div style="padding:2px 0px; ">
+<a href="docs/naac/PhD Details_New.pdf" target="_blank" style="color:#003877; font-weight:400;">Ph.D Students</a>
+</div>
+<div style="padding:2px 0px; ">
+<a href="docs/naac/39_Download_Research Committee 2019.pdf" target="_blank" style="color:#003877; font-weight:400;">Research Assessment Commitees</a>
+</div>
+<div style="padding:2px 0px; ">
+<a href="https://www.technofocus-djscoe.org/" target="_blank" style="color:#003877; font-weight:400;">Technofocus</a>
+</div>
+<div style="padding:2px 0px; ">
+<a href="docs/About Conferences new.pdf" target="_blank" style="color:#003877; font-weight:400;">Conferences</a>
+</div>
+<div style="padding:2px 0px; ">
+<a href="https://djsce.irins.org/" target="_blank" style="color:#003877; font-weight:400;">IRINS</a>
+</div>
+</div></div>
+</div>
+<div class="card">
+<div class="card-header" id="heading_submenu_4_6">
+<h3 data-toggle="collapse" data-target="#collapse_submenu_4_6" class="menu_links">Academic Calendars<span class="fa-stack fa-sm float-right"><i class="fas fa-plus fa-stack-1x"></i></span></h3>
+</div>
+<div id="collapse_submenu_4_6" class="collapse" data-parent="#menu_accordion2_4">
+<div class="card-body">
+<div style="padding:2px 0px; ">
+<a href="https://www.djsce.ac.in/docs/Academics/Semester start and End dates_2025-26_Even Semester (14-08-25).pdf" target="_blank" style="color:#003877; font-weight:400;">Academic schedule of A.Y. 2025-26 (Odd Sem) </a>
+</div>
+<div style="padding:2px 0px; ">
+<a href="https://www.djsce.ac.in/docs/Academics/Academic Calendar - Odd Sem - (AY 2025-26) Sem - I.pdf" style="color:#003877; font-weight:400;">Academic schedule of A.Y. 2025-26 (Sem I) </a>
+</div>
+<div style="padding:2px 0px; ">
+<a href="https://www.djsce.ac.in/docs/Academics/Academic Calendar - Odd Sem - 2025-26 - Sem III, V and VII.pdf" target="_blank" style="color:#003877; font-weight:400;">Academic Calendar: A.Y. 2025-26 (Odd Sem - Sem III, V, VII)</a>
+</div>
+<div style="padding:2px 0px; ">
+<a href="https://www.djsce.ac.in/docs/Academics/Academic Calendar - Even Sem - 2024-25- Sem II.pdf" target="_blank" style="color:#003877; font-weight:400;">B.Tech. & M.Tech. (Sem II - Even Sem) A.Y. 2024-25</a>
+</div>
+</div></div>
+</div>
+<div class="card">
+<div class="card-header" id="heading_submenu_4_7">
+<h3 data-toggle="collapse" data-target="#collapse_submenu_4_7" class="menu_links">Patents/Design Registration/Copyrights<span class="fa-stack fa-sm float-right"><i class="fas fa-plus fa-stack-1x"></i></span></h3>
+</div>
+<div id="collapse_submenu_4_7" class="collapse" data-parent="#menu_accordion2_4">
+<div class="card-body">
+<div style="padding:2px 0px; ">
+<a href="https://www.djsce.ac.in/docs/Academics/Patents published by DJSCE faculty members in last 3 years.pdf" style="color:#003877; font-weight:400;">Patents</a>
+</div>
+<div style="padding:2px 0px; ">
+<a href="https://www.djsce.ac.in/docs/Academics/Design Registrations by DJSCE faculty members in last 3 years.pdf" style="color:#003877; font-weight:400;">Design Registration</a>
+</div>
+</div></div>
+</div>
+<div class="card">
+<div class="card-header" id="heading_submenu_4_8">
+<a href="https://www.djsce.ac.in/docs/Academics/2_6_1_COURSE_OUTCOMES.pdf" class="menu_links" style="color:#000;">Course Outcome</a>
+</div>
+<div id="collapse_submenu_4_8" class="collapse" data-parent="#menu_accordion2_4">
+<div class="card-body">
+</div></div></div>
+<div class="card">
+<div class="card-header" id="heading_submenu_4_9">
+<a href="https://www.djsce.ac.in/docs/Academics/2_6_3_1_Exam-Annual-Report-AY2024-25.pdf" class="menu_links" style="color:#000;">Exam Annual report - A.Y. 2024-25</a>
+</div>
+<div id="collapse_submenu_4_9" class="collapse" data-parent="#menu_accordion2_4">
+<div class="card-body">
+</div></div></div>
+</div>
+</div></div>
+</div>
+<div class="card" style="border:1px solid #fff;">
+<div class="card-header" id="heading6">
+<h3 data-toggle="collapse" data-target="#collapse6" class="menu_links">Students<span class="fa-stack fa-sm float-right"><i class="fas fa-plus fa-stack-1x"></i></span></h3>
+</div>
+<div id="collapse6" class="collapse" data-parent="#menu_accordion">
+<div class="card-body">
+<div id="menu_accordion2_5">
+<div class="card">
+<div class="card-header" id="heading_submenu_5_1">
+<h3 data-toggle="collapse" data-target="#collapse_submenu_5_1" class="menu_links">Exams<span class="fa-stack fa-sm float-right"><i class="fas fa-plus fa-stack-1x"></i></span></h3>
+</div>
+<div id="collapse_submenu_5_1" class="collapse" data-parent="#menu_accordion2_5">
+<div class="card-body">
+<div style="padding:2px 0px; ">
+<a href="docs/exams/DJSCPE Application Format.pdf" target="_blank" style="color:#003877; font-weight:400;">Exam Application documents</a>
+</div>
+<div style="padding:2px 0px; ">
+<a href="https://www.djsce.ac.in/exam-timetables" style="color:#003877; font-weight:400;">Timetables</a>
+</div>
+<div style="padding:2px 0px; ">
+<a href="https://www.djsce.ac.in/docs/exams/Updated DJ - EXAM GUIDELINES_9th June 2025.pdf" style="color:#003877; font-weight:400;">Exam Manual</a>
+</div>
+<div style="padding:2px 0px; ">
+<a href="docs/74_Down_NSDL University Notice.pdf" target="_blank" style="color:#003877; font-weight:400;">NSDL web portal</a>
+</div>
+<div style="padding:2px 0px; ">
+<a href="https://www.djsce.ac.in/exam-transcripts" style="color:#003877; font-weight:400;">Transcripts</a>
+</div>
+</div></div>
+</div>
+<div class="card">
+<div class="card-header" id="heading_submenu_5_2">
+<h3 data-toggle="collapse" data-target="#collapse_submenu_5_2" class="menu_links">Student Support<span class="fa-stack fa-sm float-right"><i class="fas fa-plus fa-stack-1x"></i></span></h3>
+</div>
+<div id="collapse_submenu_5_2" class="collapse" data-parent="#menu_accordion2_5">
+<div class="card-body">
+<div style="padding:2px 0px; ">
+<a href="https://www.djsce.ac.in/counselling" style="color:#003877; font-weight:400;">Counselling</a>
+</div>
+<div style="padding:2px 0px; ">
+<a href="https://www.djsce.ac.in/soft-skill-training" style="color:#003877; font-weight:400;">Soft Skill Training</a>
+</div>
+<div style="padding:2px 0px; ">
+<a href="https://www.djsce.ac.in/grievance-cell" style="color:#003877; font-weight:400;">Grievance Cell</a>
+</div>
+<div style="padding:2px 0px; ">
+<a href="https://www.djsce.ac.in/divyangjan" style="color:#003877; font-weight:400;">Divyangjan</a>
+</div>
+</div></div>
+</div>
+<div class="card">
+<div class="card-header" id="heading_submenu_5_3">
+<h3 data-toggle="collapse" data-target="#collapse_submenu_5_3" class="menu_links">Scholarships<span class="fa-stack fa-sm float-right"><i class="fas fa-plus fa-stack-1x"></i></span></h3>
+</div>
+<div id="collapse_submenu_5_3" class="collapse" data-parent="#menu_accordion2_5">
+<div class="card-body">
+<div style="padding:2px 0px; ">
+<a href="https://www.djsce.ac.in/docs/scholarships/notice 31_07_25.pdf" target="_blank" style="color:#003877; font-weight:400;">Notice for Scholarships for A.Y. 2025-26</a>
+</div>
+<div style="padding:2px 0px; ">
+<a href="docs/scholarships/current Poster_merged.pdf" target="_blank" style="color:#003877; font-weight:400;">Narotam Sekhsaria Scholarship 2023-24</a>
+</div>
+<div style="padding:2px 0px; ">
+<a href="docs/scholarships/126_Down_scholarship brochure .pdf" target="_blank" style="color:#003877; font-weight:400;">Scholarship or Freeship Brochure</a>
+</div>
+</div></div>
+</div>
+<div class="card">
+<div class="card-header" id="heading_submenu_5_4">
+<a href="docs/exams/Honours-Minor-Degree-Program-_Booklet_Manual_AY2025_26.pdf" class="menu_links" style="color:#000;">Honours / Minor Degree Programs Booklet (A.Y. 2025-26)</a>
+</div>
+<div id="collapse_submenu_5_4" class="collapse" data-parent="#menu_accordion2_5">
+<div class="card-body">
+</div></div></div>
+<div class="card">
+<div class="card-header" id="heading_submenu_5_5">
+<h3 data-toggle="collapse" data-target="#collapse_submenu_5_5" class="menu_links">Class Timetables - Even semester (A.Y. 2023-24)<span class="fa-stack fa-sm float-right"><i class="fas fa-plus fa-stack-1x"></i></span></h3>
+</div>
+<div id="collapse_submenu_5_5" class="collapse" data-parent="#menu_accordion2_5">
+<div class="card-body">
+<div style="padding:2px 0px; ">
+<a href="https://www.djsce.ac.in/docs/courses/EXTC/Adobe Scan Jan 20, 2024.pdf" style="color:#003877; font-weight:400;">EXTC</a>
+</div>
+<div style="padding:2px 0px; ">
+<a href="https://www.djsce.ac.in/docs/courses/ICB/CSE(ICB)SY_TY.pdf" style="color:#003877; font-weight:400;">CSE (ICB)</a>
+</div>
+</div></div>
+</div>
+</div>
+</div></div>
+</div>
+<div class="card">
+<div class="card-header" id="heading7">
+<a href="placements-hs" class="menu_links" style="color:#003877;">Placements</a>
+</div>
+<div id="collapse7" class="collapse" data-parent="#menu_accordion">
+<div class="card-body">
+</div></div>
+</div>
+<div class="card">
+<div class="card-header" id="heading8">
+<a href="https://sites.google.com/view/djsce-library/home" class="menu_links" style="color:#003877;">Library</a>
+</div>
+<div id="collapse8" class="collapse" data-parent="#menu_accordion">
+<div class="card-body">
+</div></div>
+</div>
+<div class="card">
+<div class="card-header" id="heading9">
+<a href="https://alumni.djsce.ac.in/" class="menu_links" style="color:#003877;">Alumni</a>
+</div>
+<div id="collapse9" class="collapse" data-parent="#menu_accordion">
+<div class="card-body">
+</div></div>
+</div>
+<div class="card">
+<div class="card-header" id="heading10">
+<a href="iqac" class="menu_links" style="color:#003877;">IQAC</a>
+</div>
+<div id="collapse10" class="collapse" data-parent="#menu_accordion">
+<div class="card-body">
+</div></div>
+</div>
+<div class="card" style="border:1px solid #fff;">
+<div class="card-header" id="heading11">
+<h3 data-toggle="collapse" data-target="#collapse11" class="menu_links">IIC<span class="fa-stack fa-sm float-right"><i class="fas fa-plus fa-stack-1x"></i></span></h3>
+</div>
+<div id="collapse11" class="collapse" data-parent="#menu_accordion">
+<div class="card-body">
+<div id="menu_accordion2_10">
+<div class="card">
+<div class="card-header" id="heading_submenu_10_1">
+<a href="iic" class="menu_links" style="color:#000;">Institution's Innovation Council (IIC)</a>
+</div>
+<div id="collapse_submenu_10_1" class="collapse" data-parent="#menu_accordion2_10">
+<div class="card-body">
+</div></div></div>
+<div class="card">
+<div class="card-header" id="heading_submenu_10_2">
+<a href="nisp" class="menu_links" style="color:#000;">National Innovation and Startup Policy (NISP)</a>
+</div>
+<div id="collapse_submenu_10_2" class="collapse" data-parent="#menu_accordion2_10">
+<div class="card-body">
+</div></div></div>
+<div class="card">
+<div class="card-header" id="heading_submenu_10_3">
+<a href="ariia" class="menu_links" style="color:#000;">Atal Ranking of Institutions on Innovation Achievements (ARIIA)</a>
+</div>
+<div id="collapse_submenu_10_3" class="collapse" data-parent="#menu_accordion2_10">
+<div class="card-body">
+</div></div></div>
+<div class="card">
+<div class="card-header" id="heading_submenu_10_4">
+<a href="kapila" class="menu_links" style="color:#000;">Kalam Program for IP Literacy and Awareness (KAPILA)</a>
+</div>
+<div id="collapse_submenu_10_4" class="collapse" data-parent="#menu_accordion2_10">
+<div class="card-body">
+</div></div></div>
+<div class="card">
+<div class="card-header" id="heading_submenu_10_5">
+<a href="YUKTI" class="menu_links" style="color:#000;">YUKTI - National Innovation Repository (NIR)</a>
+</div>
+<div id="collapse_submenu_10_5" class="collapse" data-parent="#menu_accordion2_10">
+<div class="card-body">
+</div></div></div>
+<div class="card">
+<div class="card-header" id="heading_submenu_10_6">
+<a href="sih" class="menu_links" style="color:#000;">Smart India Hackathon (SIH)</a>
+</div>
+<div id="collapse_submenu_10_6" class="collapse" data-parent="#menu_accordion2_10">
+<div class="card-body">
+</div></div></div>
+</div>
+</div></div>
+</div>
+<div class="card">
+<div class="card-header" id="heading12">
+<a href="rankings" class="menu_links" style="color:#003877;">Rankings</a>
+</div>
+<div id="collapse12" class="collapse" data-parent="#menu_accordion">
+<div class="card-body">
+</div></div>
+</div>
+<div class="card">
+<div class="card-header" id="heading13">
+<a href="index.php#contactus" class="menu_links" style="color:#003877;">Contact Us</a>
+</div>
+<div id="collapse13" class="collapse" data-parent="#menu_accordion">
+<div class="card-body">
+</div></div>
+</div>
+<div class="card">
+<div class="card-header" id="heading14">
+<a href="https://fa-elxu-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1004" class="menu_links" style="color:#003877;">Careers</a>
+</div>
+<div id="collapse14" class="collapse" data-parent="#menu_accordion">
+<div class="card-body">
+</div></div>
+</div>
+<div class="card">
+<div class="card-header" id="heading15">
+<a href="https://www.djsce.ac.in/nba" class="menu_links" style="color:#003877;">NBA</a> &nbsp; 
+</div>
+</div>
+<div class="card">
+<div class="card-header" id="heading15">
+<a href="https://www.djsce.ac.in/naac" class="menu_links" style="color:#003877;">NAAC</a> &nbsp; 
+</div>
+</div>
+<div class="card">
+<div class="card-header" id="heading15">
+<a href="https://www.djsce.ac.in/nirf" class="menu_links" style="color:#003877;">NIRF</a> &nbsp; 
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="container-fluid pad0 bluebg">
+
+	<div class="row margin0">
+
+		<div class="col-12 col-sm-12 col-md-9 padt10 padb10">
+	
+		<a href="https://www.djsce.ac.in/"><img src="https://www.djsce.ac.in/images/djsce_logo.png" class="img-fluid" /></a>
+		
+		</div>
+		
+		<div class="d-none d-sm-none d-md-block col-md-3 text-right">
+		
+					<div class="row margin0">
+					<div class="col-12 col-sm-12 col-md-12 padb20">
+					
+						<div style="float:right; padding-top:30px; text-align:right; ">
+						<a href="https://www.facebook.com/djsce.official" target="_blank"><i class="fab fa-facebook-square" style="color:#fff; font-size:24px; margin-right:10px;"></i></a>
+						<a href="https://mobile.twitter.com/djsce_official" target="_blank"><i class="fab fa-twitter-square" style="color:#fff; font-size:24px; margin-right:10px;"></i></a>
+						<a href="https://instagram.com/djsce.official?utm_medium=copy_link" target="_blank"><i class="fab fa-instagram-square" style="color:#fff; font-size:24px; margin-right:10px;"></i></a>
+						<a href="https://www.linkedin.com/school/djsce" target="_blank"><i class="fab fa-linkedin" style="color:#fff; font-size:24px;"></i></a>
+						</div>
+					</div>
+					<div class="col-12 col-sm-12 col-md-12 text-right">
+					
+					<a href="https://www.djsce.ac.in/nba" class="white">NBA</a> &nbsp; 
+<a href="https://www.djsce.ac.in/naac" class="white">NAAC</a> &nbsp; 
+<a href="https://www.djsce.ac.in/nirf" class="white">NIRF</a> &nbsp; 
+		
+					
+					</div>
+					</div>					
+					
+		</div>
+		<div class="d-block d-sm-block d-md-none col-12 col-sm-12 text-right padt10 padb10 whitebg">
+		
+			
+			<a href="javascript:void(0);" onclick="javascript:$('#mobile_menu').show();"><i class="fas fa-bars" style="font-size:28px; color:#003877; font-weight:bold;"></i></a>
+			
+		
+		</div>
+		
+		
+	
+	</div>
+
+
+</div>
+
+
+<div class="container-fluid pad0 whitebg" style="border-bottom:3px solid #b3b3b3;">
+
+	<div class="row margin0" >
+
+	<div class="d-none d-sm-none d-md-block col-md-12  padt10 padb10 text-center" >
+<div style="padding:0px  15px 0px 15px;  display:inline-block;" onclick="javascript:$(this).children('div').show();" onmouseleave="javascript:$(this).children('div').hide();">
+<a href="https://www.djsce.ac.in/" class="menu_links">Home</a>
+</div>
+<div style="padding:0px  15px 0px 15px;  display:inline-block;" onclick="javascript:$(this).children('div').show();" onmouseleave="javascript:$(this).children('div').hide();">
+<a href="javascript:void(0);" class="menu_links">About Us</a>
+<div id="menu_1" class="menu_dropdown shadow text-left">
+<div style="float:left; padding:20px; border:0px solid blue; column-count: 5; ">
+<div style="padding:10px 20px; border:0px solid red; display: grid; grid-template-rows: auto; break-inside: avoid;">
+<img src="https://www.djsce.ac.in/images/1_Menu_mumbai_386x212.jpg" class="img-fluid"/>
+</div>
+<div style="padding:10px; border:0px solid red; display: grid; grid-template-rows: auto; break-inside: avoid;" >
+<a href="https://www.djsce.ac.in/#" style="color:#000; font-weight:700;">About SVKM</a> 
+<div id="third_menu_0" class="third_menus" style="float:left; border:0px solid blue; padding:10px 0px;  z-index:21000;">
+<div style="padding:2px 0px;  ">
+<a href="https://www.djsce.ac.in/svkm-overview" style="color:#000; font-weight:400;  font-size:12px;">Overview</a>
+</div>
+<div style="padding:2px 0px;  ">
+<a href="https://www.djsce.ac.in/svkm-office-bearers" style="color:#000; font-weight:400;  font-size:12px;">Office Bearers</a>
+</div>
+</div>
+</div>
+<div style="padding:10px; border:0px solid red; display: grid; grid-template-rows: auto; break-inside: avoid;" >
+<a href="https://www.djsce.ac.in/#" style="color:#000; font-weight:700;">About DJSCE</a> 
+<div id="third_menu_1" class="third_menus" style="float:left; border:0px solid blue; padding:10px 0px;  z-index:21000;">
+<div style="padding:2px 0px;  ">
+<a href="https://www.djsce.ac.in/djsce-overview" style="color:#000; font-weight:400;  font-size:12px;">DJSCE Overview</a>
+</div>
+<div style="padding:2px 0px;  ">
+<a href="https://www.djsce.ac.in/message-from-president" style="color:#000; font-weight:400;  font-size:12px;">Message from President</a>
+</div>
+<div style="padding:2px 0px;  ">
+<a href="https://www.djsce.ac.in/message-from-in-charge" style="color:#000; font-weight:400;  font-size:12px;">Message from In-charge</a>
+</div>
+<div style="padding:2px 0px;  ">
+<a href="https://www.djsce.ac.in/from-principals-desk" style="color:#000; font-weight:400;  font-size:12px;">From Principal's Desk</a>
+</div>
+<div style="padding:2px 0px;  ">
+<a href="https://www.djsce.ac.in/vision-mission" style="color:#000; font-weight:400;  font-size:12px;">Vision & Mission</a>
+</div>
+<div style="padding:2px 0px;  ">
+<a href="https://www.djsce.ac.in/highlights" style="color:#000; font-weight:400;  font-size:12px;">Highlights</a>
+</div>
+<div style="padding:2px 0px;  ">
+<a href="docs/naac/7.2.pdf" target="_blank" style="color:#5f5f5f; font-weight:400; font-size:12px;">Best Practises</a>
+</div>
+<div style="padding:2px 0px;  ">
+<a href="docs/176_Down_Institute%20Distinctiveness.pdf" target="_blank" style="color:#5f5f5f; font-weight:400; font-size:12px;">Institutional Distinctiveness</a>
+</div>
+<div style="padding:2px 0px;  ">
+<a href="https://www.djsce.ac.in/rankings" style="color:#000; font-weight:400;  font-size:12px;">Rankings</a>
+</div>
+<div style="padding:2px 0px;  ">
+<a href="https://www.djsce.ac.in/core-values" style="color:#000; font-weight:400;  font-size:12px;">Core Values</a>
+</div>
+</div>
+</div>
+<div style="padding:10px; border:0px solid red; display: grid; grid-template-rows: auto; break-inside: avoid;" >
+<a href="https://www.djsce.ac.in/#" style="color:#000; font-weight:700;">Administration</a> 
+<div id="third_menu_2" class="third_menus" style="float:left; border:0px solid blue; padding:10px 0px;  z-index:21000;">
+<div style="padding:2px 0px;  ">
+<a href="https://www.djsce.ac.in/organization-governance" style="color:#000; font-weight:400;  font-size:12px;">Organization & Governance</a>
+</div>
+<div style="padding:2px 0px;  ">
+<a href="https://www.djsce.ac.in/minutes-of-statutory-committee" style="color:#000; font-weight:400;  font-size:12px;">Minutes of Statutory Committee</a>
+</div>
+<div style="padding:2px 0px;  ">
+<a href="docs/130_Down_Non Teaching staff 20092019.pdf" target="_blank" style="color:#5f5f5f; font-weight:400; font-size:12px;">Office & Administrative Staff</a>
+</div>
+<div style="padding:2px 0px;  ">
+<a href="docs/dept_staff.pdf" target="_blank" style="color:#5f5f5f; font-weight:400; font-size:12px;">Departmental Non-Teaching Staff</a>
+</div>
+</div>
+</div>
+<div style="padding:10px; border:0px solid red; display: grid; grid-template-rows: auto; break-inside: avoid;" >
+<a href="https://www.djsce.ac.in/" style="color:#000; font-weight:700;">Feedback</a> 
+<div id="third_menu_3" class="third_menus" style="float:left; border:0px solid blue; padding:10px 0px;  z-index:21000;">
+<div style="padding:2px 0px;  ">
+<a href="https://www.djsce.ac.in/" style="color:#000; font-weight:400;  font-size:12px;">Student Feedback</a>
+</div>
+<div style="padding:2px 0px;  ">
+<a href="https://www.djsce.ac.in/" style="color:#000; font-weight:400;  font-size:12px;">Teacher Feedback</a>
+</div>
+<div style="padding:2px 0px;  ">
+<a href="https://www.djsce.ac.in/" style="color:#000; font-weight:400;  font-size:12px;">Employers Feedback</a>
+</div>
+<div style="padding:2px 0px;  ">
+<a href="https://www.djsce.ac.in/" style="color:#000; font-weight:400;  font-size:12px;">Alumni Feedback</a>
+</div>
+<div style="padding:2px 0px;  ">
+<a href="https://www.djsce.ac.in/" style="color:#000; font-weight:400;  font-size:12px;">Institute Feedback</a>
+</div>
+</div>
+</div>
+<div style="padding:10px; border:0px solid red; display: grid; grid-template-rows: auto; break-inside: avoid;" >
+<a href="https://www.djsce.ac.in/" style="color:#000; font-weight:700;">Infrastructure</a> 
+<div id="third_menu_4" class="third_menus" style="float:left; border:0px solid blue; padding:10px 0px;  z-index:21000;">
+<div style="padding:2px 0px;  ">
+<a href="https://www.djsce.ac.in/" style="color:#000; font-weight:400;  font-size:12px;">List of Software on Virtual Cloud</a>
+</div>
+</div>
+</div>
+<div style="padding:10px; border:0px solid red; display: grid; grid-template-rows: auto; break-inside: avoid;" >
+<a href="https://www.djsce.ac.in/" style="color:#000; font-weight:700;">Grievance Redressal </a> 
+</div>
+</div>
+</div>
+</div>
+<div style="padding:0px  15px 0px 15px;  display:inline-block;" onclick="javascript:$(this).children('div').show();" onmouseleave="javascript:$(this).children('div').hide();">
+<a href="https://www.djsce.ac.in/mandatory-disclosures" class="menu_links">Mandatory Disclosures</a>
+</div>
+<div style="padding:0px  15px 0px 15px;  display:inline-block;" onclick="javascript:$(this).children('div').show();" onmouseleave="javascript:$(this).children('div').hide();">
+<a href="javascript:void(0);" class="menu_links">Admissions</a>
+<div id="menu_3" class="menu_dropdown shadow text-left">
+<div style="float:left; padding:20px; border:0px solid blue; column-count: 5; ">
+<div style="padding:10px 20px; border:0px solid red; display: grid; grid-template-rows: auto; break-inside: avoid;">
+<img src="https://www.djsce.ac.in/images/1_Menu_mumbai_386x212.jpg" class="img-fluid"/>
+</div>
+<div style="padding:10px; border:0px solid red; display: grid; grid-template-rows: auto; break-inside: avoid;" >
+<a href="https://www.djsce.ac.in/index.php#admissions" style="color:#000; font-weight:700;">LATEST ADMISSION UPDATES</a> 
+</div>
+<div style="padding:10px; border:0px solid red; display: grid; grid-template-rows: auto; break-inside: avoid;" >
+<a href="https://www.djsce.ac.in/#" style="color:#000; font-weight:700;">1st Year (B.Tech)</a> 
+<div id="third_menu_1" class="third_menus" style="float:left; border:0px solid blue; padding:10px 0px;  z-index:21000;">
+<div style="padding:2px 0px;  ">
+<a href="https://www.djsce.ac.in/admissions-1st-year-btech#overview" style="color:#000; font-weight:400;  font-size:12px;">Overview</a>
+</div>
+<div style="padding:2px 0px;  ">
+<a href="https://www.djsce.ac.in/https://forms.gle/NcYsE5VvVhh5dNo66" style="color:#000; font-weight:400;  font-size:12px;">Counselling Session Notice</a>
+</div>
+<div style="padding:2px 0px;  ">
+<a href="https://www.djsce.ac.in/admissions-1st-year-btech#eligibility" style="color:#000; font-weight:400;  font-size:12px;">Eligibility Criteria</a>
+</div>
+<div style="padding:2px 0px;  ">
+<a href="https://www.djsce.ac.in/docs/List%20%20of%20Documents.pdf" style="color:#000; font-weight:400;  font-size:12px;">Documents Required</a>
+</div>
+<div style="padding:2px 0px;  ">
+<a href="https://www.djsce.ac.in/admissions-1st-year-btech#process" style="color:#000; font-weight:400;  font-size:12px;">Admission Process</a>
+</div>
+<div style="padding:2px 0px;  ">
+<a href="https://www.djsce.ac.in/docs/Rules%20of%20Refund.pdf" style="color:#000; font-weight:400;  font-size:12px;">Cancellation Policy</a>
+</div>
+</div>
+</div>
+<div style="padding:10px; border:0px solid red; display: grid; grid-template-rows: auto; break-inside: avoid;" >
+<a href="https://www.djsce.ac.in/#" style="color:#000; font-weight:700;">2nd Year Direct</a> 
+<div id="third_menu_2" class="third_menus" style="float:left; border:0px solid blue; padding:10px 0px;  z-index:21000;">
+<div style="padding:2px 0px;  ">
+<a href="https://www.djsce.ac.in/admissions-2nd-year-direct#overview" style="color:#000; font-weight:400;  font-size:12px;">Overview</a>
+</div>
+<div style="padding:2px 0px;  ">
+<a href="https://www.djsce.ac.in/docs/DSE%20Fee%20Structure%202025-26.pdf" style="color:#000; font-weight:400;  font-size:12px;">Fee Structure</a>
+</div>
+<div style="padding:2px 0px;  ">
+<a href="https://www.djsce.ac.in/admissions-2nd-year-direct#eligibility" style="color:#000; font-weight:400;  font-size:12px;">Eligibility Criteria</a>
+</div>
+<div style="padding:2px 0px;  ">
+<a href="https://www.djsce.ac.in/docs/List%20of%20documents_.pdf" style="color:#000; font-weight:400;  font-size:12px;">Document Required</a>
+</div>
+<div style="padding:2px 0px;  ">
+<a href="https://www.djsce.ac.in/docs/Rules%20of%20Refund%20-%20DSE.pdf" style="color:#000; font-weight:400;  font-size:12px;">Cancellation Policy</a>
+</div>
+</div>
+</div>
+<div style="padding:10px; border:0px solid red; display: grid; grid-template-rows: auto; break-inside: avoid;" >
+<a href="https://www.djsce.ac.in/admissions-1st-year-mtech" style="color:#000; font-weight:700;">M.Tech Admissions</a> 
+</div>
+<div style="padding:10px; border:0px solid red; display: grid; grid-template-rows: auto; break-inside: avoid;" >
+<a href="https://www.djsce.ac.in/admissions-1st-year-phd" style="color:#000; font-weight:700;">Ph.D. Admissions</a> 
+</div>
+<div style="padding:10px; border:0px solid red; display: grid; grid-template-rows: auto; break-inside: avoid;" >
+<a href="https://www.djsce.ac.in/#" style="color:#000; font-weight:700;">Admission Details</a> 
+<div id="third_menu_5" class="third_menus" style="float:left; border:0px solid blue; padding:10px 0px;  z-index:21000;">
+<div style="padding:2px 0px;  ">
+<a href="https://www.djsce.ac.in/admission-notices-2024" style="color:#000; font-weight:400;  font-size:12px;">2024-2025</a>
+</div>
+<div style="padding:2px 0px;  ">
+<a href="https://www.djsce.ac.in/admission-notices-2023" style="color:#000; font-weight:400;  font-size:12px;">2023-2024</a>
+</div>
+<div style="padding:2px 0px;  ">
+<a href="https://www.djsce.ac.in/admission-notices-2022" style="color:#000; font-weight:400;  font-size:12px;">2022-2023</a>
+</div>
+<div style="padding:2px 0px;  ">
+<a href="https://www.djsce.ac.in/admission-notices-2021" style="color:#000; font-weight:400;  font-size:12px;">2021-2022</a>
+</div>
+<div style="padding:2px 0px;  ">
+<a href="https://www.djsce.ac.in/admission-notices-2020" style="color:#000; font-weight:400;  font-size:12px;">2020-2021</a>
+</div>
+<div style="padding:2px 0px;  ">
+<a href="https://www.djsce.ac.in/admission-notices-2019" style="color:#000; font-weight:400;  font-size:12px;">2019-2020</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div style="padding:0px  15px 0px 15px;  display:inline-block;" onclick="javascript:$(this).children('div').show();" onmouseleave="javascript:$(this).children('div').hide();">
+<a href="javascript:void(0);" class="menu_links">Academics</a>
+<div id="menu_4" class="menu_dropdown shadow text-left">
+<div style="float:left; padding:20px; border:0px solid blue; column-count: 5; ">
+<div style="padding:10px 20px; border:0px solid red; display: grid; grid-template-rows: auto; break-inside: avoid;">
+<img src="https://www.djsce.ac.in/images/1_Menu_mumbai_386x212.jpg" class="img-fluid"/>
+</div>
+<div style="padding:10px; border:0px solid red; display: grid; grid-template-rows: auto; break-inside: avoid;" >
+<a href="https://www.djsce.ac.in/#" style="color:#000; font-weight:700;">UG Programs</a> 
+<div id="third_menu_0" class="third_menus" style="float:left; border:0px solid blue; padding:10px 0px;  z-index:21000;">
+<div style="padding:2px 0px;  ">
+<a href="https://www.djsce.ac.in/ug-electronics-telecommunication-engg" style="color:#000; font-weight:400;  font-size:12px;">Electronics and Telecommunication Engg</a>
+</div>
+<div style="padding:2px 0px;  ">
+<a href="https://www.djsce.ac.in/ug-information-technology" style="color:#000; font-weight:400;  font-size:12px;">Information Technology</a>
+</div>
+<div style="padding:2px 0px;  ">
+<a href="https://www.djsce.ac.in/ug-computer-engineering" style="color:#000; font-weight:400;  font-size:12px;">Computer Engineering</a>
+</div>
+<div style="padding:2px 0px;  ">
+<a href="https://www.djsce.ac.in/ug-mechanical-engineering" style="color:#000; font-weight:400;  font-size:12px;">Mechanical Engineering</a>
+</div>
+<div style="padding:2px 0px;  ">
+<a href="https://www.djsce.ac.in/ug-computer-science-engineering-data-science" target="_blank" style="color:#5f5f5f; font-weight:400; font-size:12px;">Computer Science and Engineering (Data Science)</a>
+</div>
+<div style="padding:2px 0px;  ">
+<a href="https://www.djsce.ac.in/ug-artificial-intelligence-machine-learning" style="color:#000; font-weight:400;  font-size:12px;">Artificial Intelligence and Machine Learning</a>
+</div>
+<div style="padding:2px 0px;  ">
+<a href="https://www.djsce.ac.in/ug-artificial-intelligence-ai-data-science" style="color:#000; font-weight:400;  font-size:12px;">Artificial Intelligence (AI) and Data Science</a>
+</div>
+<div style="padding:2px 0px;  ">
+<a href="https://www.djsce.ac.in/ug-computer-science-engineering-iot-cyber-security-with-block-chain-technology" style="color:#000; font-weight:400;  font-size:12px;">Computer Science and Engineering <br />(IOT and Cyber Security with Block Chain Technology)</a>
+</div>
+<div style="padding:2px 0px;  ">
+<a href="https://www.djsce.ac.in/ug-chemical-engineering" style="color:#000; font-weight:400;  font-size:12px;">Chemical Engineering (Discontinued)</a>
+</div>
+<div style="padding:2px 0px;  ">
+<a href="https://www.djsce.ac.in/ug-electronics-engineering" style="color:#000; font-weight:400;  font-size:12px;">Electronics Engineering (Discontinued)</a>
+</div>
+<div style="padding:2px 0px;  ">
+<a href="https://www.djsce.ac.in/ug-poduction-engineering" style="color:#000; font-weight:400;  font-size:12px;">Production Engineering (Discontinued)</a>
+</div>
+<div style="padding:2px 0px;  ">
+<a href="https://www.djsce.ac.in/ug-biomedical-engineering" style="color:#000; font-weight:400;  font-size:12px;">Biomedical Engineering (Discontinued)</a>
+</div>
+</div>
+</div>
+<div style="padding:10px; border:0px solid red; display: grid; grid-template-rows: auto; break-inside: avoid;" >
+<a href="https://www.djsce.ac.in/#" style="color:#000; font-weight:700;">PG Programs</a> 
+<div id="third_menu_1" class="third_menus" style="float:left; border:0px solid blue; padding:10px 0px;  z-index:21000;">
+<div style="padding:2px 0px;  ">
+<a href="https://www.djsce.ac.in/pg-electronics-telecommunication-engg" style="color:#000; font-weight:400;  font-size:12px;">Electronics and Telecommunication Engg</a>
+</div>
+<div style="padding:2px 0px;  ">
+<a href="https://www.djsce.ac.in/pg-mechanical-engineering" style="color:#000; font-weight:400;  font-size:12px;">Mechanical Engineering</a>
+</div>
+<div style="padding:2px 0px;  ">
+<a href="https://www.djsce.ac.in/pg-computer-engineering" style="color:#000; font-weight:400;  font-size:12px;">Computer Engineering</a>
+</div>
+</div>
+</div>
+<div style="padding:10px; border:0px solid red; display: grid; grid-template-rows: auto; break-inside: avoid;" >
+<a href="https://www.djsce.ac.in/#" style="color:#000; font-weight:700;">Ph.D. Research Centers</a> 
+<div id="third_menu_2" class="third_menus" style="float:left; border:0px solid blue; padding:10px 0px;  z-index:21000;">
+<div style="padding:2px 0px;  ">
+<a href="https://www.djsce.ac.in/phd-mechanical-engineering" style="color:#000; font-weight:400;  font-size:12px;">Ph.D. Mechanical Engineering</a>
+</div>
+<div style="padding:2px 0px;  ">
+<a href="https://www.djsce.ac.in/phd-computer-engineering" style="color:#000; font-weight:400;  font-size:12px;">Ph.D. Computer Engineering</a>
+</div>
+<div style="padding:2px 0px;  ">
+<a href="https://www.djsce.ac.in/phd-electronics-telecommunication-engineering" style="color:#000; font-weight:400;  font-size:12px;">Ph.D. Electronics and Telecommunication Engineering</a>
+</div>
+</div>
+</div>
+<div style="padding:10px; border:0px solid red; display: grid; grid-template-rows: auto; break-inside: avoid;" >
+<a href="https://www.djsce.ac.in/science-humanities" style="color:#000; font-weight:700;">Science & Humanities</a> 
+</div>
+<div style="padding:10px; border:0px solid red; display: grid; grid-template-rows: auto; break-inside: avoid;" >
+<a href="https://www.djsce.ac.in/#" style="color:#000; font-weight:700;">Research</a> 
+<div id="third_menu_4" class="third_menus" style="float:left; border:0px solid blue; padding:10px 0px;  z-index:21000;">
+<div style="padding:2px 0px;  ">
+<a href="https://www.djsce.ac.in/research-policy" style="color:#000; font-weight:400;  font-size:12px;">Research Policy</a>
+</div>
+<div style="padding:2px 0px;  ">
+<a href="https://www.djsce.ac.in/research-code-of-ethics" style="color:#000; font-weight:400;  font-size:12px;">Code of Ethics</a>
+</div>
+<div style="padding:2px 0px;  ">
+<a href="docs/naac/Ethics Committee.pdf" target="_blank" style="color:#5f5f5f; font-weight:400; font-size:12px;">Ethics Commitee</a>
+</div>
+<div style="padding:2px 0px;  ">
+<a href="docs/naac/PhD Details_New.pdf" target="_blank" style="color:#5f5f5f; font-weight:400; font-size:12px;">Ph.D Students</a>
+</div>
+<div style="padding:2px 0px;  ">
+<a href="docs/naac/39_Download_Research Committee 2019.pdf" target="_blank" style="color:#5f5f5f; font-weight:400; font-size:12px;">Research Assessment Commitees</a>
+</div>
+<div style="padding:2px 0px;  ">
+<a href="https://www.technofocus-djscoe.org/" target="_blank" style="color:#5f5f5f; font-weight:400; font-size:12px;">Technofocus</a>
+</div>
+<div style="padding:2px 0px;  ">
+<a href="docs/About Conferences new.pdf" target="_blank" style="color:#5f5f5f; font-weight:400; font-size:12px;">Conferences</a>
+</div>
+<div style="padding:2px 0px;  ">
+<a href="https://djsce.irins.org/" target="_blank" style="color:#5f5f5f; font-weight:400; font-size:12px;">IRINS</a>
+</div>
+</div>
+</div>
+<div style="padding:10px; border:0px solid red; display: grid; grid-template-rows: auto; break-inside: avoid;" >
+<a href="https://www.djsce.ac.in/#" style="color:#000; font-weight:700;">Academic Calendars</a> 
+<div id="third_menu_5" class="third_menus" style="float:left; border:0px solid blue; padding:10px 0px;  z-index:21000;">
+<div style="padding:2px 0px;  ">
+<a href="https://www.djsce.ac.in/docs/Academics/Semester start and End dates_2025-26_Even Semester (14-08-25).pdf" target="_blank" style="color:#5f5f5f; font-weight:400; font-size:12px;">Academic schedule of A.Y. 2025-26 (Odd Sem) </a>
+</div>
+<div style="padding:2px 0px;  ">
+<a href="https://www.djsce.ac.in/docs/Academics/Academic Calendar - Odd Sem - (AY 2025-26) Sem - I.pdf" style="color:#000; font-weight:400;  font-size:12px;">Academic schedule of A.Y. 2025-26 (Sem I) </a>
+</div>
+<div style="padding:2px 0px;  ">
+<a href="https://www.djsce.ac.in/docs/Academics/Academic Calendar - Odd Sem - 2025-26 - Sem III, V and VII.pdf" target="_blank" style="color:#5f5f5f; font-weight:400; font-size:12px;">Academic Calendar: A.Y. 2025-26 (Odd Sem - Sem III, V, VII)</a>
+</div>
+<div style="padding:2px 0px;  ">
+<a href="https://www.djsce.ac.in/docs/Academics/Academic Calendar - Even Sem - 2024-25- Sem II.pdf" target="_blank" style="color:#5f5f5f; font-weight:400; font-size:12px;">B.Tech. & M.Tech. (Sem II - Even Sem) A.Y. 2024-25</a>
+</div>
+</div>
+</div>
+<div style="padding:10px; border:0px solid red; display: grid; grid-template-rows: auto; break-inside: avoid;" >
+<a href="https://www.djsce.ac.in/" style="color:#000; font-weight:700;">Patents/Design Registration/Copyrights</a> 
+<div id="third_menu_6" class="third_menus" style="float:left; border:0px solid blue; padding:10px 0px;  z-index:21000;">
+<div style="padding:2px 0px;  ">
+<a href="https://www.djsce.ac.in/docs/Academics/Patents published by DJSCE faculty members in last 3 years.pdf" style="color:#000; font-weight:400;  font-size:12px;">Patents</a>
+</div>
+<div style="padding:2px 0px;  ">
+<a href="https://www.djsce.ac.in/docs/Academics/Design Registrations by DJSCE faculty members in last 3 years.pdf" style="color:#000; font-weight:400;  font-size:12px;">Design Registration</a>
+</div>
+</div>
+</div>
+<div style="padding:10px; border:0px solid red; display: grid; grid-template-rows: auto; break-inside: avoid;" >
+<a href="https://www.djsce.ac.in/docs/Academics/2_6_1_COURSE_OUTCOMES.pdf" target="_blank" style="color:#000; font-weight:700;">Course Outcome</a> 
+</div>
+<div style="padding:10px; border:0px solid red; display: grid; grid-template-rows: auto; break-inside: avoid;" >
+<a href="https://www.djsce.ac.in/docs/Academics/2_6_3_1_Exam-Annual-Report-AY2024-25.pdf" target="_blank" style="color:#000; font-weight:700;">Exam Annual report - A.Y. 2024-25</a> 
+</div>
+</div>
+</div>
+</div>
+<div style="padding:0px  15px 0px 15px;  display:inline-block;" onclick="javascript:$(this).children('div').show();" onmouseleave="javascript:$(this).children('div').hide();">
+<a href="javascript:void(0);" class="menu_links">Students</a>
+<div id="menu_5" class="menu_dropdown shadow text-left">
+<div style="float:left; padding:20px; border:0px solid blue; column-count: 5; ">
+<div style="padding:10px 20px; border:0px solid red; display: grid; grid-template-rows: auto; break-inside: avoid;">
+<img src="https://www.djsce.ac.in/images/1_Menu_mumbai_386x212.jpg" class="img-fluid"/>
+</div>
+<div style="padding:10px; border:0px solid red; display: grid; grid-template-rows: auto; break-inside: avoid;" >
+<a href="https://www.djsce.ac.in/#" style="color:#000; font-weight:700;">Exams</a> 
+<div id="third_menu_0" class="third_menus" style="float:left; border:0px solid blue; padding:10px 0px;  z-index:21000;">
+<div style="padding:2px 0px;  ">
+<a href="docs/exams/DJSCPE Application Format.pdf" target="_blank" style="color:#5f5f5f; font-weight:400; font-size:12px;">Exam Application documents</a>
+</div>
+<div style="padding:2px 0px;  ">
+<a href="https://www.djsce.ac.in/exam-timetables" style="color:#000; font-weight:400;  font-size:12px;">Timetables</a>
+</div>
+<div style="padding:2px 0px;  ">
+<a href="https://www.djsce.ac.in/docs/exams/Updated DJ - EXAM GUIDELINES_9th June 2025.pdf" style="color:#000; font-weight:400;  font-size:12px;">Exam Manual</a>
+</div>
+<div style="padding:2px 0px;  ">
+<a href="docs/74_Down_NSDL University Notice.pdf" target="_blank" style="color:#5f5f5f; font-weight:400; font-size:12px;">NSDL web portal</a>
+</div>
+<div style="padding:2px 0px;  ">
+<a href="https://www.djsce.ac.in/exam-transcripts" style="color:#000; font-weight:400;  font-size:12px;">Transcripts</a>
+</div>
+</div>
+</div>
+<div style="padding:10px; border:0px solid red; display: grid; grid-template-rows: auto; break-inside: avoid;" >
+<a href="https://www.djsce.ac.in/#" style="color:#000; font-weight:700;">Student Support</a> 
+<div id="third_menu_1" class="third_menus" style="float:left; border:0px solid blue; padding:10px 0px;  z-index:21000;">
+<div style="padding:2px 0px;  ">
+<a href="https://www.djsce.ac.in/counselling" style="color:#000; font-weight:400;  font-size:12px;">Counselling</a>
+</div>
+<div style="padding:2px 0px;  ">
+<a href="https://www.djsce.ac.in/soft-skill-training" style="color:#000; font-weight:400;  font-size:12px;">Soft Skill Training</a>
+</div>
+<div style="padding:2px 0px;  ">
+<a href="https://www.djsce.ac.in/grievance-cell" style="color:#000; font-weight:400;  font-size:12px;">Grievance Cell</a>
+</div>
+<div style="padding:2px 0px;  ">
+<a href="https://www.djsce.ac.in/divyangjan" style="color:#000; font-weight:400;  font-size:12px;">Divyangjan</a>
+</div>
+</div>
+</div>
+<div style="padding:10px; border:0px solid red; display: grid; grid-template-rows: auto; break-inside: avoid;" >
+<a href="https://www.djsce.ac.in/#" style="color:#000; font-weight:700;">Scholarships</a> 
+<div id="third_menu_2" class="third_menus" style="float:left; border:0px solid blue; padding:10px 0px;  z-index:21000;">
+<div style="padding:2px 0px;  ">
+<a href="https://www.djsce.ac.in/docs/scholarships/notice 31_07_25.pdf" target="_blank" style="color:#5f5f5f; font-weight:400; font-size:12px;">Notice for Scholarships for A.Y. 2025-26</a>
+</div>
+<div style="padding:2px 0px;  ">
+<a href="docs/scholarships/current Poster_merged.pdf" target="_blank" style="color:#5f5f5f; font-weight:400; font-size:12px;">Narotam Sekhsaria Scholarship 2023-24</a>
+</div>
+<div style="padding:2px 0px;  ">
+<a href="docs/scholarships/126_Down_scholarship brochure .pdf" target="_blank" style="color:#5f5f5f; font-weight:400; font-size:12px;">Scholarship or Freeship Brochure</a>
+</div>
+</div>
+</div>
+<div style="padding:10px; border:0px solid red; display: grid; grid-template-rows: auto; break-inside: avoid;" >
+<a href="https://www.djsce.ac.in/docs/exams/Honours-Minor-Degree-Program-_Booklet_Manual_AY2025_26.pdf" style="color:#000; font-weight:700;">Honours / Minor Degree Programs Booklet (A.Y. 2025-26)</a> 
+</div>
+<div style="padding:10px; border:0px solid red; display: grid; grid-template-rows: auto; break-inside: avoid;" >
+<a href="https://www.djsce.ac.in/" style="color:#000; font-weight:700;">Class Timetables - Even semester (A.Y. 2023-24)</a> 
+<div id="third_menu_4" class="third_menus" style="float:left; border:0px solid blue; padding:10px 0px;  z-index:21000;">
+<div style="padding:2px 0px;  ">
+<a href="https://www.djsce.ac.in/docs/courses/EXTC/Adobe Scan Jan 20, 2024.pdf" style="color:#000; font-weight:400;  font-size:12px;">EXTC</a>
+</div>
+<div style="padding:2px 0px;  ">
+<a href="https://www.djsce.ac.in/docs/courses/ICB/CSE(ICB)SY_TY.pdf" style="color:#000; font-weight:400;  font-size:12px;">CSE (ICB)</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div style="padding:0px  15px 0px 15px;  display:inline-block;" onclick="javascript:$(this).children('div').show();" onmouseleave="javascript:$(this).children('div').hide();">
+<a href="https://www.djsce.ac.in/placements-hs" class="menu_links">Placements</a>
+</div>
+<div style="padding:0px  15px 0px 15px;  display:inline-block;" onclick="javascript:$(this).children('div').show();" onmouseleave="javascript:$(this).children('div').hide();">
+<a href="https://sites.google.com/view/djsce-library/home" target="_blank" class="menu_links">Library</a>
+</div>
+<div style="padding:0px  15px 0px 15px;  display:inline-block;" onclick="javascript:$(this).children('div').show();" onmouseleave="javascript:$(this).children('div').hide();">
+<a href="https://alumni.djsce.ac.in/" target="_blank" class="menu_links">Alumni</a>
+</div>
+<div style="padding:0px  15px 0px 15px;  display:inline-block;" onclick="javascript:$(this).children('div').show();" onmouseleave="javascript:$(this).children('div').hide();">
+<a href="https://www.djsce.ac.in/iqac" class="menu_links">IQAC</a>
+</div>
+<div style="padding:0px  15px 0px 15px;  display:inline-block;" onclick="javascript:$(this).children('div').show();" onmouseleave="javascript:$(this).children('div').hide();">
+<a href="javascript:void(0);" class="menu_links">IIC</a>
+<div id="menu_10" class="menu_dropdown shadow text-left">
+<div style="float:left; padding:20px; border:0px solid blue; column-count: 5; ">
+<div style="padding:10px 20px; border:0px solid red; display: grid; grid-template-rows: auto; break-inside: avoid;">
+<img src="https://www.djsce.ac.in/images/1_Menu_mumbai_386x212.jpg" class="img-fluid"/>
+</div>
+<div style="padding:10px; border:0px solid red; display: grid; grid-template-rows: auto; break-inside: avoid;" >
+<a href="https://www.djsce.ac.in/iic" style="color:#000; font-weight:700;">Institution's Innovation Council (IIC)</a> 
+</div>
+<div style="padding:10px; border:0px solid red; display: grid; grid-template-rows: auto; break-inside: avoid;" >
+<a href="https://www.djsce.ac.in/nisp" style="color:#000; font-weight:700;">National Innovation and Startup Policy (NISP)</a> 
+</div>
+<div style="padding:10px; border:0px solid red; display: grid; grid-template-rows: auto; break-inside: avoid;" >
+<a href="https://www.djsce.ac.in/ariia" style="color:#000; font-weight:700;">Atal Ranking of Institutions on Innovation Achievements (ARIIA)</a> 
+</div>
+<div style="padding:10px; border:0px solid red; display: grid; grid-template-rows: auto; break-inside: avoid;" >
+<a href="https://www.djsce.ac.in/kapila" style="color:#000; font-weight:700;">Kalam Program for IP Literacy and Awareness (KAPILA)</a> 
+</div>
+<div style="padding:10px; border:0px solid red; display: grid; grid-template-rows: auto; break-inside: avoid;" >
+<a href="https://www.djsce.ac.in/YUKTI" style="color:#000; font-weight:700;">YUKTI - National Innovation Repository (NIR)</a> 
+</div>
+<div style="padding:10px; border:0px solid red; display: grid; grid-template-rows: auto; break-inside: avoid;" >
+<a href="https://www.djsce.ac.in/sih" style="color:#000; font-weight:700;">Smart India Hackathon (SIH)</a> 
+</div>
+</div>
+</div>
+</div>
+<div style="padding:0px  15px 0px 15px;  display:inline-block;" onclick="javascript:$(this).children('div').show();" onmouseleave="javascript:$(this).children('div').hide();">
+<a href="https://www.djsce.ac.in/rankings" class="menu_links">Rankings</a>
+</div>
+<div style="padding:0px  15px 0px 15px;  display:inline-block;" onclick="javascript:$(this).children('div').show();" onmouseleave="javascript:$(this).children('div').hide();">
+<a href="https://www.djsce.ac.in/index.php#contactus" class="menu_links">Contact Us</a>
+</div>
+<div style="padding:0px  0px 0px 0px;  display:inline-block;" onclick="javascript:$(this).children('div').show();" onmouseleave="javascript:$(this).children('div').hide();">
+<a href="https://fa-elxu-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1004" target="_blank" class="menu_links">Careers</a>
+</div>
+	
+	
+	</div>
+	</div>
+	</div>
+
+<script src="js/marquee/jquery.marquee.js"></script>
+<script>
+
+	
+$(function(){
+  $('.marquee').marquee({
+	  
+	  duration: 25000,
+	  delayBeforeStart: 0,
+	  direction:'left',
+	  duplicated: true,
+		pauseOnHover: true
+  });    
+	$('.pause').click(function(e){
+		e.preventDefault();
+		$('.marquee').trigger('pause');
+	});
+
+	$('.play').click(function(e){
+		e.preventDefault();
+		$('.marquee').trigger('resume');
+	});
+  
+  
+});	
+	
+</script>
+
+
+<div class="container-fluid pad0 greybg">
+
+	<div class="row margin0">
+
+
+
+		<div class="col-9 col-sm-9 col-md-11 padt10 padb10" style="overflow:hidden;">
+			<div class='marquee' >
+			<i class="fas fa-caret-right"></i> Welcome to Dwarkadas J. Sanghvi College of Engineering &nbsp; &nbsp;
+			
+			<a href="https://www.djsce.ac.in/docs/IMG-20251120-WA0003.jpg" target="_blank" style="text-decoration:none;"><i class="fas fa-caret-right"></i> &nbsp; Level up: Cloud, Containers and Careers</a> &nbsp; &nbsp;
+<a href="https://www.djsce.ac.in/docs/COMPRESSORS, PUMPS AND TURBINES.pdf" target="_blank" style="text-decoration:none;"><i class="fas fa-caret-right"></i> &nbsp; Rotating Machinery Bootcamp</a> &nbsp; &nbsp;
+<a href="https://www.djsce.ac.in/docs/NIRF Rankings 2025.pdf" target="_blank" style="text-decoration:none;"><i class="fas fa-caret-right"></i> &nbsp; NIRF Rankings 2025</a> &nbsp; &nbsp;
+<a href="https://www.djsce.ac.in/docs/WNDoc_OER letter -AICTE.pdf" target="_blank" style="text-decoration:none;"><i class="fas fa-caret-right"></i> &nbsp; Open Educational Resources (OER)</a> &nbsp; &nbsp;
+<a href="https://www.djsce.ac.in/docs/Semester start and End dates_2025-26_Even Semester (14-08-25).pdf" target="_blank" style="text-decoration:none;"><i class="fas fa-caret-right"></i> &nbsp; Academic Semester Schedule (A.Y. 2025-26)</a> &nbsp; &nbsp;
+			
+			
+			</div>
+		</div>
+
+		<div class="col-3 col-sm-3 col-md-1 padt10 padb10">
+		<a class='pause' href='#'><i class="fas fa-pause"></i></a> &nbsp; 
+		<a class='play' href='#'><i class="fas fa-play"></i></a>
+		</div>		
+		
+		
+	</div>
+</div>	
+
+
+
+			<div style="display:none;">
+			<div id="popup_div" style="max-width:800px;">
+			
+			<h2>Students / Parents are not supposed to visit the college.</h2>
+			
+			<p>For Admissions, Prospectus and Examination results: refer www.siesce.edu.in<br />
+			For any queries: Write e-mail to siesce@sies.edu.in<br />
+			Contact: (022) 24 074 944 [Call strictly between 10.00 am to 3.00 pm Mon to Fri]<br />
+			<b>Dr. Nina Roy Choudhury<br />
+			Principal</b></p>
+			
+			</div>
+			</div>
+
+<script>	
+$(document).ready(function () {
+	
+	/*
+    $("#popup_div").fancybox({
+        'overlayShow': true,
+		fitToView	: true
+    }).trigger('click');
+	*/
+});	
+</script>
+
+
+
+	
+<style>
+#owl-carousel1 .owl-nav [class*=owl-] {
+
+
+	padding:5px;
+	width: 40px;
+	height: 40px;
+	background:#fff;
+	border:1px solid #dedede;
+	font-size:22px;		
+	z-index: 10;
+	color:#003877;
+	
+	
+}
+
+#owl-carousel1 .owl-nav [class*=owl-]:hover {
+	
+	color: #003877;
+	background:#fff;
+}
+
+#owl-carousel1 .owl-prev,
+#owl-carousel1 .owl-next {
+	position: absolute;
+	top: 40%;
+	height: 30px;
+	margin: auto !important;
+	background:none;
+}
+
+#owl-carousel1 .owl-nav .owl-prev {
+	left: 0px;
+	background-position: 0 0;
+	
+}
+
+#owl-carousel1 .owl-nav .owl-next {
+	right: 0px;
+	background-position: 100% 0;
+}
+
+#owl-carousel1 .caption {
+	
+}
+
+</style>
+		
+<script>
+$(document).ready(function(){
+  $("#owl-carousel1").owlCarousel({
+	  
+	  autoplay :true,
+	  loop :true,
+	  autoplayTimeout : 3000,
+	  autoplaySpeed: 1500,
+	  autoheight : true,
+	  nav:true,
+	  margin:0,
+	  dots: false,
+	  responsive :{
+        0:{
+            items:1,
+			nav:false
+            
+        },
+        600:{
+            items:2,
+            
+        },
+        1000:{
+            items:3,
+        }
+	  }	
+	});
+	$( ".owl-prev").html('<i class=\"fas fa-chevron-left\"></i>');
+	$( ".owl-next").html('<i class=\"fas fa-chevron-right\"></i>');
+});
+</script>
+
+<div class="container-fluid pad0">
+
+<div class="row margin0">
+
+<div class="col-12 col-sm-12 col-md-12 pad0" >
+
+<div id="owl-carousel1" class="owl-carousel owl-theme">
+
+<div style="overflow:hidden;">
+<a href="#">
+<img src="https://www.djsce.ac.in/home_banners/16_HPHeader_16_HPHeader_on website-home-page.jpg" class="img-fluid" /></a>
+</div>
+<div style="overflow:hidden;">
+<a href="#">
+<img src="https://www.djsce.ac.in/home_banners/14_HPHeader_14_HPHeader_vice chancellors challenge_first Prize_Rakesh Patel.jpg" class="img-fluid" /></a>
+</div>
+<div style="overflow:hidden;">
+<a href="#">
+<img src="https://www.djsce.ac.in/home_banners/18_HPHeader_AI-Bhargav-Desai.jpg" class="img-fluid" /></a>
+</div>
+<div style="overflow:hidden;">
+<a href="#">
+<img src="https://www.djsce.ac.in/home_banners/Frame 175.png" class="img-fluid" /></a>
+</div>
+<div style="overflow:hidden;">
+<a href="#">
+<img src="https://www.djsce.ac.in/home_banners/Ranbir Allahabadia.jpg" class="img-fluid" /></a>
+</div>
+<div style="overflow:hidden;">
+<a href="#">
+<img src="https://www.djsce.ac.in/home_banners/College.png" class="img-fluid" /></a>
+</div>
+<div style="overflow:hidden;">
+<a href="#">
+<img src="https://www.djsce.ac.in/home_banners/Frame 183.png" class="img-fluid" /></a>
+</div>
+<div style="overflow:hidden;">
+<a href="#">
+<img src="https://www.djsce.ac.in/home_banners/Conference Hall.png" class="img-fluid" /></a>
+</div>
+<div style="overflow:hidden;">
+<a href="#">
+<img src="https://www.djsce.ac.in/home_banners/19_HPHeader_with-Shri-Narendra-Modi.jpg" class="img-fluid" /></a>
+</div>
+<div style="overflow:hidden;">
+<a href="#">
+<img src="https://www.djsce.ac.in/home_banners/Frame 184.png" class="img-fluid" /></a>
+</div>
+<div style="overflow:hidden;">
+<a href="#">
+<img src="https://www.djsce.ac.in/home_banners/Library.png" class="img-fluid" /></a>
+</div>
+<div style="overflow:hidden;">
+<a href="#">
+<img src="https://www.djsce.ac.in/home_banners/Frame 185.png" class="img-fluid" /></a>
+</div>
+<div style="overflow:hidden;">
+<a href="#">
+<img src="https://www.djsce.ac.in/home_banners/Seminar Hall.png" class="img-fluid" /></a>
+</div>
+<div style="overflow:hidden;">
+<a href="#">
+<img src="https://www.djsce.ac.in/home_banners/Lab.png" class="img-fluid" /></a>
+</div>
+<div style="overflow:hidden;">
+<a href="#">
+<img src="https://www.djsce.ac.in/home_banners/Codevita.png" class="img-fluid" /></a>
+</div>
+
+
+		</div> <!-- Owl Carousel Div -->	
+
+</div>
+	
+</div>
+	
+</div>
+
+
+<div class="container-fluid pad0 bluebg">
+
+	<div class="row margin0">
+
+		<div class="col-12 col-sm-12 col-md-12 padt10 padb10 white text-center">
+				<a name="accreditations"></a>
+				<h2 style="font-size:22px; color:#fff;">Affiliations & Accreditations</h2>
+	
+		</div>
+	
+	</div>
+	
+</div>
+<style>
+#owl-carousel2 .owl-nav [class*=owl-] {
+
+	padding:10px;
+	background:#fff;
+	font-size:16px;		
+	z-index: 10;
+	color:#003877;
+	
+}
+
+#owl-carousel2 .owl-nav [class*=owl-]:hover {
+	
+	color: #fff;
+	background:#928b8b;
+}
+
+
+#owl-carousel2 .owl-nav .owl-prev {
+	left: 0px;
+	background-position: 0 0;
+	
+}
+
+#owl-carousel2 .owl-nav .owl-next {
+	right: 48%;
+	top:65%;
+	width: 40px;
+	height: 40px;
+	border-radius:50%;
+	background-position: 100% 0;
+	color:#fff;
+	background:#928b8b;
+}
+
+#owl-carousel2 .owl-nav .owl-prev {
+	right: 47%;
+	top:65%;
+	width: 40px;
+	height: 40px;
+	border-radius:50%;
+	background-position: 100% 0;
+	color:#fff;
+	background:#928b8b;
+}
+
+
+#owl-carousel2 .caption {
+	
+}
+
+#owl-carousel2 .owl-dots {
+ 
+ padding-top:50px;
+ 
+}
+
+</style>
+		
+<script>
+$(document).ready(function(){
+  $("#owl-carousel2").owlCarousel({
+	  
+	  autoplay :true,
+	  loop :true,
+	  autoplayTimeout : 5000,
+	  autoplaySpeed: 1500,
+	  autoheight : true,
+	  nav:true,
+	  margin:10,
+	  dots: true,
+	  responsive :{
+        0:{
+            items:1,
+			dots:true
+            
+        },
+        600:{
+            items:1,
+            dots:true
+        },
+        1000:{
+            items:3,
+			dots:true
+        }
+	  }	
+	});
+	$( "#owl-carousel2").children(".owl-nav").children(".owl-prev").html("<i class=\"fas fa-caret-left\"></i>");
+	$( "#owl-carousel2").children(".owl-nav").children(".owl-next").html("<i class=\"fas fa-caret-right\"></i>");
+	
+});
+
+</script>
+<div class="container-fluid pad0" style="background:#F5F6F6;">
+
+	<div class="row margin0">
+
+		<div class="col-12 col-sm-12 col-md-12 padt20 padb20">
+
+			<div id="owl-carousel2" class="owl-carousel owl-theme">
+
+				<div>
+					<div class="shadow whitebg" style="margin:20px;  padding:20px; font-size:14px; min-height:125px; text-align:justify">
+					DJSCE is an Autonomous Institution, granted autonomy by the University Grants Commission (UGC) for a period of 10 years, starting from the A.Y. 2019-20 till 2028-29.
+					</div>
+				</div>	
+				<div>	
+					
+					<div class="shadow whitebg" style="margin:20px;  padding:20px; font-size:14px; min-height:125px; text-align:justify">
+					The National Assessment and Accreditation Council (NAAC) has accredited DJSCE with a CGPA of 3.18 out of 4, i.e., with an “A” Grade for a period of 5 years.
+					</div>
+					
+				</div>
+				<div>	
+					
+					<div class="shadow whitebg" style="margin:20px;  padding:20px; font-size:14px; min-height:125px; text-align:justify">
+					The college runs 8 undergraduate programs, 3 post graduate programmes and 3 PhD programmes for the A.Y. 2024-25, all permanently affiliated to the University of Mumbai.
+					</div>
+				</div>
+				
+				<div>	
+					
+					<div class="shadow whitebg" style="margin:20px;  padding:20px; font-size:14px; min-height:125px; text-align:justify">
+					University of Mumbai, in addition to granting autonomy has also granted Empowered Autonomous Status for a period of 10 years, till the A.Y. 2033-34.
+					</div>
+				</div>				
+
+				
+			</div> <!-- Owl Carousel -->
+
+		</div>
+		
+	</div>
+	
+</div>
+<div class="container-fluid pad0 ">
+
+	<div class="row margin0">
+
+		<div class="col-12 col-sm-12 col-md-12 padt20 padb20 blue text-center">
+				
+				<h2 style="font-size:22px;">What's New?</h2>
+	
+		</div>
+
+
+		<div class="col-12 col-sm-12 col-md-4 padt20 padb20 ">
+		
+				<div class="row margin0">
+					<div class="col-12 col-sm-12 col-md-12 padt10 padb10 bluebg white text-center" style="font-weight:700; border-top-left-radius:10px; border-top-right-radius:10px;">
+					<a name="admissions"></a>
+					Admissions
+					</div>
+					<div class="col-12 col-sm-12 col-md-12 pad0 shadow" style="padding-left:1px;">
+					
+<ul class="nav nav-tabs" id="admission_tabs" role="tablist">
+<li class="nav-item">
+<a class="nav-link   active " id="admission_tab_link_0" data-toggle="tab" href="#admission_tab_0" role="tab">1st Year B.Tech</a>
+</li>
+<li class="nav-item">
+<a class="nav-link  " id="admission_tab_link_1" data-toggle="tab" href="#admission_tab_1" role="tab">Direct 2nd Year B.Tech.</a>
+</li>
+<li class="nav-item">
+<a class="nav-link  " id="admission_tab_link_2" data-toggle="tab" href="#admission_tab_2" role="tab">M.Tech. / Ph.D.</a>
+</li>
+</ul>
+						</div>
+						<div class="col-12 col-sm-12 col-md-12 padt20 padb20 shadow" style="height:340px; overflow:auto; margin-top:2px;">
+						<div class="tab-content" id="admission_TabContent">
+<div class="tab-pane fade show active " id="admission_tab_0" role="tabpanel">
+<a href="https://www.djsce.ac.in/docs/Final cut-dff_A Y 2025-26.pdf" target="_blank">Final Cut-off for the A.Y. 2025-26</a><br /><br />
+<a href="https://www.djsce.ac.in/docs/Final Seat Position_Admissions 2025-26.pdf" target="_blank">Final Day Seat Position: Admissions 2025-26</a><br /><br />
+<a href="https://www.djsce.ac.in/docs/Notice - no field trip.pdf" target="_blank">Notice: No Trip for newly joined students</a><br /><br />
+<a href="https://www.djsce.ac.in/docs/GCLM_CET_15 Sept 2025.pdf" target="_blank">GCLM latest updated merit list at 9 am on 15-09-2025</a><br /><br />
+<a href="https://www.djsce.ac.in/docs/Orientation Sessions - Schedule.pdf" target="_blank">Orientation Sessions: Schedule</a><br /><br />
+<a href="https://www.djsce.ac.in/docs/Cut-off and Vacancy position - Vacancy Round (Spot Round) - III.pdf" target="_blank">Cut-off and Vacancy position - Vacancy Round (Spot Round) - III</a><br /><br />
+<a href="https://www.djsce.ac.in/docs/Cut-off_Vacancy Round - I (ACAP Open - AI seats).pdf" target="_blank">Cut-off: Vacancy Round - I (ACAP Open - AI seats)</a><br /><br />
+<a href="https://www.djsce.ac.in/docs/Final Merit List for JEE.zip" target="_blank">Updated Final Merit lists for AI seats</a><br /><br />
+<a href="https://www.djsce.ac.in/docs/Fresh applications for GCLM category.pdf" target="_blank">Fresh Applications in GCLM category</a><br /><br />
+<a href="https://www.djsce.ac.in/docs/Vacancy Round - Final Merit Lists.zip" target="_blank">ILS + Vacancy Rounds - Final Merit Lists</a><br /><br />
+<a href="https://www.djsce.ac.in/docs/Rules of Refund - Revised.pdf" target="_blank">Rules of Refund - Revised</a><br /><br />
+<a href="https://www.djsce.ac.in/docs/Notice - Induction Program (Fee receipt).pdf" target="_blank">Notice - Induction Program (A.Y. 2025-26)</a><br /><br />
+<a href="https://www.djsce.ac.in/docs/F.Y. B.Tech. Induction Program schedule 2025-26.pdf" target="_blank">F.Y. B.Tech. Induction Program schedule 2025-26</a><br /><br />
+<a href="https://www.djsce.ac.in/docs/ILS FE Admissions 2025-26 Fees Notice.pdf" target="_blank">Fees details (ILS candidates)</a><br /><br />
+<a href="https://www.djsce.ac.in/docs/Fees Structure First Year B. Tech 25-26.pdf" target="_blank">Fee Structure 2025-26</a><br /><br />
+</div>
+<div class="tab-pane fade" id="admission_tab_1" role="tabpanel">
+<a href="https://www.djsce.ac.in/docs/Vacancy Round - 2_details_DSE.pdf" target="_blank">DSE Vacancy Round - II: Vacancy Position & instructions</a><br /><br />
+<a href="https://www.djsce.ac.in/docs/Final Merit Lists - DSE.zip" target="_blank">Final merit lists (Vacancy Round) - DSE</a><br /><br />
+<a href="https://www.djsce.ac.in/docs/Schedule Admission Process - Vacancy_.pdf" target="_blank">Schedule: Admission Process (Vacancy)</a><br /><br />
+<a href="https://www.djsce.ac.in/docs/Rules of Refund - DSE.pdf" target="_blank">Rules of Refund for DSE</a><br /><br />
+<a href="https://www.djsce.ac.in/docs/List of documents_.pdf" target="_blank">List of Documents required (A.Y. 25-26)</a><br /><br />
+<a href="https://www.djsce.ac.in/docs/DSE Fee Structure 2025-26.pdf" target="_blank">Fee Structure 2025-26</a><br /><br />
+<a href="https://www.djsce.ac.in/docs/ABC ID Steps.pdf" target="_blank">Steps for ABC id creation</a><br /><br />
+</div>
+<div class="tab-pane fade" id="admission_tab_2" role="tabpanel">
+<a href=" https://sdc-appap2.svkm.ac.in:50201/irj/portal" target="_blank">Ph.D. Admission link (A.Y. 2025-26)</a><br /><br />
+<a href="https://www.djsce.ac.in/docs/M Tech_Merit List 8_9_25.pdf" target="_blank">Final merit list</a><br /><br />
+<a href="https://www.djsce.ac.in/docs/M Tech - Vacancy positions.pdf" target="_blank">Vacancy Position: M.Tech. Vacancy Round - 1 </a><br /><br />
+<a href="https://sdcappscs.svkm.ac.in:44300/irj/portal" target="_blank">Application Link: Vacancy Seats (Open + GCLM) and Institute Level Seats</a><br /><br />
+<a href="https://www.djsce.ac.in/docs/Ph D - Form 2025-26.pdf" target="_blank">Ph.D. Application Form 2025-26</a><br /><br />
+<a href="https://www.djsce.ac.in/docs/Guidelines for filling the Vacancy Form_MTEch.pdf" target="_blank">Guidelines for filling the Vacancy Form - M.Tech.</a><br /><br />
+<a href="https://www.djsce.ac.in/docs/a.pdf" target="_blank">Schedule: Admission Process (ILS + Vacancy)</a><br /><br />
+<a href="https://www.djsce.ac.in/docs/Rules of Refund - MTech.pdf" target="_blank">Rules of Refund for M.Tech.</a><br /><br />
+<a href="https://www.djsce.ac.in/docs/List of documents_MTECH.pdf" target="_blank">List of Documents required for M.Tech.</a><br /><br />
+<a href="https://www.djsce.ac.in/docs/Fees Structure First Year M. Tech 25-26.PDF" target="_blank">M.Tech. Fee Structure 2025-26</a><br /><br />
+</div>
+</div>
+					
+					
+					</div>
+				
+				</div>
+		
+		
+		</div>
+
+
+
+		
+		<div class="col-12 col-sm-12 col-md-4 padt20 padb20 ">
+		
+				<div class="row margin0">
+					<div class="col-12 col-sm-12 col-md-12 padt10 padb10 bluebg white text-center" style="font-weight:700; border-top-left-radius:10px; border-top-right-radius:10px;">
+					Achievements
+					</div>
+					<div class="col-12 col-sm-12 col-md-12 pad0 shadow" style="padding-left:1px;">
+					
+<ul class="nav nav-tabs" id="ach_tabs" role="tablist">
+<li class="nav-item">
+<a class="nav-link   active " id="ach_tab_link_0" data-toggle="tab" href="#ach_tab_0" role="tab">Students</a>
+</li>
+<li class="nav-item">
+<a class="nav-link  " id="ach_tab_link_1" data-toggle="tab" href="#ach_tab_1" role="tab">Institute</a>
+</li>
+<li class="nav-item">
+<a class="nav-link  " id="ach_tab_link_2" data-toggle="tab" href="#ach_tab_2" role="tab">Faculty</a>
+</li>
+</ul>
+						</div>
+						<div class="col-12 col-sm-12 col-md-12 padt20 padb20 shadow" style="height:360px; overflow:auto; margin-top:2px;">
+						<div class="tab-content" id="ach_TabContent">
+<div class="tab-pane fade show active " id="ach_tab_0" role="tabpanel">
+<a href="https://www.djsce.ac.in/docs/Adith Shetty - Google Stipend.pdf" target="_blank">Adith Shetty - Google Stipend of 1.3 Lakhs &nbsp; <span style="background:#003877; font-size:11px; padding:2px 5px; color:#fff;">NEW</span></a><br /><br />
+<a href="https://www.djsce.ac.in/docs/Hack4Safety Hackathon.pdf" target="_blank">Team Intellects: Winners at the “Hack4Safety Hackathon"</a><br /><br />
+<a href="https://www.djsce.ac.in/docs/Adappt 4.0 Hackathon.pdf" target="_blank">1st Place at “Adappt 4.0 Hackathon”</a><br /><br />
+<a href="https://www.djsce.ac.in/docs/HashMappers.pdf" target="_blank">Congratulations: Team Hashmappers</a><br /><br />
+<a href="https://www.djsce.ac.in/docs/DJS Arya Article.pdf" target="_blank">DJS Arya triumphs in Cansat competitions</a><br /><br />
+<a href="https://www.djsce.ac.in/docs/ICB students achievements.pdf" target="_blank">1st place at the Quantum Computing Hackathon</a><br /><br />
+<a href="https://www.djsce.ac.in/docs/Bit N Build hackathon.pdf" target="_blank">Winners at Bit N Build hackathon</a><br /><br />
+<a href="https://www.djsce.ac.in/docs/Consulting Case Study Competition.pdf" target="_blank">Congratulations: Omkar Haryan</a><br /><br />
+<a href="https://www.djsce.ac.in/docs/Mumbai Idathon.pdf" target="_blank">1st Prize at the Mumbai Ideathon</a><br /><br />
+<a href="https://www.djsce.ac.in/docs/Om Viroje Mathematics Competition 2025.pdf" target="_blank">Om Viroje: 2nd Position at "Srinivasa Ramanujan Mathematics Competition 2025"</a><br /><br />
+<a href="https://www.djsce.ac.in/docs/Congratulation - Veehant.pdf" target="_blank">Congratulations: Veehant Rambhiya</a><br /><br />
+<a href="https://www.djsce.ac.in/docs/WEBATHON 2.0.pdf" target="_blank">Winners: WEBATHON 2.0</a><br /><br />
+<a href="https://www.djsce.ac.in/docs/DJS Antariksh achievement 2025.pdf" target="_blank">DJS Antariksh: Success in European Rover Challenge Onsite 2025</a><br /><br />
+<a href="https://www.djsce.ac.in/docs/Sarthak - Krida Ratna Awars.pdf" target="_blank">Major Dhyan Chand Maharashtra Kridaratna Puraskar 2025</a><br /><br />
+<a href="https://www.djsce.ac.in/docs/Congratulation - Dipti Agarwal.pdf" target="_blank">Congratulations: Dipti Agarwal for placement in SalesForce</a><br /><br />
+</div>
+<div class="tab-pane fade" id="ach_tab_1" role="tabpanel">
+<a href="https://www.djsce.ac.in/docs/CONGRATULATION_TOI Icon award 2025.pdf" target="_blank">Times Educational Icons Awards 2025</a><br /><br />
+<a href="https://www.djsce.ac.in/docs/DJS Antariksh achievement 2025.pdf" target="_blank">DJS Antariksh: Success in European Rover Challenge Onsite 2025</a><br /><br />
+<a href="https://www.djsce.ac.in/docs/NIRF Rankings 2025.pdf" target="_blank">NIRF Rankings 2025: DJSCE in Top 300 institutions of the country</a><br /><br />
+<a href="https://www.djsce.ac.in/docs/CSR Rankings 2025.pdf" target="_blank">CSR rankings 2025 (Issue: June 2025)</a><br /><br />
+<a href="https://www.djsce.ac.in/docs/The Week Rankings_2025.pdf" target="_blank">"The Week" Magazine Rankings 2025</a><br /><br />
+<a href="https://www.djsce.ac.in/docs/India Today Rankings_2025.pdf" target="_blank">India Today Survey Rankings 2025</a><br /><br />
+<a href="https://www.djsce.ac.in/docs/Times of India Rankings 2025.pdf" target="_blank">Times of India Survey 2025</a><br /><br />
+<a href="https://www.djsce.ac.in/docs/SIH GRAND FINALE 2024.pdf" target="_blank">WINNERS (6 teams) SIH GRAND FINALE 2024</a><br /><br />
+<a href="https://www.djsce.ac.in/docs/Research grant of Google.pdf" target="_blank">Research Grant Received from Google</a><br /><br />
+</div>
+<div class="tab-pane fade" id="ach_tab_2" role="tabpanel">
+<a href="https://www.djsce.ac.in/docs/Congratulations -  principal sir 1905.pdf" target="_blank">Principal of the Year Award for Institutional Excellence</a><br /><br />
+</div>
+</div>
+					
+					
+					</div>
+				
+				</div>
+		
+		
+		</div>
+
+		<div class="col-12 col-sm-12 col-md-4 padt20 padb20">
+		
+				<div class="row margin0">
+					<div class="col-12 col-sm-12 col-md-12 padt10 padb10 bluebg white text-center" style="font-weight:700; border-top-left-radius:10px; border-top-right-radius:10px;">
+					Announcements
+					</div>
+					<div class="col-12 col-sm-12 col-md-12 padt10 padb20 shadow" style="height:400px; overflow:auto;">
+					
+<a href="https://www.djsce.ac.in/docs/Notice - Rescheduling of Sem III & VII Exams.pdf" target="_blank">Notice - Rescheduling of Sem III & VII Exams &nbsp; <span style="background:#003877; font-size:11px; padding:2px 5px; color:#fff;">NEW</span></a><br /><br />
+<a href="https://www.djsce.ac.in/docs/Time Table  ESE B.Tech. Sem VII Dec 2025.pdf" target="_blank">Timetable:  ESE B.Tech. Sem VII - December 2025</a><br /><br />
+<a href="https://www.djsce.ac.in/docs/Time Table  ESE B.Tech. Sem V Dec 2025.pdf" target="_blank">Timetable: ESE B.Tech. Sem V - December 2025</a><br /><br />
+<a href="https://www.djsce.ac.in/docs/Time Table  ESE B.Tech. Sem III Dec 2025.pdf" target="_blank">Timetable: ESE B.Tech. Sem III - December 2025</a><br /><br />
+<a href="https://www.djsce.ac.in/docs/IMG-20251120-WA0003.jpg" target="_blank">Level up: Cloud, Containers and Careers</a><br /><br />
+<a href="https://www.djsce.ac.in/docs/Congratulations - Kaustubh Dhavse.pdf" target="_blank">Congratulations - Mr. Kaustubh Dhavse (Chief Advisor of Maharashtra CM)</a><br /><br />
+<a href="https://www.djsce.ac.in/docs/NIRF Rankings 2025.pdf" target="_blank">NIRF Rankings 2025: DJSCE in Top 300 institutions of the country</a><br /><br />
+<a href="https://drive.google.com/drive/u/1/folders/1Eakk7hlRSOklAmkHuytDKuAj4lg-lbHA" target="_blank">"Partition Horrors Remembrance Day"</a><br /><br />
+<a href="https://www.djsce.ac.in/docs/MI_SamridDhi_Rotating Machinery_Brochure_SVKMS_17july2025.pdf" target="_blank">Rotating Machinery Bootcamp Compressors & Pumps: a Four-Day Workshop</a><br /><br />
+<a href="https://www.djsce.ac.in/docs/Notice - Academic Start date change.pdf" target="_blank">Notice - Change in Academic commencement date </a><br /><br />
+<a href="https://www.djsce.ac.in/docs/doc16204820250726143627.pdf" target="_blank">Notice - Date Extension for fees payment</a><br /><br />
+<a href="https://www.djsce.ac.in/docs/Fee Structures - AY 2025-26.pdf" target="_blank">Fees structures for the academic year 2025-26</a><br /><br />
+<a href="https://www.djsce.ac.in/docs/Notice for payment of Fees -Regular Students 2025-26.PDF" target="_blank">Notice: payment of Fees -Regular Students 2025-26</a><br /><br />
+<a href="https://www.djsce.ac.in/docs/Notice - Re-examinations.pdf" target="_blank">Notice - Dates of Online Portal for Re-exam_ July 2025</a><br /><br />
+<a href="https://www.djsce.ac.in/docs/The Week Rankings_2025.pdf" target="_blank">"The Week" Magazine Rankings 2025</a><br /><br />
+							
+
+					</div>
+					
+				
+				</div>
+		
+		
+		</div>
+
+<!--
+		<div class="col-12 col-sm-12 col-md-4 padt20 padb20">
+		
+				<div class="row margin0">
+					<div class="col-12 col-sm-12 col-md-12 padt10 padb10 bluebg white text-center" style="font-weight:700; border-top-left-radius:10px; border-top-right-radius:10px;">
+					Events
+					</div>
+
+
+<style>
+#owl-carousel8 .owl-nav [class*=owl-] {
+
+	padding:5px;
+	width: 30px;
+	height: 30px;
+	background:#fff;
+	border:1px solid #dedede;
+	font-size:16px;		
+	z-index: 10;
+	color:#003877;
+	
+	
+}
+
+#owl-carousel8 .owl-nav [class*=owl-]:hover {
+	
+	color: #003877;
+	background:#fff;
+}
+
+#owl-carousel8 .owl-prev,
+#owl-carousel8 .owl-next {
+	position: absolute;
+	top: 40%;
+	height: 30px;
+	margin: auto !important;
+	background:none;
+}
+
+#owl-carousel8 .owl-nav .owl-prev {
+	left: 0px;
+	background-position: 0 0;
+	
+}
+
+#owl-carousel8 .owl-nav .owl-next {
+	right: 0px;
+	background-position: 100% 0;
+}
+
+
+</style>
+		
+<script>
+$(document).ready(function(){
+  $("#owl-carousel8").owlCarousel({
+	  
+	  autoplay :true,
+	  loop :true,
+	  autoplayTimeout : 4000,
+	  autoheight : true,
+	  nav:true,
+	  margin:10,
+	  dots: false,
+	  responsive :{
+        0:{
+            items:1,
+			nav:false
+            
+        },
+        600:{
+            items:1
+            
+        },
+        1000:{
+            items:1
+			
+        }
+	  }	
+	});
+	$( ".owl-prev").html('<i class=\"fas fa-chevron-left\"></i>');
+	$( ".owl-next").html('<i class=\"fas fa-chevron-right\"></i>');
+});
+</script>
+					
+
+<div class="col-12 col-sm-12 col-md-12 padt10 padb20 shadow" style="height:400px; overflow:auto;">
+					
+					<div id="owl-carousel8" class="owl-carousel owl-theme">
+					
+<div>
+<div class="row margin0">
+<div class="col-12 col-sm-12 col-md-10 offset-md-1 padb10">
+<a href="https://www.djsce.ac.in/docs/events/Females in Technology EDM.pdf" target="_blank">
+<img src="https://www.djsce.ac.in/images/events/Bank of America.jpg" class="img-fluid" />
+</a>
+</div>
+<div class="col-12 col-sm-12 col-md-7 padb10">
+<a href="https://www.djsce.ac.in/docs/events/Females in Technology EDM.pdf" target="_blank" style="font-weight:700;">Bank of America - Womenâ€™s Tech Series</a>
+</div>
+<div class="col-12 col-sm-12 col-md-5 padb10 text-center">
+<span class="grey">23rd April 2024</span></div>
+<div class="col-12 col-sm-12 col-md-12 text-justify">
+ &nbsp; <a href="https://www.djsce.ac.in/docs/events/Females in Technology EDM.pdf" target="_blank" class="blue bold">view more</a>
+</div>
+</div>
+</div>
+<div>
+<div class="row margin0">
+<div class="col-12 col-sm-12 col-md-10 offset-md-1 padb10">
+<a href="https://www.djsce.ac.in/docs/events/Session on Coding Best Practices - for 2025 batch.pdf" target="_blank">
+<img src="https://www.djsce.ac.in/images/events/IMG-20240424-WA0005.jpg" class="img-fluid" />
+</a>
+</div>
+<div class="col-12 col-sm-12 col-md-7 padb10">
+<a href="https://www.djsce.ac.in/docs/events/Session on Coding Best Practices - for 2025 batch.pdf" target="_blank" style="font-weight:700;">Session on Coding Best Practices - for 2025 batch</a>
+</div>
+<div class="col-12 col-sm-12 col-md-5 padb10 text-center">
+<span class="grey">26th April 2024</span></div>
+<div class="col-12 col-sm-12 col-md-12 text-justify">
+Session on Coding Best Practices - for 2025 batch &nbsp; <a href="https://www.djsce.ac.in/docs/events/Session on Coding Best Practices - for 2025 batch.pdf" target="_blank" class="blue bold">view more</a>
+</div>
+</div>
+</div>
+<div>
+<div class="row margin0">
+<div class="col-12 col-sm-12 col-md-10 offset-md-1 padb10">
+<a href="https://www.djsce.ac.in/docs/internship fair 2024.pdf" target="_blank">
+<img src="https://www.djsce.ac.in/images/events/Internship Fair 2024.jpg" class="img-fluid" />
+</a>
+</div>
+<div class="col-12 col-sm-12 col-md-7 padb10">
+<a href="https://www.djsce.ac.in/docs/internship fair 2024.pdf" target="_blank" style="font-weight:700;">Internship Fair 2024</a>
+</div>
+<div class="col-12 col-sm-12 col-md-5 padb10 text-center">
+<span class="grey">3rd May 2024</span></div>
+<div class="col-12 col-sm-12 col-md-12 text-justify">
+ &nbsp; <a href="https://www.djsce.ac.in/docs/internship fair 2024.pdf" target="_blank" class="blue bold">view more</a>
+</div>
+</div>
+</div>
+							
+
+					</div> 
+
+					</div>
+					
+					
+				
+				</div>
+		
+		
+		</div>
+			-->
+
+	
+	
+	
+	
+	
+	
+	</div>
+	
+</div>
+
+<div class="container-fluid pad0">
+
+	<div class="row margin0">
+
+		<div class="col-12 col-sm-12 col-md-12 padt20 padb20 blue text-center">
+				
+				<h2 style="font-size:22px;">Prominent Recruiters</h2>
+	
+		</div>
+	</div>
+</div>
+<style>
+#owl-carousel3 .owl-nav [class*=owl-] {
+
+	padding:5px;
+	width: 50px;
+	height: 40px;
+	background:#fff;
+	font-size:22px;		
+	z-index: 10;
+	color:#003877;
+	
+	
+}
+
+#owl-carousel3 .owl-nav [class*=owl-]:hover {
+	
+	color: #003877;
+	background:#fff;
+}
+
+#owl-carousel3 .owl-prev,
+#owl-carousel3 .owl-next {
+	position: absolute;
+	top: 40%;
+	height: 30px;
+	margin: auto !important;
+	background:none;
+}
+
+#owl-carousel3 .owl-nav .owl-prev {
+	left: 0px;
+	background-position: 0 0;
+	
+}
+
+#owl-carousel3 .owl-nav .owl-next {
+	right: 0px;
+	background-position: 100% 0;
+}
+
+
+</style>
+		
+<script>
+$(document).ready(function(){
+  $("#owl-carousel3").owlCarousel({
+	  
+	  autoplay :true,
+	  loop :true,
+	  autoplayTimeout : 2000,
+	  autoheight : true,
+	  nav:false,
+	  margin:10,
+	  dots: false,
+	  responsive :{
+        0:{
+            items:2,
+			nav:false
+            
+        },
+        600:{
+            items:2
+            
+        },
+        1000:{
+            items:6
+			
+        }
+	  }	
+	});
+	$( ".owl-prev").html('<i class=\"fas fa-chevron-left\"></i>');
+	$( ".owl-next").html('<i class=\"fas fa-chevron-right\"></i>');
+});
+</script>
+<div class="container-fluid pad0" style="background:#F6F7F8;">
+
+	<div class="row margin0">
+
+		<div class="col-12 col-sm-12 col-md-12 padt20 padb20">
+
+			<div id="owl-carousel3" class="owl-carousel owl-theme">
+<div style="padding:10px;">
+<img src="https://www.djsce.ac.in/images/recruiters/axxela_logo.jpg" class="img-fluid shadow" />
+</div>
+<div style="padding:10px;">
+<img src="https://www.djsce.ac.in/images/recruiters/demag_logo.jpg" class="img-fluid shadow" />
+</div>
+<div style="padding:10px;">
+<img src="https://www.djsce.ac.in/images/recruiters/Media Net.jpg" class="img-fluid shadow" />
+</div>
+<div style="padding:10px;">
+<img src="https://www.djsce.ac.in/images/recruiters/technimonticb_logo.jpg" class="img-fluid shadow" />
+</div>
+<div style="padding:10px;">
+<img src="https://www.djsce.ac.in/images/recruiters/directi_logo.jpg" class="img-fluid shadow" />
+</div>
+<div style="padding:10px;">
+<img src="https://www.djsce.ac.in/images/recruiters/browserstack_logo.jpg" class="img-fluid shadow" />
+</div>
+<div style="padding:10px;">
+<img src="https://www.djsce.ac.in/images/recruiters/cactus_logo.jpg" class="img-fluid shadow" />
+</div>
+<div style="padding:10px;">
+<img src="https://www.djsce.ac.in/images/recruiters/maq_logo.jpg" class="img-fluid shadow" />
+</div>
+<div style="padding:10px;">
+<img src="https://www.djsce.ac.in/images/recruiters/amazon_logo.jpg" class="img-fluid shadow" />
+</div>
+<div style="padding:10px;">
+<img src="https://www.djsce.ac.in/images/recruiters/convonix_logo.jpg" class="img-fluid shadow" />
+</div>
+<div style="padding:10px;">
+<img src="https://www.djsce.ac.in/images/recruiters/LTFS.jpg" class="img-fluid shadow" />
+</div>
+<div style="padding:10px;">
+<img src="https://www.djsce.ac.in/images/recruiters/jio_logo.jpg" class="img-fluid shadow" />
+</div>
+<div style="padding:10px;">
+<img src="https://www.djsce.ac.in/images/recruiters/dolatcapital_logo.jpg" class="img-fluid shadow" />
+</div>
+<div style="padding:10px;">
+<img src="https://www.djsce.ac.in/images/recruiters/interactivebrokers_logo.jpg" class="img-fluid shadow" />
+</div>
+<div style="padding:10px;">
+<img src="https://www.djsce.ac.in/images/recruiters/accolite_logo.jpg" class="img-fluid shadow" />
+</div>
+
+
+
+
+			</div> <!-- Owl Carousel -->
+
+		</div>
+		
+	</div>
+	
+</div>
+
+<div class="container-fluid pad0">
+
+	<div class="row margin0">
+
+		<div class="col-12 col-sm-12 col-md-12 padt20 padb20 blue text-center">
+				
+				<h2 style="font-size:22px;">Prominent Universities (DJSCE Alumni pursuing further studies)</h2>
+	
+		</div>
+	</div>
+</div>
+<style>
+#owl-carousel6 .owl-nav [class*=owl-] {
+
+	padding:5px;
+	width: 50px;
+	height: 40px;
+	background:#fff;
+	font-size:22px;		
+	z-index: 10;
+	color:#003877;
+	
+	
+}
+
+#owl-carousel6 .owl-nav [class*=owl-]:hover {
+	
+	color: #003877;
+	background:#fff;
+}
+
+#owl-carousel6 .owl-prev,
+#owl-carousel6 .owl-next {
+	position: absolute;
+	top: 40%;
+	height: 30px;
+	margin: auto !important;
+	background:none;
+}
+
+#owl-carousel6 .owl-nav .owl-prev {
+	left: 0px;
+	background-position: 0 0;
+	
+}
+
+#owl-carousel6 .owl-nav .owl-next {
+	right: 0px;
+	background-position: 100% 0;
+}
+
+
+</style>
+		
+<script>
+$(document).ready(function(){
+  $("#owl-carousel6").owlCarousel({
+	  
+	  autoplay :true,
+	  loop :true,
+	  autoplayTimeout : 2000,
+	  autoheight : true,
+	  nav:false,
+	  margin:10,
+	  dots: false,
+	  responsive :{
+        0:{
+            items:2,
+			nav:false
+            
+        },
+        600:{
+            items:2
+            
+        },
+        1000:{
+            items:6
+			
+        }
+	  }	
+	});
+	$( ".owl-prev").html('<i class=\"fas fa-chevron-left\"></i>');
+	$( ".owl-next").html('<i class=\"fas fa-chevron-right\"></i>');
+});
+</script>
+<div class="container-fluid pad0" style="background:#F6F7F8;">
+
+	<div class="row margin0">
+
+		<div class="col-12 col-sm-12 col-md-12 padt20 padb20">
+
+			<div id="owl-carousel6" class="owl-carousel owl-theme">
+<div style="padding:10px;">
+<img src="https://www.djsce.ac.in/images/colleges/git_logo.jpg" class="img-fluid shadow" />
+</div>
+<div style="padding:10px;">
+<img src="https://www.djsce.ac.in/images/colleges/nsu_logo.jpg" class="img-fluid shadow" />
+</div>
+<div style="padding:10px;">
+<img src="https://www.djsce.ac.in/images/colleges/IIMKozi.png" class="img-fluid shadow" />
+</div>
+<div style="padding:10px;">
+<img src="https://www.djsce.ac.in/images/colleges/berkley_logo.jpg" class="img-fluid shadow" />
+</div>
+<div style="padding:10px;">
+<img src="https://www.djsce.ac.in/images/colleges/cornell_logo.jpg" class="img-fluid shadow" />
+</div>
+<div style="padding:10px;">
+<img src="https://www.djsce.ac.in/images/colleges/stanford_logo.jpg" class="img-fluid shadow" />
+</div>
+<div style="padding:10px;">
+<img src="https://www.djsce.ac.in/images/colleges/northwestern_logo.jpg" class="img-fluid shadow" />
+</div>
+<div style="padding:10px;">
+<img src="https://www.djsce.ac.in/images/colleges/asu_logo.jpg" class="img-fluid shadow" />
+</div>
+<div style="padding:10px;">
+<img src="https://www.djsce.ac.in/images/colleges/northeastern_logo.jpg" class="img-fluid shadow" />
+</div>
+<div style="padding:10px;">
+<img src="https://www.djsce.ac.in/images/colleges/washington_logo.jpg" class="img-fluid shadow" />
+</div>
+<div style="padding:10px;">
+<img src="https://www.djsce.ac.in/images/colleges/nyu_logo.jpg" class="img-fluid shadow" />
+</div>
+<div style="padding:10px;">
+<img src="https://www.djsce.ac.in/images/colleges/purdue_logo.jpg" class="img-fluid shadow" />
+</div>
+<div style="padding:10px;">
+<img src="https://www.djsce.ac.in/images/colleges/heidelberg_logo.jpg" class="img-fluid shadow" />
+</div>
+<div style="padding:10px;">
+<img src="https://www.djsce.ac.in/images/colleges/maryland_logo.jpg" class="img-fluid shadow" />
+</div>
+<div style="padding:10px;">
+<img src="https://www.djsce.ac.in/images/colleges/illinois_logo.jpg" class="img-fluid shadow" />
+</div>
+
+
+
+
+			</div> <!-- Owl Carousel -->
+
+		</div>
+		
+	</div>
+	
+</div>
+
+
+
+<div class="container-fluid pad0">
+
+	<div class="row margin0">
+
+		<div class="col-12 col-sm-12 col-md-12 padt20 padb20 blue text-center">
+				
+				<h2 style="font-size:22px;">Life @ DJSCE</h2>
+	
+		</div>
+		<div class="col-12 col-sm-12 col-md-4 padt20 padb20">
+		
+				<div class="row margin0">
+					<div class="col-12 col-sm-12 col-md-12 padt10 padb10 bluebg white text-center" style="font-weight:700; border-top-left-radius:10px; border-top-right-radius:10px;">
+					Departments
+					</div>
+					<div class="col-12 col-sm-12 col-md-12 padt10 padb20 lightgreybg shadow" style="height:500px; overflow:auto">
+<li><a href="ug-electronics-telecommunication-engg">Electronics and Telecommunication Engg</a></li>
+<li><a href="ug-information-technology">Information Technology</a></li>
+<li><a href="ug-computer-engineering">Computer Engineering</a></li>
+<li><a href="ug-mechanical-engineering">Mechanical Engineering</a></li>
+<li><a href="https://www.djsce.ac.in/ug-computer-science-engineering-data-science" target="_blank" >Computer Science and Engineering (Data Science)</a></li>
+<li><a href="ug-artificial-intelligence-machine-learning">Artificial Intelligence and Machine Learning</a></li>
+<li><a href="ug-artificial-intelligence-ai-data-science">Artificial Intelligence (AI) and Data Science</a></li>
+<li><a href="ug-computer-science-engineering-iot-cyber-security-with-block-chain-technology">Computer Science and Engineering <br />(IOT and Cyber Security with Block Chain Technology)</a></li>
+<li><a href="ug-chemical-engineering">Chemical Engineering (Discontinued)</a></li>
+<li><a href="ug-electronics-engineering">Electronics Engineering (Discontinued)</a></li>
+<li><a href="ug-poduction-engineering">Production Engineering (Discontinued)</a></li>
+<li><a href="ug-biomedical-engineering">Biomedical Engineering (Discontinued)</a></li>
+					</div>
+				</div>
+		</div>
+		<div class="col-12 col-sm-12 col-md-4 padt20 padb20">
+		
+				<div class="row margin0">
+					<div class="col-12 col-sm-12 col-md-12 padt10 padb10 bluebg white text-center" style="font-weight:700; border-top-left-radius:10px; border-top-right-radius:10px;">
+					Student Chapters
+					</div>
+					<div class="col-12 col-sm-12 col-md-12 padt10 padb20 lightgreybg shadow"  style="height:500px; overflow:auto">
+
+<li><a href=" https://djacm.co.in" target="_blank" >DJS ACM (Association for Computing Machinery) </a></li>
+<li><a href="https://djcsi.co.in/ " target="_blank" >DJS CSI (Computer Society of India)</a></li>
+<li><a href="https://www.ieeedjsce.com/ " target="_blank" >DJS IEEE (Institute of Electrical and Electronics Engineers)</a></li>
+<li><a href="https://djsceietesf.com " target="_blank" >DJS IETE (Institution of Electronics and Telecommunication Engineers)</a></li>
+<li><a href="https://linktr.ee/Djsce_IIChE" target="_blank" >DJS IICHE (Indian Institute of Chemical Engineers)</a></li>
+<li><a href="https://www.instagram.com/djsce_isme/ " target="_blank" >DJS ISME (Indian Society of Manufacturing Engineers)</a></li>
+<li><a href="https://www.instagram.com/djsce_sae/ " target="_blank" >DJS SAE (Society of Automotive Engineers)</a></li>
+<li><a href="docs/student_chapters/119_Down_ISHRAE.pdf" target="_blank" >DJS ISHRAE (Indian Society of Heating Refrigeration and Air Conditioning Engineers)</a></li>
+<li><a href=" https://instagram.com/djsce_ras/ " target="_blank" >DJS RAS (Robotics and Automation Society)</a></li>
+<li><a href="https://www.instagram.com/pacemaker_djsce/ " target="_blank" >DJS PACEMAKERS (Biomedical Engineering Chapter)</a></li>
+<li><a href="https://www.djss4ds.in/">DJS S4DS (Society for Data Science)</a></li>
+<li><a href="docs/courses/DJS ACM SIGAI UPDATES ON WEBSITES.pdf">DJS ACM SIGAI (ACM Special Interest Group on Artificial Intelligence)</a></li>
+<li><a href="djsceisaca.tech">DJS ISACA (Information Systems Audit and Control Association)</a></li>
+<li><a href="https://djsnsdc.netlify.app" target="_blank" >DJS NSDC (National Student Data Corps): under Northeast Big Data Innovation Hub, USA</a></li>
+
+					
+					</div>
+				</div>
+		</div>		
+		<div class="col-12 col-sm-12 col-md-4 padt20 padb20">
+		
+				<div class="row margin0">
+					<div class="col-12 col-sm-12 col-md-12 padt10 padb10 bluebg white text-center" style="font-weight:700; border-top-left-radius:10px; border-top-right-radius:10px;">
+					Teams/Clubs
+					</div>
+					<div class="col-12 col-sm-12 col-md-12 padt10 padb20 lightgreybg shadow"  style="height:500px; overflow:auto">
+
+<li><a href="https://www.djsnss.com/">DJS N.S.S. (National Service Scheme)</a></li>
+<li><a href="https://www.djunicode.in/">DJS Unicode (Coding Club)</a></li>
+<li><a href="https://instagram.com/synapse.djsce">DJS Synapse (Machine Learning Club)</a></li>
+<li><a href="#">DJS Nature Trek Club</a></li>
+<li><a href="https://djscodestars.in" target="_blank" >DJS Codestars (The Competitive Programming Club)</a></li>
+<li><a href="https://djinit-ai.github.io/">DJS DJinit.ai (AI Club)</a></li>
+<li><a href="https://www.instagram.com/djs.litsoc/ " target="_blank" >DJS LIT (Literature)</a></li>
+<li><a href="https://instagram.com/beats.djs/ " target="_blank" >DJS Beats (Music)</a></li>
+<li><a href="#">DJS Aura (Drama)</a></li>
+<li><a href="#">DJS Panache (Fashion)</a></li>
+<li><a href="https://djsceecell.com/" target="_blank" >DJS E-cell (Entrepreneurship Cell)</a></li>
+<li><a href="https://djsexpress.com/" target="_blank" >DJS Express (Debate)</a></li>
+<li><a href="https://gdsc-djsce.netlify.app/ " target="_blank" >DJS GDSC (Google Developer Student Club)</a></li>
+<li><a href="http://instagram.com/djscompute " target="_blank" >DJS Compute (Computing club)</a></li>
+<li><a href="#">DJS R & D Club</a></li>
+<li><a href="#">DJS Dhadak (Dance Club)</a></li>
+<li><a href="https://djsnova.vercel.app" target="_blank" >DJS NOVA</a></li>
+<li><a href="#">DJS MUNSOC (Model United Nations Society)</a></li>
+<li><a href="#">DJS Kronos</a></li>
+<li><a href="https://djstrinity.com/" target="_blank" >DJS Trinity</a></li>
+<li><a href="#">DJS Racing</a></li>
+<li><a href="#">DJS Skylark</a></li>
+<li><a href="#">DJS Karting</a></li>
+<li><a href="#">DJS Helios</a></li>
+<li><a href="https://in.linkedin.com/company/djs-phoenix" target="_blank" >DJS Phoenix</a></li>
+<li><a href="#">DJS Speedster</a></li>
+<li><a href="#">DJS Miles</a></li>
+<li><a href="#">DJS Robocon</a></li>
+<li><a href="#">DJS Astra</a></li>
+<li><a href="#">DJS Arya</a></li>
+<li><a href="#">DJS Antariksh</a></li>
+<li><a href="">DJS Consulting Group (DCG)</a></li>
+					
+					</div>
+				</div>
+		</div>		
+
+		
+	</div>
+</div>
+
+<a name="contactus"></a>
+<div class="container-fluid pad0">
+<script src="https://www.google.com/recaptcha/api.js?render=6LfQvvckAAAAAE8hI_XqVuvi_KjB6H1u893QwUxo"></script>
+<style>
+.grecaptcha-badge { visibility:hidden; }
+</style>
+<script>
+$(document).ready(function() {
+
+
+	$("#form1").validate({
+	ignore: "",
+	rules: {
+		name: { required:true, maxlength:250 },
+		email: { required:true, email:true },
+		telephone: { required:true, maxlength:15 }
+
+
+		},
+	errorPlacement: function(error, element) {
+		$('#' + $(element).attr('id')).next('.error_holder').html(error);
+		},
+
+	messages: {
+		},
+	submitHandler: function() {
+
+		
+			grecaptcha.ready(function() {
+			grecaptcha.execute('6LfQvvckAAAAAE8hI_XqVuvi_KjB6H1u893QwUxo', {action: 'submit'}).then(function(token) {
+            // Add your logic to submit to your backend server here.
+			document.getElementById('g-recaptcha-response').value = token;
+			document.form1.submit();
+			});
+			});
+		
+		
+		
+				
+		}
+	});
+ 
+});
+</script>
+<style>
+label.error { width:100%; height:auto; margin-top:5px; color: red; font-weight:normal;  border:0px solid black; font-family:arial; font-size:12px; }
+form input.error { border: 1px dotted red; }
+form textarea.error { border: 1px dotted red; }
+
+.error_holder { width:100%; height:auto;  float:left; margin-left:15px;}
+</style>
+
+	<div class="row margin0">
+		<div class="col-12 col-sm-12 col-md-6 padl100 padt40 padb40 blue">	
+
+				
+
+
+			<form method="post" action="process.php" name="form1" id="form1">
+			<input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response">
+
+			<div class="row margin0">
+			
+				<div class="col-12 col-sm-12 col-md-12 padb20 text-center">
+				<h2 style="font-size:22px;">Contact Us</h2>
+				</div>
+			
+				<div class="col-12 col-sm-12 col-md-6 padb20">
+				Name *<br />
+				<input type="text" name="name" id="name" class="form-control form-control-sm">
+				<div class="error_holder"></div>
+				</div>
+
+				<div class="col-12 col-sm-12 col-md-6 padb20">
+				Email *<br />
+				<input type="text" name="email" id="email" class="form-control form-control-sm">
+				<div class="error_holder"></div>
+				</div>
+			
+				<div class="col-12 col-sm-12 col-md-6 padb20">
+				Telephone *<br />
+				<input type="text" name="telephone" id="telephone" class="form-control form-control-sm">
+				<div class="error_holder"></div>
+				</div>
+
+				<div class="col-12 col-sm-12 col-md-12 padb20">
+				Query / Comments<br />
+				<textarea name="message" id="message" class="form-control form-control-sm"></textarea>
+				<div class="error_holder"></div>
+				</div>
+				
+				<div class="col-12 col-sm-12 col-md-12 padb20">
+				
+				<input type="submit" value="Submit" class="btn btn-sm btn-primary bluebg">
+				</div>
+			
+			</div>
+			</form>
+
+
+		
+			
+		</div>
+			
+		<div class="col-12 col-sm-12 col-md-6  padb20  padt40 blue">
+			
+				<div style="width:100%; float:left; padding:20px; border:1px solid #dedede; font-size:14px; color:#000;">
+				
+					<h2 style="font-size:18px;">Reach Us</h2>
+				
+					<b>Address:</b> No.U-15, J.V.P.D. Scheme, Bhaktivedanta Swami Marg, Opp.Cooper Hospital, Vile Parle (West), Mumbai-400 056. India<br /><br />
+					
+					<i class="fas fa-phone blue" style="font-weight:bold; font-size:16px;"></i> &nbsp; 42335000/42335001 &nbsp; &nbsp; 
+					<i class="far fa-envelope blue" style="font-weight:bold; font-size:16px;"></i> &nbsp; info@djsce.ac.in / admin@djsce.ac.in<br /><br />
+				
+					<h2 style="font-size:18px; color:#003877;">Follow Us &nbsp; &nbsp;
+					
+						<a href="https://www.facebook.com/djsce.official" target="_blank"><i class="fab fa-facebook-square blue" style="font-size:18px; margin-right:10px;"></i></a>
+						<a href="https://mobile.twitter.com/djsce_official" target="_blank"><i class="fab fa-twitter-square blue" style="font-size:18px; margin-right:10px;"></i></a>
+						<a href="https://instagram.com/djsce.official?utm_medium=copy_link" target="_blank"><i class="fab fa-instagram-square blue" style="font-size:18px; margin-right:10px;"></i></a>
+						<a href="https://www.linkedin.com/school/djsce" target="_blank"><i class="fab fa-linkedin blue" style="font-size:18px;"></i></a><br /><br />
+						</h2>
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1885.0063298265954!2d72.8358360896312!3d19.10710054930386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c9c676018b43%3A0x75f29a4205098f99!2sDwarkadas+J.+Sanghvi+College+of+Engineering!5e0!3m2!1sen!2sin!4v1511171768631" style="border:0" width="100%" height="300px" allowfullscreen=""></iframe>
+
+				
+				</div>
+			
+		</div>
+				
+	
+		</div>
+	</div>
+
+	
+	
+</div>
+
+<!--
+<div class="container">
+
+<div class="row">
+
+<div class="col-12 col-sm-12 col-md-12 padb20 padt20">
+
+<iframe width="100%" height="720" src="https://www.youtube.com/embed/EH60a2Xax3A" title="SVKMastermind" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+</div>
+
+</div>
+
+</div>
+-->
+
+
+
+
+<div class="container-fluid padb20 padt40 lightgreybg">
+
+	<div class="row margin0">
+	
+	
+		<div class="col-12 col-sm-12 col-md-12 padb20 text-center footer_links" >
+		
+		<a href="https://www.djsce.ac.in/" class="footer_links">Home</a> 
+		
+	&nbsp;|&nbsp; <a href="https://www.djsce.ac.in/svkm-overview" class="footer_links"> About SVKM </a>
+&nbsp;|&nbsp; <a href="https://www.djsce.ac.in/djsce-overview" class="footer_links"> About DJSCE</a>
+&nbsp;|&nbsp; <a href="https://www.djsce.ac.in/mandatory-disclosures" class="footer_links"> Mandatory Disclosures</a>
+&nbsp;|&nbsp; <a href="https://www.djsce.ac.in/counselling" class="footer_links">Student Support</a>
+&nbsp;|&nbsp; <a href="https://www.djsce.ac.in/placements-hs" class="footer_links">Placements</a>
+&nbsp;|&nbsp; <a href="https://sites.google.com/view/djsce-library/home" target="_blank" class="footer_links"> Library</a>
+&nbsp;|&nbsp; <a href="https://www.djsce.ac.in/docs/155_Download_AICTE%20Internship%20Policy.pdf" class="footer_links">Internships</a>
+<br /><br />
+&nbsp;|&nbsp; <a href="https://alumni.djsce.ac.in/" target="_blank" class="footer_links">Alumni</a>
+&nbsp;|&nbsp; <a href="https://www.djsce.ac.in/nba" class="footer_links">NBA</a>
+&nbsp;|&nbsp; <a href="https://www.djsce.ac.in/naac" class="footer_links">NAAC</a>
+&nbsp;|&nbsp; <a href="https://fa-elxu-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1004" target="_blank" class="footer_links">Careers</a>
+	
+		
+		<!--<a href="https://www.djsce.ac.in/svkm-overview" class="footer_links">About SVKM</a> &nbsp;|&nbsp;
+		<a href="https://www.djsce.ac.in/djsce-overview" class="footer_links">About DJSCE</a> &nbsp;|&nbsp;
+		<a href="https://www.djsce.ac.in/mandatory-disclosures" class="footer_links">Mandatory Disclosures</a> &nbsp;|&nbsp;
+		<a href="https://www.djsce.ac.in/counselling" class="footer_links">Student Support</a> &nbsp;|&nbsp;
+		<a href="https://www.djsce.ac.in/placements-hs" class="footer_links">Placements</a> &nbsp;|&nbsp;
+		<a href="https://sites.google.com/view/djsce-library/home" target="_blank" class="footer_links">Library</a><br /><br />
+
+			
+		<a href="https://www.djsce.ac.in/docs/155_Download_AICTE%20Internship%20Policy.pdf" class="footer_links" target="_blank">Internships</a> &nbsp;|&nbsp;
+		<a href="https://alumni.djsce.ac.in/" target="_blank" class="footer_links">Alumni</a> &nbsp;|&nbsp;
+		<a href="#" target="_blank" class="footer_links">Accreditation</a> &nbsp;|&nbsp;
+		<a href="https://fa-elxu-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1004" target="_blank" class="footer_links">Careers</a>
+		-->
+		
+		
+		<br /><br/>
+		
+		
+		
+		&copy; 2025 Dwarkadas J. Sanghvi College of Engineering. All Rights Reserved.<br />
+		<!--<a href="https://www.djsce.ac.in/terms" style="color:#9b9b9b;">Terms</a> &nbsp;|&nbsp; 
+		<a href="https://www.djsce.ac.in/privacy-policy" style="color:#9b9b9b;">Privacy Policy</a> -->
+		
+		
+		</div>
+	
+	</div>
+
+
+
+</div>
+
+	<a href="#" class="back-to-top"><i class="fas fa-caret-up"></i></a>
+
+
+
+
+</body>
+</html>

@@ -14,6 +14,7 @@ import SyllabusSchool from "./Pages/ContinueAsSchoolStudent/Syllabus";
 import SyllabusCollege from "./Pages/ContinueAsCollegeStudent/Syllabus";
 import LoginSchool from "./Pages/ContinueAsSchoolStudent/LoginSchool";
 import LoginCollege from "./Pages/ContinueAsCollegeStudent/LoginCollege";
+import ExamTestPage from "./Pages/ExamTestPage";
 
 function App() {
   const location = useLocation();
@@ -44,6 +45,7 @@ function App() {
         <Route path="/syllabuscollege" element={<SyllabusCollege />} />
         <Route path="/loginschool" element={<LoginSchool />} />
         <Route path="/logincollege" element={<LoginCollege />} />
+        <Route path="/exams-test" element={<ExamTestPage />} />
       </Routes>
     </>
   );

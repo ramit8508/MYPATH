@@ -1,0 +1,4215 @@
+{
+  "timestamp": "2025-12-01T12:52:56.000Z",
+  "inputFile": "../MYPATH EXAM LINKS.xlsx",
+  "totalCandidates": 243,
+  "results": [
+    {
+      "url": "https://jeemain.nta.nic.in/",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2024/10/2024102841.pdf",
+      "ok": true,
+      "status": 200,
+      "contentType": "application/pdf"
+    },
+    {
+      "url": "https://jeemain.nta.nic.in//",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://jeeadv.ac.in/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html",
+      "htmlFile": "D:\\MYPATH\\ALL_FILES\\Backend_School\\scraper_output\\scraped_html\\jeeadv.ac.in_.html"
+    },
+    {
+      "url": "https://neet.nta.nic.in/",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://neet.nta.nic.in//",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://cuet.samarth.ac.in/",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://cuet.nta.nic.in/document-category/public-notice/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "htmlFile": "D:\\MYPATH\\ALL_FILES\\Backend_School\\scraper_output\\scraped_html\\cuet.nta.nic.in_document-category_public-notice_.html"
+    },
+    {
+      "url": "https://bitsadmission.com/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html",
+      "htmlFile": "D:\\MYPATH\\ALL_FILES\\Backend_School\\scraper_output\\scraped_html\\bitsadmission.com_.html"
+    },
+    {
+      "url": "https://viteee.vit.ac.in/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html;charset=ISO-8859-1",
+      "htmlFile": "D:\\MYPATH\\ALL_FILES\\Backend_School\\scraper_output\\scraped_html\\viteee.vit.ac.in_.html"
+    },
+    {
+      "url": "https://applications.srmist.edu.in/btech",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "htmlFile": "D:\\MYPATH\\ALL_FILES\\Backend_School\\scraper_output\\scraped_html\\applications.srmist.edu.in_btech.html"
+    },
+    {
+      "url": "https://srmist.edu.in/admissions/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "htmlFile": "D:\\MYPATH\\ALL_FILES\\Backend_School\\scraper_output\\scraped_html\\srmist.edu.in_admissions_.html"
+    },
+    {
+      "url": "https://engineering.careers360.com/articles/srmjeee-2026",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "htmlFile": "D:\\MYPATH\\ALL_FILES\\Backend_School\\scraper_output\\scraped_html\\engineering.careers360.com_articles_srmjeee-2026.html"
+    },
+    {
+      "url": "https://nbe.edu.in/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html",
+      "htmlFile": "D:\\MYPATH\\ALL_FILES\\Backend_School\\scraper_output\\scraped_html\\nbe.edu.in_.html"
+    },
+    {
+      "url": "https://nbe.edu.in/information-bulletin",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://aiimsexams.ac.in/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "htmlFile": "D:\\MYPATH\\ALL_FILES\\Backend_School\\scraper_output\\scraped_html\\aiimsexams.ac.in_.html"
+    },
+    {
+      "url": "https://eamcet.tsche.ac.in/",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://nata.in/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html",
+      "htmlFile": "D:\\MYPATH\\ALL_FILES\\Backend_School\\scraper_output\\scraped_html\\nata.in_.html"
+    },
+    {
+      "url": "https://B.Arch/B.Planning",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://admissions.nift.ac.in/",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://nid.edu/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "htmlFile": "D:\\MYPATH\\ALL_FILES\\Backend_School\\scraper_output\\scraped_html\\nid.edu_.html"
+    },
+    {
+      "url": "https://uceed.iitb.ac.in/",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://ceed.iitb.ac.in/",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://fddiindia.com/pearlfashion.edu.in/",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://pearlfashion.edu.in/iiad.edu.in/",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://iiad.edu.in/codechef.com/contests",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://codechef.com/codeforces.com/contests",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://codeforces.com/blog",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://hackerearth.com/challenges",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "htmlFile": "D:\\MYPATH\\ALL_FILES\\Backend_School\\scraper_output\\scraped_html\\hackerearth.com_challenges.html"
+    },
+    {
+      "url": "https://hackerearth.com/kickstart.withgoogle.com/schedule",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://kickstart.withgoogle.com/atcoder.jp/contests",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://atcoder.jp/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "htmlFile": "D:\\MYPATH\\ALL_FILES\\Backend_School\\scraper_output\\scraped_html\\atcoder.jp_.html"
+    },
+    {
+      "url": "https://codingal.com/contests",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://codingal.com/codeavour.com/",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://codeavour.com/iimcat.ac.in/",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://iimcat.ac.in/xatonline.in/",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://xatonline.in/mat.aima.in/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "htmlFile": "D:\\MYPATH\\ALL_FILES\\Backend_School\\scraper_output\\scraped_html\\xatonline.in_mat.aima.in_.html"
+    },
+    {
+      "url": "https://mat.aima.in/snaptest.org/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "htmlFile": "D:\\MYPATH\\ALL_FILES\\Backend_School\\scraper_output\\scraped_html\\mat.aima.in_snaptest.org_.html"
+    },
+    {
+      "url": "https://snaptest.org/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "htmlFile": "D:\\MYPATH\\ALL_FILES\\Backend_School\\scraper_output\\scraped_html\\snaptest.org_.html"
+    },
+    {
+      "url": "https://consortiumofnlus.ac.in/clat-2025/.html",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "htmlFile": "D:\\MYPATH\\ALL_FILES\\Backend_School\\scraper_output\\scraped_html\\consortiumofnlus.ac.in_clat-2025_.html.html"
+    },
+    {
+      "url": "https://consortiumofnlus.ac.in/nationallawuniversitydelhi.in/",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://nationallawuniversitydelhi.in/lsac.org/lsat",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://lsac.org/lsat/test-prep",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://icai.org/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "htmlFile": "D:\\MYPATH\\ALL_FILES\\Backend_School\\scraper_output\\scraped_html\\icai.org_.html"
+    },
+    {
+      "url": "https://in.emb-japan.go.jp/",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://studyinkorea.go.kr/en/sub/gks/selectBoardArticle.do",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://studyinkorea.go.kr/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html;charset=UTF-8",
+      "htmlFile": "D:\\MYPATH\\ALL_FILES\\Backend_School\\scraper_output\\scraped_html\\studyinkorea.go.kr_.html"
+    },
+    {
+      "url": "https://ukheducation.in/",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://wbjee.nic.ac.in/mhtcet.org/",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://mhtcet.org/",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://cetonline.karnataka.gov.in/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html",
+      "htmlFile": "D:\\MYPATH\\ALL_FILES\\Backend_School\\scraper_output\\scraped_html\\cetonline.karnataka.gov.in_.html"
+    },
+    {
+      "url": "https://cetonline.karnataka.gov.in/eaadmission.com/",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://eaadmission.com/amucontrollerexams.com/",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://amucontrollerexams.com/bhu.ac.in/",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://bhu.ac.in/aicte-india.org/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "htmlFile": "D:\\MYPATH\\ALL_FILES\\Backend_School\\scraper_output\\scraped_html\\bhu.ac.in_aicte-india.org_.html"
+    },
+    {
+      "url": "https://aicte-india.org/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "htmlFile": "D:\\MYPATH\\ALL_FILES\\Backend_School\\scraper_output\\scraped_html\\aicte-india.org_.html"
+    },
+    {
+      "url": "https://cee.ac.in/",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://cee.ac.in/neet.nta.nic.in/",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://neet.nta.nic.in/mcc.nic.in/",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://mcc.nic.in/aiimsnursing.edu.in/",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://aiimsnursing.edu.in/jipmer.edu.in/",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://jipmer.edu.in/nsc.gov.in/",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://nsc.gov.in/nta.ac.in/",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://nta.ac.in/aicte-india.org/",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://consortiumofnlus.ac.in/consortiumofnlus.ac.in/",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://fddiindia.com/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "htmlFile": "D:\\MYPATH\\ALL_FILES\\Backend_School\\scraper_output\\scraped_html\\fddiindia.com_.html"
+    },
+    {
+      "url": "https://allindiabarexamination.com/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html",
+      "htmlFile": "D:\\MYPATH\\ALL_FILES\\Backend_School\\scraper_output\\scraped_html\\allindiabarexamination.com_.html"
+    },
+    {
+      "url": "https://allindiabarexamination.com/ctet.nic.in/",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://ctet.nic.in/aicte-india.org/",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://ugcnet.nta.ac.in/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html",
+      "htmlFile": "D:\\MYPATH\\ALL_FILES\\Backend_School\\scraper_output\\scraped_html\\ugcnet.nta.ac.in_.html"
+    },
+    {
+      "url": "https://ugcnet.nta.ac.in/icar.gov.in/",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://icar.gov.in/icar.org.in/",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://icar.org.in/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "htmlFile": "D:\\MYPATH\\ALL_FILES\\Backend_School\\scraper_output\\scraped_html\\icar.org.in_.html"
+    },
+    {
+      "url": "https://pearlfashion.edu.in/",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://iiad.edu.in/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "htmlFile": "D:\\MYPATH\\ALL_FILES\\Backend_School\\scraper_output\\scraped_html\\iiad.edu.in_.html"
+    },
+    {
+      "url": "https://codechef.com/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "htmlFile": "D:\\MYPATH\\ALL_FILES\\Backend_School\\scraper_output\\scraped_html\\codechef.com_.html"
+    },
+    {
+      "url": "https://codeforces.com/",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://hackerearth.com/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html",
+      "htmlFile": "D:\\MYPATH\\ALL_FILES\\Backend_School\\scraper_output\\scraped_html\\hackerearth.com_.html"
+    },
+    {
+      "url": "https://kickstart.withgoogle.com/",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://codingal.com/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "htmlFile": "D:\\MYPATH\\ALL_FILES\\Backend_School\\scraper_output\\scraped_html\\codingal.com_.html"
+    },
+    {
+      "url": "https://codeavour.com/",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://iimcat.ac.in/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "htmlFile": "D:\\MYPATH\\ALL_FILES\\Backend_School\\scraper_output\\scraped_html\\iimcat.ac.in_.html"
+    },
+    {
+      "url": "https://xatonline.in/registration",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "htmlFile": "D:\\MYPATH\\ALL_FILES\\Backend_School\\scraper_output\\scraped_html\\xatonline.in_registration.html"
+    },
+    {
+      "url": "https://xatonline.in/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "htmlFile": "D:\\MYPATH\\ALL_FILES\\Backend_School\\scraper_output\\scraped_html\\xatonline.in_.html"
+    },
+    {
+      "url": "https://mat.aima.in/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "htmlFile": "D:\\MYPATH\\ALL_FILES\\Backend_School\\scraper_output\\scraped_html\\mat.aima.in_.html"
+    },
+    {
+      "url": "https://consortiumofnlus.ac.in/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "htmlFile": "D:\\MYPATH\\ALL_FILES\\Backend_School\\scraper_output\\scraped_html\\consortiumofnlus.ac.in_.html"
+    },
+    {
+      "url": "https://nationallawuniversitydelhi.in/register.html",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "htmlFile": "D:\\MYPATH\\ALL_FILES\\Backend_School\\scraper_output\\scraped_html\\nationallawuniversitydelhi.in_register.html.html"
+    },
+    {
+      "url": "https://nationallawuniversitydelhi.in/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "htmlFile": "D:\\MYPATH\\ALL_FILES\\Backend_School\\scraper_output\\scraped_html\\nationallawuniversitydelhi.in_.html"
+    },
+    {
+      "url": "https://lsac.org/lsat/register-lsat",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "htmlFile": "D:\\MYPATH\\ALL_FILES\\Backend_School\\scraper_output\\scraped_html\\lsac.org_lsat_register-lsat.html"
+    },
+    {
+      "url": "https://lsac.org/lsat",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "htmlFile": "D:\\MYPATH\\ALL_FILES\\Backend_School\\scraper_output\\scraped_html\\lsac.org_lsat.html"
+    },
+    {
+      "url": "https://icsi.edu/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "htmlFile": "D:\\MYPATH\\ALL_FILES\\Backend_School\\scraper_output\\scraped_html\\icsi.edu_.html"
+    },
+    {
+      "url": "https://icmai.in/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "htmlFile": "D:\\MYPATH\\ALL_FILES\\Backend_School\\scraper_output\\scraped_html\\icmai.in_.html"
+    },
+    {
+      "url": "https://upsconline.nic.in/exam-apply/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html",
+      "htmlFile": "D:\\MYPATH\\ALL_FILES\\Backend_School\\scraper_output\\scraped_html\\upsconline.nic.in_exam-apply_.html"
+    },
+    {
+      "url": "https://upsc.gov.in/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "htmlFile": "D:\\MYPATH\\ALL_FILES\\Backend_School\\scraper_output\\scraped_html\\upsc.gov.in_.html"
+    },
+    {
+      "url": "https://afcat.cdac.in/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html;charset=UTF-8",
+      "htmlFile": "D:\\MYPATH\\ALL_FILES\\Backend_School\\scraper_output\\scraped_html\\afcat.cdac.in_.html"
+    },
+    {
+      "url": "https://indiannavy.gov.in/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "htmlFile": "D:\\MYPATH\\ALL_FILES\\Backend_School\\scraper_output\\scraped_html\\indiannavy.gov.in_.html"
+    },
+    {
+      "url": "https://sofworld.org/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "htmlFile": "D:\\MYPATH\\ALL_FILES\\Backend_School\\scraper_output\\scraped_html\\sofworld.org_.html"
+    },
+    {
+      "url": "https://sofworld.org/-exam-pattern",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://silverzone.org/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html",
+      "htmlFile": "D:\\MYPATH\\ALL_FILES\\Backend_School\\scraper_output\\scraped_html\\silverzone.org_.html"
+    },
+    {
+      "url": "https://silverzone.org/olympiad-syllabus-books.html",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html",
+      "htmlFile": "D:\\MYPATH\\ALL_FILES\\Backend_School\\scraper_output\\scraped_html\\silverzone.org_olympiad-syllabus-books.html.html"
+    },
+    {
+      "url": "https://iapt.org.in/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "htmlFile": "D:\\MYPATH\\ALL_FILES\\Backend_School\\scraper_output\\scraped_html\\iapt.org.in_.html"
+    },
+    {
+      "url": "https://iapt.org.in/nsep-nsec-nsea-nseb-nsejs.html",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://mtai.org.in/ioqm",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://mtai.org.in/ioqm-syllabus",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://unifiedcouncil.com/options.html",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html",
+      "htmlFile": "D:\\MYPATH\\ALL_FILES\\Backend_School\\scraper_output\\scraped_html\\unifiedcouncil.com_options.html.html"
+    },
+    {
+      "url": "https://unifiedcouncil.com/documents//NSTSE-Syllabus.pdf",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://unifiedcouncil.com/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html",
+      "htmlFile": "D:\\MYPATH\\ALL_FILES\\Backend_School\\scraper_output\\scraped_html\\unifiedcouncil.com_.html"
+    },
+    {
+      "url": "https://ibo.org/programmes/",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://ibo.org/",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://cambridgeinternational.org/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "htmlFile": "D:\\MYPATH\\ALL_FILES\\Backend_School\\scraper_output\\scraped_html\\cambridgeinternational.org_.html"
+    },
+    {
+      "url": "https://cambridgeinternational.org/programmes-and-qualifications/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "htmlFile": "D:\\MYPATH\\ALL_FILES\\Backend_School\\scraper_output\\scraped_html\\cambridgeinternational.org_programmes-and-qualifications_.html"
+    },
+    {
+      "url": "https://collegeboard.org/sat",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "htmlFile": "D:\\MYPATH\\ALL_FILES\\Backend_School\\scraper_output\\scraped_html\\collegeboard.org_sat.html"
+    },
+    {
+      "url": "https://collegeboard.org/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "htmlFile": "D:\\MYPATH\\ALL_FILES\\Backend_School\\scraper_output\\scraped_html\\collegeboard.org_.html"
+    },
+    {
+      "url": "https://act.org/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html;charset=utf-8",
+      "htmlFile": "D:\\MYPATH\\ALL_FILES\\Backend_School\\scraper_output\\scraped_html\\act.org_.html"
+    },
+    {
+      "url": "https://ssc.gov.in/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html",
+      "htmlFile": "D:\\MYPATH\\ALL_FILES\\Backend_School\\scraper_output\\scraped_html\\ssc.gov.in_.html"
+    },
+    {
+      "url": "https://rrbonlinereg.co.in/",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://ibps.in/",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://scholarships.gov.in/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html;charset=UTF-8",
+      "htmlFile": "D:\\MYPATH\\ALL_FILES\\Backend_School\\scraper_output\\scraped_html\\scholarships.gov.in_.html"
+    },
+    {
+      "url": "https://chevening.org/scholarship/india/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "htmlFile": "D:\\MYPATH\\ALL_FILES\\Backend_School\\scraper_output\\scraped_html\\chevening.org_scholarship_india_.html"
+    },
+    {
+      "url": "https://chevening.org/scholarships/guidance/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "htmlFile": "D:\\MYPATH\\ALL_FILES\\Backend_School\\scraper_output\\scraped_html\\chevening.org_scholarships_guidance_.html"
+    },
+    {
+      "url": "https://chevening.org/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "htmlFile": "D:\\MYPATH\\ALL_FILES\\Backend_School\\scraper_output\\scraped_html\\chevening.org_.html"
+    },
+    {
+      "url": "https://usief.org.in/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "htmlFile": "D:\\MYPATH\\ALL_FILES\\Backend_School\\scraper_output\\scraped_html\\usief.org.in_.html"
+    },
+    {
+      "url": "https://usief.org.in/Fellowships/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "htmlFile": "D:\\MYPATH\\ALL_FILES\\Backend_School\\scraper_output\\scraped_html\\usief.org.in_Fellowships_.html"
+    },
+    {
+      "url": "https://rhodeshouse.ox.ac.uk/",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://daad.de/en/study-research-in-germany/scholarships/",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://daad.de/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html;charset=utf-8",
+      "htmlFile": "D:\\MYPATH\\ALL_FILES\\Backend_School\\scraper_output\\scraped_html\\daad.de_.html"
+    },
+    {
+      "url": "https://in.emb-japan.go.jp/education/japanese_government_scholarships.html",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://ojee.nic.in/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "htmlFile": "D:\\MYPATH\\ALL_FILES\\Backend_School\\scraper_output\\scraped_html\\ojee.nic.in_.html"
+    },
+    {
+      "url": "https://wbjee.nic.ac.in/",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://eaadmission.com/",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://amucontrollerexams.com/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "htmlFile": "D:\\MYPATH\\ALL_FILES\\Backend_School\\scraper_output\\scraped_html\\amucontrollerexams.com_.html"
+    },
+    {
+      "url": "https://bhu.ac.in/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "htmlFile": "D:\\MYPATH\\ALL_FILES\\Backend_School\\scraper_output\\scraped_html\\bhu.ac.in_.html"
+    },
+    {
+      "url": "https://mcc.nic.in/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "htmlFile": "D:\\MYPATH\\ALL_FILES\\Backend_School\\scraper_output\\scraped_html\\mcc.nic.in_.html"
+    },
+    {
+      "url": "https://aiimsnursing.edu.in/",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://jipmer.edu.in/",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://nsc.gov.in/",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://nta.ac.in/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "htmlFile": "D:\\MYPATH\\ALL_FILES\\Backend_School\\scraper_output\\scraped_html\\nta.ac.in_.html"
+    },
+    {
+      "url": "https://ctet.nic.in/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "htmlFile": "D:\\MYPATH\\ALL_FILES\\Backend_School\\scraper_output\\scraped_html\\ctet.nic.in_.html"
+    },
+    {
+      "url": "https://icar.gov.in/",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://indiaaviationonline.com/",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://dgca.gov.in/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html;charset=utf-8",
+      "htmlFile": "D:\\MYPATH\\ALL_FILES\\Backend_School\\scraper_output\\scraped_html\\dgca.gov.in_.html"
+    },
+    {
+      "url": "https://iimk.edu.in/",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://jamia.ac.in/",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://dsm.ac.in/",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://jnu.ac.in/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "htmlFile": "D:\\MYPATH\\ALL_FILES\\Backend_School\\scraper_output\\scraped_html\\jnu.ac.in_.html"
+    },
+    {
+      "url": "https://christuniversity.in/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "htmlFile": "D:\\MYPATH\\ALL_FILES\\Backend_School\\scraper_output\\scraped_html\\christuniversity.in_.html"
+    },
+    {
+      "url": "https://cuet.nta.nic.in/jnu.ac.in/",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://jnu.ac.in/dvsc.ac.in/",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://dvsc.ac.in/vis.ac.in/",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://vis.ac.in/ssc.nic.in/",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://ssc.nic.in/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html",
+      "htmlFile": "D:\\MYPATH\\ALL_FILES\\Backend_School\\scraper_output\\scraped_html\\ssc.nic.in_.html"
+    },
+    {
+      "url": "https://amity.edu/",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://symbiosis.ac.in/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "htmlFile": "D:\\MYPATH\\ALL_FILES\\Backend_School\\scraper_output\\scraped_html\\symbiosis.ac.in_.html"
+    },
+    {
+      "url": "https://symbiosis.ac.in/dauniversity.ac.in/",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://dauniversity.ac.in/gjus.ac.in/",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://gjus.ac.in/hptu.ac.in/",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://hptu.ac.in/lpu.in/",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://lpu.in/mvu.edu.in/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "htmlFile": "D:\\MYPATH\\ALL_FILES\\Backend_School\\scraper_output\\scraped_html\\lpu.in_mvu.edu.in_.html"
+    },
+    {
+      "url": "https://mvu.edu.in/manipal.edu/",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://manipal.edu/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "htmlFile": "D:\\MYPATH\\ALL_FILES\\Backend_School\\scraper_output\\scraped_html\\manipal.edu_.html"
+    },
+    {
+      "url": "https://christuniversity.in/vit.ac.in/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "htmlFile": "D:\\MYPATH\\ALL_FILES\\Backend_School\\scraper_output\\scraped_html\\christuniversity.in_vit.ac.in_.html"
+    },
+    {
+      "url": "https://vit.ac.in/du.ac.in/",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://du.ac.in/ipu.ac.in/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "htmlFile": "D:\\MYPATH\\ALL_FILES\\Backend_School\\scraper_output\\scraped_html\\du.ac.in_ipu.ac.in_.html"
+    },
+    {
+      "url": "https://ipu.ac.in/niraninstitute.ac.in/",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://niraninstitute.ac.in/mu.ac.in/",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://mu.ac.in/djsce.ac.in/",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://djsce.ac.in/vtu.ac.in/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "htmlFile": "D:\\MYPATH\\ALL_FILES\\Backend_School\\scraper_output\\scraped_html\\djsce.ac.in_vtu.ac.in_.html"
+    },
+    {
+      "url": "https://vtu.ac.in/bangaloreuniversity.ac.in/",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://bangaloreuniversity.ac.in/osmania.ac.in/",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://osmania.ac.in/jntu.ac.in/",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://jntu.ac.in/annauniv.ac.in/",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://annauniv.ac.in/",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://dypatil.edu/",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://vis.org.in/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "htmlFile": "D:\\MYPATH\\ALL_FILES\\Backend_School\\scraper_output\\scraped_html\\vis.org.in_.html"
+    },
+    {
+      "url": "https://ssb.nic.in/",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://dauniv.ac.in/",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://gjust.ac.in/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "htmlFile": "D:\\MYPATH\\ALL_FILES\\Backend_School\\scraper_output\\scraped_html\\gjust.ac.in_.html"
+    },
+    {
+      "url": "https://hpuniv.ac.in/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "htmlFile": "D:\\MYPATH\\ALL_FILES\\Backend_School\\scraper_output\\scraped_html\\hpuniv.ac.in_.html"
+    },
+    {
+      "url": "https://lpu.in/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "htmlFile": "D:\\MYPATH\\ALL_FILES\\Backend_School\\scraper_output\\scraped_html\\lpu.in_.html"
+    },
+    {
+      "url": "https://marwariuniversity.ac.in/",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://vit.ac.in/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "htmlFile": "D:\\MYPATH\\ALL_FILES\\Backend_School\\scraper_output\\scraped_html\\vit.ac.in_.html"
+    },
+    {
+      "url": "https://du.ac.in/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "htmlFile": "D:\\MYPATH\\ALL_FILES\\Backend_School\\scraper_output\\scraped_html\\du.ac.in_.html"
+    },
+    {
+      "url": "https://ipu.ac.in/",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://niran.ac.in/",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://mu.ac.in/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "htmlFile": "D:\\MYPATH\\ALL_FILES\\Backend_School\\scraper_output\\scraped_html\\mu.ac.in_.html"
+    },
+    {
+      "url": "https://djsce.ac.in/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "htmlFile": "D:\\MYPATH\\ALL_FILES\\Backend_School\\scraper_output\\scraped_html\\djsce.ac.in_.html"
+    },
+    {
+      "url": "https://vtu.ac.in/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "htmlFile": "D:\\MYPATH\\ALL_FILES\\Backend_School\\scraper_output\\scraped_html\\vtu.ac.in_.html"
+    },
+    {
+      "url": "https://bangaloreuniversity.ac.in/",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://osmania.ac.in/",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://jntu.ac.in/",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://annauniv.edu/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "htmlFile": "D:\\MYPATH\\ALL_FILES\\Backend_School\\scraper_output\\scraped_html\\annauniv.edu_.html"
+    },
+    {
+      "url": "https://coursera.org/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html",
+      "htmlFile": "D:\\MYPATH\\ALL_FILES\\Backend_School\\scraper_output\\scraped_html\\coursera.org_.html"
+    },
+    {
+      "url": "https://coursera.org/courses",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html",
+      "htmlFile": "D:\\MYPATH\\ALL_FILES\\Backend_School\\scraper_output\\scraped_html\\coursera.org_courses.html"
+    },
+    {
+      "url": "https://udemy.com/",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://udemy.com/uniraj.ac.in/",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://uniraj.ac.in/mdsuniversity.ac.in/",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://mdsuniversity.ac.in/gujuniversity.ac.in/",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://gujuniversity.ac.in/dduit.ac.in/",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://dduit.ac.in/caluniv.ac.in/",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://caluniv.ac.in/jadavpuruniversity.ac.in/",
+      "ok": true,
+      "status": 307,
+      "contentType": "text/html",
+      "htmlFile": "D:\\MYPATH\\ALL_FILES\\Backend_School\\scraper_output\\scraped_html\\caluniv.ac.in_jadavpuruniversity.ac.in_.html"
+    },
+    {
+      "url": "https://jadavpuruniversity.ac.in/lkouniversity.ac.in/",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://lkouniversity.ac.in/kanpuruniversity.org/",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://kanpuruniversity.org/",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://uniraj.ac.in/",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://uniraj.ac.in/uniraj.ac.in/",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://mdsuniversity.ac.in/gujuniversity.ac.in/gujuniversity.ac.in/",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://punjabiuniversity.ac.in/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "htmlFile": "D:\\MYPATH\\ALL_FILES\\Backend_School\\scraper_output\\scraped_html\\punjabiuniversity.ac.in_.html"
+    },
+    {
+      "url": "https://dduit.ac.in/",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://jadavpuruniversity.ac.in/uom.ac.in/",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://uom.ac.in/unipune.ac.in/",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://unipune.ac.in/bamu.ac.in/",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://bamu.ac.in/unishivaji.ac.in/",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://unishivaji.ac.in/unigoa.ac.in/",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://unigoa.ac.in/punjabiuuniversity.ac.in/",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://punjabiuuniversity.ac.in/cuchd.ac.in/",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://cuchd.ac.in/punjabiuniversity.ac.in/",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://punjabiuniversity.ac.in/hvdn.ac.in/",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://hvdn.ac.in/ggu.ac.in/",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://ggu.ac.in/ghsubharti.ac.in/",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://ghsubharti.ac.in/ignou.ac.in/",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://ignou.ac.in/",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://pu.ac.in/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "htmlFile": "D:\\MYPATH\\ALL_FILES\\Backend_School\\scraper_output\\scraped_html\\pu.ac.in_.html"
+    },
+    {
+      "url": "https://cuchd.in/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "htmlFile": "D:\\MYPATH\\ALL_FILES\\Backend_School\\scraper_output\\scraped_html\\cuchd.in_.html"
+    },
+    {
+      "url": "https://thapar.edu/",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://ptu.ac.in/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "htmlFile": "D:\\MYPATH\\ALL_FILES\\Backend_School\\scraper_output\\scraped_html\\ptu.ac.in_.html"
+    },
+    {
+      "url": "https://ggu.ac.in/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "htmlFile": "D:\\MYPATH\\ALL_FILES\\Backend_School\\scraper_output\\scraped_html\\ggu.ac.in_.html"
+    },
+    {
+      "url": "https://cup.edu.in/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "htmlFile": "D:\\MYPATH\\ALL_FILES\\Backend_School\\scraper_output\\scraped_html\\cup.edu.in_.html"
+    },
+    {
+      "url": "https://ggsnsd.ac.in/",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://ielts.org/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "htmlFile": "D:\\MYPATH\\ALL_FILES\\Backend_School\\scraper_output\\scraped_html\\ielts.org_.html"
+    },
+    {
+      "url": "https://ets.org/toefl",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html;charset=utf-8",
+      "htmlFile": "D:\\MYPATH\\ALL_FILES\\Backend_School\\scraper_output\\scraped_html\\ets.org_toefl.html"
+    },
+    {
+      "url": "https://cambridgeenglish.org/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "htmlFile": "D:\\MYPATH\\ALL_FILES\\Backend_School\\scraper_output\\scraped_html\\cambridgeenglish.org_.html"
+    },
+    {
+      "url": "https://ets.org/gre",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html;charset=utf-8",
+      "htmlFile": "D:\\MYPATH\\ALL_FILES\\Backend_School\\scraper_output\\scraped_html\\ets.org_gre.html"
+    },
+    {
+      "url": "https://mba.com/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "htmlFile": "D:\\MYPATH\\ALL_FILES\\Backend_School\\scraper_output\\scraped_html\\mba.com_.html"
+    },
+    {
+      "url": "https://mmu.ac.in/",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://mdu.ac.in/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html",
+      "htmlFile": "D:\\MYPATH\\ALL_FILES\\Backend_School\\scraper_output\\scraped_html\\mdu.ac.in_.html"
+    },
+    {
+      "url": "https://kuk.ac.in/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "htmlFile": "D:\\MYPATH\\ALL_FILES\\Backend_School\\scraper_output\\scraped_html\\kuk.ac.in_.html"
+    },
+    {
+      "url": "https://amu.ac.in/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "htmlFile": "D:\\MYPATH\\ALL_FILES\\Backend_School\\scraper_output\\scraped_html\\amu.ac.in_.html"
+    },
+    {
+      "url": "https://lkouniv.ac.in/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "htmlFile": "D:\\MYPATH\\ALL_FILES\\Backend_School\\scraper_output\\scraped_html\\lkouniv.ac.in_.html"
+    },
+    {
+      "url": "https://mdsu.ac.in/",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://gujaratuniversity.ac.in/",
+      "ok": true,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "htmlFile": "D:\\MYPATH\\ALL_FILES\\Backend_School\\scraper_output\\scraped_html\\gujaratuniversity.ac.in_.html"
+    },
+    {
+      "url": "https://dduat.ac.in/",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    },
+    {
+      "url": "https://caluniv.ac.in/",
+      "ok": true,
+      "status": 307,
+      "contentType": "text/html",
+      "htmlFile": "D:\\MYPATH\\ALL_FILES\\Backend_School\\scraper_output\\scraped_html\\caluniv.ac.in_.html"
+    },
+    {
+      "url": "https://jadavpuruniversity.edu.in/",
+      "ok": false,
+      "status": null,
+      "contentType": null
+    }
+  ],
+  "mapping": [
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 1,
+      "originalRow": [
+        "Engineering",
+        "JEE Main",
+        "11, 12, College",
+        "https://jeemain.nta.nic.in/",
+        "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2024/10/2024102841.pdf",
+        "https://jeemain.nta.nic.in//",
+        "National level engineering entrance"
+      ],
+      "extracted": [
+        "https://jeemain.nta.nic.in/",
+        "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2024/10/2024102841.pdf",
+        "https://jeemain.nta.nic.in//"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 2,
+      "originalRow": [
+        "Engineering",
+        "JEE Advanced",
+        "12, College",
+        "https://jeeadv.ac.in/",
+        "https://jeeadv.ac.in/",
+        "https://jeeadv.ac.in/",
+        "Top 2.5L JEE Main qualifiers only"
+      ],
+      "extracted": [
+        "https://jeeadv.ac.in/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 3,
+      "originalRow": [
+        "Engineering",
+        "NEET (UG)",
+        12,
+        "https://neet.nta.nic.in/",
+        "https://neet.nta.nic.in//",
+        "https://neet.nta.nic.in/",
+        "Medical entrance exam"
+      ],
+      "extracted": [
+        "https://neet.nta.nic.in/",
+        "https://neet.nta.nic.in//"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 4,
+      "originalRow": [
+        "Engineering",
+        "CUET (UG)",
+        "12, College",
+        "https://cuet.samarth.ac.in/",
+        "https://cuet.nta.nic.in/document-category/public-notice/",
+        "https://cuet.samarth.ac.in/",
+        "Central university entrance"
+      ],
+      "extracted": [
+        "https://cuet.samarth.ac.in/",
+        "https://cuet.nta.nic.in/document-category/public-notice/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 5,
+      "originalRow": [
+        "Engineering",
+        "BITSAT",
+        "College",
+        "https://bitsadmission.com/",
+        "https://bitsadmission.com/",
+        "https://bitsadmission.com/",
+        "BITS Pilani entrance"
+      ],
+      "extracted": [
+        "https://bitsadmission.com/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 6,
+      "originalRow": [
+        "Engineering",
+        "VITEEE",
+        "College",
+        "https://viteee.vit.ac.in/",
+        "https://viteee.vit.ac.in/",
+        "https://viteee.vit.ac.in/",
+        "VIT Engineering entrance"
+      ],
+      "extracted": [
+        "https://viteee.vit.ac.in/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 7,
+      "originalRow": [
+        "Engineering",
+        "SRMJEEE",
+        "College",
+        "https://applications.srmist.edu.in/btech",
+        "https://srmist.edu.in/admissions/",
+        "https://engineering.careers360.com/articles/srmjeee-2026",
+        "SRM Engineering entrance"
+      ],
+      "extracted": [
+        "https://applications.srmist.edu.in/btech",
+        "https://srmist.edu.in/admissions/",
+        "https://engineering.careers360.com/articles/srmjeee-2026"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 8,
+      "originalRow": [
+        "Medical",
+        "NEET PG",
+        "College",
+        "https://nbe.edu.in/",
+        "https://nbe.edu.in/information-bulletin",
+        "https://nbe.edu.in/",
+        "Postgraduate medical entrance"
+      ],
+      "extracted": [
+        "https://nbe.edu.in/",
+        "https://nbe.edu.in/information-bulletin"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 9,
+      "originalRow": [
+        "Medical",
+        "AIIMS INI CET",
+        "College",
+        "https://aiimsexams.ac.in/",
+        "https://aiimsexams.ac.in/",
+        "https://aiimsexams.ac.in/",
+        "AIIMS PG medical entrance"
+      ],
+      "extracted": [
+        "https://aiimsexams.ac.in/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 10,
+      "originalRow": [
+        "Medical",
+        "AP EAMCET",
+        "12, College",
+        "https://eamcet.tsche.ac.in/",
+        "https://eamcet.tsche.ac.in/",
+        "https://eamcet.tsche.ac.in/",
+        "Andhra Pradesh engineering/medical"
+      ],
+      "extracted": [
+        "https://eamcet.tsche.ac.in/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 11,
+      "originalRow": [
+        "Medical",
+        "TS EAMCET",
+        "12, College",
+        "https://eamcet.tsche.ac.in/",
+        "https://eamcet.tsche.ac.in/",
+        "https://eamcet.tsche.ac.in/",
+        "Telangana engineering/medical"
+      ],
+      "extracted": [
+        "https://eamcet.tsche.ac.in/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 12,
+      "originalRow": [
+        "Architecture",
+        "NATA",
+        "12, College",
+        "https://nata.in/",
+        "https://nata.in/",
+        "https://nata.in/",
+        "National Architecture entrance"
+      ],
+      "extracted": [
+        "https://nata.in/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 13,
+      "originalRow": [
+        "Architecture",
+        "JEE Main Paper 2",
+        12,
+        "https://jeemain.nta.nic.in/",
+        "https://jeemain.nta.nic.in/",
+        "https://jeemain.nta.nic.in/",
+        "B.Arch/B.Planning"
+      ],
+      "extracted": [
+        "https://jeemain.nta.nic.in/",
+        "https://B.Arch/B.Planning"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 14,
+      "originalRow": [
+        "Design & Fashion",
+        "NIFT",
+        "12, College",
+        "https://admissions.nift.ac.in/",
+        "https://admissions.nift.ac.in/",
+        "https://admissions.nift.ac.in/",
+        "Fashion design & textiles"
+      ],
+      "extracted": [
+        "https://admissions.nift.ac.in/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 15,
+      "originalRow": [
+        "Design & Fashion",
+        "NID DAT",
+        "12, College",
+        "https://nid.edu/",
+        "https://nid.edu/",
+        "https://nid.edu/",
+        "National Institute of Design"
+      ],
+      "extracted": [
+        "https://nid.edu/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 16,
+      "originalRow": [
+        "Design & Fashion",
+        "UCEED",
+        "12, College",
+        "https://uceed.iitb.ac.in/",
+        "https://uceed.iitb.ac.in/",
+        "https://ceed.iitb.ac.in/",
+        "https://fddiindia.com/pearlfashion.edu.in/",
+        "https://pearlfashion.edu.in/iiad.edu.in/",
+        "https://iiad.edu.in/codechef.com/contests",
+        "https://codechef.com/codeforces.com/contests",
+        "https://codeforces.com/bloghttps://hackerearth.com/challenges",
+        "https://hackerearth.com/kickstart.withgoogle.com/schedule",
+        "https://kickstart.withgoogle.com/atcoder.jp/contests",
+        "https://atcoder.jp/https://codingal.com/contests",
+        "https://codingal.com/codeavour.com/",
+        "https://codeavour.com/iimcat.ac.in/",
+        "https://iimcat.ac.in/xatonline.in/",
+        "https://xatonline.in/mat.aima.in/",
+        "https://mat.aima.in/snaptest.org/",
+        "https://snaptest.org/https://consortiumofnlus.ac.in/clat-2025/.html",
+        "https://consortiumofnlus.ac.in/nationallawuniversitydelhi.in/",
+        "https://nationallawuniversitydelhi.in/lsac.org/lsat",
+        "https://lsac.org/lsat/test-prephttps://icai.org/",
+        "https://icai.org/https://icai.org/",
+        "https://icai.org/https://icai.org/",
+        "https://in.emb-japan.go.jp/https://studyinkorea.go.kr/en/sub/gks/selectBoardArticle.dohttps://studyinkorea.go.kr/"
+      ],
+      "extracted": [
+        "https://uceed.iitb.ac.in/",
+        "https://ceed.iitb.ac.in/",
+        "https://fddiindia.com/pearlfashion.edu.in/",
+        "https://pearlfashion.edu.in/iiad.edu.in/",
+        "https://iiad.edu.in/codechef.com/contests",
+        "https://codechef.com/codeforces.com/contests",
+        "https://codeforces.com/blog",
+        "https://hackerearth.com/challenges",
+        "https://hackerearth.com/kickstart.withgoogle.com/schedule",
+        "https://kickstart.withgoogle.com/atcoder.jp/contests",
+        "https://atcoder.jp/",
+        "https://codingal.com/contests",
+        "https://codingal.com/codeavour.com/",
+        "https://codeavour.com/iimcat.ac.in/",
+        "https://iimcat.ac.in/xatonline.in/",
+        "https://xatonline.in/mat.aima.in/",
+        "https://mat.aima.in/snaptest.org/",
+        "https://snaptest.org/",
+        "https://consortiumofnlus.ac.in/clat-2025/.html",
+        "https://consortiumofnlus.ac.in/nationallawuniversitydelhi.in/",
+        "https://nationallawuniversitydelhi.in/lsac.org/lsat",
+        "https://lsac.org/lsat/test-prep",
+        "https://icai.org/",
+        "https://in.emb-japan.go.jp/",
+        "https://studyinkorea.go.kr/en/sub/gks/selectBoardArticle.do",
+        "https://studyinkorea.go.kr/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 17,
+      "originalRow": [
+        "Design & Fashion",
+        "CEED",
+        "College",
+        "https://ceed.iitb.ac.in/",
+        "https://ukheducation.in/",
+        "https://ukheducation.in/",
+        "Postgraduate design entrance",
+        "https://wbjee.nic.ac.in/mhtcet.org/",
+        "https://mhtcet.org/https://cetonline.karnataka.gov.in/",
+        "https://cetonline.karnataka.gov.in/eaadmission.com/",
+        "https://eaadmission.com/amucontrollerexams.com/",
+        "https://amucontrollerexams.com/bhu.ac.in/",
+        "https://bhu.ac.in/aicte-india.org/",
+        "https://aicte-india.org/https://cee.ac.in/",
+        "https://cee.ac.in/neet.nta.nic.in/",
+        "https://neet.nta.nic.in/mcc.nic.in/",
+        "https://mcc.nic.in/aiimsnursing.edu.in/",
+        "https://aiimsnursing.edu.in/jipmer.edu.in/",
+        "https://jipmer.edu.in/nsc.gov.in/",
+        "https://nsc.gov.in/nta.ac.in/",
+        "https://nta.ac.in/aicte-india.org/",
+        "https://aicte-india.org/https://consortiumofnlus.ac.in/consortiumofnlus.ac.in/"
+      ],
+      "extracted": [
+        "https://ceed.iitb.ac.in/",
+        "https://ukheducation.in/",
+        "https://wbjee.nic.ac.in/mhtcet.org/",
+        "https://mhtcet.org/",
+        "https://cetonline.karnataka.gov.in/",
+        "https://cetonline.karnataka.gov.in/eaadmission.com/",
+        "https://eaadmission.com/amucontrollerexams.com/",
+        "https://amucontrollerexams.com/bhu.ac.in/",
+        "https://bhu.ac.in/aicte-india.org/",
+        "https://aicte-india.org/",
+        "https://cee.ac.in/",
+        "https://cee.ac.in/neet.nta.nic.in/",
+        "https://neet.nta.nic.in/mcc.nic.in/",
+        "https://mcc.nic.in/aiimsnursing.edu.in/",
+        "https://aiimsnursing.edu.in/jipmer.edu.in/",
+        "https://jipmer.edu.in/nsc.gov.in/",
+        "https://nsc.gov.in/nta.ac.in/",
+        "https://nta.ac.in/aicte-india.org/",
+        "https://consortiumofnlus.ac.in/consortiumofnlus.ac.in/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 18,
+      "originalRow": [
+        "Design & Fashion",
+        "FDDI AIST",
+        "12, College",
+        "https://fddiindia.com/",
+        "https://allindiabarexamination.com/",
+        "https://allindiabarexamination.com/ctet.nic.in/",
+        "https://ctet.nic.in/aicte-india.org/",
+        "https://aicte-india.org/https://ugcnet.nta.ac.in/",
+        "https://ugcnet.nta.ac.in/icar.gov.in/",
+        "https://icar.gov.in/icar.org.in/",
+        "https://icar.org.in/"
+      ],
+      "extracted": [
+        "https://fddiindia.com/",
+        "https://allindiabarexamination.com/",
+        "https://allindiabarexamination.com/ctet.nic.in/",
+        "https://ctet.nic.in/aicte-india.org/",
+        "https://aicte-india.org/",
+        "https://ugcnet.nta.ac.in/",
+        "https://ugcnet.nta.ac.in/icar.gov.in/",
+        "https://icar.gov.in/icar.org.in/",
+        "https://icar.org.in/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 19,
+      "originalRow": [
+        "Design & Fashion",
+        "Pearl Academy",
+        "12, College",
+        "https://pearlfashion.edu.in/",
+        "https://pearlfashion.edu.in/",
+        "https://pearlfashion.edu.in/",
+        "Fashion & design entrance"
+      ],
+      "extracted": [
+        "https://pearlfashion.edu.in/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 20,
+      "originalRow": [
+        "Design & Fashion",
+        "IIAD",
+        "12, College",
+        "https://iiad.edu.in/",
+        "https://iiad.edu.in/",
+        "https://iiad.edu.in/",
+        "Indian Institute of Art & Design"
+      ],
+      "extracted": [
+        "https://iiad.edu.in/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 21,
+      "originalRow": [
+        "Coding & Tech",
+        "CodeChef",
+        "College",
+        "https://codechef.com/",
+        "https://codechef.com/",
+        "https://codechef.com/",
+        "Competitive programming platform"
+      ],
+      "extracted": [
+        "https://codechef.com/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 22,
+      "originalRow": [
+        "Coding & Tech",
+        "Codeforces",
+        "College",
+        "https://codeforces.com/",
+        "https://codeforces.com/",
+        "https://codeforces.com/",
+        "Programming contests"
+      ],
+      "extracted": [
+        "https://codeforces.com/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 23,
+      "originalRow": [
+        "Coding & Tech",
+        "HackerEarth",
+        "College",
+        "https://hackerearth.com/",
+        "https://hackerearth.com/",
+        "https://hackerearth.com/",
+        "Coding competitions & hiring"
+      ],
+      "extracted": [
+        "https://hackerearth.com/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 24,
+      "originalRow": [
+        "Coding & Tech",
+        "Google Kickstart",
+        "College",
+        "https://kickstart.withgoogle.com/",
+        "https://kickstart.withgoogle.com/",
+        "https://kickstart.withgoogle.com/",
+        "Google coding competition"
+      ],
+      "extracted": [
+        "https://kickstart.withgoogle.com/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 25,
+      "originalRow": [
+        "Coding & Tech",
+        "AtCoder",
+        "College",
+        "https://atcoder.jp/",
+        "https://atcoder.jp/",
+        "https://atcoder.jp/",
+        "Japanese programming contests"
+      ],
+      "extracted": [
+        "https://atcoder.jp/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 26,
+      "originalRow": [
+        "Coding & Tech",
+        "Codingal",
+        45881,
+        "https://codingal.com/",
+        "https://codingal.com/",
+        "https://codingal.com/",
+        "Kids coding competitions"
+      ],
+      "extracted": [
+        "https://codingal.com/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 27,
+      "originalRow": [
+        "Coding & Tech",
+        "Codeavour",
+        45881,
+        "https://codeavour.com/",
+        "https://codeavour.com/",
+        "https://codeavour.com/",
+        "AI & coding for kids"
+      ],
+      "extracted": [
+        "https://codeavour.com/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 28,
+      "originalRow": [
+        "Management",
+        "CAT",
+        "College",
+        "https://iimcat.ac.in/",
+        "https://iimcat.ac.in/",
+        "https://iimcat.ac.in/",
+        "IIM entrance exam"
+      ],
+      "extracted": [
+        "https://iimcat.ac.in/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 29,
+      "originalRow": [
+        "Management",
+        "XAT",
+        "College",
+        "https://xatonline.in/registration",
+        "https://xatonline.in/",
+        "https://xatonline.in/",
+        "Management entrance"
+      ],
+      "extracted": [
+        "https://xatonline.in/registration",
+        "https://xatonline.in/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 30,
+      "originalRow": [
+        "Management",
+        "MAT",
+        "College",
+        "https://mat.aima.in/",
+        "https://mat.aima.in/",
+        "https://mat.aima.in/",
+        "Management aptitude test"
+      ],
+      "extracted": [
+        "https://mat.aima.in/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 31,
+      "originalRow": [
+        "Management",
+        "SNAP",
+        "College",
+        "https://snaptest.org/",
+        "https://snaptest.org/",
+        "https://snaptest.org/",
+        "Symbiosis MBA entrance"
+      ],
+      "extracted": [
+        "https://snaptest.org/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 32,
+      "originalRow": [
+        "Law",
+        "CLAT",
+        "College",
+        "https://consortiumofnlus.ac.in/",
+        "https://consortiumofnlus.ac.in/clat-2025/.html",
+        "https://consortiumofnlus.ac.in/",
+        "National law entrance"
+      ],
+      "extracted": [
+        "https://consortiumofnlus.ac.in/",
+        "https://consortiumofnlus.ac.in/clat-2025/.html"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 33,
+      "originalRow": [
+        "Law",
+        "AILET",
+        "College",
+        "https://nationallawuniversitydelhi.in/register.html",
+        "https://nationallawuniversitydelhi.in/",
+        "https://nationallawuniversitydelhi.in/",
+        "Delhi law university entrance"
+      ],
+      "extracted": [
+        "https://nationallawuniversitydelhi.in/register.html",
+        "https://nationallawuniversitydelhi.in/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 34,
+      "originalRow": [
+        "Law",
+        "LSAT",
+        "College",
+        "https://lsac.org/lsat/register-lsat",
+        "https://lsac.org/lsat/test-prep",
+        "https://lsac.org/lsat",
+        "International law exam"
+      ],
+      "extracted": [
+        "https://lsac.org/lsat/register-lsat",
+        "https://lsac.org/lsat/test-prep",
+        "https://lsac.org/lsat"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 35,
+      "originalRow": [
+        "Commerce & CA",
+        "CA Foundation",
+        "College",
+        "https://icai.org/",
+        "https://icai.org/",
+        "https://icai.org/",
+        "Chartered accountant qualification"
+      ],
+      "extracted": [
+        "https://icai.org/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 36,
+      "originalRow": [
+        "Commerce & CA",
+        "CA Intermediate",
+        "College",
+        "https://icai.org/",
+        "https://icai.org/",
+        "https://icai.org/",
+        "CA intermediate level"
+      ],
+      "extracted": [
+        "https://icai.org/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 37,
+      "originalRow": [
+        "Commerce & CA",
+        "CA Final",
+        "College",
+        "https://icai.org/",
+        "https://icai.org/",
+        "https://icai.org/",
+        "CA final qualification"
+      ],
+      "extracted": [
+        "https://icai.org/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 38,
+      "originalRow": [
+        "Commerce & CA",
+        "CS (Company Secretary)",
+        "College",
+        "https://icsi.edu/",
+        "https://icsi.edu/",
+        "https://icsi.edu/",
+        "Company secretary qualification"
+      ],
+      "extracted": [
+        "https://icsi.edu/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 39,
+      "originalRow": [
+        "Commerce & CA",
+        "CMA (Cost Management)",
+        "College",
+        "https://icmai.in/",
+        "https://icmai.in/",
+        "https://icmai.in/",
+        "Cost management accountant"
+      ],
+      "extracted": [
+        "https://icmai.in/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 40,
+      "originalRow": [
+        "Defence & Services",
+        "NDA (UPSC)",
+        "12, College",
+        "https://upsconline.nic.in/exam-apply/",
+        "https://upsc.gov.in/",
+        "https://upsc.gov.in/",
+        "National Defence Academy"
+      ],
+      "extracted": [
+        "https://upsconline.nic.in/exam-apply/",
+        "https://upsc.gov.in/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 41,
+      "originalRow": [
+        "Defence & Services",
+        "CDS (UPSC)",
+        "College",
+        "https://upsconline.nic.in/exam-apply/",
+        "https://upsc.gov.in/",
+        "https://upsc.gov.in/",
+        "Combined Defence Services"
+      ],
+      "extracted": [
+        "https://upsconline.nic.in/exam-apply/",
+        "https://upsc.gov.in/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 42,
+      "originalRow": [
+        "Defence & Services",
+        "AFCAT",
+        "College",
+        "https://afcat.cdac.in/",
+        "https://afcat.cdac.in/",
+        "https://afcat.cdac.in/",
+        "Air Force officer selection"
+      ],
+      "extracted": [
+        "https://afcat.cdac.in/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 43,
+      "originalRow": [
+        "Defence & Services",
+        "INET",
+        "College",
+        "https://indiannavy.gov.in/",
+        "https://indiannavy.gov.in/",
+        "https://indiannavy.gov.in/",
+        "Indian Navy entrance"
+      ],
+      "extracted": [
+        "https://indiannavy.gov.in/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 44,
+      "originalRow": [
+        "Olympiads",
+        "SOF Olympiads",
+        45881,
+        "https://sofworld.org/",
+        "https://sofworld.org/-exam-pattern",
+        "https://sofworld.org/",
+        "NSO, IMO, IEO, IGKO"
+      ],
+      "extracted": [
+        "https://sofworld.org/",
+        "https://sofworld.org/-exam-pattern"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 45,
+      "originalRow": [
+        "Olympiads",
+        "SilverZone Olympiads",
+        45881,
+        "https://silverzone.org/",
+        "https://silverzone.org/olympiad-syllabus-books.html",
+        "https://silverzone.org/",
+        "IOS, IOM, etc."
+      ],
+      "extracted": [
+        "https://silverzone.org/",
+        "https://silverzone.org/olympiad-syllabus-books.html"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 46,
+      "originalRow": [
+        "Olympiads",
+        "NSE (Sci, P, C, B)",
+        45912,
+        "https://iapt.org.in/",
+        "https://iapt.org.in/nsep-nsec-nsea-nseb-nsejs.html",
+        "https://iapt.org.in/",
+        "National science olympiad"
+      ],
+      "extracted": [
+        "https://iapt.org.in/",
+        "https://iapt.org.in/nsep-nsec-nsea-nseb-nsejs.html"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 47,
+      "originalRow": [
+        "Olympiads",
+        "IOQM (Maths Olympiad)",
+        45881,
+        "https://mtai.org.in/ioqm",
+        "https://mtai.org.in/ioqm-syllabus",
+        "https://mtai.org.in/ioqm",
+        "Maths olympiad (INMO)"
+      ],
+      "extracted": [
+        "https://mtai.org.in/ioqm",
+        "https://mtai.org.in/ioqm-syllabus"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 48,
+      "originalRow": [
+        "Olympiads",
+        "NSTSE",
+        45881,
+        "https://unifiedcouncil.com/options.html",
+        "https://unifiedcouncil.com/documents//NSTSE-Syllabus.pdf",
+        "https://unifiedcouncil.com/",
+        "National science talent search"
+      ],
+      "extracted": [
+        "https://unifiedcouncil.com/options.html",
+        "https://unifiedcouncil.com/documents//NSTSE-Syllabus.pdf",
+        "https://unifiedcouncil.com/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 49,
+      "originalRow": [
+        "International",
+        "IB Diploma",
+        45912,
+        "https://ibo.org/programmes/",
+        "https://ibo.org/programmes/",
+        "https://ibo.org/",
+        "International Baccalaureate"
+      ],
+      "extracted": [
+        "https://ibo.org/programmes/",
+        "https://ibo.org/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 50,
+      "originalRow": [
+        "International",
+        "Cambridge A-Levels",
+        45912,
+        "https://cambridgeinternational.org/",
+        "https://cambridgeinternational.org/programmes-and-qualifications/",
+        "https://cambridgeinternational.org/",
+        "Cambridge qualifications"
+      ],
+      "extracted": [
+        "https://cambridgeinternational.org/",
+        "https://cambridgeinternational.org/programmes-and-qualifications/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 51,
+      "originalRow": [
+        "International",
+        "SAT",
+        45942,
+        "https://collegeboard.org/sat",
+        "https://collegeboard.org/sat",
+        "https://collegeboard.org/",
+        "US university entrance"
+      ],
+      "extracted": [
+        "https://collegeboard.org/sat",
+        "https://collegeboard.org/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 52,
+      "originalRow": [
+        "International",
+        "ACT",
+        45942,
+        "https://act.org/",
+        "https://act.org/",
+        "https://act.org/",
+        "US college entrance test"
+      ],
+      "extracted": [
+        "https://act.org/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 53,
+      "originalRow": [
+        "Government Jobs",
+        "UPSC CSE",
+        "College",
+        "https://upsconline.nic.in/exam-apply/",
+        "https://upsc.gov.in/",
+        "https://upsc.gov.in/",
+        "IAS/IFS/IPS exams"
+      ],
+      "extracted": [
+        "https://upsconline.nic.in/exam-apply/",
+        "https://upsc.gov.in/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 54,
+      "originalRow": [
+        "Government Jobs",
+        "SSC CGL",
+        "College",
+        "https://ssc.gov.in/",
+        "https://ssc.gov.in/",
+        "https://ssc.gov.in/",
+        "Staff selection commission"
+      ],
+      "extracted": [
+        "https://ssc.gov.in/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 55,
+      "originalRow": [
+        "Government Jobs",
+        "SSC CHSL",
+        "College",
+        "https://ssc.gov.in/",
+        "https://ssc.gov.in/",
+        "https://ssc.gov.in/",
+        "SSC combined higher secondary"
+      ],
+      "extracted": [
+        "https://ssc.gov.in/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 56,
+      "originalRow": [
+        "Government Jobs",
+        "RRB NTPC",
+        "College",
+        "https://rrbonlinereg.co.in/",
+        "https://rrbonlinereg.co.in/",
+        "https://rrbonlinereg.co.in/",
+        "Railway non-technical posts"
+      ],
+      "extracted": [
+        "https://rrbonlinereg.co.in/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 57,
+      "originalRow": [
+        "Government Jobs",
+        "Bank PO (IBPS)",
+        "College",
+        "https://ibps.in/",
+        "https://ibps.in/",
+        "https://ibps.in/",
+        "Bank PO recruitment"
+      ],
+      "extracted": [
+        "https://ibps.in/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 58,
+      "originalRow": [
+        "Scholarships",
+        "NSP (National)",
+        "8-College",
+        "https://scholarships.gov.in/",
+        "https://scholarships.gov.in/",
+        "https://scholarships.gov.in/",
+        "Central & state scholarships"
+      ],
+      "extracted": [
+        "https://scholarships.gov.in/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 59,
+      "originalRow": [
+        "Scholarships",
+        "Chevening",
+        "College",
+        "https://chevening.org/scholarship/india/",
+        "https://chevening.org/scholarships/guidance/",
+        "https://chevening.org/",
+        "UK scholarship"
+      ],
+      "extracted": [
+        "https://chevening.org/scholarship/india/",
+        "https://chevening.org/scholarships/guidance/",
+        "https://chevening.org/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 60,
+      "originalRow": [
+        "Scholarships",
+        "Fulbright-Nehru",
+        "College",
+        "https://usief.org.in/",
+        "https://usief.org.in/Fellowships/",
+        "https://usief.org.in/",
+        "US scholarship"
+      ],
+      "extracted": [
+        "https://usief.org.in/",
+        "https://usief.org.in/Fellowships/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 61,
+      "originalRow": [
+        "Scholarships",
+        "Rhodes Scholarship",
+        "College",
+        "https://rhodeshouse.ox.ac.uk/",
+        "https://rhodeshouse.ox.ac.uk/",
+        "https://rhodeshouse.ox.ac.uk/",
+        "Oxford scholarship"
+      ],
+      "extracted": [
+        "https://rhodeshouse.ox.ac.uk/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 62,
+      "originalRow": [
+        "Scholarships",
+        "DAAD",
+        "College",
+        "https://daad.de/en/study-research-in-germany/scholarships/",
+        "https://daad.de/en/study-research-in-germany/scholarships/",
+        "https://daad.de/",
+        "Germany scholarship"
+      ],
+      "extracted": [
+        "https://daad.de/en/study-research-in-germany/scholarships/",
+        "https://daad.de/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 63,
+      "originalRow": [
+        "Scholarships",
+        "MEXT",
+        "College",
+        "https://in.emb-japan.go.jp/education/japanese_government_scholarships.html",
+        "https://in.emb-japan.go.jp/education/japanese_government_scholarships.html",
+        "https://in.emb-japan.go.jp/",
+        "Japan scholarship"
+      ],
+      "extracted": [
+        "https://in.emb-japan.go.jp/education/japanese_government_scholarships.html",
+        "https://in.emb-japan.go.jp/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 64,
+      "originalRow": [
+        "Scholarships",
+        "GKS",
+        "College",
+        "https://studyinkorea.go.kr/",
+        "https://studyinkorea.go.kr/en/sub/gks/selectBoardArticle.do",
+        "https://studyinkorea.go.kr/",
+        "South Korea scholarship"
+      ],
+      "extracted": [
+        "https://studyinkorea.go.kr/",
+        "https://studyinkorea.go.kr/en/sub/gks/selectBoardArticle.do"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 66,
+      "originalRow": [
+        "State Level Exams",
+        "UGCET (Uttarakhand)",
+        12,
+        "https://ukheducation.in/",
+        "https://ukheducation.in/",
+        "https://ukheducation.in/",
+        "Uttarakhand engineering entrance"
+      ],
+      "extracted": [
+        "https://ukheducation.in/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 67,
+      "originalRow": [
+        "State Level Exams",
+        "OJEE (Odisha)",
+        12,
+        "https://ojee.nic.in/",
+        "https://ojee.nic.in/",
+        "https://ojee.nic.in/",
+        "Odisha engineering entrance"
+      ],
+      "extracted": [
+        "https://ojee.nic.in/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 68,
+      "originalRow": [
+        "State Level Exams",
+        "WBJEE (West Bengal)",
+        12,
+        "https://wbjee.nic.ac.in/",
+        "https://wbjee.nic.ac.in/",
+        "https://wbjee.nic.ac.in/",
+        "West Bengal engineering entrance"
+      ],
+      "extracted": [
+        "https://wbjee.nic.ac.in/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 69,
+      "originalRow": [
+        "State Level Exams",
+        "MHT CET (Maharashtra)",
+        12,
+        "https://mhtcet.org/",
+        "https://mhtcet.org/",
+        "https://mhtcet.org/",
+        "Maharashtra engineering entrance"
+      ],
+      "extracted": [
+        "https://mhtcet.org/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 70,
+      "originalRow": [
+        "State Level Exams",
+        "KCET (Karnataka)",
+        12,
+        "https://cetonline.karnataka.gov.in/",
+        "https://cetonline.karnataka.gov.in/",
+        "https://cetonline.karnataka.gov.in/",
+        "Karnataka engineering entrance"
+      ],
+      "extracted": [
+        "https://cetonline.karnataka.gov.in/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 71,
+      "originalRow": [
+        "State Level Exams",
+        "GJCET (Gujarat)",
+        12,
+        "https://eaadmission.com/",
+        "https://eaadmission.com/",
+        "https://eaadmission.com/",
+        "Gujarat engineering entrance"
+      ],
+      "extracted": [
+        "https://eaadmission.com/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 72,
+      "originalRow": [
+        "State Level Exams",
+        "AMU Engineering (Aligarh)",
+        "College",
+        "https://amucontrollerexams.com/",
+        "https://amucontrollerexams.com/",
+        "https://amucontrollerexams.com/",
+        "Aligarh Muslim University engineering"
+      ],
+      "extracted": [
+        "https://amucontrollerexams.com/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 73,
+      "originalRow": [
+        "State Level Exams",
+        "BHU UET (Varanasi)",
+        12,
+        "https://bhu.ac.in/",
+        "https://bhu.ac.in/",
+        "https://bhu.ac.in/",
+        "Banaras Hindu University entrance"
+      ],
+      "extracted": [
+        "https://bhu.ac.in/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 74,
+      "originalRow": [
+        "State Level Exams",
+        "Punjab Polytechnic",
+        10,
+        "https://aicte-india.org/",
+        "https://aicte-india.org/",
+        "https://aicte-india.org/",
+        "Punjab polytechnic entrance"
+      ],
+      "extracted": [
+        "https://aicte-india.org/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 75,
+      "originalRow": [
+        "State Level Exams",
+        "Chennai Engineering (CEE)",
+        12,
+        "https://cee.ac.in/",
+        "https://cee.ac.in/",
+        "https://cee.ac.in/",
+        "Chennai engineering entrance"
+      ],
+      "extracted": [
+        "https://cee.ac.in/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 76,
+      "originalRow": [
+        "Medical State Exams",
+        "Govt Medical Colleges (State Counselling)",
+        12,
+        "https://neet.nta.nic.in/",
+        "https://neet.nta.nic.in/",
+        "https://neet.nta.nic.in/",
+        "State quota medical seat counselling"
+      ],
+      "extracted": [
+        "https://neet.nta.nic.in/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 77,
+      "originalRow": [
+        "Medical State Exams",
+        "Indian Medical Council Exams",
+        "College",
+        "https://mcc.nic.in/",
+        "https://mcc.nic.in/",
+        "https://mcc.nic.in/",
+        "Medical Counselling Committee NEET"
+      ],
+      "extracted": [
+        "https://mcc.nic.in/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 78,
+      "originalRow": [
+        "Nursing Exams",
+        "AIIMS Nursing",
+        12,
+        "https://aiimsnursing.edu.in/",
+        "https://aiimsnursing.edu.in/",
+        "https://aiimsnursing.edu.in/",
+        "AIIMS nursing entrance"
+      ],
+      "extracted": [
+        "https://aiimsnursing.edu.in/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 79,
+      "originalRow": [
+        "Nursing Exams",
+        "JIPMER Nursing",
+        12,
+        "https://jipmer.edu.in/",
+        "https://jipmer.edu.in/",
+        "https://jipmer.edu.in/",
+        "JIPMER nursing entrance"
+      ],
+      "extracted": [
+        "https://jipmer.edu.in/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 80,
+      "originalRow": [
+        "Nursing Exams",
+        "State Nursing Counsels (SNE)",
+        12,
+        "https://nsc.gov.in/",
+        "https://nsc.gov.in/",
+        "https://nsc.gov.in/",
+        "State nursing entrance exams"
+      ],
+      "extracted": [
+        "https://nsc.gov.in/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 81,
+      "originalRow": [
+        "Pharmacy Exams",
+        "GPAT (Pharmacy)",
+        "College",
+        "https://nta.ac.in/",
+        "https://nta.ac.in/",
+        "https://nta.ac.in/",
+        "Graduate Pharmacy Aptitude Test"
+      ],
+      "extracted": [
+        "https://nta.ac.in/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 82,
+      "originalRow": [
+        "Pharmacy Exams",
+        "State Pharmacy Entrance",
+        12,
+        "https://aicte-india.org/",
+        "https://aicte-india.org/",
+        "https://aicte-india.org/",
+        "State pharmacy college entrance"
+      ],
+      "extracted": [
+        "https://aicte-india.org/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 83,
+      "originalRow": [
+        "Legal Services",
+        "CLAT PG",
+        "College",
+        "https://consortiumofnlus.ac.in/",
+        "https://consortiumofnlus.ac.in/clat-2025/.html",
+        "https://consortiumofnlus.ac.in/",
+        "Common Law Admission Test PG"
+      ],
+      "extracted": [
+        "https://consortiumofnlus.ac.in/",
+        "https://consortiumofnlus.ac.in/clat-2025/.html"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 84,
+      "originalRow": [
+        "Legal Services",
+        "State Bar Exams (AIBE)",
+        "College",
+        "https://allindiabarexamination.com/",
+        "https://allindiabarexamination.com/",
+        "https://allindiabarexamination.com/",
+        "All India Bar Examination"
+      ],
+      "extracted": [
+        "https://allindiabarexamination.com/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 85,
+      "originalRow": [
+        "Teaching Exams",
+        "CTET (Central Teacher)",
+        "12, Grad",
+        "https://ctet.nic.in/",
+        "https://ctet.nic.in/",
+        "https://ctet.nic.in/",
+        "Central Teacher Eligibility Test"
+      ],
+      "extracted": [
+        "https://ctet.nic.in/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 86,
+      "originalRow": [
+        "Teaching Exams",
+        "STET (State Teacher)",
+        "12, Grad",
+        "https://aicte-india.org/",
+        "https://aicte-india.org/",
+        "https://aicte-india.org/",
+        "State Teacher Eligibility Test"
+      ],
+      "extracted": [
+        "https://aicte-india.org/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 87,
+      "originalRow": [
+        "Teaching Exams",
+        "UGC NET",
+        "College",
+        "https://ugcnet.nta.ac.in/",
+        "https://ugcnet.nta.ac.in/",
+        "https://ugcnet.nta.ac.in/",
+        "National Eligibility Test"
+      ],
+      "extracted": [
+        "https://ugcnet.nta.ac.in/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 88,
+      "originalRow": [
+        "Veterinary Exams",
+        "AVET (Animal Veterinary)",
+        12,
+        "https://icar.gov.in/",
+        "https://icar.gov.in/",
+        "https://icar.gov.in/",
+        "All India Veterinary Entrance Test"
+      ],
+      "extracted": [
+        "https://icar.gov.in/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 89,
+      "originalRow": [
+        "Veterinary Exams",
+        "State Veterinary (BVSc)",
+        12,
+        "https://icar.org.in/",
+        "https://icar.org.in/",
+        "https://icar.org.in/",
+        "Bachelor of Veterinary Science"
+      ],
+      "extracted": [
+        "https://icar.org.in/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 90,
+      "originalRow": [
+        "Hotel Management",
+        "IHM NCHM JEE",
+        12,
+        "https://nta.ac.in/",
+        "https://nta.ac.in/",
+        "https://nta.ac.in/",
+        "Indian Institute of Hotel Management"
+      ],
+      "extracted": [
+        "https://nta.ac.in/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 91,
+      "originalRow": [
+        "Agriculture",
+        "AICET (Agriculture)",
+        12,
+        "https://icar.gov.in/",
+        "https://icar.gov.in/",
+        "https://icar.gov.in/",
+        "All India Common Entrance Test Agriculture"
+      ],
+      "extracted": [
+        "https://icar.gov.in/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 92,
+      "originalRow": [
+        "Agriculture",
+        "State Agriculture Entrance",
+        12,
+        "https://aicte-india.org/",
+        "https://aicte-india.org/",
+        "https://aicte-india.org/",
+        "State agriculture college entrance"
+      ],
+      "extracted": [
+        "https://aicte-india.org/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 93,
+      "originalRow": [
+        "Aviator & Pilot",
+        "INDiGO/Air India/SpiceJet",
+        "College",
+        "https://indiaaviationonline.com/",
+        "https://indiaaviationonline.com/",
+        "https://indiaaviationonline.com/",
+        "Commercial pilot license exams"
+      ],
+      "extracted": [
+        "https://indiaaviationonline.com/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 94,
+      "originalRow": [
+        "Aviator & Pilot",
+        "DGCA Exams (Flying)",
+        "College",
+        "https://dgca.gov.in/",
+        "https://dgca.gov.in/",
+        "https://dgca.gov.in/",
+        "Directorate General of Civil Aviation"
+      ],
+      "extracted": [
+        "https://dgca.gov.in/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 95,
+      "originalRow": [
+        "Animation & VFX",
+        "IIMK VFX Entrance",
+        "12, College",
+        "https://iimk.edu.in/",
+        "https://iimk.edu.in/",
+        "https://iimk.edu.in/",
+        "Indian Institute of Media & Knowledge"
+      ],
+      "extracted": [
+        "https://iimk.edu.in/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 96,
+      "originalRow": [
+        "Animation & VFX",
+        "Jamia Animation",
+        "12, College",
+        "https://jamia.ac.in/",
+        "https://jamia.ac.in/",
+        "https://jamia.ac.in/",
+        "Jamia Millia Islamia animation entrance"
+      ],
+      "extracted": [
+        "https://jamia.ac.in/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 97,
+      "originalRow": [
+        "Media & Communication",
+        "DM (Delhi School Media)",
+        "12, College",
+        "https://dsm.ac.in/",
+        "https://dsm.ac.in/",
+        "https://dsm.ac.in/",
+        "Delhi School of Media"
+      ],
+      "extracted": [
+        "https://dsm.ac.in/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 98,
+      "originalRow": [
+        "Media & Communication",
+        "JNU Entrance (Media)",
+        "College",
+        "https://jnu.ac.in/",
+        "https://jnu.ac.in/",
+        "https://jnu.ac.in/",
+        "Jawaharlal Nehru University media"
+      ],
+      "extracted": [
+        "https://jnu.ac.in/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 99,
+      "originalRow": [
+        "Media & Communication",
+        "Christ University (Media)",
+        "12, College",
+        "https://christuniversity.in/",
+        "https://christuniversity.in/",
+        "https://christuniversity.in/",
+        "Christ University entrance"
+      ],
+      "extracted": [
+        "https://christuniversity.in/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 100,
+      "originalRow": [
+        "Arts & Humanities",
+        "CUET (Humanities)",
+        12,
+        "https://cuet.samarth.ac.in/",
+        "https://cuet.nta.nic.in/jnu.ac.in/",
+        "https://jnu.ac.in/dvsc.ac.in/",
+        "https://dvsc.ac.in/vis.ac.in/",
+        "https://vis.ac.in/ssc.nic.in/",
+        "https://ssc.nic.in/"
+      ],
+      "extracted": [
+        "https://cuet.samarth.ac.in/",
+        "https://cuet.nta.nic.in/jnu.ac.in/",
+        "https://jnu.ac.in/dvsc.ac.in/",
+        "https://dvsc.ac.in/vis.ac.in/",
+        "https://vis.ac.in/ssc.nic.in/",
+        "https://ssc.nic.in/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 101,
+      "originalRow": [
+        "Arts & Humanities",
+        "JNU Entrance (Humanities)",
+        "College",
+        "https://jnu.ac.in/",
+        "https://amity.edu/",
+        "https://amity.edu/https://symbiosis.ac.in/",
+        "https://symbiosis.ac.in/dauniversity.ac.in/",
+        "https://dauniversity.ac.in/gjus.ac.in/",
+        "https://gjus.ac.in/hptu.ac.in/",
+        "https://hptu.ac.in/lpu.in/",
+        "https://lpu.in/mvu.edu.in/",
+        "https://mvu.edu.in/manipal.edu/",
+        "https://manipal.edu/https://christuniversity.in/",
+        "https://christuniversity.in/vit.ac.in/",
+        "https://vit.ac.in/du.ac.in/",
+        "https://du.ac.in/ipu.ac.in/",
+        "https://ipu.ac.in/niraninstitute.ac.in/",
+        "https://niraninstitute.ac.in/mu.ac.in/",
+        "https://mu.ac.in/djsce.ac.in/",
+        "https://djsce.ac.in/vtu.ac.in/",
+        "https://vtu.ac.in/bangaloreuniversity.ac.in/",
+        "https://bangaloreuniversity.ac.in/osmania.ac.in/",
+        "https://osmania.ac.in/jntu.ac.in/",
+        "https://jntu.ac.in/annauniv.ac.in/",
+        "https://annauniv.ac.in/"
+      ],
+      "extracted": [
+        "https://jnu.ac.in/",
+        "https://amity.edu/",
+        "https://symbiosis.ac.in/",
+        "https://symbiosis.ac.in/dauniversity.ac.in/",
+        "https://dauniversity.ac.in/gjus.ac.in/",
+        "https://gjus.ac.in/hptu.ac.in/",
+        "https://hptu.ac.in/lpu.in/",
+        "https://lpu.in/mvu.edu.in/",
+        "https://mvu.edu.in/manipal.edu/",
+        "https://manipal.edu/",
+        "https://christuniversity.in/",
+        "https://christuniversity.in/vit.ac.in/",
+        "https://vit.ac.in/du.ac.in/",
+        "https://du.ac.in/ipu.ac.in/",
+        "https://ipu.ac.in/niraninstitute.ac.in/",
+        "https://niraninstitute.ac.in/mu.ac.in/",
+        "https://mu.ac.in/djsce.ac.in/",
+        "https://djsce.ac.in/vtu.ac.in/",
+        "https://vtu.ac.in/bangaloreuniversity.ac.in/",
+        "https://bangaloreuniversity.ac.in/osmania.ac.in/",
+        "https://osmania.ac.in/jntu.ac.in/",
+        "https://jntu.ac.in/annauniv.ac.in/",
+        "https://annauniv.ac.in/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 102,
+      "originalRow": [
+        "Sports & Physical Education",
+        "DY Patil Sports",
+        12,
+        "https://dypatil.edu/",
+        "https://dypatil.edu/",
+        "https://dypatil.edu/",
+        "DY Patil sports entrance"
+      ],
+      "extracted": [
+        "https://dypatil.edu/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 103,
+      "originalRow": [
+        "Sports & Physical Education",
+        "Govt Institute of Sports",
+        12,
+        "https://vis.org.in/",
+        "https://vis.org.in/",
+        "https://vis.org.in/",
+        "Vidyasankar Institute of Sports"
+      ],
+      "extracted": [
+        "https://vis.org.in/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 104,
+      "originalRow": [
+        "Police & Security",
+        "SSB Interviews (Defence)",
+        "College",
+        "https://ssb.nic.in/",
+        "https://ssb.nic.in/",
+        "https://ssb.nic.in/",
+        "Services Selection Board interviews"
+      ],
+      "extracted": [
+        "https://ssb.nic.in/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 106,
+      "originalRow": [
+        "Private & University Entrance",
+        "Amity University Entrance",
+        "College",
+        "https://amity.edu/",
+        "https://amity.edu/",
+        "https://amity.edu/",
+        "Amity University entrance exam"
+      ],
+      "extracted": [
+        "https://amity.edu/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 107,
+      "originalRow": [
+        "Private & University Entrance",
+        "Symbiosis Entrance (SSET)",
+        "College",
+        "https://symbiosis.ac.in/",
+        "https://symbiosis.ac.in/",
+        "https://symbiosis.ac.in/",
+        "Symbiosis engineering/management"
+      ],
+      "extracted": [
+        "https://symbiosis.ac.in/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 108,
+      "originalRow": [
+        "Private & University Entrance",
+        "Davv Entrance (Devi Ahilya)",
+        "College",
+        "https://dauniv.ac.in/",
+        "https://dauniv.ac.in/",
+        "https://dauniv.ac.in/",
+        "Devi Ahilya Vishwavidyalaya entrance"
+      ],
+      "extracted": [
+        "https://dauniv.ac.in/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 109,
+      "originalRow": [
+        "Private & University Entrance",
+        "GJU Entrance (Guru Jambheshwar)",
+        "12, College",
+        "https://gjust.ac.in/",
+        "https://gjust.ac.in/",
+        "https://gjust.ac.in/",
+        "Guru Jambheshwar University entrance"
+      ],
+      "extracted": [
+        "https://gjust.ac.in/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 110,
+      "originalRow": [
+        "Private & University Entrance",
+        "HPU Entrance (Himachal Pradesh)",
+        "12, College",
+        "https://hpuniv.ac.in/",
+        "https://hpuniv.ac.in/",
+        "https://hpuniv.ac.in/",
+        "Himachal Pradesh University entrance"
+      ],
+      "extracted": [
+        "https://hpuniv.ac.in/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 111,
+      "originalRow": [
+        "Private & University Entrance",
+        "LPU Entrance (Lovely Professional)",
+        "12, College",
+        "https://lpu.in/",
+        "https://lpu.in/",
+        "https://lpu.in/",
+        "Lovely Professional University entrance"
+      ],
+      "extracted": [
+        "https://lpu.in/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 112,
+      "originalRow": [
+        "Private & University Entrance",
+        "MVU Entrance (Marwari University)",
+        "12, College",
+        "https://marwariuniversity.ac.in/",
+        "https://marwariuniversity.ac.in/",
+        "https://marwariuniversity.ac.in/",
+        "Marwari University entrance"
+      ],
+      "extracted": [
+        "https://marwariuniversity.ac.in/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 113,
+      "originalRow": [
+        "Private & University Entrance",
+        "Manipal University Entrance",
+        "12, College",
+        "https://manipal.edu/",
+        "https://manipal.edu/",
+        "https://manipal.edu/",
+        "Manipal University entrance"
+      ],
+      "extracted": [
+        "https://manipal.edu/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 114,
+      "originalRow": [
+        "Private & University Entrance",
+        "Christ University Entrance",
+        "12, College",
+        "https://christuniversity.in/",
+        "https://christuniversity.in/",
+        "https://christuniversity.in/",
+        "Christ University entrance"
+      ],
+      "extracted": [
+        "https://christuniversity.in/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 115,
+      "originalRow": [
+        "Private & University Entrance",
+        "VITPESAT (Vellore Institute)",
+        12,
+        "https://vit.ac.in/",
+        "https://vit.ac.in/",
+        "https://vit.ac.in/",
+        "VIT entrance exam"
+      ],
+      "extracted": [
+        "https://vit.ac.in/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 116,
+      "originalRow": [
+        "Delhi Colleges",
+        "DU Entrance (Delhi University)",
+        12,
+        "https://du.ac.in/",
+        "https://du.ac.in/",
+        "https://du.ac.in/",
+        "Delhi University college admission"
+      ],
+      "extracted": [
+        "https://du.ac.in/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 117,
+      "originalRow": [
+        "Delhi Colleges",
+        "IPU Entrance (Indira Priya)",
+        12,
+        "https://ipu.ac.in/",
+        "https://ipu.ac.in/",
+        "https://ipu.ac.in/",
+        "Indira Priya University entrance"
+      ],
+      "extracted": [
+        "https://ipu.ac.in/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 118,
+      "originalRow": [
+        "Delhi Colleges",
+        "NIRAN Entrance (Northern India)",
+        12,
+        "https://niran.ac.in/",
+        "https://niran.ac.in/",
+        "https://niran.ac.in/",
+        "Northern India Rama Nath entrance"
+      ],
+      "extracted": [
+        "https://niran.ac.in/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 119,
+      "originalRow": [
+        "Mumbai Colleges",
+        "MU Entrance (Mumbai University)",
+        12,
+        "https://mu.ac.in/",
+        "https://mu.ac.in/",
+        "https://mu.ac.in/",
+        "Mumbai University college admission"
+      ],
+      "extracted": [
+        "https://mu.ac.in/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 120,
+      "originalRow": [
+        "Mumbai Colleges",
+        "DJSCCE (DJ Sanghvi College)",
+        12,
+        "https://djsce.ac.in/",
+        "https://djsce.ac.in/",
+        "https://djsce.ac.in/",
+        "DJ Sanghvi Engineering entrance"
+      ],
+      "extracted": [
+        "https://djsce.ac.in/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 121,
+      "originalRow": [
+        "Bangalore Colleges",
+        "VTU Entrance (Visvesvaraya Tech)",
+        12,
+        "https://vtu.ac.in/",
+        "https://vtu.ac.in/",
+        "https://vtu.ac.in/",
+        "Visvesvaraya Technological University"
+      ],
+      "extracted": [
+        "https://vtu.ac.in/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 122,
+      "originalRow": [
+        "Bangalore Colleges",
+        "Bangalore University",
+        12,
+        "https://bangaloreuniversity.ac.in/",
+        "https://bangaloreuniversity.ac.in/",
+        "https://bangaloreuniversity.ac.in/",
+        "Bangalore University entrance"
+      ],
+      "extracted": [
+        "https://bangaloreuniversity.ac.in/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 123,
+      "originalRow": [
+        "Hyderabad Colleges",
+        "OU Entrance (Osmania University)",
+        12,
+        "https://osmania.ac.in/",
+        "https://osmania.ac.in/",
+        "https://osmania.ac.in/",
+        "Osmania University Hyderabad"
+      ],
+      "extracted": [
+        "https://osmania.ac.in/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 124,
+      "originalRow": [
+        "Hyderabad Colleges",
+        "JNTU (Jawaharlal Nehru)",
+        12,
+        "https://jntu.ac.in/",
+        "https://jntu.ac.in/",
+        "https://jntu.ac.in/",
+        "JNTU Hyderabad engineering"
+      ],
+      "extracted": [
+        "https://jntu.ac.in/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 125,
+      "originalRow": [
+        "Chennai Colleges",
+        "Anna University Entrance",
+        12,
+        "https://annauniv.edu/",
+        "https://annauniv.edu/",
+        "https://annauniv.edu/",
+        "Anna University Chennai entrance"
+      ],
+      "extracted": [
+        "https://annauniv.edu/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 127,
+      "originalRow": [
+        "Online Certifications",
+        "Coursera Certificates",
+        "College",
+        "https://coursera.org/",
+        "https://coursera.org/courses",
+        "https://coursera.org/https://udemy.com/",
+        "https://udemy.com/uniraj.ac.in/",
+        "https://uniraj.ac.in/mdsuniversity.ac.in/",
+        "https://mdsuniversity.ac.in/gujuniversity.ac.in/",
+        "https://gujuniversity.ac.in/dduit.ac.in/",
+        "https://dduit.ac.in/caluniv.ac.in/",
+        "https://caluniv.ac.in/jadavpuruniversity.ac.in/",
+        "https://jadavpuruniversity.ac.in/lkouniversity.ac.in/",
+        "https://lkouniversity.ac.in/kanpuruniversity.org/",
+        "https://kanpuruniversity.org/https://uniraj.ac.in/",
+        "https://uniraj.ac.in/uniraj.ac.in/",
+        "https://uniraj.ac.in/mdsuniversity.ac.in/",
+        "https://mdsuniversity.ac.in/gujuniversity.ac.in/gujuniversity.ac.in/"
+      ],
+      "extracted": [
+        "https://coursera.org/",
+        "https://coursera.org/courses",
+        "https://udemy.com/",
+        "https://udemy.com/uniraj.ac.in/",
+        "https://uniraj.ac.in/mdsuniversity.ac.in/",
+        "https://mdsuniversity.ac.in/gujuniversity.ac.in/",
+        "https://gujuniversity.ac.in/dduit.ac.in/",
+        "https://dduit.ac.in/caluniv.ac.in/",
+        "https://caluniv.ac.in/jadavpuruniversity.ac.in/",
+        "https://jadavpuruniversity.ac.in/lkouniversity.ac.in/",
+        "https://lkouniversity.ac.in/kanpuruniversity.org/",
+        "https://kanpuruniversity.org/",
+        "https://uniraj.ac.in/",
+        "https://uniraj.ac.in/uniraj.ac.in/",
+        "https://mdsuniversity.ac.in/gujuniversity.ac.in/gujuniversity.ac.in/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 128,
+      "originalRow": [
+        "Punjab Universities",
+        "Punjabi University",
+        12,
+        "https://punjabiuniversity.ac.in/",
+        "https://dduit.ac.in/",
+        "https://dduit.ac.in/caluniv.ac.in/",
+        "https://caluniv.ac.in/jadavpuruniversity.ac.in/",
+        "https://jadavpuruniversity.ac.in/uom.ac.in/",
+        "https://uom.ac.in/unipune.ac.in/",
+        "https://unipune.ac.in/bamu.ac.in/",
+        "https://bamu.ac.in/unishivaji.ac.in/",
+        "https://unishivaji.ac.in/unigoa.ac.in/",
+        "https://unigoa.ac.in/punjabiuuniversity.ac.in/",
+        "https://punjabiuuniversity.ac.in/cuchd.ac.in/",
+        "https://cuchd.ac.in/punjabiuniversity.ac.in/",
+        "https://punjabiuniversity.ac.in/hvdn.ac.in/",
+        "https://hvdn.ac.in/ggu.ac.in/",
+        "https://ggu.ac.in/ghsubharti.ac.in/",
+        "https://ghsubharti.ac.in/ignou.ac.in/",
+        "https://ignou.ac.in/"
+      ],
+      "extracted": [
+        "https://punjabiuniversity.ac.in/",
+        "https://dduit.ac.in/",
+        "https://dduit.ac.in/caluniv.ac.in/",
+        "https://caluniv.ac.in/jadavpuruniversity.ac.in/",
+        "https://jadavpuruniversity.ac.in/uom.ac.in/",
+        "https://uom.ac.in/unipune.ac.in/",
+        "https://unipune.ac.in/bamu.ac.in/",
+        "https://bamu.ac.in/unishivaji.ac.in/",
+        "https://unishivaji.ac.in/unigoa.ac.in/",
+        "https://unigoa.ac.in/punjabiuuniversity.ac.in/",
+        "https://punjabiuuniversity.ac.in/cuchd.ac.in/",
+        "https://cuchd.ac.in/punjabiuniversity.ac.in/",
+        "https://punjabiuniversity.ac.in/hvdn.ac.in/",
+        "https://hvdn.ac.in/ggu.ac.in/",
+        "https://ggu.ac.in/ghsubharti.ac.in/",
+        "https://ghsubharti.ac.in/ignou.ac.in/",
+        "https://ignou.ac.in/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 129,
+      "originalRow": [
+        "Punjab Universities",
+        "Punjab University (PU)",
+        12,
+        "https://pu.ac.in/",
+        "https://pu.ac.in/",
+        "https://pu.ac.in/",
+        "Punjab University Chandigarh entrance"
+      ],
+      "extracted": [
+        "https://pu.ac.in/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 130,
+      "originalRow": [
+        "Punjab Universities",
+        "Chandigarh University",
+        12,
+        "https://cuchd.in/",
+        "https://cuchd.in/",
+        "https://cuchd.in/",
+        "Chandigarh University entrance"
+      ],
+      "extracted": [
+        "https://cuchd.in/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 131,
+      "originalRow": [
+        "Punjab Universities",
+        "Thapar University",
+        12,
+        "https://thapar.edu/",
+        "https://thapar.edu/",
+        "https://thapar.edu/",
+        "Thapar Institute of Engineering entrance"
+      ],
+      "extracted": [
+        "https://thapar.edu/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 132,
+      "originalRow": [
+        "Punjab Universities",
+        "PTU (Punjab Tech)",
+        12,
+        "https://ptu.ac.in/",
+        "https://ptu.ac.in/",
+        "https://ptu.ac.in/",
+        "Punjab Technical University entrance"
+      ],
+      "extracted": [
+        "https://ptu.ac.in/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 133,
+      "originalRow": [
+        "Punjab Universities",
+        "GGU (Guru Ghasidas)",
+        12,
+        "https://ggu.ac.in/",
+        "https://ggu.ac.in/",
+        "https://ggu.ac.in/",
+        "Guru Ghasidas University entrance"
+      ],
+      "extracted": [
+        "https://ggu.ac.in/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 134,
+      "originalRow": [
+        "Punjab Universities",
+        "Central University Punjab",
+        12,
+        "https://cup.edu.in/",
+        "https://cup.edu.in/",
+        "https://cup.edu.in/",
+        "Central University Punjab entrance"
+      ],
+      "extracted": [
+        "https://cup.edu.in/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 135,
+      "originalRow": [
+        "Punjab Universities",
+        "GGS (Guru Nanak Dev)",
+        12,
+        "https://ggsnsd.ac.in/",
+        "https://ggsnsd.ac.in/",
+        "https://ggsnsd.ac.in/",
+        "Guru Nanak Dev University entrance"
+      ],
+      "extracted": [
+        "https://ggsnsd.ac.in/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 136,
+      "originalRow": [
+        "Language Proficiency",
+        "IELTS",
+        "College",
+        "https://ielts.org/",
+        "https://ielts.org/",
+        "https://ielts.org/",
+        "International English exam"
+      ],
+      "extracted": [
+        "https://ielts.org/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 137,
+      "originalRow": [
+        "Language Proficiency",
+        "TOEFL",
+        "College",
+        "https://ets.org/toefl",
+        "https://ets.org/toefl",
+        "https://ets.org/toefl",
+        "US English proficiency test"
+      ],
+      "extracted": [
+        "https://ets.org/toefl"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 138,
+      "originalRow": [
+        "Language Proficiency",
+        "Cambridge English",
+        "College",
+        "https://cambridgeenglish.org/",
+        "https://cambridgeenglish.org/",
+        "https://cambridgeenglish.org/",
+        "Cambridge English exams"
+      ],
+      "extracted": [
+        "https://cambridgeenglish.org/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 139,
+      "originalRow": [
+        "Language Proficiency",
+        "GRE (Graduate Record)",
+        "College",
+        "https://ets.org/gre",
+        "https://ets.org/gre",
+        "https://ets.org/gre",
+        "Graduate entrance USA"
+      ],
+      "extracted": [
+        "https://ets.org/gre"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 140,
+      "originalRow": [
+        "Language Proficiency",
+        "GMAT",
+        "College",
+        "https://mba.com/",
+        "https://mba.com/",
+        "https://mba.com/",
+        "Business graduate entrance"
+      ],
+      "extracted": [
+        "https://mba.com/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 142,
+      "originalRow": [
+        "Haryana Colleges",
+        "CU (Chandigarh University)",
+        12,
+        "https://cuchd.in/",
+        "https://cuchd.in/",
+        "https://cuchd.in/",
+        "Chandigarh University Mohali"
+      ],
+      "extracted": [
+        "https://cuchd.in/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 143,
+      "originalRow": [
+        "Haryana Colleges",
+        "MMU (Maharishi Markandeshwar)",
+        12,
+        "https://mmu.ac.in/",
+        "https://mmu.ac.in/",
+        "https://mmu.ac.in/",
+        "MMU Ambala/Mullana entrance"
+      ],
+      "extracted": [
+        "https://mmu.ac.in/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 144,
+      "originalRow": [
+        "Haryana Colleges",
+        "MDU (Maharshi Dayanand)",
+        12,
+        "https://mdu.ac.in/",
+        "https://mdu.ac.in/",
+        "https://mdu.ac.in/",
+        "Maharsish Dayanand University Rohtak"
+      ],
+      "extracted": [
+        "https://mdu.ac.in/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 145,
+      "originalRow": [
+        "Haryana Colleges",
+        "Kurukshetra University",
+        12,
+        "https://kuk.ac.in/",
+        "https://kuk.ac.in/",
+        "https://kuk.ac.in/",
+        "Kurukshetra University entrance"
+      ],
+      "extracted": [
+        "https://kuk.ac.in/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 146,
+      "originalRow": [
+        "Uttar Pradesh Colleges",
+        "BHU (Banaras Hindu)",
+        12,
+        "https://bhu.ac.in/",
+        "https://bhu.ac.in/",
+        "https://bhu.ac.in/",
+        "Banaras Hindu University entrance"
+      ],
+      "extracted": [
+        "https://bhu.ac.in/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 147,
+      "originalRow": [
+        "Uttar Pradesh Colleges",
+        "AMU (Aligarh Muslim)",
+        12,
+        "https://amu.ac.in/",
+        "https://amu.ac.in/",
+        "https://amu.ac.in/",
+        "Aligarh Muslim University entrance"
+      ],
+      "extracted": [
+        "https://amu.ac.in/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 148,
+      "originalRow": [
+        "Uttar Pradesh Colleges",
+        "Lucknow University",
+        12,
+        "https://lkouniv.ac.in/",
+        "https://lkouniv.ac.in/",
+        "https://lkouniv.ac.in/",
+        "Lucknow University entrance"
+      ],
+      "extracted": [
+        "https://lkouniv.ac.in/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 149,
+      "originalRow": [
+        "Uttar Pradesh Colleges",
+        "Kanpur University",
+        12,
+        "https://kanpuruniversity.org/",
+        "https://kanpuruniversity.org/",
+        "https://kanpuruniversity.org/",
+        "Kanpur University entrance"
+      ],
+      "extracted": [
+        "https://kanpuruniversity.org/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 150,
+      "originalRow": [
+        "Rajasthan Colleges",
+        "Rajasthan University",
+        12,
+        "https://uniraj.ac.in/",
+        "https://uniraj.ac.in/",
+        "https://uniraj.ac.in/",
+        "Rajasthan University Jaipur"
+      ],
+      "extracted": [
+        "https://uniraj.ac.in/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 151,
+      "originalRow": [
+        "Rajasthan Colleges",
+        "MDS University",
+        12,
+        "https://mdsu.ac.in/",
+        "https://mdsu.ac.in/",
+        "https://mdsu.ac.in/",
+        "Maharaja Sayajirao University Rajasthan"
+      ],
+      "extracted": [
+        "https://mdsu.ac.in/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 152,
+      "originalRow": [
+        "Gujarat Colleges",
+        "Guj Uni (Gujarat University)",
+        12,
+        "https://gujaratuniversity.ac.in/",
+        "https://gujaratuniversity.ac.in/",
+        "https://gujaratuniversity.ac.in/",
+        "Gujarat University Ahmedabad"
+      ],
+      "extracted": [
+        "https://gujaratuniversity.ac.in/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 153,
+      "originalRow": [
+        "Gujarat Colleges",
+        "DDAIT (Dharmsinh Desai)",
+        12,
+        "https://dduat.ac.in/",
+        "https://dduat.ac.in/",
+        "https://dduat.ac.in/",
+        "Dharmsinh Desai University Nadiad"
+      ],
+      "extracted": [
+        "https://dduat.ac.in/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 154,
+      "originalRow": [
+        "West Bengal Colleges",
+        "Calcutta University",
+        12,
+        "https://caluniv.ac.in/",
+        "https://caluniv.ac.in/",
+        "https://caluniv.ac.in/",
+        "University of Calcutta entrance"
+      ],
+      "extracted": [
+        "https://caluniv.ac.in/"
+      ]
+    },
+    {
+      "sheet": "Sheet1",
+      "rowIndex": 155,
+      "originalRow": [
+        "West Bengal Colleges",
+        "Jadavpur University",
+        12,
+        "https://jadavpuruniversity.edu.in/",
+        "https://jadavpuruniversity.edu.in/",
+        "https://jadavpuruniversity.edu.in/",
+        "Jadavpur University Kolkata entrance"
+      ],
+      "extracted": [
+        "https://jadavpuruniversity.edu.in/"
+      ]
+    }
+  ]
+}
