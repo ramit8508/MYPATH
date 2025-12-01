@@ -1,7 +1,0 @@
-# Add your exam URLs here, one per line
-# Example:
-https://jeemain.nta.nic.in/
-https://neet.nta.nic.in/
-https://gate.iitb.ac.in/
-https://iitjee.iitd.ac.in/
-https://www.upsc.gov.in/

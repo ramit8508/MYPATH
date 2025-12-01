@@ -122,6 +122,43 @@ const ExamDisplay = ({ userClass }) => {
     return names[category] || category;
   };
 
+  // Get exam type badge
+  const getExamTypeBadge = (exam) => {
+    const fee = exam.registrationFee?.toLowerCase() || '';
+    const name = exam.name?.toLowerCase() || '';
+    const category = exam.category?.toLowerCase() || '';
+    
+    // Check for scholarship
+    if (name.includes('scholarship') || name.includes('fellowship')) {
+      return { text: '🎓 Scholarship', color: '#8b5cf6' };
+    }
+    
+    // Check for free contests/competitions
+    if ((fee.includes('free') || fee === '₹0' || fee === '0') && 
+        (name.includes('contest') || name.includes('competition') || name.includes('olympiad') || 
+         category.includes('olympiad'))) {
+      return { text: '🏆 Free Contest', color: '#10b981' };
+    }
+    
+    // Check for certification
+    if (category === 'certification' || name.includes('certificate')) {
+      return { text: '📜 Certification', color: '#f59e0b' };
+    }
+    
+    // Check for entrance exam
+    if (name.includes('entrance') || category === 'engineering' || category === 'medical') {
+      return { text: '🎯 Entrance Exam', color: '#3b82f6' };
+    }
+    
+    // Check for competitive exam
+    if (category === 'government' || category === 'defence') {
+      return { text: '🏛️ Competitive Exam', color: '#ef4444' };
+    }
+    
+    // Default
+    return { text: '📝 Exam', color: '#6b7280' };
+  };
+
   if (!userClass) {
     return (
       <div className="exam-display-empty">
@@ -185,6 +222,7 @@ const ExamDisplay = ({ userClass }) => {
             const urgency = getUrgencyLevel(exam);
             const daysLeft = getDaysUntilDeadline(exam.registrationDeadline || exam.examDate);
             const isApplied = appliedExams.has(exam._id);
+            const examType = getExamTypeBadge(exam);
             
             return (
             <div 
@@ -199,26 +237,56 @@ const ExamDisplay = ({ userClass }) => {
                 position: 'relative'
               }}
             >
-              {/* Header with title and eligible badge */}
+              {/* Header with title and badges */}
               <div className="exam-card-header">
                 <div style={{ flex: 1 }}>
-                  <h3 className="exam-name" style={{ 
-                    color: '#FFFFFF', 
-                    fontSize: '20px', 
-                    fontWeight: '600', 
-                    marginBottom: '8px', 
-                    display: 'flex', 
-                    alignItems: 'center', 
-                    gap: '10px' 
-                  }}>
-                    {exam.name}
-                    {urgency === 'urgent' && <span style={{ fontSize: '18px' }}>⚠️</span>}
-                  </h3>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '8px', flexWrap: 'wrap' }}>
+                    <h3 className="exam-name" style={{ 
+                      color: '#FFFFFF', 
+                      fontSize: '20px', 
+                      fontWeight: '600', 
+                      margin: '0',
+                      display: 'flex', 
+                      alignItems: 'center', 
+                      gap: '8px' 
+                    }}>
+                      {exam.name}
+                      {urgency === 'urgent' && <span style={{ fontSize: '18px' }}>⚠️</span>}
+                    </h3>
+                  </div>
+                  
+                  {/* Exam Type Badge */}
+                  <div style={{ display: 'flex', gap: '8px', marginBottom: '12px', flexWrap: 'wrap' }}>
+                    <span style={{
+                      background: examType.color,
+                      color: 'white',
+                      padding: '4px 12px',
+                      borderRadius: '16px',
+                      fontSize: '11px',
+                      fontWeight: '700',
+                      display: 'inline-block'
+                    }}>
+                      {examType.text}
+                    </span>
+                    <span style={{
+                      background: '#334155',
+                      color: '#94a3b8',
+                      padding: '4px 12px',
+                      borderRadius: '16px',
+                      fontSize: '11px',
+                      fontWeight: '600',
+                      display: 'inline-block'
+                    }}>
+                      {getCategoryDisplayName(exam.category)}
+                    </span>
+                  </div>
+
                   <p className="exam-description" style={{ 
                     color: '#94a3b8', 
                     fontSize: '14px', 
                     marginBottom: '16px',
-                    lineHeight: '1.5'
+                    lineHeight: '1.5',
+                    margin: '0'
                   }}>
                     {exam.description || `${getCategoryDisplayName(exam.category)} examination for Class ${exam.targetClass} students`}
                   </p>
@@ -277,10 +345,26 @@ const ExamDisplay = ({ userClass }) => {
               {/* Registration Fee */}
               {exam.registrationFee && (
                 <div style={{ marginBottom: '20px' }}>
-                  <p style={{ color: '#94a3b8', fontSize: '13px', margin: '0 0 4px 0' }}>Registration Fee:</p>
-                  <p style={{ color: '#10b981', fontSize: '18px', fontWeight: '700', margin: '0' }}>
-                    {exam.registrationFee === '₹0' || exam.registrationFee === '0' ? '₹0 (Free)' : exam.registrationFee}
-                  </p>
+                  <p style={{ color: '#94a3b8', fontSize: '13px', margin: '0 0 6px 0', fontWeight: '600' }}>Registration Fee:</p>
+                  <div style={{ 
+                    background: 'rgba(16, 185, 129, 0.1)', 
+                    border: '1px solid rgba(16, 185, 129, 0.3)',
+                    borderRadius: '8px',
+                    padding: '10px 14px'
+                  }}>
+                    <p style={{ 
+                      color: '#10b981', 
+                      fontSize: exam.registrationFee.length > 50 ? '13px' : '16px', 
+                      fontWeight: '700', 
+                      margin: '0', 
+                      lineHeight: '1.6',
+                      wordBreak: 'break-word'
+                    }}>
+                      {exam.registrationFee === '₹0' || exam.registrationFee === '0' || exam.registrationFee.toLowerCase().includes('free') 
+                        ? '₹0 (Free)' 
+                        : exam.registrationFee}
+                    </p>
+                  </div>
                 </div>
               )}
 
@@ -309,48 +393,51 @@ const ExamDisplay = ({ userClass }) => {
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={() => toggleApplied(exam._id)}
-                  className="apply-btn"
                   style={{
-                    width: '100%',
-                    background: isApplied ? '#10b981' : '#2563eb',
+                    width: '95%',
+                    maxWidth: '700px',
+                    background: isApplied 
+                      ? '#10b981' 
+                      : '#2563eb',
                     color: 'white',
                     border: 'none',
-                    padding: '14px',
+                    padding: '12px',
                     borderRadius: '8px',
-                    fontSize: '15px',
+                    fontSize: '14px',
                     fontWeight: '700',
                     cursor: 'pointer',
-                    transition: 'all 0.3s ease',
-                    marginTop: '12px',
+                    margin: '20px auto 0',
                     display: 'block',
                     textAlign: 'center',
                     textDecoration: 'none'
                   }}
-                  onMouseEnter={(e) => e.target.style.transform = 'scale(1.02)'}
-                  onMouseLeave={(e) => e.target.style.transform = 'scale(1)'}
                 >
-                  {isApplied ? '✓ Applied for Exam' : 'Apply for Exam'}
+                   Apply for Exam
                 </a>
               ) : (
                 <button
                   onClick={() => toggleApplied(exam._id)}
-                  className="apply-btn"
                   style={{
-                    width: '100%',
-                    background: isApplied ? '#10b981' : '#6b7280',
+                    width: '95%',
+                    maxWidth: '700px',
+                    background: isApplied 
+                      ? '#10b981' 
+                      : '#6b7280',
                     color: 'white',
                     border: 'none',
-                    padding: '14px',
+                    padding: '12px',
                     borderRadius: '8px',
-                    fontSize: '15px',
+                    fontSize: '14px',
                     fontWeight: '700',
                     cursor: isApplied ? 'pointer' : 'not-allowed',
-                    transition: 'all 0.3s ease',
-                    marginTop: '12px'
+                    margin: '20px auto 0',
+                    display: 'block',
+                    textAlign: 'center',
+                    opacity: isApplied ? 1 : 0.6
                   }}
                   disabled={!isApplied}
                 >
-                  {isApplied ? '✓ Applied for Exam' : 'No Registration Link'}
+                  {isApplied ? '✓ Applied for Exam' : '⚠ No Registration Link'}
                 </button>
               )}
             </div>
