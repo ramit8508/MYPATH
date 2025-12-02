@@ -175,6 +175,264 @@
   }
 }
 
+/* Syllabus Grid Layout */
+.syllabus-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+/* Updated Card Styles */
+.syllabus-card {
+  background: rgba(30, 41, 59, 0.6);
+  border-radius: 15px;
+  padding: 30px;
+  border: 1px solid rgba(100, 116, 139, 0.3);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.syllabus-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(102, 126, 234, 0.4);
+  border-color: #667eea;
+}
+
+.card-header {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card-badges {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.badge {
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.badge-syllabus {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.badge-sample-paper {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  color: white;
+}
+
+.badge-notification {
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+  color: white;
+}
+
+.badge-new {
+  background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+  color: white;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+.card-title {
+  font-size: 1.4rem;
+  color: #f1f5f9;
+  margin: 0;
+  font-weight: 700;
+}
+
+.card-subtitle {
+  font-size: 1.1rem;
+  color: #667eea;
+  margin: 0;
+  font-weight: 600;
+}
+
+.card-description {
+  color: #cbd5e1;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.card-meta {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.meta-item {
+  color: #94a3b8;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.card-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: auto;
+}
+
+.btn-download,
+.btn-official {
+  flex: 1;
+  padding: 12px 24px;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-download {
+  background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+  color: white;
+  box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+}
+
+.btn-download:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(59, 130, 246, 0.5);
+}
+
+.btn-official {
+  background: rgba(100, 116, 139, 0.3);
+  color: #e2e8f0;
+  border: 1px solid rgba(100, 116, 139, 0.5);
+}
+
+.btn-official:hover {
+  background: rgba(100, 116, 139, 0.5);
+  border-color: #667eea;
+  transform: translateY(-2px);
+}
+
+/* Links Grid */
+.links-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 15px;
+}
+
+.link-card {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 20px;
+  background: rgba(30, 41, 59, 0.5);
+  border: 1px solid rgba(100, 116, 139, 0.3);
+  border-radius: 12px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.link-card:hover {
+  background: rgba(30, 41, 59, 0.7);
+  border-color: #667eea;
+  transform: translateX(5px);
+  box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+}
+
+.link-icon {
+  font-size: 2rem;
+  min-width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.link-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.link-title {
+  color: #f1f5f9;
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.link-note {
+  color: #94a3b8;
+  font-size: 0.85rem;
+  font-style: italic;
+}
+
+.link-arrow {
+  color: #667eea;
+  font-size: 1.5rem;
+  font-weight: 700;
+  transition: transform 0.3s ease;
+}
+
+.link-card:hover .link-arrow {
+  transform: translateX(5px);
+}
+
+/* Info Card */
+.info-card {
+  background: rgba(16, 185, 129, 0.1);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  border-radius: 15px;
+  padding: 30px;
+  backdrop-filter: blur(10px);
+}
+
+.info-card h3 {
+  color: #10b981;
+  font-size: 1.5rem;
+  margin: 0 0 20px 0;
+  font-weight: 700;
+}
+
+.info-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.info-card li {
+  color: #cbd5e1;
+  font-size: 1rem;
+  padding-left: 0;
+  line-height: 1.6;
+}
+
+.info-card li::before {
+  content: none;
+}
+
 /* Responsive Design */
 @media (max-width: 1024px) {
   .syllabus-title {
@@ -185,8 +443,12 @@
     font-size: 1.8rem;
   }
 
-  .syllabus-card {
-    padding: 25px;
+  .syllabus-grid {
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  }
+
+  .links-grid {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -207,18 +469,37 @@
     font-size: 1.5rem;
   }
 
+  .syllabus-grid {
+    grid-template-columns: 1fr;
+  }
+
   .syllabus-card {
     padding: 20px;
   }
 
-  .syllabus-card h3 {
-    font-size: 1.3rem;
+  .card-title {
+    font-size: 1.2rem;
   }
 
-  .syllabus-card li {
-    font-size: 0.95rem;
-    padding: 10px 0;
-    padding-left: 25px;
+  .card-subtitle {
+    font-size: 1rem;
+  }
+
+  .card-actions {
+    flex-direction: column;
+  }
+
+  .btn-download,
+  .btn-official {
+    width: 100%;
+  }
+
+  .links-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .link-card {
+    padding: 15px;
   }
 
   .download-section {

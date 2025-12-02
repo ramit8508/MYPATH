@@ -1,7 +1,20 @@
 import React, { useState, useEffect } from 'react';
-import '../Styles/ExamDisplay.css';
 
 const API_BASE_URL = '/api/school';
+
+// Add responsive styles
+const styles = `
+  @media (max-width: 1200px) {
+    .exam-grid-responsive {
+      grid-template-columns: repeat(2, 1fr) !important;
+    }
+  }
+  @media (max-width: 768px) {
+    .exam-grid-responsive {
+      grid-template-columns: 1fr !important;
+    }
+  }
+`;
 
 const ExamDisplay = ({ userClass }) => {
   const [exams, setExams] = useState([]);
@@ -186,20 +199,55 @@ const ExamDisplay = ({ userClass }) => {
   }
 
   return (
-    <div className="exam-display-container">
-      <div className="exam-display-header">
-        <h2>Available Exams for Class {userClass}</h2>
-        <p className="exam-count">{exams.length} exams found</p>
-      </div>
+    <>
+      <style>{styles}</style>
+      <div className="exam-display-container">
+        <div className="exam-display-header">
+          <h2>Available Exams for Class {userClass}</h2>
+        </div>
 
       {/* Category Filter */}
       {categories.length > 0 && (
-        <div className="category-filter">
-          <label>Filter by Category:</label>
+        <div style={{
+          background: 'linear-gradient(135deg, #1e293b 0%, #0f172a 100%)',
+          border: '2px solid #334155',
+          borderRadius: '16px',
+          padding: '20px 24px',
+          marginBottom: '24px',
+          display: 'flex',
+          alignItems: 'center',
+          gap: '16px',
+          flexWrap: 'wrap'
+        }}>
+          <label style={{
+            color: '#e2e8f0',
+            fontSize: '16px',
+            fontWeight: '600',
+            minWidth: '150px'
+          }}>
+            Filter by Category:
+          </label>
           <select
             value={selectedCategory}
             onChange={(e) => setSelectedCategory(e.target.value)}
-            className="category-select"
+            style={{
+              flex: '1',
+              minWidth: '250px',
+              padding: '12px 16px',
+              background: '#0f172a',
+              border: '2px solid #475569',
+              borderRadius: '12px',
+              color: '#e2e8f0',
+              fontSize: '15px',
+              fontWeight: '500',
+              cursor: 'pointer',
+              outline: 'none',
+              transition: 'all 0.3s ease'
+            }}
+            onMouseOver={(e) => e.target.style.borderColor = '#51A2FF'}
+            onMouseOut={(e) => e.target.style.borderColor = '#475569'}
+            onFocus={(e) => e.target.style.borderColor = '#51A2FF'}
+            onBlur={(e) => e.target.style.borderColor = '#475569'}
           >
             <option value="all">All Categories</option>
             {categories.map((category) => (
@@ -217,99 +265,124 @@ const ExamDisplay = ({ userClass }) => {
           <p>No exams found for the selected criteria.</p>
         </div>
       ) : (
-        <div className="exam-grid">
+        <div style={{
+          display: 'grid',
+          gridTemplateColumns: 'repeat(2, 1fr)',
+          gap: '24px',
+          marginTop: '20px'
+        }}
+        className="exam-grid-responsive"
+        >
           {exams.map((exam) => {
             const urgency = getUrgencyLevel(exam);
             const daysLeft = getDaysUntilDeadline(exam.registrationDeadline || exam.examDate);
             const isApplied = appliedExams.has(exam._id);
             const examType = getExamTypeBadge(exam);
             
+            // Determine background based on urgency
+            const getCardBackground = () => {
+              if (urgency === 'urgent') {
+                // Red/brown gradient for urgent exams
+                return 'linear-gradient(135deg, #3d1f1f 0%, #2a1515 100%)';
+              } else if (urgency === 'soon') {
+                // Orange gradient for soon exams
+                return 'linear-gradient(135deg, #3d2a1f 0%, #2a1e15 100%)';
+              } else {
+                // Blue gradient for normal exams
+                return 'linear-gradient(135deg, #1e3a5f 0%, #152840 100%)';
+              }
+            };
+
+            const getBorderColor = () => {
+              if (urgency === 'urgent') return '#ef4444';
+              if (urgency === 'soon') return '#f59e0b';
+              return '#334155';
+            };
+            
             return (
             <div 
               key={exam._id} 
               className={`exam-card urgency-${urgency}`}
               style={{
-                background: urgency === 'urgent' ? 'linear-gradient(135deg, #2d1a1a 0%, #1a0f0f 100%)' : 
-                           'linear-gradient(135deg, #1e293b 0%, #0f172a 100%)',
-                border: urgency === 'urgent' ? '2px solid #ef4444' : '2px solid #334155',
+                background: getCardBackground(),
+                border: `2px solid ${getBorderColor()}`,
                 borderRadius: '16px',
                 padding: '24px',
-                position: 'relative'
+                position: 'relative',
+                transition: 'transform 0.3s ease, box-shadow 0.3s ease'
               }}
             >
-              {/* Header with title and badges */}
-              <div className="exam-card-header">
-                <div style={{ flex: 1 }}>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '8px', flexWrap: 'wrap' }}>
-                    <h3 className="exam-name" style={{ 
-                      color: '#FFFFFF', 
-                      fontSize: '20px', 
-                      fontWeight: '600', 
-                      margin: '0',
-                      display: 'flex', 
-                      alignItems: 'center', 
-                      gap: '8px' 
-                    }}>
-                      {exam.name}
-                      {urgency === 'urgent' && <span style={{ fontSize: '18px' }}>⚠️</span>}
-                    </h3>
-                  </div>
-                  
-                  {/* Exam Type Badge */}
-                  <div style={{ display: 'flex', gap: '8px', marginBottom: '12px', flexWrap: 'wrap' }}>
-                    <span style={{
-                      background: examType.color,
-                      color: 'white',
-                      padding: '4px 12px',
-                      borderRadius: '16px',
-                      fontSize: '11px',
-                      fontWeight: '700',
-                      display: 'inline-block'
-                    }}>
-                      {examType.text}
-                    </span>
-                    <span style={{
-                      background: '#334155',
-                      color: '#94a3b8',
-                      padding: '4px 12px',
-                      borderRadius: '16px',
-                      fontSize: '11px',
-                      fontWeight: '600',
-                      display: 'inline-block'
-                    }}>
-                      {getCategoryDisplayName(exam.category)}
-                    </span>
-                  </div>
-
-                  <p className="exam-description" style={{ 
-                    color: '#94a3b8', 
-                    fontSize: '14px', 
-                    marginBottom: '16px',
-                    lineHeight: '1.5',
-                    margin: '0'
-                  }}>
-                    {exam.description || `${getCategoryDisplayName(exam.category)} examination for Class ${exam.targetClass} students`}
-                  </p>
-                </div>
-                <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', alignItems: 'flex-end' }}>
-                  <span 
-                    className="eligible-badge"
-                    style={{
-                      background: '#10b981',
-                      color: 'white',
-                      padding: '6px 14px',
-                      borderRadius: '20px',
-                      fontSize: '12px',
-                      fontWeight: '700',
-                      display: 'flex',
-                      alignItems: 'center',
-                      gap: '6px'
-                    }}
-                  >
-                    <span style={{ fontSize: '14px' }}>✓</span> ELIGIBLE
-                  </span>
-                </div>
+              {/* Eligible Badge - Top Right */}
+              <div style={{ position: 'absolute', top: '16px', right: '16px' }}>
+                <span 
+                  className="eligible-badge"
+                  style={{
+                    background: '#10b981',
+                    color: 'white',
+                    padding: '6px 14px',
+                    borderRadius: '20px',
+                    fontSize: '12px',
+                    fontWeight: '700',
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '6px'
+                  }}
+                >
+                  <span style={{ fontSize: '14px' }}>✓</span> ELIGIBLE
+                </span>
               </div>
+
+              {/* Title with Warning Icon */}
+              <div style={{ marginBottom: '8px', paddingRight: '100px' }}>
+                <h3 className="exam-name" style={{ 
+                  color: '#FFFFFF', 
+                  fontSize: '20px', 
+                  fontWeight: '600', 
+                  margin: '0',
+                  display: 'flex', 
+                  alignItems: 'center', 
+                  gap: '8px' 
+                }}>
+                  {exam.name}
+                  {urgency === 'urgent' && <span style={{ fontSize: '18px' }}>⚠️</span>}
+                </h3>
+              </div>
+              
+              {/* Exam Type Badge */}
+              <div style={{ display: 'flex', gap: '8px', marginBottom: '12px', flexWrap: 'wrap' }}>
+                <span style={{
+                  background: examType.color,
+                  color: 'white',
+                  padding: '4px 12px',
+                  borderRadius: '16px',
+                  fontSize: '11px',
+                  fontWeight: '700',
+                  display: 'inline-block'
+                }}>
+                  {examType.text}
+                </span>
+                <span style={{
+                  background: '#334155',
+                  color: '#94a3b8',
+                  padding: '4px 12px',
+                  borderRadius: '16px',
+                  fontSize: '11px',
+                  fontWeight: '600',
+                  display: 'inline-block'
+                }}>
+                  {getCategoryDisplayName(exam.category)}
+                </span>
+              </div>
+
+              <p className="exam-description" style={{ 
+                color: '#94a3b8', 
+                fontSize: '14px', 
+                marginBottom: '16px',
+                lineHeight: '1.5',
+                margin: '0 0 16px 0'
+              }}>
+                {exam.description || `${getCategoryDisplayName(exam.category)} examination for Class ${exam.targetClass} students`}
+              </p>
 
               {/* Dates section */}
               <div style={{ display: 'flex', gap: '40px', marginBottom: '20px', flexWrap: 'wrap' }}>
@@ -444,7 +517,8 @@ const ExamDisplay = ({ userClass }) => {
           )})}
         </div>
       )}
-    </div>
+      </div>
+    </>
   );
 };
 
